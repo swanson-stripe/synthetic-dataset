@@ -1,0 +1,56 @@
+{
+  "name": "@stripe-synthetic/dashboard-kit",
+  "version": "1.0.0",
+  "description": "React component library for rendering Stripe-style payment analytics dashboards",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "dashboard",
+    "stripe",
+    "analytics",
+    "charts",
+    "components"
+  ],
+  "author": "Stripe Synthetic Data Team",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "dependencies": {
+    "recharts": "^2.5.0",
+    "clsx": "^2.0.0",
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "postcss": "^8.4.0",
+    "rollup": "^3.0.0",
+    "rollup-plugin-css-only": "^4.3.0",
+
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stripe-synthetic/dashboard-kit.git"
+  },
+  "homepage": "https://github.com/stripe-synthetic/dashboard-kit#readme"
+}

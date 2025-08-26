@@ -11,6 +11,13 @@ venv/
 
 # Generated output files (contains synthetic PII)
 techstyle_generator/output/
+saas_generator/data/
+marketplace_generator/marketplace_data/
+metrics_visualizer/formatted_output/
+metrics_visualizer/techstyle_formatted/
+stripe-dashboard-kit/node_modules/
+stripe-dashboard-kit/dist/
+stripe-dashboard-kit/dashboard-demo-data.json
 
 # IDE
 .vscode/

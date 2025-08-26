@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe Dashboard Kit Demo</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="dist/dashboard-kit.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f9fafb;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .demo-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .demo-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+        .demo-subtitle {
+            font-size: 1.125rem;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="demo-header">
+            <h1 class="demo-title">Stripe Dashboard Kit Demo</h1>
+            <p class="demo-subtitle">React component library for payment analytics dashboards</p>
+        </div>
+        <div id="dashboard-root"></div>
+    </div>
+
+    <script type="text/babel">
+        // Sample data that matches the expected format
+        const sampleData = {
+            cards: [
+                {
+                    id: "total_volume",
+                    title: "Total Volume",
+                    value: 125000000, // cents
+                    format: "currency",
+                    change: 5.2,
+                    trend: "up",
+                    sparkline: [110000, 115000, 120000, 118000, 125000, 122000, 128000],
+                    description: "Total payment volume (last 30 days)"
+                },
+                {
+                    id: "success_rate",
+                    title: "Success Rate",
+                    value: 9852, // 98.52%
+                    format: "percentage",
+                    change: 0.3,
+                    trend: "up",
+                    sparkline: [98.1, 98.4, 98.6, 98.3, 98.8, 98.5, 98.9],
+                    description: "Payment success rate (last 30 days)"
+                },
+                {
+                    id: "avg_transaction",
+                    title: "Average Transaction",
+                    value: 4250, // cents
+                    format: "currency",
+                    change: -2.1,
+                    trend: "down",
+                    sparkline: [45, 44, 43, 42, 41, 42, 42.5],
+                    description: "Average payment amount (last 30 days)"
+                },
+                {
+                    id: "active_customers",
+                    title: "Active Customers",
+                    value: 3420,
+                    format: "number",
+                    change: 12.5,
+                    trend: "up",
+                    sparkline: [3100, 3150, 3200, 3280, 3350, 3400, 3420],
+                    description: "Unique customers (last 30 days)"
+                }
+            ],
+            charts: [
+                {
+                    type: "line",
+                    title: "Daily Payment Volume",
+                    labels: ["Jan 20", "Jan 21", "Jan 22", "Jan 23", "Jan 24", "Jan 25", "Jan 26"],
+                    datasets: [{
+                        label: "Volume",
+                        data: [125000, 135000, 128000, 142000, 155000, 148000, 165000],
+                        borderColor: "#3B82F6",
+                        backgroundColor: "#3B82F620"
+                    }]
+                },
+                {
+                    type: "bar",
+                    title: "Payment Methods",
+                    labels: ["Card", "Bank Transfer", "Digital Wallet", "ACH"],
+                    datasets: [{
+                        label: "Transactions",
+                        data: [450, 230, 180, 120],
+                        backgroundColor: ["#3B82F6", "#10B981", "#F59E0B", "#EF4444"]
+                    }]
+                }
+            ],
+            tables: [
+                {
+                    title: "Recent Transactions",
+                    columns: [
+                        { key: "id", title: "Payment ID", sortable: true, format: "text" },
+                        { key: "amount", title: "Amount", sortable: true, format: "currency" },
+                        { key: "status", title: "Status", sortable: true, format: "status" },
+                        { key: "created", title: "Date", sortable: true, format: "datetime" }
+                    ],
+                    data: [
+                        { id: "pi_1ABC123", amount: 2500, status: "succeeded", created: "2024-01-26T10:30:00Z" },
+                        { id: "pi_1DEF456", amount: 5000, status: "succeeded", created: "2024-01-26T09:15:00Z" },
+                        { id: "pi_1GHI789", amount: 1250, status: "failed", created: "2024-01-26T08:45:00Z" },
+                        { id: "pi_1JKL012", amount: 7500, status: "succeeded", created: "2024-01-25T16:20:00Z" },
+                        { id: "pi_1MNO345", amount: 3750, status: "succeeded", created: "2024-01-25T14:10:00Z" }
+                    ],
+                    pagination: {
+                        page_size: 25,
+                        total_records: 125,
+                        total_pages: 5
+                    }
+                }
+            ]
+        };
+
+        // Mock data loader function
+        const loadData = async () => {
+            // Simulate API delay
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            return sampleData;
+        };
+
+        function DemoApp() {
+            const [data, setData] = React.useState(null);
+            const [loading, setLoading] = React.useState(true);
+            const [error, setError] = React.useState(null);
+
+            React.useEffect(() => {
+                loadData()
+                    .then(setData)
+                    .catch(setError)
+                    .finally(() => setLoading(false));
+            }, []);
+
+            if (loading) {
+                return React.createElement('div', { 
+                    style: { 
+                        display: 'flex', 
+                        justifyContent: 'center', 
+                        alignItems: 'center', 
+                        height: '400px',
+                        fontSize: '18px',
+                        color: '#6b7280'
+                    } 
+                }, 'Loading dashboard...');
+            }
+
+            if (error) {
+                return React.createElement('div', {
+                    style: {
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        height: '400px',
+                        fontSize: '18px',
+                        color: '#ef4444'
+                    }
+                }, 'Error loading dashboard: ' + error.message);
+            }
+
+            // Render dashboard with sample data
+            return React.createElement('div', { className: 'dashboard dashboard--stripe dashboard--light' },
+                // Header
+                React.createElement('div', { className: 'dashboard__header' },
+                    React.createElement('h1', { className: 'dashboard__title' }, 'Payment Analytics Dashboard'),
+                    React.createElement('div', { className: 'dashboard__actions' },
+                        React.createElement('button', {
+                            className: 'dashboard__refresh',
+                            onClick: () => window.location.reload()
+                        }, 'Refresh')
+                    )
+                ),
+
+                // Metric Cards
+                data.cards && React.createElement('div', { className: 'dashboard__metric-cards' },
+                    ...data.cards.map((card, index) =>
+                        React.createElement('div', {
+                            key: card.id,
+                            className: 'metric-card'
+                        },
+                            React.createElement('div', { className: 'metric-card__header' },
+                                React.createElement('h3', { className: 'metric-card__title' }, card.title)
+                            ),
+                            React.createElement('div', { className: 'metric-card__value' },
+                                React.createElement('span', { className: 'metric-card__number' },
+                                    card.format === 'currency' ? `$${(card.value / 100).toLocaleString()}` :
+                                    card.format === 'percentage' ? `${(card.value / 100).toFixed(1)}%` :
+                                    card.value.toLocaleString()
+                                )
+                            ),
+                            card.change && React.createElement('div', { className: 'metric-card__change' },
+                                React.createElement('span', {
+                                    className: `metric-card__change-value metric-card__change-value--${card.trend === 'up' ? 'positive' : card.trend === 'down' ? 'negative' : 'neutral'}`
+                                },
+                                    React.createElement('span', { className: 'metric-card__change-icon' },
+                                        card.trend === 'up' ? '↗' : card.trend === 'down' ? '↘' : '→'
+                                    ),
+                                    `${card.change >= 0 ? '+' : ''}${card.change.toFixed(1)}%`
+                                )
+                            ),
+                            card.description && React.createElement('div', { className: 'metric-card__description' }, card.description)
+                        )
+                    )
+                ),
+
+                // Demo message
+                React.createElement('div', {
+                    style: {
+                        textAlign: 'center',
+                        padding: '40px',
+                        backgroundColor: '#f3f4f6',
+                        borderRadius: '8px',
+                        margin: '40px 0',
+                        border: '2px dashed #d1d5db'
+                    }
+                },
+                    React.createElement('h3', { style: { margin: '0 0 10px 0', color: '#374151' } }, '🎉 Dashboard Kit Demo'),
+                    React.createElement('p', { style: { margin: '0', color: '#6b7280' } }, 
+                        'This is a demo of the @stripe-synthetic/dashboard-kit React component library. ',
+                        'Charts and interactive tables would be rendered here with the full library.'
+                    ),
+                    React.createElement('p', { style: { margin: '10px 0 0 0', fontSize: '14px', color: '#9ca3af' } },
+                        'Install the package: npm install @stripe-synthetic/dashboard-kit'
+                    )
+                )
+            );
+        }
+
+        // Render the demo app
+        const root = ReactDOM.createRoot(document.getElementById('dashboard-root'));
+        root.render(React.createElement(DemoApp));
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "sail": {
+      "command": "npx",
+      "args": [
+        "@modelcontextprotocol/inspector",
+        "--transport",
+        "http",
+        "--server-url",
+        "https://toolshed.corp.stripe.com/mcp/sail"
+      ],
+      "env": {
+        "NODE_OPTIONS": "--max-old-space-size=4096"
+      }
+    }
+  }
+}
+
+
