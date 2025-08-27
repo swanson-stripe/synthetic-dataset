@@ -1,0 +1,54 @@
+{
+  "name": "TechStyle Fashion Retailer",
+  "description": "E-commerce fashion retailer with global payment processing",
+  "business_model": "ecommerce",
+  "generated_at": "2024-08-26T17:00:00Z",
+  "data_period": "24 months (Oct 2023 - Sep 2025)",
+  "summary": {
+    "total_payments": 1000,
+    "unique_customers": 500,
+    "success_rate": "98.10%",
+    "sample_from": "97,824 original payments",
+    "note": "Sample dataset for rapid prototyping - use generators for full scale data"
+  },
+  "files": {
+    "payments.json": {
+      "description": "Sample payment transactions with Stripe payment intent objects",
+      "records": 1000,
+      "size_mb": "~1.6MB",
+      "schema": "stripe_payment_intent"
+    },
+    "customers.json": {
+      "description": "Sample customer profiles with demographics and payment history",
+      "records": 500,
+      "size_mb": "~248KB", 
+      "schema": "stripe_customer"
+    },
+    "daily_metrics.json": {
+      "description": "Pre-aggregated daily metrics for dashboards",
+      "records": "~730 days",
+      "size_mb": "~1MB",
+      "schema": "time_series_metrics"
+    },
+    "summary_stats.json": {
+      "description": "High-level business metrics and KPIs",
+      "records": 1,
+      "size_mb": "<1MB",
+      "schema": "summary_statistics"
+    }
+  },
+  "usage_examples": [
+    "E-commerce payment flow testing",
+    "Multi-currency payment processing",
+    "Customer analytics and segmentation", 
+    "Payment method optimization",
+    "Dispute and chargeback analysis"
+  ],
+  "stripe_products": [
+    "Payment Intents",
+    "Customers",
+    "Payment Methods", 
+    "Disputes",
+    "Radar (fraud detection)"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "name": "EduTech Academy",
+  "description": "Online education marketplace with instructor payouts and student financing",
+  "business_model": "education_marketplace",
+  "generated_at": "2024-08-26T17:00:00Z",
+  "data_period": "24 months (Jan 2022 - Dec 2023)",
+  "summary": {
+    "total_instructors": 72,
+    "total_students": 500,
+    "total_courses": 218,
+    "individual_enrollments": 500,
+    "sample_from": "73,656 original students, 12,511 original enrollments",
+    "note": "Sample dataset for rapid prototyping - use generators for full scale data"
+  },
+  "files": {
+    "instructors.json": {
+      "description": "Instructor Express accounts with expertise and ratings",
+      "records": 72,
+      "size_mb": "~1MB",
+      "schema": "stripe_connect_account"
+    },
+    "students.json": {
+      "description": "Student customer profiles with learning preferences",
+      "records": 73656,
+      "size_mb": "~38MB",
+      "schema": "stripe_customer"
+    },
+    "courses.json": {
+      "description": "Course catalog with pricing tiers and metadata",
+      "records": 218,
+      "size_mb": "~1MB",
+      "schema": "course_catalog"
+    },
+    "enrollments.json": {
+      "description": "Student enrollments, payments, and corporate invoices",
+      "records": 12511,
+      "size_mb": "~13MB",
+      "schema": "mixed_payment_objects"
+    },
+    "student_progress.json": {
+      "description": "Learning analytics and course completion data",
+      "records": 1000,
+      "size_mb": "~1MB",
+      "schema": "learning_analytics"
+    },
+    "tax_documents.json": {
+      "description": "1099-K forms and international tax reporting",
+      "records": 72,
+      "size_mb": "<1MB",
+      "schema": "tax_documents"
+    }
+  },
+  "usage_examples": [
+    "Education marketplace testing",
+    "Instructor payout simulation",
+    "Student financing and payment plans",
+    "Learning analytics and progress tracking",
+    "Tax compliance for marketplaces",
+    "Corporate training billing"
+  ],
+  "stripe_products": [
+    "Connect (Express accounts)",
+    "Payment Intents",
+    "Billing Subscriptions", 
+    "Capital (student financing)",
+    "Invoicing (corporate training)",
+    "Tax Reporting"
+  ]
+}

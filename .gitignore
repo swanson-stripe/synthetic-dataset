@@ -9,7 +9,7 @@ venv/
 .venv/
 .env
 
-# Generated output files (contains synthetic PII)
+# Generated output files (development only)
 techstyle_generator/output/
 saas_generator/data/
 marketplace_generator/marketplace_data/
@@ -25,6 +25,9 @@ nonprofit_generator/nonprofit_data/
 creatorhub_generator/creator_data/
 property_generator/property_data/
 edutech_generator/education_data/
+
+# Pre-generated data (publicly accessible)
+!pre_generated_data/
 
 # IDE
 .vscode/

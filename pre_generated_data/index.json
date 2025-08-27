@@ -1,0 +1,82 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2024-08-26T17:00:00Z",
+  "description": "Pre-generated synthetic Stripe datasets for rapid prototyping",
+  "datasets": {
+    "techstyle": {
+      "name": "TechStyle Fashion Retailer",
+      "description": "E-commerce fashion retailer with payment processing",
+      "business_model": "ecommerce",
+      "files": [
+        "payments.json",
+        "customers.json", 
+        "daily_metrics.json",
+        "summary_stats.json"
+      ],
+      "size": "~150k payments over 24 months",
+      "last_updated": "2024-08-26"
+    },
+    "edutech": {
+      "name": "EduTech Academy",
+      "description": "Online education marketplace with instructor payouts",
+      "business_model": "marketplace",
+      "files": [
+        "instructors.json",
+        "students.json",
+        "courses.json",
+        "enrollments.json",
+        "student_progress.json",
+        "tax_documents.json"
+      ],
+      "size": "~73k students, 218 courses, 72 instructors",
+      "last_updated": "2024-08-26"
+    },
+    "propertyflow": {
+      "name": "PropertyFlow Property Management", 
+      "description": "Property management platform with rent collection",
+      "business_model": "property_management",
+      "files": [
+        "landlords.json",
+        "properties.json",
+        "rent_payments.json",
+        "security_deposits.json",
+        "maintenance_payments.json"
+      ],
+      "size": "~126 properties, 40 landlords, 1988 payments",
+      "last_updated": "2024-08-26"
+    },
+    "fitstream": {
+      "name": "FitStream Fitness Platform",
+      "description": "Subscription fitness platform with trials and engagement",
+      "business_model": "subscription",
+      "files": [
+        "subscriptions.json",
+        "customers.json",
+        "payments.json",
+        "trials.json",
+        "engagement_metrics.json"
+      ],
+      "size": "~6.5k subscribers across lifecycle stages",
+      "last_updated": "2024-08-26"
+    },
+    "creatorhub": {
+      "name": "CreatorHub Content Platform",
+      "description": "Content monetization platform with creator payouts",
+      "business_model": "creator_economy",
+      "files": [
+        "creators.json",
+        "fans.json",
+        "content_sales.json",
+        "subscriptions.json",
+        "tips.json"
+      ],
+      "size": "~1.7k creators, 8.2k fans, 15.8k content sales",
+      "last_updated": "2024-08-26"
+    }
+  },
+  "usage": {
+    "direct_download": "curl -o payments.json https://raw.githubusercontent.com/swanson-stripe/synthetic-dataset/main/pre_generated_data/techstyle/payments.json",
+    "cli_tool": "./tools/get-data.sh techstyle",
+    "bulk_download": "wget -r --no-parent https://raw.githubusercontent.com/swanson-stripe/synthetic-dataset/main/pre_generated_data/techstyle/"
+  }
+}
