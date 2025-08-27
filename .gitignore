@@ -18,6 +18,13 @@ metrics_visualizer/techstyle_formatted/
 stripe-dashboard-kit/node_modules/
 stripe-dashboard-kit/dist/
 stripe-dashboard-kit/dashboard-demo-data.json
+fitstream_generator/output/
+rideshare_generator/rideshare_data/
+medsupply_generator/b2b_data/
+nonprofit_generator/nonprofit_data/
+creatorhub_generator/creator_data/
+property_generator/property_data/
+edutech_generator/education_data/
 
 # IDE
 .vscode/
