@@ -1,0 +1,27 @@
+{
+  "total_orders": 587951,
+  "total_restaurants": 500,
+  "total_drivers": 1000,
+  "data_period": "24 months food delivery marketplace lifecycle",
+  "financial_metrics": {
+    "gross_merchandise_value": 33953236.35,
+    "platform_revenue": 5122705.45,
+    "take_rate": 0.151,
+    "average_order_value": 57.75
+  },
+  "marketplace_health": {
+    "orders_per_restaurant": 1175.9,
+    "orders_per_driver": 587.95,
+    "driver_utilization": 1.0,
+    "payment_failure_rate": 0.020,
+    "refund_rate": 0.04
+  },
+  "platform_features": {
+    "commission_rate": "15% platform fee",
+    "delivery_fee": "$2.99 base",
+    "service_fee": "$1.99",
+    "average_tip": "15%",
+    "instant_payout_fee": "$1.50"
+  },
+  "generated_at": "2024-12-19T10:00:00Z"
+}

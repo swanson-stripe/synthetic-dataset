@@ -1,0 +1,2931 @@
+[
+  {
+    "id": "cap_e43b1565462b4e9f99e2",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6157891,
+    "currency": "usd",
+    "customer": "cus_940dea03f66048",
+    "created": 1697698800,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 541376,
+    "monthly_payment_dollars": 5413.76,
+    "total_repayment": 6496512,
+    "total_interest": 338621,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 720,
+      "business_age_months": 48,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202310-9464",
+      "client_id": "cus_940dea03f66048",
+      "client_type": "clinic",
+      "order_amount": 6157891,
+      "credit_limit": 7500000
+    }
+  },
+  {
+    "id": "cap_bc575904d1b54e1eb5df",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5522481,
+    "currency": "usd",
+    "customer": "cus_77961c89cfd74d",
+    "created": 1705305600,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 480391,
+    "monthly_payment_dollars": 4803.91,
+    "total_repayment": 5764692,
+    "total_interest": 242211,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 784,
+      "business_age_months": 89,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202401-2616",
+      "client_id": "cus_77961c89cfd74d",
+      "client_type": "hospital",
+      "order_amount": 5522481,
+      "credit_limit": 50000000
+    }
+  },
+  {
+    "id": "cap_55157b19f50a43f4a6fa",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5312203,
+    "currency": "usd",
+    "customer": "cus_8a5da1bca80144",
+    "created": 1707897600,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 462100,
+    "monthly_payment_dollars": 4621.0,
+    "total_repayment": 5545200,
+    "total_interest": 232997,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 769,
+      "business_age_months": 30,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202402-9029",
+      "client_id": "cus_8a5da1bca80144",
+      "client_type": "hospital",
+      "order_amount": 5312203,
+      "credit_limit": 50000000
+    }
+  },
+  {
+    "id": "cap_04a4d373ba4b4dd4a975",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5077542,
+    "currency": "usd",
+    "customer": "cus_b5901b07697e47",
+    "created": 1709280000,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 437005,
+    "monthly_payment_dollars": 4370.05,
+    "total_repayment": 5244060,
+    "total_interest": 166518,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 813,
+      "business_age_months": 15,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202403-5116",
+      "client_id": "cus_b5901b07697e47",
+      "client_type": "lab",
+      "order_amount": 5077542,
+      "credit_limit": 15000000
+    }
+  },
+  {
+    "id": "cap_28dc10fcd58a4b5eac40",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5623555,
+    "currency": "usd",
+    "customer": "cus_91a3659eaca246",
+    "created": 1715065200,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 489184,
+    "monthly_payment_dollars": 4891.84,
+    "total_repayment": 5870208,
+    "total_interest": 246653,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 759,
+      "business_age_months": 71,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202405-6552",
+      "client_id": "cus_91a3659eaca246",
+      "client_type": "hospital",
+      "order_amount": 5623555,
+      "credit_limit": 50000000
+    }
+  },
+  {
+    "id": "cap_06ad7c0cfc044b878d12",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6523428,
+    "currency": "usd",
+    "customer": "cus_07ef1bd7f28041",
+    "created": 1714978800,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 573512,
+    "monthly_payment_dollars": 5735.12,
+    "total_repayment": 6882144,
+    "total_interest": 358716,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 706,
+      "business_age_months": 61,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202405-9234",
+      "client_id": "cus_07ef1bd7f28041",
+      "client_type": "lab",
+      "order_amount": 6523428,
+      "credit_limit": 7500000
+    }
+  },
+  {
+    "id": "cap_3dc4fe867f294b9cb281",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6526699,
+    "currency": "usd",
+    "customer": "cus_7ba9518fa4174e",
+    "created": 1715756400,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 561729,
+    "monthly_payment_dollars": 5617.29,
+    "total_repayment": 6740748,
+    "total_interest": 214049,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 840,
+      "business_age_months": 49,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202405-9476",
+      "client_id": "cus_7ba9518fa4174e",
+      "client_type": "hospital",
+      "order_amount": 6526699,
+      "credit_limit": 75000000
+    }
+  },
+  {
+    "id": "cap_9effe73d8a3e4d4a9f81",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5002853,
+    "currency": "usd",
+    "customer": "cus_91a3659eaca246",
+    "created": 1718262000,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 435190,
+    "monthly_payment_dollars": 4351.9,
+    "total_repayment": 5222280,
+    "total_interest": 219427,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 759,
+      "business_age_months": 94,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202406-2836",
+      "client_id": "cus_91a3659eaca246",
+      "client_type": "hospital",
+      "order_amount": 5002853,
+      "credit_limit": 50000000
+    }
+  },
+  {
+    "id": "cap_abaa71f15f2141869d1b",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6479818,
+    "currency": "usd",
+    "customer": "cus_872a2d80ba794b",
+    "created": 1718348400,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 569678,
+    "monthly_payment_dollars": 5696.78,
+    "total_repayment": 6836136,
+    "total_interest": 356318,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 739,
+      "business_age_months": 34,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202406-9408",
+      "client_id": "cus_872a2d80ba794b",
+      "client_type": "pharmacy",
+      "order_amount": 6479818,
+      "credit_limit": 1875000
+    }
+  },
+  {
+    "id": "cap_e340436f4cf740058145",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5685860,
+    "currency": "usd",
+    "customer": "cus_535822398c9047",
+    "created": 1719730800,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 489361,
+    "monthly_payment_dollars": 4893.61,
+    "total_repayment": 5872332,
+    "total_interest": 186472,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 845,
+      "business_age_months": 68,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202406-7835",
+      "client_id": "cus_535822398c9047",
+      "client_type": "hospital",
+      "order_amount": 5685860,
+      "credit_limit": 75000000
+    }
+  },
+  {
+    "id": "cap_eeb04eaf877549b19f22",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5500240,
+    "currency": "usd",
+    "customer": "cus_7f2c7d27399640",
+    "created": 1720076400,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 483558,
+    "monthly_payment_dollars": 4835.58,
+    "total_repayment": 5802696,
+    "total_interest": 302456,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 717,
+      "business_age_months": 29,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202407-9572",
+      "client_id": "cus_7f2c7d27399640",
+      "client_type": "clinic",
+      "order_amount": 5500240,
+      "credit_limit": 7500000
+    }
+  },
+  {
+    "id": "cap_820117e1c2a747df8b71",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6302927,
+    "currency": "usd",
+    "customer": "cus_78e372a1833742",
+    "created": 1720076400,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 554127,
+    "monthly_payment_dollars": 5541.27,
+    "total_repayment": 6649524,
+    "total_interest": 346597,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 718,
+      "business_age_months": 26,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202407-7765",
+      "client_id": "cus_78e372a1833742",
+      "client_type": "clinic",
+      "order_amount": 6302927,
+      "credit_limit": 7500000
+    }
+  },
+  {
+    "id": "cap_f1728c999af0478b9454",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5313198,
+    "currency": "usd",
+    "customer": "cus_51a629954ca54b",
+    "created": 1720249200,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 467114,
+    "monthly_payment_dollars": 4671.14,
+    "total_repayment": 5605368,
+    "total_interest": 292170,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 725,
+      "business_age_months": 33,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202407-7051",
+      "client_id": "cus_51a629954ca54b",
+      "client_type": "clinic",
+      "order_amount": 5313198,
+      "credit_limit": 7500000
+    }
+  },
+  {
+    "id": "cap_a97492d6e43d48888ebe",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6007614,
+    "currency": "usd",
+    "customer": "cus_c4d1bbda64af42",
+    "created": 1721372400,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 522592,
+    "monthly_payment_dollars": 5225.92,
+    "total_repayment": 6271104,
+    "total_interest": 263490,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 753,
+      "business_age_months": 84,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202407-6775",
+      "client_id": "cus_c4d1bbda64af42",
+      "client_type": "hospital",
+      "order_amount": 6007614,
+      "credit_limit": 50000000
+    }
+  },
+  {
+    "id": "cap_74c290b5bb3a407a964d",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 7829471,
+    "currency": "usd",
+    "customer": "cus_6fb94ffcd9204f",
+    "created": 1722063600,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 681073,
+    "monthly_payment_dollars": 6810.73,
+    "total_repayment": 8172876,
+    "total_interest": 343405,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 758,
+      "business_age_months": 40,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202407-2814",
+      "client_id": "cus_6fb94ffcd9204f",
+      "client_type": "clinic",
+      "order_amount": 7829471,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_b1714b7121f940778a39",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5885818,
+    "currency": "usd",
+    "customer": "cus_ca27b39e039148",
+    "created": 1722322800,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 511998,
+    "monthly_payment_dollars": 5119.98,
+    "total_repayment": 6143976,
+    "total_interest": 258158,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 782,
+      "business_age_months": 109,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202407-2423",
+      "client_id": "cus_ca27b39e039148",
+      "client_type": "hospital",
+      "order_amount": 5885818,
+      "credit_limit": 50000000
+    }
+  },
+  {
+    "id": "cap_e562a43462b941f0806a",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5613546,
+    "currency": "usd",
+    "customer": "cus_7ba9518fa4174e",
+    "created": 1722495600,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 483137,
+    "monthly_payment_dollars": 4831.37,
+    "total_repayment": 5797644,
+    "total_interest": 184098,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 840,
+      "business_age_months": 99,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202408-2777",
+      "client_id": "cus_7ba9518fa4174e",
+      "client_type": "hospital",
+      "order_amount": 5613546,
+      "credit_limit": 75000000
+    }
+  },
+  {
+    "id": "cap_a673c87d0c3b434babe0",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6487807,
+    "currency": "usd",
+    "customer": "cus_c78a518716f94c",
+    "created": 1722409200,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 570381,
+    "monthly_payment_dollars": 5703.81,
+    "total_repayment": 6844572,
+    "total_interest": 356765,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 704,
+      "business_age_months": 28,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202407-6504",
+      "client_id": "cus_c78a518716f94c",
+      "client_type": "pharmacy",
+      "order_amount": 6487807,
+      "credit_limit": 1875000
+    }
+  },
+  {
+    "id": "cap_c67c9a5591aa424d8b9a",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5454093,
+    "currency": "usd",
+    "customer": "cus_78e372a1833742",
+    "created": 1722841200,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 479501,
+    "monthly_payment_dollars": 4795.01,
+    "total_repayment": 5754012,
+    "total_interest": 299919,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 718,
+      "business_age_months": 14,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202408-6861",
+      "client_id": "cus_78e372a1833742",
+      "client_type": "clinic",
+      "order_amount": 5454093,
+      "credit_limit": 7500000
+    }
+  },
+  {
+    "id": "cap_578e5e15befe42d3b84c",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6812687,
+    "currency": "usd",
+    "customer": "cus_98d28dc4fb7541",
+    "created": 1722927600,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 592624,
+    "monthly_payment_dollars": 5926.24,
+    "total_repayment": 7111488,
+    "total_interest": 298801,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 771,
+      "business_age_months": 62,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202408-3240",
+      "client_id": "cus_98d28dc4fb7541",
+      "client_type": "clinic",
+      "order_amount": 6812687,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_b73b7118e0b44b1d94ca",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5325470,
+    "currency": "usd",
+    "customer": "cus_f9825bac19be40",
+    "created": 1722927600,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 468193,
+    "monthly_payment_dollars": 4681.93,
+    "total_repayment": 5618316,
+    "total_interest": 292846,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 735,
+      "business_age_months": 111,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202408-9875",
+      "client_id": "cus_f9825bac19be40",
+      "client_type": "pharmacy",
+      "order_amount": 5325470,
+      "credit_limit": 1875000
+    }
+  },
+  {
+    "id": "cap_bd74a71c77b242f9b4fe",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6437929,
+    "currency": "usd",
+    "customer": "cus_8ed3237854634b",
+    "created": 1723014000,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 554089,
+    "monthly_payment_dollars": 5540.89,
+    "total_repayment": 6649068,
+    "total_interest": 211139,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 804,
+      "business_age_months": 41,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202408-3082",
+      "client_id": "cus_8ed3237854634b",
+      "client_type": "hospital",
+      "order_amount": 6437929,
+      "credit_limit": 75000000
+    }
+  },
+  {
+    "id": "cap_f71eda68c8494024b98c",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5584875,
+    "currency": "usd",
+    "customer": "cus_6e974fa9684b42",
+    "created": 1723273200,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 490999,
+    "monthly_payment_dollars": 4909.99,
+    "total_repayment": 5891988,
+    "total_interest": 307113,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 736,
+      "business_age_months": 55,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202408-5581",
+      "client_id": "cus_6e974fa9684b42",
+      "client_type": "lab",
+      "order_amount": 5584875,
+      "credit_limit": 7500000
+    }
+  },
+  {
+    "id": "cap_3b42696a238d45899a90",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 7817874,
+    "currency": "usd",
+    "customer": "cus_ed762ca0574540",
+    "created": 1723186800,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 680064,
+    "monthly_payment_dollars": 6800.64,
+    "total_repayment": 8160768,
+    "total_interest": 342894,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 783,
+      "business_age_months": 61,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202408-5676",
+      "client_id": "cus_ed762ca0574540",
+      "client_type": "lab",
+      "order_amount": 7817874,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_3b4214f595a942a8bfda",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5543998,
+    "currency": "usd",
+    "customer": "cus_f1e320821b7f46",
+    "created": 1724050800,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 482263,
+    "monthly_payment_dollars": 4822.63,
+    "total_repayment": 5787156,
+    "total_interest": 243158,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 761,
+      "business_age_months": 23,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202408-2815",
+      "client_id": "cus_f1e320821b7f46",
+      "client_type": "hospital",
+      "order_amount": 5543998,
+      "credit_limit": 50000000
+    }
+  },
+  {
+    "id": "cap_a42d42d051c449af8664",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6301485,
+    "currency": "usd",
+    "customer": "cus_42dae4e8756348",
+    "created": 1723878000,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 554000,
+    "monthly_payment_dollars": 5540.0,
+    "total_repayment": 6648000,
+    "total_interest": 346515,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 714,
+      "business_age_months": 62,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202408-5911",
+      "client_id": "cus_42dae4e8756348",
+      "client_type": "pharmacy",
+      "order_amount": 6301485,
+      "credit_limit": 1875000
+    }
+  },
+  {
+    "id": "cap_f1f3d333e3b44ba99e22",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6133003,
+    "currency": "usd",
+    "customer": "cus_4e52db96178a44",
+    "created": 1724137200,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 533500,
+    "monthly_payment_dollars": 5335.0,
+    "total_repayment": 6402000,
+    "total_interest": 268997,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 751,
+      "business_age_months": 61,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202408-4704",
+      "client_id": "cus_4e52db96178a44",
+      "client_type": "hospital",
+      "order_amount": 6133003,
+      "credit_limit": 50000000
+    }
+  },
+  {
+    "id": "cap_1106830f5bdd4a288266",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5258655,
+    "currency": "usd",
+    "customer": "cus_a566ae3fb2e149",
+    "created": 1724137200,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 462319,
+    "monthly_payment_dollars": 4623.19,
+    "total_repayment": 5547828,
+    "total_interest": 289173,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 737,
+      "business_age_months": 75,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202408-1719",
+      "client_id": "cus_a566ae3fb2e149",
+      "client_type": "pharmacy",
+      "order_amount": 5258655,
+      "credit_limit": 1875000
+    }
+  },
+  {
+    "id": "cap_58ea834dcd4e4748aedc",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6697689,
+    "currency": "usd",
+    "customer": "cus_d3c0e69c987d49",
+    "created": 1724742000,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 582621,
+    "monthly_payment_dollars": 5826.21,
+    "total_repayment": 6991452,
+    "total_interest": 293763,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 783,
+      "business_age_months": 63,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202408-8820",
+      "client_id": "cus_d3c0e69c987d49",
+      "client_type": "lab",
+      "order_amount": 6697689,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_0b9c1daab61542f59fb0",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5266834,
+    "currency": "usd",
+    "customer": "cus_98f0aaf0f79341",
+    "created": 1724655600,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 458153,
+    "monthly_payment_dollars": 4581.53,
+    "total_repayment": 5497836,
+    "total_interest": 231002,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 752,
+      "business_age_months": 26,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202408-7510",
+      "client_id": "cus_98f0aaf0f79341",
+      "client_type": "hospital",
+      "order_amount": 5266834,
+      "credit_limit": 50000000
+    }
+  },
+  {
+    "id": "cap_bbbd617fd6c549f4aa2b",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6299524,
+    "currency": "usd",
+    "customer": "cus_af68edb5bcf146",
+    "created": 1724396400,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 542177,
+    "monthly_payment_dollars": 5421.77,
+    "total_repayment": 6506124,
+    "total_interest": 206600,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 819,
+      "business_age_months": 31,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202408-8433",
+      "client_id": "cus_af68edb5bcf146",
+      "client_type": "lab",
+      "order_amount": 6299524,
+      "credit_limit": 15000000
+    }
+  },
+  {
+    "id": "cap_6b0a3ab833204d41b7a6",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5394090,
+    "currency": "usd",
+    "customer": "cus_82f1fab3f3b34b",
+    "created": 1725433200,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 464250,
+    "monthly_payment_dollars": 4642.5,
+    "total_repayment": 5571000,
+    "total_interest": 176910,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 843,
+      "business_age_months": 99,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202409-3456",
+      "client_id": "cus_82f1fab3f3b34b",
+      "client_type": "hospital",
+      "order_amount": 5394090,
+      "credit_limit": 75000000
+    }
+  },
+  {
+    "id": "cap_ac32c0b4766f4d8a938f",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6973194,
+    "currency": "usd",
+    "customer": "cus_801117ff118e4c",
+    "created": 1725865200,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 613054,
+    "monthly_payment_dollars": 6130.54,
+    "total_repayment": 7356648,
+    "total_interest": 383454,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 730,
+      "business_age_months": 62,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202409-6099",
+      "client_id": "cus_801117ff118e4c",
+      "client_type": "lab",
+      "order_amount": 6973194,
+      "credit_limit": 7500000
+    }
+  },
+  {
+    "id": "cap_74d528e67b0441e6a61c",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 7623152,
+    "currency": "usd",
+    "customer": "cus_a566ae3fb2e149",
+    "created": 1726124400,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 670196,
+    "monthly_payment_dollars": 6701.96,
+    "total_repayment": 8042352,
+    "total_interest": 419200,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 737,
+      "business_age_months": 52,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202409-8005",
+      "client_id": "cus_a566ae3fb2e149",
+      "client_type": "pharmacy",
+      "order_amount": 7623152,
+      "credit_limit": 1875000
+    }
+  },
+  {
+    "id": "cap_85e4059eda554b18b896",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5407742,
+    "currency": "usd",
+    "customer": "cus_0d56d18bc20341",
+    "created": 1725951600,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 475426,
+    "monthly_payment_dollars": 4754.26,
+    "total_repayment": 5705112,
+    "total_interest": 297370,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 717,
+      "business_age_months": 12,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202409-2405",
+      "client_id": "cus_0d56d18bc20341",
+      "client_type": "clinic",
+      "order_amount": 5407742,
+      "credit_limit": 7500000
+    }
+  },
+  {
+    "id": "cap_42aa85a4fe254c7fbf09",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5797796,
+    "currency": "usd",
+    "customer": "cus_97b8f406519641",
+    "created": 1726383600,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 509718,
+    "monthly_payment_dollars": 5097.18,
+    "total_repayment": 6116616,
+    "total_interest": 318820,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 733,
+      "business_age_months": 41,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202409-6439",
+      "client_id": "cus_97b8f406519641",
+      "client_type": "hospital",
+      "order_amount": 5797796,
+      "credit_limit": 37500000
+    }
+  },
+  {
+    "id": "cap_a1b6df7566954a34aa86",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6962596,
+    "currency": "usd",
+    "customer": "cus_6ae6963038ce48",
+    "created": 1726470000,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 612122,
+    "monthly_payment_dollars": 6121.22,
+    "total_repayment": 7345464,
+    "total_interest": 382868,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 716,
+      "business_age_months": 69,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202409-6765",
+      "client_id": "cus_6ae6963038ce48",
+      "client_type": "clinic",
+      "order_amount": 6962596,
+      "credit_limit": 7500000
+    }
+  },
+  {
+    "id": "cap_286e0f44392f4afead1e",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5717081,
+    "currency": "usd",
+    "customer": "cus_8c9aba2ed5d842",
+    "created": 1726210800,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 497319,
+    "monthly_payment_dollars": 4973.19,
+    "total_repayment": 5967828,
+    "total_interest": 250747,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 785,
+      "business_age_months": 51,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202409-1631",
+      "client_id": "cus_8c9aba2ed5d842",
+      "client_type": "hospital",
+      "order_amount": 5717081,
+      "credit_limit": 50000000
+    }
+  },
+  {
+    "id": "cap_d12906f093374db6b020",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5285102,
+    "currency": "usd",
+    "customer": "cus_4de0ff2d05e443",
+    "created": 1726470000,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 454869,
+    "monthly_payment_dollars": 4548.69,
+    "total_repayment": 5458428,
+    "total_interest": 173326,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 807,
+      "business_age_months": 34,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202409-4224",
+      "client_id": "cus_4de0ff2d05e443",
+      "client_type": "lab",
+      "order_amount": 5285102,
+      "credit_limit": 15000000
+    }
+  },
+  {
+    "id": "cap_b80a92d5b3e24f8f9bad",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5962246,
+    "currency": "usd",
+    "customer": "cus_ea8cc915c1d24e",
+    "created": 1726988400,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 518646,
+    "monthly_payment_dollars": 5186.46,
+    "total_repayment": 6223752,
+    "total_interest": 261506,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 771,
+      "business_age_months": 74,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202409-9740",
+      "client_id": "cus_ea8cc915c1d24e",
+      "client_type": "clinic",
+      "order_amount": 5962246,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_bb9855164de2478bbdf0",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6840838,
+    "currency": "usd",
+    "customer": "cus_d4d246eee22b4c",
+    "created": 1727334000,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 595073,
+    "monthly_payment_dollars": 5950.73,
+    "total_repayment": 7140876,
+    "total_interest": 300038,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 773,
+      "business_age_months": 102,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202409-9522",
+      "client_id": "cus_d4d246eee22b4c",
+      "client_type": "hospital",
+      "order_amount": 6840838,
+      "credit_limit": 50000000
+    }
+  },
+  {
+    "id": "cap_8aa7120edd984c90a83c",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6182923,
+    "currency": "usd",
+    "customer": "cus_6e974fa9684b42",
+    "created": 1727506800,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 543577,
+    "monthly_payment_dollars": 5435.77,
+    "total_repayment": 6522924,
+    "total_interest": 340001,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 736,
+      "business_age_months": 50,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202409-5192",
+      "client_id": "cus_6e974fa9684b42",
+      "client_type": "lab",
+      "order_amount": 6182923,
+      "credit_limit": 7500000
+    }
+  },
+  {
+    "id": "cap_685f3f6aafdf4ae58646",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5674753,
+    "currency": "usd",
+    "customer": "cus_1dc3ca960c9341",
+    "created": 1727074800,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 493637,
+    "monthly_payment_dollars": 4936.37,
+    "total_repayment": 5923644,
+    "total_interest": 248891,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 790,
+      "business_age_months": 91,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202409-4390",
+      "client_id": "cus_1dc3ca960c9341",
+      "client_type": "clinic",
+      "order_amount": 5674753,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_6c8aafc94b224a62a94e",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5036933,
+    "currency": "usd",
+    "customer": "cus_97b8684f88c641",
+    "created": 1727074800,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 442826,
+    "monthly_payment_dollars": 4428.26,
+    "total_repayment": 5313912,
+    "total_interest": 276979,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 741,
+      "business_age_months": 36,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202409-4603",
+      "client_id": "cus_97b8684f88c641",
+      "client_type": "clinic",
+      "order_amount": 5036933,
+      "credit_limit": 7500000
+    }
+  },
+  {
+    "id": "cap_abb22e960c174015b025",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5521112,
+    "currency": "usd",
+    "customer": "cus_e937c0fdfd1045",
+    "created": 1727679600,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 485393,
+    "monthly_payment_dollars": 4853.93,
+    "total_repayment": 5824716,
+    "total_interest": 303604,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 707,
+      "business_age_months": 43,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202409-5149",
+      "client_id": "cus_e937c0fdfd1045",
+      "client_type": "hospital",
+      "order_amount": 5521112,
+      "credit_limit": 37500000
+    }
+  },
+  {
+    "id": "cap_90fe79bb5faa4e49bc85",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5598593,
+    "currency": "usd",
+    "customer": "cus_47c3830361a144",
+    "created": 1728025200,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 481850,
+    "monthly_payment_dollars": 4818.5,
+    "total_repayment": 5782200,
+    "total_interest": 183607,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 804,
+      "business_age_months": 45,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202410-3866",
+      "client_id": "cus_47c3830361a144",
+      "client_type": "lab",
+      "order_amount": 5598593,
+      "credit_limit": 15000000
+    }
+  },
+  {
+    "id": "cap_eaf07e0f7afa4c51b1a6",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5037330,
+    "currency": "usd",
+    "customer": "cus_fabebaec6da643",
+    "created": 1728111600,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 438189,
+    "monthly_payment_dollars": 4381.89,
+    "total_repayment": 5258268,
+    "total_interest": 220938,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 754,
+      "business_age_months": 85,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202410-3886",
+      "client_id": "cus_fabebaec6da643",
+      "client_type": "lab",
+      "order_amount": 5037330,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_e8fea2aa511549fcb503",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5720072,
+    "currency": "usd",
+    "customer": "cus_ff2aeb6466c84a",
+    "created": 1727852400,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 502885,
+    "monthly_payment_dollars": 5028.85,
+    "total_repayment": 6034620,
+    "total_interest": 314548,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 745,
+      "business_age_months": 38,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202410-1808",
+      "client_id": "cus_ff2aeb6466c84a",
+      "client_type": "pharmacy",
+      "order_amount": 5720072,
+      "credit_limit": 1875000
+    }
+  },
+  {
+    "id": "cap_d5d02eee2ff64ddca2c0",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5082879,
+    "currency": "usd",
+    "customer": "cus_005646f2bc2f4e",
+    "created": 1728284400,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 446865,
+    "monthly_payment_dollars": 4468.65,
+    "total_repayment": 5362380,
+    "total_interest": 279501,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 701,
+      "business_age_months": 80,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202410-7351",
+      "client_id": "cus_005646f2bc2f4e",
+      "client_type": "clinic",
+      "order_amount": 5082879,
+      "credit_limit": 7500000
+    }
+  },
+  {
+    "id": "cap_04a1f5f6d246493ebdff",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6738816,
+    "currency": "usd",
+    "customer": "cus_092ddefb6d394e",
+    "created": 1728543600,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 586199,
+    "monthly_payment_dollars": 5861.99,
+    "total_repayment": 7034388,
+    "total_interest": 295572,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 750,
+      "business_age_months": 99,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202410-9972",
+      "client_id": "cus_092ddefb6d394e",
+      "client_type": "pharmacy",
+      "order_amount": 6738816,
+      "credit_limit": 2500000
+    }
+  },
+  {
+    "id": "cap_356c036b01d44705b4c4",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5706530,
+    "currency": "usd",
+    "customer": "cus_a98408217f6e48",
+    "created": 1728457200,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 501694,
+    "monthly_payment_dollars": 5016.94,
+    "total_repayment": 6020328,
+    "total_interest": 313798,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 710,
+      "business_age_months": 55,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202410-2789",
+      "client_id": "cus_a98408217f6e48",
+      "client_type": "clinic",
+      "order_amount": 5706530,
+      "credit_limit": 7500000
+    }
+  },
+  {
+    "id": "cap_31b286441ee44322890f",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 8214776,
+    "currency": "usd",
+    "customer": "cus_d8aea853a84846",
+    "created": 1728889200,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 722209,
+    "monthly_payment_dollars": 7222.09,
+    "total_repayment": 8666508,
+    "total_interest": 451732,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 703,
+      "business_age_months": 33,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202410-1958",
+      "client_id": "cus_d8aea853a84846",
+      "client_type": "pharmacy",
+      "order_amount": 8214776,
+      "credit_limit": 1875000
+    }
+  },
+  {
+    "id": "cap_d8e4cc6b30014252834a",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5821008,
+    "currency": "usd",
+    "customer": "cus_63035a80cdb849",
+    "created": 1728889200,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 500993,
+    "monthly_payment_dollars": 5009.93,
+    "total_repayment": 6011916,
+    "total_interest": 190908,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 808,
+      "business_age_months": 80,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202410-1349",
+      "client_id": "cus_63035a80cdb849",
+      "client_type": "hospital",
+      "order_amount": 5821008,
+      "credit_limit": 75000000
+    }
+  },
+  {
+    "id": "cap_30005a74139b4be08db6",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5434399,
+    "currency": "usd",
+    "customer": "cus_4c2a927f5e0742",
+    "created": 1729062000,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 472729,
+    "monthly_payment_dollars": 4727.29,
+    "total_repayment": 5672748,
+    "total_interest": 238349,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 798,
+      "business_age_months": 46,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202410-3610",
+      "client_id": "cus_4c2a927f5e0742",
+      "client_type": "clinic",
+      "order_amount": 5434399,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_76a5c631666e41508fe5",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5920236,
+    "currency": "usd",
+    "customer": "cus_dd947bf05ea749",
+    "created": 1729148400,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 520482,
+    "monthly_payment_dollars": 5204.82,
+    "total_repayment": 6245784,
+    "total_interest": 325548,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 748,
+      "business_age_months": 58,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202410-1109",
+      "client_id": "cus_dd947bf05ea749",
+      "client_type": "hospital",
+      "order_amount": 5920236,
+      "credit_limit": 37500000
+    }
+  },
+  {
+    "id": "cap_f6f387dab6324337a5a8",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 7492596,
+    "currency": "usd",
+    "customer": "cus_af65427677fd45",
+    "created": 1729148400,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 651769,
+    "monthly_payment_dollars": 6517.69,
+    "total_repayment": 7821228,
+    "total_interest": 328632,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 764,
+      "business_age_months": 13,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202410-1095",
+      "client_id": "cus_af65427677fd45",
+      "client_type": "hospital",
+      "order_amount": 7492596,
+      "credit_limit": 50000000
+    }
+  },
+  {
+    "id": "cap_28a27dcba86d4cc39ab5",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6955515,
+    "currency": "usd",
+    "customer": "cus_0e8bfcfa6d0f4c",
+    "created": 1729321200,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 605049,
+    "monthly_payment_dollars": 6050.49,
+    "total_repayment": 7260588,
+    "total_interest": 305073,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 751,
+      "business_age_months": 31,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202410-4093",
+      "client_id": "cus_0e8bfcfa6d0f4c",
+      "client_type": "lab",
+      "order_amount": 6955515,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_1739473ad50d44518b01",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6765506,
+    "currency": "usd",
+    "customer": "cus_e2a710fdd3dc4e",
+    "created": 1730098800,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 594795,
+    "monthly_payment_dollars": 5947.95,
+    "total_repayment": 7137540,
+    "total_interest": 372034,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 707,
+      "business_age_months": 117,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202410-3384",
+      "client_id": "cus_e2a710fdd3dc4e",
+      "client_type": "hospital",
+      "order_amount": 6765506,
+      "credit_limit": 37500000
+    }
+  },
+  {
+    "id": "cap_3ca3b8c7f4d3409aad69",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5118792,
+    "currency": "usd",
+    "customer": "cus_a566ae3fb2e149",
+    "created": 1729666800,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 450023,
+    "monthly_payment_dollars": 4500.23,
+    "total_repayment": 5400276,
+    "total_interest": 281484,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 737,
+      "business_age_months": 42,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202410-2937",
+      "client_id": "cus_a566ae3fb2e149",
+      "client_type": "pharmacy",
+      "order_amount": 5118792,
+      "credit_limit": 1875000
+    }
+  },
+  {
+    "id": "cap_dde0df4e1f5940adb35f",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6203796,
+    "currency": "usd",
+    "customer": "cus_3f032386c4754a",
+    "created": 1729753200,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 533938,
+    "monthly_payment_dollars": 5339.38,
+    "total_repayment": 6407256,
+    "total_interest": 203460,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 818,
+      "business_age_months": 27,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202410-8677",
+      "client_id": "cus_3f032386c4754a",
+      "client_type": "hospital",
+      "order_amount": 6203796,
+      "credit_limit": 75000000
+    }
+  },
+  {
+    "id": "cap_9f4131a33fb54b849fe9",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5116819,
+    "currency": "usd",
+    "customer": "cus_252f739530f549",
+    "created": 1729839600,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 440386,
+    "monthly_payment_dollars": 4403.86,
+    "total_repayment": 5284632,
+    "total_interest": 167813,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 828,
+      "business_age_months": 19,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202410-2068",
+      "client_id": "cus_252f739530f549",
+      "client_type": "hospital",
+      "order_amount": 5116819,
+      "credit_limit": 75000000
+    }
+  },
+  {
+    "id": "cap_f56813cc5da64826aae4",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5261529,
+    "currency": "usd",
+    "customer": "cus_8a196af9418243",
+    "created": 1729753200,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 462571,
+    "monthly_payment_dollars": 4625.71,
+    "total_repayment": 5550852,
+    "total_interest": 289323,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 701,
+      "business_age_months": 50,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202410-6611",
+      "client_id": "cus_8a196af9418243",
+      "client_type": "pharmacy",
+      "order_amount": 5261529,
+      "credit_limit": 1875000
+    }
+  },
+  {
+    "id": "cap_524d197aca1f47a583ab",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5098977,
+    "currency": "usd",
+    "customer": "cus_334771d98be04d",
+    "created": 1729753200,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 448281,
+    "monthly_payment_dollars": 4482.81,
+    "total_repayment": 5379372,
+    "total_interest": 280395,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 713,
+      "business_age_months": 119,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202410-4939",
+      "client_id": "cus_334771d98be04d",
+      "client_type": "pharmacy",
+      "order_amount": 5098977,
+      "credit_limit": 1875000
+    }
+  },
+  {
+    "id": "cap_b22c6116b555492ba5ae",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6895183,
+    "currency": "usd",
+    "customer": "cus_d587cab55f544a",
+    "created": 1729580400,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 593443,
+    "monthly_payment_dollars": 5934.43,
+    "total_repayment": 7121316,
+    "total_interest": 226133,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 809,
+      "business_age_months": 60,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202410-7956",
+      "client_id": "cus_d587cab55f544a",
+      "client_type": "hospital",
+      "order_amount": 6895183,
+      "credit_limit": 75000000
+    }
+  },
+  {
+    "id": "cap_fa1aa8b7644347ea886e",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6899048,
+    "currency": "usd",
+    "customer": "cus_19261a482da748",
+    "created": 1730185200,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 606535,
+    "monthly_payment_dollars": 6065.35,
+    "total_repayment": 7278420,
+    "total_interest": 379372,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 713,
+      "business_age_months": 117,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202410-4513",
+      "client_id": "cus_19261a482da748",
+      "client_type": "hospital",
+      "order_amount": 6899048,
+      "credit_limit": 37500000
+    }
+  },
+  {
+    "id": "cap_8ba650dc13f9456eab66",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5573218,
+    "currency": "usd",
+    "customer": "cus_63035a80cdb849",
+    "created": 1730444400,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 479666,
+    "monthly_payment_dollars": 4796.66,
+    "total_repayment": 5755992,
+    "total_interest": 182774,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 808,
+      "business_age_months": 39,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202411-9745",
+      "client_id": "cus_63035a80cdb849",
+      "client_type": "hospital",
+      "order_amount": 5573218,
+      "credit_limit": 75000000
+    }
+  },
+  {
+    "id": "cap_2c8bc512cdbf42e580b3",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5959888,
+    "currency": "usd",
+    "customer": "cus_0136a053563f46",
+    "created": 1730707200,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 518441,
+    "monthly_payment_dollars": 5184.41,
+    "total_repayment": 6221292,
+    "total_interest": 261404,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 765,
+      "business_age_months": 104,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202411-6549",
+      "client_id": "cus_0136a053563f46",
+      "client_type": "clinic",
+      "order_amount": 5959888,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_1b137033347342169ef2",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6459130,
+    "currency": "usd",
+    "customer": "cus_4c12979de9e742",
+    "created": 1730707200,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 555914,
+    "monthly_payment_dollars": 5559.14,
+    "total_repayment": 6670968,
+    "total_interest": 211838,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 846,
+      "business_age_months": 13,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202411-6538",
+      "client_id": "cus_4c12979de9e742",
+      "client_type": "hospital",
+      "order_amount": 6459130,
+      "credit_limit": 75000000
+    }
+  },
+  {
+    "id": "cap_e28ff2d6296143979bd2",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5116545,
+    "currency": "usd",
+    "customer": "cus_ec574b7ca30844",
+    "created": 1730617200,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 440362,
+    "monthly_payment_dollars": 4403.62,
+    "total_repayment": 5284344,
+    "total_interest": 167799,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 803,
+      "business_age_months": 21,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202411-7303",
+      "client_id": "cus_ec574b7ca30844",
+      "client_type": "lab",
+      "order_amount": 5116545,
+      "credit_limit": 15000000
+    }
+  },
+  {
+    "id": "cap_b3ea347db0b742b09fe4",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5269121,
+    "currency": "usd",
+    "customer": "cus_d79661d259044e",
+    "created": 1730880000,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 458352,
+    "monthly_payment_dollars": 4583.52,
+    "total_repayment": 5500224,
+    "total_interest": 231103,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 778,
+      "business_age_months": 48,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202411-4435",
+      "client_id": "cus_d79661d259044e",
+      "client_type": "clinic",
+      "order_amount": 5269121,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_e61284057c494e49a1a7",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 7449167,
+    "currency": "usd",
+    "customer": "cus_466b0ea5ece347",
+    "created": 1730793600,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 641123,
+    "monthly_payment_dollars": 6411.23,
+    "total_repayment": 7693476,
+    "total_interest": 244309,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 805,
+      "business_age_months": 73,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202411-5475",
+      "client_id": "cus_466b0ea5ece347",
+      "client_type": "lab",
+      "order_amount": 7449167,
+      "credit_limit": 15000000
+    }
+  },
+  {
+    "id": "cap_4ead57249e1846d98849",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6003450,
+    "currency": "usd",
+    "customer": "cus_fe75678f9f2b44",
+    "created": 1731225600,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 527798,
+    "monthly_payment_dollars": 5277.98,
+    "total_repayment": 6333576,
+    "total_interest": 330126,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 705,
+      "business_age_months": 88,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202411-7866",
+      "client_id": "cus_fe75678f9f2b44",
+      "client_type": "clinic",
+      "order_amount": 6003450,
+      "credit_limit": 7500000
+    }
+  },
+  {
+    "id": "cap_f2d743fe099141d0837c",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6388340,
+    "currency": "usd",
+    "customer": "cus_61b72b77ce134e",
+    "created": 1730966400,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 549821,
+    "monthly_payment_dollars": 5498.21,
+    "total_repayment": 6597852,
+    "total_interest": 209512,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 809,
+      "business_age_months": 59,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202411-3772",
+      "client_id": "cus_61b72b77ce134e",
+      "client_type": "lab",
+      "order_amount": 6388340,
+      "credit_limit": 15000000
+    }
+  },
+  {
+    "id": "cap_95b1da9c21f248808b45",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5369598,
+    "currency": "usd",
+    "customer": "cus_8a196af9418243",
+    "created": 1730880000,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 472072,
+    "monthly_payment_dollars": 4720.72,
+    "total_repayment": 5664864,
+    "total_interest": 295266,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 701,
+      "business_age_months": 105,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202411-6238",
+      "client_id": "cus_8a196af9418243",
+      "client_type": "pharmacy",
+      "order_amount": 5369598,
+      "credit_limit": 1875000
+    }
+  },
+  {
+    "id": "cap_82a29c30ac0e4bf9ae32",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5426686,
+    "currency": "usd",
+    "customer": "cus_e65dc7262cd049",
+    "created": 1731052800,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 477091,
+    "monthly_payment_dollars": 4770.91,
+    "total_repayment": 5725092,
+    "total_interest": 298406,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 740,
+      "business_age_months": 43,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202411-3394",
+      "client_id": "cus_e65dc7262cd049",
+      "client_type": "pharmacy",
+      "order_amount": 5426686,
+      "credit_limit": 1875000
+    }
+  },
+  {
+    "id": "cap_08b0d6629627433f9b06",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 7234094,
+    "currency": "usd",
+    "customer": "cus_16b1ef85d7dc41",
+    "created": 1731484800,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 635991,
+    "monthly_payment_dollars": 6359.91,
+    "total_repayment": 7631892,
+    "total_interest": 397798,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 725,
+      "business_age_months": 95,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202411-3599",
+      "client_id": "cus_16b1ef85d7dc41",
+      "client_type": "clinic",
+      "order_amount": 7234094,
+      "credit_limit": 7500000
+    }
+  },
+  {
+    "id": "cap_b44f26eaf5c54bf0b9a3",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5829933,
+    "currency": "usd",
+    "customer": "cus_e051d35203c74c",
+    "created": 1731830400,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 507136,
+    "monthly_payment_dollars": 5071.36,
+    "total_repayment": 6085632,
+    "total_interest": 255699,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 796,
+      "business_age_months": 116,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202411-9705",
+      "client_id": "cus_e051d35203c74c",
+      "client_type": "lab",
+      "order_amount": 5829933,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_e1f31962e6114e969962",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6769229,
+    "currency": "usd",
+    "customer": "cus_5cb51dc334aa40",
+    "created": 1731484800,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 588844,
+    "monthly_payment_dollars": 5888.44,
+    "total_repayment": 7066128,
+    "total_interest": 296899,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 783,
+      "business_age_months": 40,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202411-8964",
+      "client_id": "cus_5cb51dc334aa40",
+      "client_type": "clinic",
+      "order_amount": 6769229,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_a901847b4bda46669fde",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5355790,
+    "currency": "usd",
+    "customer": "cus_a19e63ed450148",
+    "created": 1731571200,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 470859,
+    "monthly_payment_dollars": 4708.59,
+    "total_repayment": 5650308,
+    "total_interest": 294518,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 701,
+      "business_age_months": 77,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202411-6154",
+      "client_id": "cus_a19e63ed450148",
+      "client_type": "hospital",
+      "order_amount": 5355790,
+      "credit_limit": 37500000
+    }
+  },
+  {
+    "id": "cap_1d672d3feb284b5f98e2",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5486201,
+    "currency": "usd",
+    "customer": "cus_37a3c364629640",
+    "created": 1732694400,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 477236,
+    "monthly_payment_dollars": 4772.36,
+    "total_repayment": 5726832,
+    "total_interest": 240631,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 765,
+      "business_age_months": 90,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202411-9992",
+      "client_id": "cus_37a3c364629640",
+      "client_type": "lab",
+      "order_amount": 5486201,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_9ad1542a26c045e6a440",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5182054,
+    "currency": "usd",
+    "customer": "cus_d3c0e69c987d49",
+    "created": 1732953600,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 450778,
+    "monthly_payment_dollars": 4507.78,
+    "total_repayment": 5409336,
+    "total_interest": 227282,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 783,
+      "business_age_months": 86,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202411-8356",
+      "client_id": "cus_d3c0e69c987d49",
+      "client_type": "lab",
+      "order_amount": 5182054,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_8dd88f986b8149f9a2eb",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5580867,
+    "currency": "usd",
+    "customer": "cus_c8fae3ae609e43",
+    "created": 1732953600,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 490646,
+    "monthly_payment_dollars": 4906.46,
+    "total_repayment": 5887752,
+    "total_interest": 306885,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 700,
+      "business_age_months": 93,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202411-9270",
+      "client_id": "cus_c8fae3ae609e43",
+      "client_type": "pharmacy",
+      "order_amount": 5580867,
+      "credit_limit": 1875000
+    }
+  },
+  {
+    "id": "cap_a35e480bb670428d8d4e",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5631860,
+    "currency": "usd",
+    "customer": "cus_7f63ac8335fd4b",
+    "created": 1732867200,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 489906,
+    "monthly_payment_dollars": 4899.06,
+    "total_repayment": 5878872,
+    "total_interest": 247012,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 777,
+      "business_age_months": 119,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202411-5414",
+      "client_id": "cus_7f63ac8335fd4b",
+      "client_type": "hospital",
+      "order_amount": 5631860,
+      "credit_limit": 50000000
+    }
+  },
+  {
+    "id": "cap_4570b4a1b2634d269a63",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6526072,
+    "currency": "usd",
+    "customer": "cus_6ae5054048dc48",
+    "created": 1733126400,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 567692,
+    "monthly_payment_dollars": 5676.92,
+    "total_repayment": 6812304,
+    "total_interest": 286232,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 794,
+      "business_age_months": 33,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202412-2963",
+      "client_id": "cus_6ae5054048dc48",
+      "client_type": "clinic",
+      "order_amount": 6526072,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_68bdac1cac9d49558f3f",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 7189997,
+    "currency": "usd",
+    "customer": "cus_ed7da81fcbe049",
+    "created": 1732867200,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 618817,
+    "monthly_payment_dollars": 6188.17,
+    "total_repayment": 7425804,
+    "total_interest": 235807,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 811,
+      "business_age_months": 115,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202411-9284",
+      "client_id": "cus_ed7da81fcbe049",
+      "client_type": "lab",
+      "order_amount": 7189997,
+      "credit_limit": 15000000
+    }
+  },
+  {
+    "id": "cap_41e00fabb25f4fc0adf3",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6857781,
+    "currency": "usd",
+    "customer": "cus_82f1fab3f3b34b",
+    "created": 1733644800,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 590224,
+    "monthly_payment_dollars": 5902.24,
+    "total_repayment": 7082688,
+    "total_interest": 224907,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 843,
+      "business_age_months": 35,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202412-4547",
+      "client_id": "cus_82f1fab3f3b34b",
+      "client_type": "hospital",
+      "order_amount": 6857781,
+      "credit_limit": 75000000
+    }
+  },
+  {
+    "id": "cap_3c0e6ed8f2ce43bbb639",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5642425,
+    "currency": "usd",
+    "customer": "cus_ecd71d7044d04e",
+    "created": 1733731200,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 490825,
+    "monthly_payment_dollars": 4908.25,
+    "total_repayment": 5889900,
+    "total_interest": 247475,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 773,
+      "business_age_months": 66,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202412-8333",
+      "client_id": "cus_ecd71d7044d04e",
+      "client_type": "lab",
+      "order_amount": 5642425,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_fd53ce1cf595410683f7",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6083374,
+    "currency": "usd",
+    "customer": "cus_14841df3052544",
+    "created": 1733472000,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 529183,
+    "monthly_payment_dollars": 5291.83,
+    "total_repayment": 6350196,
+    "total_interest": 266822,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 775,
+      "business_age_months": 52,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202412-3925",
+      "client_id": "cus_14841df3052544",
+      "client_type": "clinic",
+      "order_amount": 6083374,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_d8a2ff628d3f46dd9aef",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5375120,
+    "currency": "usd",
+    "customer": "cus_4de0ff2d05e443",
+    "created": 1733472000,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 462617,
+    "monthly_payment_dollars": 4626.17,
+    "total_repayment": 5551404,
+    "total_interest": 176284,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 807,
+      "business_age_months": 53,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202412-7898",
+      "client_id": "cus_4de0ff2d05e443",
+      "client_type": "lab",
+      "order_amount": 5375120,
+      "credit_limit": 15000000
+    }
+  },
+  {
+    "id": "cap_b7430f7318c741728576",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5519391,
+    "currency": "usd",
+    "customer": "cus_2c5fb63f88ed41",
+    "created": 1733472000,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 480123,
+    "monthly_payment_dollars": 4801.23,
+    "total_repayment": 5761476,
+    "total_interest": 242085,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 764,
+      "business_age_months": 118,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202412-8860",
+      "client_id": "cus_2c5fb63f88ed41",
+      "client_type": "lab",
+      "order_amount": 5519391,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_41db4232ca7541d6a626",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5334046,
+    "currency": "usd",
+    "customer": "cus_6648c21670874c",
+    "created": 1733558400,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 464000,
+    "monthly_payment_dollars": 4640.0,
+    "total_repayment": 5568000,
+    "total_interest": 233954,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 765,
+      "business_age_months": 113,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202412-7572",
+      "client_id": "cus_6648c21670874c",
+      "client_type": "lab",
+      "order_amount": 5334046,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_ef29998b06334ee2a186",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6116218,
+    "currency": "usd",
+    "customer": "cus_2056317a1fa249",
+    "created": 1733904000,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 537712,
+    "monthly_payment_dollars": 5377.12,
+    "total_repayment": 6452544,
+    "total_interest": 336326,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 711,
+      "business_age_months": 68,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202412-1861",
+      "client_id": "cus_2056317a1fa249",
+      "client_type": "hospital",
+      "order_amount": 6116218,
+      "credit_limit": 37500000
+    }
+  },
+  {
+    "id": "cap_4aab562f629c4424b972",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 7564046,
+    "currency": "usd",
+    "customer": "cus_a9b580bfe9e641",
+    "created": 1733472000,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 664999,
+    "monthly_payment_dollars": 6649.99,
+    "total_repayment": 7979988,
+    "total_interest": 415942,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 720,
+      "business_age_months": 24,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202412-5653",
+      "client_id": "cus_a9b580bfe9e641",
+      "client_type": "lab",
+      "order_amount": 7564046,
+      "credit_limit": 7500000
+    }
+  },
+  {
+    "id": "cap_08d6905ae68e4d84bea2",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5997281,
+    "currency": "usd",
+    "customer": "cus_898fedd369084a",
+    "created": 1734508800,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 521694,
+    "monthly_payment_dollars": 5216.94,
+    "total_repayment": 6260328,
+    "total_interest": 263047,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 765,
+      "business_age_months": 49,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202412-4077",
+      "client_id": "cus_898fedd369084a",
+      "client_type": "clinic",
+      "order_amount": 5997281,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_d7a5a87c002742399811",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6699195,
+    "currency": "usd",
+    "customer": "cus_48acb6dfa2e741",
+    "created": 1734163200,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 582752,
+    "monthly_payment_dollars": 5827.52,
+    "total_repayment": 6993024,
+    "total_interest": 293829,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 781,
+      "business_age_months": 71,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202412-8291",
+      "client_id": "cus_48acb6dfa2e741",
+      "client_type": "lab",
+      "order_amount": 6699195,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_3c91130a0d20467f8a9e",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5238605,
+    "currency": "usd",
+    "customer": "cus_3a2766232fe344",
+    "created": 1734508800,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 450868,
+    "monthly_payment_dollars": 4508.68,
+    "total_repayment": 5410416,
+    "total_interest": 171811,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 809,
+      "business_age_months": 88,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202412-2071",
+      "client_id": "cus_3a2766232fe344",
+      "client_type": "hospital",
+      "order_amount": 5238605,
+      "credit_limit": 75000000
+    }
+  },
+  {
+    "id": "cap_d96c0ba76bd04d039814",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5759423,
+    "currency": "usd",
+    "customer": "cus_252f739530f549",
+    "created": 1734422400,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 495692,
+    "monthly_payment_dollars": 4956.92,
+    "total_repayment": 5948304,
+    "total_interest": 188881,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 828,
+      "business_age_months": 24,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202412-4890",
+      "client_id": "cus_252f739530f549",
+      "client_type": "hospital",
+      "order_amount": 5759423,
+      "credit_limit": 75000000
+    }
+  },
+  {
+    "id": "cap_d03b005741c8497a876b",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 7285536,
+    "currency": "usd",
+    "customer": "cus_4272631df22c4c",
+    "created": 1734508800,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 633757,
+    "monthly_payment_dollars": 6337.57,
+    "total_repayment": 7605084,
+    "total_interest": 319548,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 788,
+      "business_age_months": 120,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202412-3287",
+      "client_id": "cus_4272631df22c4c",
+      "client_type": "lab",
+      "order_amount": 7285536,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_f1ecac5ba03c4bff8608",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6093425,
+    "currency": "usd",
+    "customer": "cus_a19e63ed450148",
+    "created": 1734076800,
+    "term_length_months": 12,
+    "interest_rate": 0.1,
+    "monthly_payment_cents": 535708,
+    "monthly_payment_dollars": 5357.08,
+    "total_repayment": 6428496,
+    "total_interest": 335071,
+    "status": "declined",
+    "risk_assessment": {
+      "credit_score": 701,
+      "business_age_months": 83,
+      "revenue_verification": "verified",
+      "risk_tier": "medium"
+    },
+    "metadata": {
+      "po_number": "PO-202412-5798",
+      "client_id": "cus_a19e63ed450148",
+      "client_type": "hospital",
+      "order_amount": 6093425,
+      "credit_limit": 37500000
+    }
+  },
+  {
+    "id": "cap_d1b3e6a61e0d4443b322",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 6072023,
+    "currency": "usd",
+    "customer": "cus_1a4c40e7684e48",
+    "created": 1734422400,
+    "term_length_months": 12,
+    "interest_rate": 0.08,
+    "monthly_payment_cents": 528195,
+    "monthly_payment_dollars": 5281.95,
+    "total_repayment": 6338340,
+    "total_interest": 266317,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 764,
+      "business_age_months": 102,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202412-3128",
+      "client_id": "cus_1a4c40e7684e48",
+      "client_type": "clinic",
+      "order_amount": 6072023,
+      "credit_limit": 10000000
+    }
+  },
+  {
+    "id": "cap_96b1fe047d46476482d2",
+    "object": "capital_offer",
+    "type": "stripe_capital",
+    "amount": 5126372,
+    "currency": "usd",
+    "customer": "cus_d39cd089e88744",
+    "created": 1733990400,
+    "term_length_months": 12,
+    "interest_rate": 0.06,
+    "monthly_payment_cents": 441208,
+    "monthly_payment_dollars": 4412.08,
+    "total_repayment": 5294496,
+    "total_interest": 168124,
+    "status": "accepted",
+    "risk_assessment": {
+      "credit_score": 806,
+      "business_age_months": 61,
+      "revenue_verification": "verified",
+      "risk_tier": "low"
+    },
+    "metadata": {
+      "po_number": "PO-202412-5479",
+      "client_id": "cus_d39cd089e88744",
+      "client_type": "hospital",
+      "order_amount": 5126372,
+      "credit_limit": 75000000
+    }
+  }
+]

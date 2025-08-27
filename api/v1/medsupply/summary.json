@@ -1,0 +1,40 @@
+{
+  "total_clients": 728,
+  "total_orders": 6264,
+  "total_invoices": 6264,
+  "data_period": "24 months B2B medical equipment lifecycle",
+  "financial_metrics": {
+    "total_order_value": 107170998.81,
+    "total_revenue": 105805619.34,
+    "average_order_value": 17109.04,
+    "days_sales_outstanding": 0,
+    "volume_discounts": 16854055.11,
+    "discount_rate": 0.157
+  },
+  "customer_distribution": {
+    "hospitals": 183,
+    "clinics": 296,
+    "labs": 150,
+    "pharmacies": 99
+  },
+  "payment_patterns": {
+    "collection_rate": 1.0,
+    "late_payment_rate": 0.014,
+    "payment_methods": {
+      "ach_debit": 3885,
+      "wire_transfer": 1524,
+      "card": 855
+    },
+    "payment_terms": {
+      "net_30": 487,
+      "net_60": 191,
+      "net_90": 50
+    }
+  },
+  "financing_metrics": {
+    "offers_made": 101,
+    "acceptance_rate": 0.554,
+    "total_financing": 6078145.26
+  },
+  "generated_at": "2024-12-19T10:00:00Z"
+}

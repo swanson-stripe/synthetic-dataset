@@ -1,0 +1,14 @@
+{
+  "gmv": 33953236.35,
+  "platform_revenue": 5122705.45,
+  "take_rate_percentage": 15.087532149199673,
+  "average_order_value": 57.74841160232741,
+  "total_orders": 587951,
+  "total_restaurants": 500,
+  "total_drivers": 1000,
+  "orders_per_restaurant": 1175.902,
+  "orders_per_driver": 587.951,
+  "payment_failure_rate": 0.020081666666666668,
+  "refund_rate": 0.04,
+  "driver_utilization_rate": 1.0
+}

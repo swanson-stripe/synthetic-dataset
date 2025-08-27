@@ -1,21 +1,59 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "updated_at": "2024-12-19T10:00:00Z",
-  "description": "Available business personas with synthetic Stripe data",
+  "description": "Complete collection of 9 business personas with lifecycle stage selection",
+  "lifecycle_stages": {
+    "early": {
+      "name": "Early Stage",
+      "description": "Months 1-8: Startup phase with lower volume, higher churn",
+      "characteristics": ["Lower transaction volumes", "Higher failure rates", "Learning customer patterns"]
+    },
+    "growth": {
+      "name": "Growth Stage", 
+      "description": "Months 9-16: Expansion phase with scaling operations",
+      "characteristics": ["Increasing volumes", "Improving conversion", "Scaling challenges"]
+    },
+    "mature": {
+      "name": "Mature Stage",
+      "description": "Months 17-24: Established business with optimized operations", 
+      "characteristics": ["High volumes", "Optimized processes", "Market leadership"]
+    }
+  },
   "personas": {
     "techstyle": {
       "id": "techstyle",
       "name": "TechStyle Fashion Retailer", 
-      "description": "E-commerce fashion retailer with payment processing",
+      "description": "E-commerce fashion retailer with global payment processing",
       "business_model": "ecommerce",
       "industry": "fashion_retail",
       "complexity": "medium",
       "data_scale": "large",
+      "lifecycle_support": true,
       "endpoints": {
-        "payments": "/v1/techstyle/payments.json",
-        "customers": "/v1/techstyle/customers.json", 
-        "metrics": "/v1/techstyle/metrics.json",
-        "summary": "/v1/techstyle/summary.json"
+        "early": {
+          "payments": "/v1/techstyle/early/payments.json",
+          "customers": "/v1/techstyle/early/customers.json",
+          "metrics": "/v1/techstyle/early/metrics.json",
+          "summary": "/v1/techstyle/early/summary.json"
+        },
+        "growth": {
+          "payments": "/v1/techstyle/growth/payments.json",
+          "customers": "/v1/techstyle/growth/customers.json",
+          "metrics": "/v1/techstyle/growth/metrics.json",
+          "summary": "/v1/techstyle/growth/summary.json"
+        },
+        "mature": {
+          "payments": "/v1/techstyle/mature/payments.json",
+          "customers": "/v1/techstyle/mature/customers.json",
+          "metrics": "/v1/techstyle/mature/metrics.json",
+          "summary": "/v1/techstyle/mature/summary.json"
+        },
+        "combined": {
+          "payments": "/v1/techstyle/payments.json",
+          "customers": "/v1/techstyle/customers.json", 
+          "metrics": "/v1/techstyle/metrics.json",
+          "summary": "/v1/techstyle/summary.json"
+        }
       },
       "features": [
         "Multi-currency payments",
@@ -48,15 +86,40 @@
       "industry": "education",
       "complexity": "high",
       "data_scale": "large",
+      "lifecycle_support": true,
       "endpoints": {
-        "instructors": "/v1/edutech/instructors.json",
-        "students": "/v1/edutech/students.json",
-        "courses": "/v1/edutech/courses.json",
-        "enrollments": "/v1/edutech/enrollments.json",
-        "progress": "/v1/edutech/progress.json",
-        "tax_documents": "/v1/edutech/tax_documents.json",
-        "metrics": "/v1/edutech/metrics.json",
-        "summary": "/v1/edutech/summary.json"
+        "early": {
+          "instructors": "/v1/edutech/early/instructors.json",
+          "students": "/v1/edutech/early/students.json",
+          "courses": "/v1/edutech/early/courses.json",
+          "enrollments": "/v1/edutech/early/enrollments.json",
+          "metrics": "/v1/edutech/early/metrics.json",
+          "summary": "/v1/edutech/early/summary.json"
+        },
+        "growth": {
+          "instructors": "/v1/edutech/growth/instructors.json",
+          "students": "/v1/edutech/growth/students.json",
+          "courses": "/v1/edutech/growth/courses.json",
+          "enrollments": "/v1/edutech/growth/enrollments.json",
+          "metrics": "/v1/edutech/growth/metrics.json",
+          "summary": "/v1/edutech/growth/summary.json"
+        },
+        "mature": {
+          "instructors": "/v1/edutech/mature/instructors.json",
+          "students": "/v1/edutech/mature/students.json",
+          "courses": "/v1/edutech/mature/courses.json",
+          "enrollments": "/v1/edutech/mature/enrollments.json",
+          "metrics": "/v1/edutech/mature/metrics.json",
+          "summary": "/v1/edutech/mature/summary.json"
+        },
+        "combined": {
+          "instructors": "/v1/edutech/instructors.json",
+          "students": "/v1/edutech/students.json",
+          "courses": "/v1/edutech/courses.json",
+          "enrollments": "/v1/edutech/enrollments.json",
+          "metrics": "/v1/edutech/metrics.json",
+          "summary": "/v1/edutech/summary.json"
+        }
       },
       "features": [
         "Instructor marketplace",
@@ -91,14 +154,36 @@
       "industry": "real_estate",
       "complexity": "medium",
       "data_scale": "medium",
+      "lifecycle_support": true,
       "endpoints": {
-        "landlords": "/v1/propertyflow/landlords.json",
-        "properties": "/v1/propertyflow/properties.json",
-        "rent_payments": "/v1/propertyflow/rent_payments.json",
-        "security_deposits": "/v1/propertyflow/security_deposits.json",
-        "maintenance": "/v1/propertyflow/maintenance.json",
-        "metrics": "/v1/propertyflow/metrics.json",
-        "summary": "/v1/propertyflow/summary.json"
+        "early": {
+          "landlords": "/v1/propertyflow/early/landlords.json",
+          "properties": "/v1/propertyflow/early/properties.json",
+          "rent_payments": "/v1/propertyflow/early/rent_payments.json",
+          "metrics": "/v1/propertyflow/early/metrics.json",
+          "summary": "/v1/propertyflow/early/summary.json"
+        },
+        "growth": {
+          "landlords": "/v1/propertyflow/growth/landlords.json",
+          "properties": "/v1/propertyflow/growth/properties.json",
+          "rent_payments": "/v1/propertyflow/growth/rent_payments.json",
+          "metrics": "/v1/propertyflow/growth/metrics.json",
+          "summary": "/v1/propertyflow/growth/summary.json"
+        },
+        "mature": {
+          "landlords": "/v1/propertyflow/mature/landlords.json",
+          "properties": "/v1/propertyflow/mature/properties.json",
+          "rent_payments": "/v1/propertyflow/mature/rent_payments.json",
+          "metrics": "/v1/propertyflow/mature/metrics.json",
+          "summary": "/v1/propertyflow/mature/summary.json"
+        },
+        "combined": {
+          "landlords": "/v1/propertyflow/landlords.json",
+          "properties": "/v1/propertyflow/properties.json",
+          "rent_payments": "/v1/propertyflow/rent_payments.json",
+          "metrics": "/v1/propertyflow/metrics.json",
+          "summary": "/v1/propertyflow/summary.json"
+        }
       },
       "features": [
         "Automated rent collection",
@@ -132,14 +217,40 @@
       "industry": "fitness", 
       "complexity": "medium",
       "data_scale": "large",
+      "lifecycle_support": true,
       "endpoints": {
-        "subscriptions": "/v1/fitstream/subscriptions.json",
-        "customers": "/v1/fitstream/customers.json",
-        "payments": "/v1/fitstream/payments.json",
-        "trials": "/v1/fitstream/trials.json",
-        "engagement": "/v1/fitstream/engagement.json",
-        "metrics": "/v1/fitstream/metrics.json",
-        "summary": "/v1/fitstream/summary.json"
+        "early": {
+          "subscriptions": "/v1/fitstream/early/subscriptions.json",
+          "customers": "/v1/fitstream/early/customers.json",
+          "payments": "/v1/fitstream/early/payments.json",
+          "trials": "/v1/fitstream/early/trials.json",
+          "metrics": "/v1/fitstream/early/metrics.json",
+          "summary": "/v1/fitstream/early/summary.json"
+        },
+        "growth": {
+          "subscriptions": "/v1/fitstream/growth/subscriptions.json",
+          "customers": "/v1/fitstream/growth/customers.json",
+          "payments": "/v1/fitstream/growth/payments.json",
+          "trials": "/v1/fitstream/growth/trials.json",
+          "metrics": "/v1/fitstream/growth/metrics.json",
+          "summary": "/v1/fitstream/growth/summary.json"
+        },
+        "mature": {
+          "subscriptions": "/v1/fitstream/mature/subscriptions.json",
+          "customers": "/v1/fitstream/mature/customers.json",
+          "payments": "/v1/fitstream/mature/payments.json",
+          "trials": "/v1/fitstream/mature/trials.json",
+          "metrics": "/v1/fitstream/mature/metrics.json",
+          "summary": "/v1/fitstream/mature/summary.json"
+        },
+        "combined": {
+          "subscriptions": "/v1/fitstream/subscriptions.json",
+          "customers": "/v1/fitstream/customers.json",
+          "payments": "/v1/fitstream/payments.json",
+          "trials": "/v1/fitstream/trials.json",
+          "metrics": "/v1/fitstream/metrics.json",
+          "summary": "/v1/fitstream/summary.json"
+        }
       },
       "features": [
         "Free trial management",
@@ -173,15 +284,45 @@
       "business_model": "creator_economy",
       "industry": "content_creation",
       "complexity": "high",
-      "data_scale": "large", 
+      "data_scale": "large",
+      "lifecycle_support": true,
       "endpoints": {
-        "creators": "/v1/creatorhub/creators.json",
-        "fans": "/v1/creatorhub/fans.json",
-        "content_sales": "/v1/creatorhub/content_sales.json",
-        "subscriptions": "/v1/creatorhub/subscriptions.json",
-        "tips": "/v1/creatorhub/tips.json",
-        "metrics": "/v1/creatorhub/metrics.json",
-        "summary": "/v1/creatorhub/summary.json"
+        "early": {
+          "creators": "/v1/creatorhub/early/creators.json",
+          "fans": "/v1/creatorhub/early/fans.json",
+          "content_sales": "/v1/creatorhub/early/content_sales.json",
+          "subscriptions": "/v1/creatorhub/early/subscriptions.json",
+          "tips": "/v1/creatorhub/early/tips.json",
+          "metrics": "/v1/creatorhub/early/metrics.json",
+          "summary": "/v1/creatorhub/early/summary.json"
+        },
+        "growth": {
+          "creators": "/v1/creatorhub/growth/creators.json",
+          "fans": "/v1/creatorhub/growth/fans.json",
+          "content_sales": "/v1/creatorhub/growth/content_sales.json",
+          "subscriptions": "/v1/creatorhub/growth/subscriptions.json",
+          "tips": "/v1/creatorhub/growth/tips.json",
+          "metrics": "/v1/creatorhub/growth/metrics.json",
+          "summary": "/v1/creatorhub/growth/summary.json"
+        },
+        "mature": {
+          "creators": "/v1/creatorhub/mature/creators.json",
+          "fans": "/v1/creatorhub/mature/fans.json",
+          "content_sales": "/v1/creatorhub/mature/content_sales.json",
+          "subscriptions": "/v1/creatorhub/mature/subscriptions.json",
+          "tips": "/v1/creatorhub/mature/tips.json",
+          "metrics": "/v1/creatorhub/mature/metrics.json",
+          "summary": "/v1/creatorhub/mature/summary.json"
+        },
+        "combined": {
+          "creators": "/v1/creatorhub/creators.json",
+          "fans": "/v1/creatorhub/fans.json",
+          "content_sales": "/v1/creatorhub/content_sales.json",
+          "subscriptions": "/v1/creatorhub/subscriptions.json",
+          "tips": "/v1/creatorhub/tips.json",
+          "metrics": "/v1/creatorhub/metrics.json",
+          "summary": "/v1/creatorhub/summary.json"
+        }
       },
       "features": [
         "Creator marketplace",
@@ -207,11 +348,286 @@
       },
       "status": "available",
       "last_updated": "2024-12-19"
+    },
+    "givehope": {
+      "id": "givehope",
+      "name": "GiveHope Non-Profit Platform",
+      "description": "Non-profit donation platform with campaigns and recurring donors",
+      "business_model": "nonprofit",
+      "industry": "charitable_giving",
+      "complexity": "medium",
+      "data_scale": "large",
+      "lifecycle_support": true,
+      "endpoints": {
+        "early": {
+          "donors": "/v1/givehope/early/donors.json",
+          "campaigns": "/v1/givehope/early/campaigns.json",
+          "donations": "/v1/givehope/early/donations.json",
+          "subscriptions": "/v1/givehope/early/subscriptions.json",
+          "metrics": "/v1/givehope/early/metrics.json",
+          "summary": "/v1/givehope/early/summary.json"
+        },
+        "growth": {
+          "donors": "/v1/givehope/growth/donors.json",
+          "campaigns": "/v1/givehope/growth/campaigns.json",
+          "donations": "/v1/givehope/growth/donations.json",
+          "subscriptions": "/v1/givehope/growth/subscriptions.json",
+          "metrics": "/v1/givehope/growth/metrics.json",
+          "summary": "/v1/givehope/growth/summary.json"
+        },
+        "mature": {
+          "donors": "/v1/givehope/mature/donors.json",
+          "campaigns": "/v1/givehope/mature/campaigns.json",
+          "donations": "/v1/givehope/mature/donations.json",
+          "subscriptions": "/v1/givehope/mature/subscriptions.json",
+          "metrics": "/v1/givehope/mature/metrics.json",
+          "summary": "/v1/givehope/mature/summary.json"
+        },
+        "combined": {
+          "donors": "/v1/givehope/donors.json",
+          "campaigns": "/v1/givehope/campaigns.json",
+          "donations": "/v1/givehope/donations.json",
+          "subscriptions": "/v1/givehope/subscriptions.json",
+          "metrics": "/v1/givehope/metrics.json",
+          "summary": "/v1/givehope/summary.json"
+        }
+      },
+      "features": [
+        "Campaign fundraising",
+        "Recurring donations",
+        "Employer matching",
+        "Seasonal giving patterns",
+        "Tax receipt generation",
+        "Major donor management"
+      ],
+      "stripe_products": [
+        "Payment Intents",
+        "Billing (Recurring donations)",
+        "Customer Portal",
+        "Climate (Carbon offset)",
+        "Tax (Receipt generation)"
+      ],
+      "sample_metrics": {
+        "total_donors": "~15k donors",
+        "total_campaigns": "55 campaigns",
+        "total_raised": "$17.5M",
+        "recurring_donors": "10% of donor base",
+        "seasonal_peaks": "November +465%, December surge"
+      },
+      "status": "available",
+      "last_updated": "2024-12-19"
+    },
+    "medsupply": {
+      "id": "medsupply",
+      "name": "MedSupply Pro B2B Platform",
+      "description": "B2B medical equipment wholesaler with net terms",
+      "business_model": "b2b_wholesale",
+      "industry": "medical_equipment",
+      "complexity": "high",
+      "data_scale": "large",
+      "lifecycle_support": true,
+      "endpoints": {
+        "early": {
+          "clients": "/v1/medsupply/early/clients.json",
+          "purchase_orders": "/v1/medsupply/early/purchase_orders.json",
+          "invoices": "/v1/medsupply/early/invoices.json",
+          "payments": "/v1/medsupply/early/payments.json",
+          "metrics": "/v1/medsupply/early/metrics.json",
+          "summary": "/v1/medsupply/early/summary.json"
+        },
+        "growth": {
+          "clients": "/v1/medsupply/growth/clients.json",
+          "purchase_orders": "/v1/medsupply/growth/purchase_orders.json",
+          "invoices": "/v1/medsupply/growth/invoices.json",
+          "payments": "/v1/medsupply/growth/payments.json",
+          "metrics": "/v1/medsupply/growth/metrics.json",
+          "summary": "/v1/medsupply/growth/summary.json"
+        },
+        "mature": {
+          "clients": "/v1/medsupply/mature/clients.json",
+          "purchase_orders": "/v1/medsupply/mature/purchase_orders.json",
+          "invoices": "/v1/medsupply/mature/invoices.json",
+          "payments": "/v1/medsupply/mature/payments.json",
+          "metrics": "/v1/medsupply/mature/metrics.json",
+          "summary": "/v1/medsupply/mature/summary.json"
+        },
+        "combined": {
+          "clients": "/v1/medsupply/clients.json",
+          "purchase_orders": "/v1/medsupply/purchase_orders.json",
+          "invoices": "/v1/medsupply/invoices.json",
+          "payments": "/v1/medsupply/payments.json",
+          "metrics": "/v1/medsupply/metrics.json",
+          "summary": "/v1/medsupply/summary.json"
+        }
+      },
+      "features": [
+        "Net payment terms (30/60/90)",
+        "Purchase order matching",
+        "Volume-based pricing",
+        "Credit limit management",
+        "ACH/Wire payments",
+        "Stripe Capital financing"
+      ],
+      "stripe_products": [
+        "Invoicing (Net terms)",
+        "Capital (Equipment financing)",
+        "ACH/Wire (B2B payments)",
+        "Reporting (Aging reports)"
+      ],
+      "sample_metrics": {
+        "total_clients": "728 B2B clients",
+        "total_orders": "6.3k purchase orders",
+        "order_value": "$107M total",
+        "collection_rate": "100%",
+        "payment_terms": "NET-30 (67%), NET-60 (26%), NET-90 (7%)"
+      },
+      "status": "available",
+      "last_updated": "2024-12-19"
+    },
+    "cloudflow": {
+      "id": "cloudflow",
+      "name": "CloudFlow SaaS Platform",
+      "description": "B2B SaaS platform with subscription management",
+      "business_model": "saas",
+      "industry": "software",
+      "complexity": "high",
+      "data_scale": "large",
+      "lifecycle_support": true,
+      "endpoints": {
+        "early": {
+          "customers": "/v1/cloudflow/early/customers.json",
+          "subscriptions": "/v1/cloudflow/early/subscriptions.json",
+          "invoices": "/v1/cloudflow/early/invoices.json",
+          "usage_events": "/v1/cloudflow/early/usage_events.json",
+          "metrics": "/v1/cloudflow/early/metrics.json",
+          "summary": "/v1/cloudflow/early/summary.json"
+        },
+        "growth": {
+          "customers": "/v1/cloudflow/growth/customers.json",
+          "subscriptions": "/v1/cloudflow/growth/subscriptions.json",
+          "invoices": "/v1/cloudflow/growth/invoices.json",
+          "usage_events": "/v1/cloudflow/growth/usage_events.json",
+          "metrics": "/v1/cloudflow/growth/metrics.json",
+          "summary": "/v1/cloudflow/growth/summary.json"
+        },
+        "mature": {
+          "customers": "/v1/cloudflow/mature/customers.json",
+          "subscriptions": "/v1/cloudflow/mature/subscriptions.json",
+          "invoices": "/v1/cloudflow/mature/invoices.json",
+          "usage_events": "/v1/cloudflow/mature/usage_events.json",
+          "metrics": "/v1/cloudflow/mature/metrics.json",
+          "summary": "/v1/cloudflow/mature/summary.json"
+        },
+        "combined": {
+          "customers": "/v1/cloudflow/customers.json",
+          "subscriptions": "/v1/cloudflow/subscriptions.json",
+          "invoices": "/v1/cloudflow/invoices.json",
+          "usage_events": "/v1/cloudflow/usage_events.json",
+          "metrics": "/v1/cloudflow/metrics.json",
+          "summary": "/v1/cloudflow/summary.json"
+        }
+      },
+      "features": [
+        "Subscription billing",
+        "Usage-based pricing",
+        "Trial management",
+        "Plan upgrades/downgrades",
+        "Annual vs monthly billing",
+        "Enterprise sales"
+      ],
+      "stripe_products": [
+        "Billing (Subscriptions)",
+        "Invoicing (Usage billing)",
+        "Customer Portal",
+        "Revenue Recognition",
+        "Tax (SaaS tax compliance)"
+      ],
+      "sample_metrics": {
+        "total_customers": "1.7k B2B customers",
+        "active_subscriptions": "1.6k subscriptions",
+        "current_mrr": "$334k MRR",
+        "estimated_arr": "$4M ARR",
+        "churn_rate": "2.5% monthly"
+      },
+      "status": "available",
+      "last_updated": "2024-12-19"
+    },
+    "localbites": {
+      "id": "localbites",
+      "name": "LocalBites Food Delivery",
+      "description": "Food delivery marketplace with restaurant and driver management",
+      "business_model": "marketplace",
+      "industry": "food_delivery",
+      "complexity": "high",
+      "data_scale": "very_large",
+      "lifecycle_support": true,
+      "endpoints": {
+        "early": {
+          "restaurants": "/v1/localbites/early/restaurants.json",
+          "drivers": "/v1/localbites/early/drivers.json",
+          "orders": "/v1/localbites/early/orders.json",
+          "payments": "/v1/localbites/early/payments.json",
+          "transfers": "/v1/localbites/early/transfers.json",
+          "metrics": "/v1/localbites/early/metrics.json",
+          "summary": "/v1/localbites/early/summary.json"
+        },
+        "growth": {
+          "restaurants": "/v1/localbites/growth/restaurants.json",
+          "drivers": "/v1/localbites/growth/drivers.json",
+          "orders": "/v1/localbites/growth/orders.json",
+          "payments": "/v1/localbites/growth/payments.json",
+          "transfers": "/v1/localbites/growth/transfers.json",
+          "metrics": "/v1/localbites/growth/metrics.json",
+          "summary": "/v1/localbites/growth/summary.json"
+        },
+        "mature": {
+          "restaurants": "/v1/localbites/mature/restaurants.json",
+          "drivers": "/v1/localbites/mature/drivers.json",
+          "orders": "/v1/localbites/mature/orders.json",
+          "payments": "/v1/localbites/mature/payments.json",
+          "transfers": "/v1/localbites/mature/transfers.json",
+          "metrics": "/v1/localbites/mature/metrics.json",
+          "summary": "/v1/localbites/mature/summary.json"
+        },
+        "combined": {
+          "restaurants": "/v1/localbites/connected_accounts.json",
+          "drivers": "/v1/localbites/connected_accounts.json",
+          "orders": "/v1/localbites/orders.json",
+          "payments": "/v1/localbites/payments.json",
+          "transfers": "/v1/localbites/transfers.json",
+          "metrics": "/v1/localbites/metrics.json",
+          "summary": "/v1/localbites/summary.json"
+        }
+      },
+      "features": [
+        "Restaurant onboarding",
+        "Driver management",
+        "Order processing",
+        "Multi-party payments",
+        "Instant payouts",
+        "Dynamic pricing"
+      ],
+      "stripe_products": [
+        "Connect (Express/Custom accounts)",
+        "Issuing (Driver payment cards)",
+        "Treasury (Float management)",
+        "Radar (Fraud detection)"
+      ],
+      "sample_metrics": {
+        "total_orders": "588k orders",
+        "restaurants": "500 restaurants",
+        "drivers": "1k drivers",
+        "gmv": "$34M GMV",
+        "take_rate": "15.1%"
+      },
+      "status": "available",
+      "last_updated": "2024-12-19"
     }
   },
   "usage_guide": {
+    "lifecycle_stages": "Each persona supports early/growth/mature stages with different data patterns",
+    "persona_switching": "Switch between personas and stages for comprehensive prototyping",
     "getting_started": "https://swanson-stripe.github.io/synthetic-dataset/docs/getting-started.html",
-    "persona_switching": "https://swanson-stripe.github.io/synthetic-dataset/docs/persona-switching.html", 
     "integration_examples": "https://swanson-stripe.github.io/synthetic-dataset/docs/examples/"
   }
 }

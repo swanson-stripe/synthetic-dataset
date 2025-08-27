@@ -1,0 +1,31 @@
+{
+  "total_donors": 14784,
+  "total_campaigns": 55,
+  "total_donations": 6730,
+  "data_period": "24 months non-profit donation lifecycle",
+  "financial_metrics": {
+    "total_raised": 17493794.20,
+    "processing_fees_covered": 142337.07,
+    "average_donation": 2599.38,
+    "monthly_recurring_revenue": 696693.58
+  },
+  "donor_segments": {
+    "major_donors": 1159,
+    "recurring_donors": 1499,
+    "one_time_donors": 13285,
+    "anonymous_donors": 1424
+  },
+  "campaign_performance": {
+    "disaster_relief": {"campaigns": 10, "raised": 2111447.32, "success_rate": 0.10},
+    "education": {"campaigns": 11, "raised": 1413658.91, "success_rate": 0.09},
+    "healthcare": {"campaigns": 12, "raised": 1900334.58, "success_rate": 0.00},
+    "environment": {"campaigns": 14, "raised": 3155011.21, "success_rate": 0.36},
+    "community": {"campaigns": 8, "raised": 742787.17, "success_rate": 0.38}
+  },
+  "seasonal_patterns": {
+    "november_spike": "465% increase in November (Giving Tuesday)",
+    "december_giving": "Major year-end giving surge",
+    "summer_decline": "Lower activity June-August"
+  },
+  "generated_at": "2024-12-19T10:00:00Z"
+}

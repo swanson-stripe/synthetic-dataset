@@ -1,0 +1,81 @@
+{
+  "overview": {
+    "total_clients": 728,
+    "total_orders": 6264,
+    "total_invoices": 6264,
+    "total_payments": 6264,
+    "collection_rate_percent": 100.0
+  },
+  "financial_metrics": {
+    "total_order_value_cents": 10717099881,
+    "total_order_value_dollars": 107170998.81,
+    "total_revenue_cents": 10580561934,
+    "total_revenue_dollars": 105805619.34,
+    "average_order_value_cents": 1710903,
+    "average_order_value_dollars": 17109.03556992337,
+    "days_sales_outstanding": 0,
+    "total_volume_discounts_cents": 1685405511,
+    "total_volume_discounts_dollars": 16854055.11,
+    "discount_rate_percent": 15.73
+  },
+  "payment_analysis": {
+    "late_payment_rate_percent": 1.4,
+    "payment_method_distribution": {
+      "ach_debit": 3885,
+      "wire_transfer": 1524,
+      "card": 855
+    },
+    "payment_terms_distribution": {
+      "net_30": 487,
+      "net_60": 191,
+      "net_90": 50
+    }
+  },
+  "customer_analysis": {
+    "customer_type_distribution": {
+      "clinic": 296,
+      "hospital": 183,
+      "pharmacy": 99,
+      "lab": 150
+    },
+    "avg_credit_limit_by_type": {
+      "clinic": 76266.8918918919,
+      "hospital": 541666.6666666666,
+      "pharmacy": 14962.12121212121,
+      "lab": 94666.66666666666
+    }
+  },
+  "financing_metrics": {
+    "total_offers": 101,
+    "acceptance_rate_percent": 55.45,
+    "total_financing_offered_cents": 607814526,
+    "total_financing_offered_dollars": 6078145.26
+  },
+  "aging_report": {
+    "current": {
+      "count": 0,
+      "amount_cents": 0,
+      "amount_dollars": 0.0
+    },
+    "1_30": {
+      "count": 0,
+      "amount_cents": 0,
+      "amount_dollars": 0.0
+    },
+    "31_60": {
+      "count": 0,
+      "amount_cents": 0,
+      "amount_dollars": 0.0
+    },
+    "61_90": {
+      "count": 0,
+      "amount_cents": 0,
+      "amount_dollars": 0.0
+    },
+    "90_plus": {
+      "count": 0,
+      "amount_cents": 0,
+      "amount_dollars": 0.0
+    }
+  }
+}

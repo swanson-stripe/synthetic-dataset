@@ -1,0 +1,31 @@
+{
+  "total_customers": 1661,
+  "active_subscriptions": 1620,
+  "total_invoices": 10384,
+  "data_period": "24 months B2B SaaS subscription lifecycle",
+  "revenue_metrics": {
+    "current_mrr": 33477430.33,
+    "estimated_arr": 401729164.00,
+    "total_revenue": 316038067.00,
+    "arpu": 20665.08
+  },
+  "subscription_health": {
+    "churn_rate": 0.025,
+    "ltv": 300343.30,
+    "active_rate": 0.975,
+    "trial_conversion": "15-35% by stage"
+  },
+  "plan_distribution": {
+    "starter": {"active": 591, "percentage": 36.5},
+    "professional": {"active": 331, "percentage": 20.4},
+    "enterprise": {"active": 179, "percentage": 11.0},
+    "annual_plans": {"active": 519, "percentage": 32.0}
+  },
+  "usage_patterns": {
+    "total_usage_events": 350746,
+    "api_calls": "Primary usage dimension",
+    "storage": "Secondary billing",
+    "additional_seats": "30% of customers"
+  },
+  "generated_at": "2024-12-19T10:00:00Z"
+}

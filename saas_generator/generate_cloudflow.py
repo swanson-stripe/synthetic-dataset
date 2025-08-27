@@ -215,7 +215,15 @@ def generate_subscription(customer: Dict[str, Any], start_date: datetime, plan_k
         while month > 12:
             month -= 12
             year += 1
-        period_end = start_date.replace(year=year, month=month)
+        
+        # Handle day overflow (e.g., Jan 31 -> Feb 28)
+        try:
+            period_end = start_date.replace(year=year, month=month)
+        except ValueError:
+            # If day doesn't exist in target month, use last day of month
+            import calendar
+            last_day = calendar.monthrange(year, month)[1]
+            period_end = start_date.replace(year=year, month=month, day=min(start_date.day, last_day))
     else:  # year
         period_end = start_date.replace(year=start_date.year + plan['interval_count'])
     

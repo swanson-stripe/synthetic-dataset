@@ -1,0 +1,205 @@
+{
+  "overview": {
+    "total_donors": 14784,
+    "total_campaigns": 55,
+    "total_donations": 6730,
+    "donation_success_rate": 100.0,
+    "campaign_success_rate": 18.181818181818183
+  },
+  "financial_metrics": {
+    "total_raised_cents": 1749379420,
+    "total_raised_dollars": 17493794.2,
+    "total_fees_covered_cents": 14233707,
+    "total_fees_covered_dollars": 142337.07,
+    "average_donation_cents": 259937,
+    "average_donation_dollars": 2599.3750668647845,
+    "average_first_donation_cents": 287876,
+    "average_first_donation_dollars": 2878.761635835095,
+    "monthly_recurring_revenue_cents": 69669358,
+    "monthly_recurring_revenue_dollars": 696693.58
+  },
+  "donor_segments": {
+    "major_donors": 1159,
+    "recurring_donors": 1499,
+    "one_time_donors": 13285,
+    "anonymous_donors": 1424
+  },
+  "campaign_performance": {
+    "disaster_relief": {
+      "count": 10,
+      "total_raised_cents": 211144732,
+      "total_raised_dollars": 2111447.32,
+      "avg_raised_cents": 21114473,
+      "avg_raised_dollars": 211144.732,
+      "success_rate": 10.0
+    },
+    "education": {
+      "count": 11,
+      "total_raised_cents": 141365891,
+      "total_raised_dollars": 1413658.91,
+      "avg_raised_cents": 12851444,
+      "avg_raised_dollars": 128514.44636363637,
+      "success_rate": 9.090909090909092
+    },
+    "healthcare": {
+      "count": 12,
+      "total_raised_cents": 190033458,
+      "total_raised_dollars": 1900334.58,
+      "avg_raised_cents": 15836121,
+      "avg_raised_dollars": 158361.215,
+      "success_rate": 0.0
+    },
+    "environment": {
+      "count": 14,
+      "total_raised_cents": 315501121,
+      "total_raised_dollars": 3155011.21,
+      "avg_raised_cents": 22535794,
+      "avg_raised_dollars": 225357.9435714286,
+      "success_rate": 35.714285714285715
+    },
+    "community": {
+      "count": 8,
+      "total_raised_cents": 74278717,
+      "total_raised_dollars": 742787.17,
+      "avg_raised_cents": 9284839,
+      "avg_raised_dollars": 92848.39625,
+      "success_rate": 37.5
+    }
+  },
+  "seasonal_patterns": {
+    "1": {
+      "count": 45,
+      "total_cents": 7056519,
+      "total_dollars": 70565.19,
+      "avg_cents": 156811.53333333333,
+      "avg_dollars": 1568.1153333333332
+    },
+    "2": {
+      "count": 68,
+      "total_cents": 9037244,
+      "total_dollars": 90372.44,
+      "avg_cents": 132900.64705882352,
+      "avg_dollars": 1329.0064705882353
+    },
+    "3": {
+      "count": 92,
+      "total_cents": 19908926,
+      "total_dollars": 199089.26,
+      "avg_cents": 216401.36956521738,
+      "avg_dollars": 2164.0136956521737
+    },
+    "4": {
+      "count": 141,
+      "total_cents": 33621794,
+      "total_dollars": 336217.94,
+      "avg_cents": 238452.43971631204,
+      "avg_dollars": 2384.5243971631203
+    },
+    "5": {
+      "count": 454,
+      "total_cents": 126831571,
+      "total_dollars": 1268315.71,
+      "avg_cents": 279364.6938325991,
+      "avg_dollars": 2793.646938325991
+    },
+    "6": {
+      "count": 618,
+      "total_cents": 135346236,
+      "total_dollars": 1353462.36,
+      "avg_cents": 219006.85436893205,
+      "avg_dollars": 2190.0685436893204
+    },
+    "7": {
+      "count": 942,
+      "total_cents": 133388797,
+      "total_dollars": 1333887.97,
+      "avg_cents": 141601.69532908706,
+      "avg_dollars": 1416.0169532908706
+    },
+    "8": {
+      "count": 1008,
+      "total_cents": 182234587,
+      "total_dollars": 1822345.87,
+      "avg_cents": 180788.28075396825,
+      "avg_dollars": 1807.8828075396825
+    },
+    "9": {
+      "count": 1049,
+      "total_cents": 228989386,
+      "total_dollars": 2289893.86,
+      "avg_cents": 218293.02764537654,
+      "avg_dollars": 2182.9302764537656
+    },
+    "10": {
+      "count": 1092,
+      "total_cents": 311677699,
+      "total_dollars": 3116776.99,
+      "avg_cents": 285419.1382783883,
+      "avg_dollars": 2854.191382783883
+    },
+    "11": {
+      "count": 1089,
+      "total_cents": 465320076,
+      "total_dollars": 4653200.76,
+      "avg_cents": 427291.1625344353,
+      "avg_dollars": 4272.911625344353
+    },
+    "12": {
+      "count": 132,
+      "total_cents": 95966585,
+      "total_dollars": 959665.85,
+      "avg_cents": 727019.5833333334,
+      "avg_dollars": 7270.195833333334
+    }
+  },
+  "employer_matching": {
+    "total_matches": 382,
+    "total_match_amount_cents": 33122520,
+    "total_match_amount_dollars": 331225.2,
+    "match_rate_percent": 5.676077265973254
+  },
+  "acquisition_channels": {
+    "organic": {
+      "donor_count": 5221,
+      "total_ltv_cents": 316141187,
+      "total_ltv_dollars": 3161411.87,
+      "avg_ltv_cents": 60551.845814977976,
+      "avg_ltv_dollars": 605.5184581497798
+    },
+    "email": {
+      "donor_count": 3593,
+      "total_ltv_cents": 204523952,
+      "total_ltv_dollars": 2045239.52,
+      "avg_ltv_cents": 56922.89229056499,
+      "avg_ltv_dollars": 569.2289229056499
+    },
+    "social": {
+      "donor_count": 3001,
+      "total_ltv_cents": 200249112,
+      "total_ltv_dollars": 2002491.12,
+      "avg_ltv_cents": 66727.46151282906,
+      "avg_ltv_dollars": 667.2746151282906
+    },
+    "event": {
+      "donor_count": 2259,
+      "total_ltv_cents": 132922698,
+      "total_ltv_dollars": 1329226.98,
+      "avg_ltv_cents": 58841.38911022576,
+      "avg_ltv_dollars": 588.4138911022576
+    },
+    "peer_to_peer": {
+      "donor_count": 710,
+      "total_ltv_cents": 45364450,
+      "total_ltv_dollars": 453644.5,
+      "avg_ltv_cents": 63893.59154929577,
+      "avg_ltv_dollars": 638.9359154929577
+    }
+  },
+  "recurring_metrics": {
+    "recurring_donor_count": 1499,
+    "recurring_rate_percent": 10.139339826839826,
+    "active_subscriptions": 1499,
+    "monthly_revenue_cents": 69669358,
+    "monthly_revenue_dollars": 696693.58
+  }
+}
