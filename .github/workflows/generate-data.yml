@@ -1,0 +1,149 @@
+name: Generate Synthetic Data
+
+on:
+  schedule:
+    # Run monthly on the 1st at 00:00 UTC
+    - cron: '0 0 1 * *'
+  workflow_dispatch:
+    inputs:
+      personas:
+        description: 'Comma-separated list of personas to generate (or "all")'
+        required: false
+        default: 'techstyle,edutech'
+        type: string
+
+jobs:
+  generate-datasets:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install faker pandas numpy
+        
+    - name: Generate TechStyle data
+      if: contains(github.event.inputs.personas, 'techstyle') || contains(github.event.inputs.personas, 'all') || github.event_name == 'schedule'
+      run: |
+        cd techstyle_generator
+        python generate_techstyle.py
+        
+        # Copy to pre-generated with sampling
+        mkdir -p ../pre_generated_data/techstyle
+        
+        # Sample large files to stay under GitHub limits
+        python3 -c "
+        import json, random
+        
+        # Sample payments (1000 records)
+        with open('output/payments_raw.json', 'r') as f:
+            payments = json.load(f)
+        sampled_payments = random.sample(payments, min(1000, len(payments)))
+        with open('../pre_generated_data/techstyle/payments.json', 'w') as f:
+            json.dump(sampled_payments, f, indent=2)
+            
+        # Sample customers (500 records)
+        with open('output/customers.json', 'r') as f:
+            customers = json.load(f)
+        sampled_customers = random.sample(customers, min(500, len(customers)))
+        with open('../pre_generated_data/techstyle/customers.json', 'w') as f:
+            json.dump(sampled_customers, f, indent=2)
+        "
+        
+        # Copy other files directly
+        cp output/daily_metrics.json ../pre_generated_data/techstyle/
+        cp output/summary_stats.json ../pre_generated_data/techstyle/
+        
+    - name: Generate EduTech data
+      if: contains(github.event.inputs.personas, 'edutech') || contains(github.event.inputs.personas, 'all') || github.event_name == 'schedule'
+      run: |
+        cd edutech_generator
+        python generate_edutech.py
+        
+        # Copy to pre-generated with sampling
+        mkdir -p ../pre_generated_data/edutech
+        
+        # Sample large files to stay under GitHub limits
+        python3 -c "
+        import json, random
+        
+        # Sample students (500 records)
+        with open('education_data/students.json', 'r') as f:
+            students = json.load(f)
+        sampled_students = random.sample(students, min(500, len(students)))
+        with open('../pre_generated_data/edutech/students.json', 'w') as f:
+            json.dump(sampled_students, f, indent=2)
+            
+        # Sample enrollments (500 records)
+        with open('education_data/enrollments.json', 'r') as f:
+            enrollments = json.load(f)
+        sampled_enrollments = random.sample(enrollments, min(500, len(enrollments)))
+        with open('../pre_generated_data/edutech/enrollments.json', 'w') as f:
+            json.dump(sampled_enrollments, f, indent=2)
+        "
+        
+        # Copy other files directly
+        cp education_data/instructors.json ../pre_generated_data/edutech/
+        cp education_data/courses.json ../pre_generated_data/edutech/
+        cp education_data/student_progress.json ../pre_generated_data/edutech/
+        cp education_data/tax_documents.json ../pre_generated_data/edutech/
+        
+    - name: Update manifests
+      run: |
+        # Update generation timestamp in manifests
+        python3 -c "
+        import json, os
+        from datetime import datetime
+        
+        for persona in ['techstyle', 'edutech']:
+            manifest_path = f'pre_generated_data/{persona}/manifest.json'
+            if os.path.exists(manifest_path):
+                with open(manifest_path, 'r') as f:
+                    manifest = json.load(f)
+                manifest['generated_at'] = datetime.utcnow().isoformat() + 'Z'
+                with open(manifest_path, 'w') as f:
+                    json.dump(manifest, f, indent=2)
+        "
+        
+        # Update main index
+        python3 -c "
+        import json
+        from datetime import datetime
+        
+        with open('pre_generated_data/index.json', 'r') as f:
+            index = json.load(f)
+        index['generated_at'] = datetime.utcnow().isoformat() + 'Z'
+        
+        # Update last_updated for each dataset
+        for dataset in index['datasets'].values():
+            dataset['last_updated'] = datetime.utcnow().strftime('%Y-%m-%d')
+            
+        with open('pre_generated_data/index.json', 'w') as f:
+            json.dump(index, f, indent=2)
+        "
+        
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add pre_generated_data/
+        
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Auto-generate synthetic datasets $(date -u +%Y-%m-%d)
+          
+          - Updated pre-generated sample datasets
+          - Generated from latest generator code
+          - Timestamp: $(date -u +%Y-%m-%dT%H:%M:%SZ)
+          - Triggered by: ${{ github.event_name }}"
+          git push
+        fi
