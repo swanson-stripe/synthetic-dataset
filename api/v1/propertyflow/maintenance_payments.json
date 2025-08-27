@@ -1,0 +1,6585 @@
+[
+  {
+    "id": "pi_VENDOR_e5971ce256574fdf",
+    "object": "payment_intent",
+    "amount": 34700,
+    "currency": "usd",
+    "created": 1649401200,
+    "description": "Maintenance: plumbing - 33150 Brianna Avenue Apt. 031",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_917439024fc04392",
+          "amount": 34700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000004",
+      "landlord_id": "LL0001",
+      "vendor": "Duran, Obrien and Gibbs Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_1e4dfd6b649040ba",
+    "object": "payment_intent",
+    "amount": 44200,
+    "currency": "usd",
+    "created": 1655276400,
+    "description": "Maintenance: plumbing - 340 Smith Valley Apt. 561",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_d167fc9d52c04609",
+          "amount": 44200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000009",
+      "landlord_id": "LL0002",
+      "vendor": "Welch LLC Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_a15afed3fc4a4926",
+    "object": "payment_intent",
+    "amount": 32300,
+    "currency": "usd",
+    "created": 1658732400,
+    "description": "Maintenance: appliance - 340 Smith Valley Apt. 561",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_250d07a563af4fb4",
+          "amount": 32300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000009",
+      "landlord_id": "LL0002",
+      "vendor": "Thompson Inc Appliance Services",
+      "issue_type": "appliance",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_b94ece8b2f094468",
+    "object": "payment_intent",
+    "amount": 11900,
+    "currency": "usd",
+    "created": 1657263600,
+    "description": "Maintenance: landscaping - 317 Banks Crescent Apt. 004",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_483a39fb3ecc48f8",
+          "amount": 11900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000020",
+      "landlord_id": "LL0007",
+      "vendor": "Harmon PLC Landscaping Services",
+      "issue_type": "landscaping",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_a1f2ed51456a45e8",
+    "object": "payment_intent",
+    "amount": 19500,
+    "currency": "usd",
+    "created": 1657263600,
+    "description": "Maintenance: cleaning - 474 Yvonne Walk Suite 136",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_0cae7f81d0f54a4a",
+          "amount": 19500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000018",
+      "landlord_id": "LL0007",
+      "vendor": "Reese Group Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_f5ec315c3329438b",
+    "object": "payment_intent",
+    "amount": 183300,
+    "currency": "usd",
+    "created": 1661497200,
+    "description": "Maintenance: hvac - 281 Skinner Parkways Apt. 252",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_71af8c9a705f4314",
+          "amount": 183300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000003",
+      "landlord_id": "LL0001",
+      "vendor": "Garcia LLC Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_1fae7c93c9fe4b98",
+    "object": "payment_intent",
+    "amount": 22900,
+    "currency": "usd",
+    "created": 1660546800,
+    "description": "Maintenance: cleaning - 76724 John Points Suite 969",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_a6197bb394cc4a64",
+          "amount": 22900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000002",
+      "landlord_id": "LL0001",
+      "vendor": "Thompson and Sons Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_075baf4121f5426c",
+    "object": "payment_intent",
+    "amount": 32400,
+    "currency": "usd",
+    "created": 1660719600,
+    "description": "Maintenance: appliance - 83842 Ibarra Gardens",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_ba11dbc575e642b5",
+          "amount": 32400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000006",
+      "landlord_id": "LL0002",
+      "vendor": "Jones, Bean and Burton Appliance Services",
+      "issue_type": "appliance",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_f420bcfb9312436f",
+    "object": "payment_intent",
+    "amount": 35800,
+    "currency": "usd",
+    "created": 1663311600,
+    "description": "Maintenance: landscaping - 361 Kenneth Bypass Suite 451",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_72d8d7af2412491e",
+          "amount": 35800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000053",
+      "landlord_id": "LL0016",
+      "vendor": "Duke, Shelton and Davis Landscaping Services",
+      "issue_type": "landscaping",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_cbff707d48f242b8",
+    "object": "payment_intent",
+    "amount": 22000,
+    "currency": "usd",
+    "created": 1663398000,
+    "description": "Maintenance: landscaping - 7165 Zimmerman Mews",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_6155925ba8844c4c",
+          "amount": 22000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000013",
+      "landlord_id": "LL0003",
+      "vendor": "Sellers-Riddle Landscaping Services",
+      "issue_type": "landscaping",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_d0a8acd4907f4f9c",
+    "object": "payment_intent",
+    "amount": 135100,
+    "currency": "usd",
+    "created": 1662706800,
+    "description": "Maintenance: hvac - 473 Maria Groves Suite 219",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_ef169d710a7e45ac",
+          "amount": 135100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000039",
+      "landlord_id": "LL0011",
+      "vendor": "Martinez, Cline and Wright Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_3fb9643848b2483a",
+    "object": "payment_intent",
+    "amount": 65400,
+    "currency": "usd",
+    "created": 1662188400,
+    "description": "Maintenance: damage repair - 340 Smith Valley Apt. 561",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_f955106d37324062",
+          "amount": 65400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000009",
+      "landlord_id": "LL0002",
+      "vendor": "Morris, Wright and Bridges Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_4acf9a316b9940ad",
+    "object": "payment_intent",
+    "amount": 71940,
+    "currency": "usd",
+    "customer": "cus_TENANT_9abf3fea3f314124",
+    "created": 1662188400,
+    "description": "Maintenance charge: damage repair",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_b446f3564bb34546",
+          "amount": 71940,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000009",
+      "related_vendor_payment": "pi_VENDOR_3fb9643848b2483a",
+      "maintenance_cost": "65400",
+      "markup": "6540",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_7446ade63b4e452f",
+    "object": "payment_intent",
+    "amount": 66400,
+    "currency": "usd",
+    "created": 1663138800,
+    "description": "Maintenance: plumbing - 5339 Hall Trail Suite 057",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_502fa7b838174659",
+          "amount": 66400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000017",
+      "landlord_id": "LL0006",
+      "vendor": "Burns-Ray Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_5d28ce8a0c2b4c09",
+    "object": "payment_intent",
+    "amount": 35700,
+    "currency": "usd",
+    "created": 1662188400,
+    "description": "Maintenance: hvac - 33150 Brianna Avenue Apt. 031",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_d51fa8997cba4af3",
+          "amount": 35700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000004",
+      "landlord_id": "LL0001",
+      "vendor": "Burton-Brooks Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_0679d478f02e4882",
+    "object": "payment_intent",
+    "amount": 13500,
+    "currency": "usd",
+    "created": 1664262000,
+    "description": "Maintenance: cleaning - 8686 John Key Apt. 431",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_f53df706246b422b",
+          "amount": 13500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000042",
+      "landlord_id": "LL0013",
+      "vendor": "Schultz Inc Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_63d20fbb46e14155",
+    "object": "payment_intent",
+    "amount": 14850,
+    "currency": "usd",
+    "customer": "cus_TENANT_3e4f3e6a006147bf",
+    "created": 1664262000,
+    "description": "Maintenance charge: cleaning",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_5992b4d66cc64ac6",
+          "amount": 14850,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000042",
+      "related_vendor_payment": "pi_VENDOR_0679d478f02e4882",
+      "maintenance_cost": "13500",
+      "markup": "1350",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_0dd47dc434104b57",
+    "object": "payment_intent",
+    "amount": 34100,
+    "currency": "usd",
+    "created": 1664694000,
+    "description": "Maintenance: damage repair - 218 Chelsey Expressway",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_be52ba64960e4289",
+          "amount": 34100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000055",
+      "landlord_id": "LL0017",
+      "vendor": "Williams, Mcconnell and Roberson Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_82cb8f027601485d",
+    "object": "payment_intent",
+    "amount": 37510,
+    "currency": "usd",
+    "customer": "cus_TENANT_325c2bf118334838",
+    "created": 1664694000,
+    "description": "Maintenance charge: damage repair",
+    "status": "failed",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_458ace90e0044f0d",
+          "amount": 37510,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000055",
+      "related_vendor_payment": "pi_VENDOR_0dd47dc434104b57",
+      "maintenance_cost": "34100",
+      "markup": "3410",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_dad18aa0fcb0498b",
+    "object": "payment_intent",
+    "amount": 58000,
+    "currency": "usd",
+    "created": 1666681200,
+    "description": "Maintenance: plumbing - 99770 Amanda Loop Apt. 084",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_4eaedfcab1a54eed",
+          "amount": 58000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000045",
+      "landlord_id": "LL0014",
+      "vendor": "Glass-Norman Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_5cd88140d4014a43",
+    "object": "payment_intent",
+    "amount": 107300,
+    "currency": "usd",
+    "created": 1665644400,
+    "description": "Maintenance: hvac - 340 Smith Valley Apt. 561",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_4d9d6101fc454d06",
+          "amount": 107300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000009",
+      "landlord_id": "LL0002",
+      "vendor": "Holt and Sons Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_3c6a406982604d5e",
+    "object": "payment_intent",
+    "amount": 118030,
+    "currency": "usd",
+    "customer": "cus_TENANT_9abf3fea3f314124",
+    "created": 1665644400,
+    "description": "Maintenance charge: hvac",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_e4f7e8fdbf814b1e",
+          "amount": 118030,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000009",
+      "related_vendor_payment": "pi_VENDOR_5cd88140d4014a43",
+      "maintenance_cost": "107300",
+      "markup": "10730",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_5da4708d18b14239",
+    "object": "payment_intent",
+    "amount": 13900,
+    "currency": "usd",
+    "created": 1664953200,
+    "description": "Maintenance: cleaning - 52175 Lawrence Centers Apt. 743",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_6f228128d1ad4788",
+          "amount": 13900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000070",
+      "landlord_id": "LL0022",
+      "vendor": "Ochoa, Garcia and Sandoval Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_2ee400885b0e473f",
+    "object": "payment_intent",
+    "amount": 15290,
+    "currency": "usd",
+    "customer": "cus_TENANT_b42aa8cd01a649b8",
+    "created": 1664953200,
+    "description": "Maintenance charge: cleaning",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_a96f90b413cf48cc",
+          "amount": 15290,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000070",
+      "related_vendor_payment": "pi_VENDOR_5da4708d18b14239",
+      "maintenance_cost": "13900",
+      "markup": "1390",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_16feb6a0583e4378",
+    "object": "payment_intent",
+    "amount": 132800,
+    "currency": "usd",
+    "created": 1668844800,
+    "description": "Maintenance: hvac - 726 Joshua Gateway",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_48f6b2a7dda547bd",
+          "amount": 132800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000005",
+      "landlord_id": "LL0001",
+      "vendor": "Johnson-Chavez Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_45a45fdcb2d74aeb",
+    "object": "payment_intent",
+    "amount": 146080,
+    "currency": "usd",
+    "customer": "cus_TENANT_e426625776f84cad",
+    "created": 1668844800,
+    "description": "Maintenance charge: hvac",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_12ed8e9f582b4fe3",
+          "amount": 146080,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000005",
+      "related_vendor_payment": "pi_VENDOR_16feb6a0583e4378",
+      "maintenance_cost": "132800",
+      "markup": "13280",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_9e43204b4b814af8",
+    "object": "payment_intent",
+    "amount": 62600,
+    "currency": "usd",
+    "created": 1668326400,
+    "description": "Maintenance: plumbing - 10447 Hamilton Spur Apt. 575",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_7eb0ad8ce7ba4877",
+          "amount": 62600,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000071",
+      "landlord_id": "LL0022",
+      "vendor": "Huang, Khan and Davis Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_6eb513ea38704403",
+    "object": "payment_intent",
+    "amount": 143200,
+    "currency": "usd",
+    "created": 1668067200,
+    "description": "Maintenance: hvac - 728 Joseph Landing",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_20e0a276bcc74674",
+          "amount": 143200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000103",
+      "landlord_id": "LL0032",
+      "vendor": "Holt-Meadows Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_036a4d8847b240e5",
+    "object": "payment_intent",
+    "amount": 157520,
+    "currency": "usd",
+    "customer": "cus_TENANT_18e4b5e21ba34669",
+    "created": 1668067200,
+    "description": "Maintenance charge: hvac",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_e22c14344b92490e",
+          "amount": 157520,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000103",
+      "related_vendor_payment": "pi_VENDOR_6eb513ea38704403",
+      "maintenance_cost": "143200",
+      "markup": "14320",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_08a07e6f3ce4484b",
+    "object": "payment_intent",
+    "amount": 11200,
+    "currency": "usd",
+    "created": 1668067200,
+    "description": "Maintenance: cleaning - 7807 Evans Trafficway Suite 493",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_762b2df0bcc64a86",
+          "amount": 11200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000092",
+      "landlord_id": "LL0029",
+      "vendor": "Higgins Inc Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_6e7e3d27226d4777",
+    "object": "payment_intent",
+    "amount": 60000,
+    "currency": "usd",
+    "created": 1668585600,
+    "description": "Maintenance: damage repair - 7848 Lopez Ferry",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_d3e8d61b88c24f3f",
+          "amount": 60000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000095",
+      "landlord_id": "LL0030",
+      "vendor": "Wilson Group Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_9d743db19b3c4a68",
+    "object": "payment_intent",
+    "amount": 66000,
+    "currency": "usd",
+    "customer": "cus_TENANT_3817ae1a43e74b45",
+    "created": 1668585600,
+    "description": "Maintenance charge: damage repair",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_3dd3462700374990",
+          "amount": 66000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000095",
+      "related_vendor_payment": "pi_VENDOR_6e7e3d27226d4777",
+      "maintenance_cost": "60000",
+      "markup": "6000",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_193d679bf61f4550",
+    "object": "payment_intent",
+    "amount": 55400,
+    "currency": "usd",
+    "created": 1667286000,
+    "description": "Maintenance: electrical - 621 Sean Squares Apt. 138",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_c211daab0a774c9e",
+          "amount": 55400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000084",
+      "landlord_id": "LL0028",
+      "vendor": "Cox, Mills and Cruz Electrical Services",
+      "issue_type": "electrical",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_f0c1828d6d4b41ff",
+    "object": "payment_intent",
+    "amount": 14600,
+    "currency": "usd",
+    "created": 1667286000,
+    "description": "Maintenance: cleaning - 54152 Randy Inlet Apt. 611",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_544e1759a32945ea",
+          "amount": 14600,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000054",
+      "landlord_id": "LL0017",
+      "vendor": "Salazar, Moore and Pierce Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_592ae61030514a8c",
+    "object": "payment_intent",
+    "amount": 16060,
+    "currency": "usd",
+    "customer": "cus_TENANT_9911bfa1747046ad",
+    "created": 1667286000,
+    "description": "Maintenance charge: cleaning",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_59b18ce7f1db4d4f",
+          "amount": 16060,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000054",
+      "related_vendor_payment": "pi_VENDOR_f0c1828d6d4b41ff",
+      "maintenance_cost": "14600",
+      "markup": "1460",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_3cd751e712a34e0b",
+    "object": "payment_intent",
+    "amount": 49100,
+    "currency": "usd",
+    "created": 1668585600,
+    "description": "Maintenance: damage repair - 60685 Paul Common Suite 305",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_228e7afbc5f6485c",
+          "amount": 49100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000029",
+      "landlord_id": "LL0009",
+      "vendor": "Tate LLC Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_c141e2723b044f52",
+    "object": "payment_intent",
+    "amount": 54010,
+    "currency": "usd",
+    "customer": "cus_TENANT_19c7b9d7c4464474",
+    "created": 1668585600,
+    "description": "Maintenance charge: damage repair",
+    "status": "failed",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_2824f03bd8ab4338",
+          "amount": 54010,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000029",
+      "related_vendor_payment": "pi_VENDOR_3cd751e712a34e0b",
+      "maintenance_cost": "49100",
+      "markup": "4910",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_5ed2fe04b60f49f9",
+    "object": "payment_intent",
+    "amount": 28600,
+    "currency": "usd",
+    "created": 1669708800,
+    "description": "Maintenance: landscaping - 8686 John Key Apt. 431",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_a2029d56af9d4237",
+          "amount": 28600,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000042",
+      "landlord_id": "LL0013",
+      "vendor": "Savage, Huffman and Martin Landscaping Services",
+      "issue_type": "landscaping",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_045030a7d00243a5",
+    "object": "payment_intent",
+    "amount": 24700,
+    "currency": "usd",
+    "created": 1669276800,
+    "description": "Maintenance: plumbing - 6909 Erika Land Suite 719",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_93f3823995954e1e",
+          "amount": 24700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000032",
+      "landlord_id": "LL0010",
+      "vendor": "White Ltd Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_0cff8927d0194a8b",
+    "object": "payment_intent",
+    "amount": 73100,
+    "currency": "usd",
+    "created": 1668326400,
+    "description": "Maintenance: plumbing - 367 Joan Bypass",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_95223117e3614450",
+          "amount": 73100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000093",
+      "landlord_id": "LL0030",
+      "vendor": "Barnes LLC Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_2b151c2403084173",
+    "object": "payment_intent",
+    "amount": 46700,
+    "currency": "usd",
+    "created": 1667631600,
+    "description": "Maintenance: electrical - 064 Julie Prairie Apt. 065",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_476266324b504fd5",
+          "amount": 46700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000041",
+      "landlord_id": "LL0013",
+      "vendor": "Mack, Griffin and Sims Electrical Services",
+      "issue_type": "electrical",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_e6db0414320d4607",
+    "object": "payment_intent",
+    "amount": 23800,
+    "currency": "usd",
+    "created": 1668326400,
+    "description": "Maintenance: cleaning - 25953 Tyrone Passage Suite 747",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_44d5baa71d79478c",
+          "amount": 23800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000035",
+      "landlord_id": "LL0011",
+      "vendor": "Roach and Sons Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_38398c6ab30b48ac",
+    "object": "payment_intent",
+    "amount": 116600,
+    "currency": "usd",
+    "created": 1667980800,
+    "description": "Maintenance: electrical - 4348 Sims Harbor Suite 143",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_a007a45743294854",
+          "amount": 116600,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000010",
+      "landlord_id": "LL0003",
+      "vendor": "Dean LLC Electrical Services",
+      "issue_type": "electrical",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_bd2f8e239d8a4b0e",
+    "object": "payment_intent",
+    "amount": 128260,
+    "currency": "usd",
+    "customer": "cus_TENANT_67790034db3c4874",
+    "created": 1667980800,
+    "description": "Maintenance charge: electrical",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_bafa1509544f4d80",
+          "amount": 128260,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000010",
+      "related_vendor_payment": "pi_VENDOR_38398c6ab30b48ac",
+      "maintenance_cost": "116600",
+      "markup": "11660",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_520f495411f04eea",
+    "object": "payment_intent",
+    "amount": 40200,
+    "currency": "usd",
+    "created": 1670659200,
+    "description": "Maintenance: hvac - 367 Joan Bypass",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_f5b57bf747284d5a",
+          "amount": 40200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000093",
+      "landlord_id": "LL0030",
+      "vendor": "Stafford, Butler and Vasquez Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_7fd25afdd8e943cc",
+    "object": "payment_intent",
+    "amount": 44700,
+    "currency": "usd",
+    "created": 1672214400,
+    "description": "Maintenance: plumbing - 7165 Zimmerman Mews",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_8b8356014a3a4a24",
+          "amount": 44700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000013",
+      "landlord_id": "LL0003",
+      "vendor": "Newman, Johnson and Hubbard Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_fd3b575cce284554",
+    "object": "payment_intent",
+    "amount": 53700,
+    "currency": "usd",
+    "created": 1670745600,
+    "description": "Maintenance: hvac - 6184 Ferguson Village",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_e822e33ef9e448c1",
+          "amount": 53700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000116",
+      "landlord_id": "LL0038",
+      "vendor": "Gamble-Jones Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_b31b4104230a4928",
+    "object": "payment_intent",
+    "amount": 29100,
+    "currency": "usd",
+    "created": 1672300800,
+    "description": "Maintenance: plumbing - 2258 David Flats Apt. 370",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_76061daade6146b9",
+          "amount": 29100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000033",
+      "landlord_id": "LL0010",
+      "vendor": "Cox, Castillo and Graham Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_7185b5dd4d8b42ad",
+    "object": "payment_intent",
+    "amount": 157300,
+    "currency": "usd",
+    "created": 1672300800,
+    "description": "Maintenance: hvac - 57991 Nicholas Curve Apt. 038",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_850e16822ccc4a32",
+          "amount": 157300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000083",
+      "landlord_id": "LL0027",
+      "vendor": "Burton-Alvarez Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_8880ececa5154025",
+    "object": "payment_intent",
+    "amount": 100100,
+    "currency": "usd",
+    "created": 1670054400,
+    "description": "Maintenance: hvac - 221 Johnson Flats Apt. 305",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_87a9d9dfcf6b45af",
+          "amount": 100100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000030",
+      "landlord_id": "LL0010",
+      "vendor": "Cardenas, Brooks and Quinn Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_c670d6bfaf5e4c80",
+    "object": "payment_intent",
+    "amount": 110110,
+    "currency": "usd",
+    "customer": "cus_TENANT_514117d738b44b72",
+    "created": 1670054400,
+    "description": "Maintenance charge: hvac",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_c479b3c345cc4d8c",
+          "amount": 110110,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000030",
+      "related_vendor_payment": "pi_VENDOR_8880ececa5154025",
+      "maintenance_cost": "100100",
+      "markup": "10010",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_b33d196dddd0444d",
+    "object": "payment_intent",
+    "amount": 127900,
+    "currency": "usd",
+    "created": 1672128000,
+    "description": "Maintenance: hvac - 410 Phyllis Pike",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_911d6f8c2a9e499d",
+          "amount": 127900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000059",
+      "landlord_id": "LL0018",
+      "vendor": "Bruce and Sons Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_492e38c703fd4c3d",
+    "object": "payment_intent",
+    "amount": 22000,
+    "currency": "usd",
+    "created": 1674115200,
+    "description": "Maintenance: cleaning - 5339 Hall Trail Suite 057",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_8b09a99785c7481f",
+          "amount": 22000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000017",
+      "landlord_id": "LL0006",
+      "vendor": "Brown, Flores and Johns Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_972a8ccf1f2e47cd",
+    "object": "payment_intent",
+    "amount": 22100,
+    "currency": "usd",
+    "created": 1674979200,
+    "description": "Maintenance: landscaping - 2662 Douglas Hollow Suite 851",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_7ac754a40a5145e3",
+          "amount": 22100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000126",
+      "landlord_id": "LL0040",
+      "vendor": "Howard Inc Landscaping Services",
+      "issue_type": "landscaping",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_215797ca1a6d4178",
+    "object": "payment_intent",
+    "amount": 54000,
+    "currency": "usd",
+    "created": 1673942400,
+    "description": "Maintenance: plumbing - 82005 Lin Mountain",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_7113d5f32d4f488c",
+          "amount": 54000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000091",
+      "landlord_id": "LL0029",
+      "vendor": "Ward-Fields Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_f44987d2c5854829",
+    "object": "payment_intent",
+    "amount": 59400,
+    "currency": "usd",
+    "customer": "cus_TENANT_d5defe06b5fe481e",
+    "created": 1673942400,
+    "description": "Maintenance charge: plumbing",
+    "status": "failed",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_243591711a674cc0",
+          "amount": 59400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000091",
+      "related_vendor_payment": "pi_VENDOR_215797ca1a6d4178",
+      "maintenance_cost": "54000",
+      "markup": "5400",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_954632b7464e4bfb",
+    "object": "payment_intent",
+    "amount": 49300,
+    "currency": "usd",
+    "created": 1674720000,
+    "description": "Maintenance: electrical - 621 Sean Squares Apt. 138",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_f887f4e7829f4ca8",
+          "amount": 49300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000084",
+      "landlord_id": "LL0028",
+      "vendor": "Williams-Carter Electrical Services",
+      "issue_type": "electrical",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_7cf8e3f0564f4800",
+    "object": "payment_intent",
+    "amount": 54230,
+    "currency": "usd",
+    "customer": "cus_TENANT_4d880a1f134a4cb1",
+    "created": 1674720000,
+    "description": "Maintenance charge: electrical",
+    "status": "failed",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_7c36d5a675004845",
+          "amount": 54230,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000084",
+      "related_vendor_payment": "pi_VENDOR_954632b7464e4bfb",
+      "maintenance_cost": "49300",
+      "markup": "4930",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_23e6439eb2974caa",
+    "object": "payment_intent",
+    "amount": 5800,
+    "currency": "usd",
+    "created": 1673078400,
+    "description": "Maintenance: cleaning - 5150 Brandy Forges",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_0feacf4412e04ec3",
+          "amount": 5800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000125",
+      "landlord_id": "LL0040",
+      "vendor": "Mayer, Palmer and Miranda Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_ddd55e25d9ab4789",
+    "object": "payment_intent",
+    "amount": 22200,
+    "currency": "usd",
+    "created": 1672819200,
+    "description": "Maintenance: cleaning - 0155 Tucker Pine Apt. 788",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_09fbb82ac7d44588",
+          "amount": 22200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000123",
+      "landlord_id": "LL0039",
+      "vendor": "Duran PLC Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_520e4dc96d6548ab",
+    "object": "payment_intent",
+    "amount": 134600,
+    "currency": "usd",
+    "created": 1674028800,
+    "description": "Maintenance: hvac - 49368 Chelsea Shoals Suite 024",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_67163edbd79644d5",
+          "amount": 134600,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000023",
+      "landlord_id": "LL0008",
+      "vendor": "Stephens LLC Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_d8042bfea5c3424b",
+    "object": "payment_intent",
+    "amount": 99300,
+    "currency": "usd",
+    "created": 1672646400,
+    "description": "Maintenance: damage repair - 06163 Mary Green",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_34df9c2fd5e449f2",
+          "amount": 99300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000065",
+      "landlord_id": "LL0021",
+      "vendor": "Marsh, Nelson and Wolfe Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_204e2571505a4883",
+    "object": "payment_intent",
+    "amount": 109230,
+    "currency": "usd",
+    "customer": "cus_TENANT_0452823e104243c5",
+    "created": 1672646400,
+    "description": "Maintenance charge: damage repair",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_9ad878b9870d4c8c",
+          "amount": 109230,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000065",
+      "related_vendor_payment": "pi_VENDOR_d8042bfea5c3424b",
+      "maintenance_cost": "99300",
+      "markup": "9930",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_a2a84ca7aeb144f1",
+    "object": "payment_intent",
+    "amount": 31000,
+    "currency": "usd",
+    "created": 1673424000,
+    "description": "Maintenance: damage repair - 52175 Lawrence Centers Apt. 743",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_f8920d69744647d9",
+          "amount": 31000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000070",
+      "landlord_id": "LL0022",
+      "vendor": "Davis-Carpenter Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_7951133a48024170",
+    "object": "payment_intent",
+    "amount": 34100,
+    "currency": "usd",
+    "customer": "cus_TENANT_b42aa8cd01a649b8",
+    "created": 1673424000,
+    "description": "Maintenance charge: damage repair",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_417804d523c24930",
+          "amount": 34100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000070",
+      "related_vendor_payment": "pi_VENDOR_a2a84ca7aeb144f1",
+      "maintenance_cost": "31000",
+      "markup": "3100",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_71b4a7c5cb914c69",
+    "object": "payment_intent",
+    "amount": 27200,
+    "currency": "usd",
+    "created": 1674892800,
+    "description": "Maintenance: cleaning - 845 Robert Keys Apt. 998",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_9537ab8ae1d8490f",
+          "amount": 27200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000089",
+      "landlord_id": "LL0029",
+      "vendor": "Smith PLC Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_14e959d4ea074641",
+    "object": "payment_intent",
+    "amount": 23100,
+    "currency": "usd",
+    "created": 1675065600,
+    "description": "Maintenance: cleaning - 7700 Garcia Pike Suite 498",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_d01126d983da4090",
+          "amount": 23100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000082",
+      "landlord_id": "LL0026",
+      "vendor": "Watson-Washington Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_f58687325ff849f7",
+    "object": "payment_intent",
+    "amount": 10000,
+    "currency": "usd",
+    "created": 1674028800,
+    "description": "Maintenance: cleaning - 8686 John Key Apt. 431",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_550613b05b154d66",
+          "amount": 10000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000042",
+      "landlord_id": "LL0013",
+      "vendor": "Mccall-Martin Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_38470b2789474c91",
+    "object": "payment_intent",
+    "amount": 35200,
+    "currency": "usd",
+    "created": 1672992000,
+    "description": "Maintenance: damage repair - 10249 Gonzales Mountain Suite 648",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_db3d4e7919064df1",
+          "amount": 35200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000015",
+      "landlord_id": "LL0005",
+      "vendor": "Moore and Sons Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_245f3a1c62af4f25",
+    "object": "payment_intent",
+    "amount": 38720,
+    "currency": "usd",
+    "customer": "cus_TENANT_2ea48856da8448ed",
+    "created": 1672992000,
+    "description": "Maintenance charge: damage repair",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_db5e98717c854a39",
+          "amount": 38720,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000015",
+      "related_vendor_payment": "pi_VENDOR_38470b2789474c91",
+      "maintenance_cost": "35200",
+      "markup": "3520",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_a5fe25286b7b47e2",
+    "object": "payment_intent",
+    "amount": 117700,
+    "currency": "usd",
+    "created": 1672819200,
+    "description": "Maintenance: hvac - 157 Tracy Spurs",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_73cd40a5030241de",
+          "amount": 117700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000098",
+      "landlord_id": "LL0031",
+      "vendor": "Pope PLC Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_9f6900cdfecb4e28",
+    "object": "payment_intent",
+    "amount": 106600,
+    "currency": "usd",
+    "created": 1672905600,
+    "description": "Maintenance: electrical - 217 Newman Isle",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_0ead10fb7b0c4c02",
+          "amount": 106600,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000046",
+      "landlord_id": "LL0014",
+      "vendor": "Norris, Cisneros and Mathis Electrical Services",
+      "issue_type": "electrical",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_aa6bb4cce6854db5",
+    "object": "payment_intent",
+    "amount": 117260,
+    "currency": "usd",
+    "customer": "cus_TENANT_213a8b31d65941ce",
+    "created": 1672905600,
+    "description": "Maintenance charge: electrical",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_21df78f475f54eb2",
+          "amount": 117260,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000046",
+      "related_vendor_payment": "pi_VENDOR_9f6900cdfecb4e28",
+      "maintenance_cost": "106600",
+      "markup": "10660",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_f36c5c823c00420d",
+    "object": "payment_intent",
+    "amount": 53000,
+    "currency": "usd",
+    "created": 1672646400,
+    "description": "Maintenance: electrical - 2304 Stanley Shore Suite 992",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_484bf942935b4de1",
+          "amount": 53000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000072",
+      "landlord_id": "LL0022",
+      "vendor": "Arnold, Avila and Wilson Electrical Services",
+      "issue_type": "electrical",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_065af641ba4240ac",
+    "object": "payment_intent",
+    "amount": 21900,
+    "currency": "usd",
+    "created": 1674288000,
+    "description": "Maintenance: cleaning - 39559 Jade Knoll",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_29903695603a4d4f",
+          "amount": 21900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000062",
+      "landlord_id": "LL0019",
+      "vendor": "Moon-Wilson Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_91c0088c28ea4052",
+    "object": "payment_intent",
+    "amount": 142900,
+    "currency": "usd",
+    "created": 1677312000,
+    "description": "Maintenance: hvac - 3344 Mejia Skyway",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_3e1d750ff4974e55",
+          "amount": 142900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000108",
+      "landlord_id": "LL0034",
+      "vendor": "Mclean Group Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_dcbb33b0aacd4663",
+    "object": "payment_intent",
+    "amount": 157190,
+    "currency": "usd",
+    "customer": "cus_TENANT_122df126fdf04b1d",
+    "created": 1677312000,
+    "description": "Maintenance charge: hvac",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_d615330bbfaf40af",
+          "amount": 157190,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000108",
+      "related_vendor_payment": "pi_VENDOR_91c0088c28ea4052",
+      "maintenance_cost": "142900",
+      "markup": "14290",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_84a2f6b4971147e1",
+    "object": "payment_intent",
+    "amount": 35000,
+    "currency": "usd",
+    "created": 1677571200,
+    "description": "Maintenance: landscaping - 8886 Anthony Knoll Apt. 995",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_b2575d9b013c49cf",
+          "amount": 35000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000047",
+      "landlord_id": "LL0015",
+      "vendor": "Collins-Cox Landscaping Services",
+      "issue_type": "landscaping",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_c2281dfee990489a",
+    "object": "payment_intent",
+    "amount": 23600,
+    "currency": "usd",
+    "created": 1677657600,
+    "description": "Maintenance: cleaning - 474 Yvonne Walk Suite 136",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_6249ae3112e346bd",
+          "amount": 23600,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000018",
+      "landlord_id": "LL0007",
+      "vendor": "Preston-Harper Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_8492fd45d3e64582",
+    "object": "payment_intent",
+    "amount": 11500,
+    "currency": "usd",
+    "created": 1677571200,
+    "description": "Maintenance: appliance - 5182 Edwards Forge",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_31806492865a418d",
+          "amount": 11500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000087",
+      "landlord_id": "LL0028",
+      "vendor": "Jackson-Torres Appliance Services",
+      "issue_type": "appliance",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_c49274e940204252",
+    "object": "payment_intent",
+    "amount": 132900,
+    "currency": "usd",
+    "created": 1675756800,
+    "description": "Maintenance: damage repair - 3009 Barker Drives",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_322aa3feaca84ce8",
+          "amount": 132900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000094",
+      "landlord_id": "LL0030",
+      "vendor": "Olsen, Walker and Vincent Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_259c696205ca46b0",
+    "object": "payment_intent",
+    "amount": 146190,
+    "currency": "usd",
+    "customer": "cus_TENANT_7b66dc575195412c",
+    "created": 1675756800,
+    "description": "Maintenance charge: damage repair",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_08877c6508964d8a",
+          "amount": 146190,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000094",
+      "related_vendor_payment": "pi_VENDOR_c49274e940204252",
+      "maintenance_cost": "132900",
+      "markup": "13290",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_907f02b39f664aa5",
+    "object": "payment_intent",
+    "amount": 8800,
+    "currency": "usd",
+    "created": 1676534400,
+    "description": "Maintenance: cleaning - 54033 Julie Throughway Suite 393",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_a041e7b53ec74acb",
+          "amount": 8800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000043",
+      "landlord_id": "LL0014",
+      "vendor": "Watts LLC Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_c677dec83e0e4d39",
+    "object": "payment_intent",
+    "amount": 23700,
+    "currency": "usd",
+    "created": 1677657600,
+    "description": "Maintenance: cleaning - 292 Wood Extensions",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_aa9371495f1247c6",
+          "amount": 23700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000113",
+      "landlord_id": "LL0036",
+      "vendor": "Clark Inc Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_44bf4836ecf944a2",
+    "object": "payment_intent",
+    "amount": 26070,
+    "currency": "usd",
+    "customer": "cus_TENANT_0ca073683ebc439f",
+    "created": 1677657600,
+    "description": "Maintenance charge: cleaning",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_c518677fc5f94199",
+          "amount": 26070,
+          "currency": "usd",
+          "paid": false,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000113",
+      "related_vendor_payment": "pi_VENDOR_c677dec83e0e4d39",
+      "maintenance_cost": "23700",
+      "markup": "2370",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_9e689bc3a5144662",
+    "object": "payment_intent",
+    "amount": 43900,
+    "currency": "usd",
+    "created": 1676188800,
+    "description": "Maintenance: appliance - 39559 Jade Knoll",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_d1ce18dd88c548a5",
+          "amount": 43900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000062",
+      "landlord_id": "LL0019",
+      "vendor": "Vazquez-Bowers Appliance Services",
+      "issue_type": "appliance",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_ac1cd305aef54acd",
+    "object": "payment_intent",
+    "amount": 53900,
+    "currency": "usd",
+    "created": 1677398400,
+    "description": "Maintenance: damage repair - 36519 Lowery Club",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_c916fb7205c94764",
+          "amount": 53900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000060",
+      "landlord_id": "LL0019",
+      "vendor": "Smith Group Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_af75241a6a6b465e",
+    "object": "payment_intent",
+    "amount": 59290,
+    "currency": "usd",
+    "customer": "cus_TENANT_8d8821a107874cce",
+    "created": 1677398400,
+    "description": "Maintenance charge: damage repair",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_1e9d5b3f426645ce",
+          "amount": 59290,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000060",
+      "related_vendor_payment": "pi_VENDOR_ac1cd305aef54acd",
+      "maintenance_cost": "53900",
+      "markup": "5390",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_68aa58f034be40be",
+    "object": "payment_intent",
+    "amount": 29700,
+    "currency": "usd",
+    "created": 1676793600,
+    "description": "Maintenance: cleaning - 105 Nelson Circles Suite 917",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_c28cb02321d24271",
+          "amount": 29700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000058",
+      "landlord_id": "LL0017",
+      "vendor": "Williams-Rodriguez Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_cf0c45caf99d402e",
+    "object": "payment_intent",
+    "amount": 28200,
+    "currency": "usd",
+    "created": 1676534400,
+    "description": "Maintenance: damage repair - 217 Newman Isle",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_c2771b9653064d37",
+          "amount": 28200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000046",
+      "landlord_id": "LL0014",
+      "vendor": "Palmer, Brown and Wilson Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_484e7eabd44547ec",
+    "object": "payment_intent",
+    "amount": 31020,
+    "currency": "usd",
+    "customer": "cus_TENANT_213a8b31d65941ce",
+    "created": 1676534400,
+    "description": "Maintenance charge: damage repair",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_aaf20e0d44e045f6",
+          "amount": 31020,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000046",
+      "related_vendor_payment": "pi_VENDOR_cf0c45caf99d402e",
+      "maintenance_cost": "28200",
+      "markup": "2820",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_be2715c91e23444b",
+    "object": "payment_intent",
+    "amount": 54800,
+    "currency": "usd",
+    "created": 1679554800,
+    "description": "Maintenance: plumbing - 17127 Hicks Groves",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_acf995c6e0d542a2",
+          "amount": 54800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000016",
+      "landlord_id": "LL0006",
+      "vendor": "Williams-Turner Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_62b1a33e4a42497d",
+    "object": "payment_intent",
+    "amount": 76400,
+    "currency": "usd",
+    "created": 1679900400,
+    "description": "Maintenance: plumbing - 18102 Morgan Flats Apt. 731",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_434075b5dbe64536",
+          "amount": 76400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000096",
+      "landlord_id": "LL0030",
+      "vendor": "Webster Inc Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_9d7de10e41b249fb",
+    "object": "payment_intent",
+    "amount": 84040,
+    "currency": "usd",
+    "customer": "cus_TENANT_761bd15c7ab24edb",
+    "created": 1679900400,
+    "description": "Maintenance charge: plumbing",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_f420e76819c74f0a",
+          "amount": 84040,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000096",
+      "related_vendor_payment": "pi_VENDOR_62b1a33e4a42497d",
+      "maintenance_cost": "76400",
+      "markup": "7640",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_cf820f3efa034106",
+    "object": "payment_intent",
+    "amount": 54300,
+    "currency": "usd",
+    "created": 1679295600,
+    "description": "Maintenance: plumbing - 221 Johnson Flats Apt. 305",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_88461ebfc6a648a7",
+          "amount": 54300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000030",
+      "landlord_id": "LL0010",
+      "vendor": "Harris, Santana and Lopez Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_32b3a11acd5040f1",
+    "object": "payment_intent",
+    "amount": 152300,
+    "currency": "usd",
+    "created": 1679036400,
+    "description": "Maintenance: hvac - 105 Nelson Circles Suite 917",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_81b4941ee4174d84",
+          "amount": 152300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000058",
+      "landlord_id": "LL0017",
+      "vendor": "Johnson-Thomas Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_445b3c5e34a04cb7",
+    "object": "payment_intent",
+    "amount": 70600,
+    "currency": "usd",
+    "created": 1679900400,
+    "description": "Maintenance: electrical - 7620 Sutton Knoll Suite 384",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_1585afb9ca054fe9",
+          "amount": 70600,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000101",
+      "landlord_id": "LL0032",
+      "vendor": "Mcmahon, Rush and Bailey Electrical Services",
+      "issue_type": "electrical",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_5f9c1862e6ff4eaf",
+    "object": "payment_intent",
+    "amount": 77660,
+    "currency": "usd",
+    "customer": "cus_TENANT_a430a8704bbe4ca3",
+    "created": 1679900400,
+    "description": "Maintenance charge: electrical",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_c7bdec12fa904c54",
+          "amount": 77660,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000101",
+      "related_vendor_payment": "pi_VENDOR_445b3c5e34a04cb7",
+      "maintenance_cost": "70600",
+      "markup": "7060",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_d0a7c88c21a64f64",
+    "object": "payment_intent",
+    "amount": 36800,
+    "currency": "usd",
+    "created": 1679036400,
+    "description": "Maintenance: hvac - 496 Barron Tunnel Suite 987",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_d17c03ed3ef4411b",
+          "amount": 36800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000090",
+      "landlord_id": "LL0029",
+      "vendor": "Wyatt Ltd Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_4a5dc340bcbc4880",
+    "object": "payment_intent",
+    "amount": 39400,
+    "currency": "usd",
+    "created": 1679468400,
+    "description": "Maintenance: plumbing - 195 Zachary Spring",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_9e5cca5662284422",
+          "amount": 39400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000122",
+      "landlord_id": "LL0039",
+      "vendor": "Allen, Hudson and Garcia Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_884d0690c31b4249",
+    "object": "payment_intent",
+    "amount": 101800,
+    "currency": "usd",
+    "created": 1677830400,
+    "description": "Maintenance: damage repair - 64317 Elizabeth Row Apt. 053",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_bbfb1d49f3614ac8",
+          "amount": 101800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000021",
+      "landlord_id": "LL0007",
+      "vendor": "Hines, Rice and Baldwin Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_266fd90d7e2549b4",
+    "object": "payment_intent",
+    "amount": 111980,
+    "currency": "usd",
+    "customer": "cus_TENANT_6e0682cf3f024123",
+    "created": 1677830400,
+    "description": "Maintenance charge: damage repair",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_20762264b0984a20",
+          "amount": 111980,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000021",
+      "related_vendor_payment": "pi_VENDOR_884d0690c31b4249",
+      "maintenance_cost": "101800",
+      "markup": "10180",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_601939a90f7e4225",
+    "object": "payment_intent",
+    "amount": 47700,
+    "currency": "usd",
+    "created": 1678176000,
+    "description": "Maintenance: appliance - 7165 Zimmerman Mews",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_5cfc85aaf2044661",
+          "amount": 47700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000013",
+      "landlord_id": "LL0003",
+      "vendor": "Jackson-Webster Appliance Services",
+      "issue_type": "appliance",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_6d5fac413dde4917",
+    "object": "payment_intent",
+    "amount": 199900,
+    "currency": "usd",
+    "created": 1679122800,
+    "description": "Maintenance: hvac - 738 Kyle Valleys Suite 359",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_492aaa6f50ab4c87",
+          "amount": 199900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000028",
+      "landlord_id": "LL0009",
+      "vendor": "Beltran Inc Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_bcd9e1a125e64498",
+    "object": "payment_intent",
+    "amount": 154100,
+    "currency": "usd",
+    "created": 1679900400,
+    "description": "Maintenance: hvac - 4679 Johnson Harbor Suite 299",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_fda2f62512f64563",
+          "amount": 154100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000066",
+      "landlord_id": "LL0021",
+      "vendor": "Knapp Ltd Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_2aceccfa1c764341",
+    "object": "payment_intent",
+    "amount": 11600,
+    "currency": "usd",
+    "created": 1678690800,
+    "description": "Maintenance: cleaning - 050 Taylor Via Suite 887",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_7b94a118b01d4fef",
+          "amount": 11600,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000052",
+      "landlord_id": "LL0016",
+      "vendor": "Richardson-Lawrence Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_b12bbc8fc5084a55",
+    "object": "payment_intent",
+    "amount": 35700,
+    "currency": "usd",
+    "created": 1677916800,
+    "description": "Maintenance: appliance - 2353 Hudson Gardens Suite 854",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_5e4a196cb6eb4b62",
+          "amount": 35700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000044",
+      "landlord_id": "LL0014",
+      "vendor": "Nunez-Rodriguez Appliance Services",
+      "issue_type": "appliance",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_c24b32e96d8c499e",
+    "object": "payment_intent",
+    "amount": 29400,
+    "currency": "usd",
+    "created": 1677916800,
+    "description": "Maintenance: cleaning - 728 Joseph Landing",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_57d5a6c587cc4758",
+          "amount": 29400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000103",
+      "landlord_id": "LL0032",
+      "vendor": "Zavala-Coleman Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_a2107fd062db4228",
+    "object": "payment_intent",
+    "amount": 11400,
+    "currency": "usd",
+    "created": 1679900400,
+    "description": "Maintenance: cleaning - 10447 Hamilton Spur Apt. 575",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_cb21dc1f3aa04a5f",
+          "amount": 11400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000071",
+      "landlord_id": "LL0022",
+      "vendor": "Perez, Rodriguez and Rollins Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_c6fb181a8c6b4a0c",
+    "object": "payment_intent",
+    "amount": 22400,
+    "currency": "usd",
+    "created": 1679209200,
+    "description": "Maintenance: appliance - 68222 Christina Glen Apt. 129",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_13da7697b3c64f20",
+          "amount": 22400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000079",
+      "landlord_id": "LL0026",
+      "vendor": "Owens PLC Appliance Services",
+      "issue_type": "appliance",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_95474bd1a4794e86",
+    "object": "payment_intent",
+    "amount": 27900,
+    "currency": "usd",
+    "created": 1678863600,
+    "description": "Maintenance: cleaning - 6472 Tiffany Spur Apt. 143",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_1bdf658b27b448cc",
+          "amount": 27900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000088",
+      "landlord_id": "LL0029",
+      "vendor": "Simpson LLC Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_938b462b96774b68",
+    "object": "payment_intent",
+    "amount": 32000,
+    "currency": "usd",
+    "created": 1682319600,
+    "description": "Maintenance: plumbing - 6797 Nelson Throughway Apt. 561",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_bd78dd28bc9c43ad",
+          "amount": 32000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000024",
+      "landlord_id": "LL0008",
+      "vendor": "Roberts, Bowen and Miller Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_d64d96488fb04e45",
+    "object": "payment_intent",
+    "amount": 35200,
+    "currency": "usd",
+    "customer": "cus_TENANT_ea489247427d417c",
+    "created": 1682319600,
+    "description": "Maintenance charge: plumbing",
+    "status": "failed",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_06ecea3c48274a06",
+          "amount": 35200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000024",
+      "related_vendor_payment": "pi_VENDOR_938b462b96774b68",
+      "maintenance_cost": "32000",
+      "markup": "3200",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_40b4ef2575a5456b",
+    "object": "payment_intent",
+    "amount": 55600,
+    "currency": "usd",
+    "created": 1681801200,
+    "description": "Maintenance: plumbing - 8172 Blanchard Cliff Apt. 965",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_258973b0f7d04c14",
+          "amount": 55600,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000110",
+      "landlord_id": "LL0035",
+      "vendor": "Wilson-Campbell Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_8cf53afcbb7d4479",
+    "object": "payment_intent",
+    "amount": 61160,
+    "currency": "usd",
+    "customer": "cus_TENANT_395740a03ab24808",
+    "created": 1681801200,
+    "description": "Maintenance charge: plumbing",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_02307eaee1594cc9",
+          "amount": 61160,
+          "currency": "usd",
+          "paid": false,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000110",
+      "related_vendor_payment": "pi_VENDOR_40b4ef2575a5456b",
+      "maintenance_cost": "55600",
+      "markup": "5560",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_e2907c0106a74631",
+    "object": "payment_intent",
+    "amount": 23300,
+    "currency": "usd",
+    "created": 1682838000,
+    "description": "Maintenance: landscaping - 281 Skinner Parkways Apt. 252",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_451c0060ede94d47",
+          "amount": 23300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000003",
+      "landlord_id": "LL0001",
+      "vendor": "Fitzgerald, Mcdaniel and Randall Landscaping Services",
+      "issue_type": "landscaping",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_bd19e843d67c4752",
+    "object": "payment_intent",
+    "amount": 55800,
+    "currency": "usd",
+    "created": 1681110000,
+    "description": "Maintenance: hvac - 5339 Hall Trail Suite 057",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_dd079ea9c6564788",
+          "amount": 55800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000017",
+      "landlord_id": "LL0006",
+      "vendor": "Spencer LLC Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_61086a57603b41cb",
+    "object": "payment_intent",
+    "amount": 51500,
+    "currency": "usd",
+    "created": 1680764400,
+    "description": "Maintenance: plumbing - 3009 Barker Drives",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_42e511e58848401e",
+          "amount": 51500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000094",
+      "landlord_id": "LL0030",
+      "vendor": "Lopez-Jones Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_37d0dd46537c46b2",
+    "object": "payment_intent",
+    "amount": 130700,
+    "currency": "usd",
+    "created": 1681542000,
+    "description": "Maintenance: damage repair - 451 Mark Hill",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_6c82e4b756044fee",
+          "amount": 130700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000031",
+      "landlord_id": "LL0010",
+      "vendor": "Crosby-Richardson Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_f0b6499aba1b4251",
+    "object": "payment_intent",
+    "amount": 143770,
+    "currency": "usd",
+    "customer": "cus_TENANT_c6cfe5c1b40741aa",
+    "created": 1681542000,
+    "description": "Maintenance charge: damage repair",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_9e65975b30474259",
+          "amount": 143770,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000031",
+      "related_vendor_payment": "pi_VENDOR_37d0dd46537c46b2",
+      "maintenance_cost": "130700",
+      "markup": "13070",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_8fa648b28fea4e69",
+    "object": "payment_intent",
+    "amount": 40200,
+    "currency": "usd",
+    "created": 1682233200,
+    "description": "Maintenance: appliance - 38430 Christina Spring Apt. 530",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_c8cdd826608b4025",
+          "amount": 40200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000085",
+      "landlord_id": "LL0028",
+      "vendor": "Lutz Group Appliance Services",
+      "issue_type": "appliance",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_9ea03c8364394de1",
+    "object": "payment_intent",
+    "amount": 29700,
+    "currency": "usd",
+    "created": 1682060400,
+    "description": "Maintenance: landscaping - 2258 David Flats Apt. 370",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_bb38eb7a901d437c",
+          "amount": 29700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000033",
+      "landlord_id": "LL0010",
+      "vendor": "Garcia, Kim and Barrett Landscaping Services",
+      "issue_type": "landscaping",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_587a84b039e14320",
+    "object": "payment_intent",
+    "amount": 51200,
+    "currency": "usd",
+    "created": 1681628400,
+    "description": "Maintenance: appliance - 7318 Heather Lodge",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_385a05620f6d432b",
+          "amount": 51200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000121",
+      "landlord_id": "LL0039",
+      "vendor": "Wilson Group Appliance Services",
+      "issue_type": "appliance",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_f4dcd26ae2c14632",
+    "object": "payment_intent",
+    "amount": 61800,
+    "currency": "usd",
+    "created": 1681282800,
+    "description": "Maintenance: hvac - 18102 Morgan Flats Apt. 731",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_be2aa134cdb747e0",
+          "amount": 61800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000096",
+      "landlord_id": "LL0030",
+      "vendor": "Neal-Madden Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_84d369f04aa3460b",
+    "object": "payment_intent",
+    "amount": 67980,
+    "currency": "usd",
+    "customer": "cus_TENANT_761bd15c7ab24edb",
+    "created": 1681282800,
+    "description": "Maintenance charge: hvac",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_4ab18d9455654bb4",
+          "amount": 67980,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000096",
+      "related_vendor_payment": "pi_VENDOR_f4dcd26ae2c14632",
+      "maintenance_cost": "61800",
+      "markup": "6180",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_5581e556bef1418c",
+    "object": "payment_intent",
+    "amount": 126000,
+    "currency": "usd",
+    "created": 1680678000,
+    "description": "Maintenance: hvac - 496 Barron Tunnel Suite 987",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_1bfe7023a31c40ef",
+          "amount": 126000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000090",
+      "landlord_id": "LL0029",
+      "vendor": "Schaefer, Levine and Brown Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_1530087691f04e66",
+    "object": "payment_intent",
+    "amount": 56500,
+    "currency": "usd",
+    "created": 1685170800,
+    "description": "Maintenance: damage repair - 361 Kenneth Bypass Suite 451",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_352101a9fec741eb",
+          "amount": 56500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000053",
+      "landlord_id": "LL0016",
+      "vendor": "Morgan PLC Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_054608b2175949b8",
+    "object": "payment_intent",
+    "amount": 62150,
+    "currency": "usd",
+    "customer": "cus_TENANT_bc122e8193604fab",
+    "created": 1685170800,
+    "description": "Maintenance charge: damage repair",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_738a97def25b4d07",
+          "amount": 62150,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000053",
+      "related_vendor_payment": "pi_VENDOR_1530087691f04e66",
+      "maintenance_cost": "56500",
+      "markup": "5650",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_2a9be2377d2c494d",
+    "object": "payment_intent",
+    "amount": 54700,
+    "currency": "usd",
+    "created": 1683183600,
+    "description": "Maintenance: plumbing - 57991 Nicholas Curve Apt. 038",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_e7a4ec60468840b2",
+          "amount": 54700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000083",
+      "landlord_id": "LL0027",
+      "vendor": "Martinez-Massey Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_6e8d1ca3c8a145c9",
+    "object": "payment_intent",
+    "amount": 6200,
+    "currency": "usd",
+    "created": 1684825200,
+    "description": "Maintenance: cleaning - 8686 John Key Apt. 431",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_5b69650fb80546c3",
+          "amount": 6200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000042",
+      "landlord_id": "LL0013",
+      "vendor": "Porter, Hubbard and Miranda Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_644b7f044c634e6d",
+    "object": "payment_intent",
+    "amount": 36300,
+    "currency": "usd",
+    "created": 1684825200,
+    "description": "Maintenance: plumbing - 10249 Gonzales Mountain Suite 648",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_58d2df700d594f9e",
+          "amount": 36300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000015",
+      "landlord_id": "LL0005",
+      "vendor": "Nelson, Clarke and Schneider Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_7b554e8469074cb0",
+    "object": "payment_intent",
+    "amount": 21200,
+    "currency": "usd",
+    "created": 1685170800,
+    "description": "Maintenance: plumbing - 7165 Zimmerman Mews",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_a15d5b8cf8ee408a",
+          "amount": 21200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000013",
+      "landlord_id": "LL0003",
+      "vendor": "Kelly-Estrada Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_90fa7103eb9d43c6",
+    "object": "payment_intent",
+    "amount": 105500,
+    "currency": "usd",
+    "created": 1685343600,
+    "description": "Maintenance: hvac - 82148 Taylor Vista Apt. 233",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_eb9cc83f335443c6",
+          "amount": 105500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000067",
+      "landlord_id": "LL0021",
+      "vendor": "Archer-Dixon Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_d6fcf681c67e49c6",
+    "object": "payment_intent",
+    "amount": 47500,
+    "currency": "usd",
+    "created": 1683615600,
+    "description": "Maintenance: appliance - 38430 Christina Spring Apt. 530",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_9deb8b5a2c694cbe",
+          "amount": 47500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000085",
+      "landlord_id": "LL0028",
+      "vendor": "Tate Inc Appliance Services",
+      "issue_type": "appliance",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_c5e485ac6bd44724",
+    "object": "payment_intent",
+    "amount": 126300,
+    "currency": "usd",
+    "created": 1683097200,
+    "description": "Maintenance: damage repair - 340 Smith Valley Apt. 561",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_d4a5f024370d4918",
+          "amount": 126300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000009",
+      "landlord_id": "LL0002",
+      "vendor": "King Group Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_b74757ad2f934216",
+    "object": "payment_intent",
+    "amount": 138930,
+    "currency": "usd",
+    "customer": "cus_TENANT_9abf3fea3f314124",
+    "created": 1683097200,
+    "description": "Maintenance charge: damage repair",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_3fbef21a0b6341e1",
+          "amount": 138930,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000009",
+      "related_vendor_payment": "pi_VENDOR_c5e485ac6bd44724",
+      "maintenance_cost": "126300",
+      "markup": "12630",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_0f5bec02798044d4",
+    "object": "payment_intent",
+    "amount": 73800,
+    "currency": "usd",
+    "created": 1683961200,
+    "description": "Maintenance: electrical - 83842 Ibarra Gardens",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_e28dda4ce1304aca",
+          "amount": 73800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000006",
+      "landlord_id": "LL0002",
+      "vendor": "Fuller and Sons Electrical Services",
+      "issue_type": "electrical",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_e3bdb48242634240",
+    "object": "payment_intent",
+    "amount": 22100,
+    "currency": "usd",
+    "created": 1685948400,
+    "description": "Maintenance: cleaning - 52175 Lawrence Centers Apt. 743",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_9dd8488262244288",
+          "amount": 22100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000070",
+      "landlord_id": "LL0022",
+      "vendor": "Garcia Inc Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_fe03442c37be4d41",
+    "object": "payment_intent",
+    "amount": 6100,
+    "currency": "usd",
+    "created": 1688022000,
+    "description": "Maintenance: cleaning - 82148 Taylor Vista Apt. 233",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_32af684964584822",
+          "amount": 6100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000067",
+      "landlord_id": "LL0021",
+      "vendor": "Jimenez Inc Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_399f9878d2194e88",
+    "object": "payment_intent",
+    "amount": 6710,
+    "currency": "usd",
+    "customer": "cus_TENANT_fe513c4766f04670",
+    "created": 1688022000,
+    "description": "Maintenance charge: cleaning",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_4ea8f8ddba804770",
+          "amount": 6710,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000067",
+      "related_vendor_payment": "pi_VENDOR_fe03442c37be4d41",
+      "maintenance_cost": "6100",
+      "markup": "610",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_0f207e3c7eb44ccd",
+    "object": "payment_intent",
+    "amount": 125200,
+    "currency": "usd",
+    "created": 1687244400,
+    "description": "Maintenance: hvac - 386 James Shoals",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_696a78a2fb214c84",
+          "amount": 125200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000097",
+      "landlord_id": "LL0030",
+      "vendor": "Reyes Ltd Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_0febda108f9e4fa7",
+    "object": "payment_intent",
+    "amount": 137720,
+    "currency": "usd",
+    "customer": "cus_TENANT_15e06f321b77493b",
+    "created": 1687244400,
+    "description": "Maintenance charge: hvac",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_8cbb755a22cc4288",
+          "amount": 137720,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000097",
+      "related_vendor_payment": "pi_VENDOR_0f207e3c7eb44ccd",
+      "maintenance_cost": "125200",
+      "markup": "12520",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_19e668488fa14743",
+    "object": "payment_intent",
+    "amount": 27100,
+    "currency": "usd",
+    "created": 1688108400,
+    "description": "Maintenance: cleaning - 82422 Donovan Fork",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_ed8f506bd945499f",
+          "amount": 27100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000034",
+      "landlord_id": "LL0010",
+      "vendor": "Hernandez-Howell Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_702eb86dcca94357",
+    "object": "payment_intent",
+    "amount": 29810,
+    "currency": "usd",
+    "customer": "cus_TENANT_54e617cfea114225",
+    "created": 1688108400,
+    "description": "Maintenance charge: cleaning",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_9c8199c426634c2a",
+          "amount": 29810,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000034",
+      "related_vendor_payment": "pi_VENDOR_19e668488fa14743",
+      "maintenance_cost": "27100",
+      "markup": "2710",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_62068ec0a1444554",
+    "object": "payment_intent",
+    "amount": 124100,
+    "currency": "usd",
+    "created": 1686207600,
+    "description": "Maintenance: damage repair - 10447 Hamilton Spur Apt. 575",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_079f8b1054164db8",
+          "amount": 124100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000071",
+      "landlord_id": "LL0022",
+      "vendor": "Wolf Ltd Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_000e7a2efe6e4638",
+    "object": "payment_intent",
+    "amount": 136510,
+    "currency": "usd",
+    "customer": "cus_TENANT_9e812c34c1bf42de",
+    "created": 1686207600,
+    "description": "Maintenance charge: damage repair",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_e66623c86aaf4a30",
+          "amount": 136510,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000071",
+      "related_vendor_payment": "pi_VENDOR_62068ec0a1444554",
+      "maintenance_cost": "124100",
+      "markup": "12410",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_6819a913be6c463e",
+    "object": "payment_intent",
+    "amount": 19500,
+    "currency": "usd",
+    "created": 1687244400,
+    "description": "Maintenance: appliance - 39559 Jade Knoll",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_4a46e6d768c64316",
+          "amount": 19500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000062",
+      "landlord_id": "LL0019",
+      "vendor": "Saunders, Sparks and Harris Appliance Services",
+      "issue_type": "appliance",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_f59b4b09ef28451d",
+    "object": "payment_intent",
+    "amount": 46400,
+    "currency": "usd",
+    "created": 1686812400,
+    "description": "Maintenance: appliance - 2053 Jennifer Row Suite 452",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_39d2fe427d754f3f",
+          "amount": 46400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000080",
+      "landlord_id": "LL0026",
+      "vendor": "Jimenez, Wagner and Daniels Appliance Services",
+      "issue_type": "appliance",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_ee89371bf88b45fb",
+    "object": "payment_intent",
+    "amount": 51040,
+    "currency": "usd",
+    "customer": "cus_TENANT_504d6848cd474926",
+    "created": 1686812400,
+    "description": "Maintenance charge: appliance",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_37dc7969faff4b2f",
+          "amount": 51040,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000080",
+      "related_vendor_payment": "pi_VENDOR_f59b4b09ef28451d",
+      "maintenance_cost": "46400",
+      "markup": "4640",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_dd32e783b5844bf7",
+    "object": "payment_intent",
+    "amount": 62100,
+    "currency": "usd",
+    "created": 1686898800,
+    "description": "Maintenance: hvac - 3009 Barker Drives",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_51acf31194784a86",
+          "amount": 62100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000094",
+      "landlord_id": "LL0030",
+      "vendor": "Payne, Cisneros and Johnson Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_b595d90e5c65453a",
+    "object": "payment_intent",
+    "amount": 108900,
+    "currency": "usd",
+    "created": 1690527600,
+    "description": "Maintenance: electrical - 195 Zachary Spring",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_037de0cfb3194992",
+          "amount": 108900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000122",
+      "landlord_id": "LL0039",
+      "vendor": "Beard-Wilson Electrical Services",
+      "issue_type": "electrical",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_41b7574acb504aa3",
+    "object": "payment_intent",
+    "amount": 119790,
+    "currency": "usd",
+    "customer": "cus_TENANT_2b2a49322f1c42e8",
+    "created": 1690527600,
+    "description": "Maintenance charge: electrical",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_dfb001c9a364491d",
+          "amount": 119790,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000122",
+      "related_vendor_payment": "pi_VENDOR_b595d90e5c65453a",
+      "maintenance_cost": "108900",
+      "markup": "10890",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_9999a58906a14165",
+    "object": "payment_intent",
+    "amount": 29600,
+    "currency": "usd",
+    "created": 1688972400,
+    "description": "Maintenance: cleaning - 64317 Elizabeth Row Apt. 053",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_a10f435eb78f490d",
+          "amount": 29600,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000021",
+      "landlord_id": "LL0007",
+      "vendor": "Edwards-Bennett Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_be5d2461908f4570",
+    "object": "payment_intent",
+    "amount": 28400,
+    "currency": "usd",
+    "created": 1688626800,
+    "description": "Maintenance: plumbing - 1672 Allen Shoals Apt. 661",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_d8d97abce15a41b7",
+          "amount": 28400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000049",
+      "landlord_id": "LL0015",
+      "vendor": "Johnson-Thompson Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_2a6fce6e95a44bf7",
+    "object": "payment_intent",
+    "amount": 31240,
+    "currency": "usd",
+    "customer": "cus_TENANT_f33c1b05dc434513",
+    "created": 1688626800,
+    "description": "Maintenance charge: plumbing",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_6e416b48d12e4bb1",
+          "amount": 31240,
+          "currency": "usd",
+          "paid": false,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000049",
+      "related_vendor_payment": "pi_VENDOR_be5d2461908f4570",
+      "maintenance_cost": "28400",
+      "markup": "2840",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_b3178da6d4c84809",
+    "object": "payment_intent",
+    "amount": 35300,
+    "currency": "usd",
+    "created": 1689490800,
+    "description": "Maintenance: landscaping - 10447 Hamilton Spur Apt. 575",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_78b875c2d10144c0",
+          "amount": 35300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000071",
+      "landlord_id": "LL0022",
+      "vendor": "Dalton, Turner and Mccarthy Landscaping Services",
+      "issue_type": "landscaping",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_a8c802933eba45c3",
+    "object": "payment_intent",
+    "amount": 80200,
+    "currency": "usd",
+    "created": 1689490800,
+    "description": "Maintenance: electrical - 83842 Ibarra Gardens",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_0b4d5bbf755744d9",
+          "amount": 80200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000006",
+      "landlord_id": "LL0002",
+      "vendor": "Jordan-Edwards Electrical Services",
+      "issue_type": "electrical",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_1bda4d6487fd4ecf",
+    "object": "payment_intent",
+    "amount": 76400,
+    "currency": "usd",
+    "created": 1689404400,
+    "description": "Maintenance: plumbing - 67998 Jeffrey Highway",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_4ce6226214f54c96",
+          "amount": 76400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000099",
+      "landlord_id": "LL0031",
+      "vendor": "Freeman-Rodriguez Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_24d19b5acc3944f7",
+    "object": "payment_intent",
+    "amount": 158700,
+    "currency": "usd",
+    "created": 1689663600,
+    "description": "Maintenance: hvac - 5452 Jones Village Apt. 161",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_76dabadb3ed44085",
+          "amount": 158700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000022",
+      "landlord_id": "LL0008",
+      "vendor": "Henry, Spencer and Ryan Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_2a1965656a6942fc",
+    "object": "payment_intent",
+    "amount": 174570,
+    "currency": "usd",
+    "customer": "cus_TENANT_cea2e95de6fc40d8",
+    "created": 1689663600,
+    "description": "Maintenance charge: hvac",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_e66bad34e505463f",
+          "amount": 174570,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000022",
+      "related_vendor_payment": "pi_VENDOR_24d19b5acc3944f7",
+      "maintenance_cost": "158700",
+      "markup": "15870",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_4740aec89ffe417e",
+    "object": "payment_intent",
+    "amount": 18300,
+    "currency": "usd",
+    "created": 1688281200,
+    "description": "Maintenance: plumbing - 79291 Danny Ranch Apt. 136",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_80bce08603484e62",
+          "amount": 18300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000117",
+      "landlord_id": "LL0038",
+      "vendor": "Alvarez-Dickerson Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_870a217acf714e4b",
+    "object": "payment_intent",
+    "amount": 57600,
+    "currency": "usd",
+    "created": 1688367600,
+    "description": "Maintenance: plumbing - 54033 Julie Throughway Suite 393",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_4d83cdad016044f0",
+          "amount": 57600,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000043",
+      "landlord_id": "LL0014",
+      "vendor": "Brown, Baker and Garza Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_1c664fd949d4476c",
+    "object": "payment_intent",
+    "amount": 63360,
+    "currency": "usd",
+    "customer": "cus_TENANT_59b71c99a7954302",
+    "created": 1688367600,
+    "description": "Maintenance charge: plumbing",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_0f415765bf3249d4",
+          "amount": 63360,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000043",
+      "related_vendor_payment": "pi_VENDOR_870a217acf714e4b",
+      "maintenance_cost": "57600",
+      "markup": "5760",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_ce774360d86741f9",
+    "object": "payment_intent",
+    "amount": 25100,
+    "currency": "usd",
+    "created": 1690095600,
+    "description": "Maintenance: cleaning - 9797 Cheryl Tunnel",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_07b009e66c1441ef",
+          "amount": 25100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000073",
+      "landlord_id": "LL0023",
+      "vendor": "Jensen-Gomez Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_8020fa16f9ee4c3e",
+    "object": "payment_intent",
+    "amount": 28800,
+    "currency": "usd",
+    "created": 1690182000,
+    "description": "Maintenance: cleaning - 058 Taylor Passage Suite 956",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_72b4c2c2a87246d0",
+          "amount": 28800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000112",
+      "landlord_id": "LL0036",
+      "vendor": "Flores-Johnson Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_761b46cedcc64c6c",
+    "object": "payment_intent",
+    "amount": 31680,
+    "currency": "usd",
+    "customer": "cus_TENANT_e559884ffab14142",
+    "created": 1690182000,
+    "description": "Maintenance charge: cleaning",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_e29ab28a50924158",
+          "amount": 31680,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000112",
+      "related_vendor_payment": "pi_VENDOR_8020fa16f9ee4c3e",
+      "maintenance_cost": "28800",
+      "markup": "2880",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_7d723696faaf4b41",
+    "object": "payment_intent",
+    "amount": 29300,
+    "currency": "usd",
+    "created": 1689231600,
+    "description": "Maintenance: landscaping - 38430 Christina Spring Apt. 530",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_2808b7b06c2547b6",
+          "amount": 29300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000085",
+      "landlord_id": "LL0028",
+      "vendor": "Anderson LLC Landscaping Services",
+      "issue_type": "landscaping",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_e895e21254c54dbf",
+    "object": "payment_intent",
+    "amount": 20500,
+    "currency": "usd",
+    "created": 1690959600,
+    "description": "Maintenance: plumbing - 6504 Thompson Cliff",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_ee60821883014c19",
+          "amount": 20500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000115",
+      "landlord_id": "LL0037",
+      "vendor": "Pacheco-Silva Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_ec8ed8c5ca6d49a3",
+    "object": "payment_intent",
+    "amount": 27800,
+    "currency": "usd",
+    "created": 1691305200,
+    "description": "Maintenance: cleaning - 2353 Hudson Gardens Suite 854",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_c2143565bfc8420d",
+          "amount": 27800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000044",
+      "landlord_id": "LL0014",
+      "vendor": "Peterson, Davis and Reed Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_4cb34291e5b84764",
+    "object": "payment_intent",
+    "amount": 70500,
+    "currency": "usd",
+    "created": 1691650800,
+    "description": "Maintenance: hvac - 52175 Lawrence Centers Apt. 743",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_27c8b347eddc4485",
+          "amount": 70500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000070",
+      "landlord_id": "LL0022",
+      "vendor": "Jenkins-Brown Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_affe4246538d4039",
+    "object": "payment_intent",
+    "amount": 19500,
+    "currency": "usd",
+    "created": 1692946800,
+    "description": "Maintenance: cleaning - 866 Miller Plain Apt. 414",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_715c887cef3d4d0d",
+          "amount": 19500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000057",
+      "landlord_id": "LL0017",
+      "vendor": "Wright Ltd Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_34fc59d2999c4747",
+    "object": "payment_intent",
+    "amount": 21450,
+    "currency": "usd",
+    "customer": "cus_TENANT_dae96dfd6b73412a",
+    "created": 1692946800,
+    "description": "Maintenance charge: cleaning",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_d91ad54da4a94e50",
+          "amount": 21450,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000057",
+      "related_vendor_payment": "pi_VENDOR_affe4246538d4039",
+      "maintenance_cost": "19500",
+      "markup": "1950",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_37891cb98ae94ef6",
+    "object": "payment_intent",
+    "amount": 45000,
+    "currency": "usd",
+    "created": 1691132400,
+    "description": "Maintenance: appliance - 0164 Adam Trail Apt. 427",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_82e85abeb9ea47f4",
+          "amount": 45000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000007",
+      "landlord_id": "LL0002",
+      "vendor": "Watkins-Lozano Appliance Services",
+      "issue_type": "appliance",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_b22f40192e4d45d6",
+    "object": "payment_intent",
+    "amount": 78100,
+    "currency": "usd",
+    "created": 1691478000,
+    "description": "Maintenance: plumbing - 5339 Hall Trail Suite 057",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_7aa3fd53111b4d37",
+          "amount": 78100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000017",
+      "landlord_id": "LL0006",
+      "vendor": "Melton Inc Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_f7406d571e8f4419",
+    "object": "payment_intent",
+    "amount": 113900,
+    "currency": "usd",
+    "created": 1691910000,
+    "description": "Maintenance: electrical - 33150 Brianna Avenue Apt. 031",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_38120a43dae54eaf",
+          "amount": 113900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000004",
+      "landlord_id": "LL0001",
+      "vendor": "Jackson-Ryan Electrical Services",
+      "issue_type": "electrical",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_97004ddc6ceb4a8e",
+    "object": "payment_intent",
+    "amount": 129800,
+    "currency": "usd",
+    "created": 1693292400,
+    "description": "Maintenance: hvac - 14626 Dawn Union Apt. 806",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_26336f9e0fc54737",
+          "amount": 129800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000061",
+      "landlord_id": "LL0019",
+      "vendor": "Murray Group Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_d45d2b6ff12a464f",
+    "object": "payment_intent",
+    "amount": 142780,
+    "currency": "usd",
+    "customer": "cus_TENANT_95917981fbe54595",
+    "created": 1693292400,
+    "description": "Maintenance charge: hvac",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_d19f41f53d544f37",
+          "amount": 142780,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000061",
+      "related_vendor_payment": "pi_VENDOR_97004ddc6ceb4a8e",
+      "maintenance_cost": "129800",
+      "markup": "12980",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_d5993ac4d58244cb",
+    "object": "payment_intent",
+    "amount": 98600,
+    "currency": "usd",
+    "created": 1693206000,
+    "description": "Maintenance: electrical - 6184 Ferguson Village",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_27236e02448444a7",
+          "amount": 98600,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000116",
+      "landlord_id": "LL0038",
+      "vendor": "Robertson, Fisher and Smith Electrical Services",
+      "issue_type": "electrical",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_d8a2636b7a444291",
+    "object": "payment_intent",
+    "amount": 30700,
+    "currency": "usd",
+    "created": 1691218800,
+    "description": "Maintenance: appliance - 5182 Edwards Forge",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_c8908b43653a4561",
+          "amount": 30700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000087",
+      "landlord_id": "LL0028",
+      "vendor": "Chapman-Odom Appliance Services",
+      "issue_type": "appliance",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_3210eda743404230",
+    "object": "payment_intent",
+    "amount": 12300,
+    "currency": "usd",
+    "created": 1695538800,
+    "description": "Maintenance: cleaning - 256 Patricia Radial Suite 278",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_54231509b29147dc",
+          "amount": 12300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000081",
+      "landlord_id": "LL0026",
+      "vendor": "Hudson-Morris Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_41d80d6216794c83",
+    "object": "payment_intent",
+    "amount": 13530,
+    "currency": "usd",
+    "customer": "cus_TENANT_3070ad95775043a8",
+    "created": 1695538800,
+    "description": "Maintenance charge: cleaning",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_2fe77d45224049b1",
+          "amount": 13530,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000081",
+      "related_vendor_payment": "pi_VENDOR_3210eda743404230",
+      "maintenance_cost": "12300",
+      "markup": "1230",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_64a0cb36d45a43f7",
+    "object": "payment_intent",
+    "amount": 156100,
+    "currency": "usd",
+    "created": 1694242800,
+    "description": "Maintenance: hvac - 14626 Dawn Union Apt. 806",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_35081f8a5c37482f",
+          "amount": 156100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000061",
+      "landlord_id": "LL0019",
+      "vendor": "Stokes Inc Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_4610e0b7b11d4221",
+    "object": "payment_intent",
+    "amount": 26400,
+    "currency": "usd",
+    "created": 1694242800,
+    "description": "Maintenance: plumbing - 43805 Garcia Ways",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_ea14f596a90045cb",
+          "amount": 26400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000075",
+      "landlord_id": "LL0025",
+      "vendor": "Leonard, Rogers and Shaw Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_5afc28f02aa14581",
+    "object": "payment_intent",
+    "amount": 65700,
+    "currency": "usd",
+    "created": 1695538800,
+    "description": "Maintenance: electrical - 5452 Jones Village Apt. 161",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_e0aab930666544e1",
+          "amount": 65700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000022",
+      "landlord_id": "LL0008",
+      "vendor": "Morgan, Mendez and Cox Electrical Services",
+      "issue_type": "electrical",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_1a2f7a5601774f8f",
+    "object": "payment_intent",
+    "amount": 11000,
+    "currency": "usd",
+    "created": 1694242800,
+    "description": "Maintenance: cleaning - 571 Katherine Forges Apt. 554",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_e87fb28028e243b6",
+          "amount": 11000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000074",
+      "landlord_id": "LL0024",
+      "vendor": "Harris-Reid Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_a6860e0f9a55429b",
+    "object": "payment_intent",
+    "amount": 12100,
+    "currency": "usd",
+    "customer": "cus_TENANT_a61bdc29c73247db",
+    "created": 1694242800,
+    "description": "Maintenance charge: cleaning",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_9a0c950b26864b58",
+          "amount": 12100,
+          "currency": "usd",
+          "paid": false,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000074",
+      "related_vendor_payment": "pi_VENDOR_1a2f7a5601774f8f",
+      "maintenance_cost": "11000",
+      "markup": "1100",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_88c15f13ee2a43b2",
+    "object": "payment_intent",
+    "amount": 141900,
+    "currency": "usd",
+    "created": 1693724400,
+    "description": "Maintenance: damage repair - 0164 Adam Trail Apt. 427",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_3097c0ff4a684c19",
+          "amount": 141900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000007",
+      "landlord_id": "LL0002",
+      "vendor": "Pittman PLC Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_aedadac5952344e0",
+    "object": "payment_intent",
+    "amount": 156090,
+    "currency": "usd",
+    "customer": "cus_TENANT_fa69f1f5313243ce",
+    "created": 1693724400,
+    "description": "Maintenance charge: damage repair",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_8997ef6f28ed4d19",
+          "amount": 156090,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000007",
+      "related_vendor_payment": "pi_VENDOR_88c15f13ee2a43b2",
+      "maintenance_cost": "141900",
+      "markup": "14190",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_86af858f6dac487f",
+    "object": "payment_intent",
+    "amount": 11000,
+    "currency": "usd",
+    "created": 1694674800,
+    "description": "Maintenance: cleaning - 38430 Christina Spring Apt. 530",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_eb165cc16deb4106",
+          "amount": 11000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000085",
+      "landlord_id": "LL0028",
+      "vendor": "Mitchell Inc Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_3a5c891813cd446b",
+    "object": "payment_intent",
+    "amount": 95100,
+    "currency": "usd",
+    "created": 1693983600,
+    "description": "Maintenance: electrical - 786 Frye Mount Suite 854",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_ebdecf7c52de45e5",
+          "amount": 95100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000038",
+      "landlord_id": "LL0011",
+      "vendor": "Davies-Morales Electrical Services",
+      "issue_type": "electrical",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_2d40cecf141d4de4",
+    "object": "payment_intent",
+    "amount": 104610,
+    "currency": "usd",
+    "customer": "cus_TENANT_93fd4c26914a42f8",
+    "created": 1693983600,
+    "description": "Maintenance charge: electrical",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_14957fd064574c9d",
+          "amount": 104610,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000038",
+      "related_vendor_payment": "pi_VENDOR_3a5c891813cd446b",
+      "maintenance_cost": "95100",
+      "markup": "9510",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_b0efe7eb3fb54cd9",
+    "object": "payment_intent",
+    "amount": 60800,
+    "currency": "usd",
+    "created": 1693638000,
+    "description": "Maintenance: electrical - 177 Natalie Gardens",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_7cc5aa6d466b4b1c",
+          "amount": 60800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000104",
+      "landlord_id": "LL0032",
+      "vendor": "Weber Inc Electrical Services",
+      "issue_type": "electrical",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_e6bff163743f44ed",
+    "object": "payment_intent",
+    "amount": 129800,
+    "currency": "usd",
+    "created": 1697353200,
+    "description": "Maintenance: damage repair - 17127 Hicks Groves",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_f22ef6009a404a20",
+          "amount": 129800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000016",
+      "landlord_id": "LL0006",
+      "vendor": "Richard, Davis and Rogers Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_692ea6ef9747450c",
+    "object": "payment_intent",
+    "amount": 142780,
+    "currency": "usd",
+    "customer": "cus_TENANT_a33e7ba1b9f64b58",
+    "created": 1697353200,
+    "description": "Maintenance charge: damage repair",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_0171babfc1254dea",
+          "amount": 142780,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000016",
+      "related_vendor_payment": "pi_VENDOR_e6bff163743f44ed",
+      "maintenance_cost": "129800",
+      "markup": "12980",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_6b3db68c1b174b88",
+    "object": "payment_intent",
+    "amount": 29400,
+    "currency": "usd",
+    "created": 1696316400,
+    "description": "Maintenance: plumbing - 738 Kyle Valleys Suite 359",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_0c38599aea484bbc",
+          "amount": 29400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000028",
+      "landlord_id": "LL0009",
+      "vendor": "Knight PLC Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_dd47342f8d6e4ea7",
+    "object": "payment_intent",
+    "amount": 146600,
+    "currency": "usd",
+    "created": 1697439600,
+    "description": "Maintenance: damage repair - 177 Natalie Gardens",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_62a824bdd1954c8e",
+          "amount": 146600,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000104",
+      "landlord_id": "LL0032",
+      "vendor": "Simmons-Reed Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_6409d99851f24d8f",
+    "object": "payment_intent",
+    "amount": 161260,
+    "currency": "usd",
+    "customer": "cus_TENANT_b123bc695e914f69",
+    "created": 1697439600,
+    "description": "Maintenance charge: damage repair",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_5633690cb21d4b63",
+          "amount": 161260,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000104",
+      "related_vendor_payment": "pi_VENDOR_dd47342f8d6e4ea7",
+      "maintenance_cost": "146600",
+      "markup": "14660",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_7ca29d84508a4e56",
+    "object": "payment_intent",
+    "amount": 25100,
+    "currency": "usd",
+    "created": 1696143600,
+    "description": "Maintenance: electrical - 621 Sean Squares Apt. 138",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_3b5b3d931a1a477b",
+          "amount": 25100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000084",
+      "landlord_id": "LL0028",
+      "vendor": "Pearson LLC Electrical Services",
+      "issue_type": "electrical",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_e754a69316814ec6",
+    "object": "payment_intent",
+    "amount": 18700,
+    "currency": "usd",
+    "created": 1696402800,
+    "description": "Maintenance: appliance - 8181 Morgan Crescent",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_36522c541820438c",
+          "amount": 18700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000086",
+      "landlord_id": "LL0028",
+      "vendor": "Brock, Reynolds and Fernandez Appliance Services",
+      "issue_type": "appliance",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_c35cca1cbdd64241",
+    "object": "payment_intent",
+    "amount": 75900,
+    "currency": "usd",
+    "created": 1696402800,
+    "description": "Maintenance: plumbing - 82148 Taylor Vista Apt. 233",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_f3a16e81cc494ab8",
+          "amount": 75900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000067",
+      "landlord_id": "LL0021",
+      "vendor": "Perry LLC Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_6397078f9f3144db",
+    "object": "payment_intent",
+    "amount": 83490,
+    "currency": "usd",
+    "customer": "cus_TENANT_fe513c4766f04670",
+    "created": 1696402800,
+    "description": "Maintenance charge: plumbing",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_b9561528f0074028",
+          "amount": 83490,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000067",
+      "related_vendor_payment": "pi_VENDOR_c35cca1cbdd64241",
+      "maintenance_cost": "75900",
+      "markup": "7590",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_3107f6a9d6104ff6",
+    "object": "payment_intent",
+    "amount": 26900,
+    "currency": "usd",
+    "created": 1699257600,
+    "description": "Maintenance: cleaning - 738 Kyle Valleys Suite 359",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_82c9d2c4f2c44a92",
+          "amount": 26900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000028",
+      "landlord_id": "LL0009",
+      "vendor": "Robertson, Powers and Kelley Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_68882cdbf37d4ef3",
+    "object": "payment_intent",
+    "amount": 27300,
+    "currency": "usd",
+    "created": 1700035200,
+    "description": "Maintenance: cleaning - 5339 Hall Trail Suite 057",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_859f30f92b7d4020",
+          "amount": 27300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000017",
+      "landlord_id": "LL0006",
+      "vendor": "Burton PLC Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_e02933e24c6644f9",
+    "object": "payment_intent",
+    "amount": 30030,
+    "currency": "usd",
+    "customer": "cus_TENANT_c0e4cc813e6843d2",
+    "created": 1700035200,
+    "description": "Maintenance charge: cleaning",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_bd6044c8ec534088",
+          "amount": 30030,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000017",
+      "related_vendor_payment": "pi_VENDOR_68882cdbf37d4ef3",
+      "maintenance_cost": "27300",
+      "markup": "2730",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_e824473879434864",
+    "object": "payment_intent",
+    "amount": 27000,
+    "currency": "usd",
+    "created": 1700726400,
+    "description": "Maintenance: cleaning - 217 Newman Isle",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_fc5ed79753604d8d",
+          "amount": 27000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000046",
+      "landlord_id": "LL0014",
+      "vendor": "Ray and Sons Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_5ece11efe4814c17",
+    "object": "payment_intent",
+    "amount": 36600,
+    "currency": "usd",
+    "created": 1700726400,
+    "description": "Maintenance: hvac - 786 Frye Mount Suite 854",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_4c9fa3ef912f4caa",
+          "amount": 36600,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000038",
+      "landlord_id": "LL0011",
+      "vendor": "Hayden, Harmon and Mcdonald Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_264b6e6075034a7d",
+    "object": "payment_intent",
+    "amount": 20600,
+    "currency": "usd",
+    "created": 1699516800,
+    "description": "Maintenance: cleaning - 451 Mark Hill",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_4512e693d5bf45b3",
+          "amount": 20600,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000031",
+      "landlord_id": "LL0010",
+      "vendor": "Patel, Mendez and Hammond Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_b9c90fa44fed46a3",
+    "object": "payment_intent",
+    "amount": 13500,
+    "currency": "usd",
+    "created": 1698994800,
+    "description": "Maintenance: cleaning - 57991 Nicholas Curve Apt. 038",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_ffd2f55d0aaa4b25",
+          "amount": 13500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000083",
+      "landlord_id": "LL0027",
+      "vendor": "Michael-Barber Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_860e7ebc54d84d44",
+    "object": "payment_intent",
+    "amount": 27700,
+    "currency": "usd",
+    "created": 1701331200,
+    "description": "Maintenance: cleaning - 193 Lyons Trafficway Suite 299",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_390a0cb1404d4e68",
+          "amount": 27700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000012",
+      "landlord_id": "LL0003",
+      "vendor": "Boyd LLC Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_25d624df331f4a17",
+    "object": "payment_intent",
+    "amount": 30470,
+    "currency": "usd",
+    "customer": "cus_TENANT_6d502facd55549fb",
+    "created": 1701331200,
+    "description": "Maintenance charge: cleaning",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_0951585288444f1e",
+          "amount": 30470,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000012",
+      "related_vendor_payment": "pi_VENDOR_860e7ebc54d84d44",
+      "maintenance_cost": "27700",
+      "markup": "2770",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_4a74c746e71a454c",
+    "object": "payment_intent",
+    "amount": 162700,
+    "currency": "usd",
+    "created": 1699776000,
+    "description": "Maintenance: hvac - 281 Skinner Parkways Apt. 252",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_bc5919d91df845da",
+          "amount": 162700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000003",
+      "landlord_id": "LL0001",
+      "vendor": "Hernandez-Hernandez Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_b5da7a368ae54edd",
+    "object": "payment_intent",
+    "amount": 54200,
+    "currency": "usd",
+    "created": 1700899200,
+    "description": "Maintenance: electrical - 39559 Jade Knoll",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_f54cf51fe12e41ea",
+          "amount": 54200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000062",
+      "landlord_id": "LL0019",
+      "vendor": "Cannon, Richard and Jenkins Electrical Services",
+      "issue_type": "electrical",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_2337c81ee34e42d2",
+    "object": "payment_intent",
+    "amount": 58000,
+    "currency": "usd",
+    "created": 1700553600,
+    "description": "Maintenance: appliance - 8181 Morgan Crescent",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_3ec0ef827fe5478a",
+          "amount": 58000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000086",
+      "landlord_id": "LL0028",
+      "vendor": "Walters Group Appliance Services",
+      "issue_type": "appliance",
+      "maintenance_type": "vendor_payment",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "pi_VENDOR_3f8c91e1c0704b43",
+    "object": "payment_intent",
+    "amount": 56100,
+    "currency": "usd",
+    "created": 1700899200,
+    "description": "Maintenance: electrical - 8516 Jack Dam Suite 530",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_7189dc6492564534",
+          "amount": 56100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000040",
+      "landlord_id": "LL0012",
+      "vendor": "Colon-Lucas Electrical Services",
+      "issue_type": "electrical",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_1b8a0457d8674dfd",
+    "object": "payment_intent",
+    "amount": 85900,
+    "currency": "usd",
+    "created": 1701417600,
+    "description": "Maintenance: hvac - 058 Taylor Passage Suite 956",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_e93b0b38f5f3405f",
+          "amount": 85900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000112",
+      "landlord_id": "LL0036",
+      "vendor": "Mcdaniel-Young Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_2a479b2cfbd74e6a",
+    "object": "payment_intent",
+    "amount": 94490,
+    "currency": "usd",
+    "customer": "cus_TENANT_e559884ffab14142",
+    "created": 1701417600,
+    "description": "Maintenance charge: hvac",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_d4e9001599b14a31",
+          "amount": 94490,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000112",
+      "related_vendor_payment": "pi_VENDOR_1b8a0457d8674dfd",
+      "maintenance_cost": "85900",
+      "markup": "8590",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_ea4d043773ec4926",
+    "object": "payment_intent",
+    "amount": 34000,
+    "currency": "usd",
+    "created": 1703923200,
+    "description": "Maintenance: plumbing - 4544 Lopez Path",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_634a163f34074e6d",
+          "amount": 34000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000068",
+      "landlord_id": "LL0022",
+      "vendor": "Wilson and Sons Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_0eff38bd8d974f8d",
+    "object": "payment_intent",
+    "amount": 45900,
+    "currency": "usd",
+    "created": 1702713600,
+    "description": "Maintenance: plumbing - 54033 Julie Throughway Suite 393",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_1dd9cc4b85a74ead",
+          "amount": 45900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000043",
+      "landlord_id": "LL0014",
+      "vendor": "Sanchez LLC Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_a32a776c21f448e8",
+    "object": "payment_intent",
+    "amount": 11300,
+    "currency": "usd",
+    "created": 1703404800,
+    "description": "Maintenance: appliance - 340 Smith Valley Apt. 561",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_c0cb54ddbe434a9f",
+          "amount": 11300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000009",
+      "landlord_id": "LL0002",
+      "vendor": "Washington-Esparza Appliance Services",
+      "issue_type": "appliance",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_9f5f7ec3d2af4155",
+    "object": "payment_intent",
+    "amount": 12430,
+    "currency": "usd",
+    "customer": "cus_TENANT_9abf3fea3f314124",
+    "created": 1703404800,
+    "description": "Maintenance charge: appliance",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_25b68cf8d283427d",
+          "amount": 12430,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000009",
+      "related_vendor_payment": "pi_VENDOR_a32a776c21f448e8",
+      "maintenance_cost": "11300",
+      "markup": "1130",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_c550279cb2114704",
+    "object": "payment_intent",
+    "amount": 43400,
+    "currency": "usd",
+    "created": 1703145600,
+    "description": "Maintenance: appliance - 831 Vincent Overpass",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_44ef74e66d194de7",
+          "amount": 43400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000120",
+      "landlord_id": "LL0039",
+      "vendor": "Lucas-Johnson Appliance Services",
+      "issue_type": "appliance",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "pi_VENDOR_88a4f1266413418a",
+    "object": "payment_intent",
+    "amount": 70100,
+    "currency": "usd",
+    "created": 1702713600,
+    "description": "Maintenance: damage repair - 0155 Tucker Pine Apt. 788",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_8b73be214b884fe5",
+          "amount": 70100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000123",
+      "landlord_id": "LL0039",
+      "vendor": "Nelson Inc Damage Repair Services",
+      "issue_type": "damage_repair",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_MAINTENANCE_51d386087f7a479f",
+    "object": "payment_intent",
+    "amount": 77110,
+    "currency": "usd",
+    "customer": "cus_TENANT_1b2561069610415b",
+    "created": 1702713600,
+    "description": "Maintenance charge: damage repair",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_f23e12598a6e4f64",
+          "amount": 77110,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000123",
+      "related_vendor_payment": "pi_VENDOR_88a4f1266413418a",
+      "maintenance_cost": "70100",
+      "markup": "7010",
+      "charge_reason": "tenant_responsibility"
+    }
+  },
+  {
+    "id": "pi_VENDOR_d49c956702e64c46",
+    "object": "payment_intent",
+    "amount": 14200,
+    "currency": "usd",
+    "created": 1701590400,
+    "description": "Maintenance: cleaning - 28160 Ramirez Greens",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_23035425b7684db1",
+          "amount": 14200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000076",
+      "landlord_id": "LL0025",
+      "vendor": "Clarke-Ramirez Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_ec71785afbfa4dcb",
+    "object": "payment_intent",
+    "amount": 170400,
+    "currency": "usd",
+    "created": 1703750400,
+    "description": "Maintenance: hvac - 386 James Shoals",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_4544804c955b4790",
+          "amount": 170400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000097",
+      "landlord_id": "LL0030",
+      "vendor": "Thompson, Phelps and Stuart Hvac Services",
+      "issue_type": "hvac",
+      "maintenance_type": "vendor_payment",
+      "urgency": "emergency"
+    }
+  },
+  {
+    "id": "pi_VENDOR_656fd564e0b740cc",
+    "object": "payment_intent",
+    "amount": 67400,
+    "currency": "usd",
+    "created": 1703664000,
+    "description": "Maintenance: plumbing - 1672 Allen Shoals Apt. 661",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_ee7ce12b39a14db8",
+          "amount": 67400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000049",
+      "landlord_id": "LL0015",
+      "vendor": "Casey-Brown Plumbing Services",
+      "issue_type": "plumbing",
+      "maintenance_type": "vendor_payment",
+      "urgency": "low"
+    }
+  },
+  {
+    "id": "pi_VENDOR_e29a4abf0f9d4d40",
+    "object": "payment_intent",
+    "amount": 8700,
+    "currency": "usd",
+    "created": 1701849600,
+    "description": "Maintenance: cleaning - 193 Lyons Trafficway Suite 299",
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_4983af63f4534b05",
+          "amount": 8700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false
+        }
+      ]
+    },
+    "metadata": {
+      "property_id": "prop_P000012",
+      "landlord_id": "LL0003",
+      "vendor": "Edwards LLC Cleaning Services",
+      "issue_type": "cleaning",
+      "maintenance_type": "vendor_payment",
+      "urgency": "high"
+    }
+  }
+]

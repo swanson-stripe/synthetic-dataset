@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Synthetic Dataset API",
+  "version": "1.0.0",
+  "description": "Independent dataset package for realistic Stripe payment data across business models",
+  "base_url": "https://swanson-stripe.github.io/synthetic-dataset/api",
+  "documentation": "https://swanson-stripe.github.io/synthetic-dataset/docs",
+  "github": "https://github.com/swanson-stripe/synthetic-dataset",
+  "generated_at": "2024-12-19T10:00:00Z",
+  "endpoints": {
+    "personas": "/v1/personas.json",
+    "health": "/v1/health.json"
+  },
+  "usage": {
+    "javascript": "const client = new StripeDataClient('https://swanson-stripe.github.io/synthetic-dataset/api/v1');",
+    "curl": "curl https://swanson-stripe.github.io/synthetic-dataset/api/v1/personas.json",
+    "direct": "fetch('https://swanson-stripe.github.io/synthetic-dataset/api/v1/techstyle/payments.json')"
+  },
+  "integration": {
+    "prototype_base": "https://github.com/swanson-stripe/prototype-base",
+    "quick_start": "https://swanson-stripe.github.io/synthetic-dataset/docs/quick-start.html",
+    "examples": "https://swanson-stripe.github.io/synthetic-dataset/docs/examples/"
+  }
+}

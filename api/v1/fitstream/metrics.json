@@ -1,0 +1,63 @@
+{
+  "overview": {
+    "total_customers": 5296,
+    "total_subscriptions": 5296,
+    "active_subscriptions": 2285,
+    "subscription_penetration": 100.0
+  },
+  "revenue_metrics": {
+    "total_revenue_cents": 73356363,
+    "total_revenue_dollars": 733563.63,
+    "current_mrr_cents": 8017617,
+    "current_mrr_dollars": 80176.17,
+    "estimated_arr_cents": 96211404,
+    "estimated_arr_dollars": 962114.04,
+    "arpu_dollars": 35.088039387308534
+  },
+  "plan_distribution": {
+    "basic": {
+      "count": 2035,
+      "active": 875,
+      "percentage": 38.42522658610272
+    },
+    "unlimited": {
+      "count": 2309,
+      "active": 985,
+      "percentage": 43.598942598187314
+    },
+    "family": {
+      "count": 952,
+      "active": 425,
+      "percentage": 17.97583081570997
+    }
+  },
+  "trial_metrics": {
+    "total_trials": 4507,
+    "converted_trials": 1505,
+    "trial_conversion_rate": 33.3925005546927
+  },
+  "churn_metrics": {
+    "total_churned": 2580,
+    "churn_rate_percent": 48.716012084592144,
+    "at_risk_customers": 184
+  },
+  "payment_metrics": {
+    "total_payment_attempts": 16414,
+    "successful_payments": 16039,
+    "payment_success_rate": 97.7153649323748
+  },
+  "engagement_metrics": {
+    "average_engagement_score": 64.68311933534756,
+    "high_engagement_customers": 1153,
+    "addon_attachment_rate": 37.31117824773414
+  },
+  "customer_lifetime_value": {
+    "basic": 193.9440436363639,
+    "unlimited": 387.5919018189691,
+    "family": 776.7616433823531
+  },
+  "family_plan_metrics": {
+    "family_subscriptions": 952,
+    "average_family_size": 3.551470588235294
+  }
+}

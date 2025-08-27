@@ -1,0 +1,5946 @@
+[
+  {
+    "id": "prop_P000001",
+    "landlord_id": "LL0001",
+    "landlord_account": "acct_LANDLORD_LL0001",
+    "address": {
+      "line1": "341 Michelle Light",
+      "city": "Shawnstad",
+      "state": "GA",
+      "postal_code": "49021",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "apartment",
+    "bedrooms": 1,
+    "bathrooms": 1.581652233476849,
+    "square_feet": 2965,
+    "rent_amount": 292800,
+    "security_deposit": 292800,
+    "lease_start": "2025-02-25T22:22:40",
+    "lease_end": "2025-10-20T16:48:32",
+    "tenant": {
+      "id": "cus_TENANT_d1aa5de1adf54529",
+      "object": "customer",
+      "created": 1736704115,
+      "email": "elizabethmiles@example.net",
+      "name": "Lisa Jackson",
+      "phone": "001-832-676-4835x0305",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "829",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.1",
+        "previous_landlord_rating": "3.6"
+      }
+    },
+    "amenities": [
+      "dishwasher",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-13T12:40:05"
+  },
+  {
+    "id": "prop_P000002",
+    "landlord_id": "LL0001",
+    "landlord_account": "acct_LANDLORD_LL0001",
+    "address": {
+      "line1": "76724 John Points Suite 969",
+      "city": "Coxberg",
+      "state": "NY",
+      "postal_code": "65187",
+      "country": "US"
+    },
+    "unit_number": "#7",
+    "property_type": "apartment",
+    "bedrooms": 0,
+    "bathrooms": 1.897448451211571,
+    "square_feet": 1908,
+    "rent_amount": 257800,
+    "security_deposit": 257800,
+    "lease_start": "2024-11-11T05:12:33",
+    "lease_end": "2027-07-09T08:53:00",
+    "tenant": {
+      "id": "cus_TENANT_1c1bd07205174c43",
+      "object": "customer",
+      "created": 1727830022,
+      "email": "callahaneric@example.org",
+      "name": "Jennifer Brown",
+      "phone": "(897)484-8018x4514",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "785",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.9",
+        "previous_landlord_rating": "3.8"
+      }
+    },
+    "amenities": [
+      "heating",
+      "balcony",
+      "pet_friendly",
+      "laundry",
+      "parking",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-27T18:42:45"
+  },
+  {
+    "id": "prop_P000003",
+    "landlord_id": "LL0001",
+    "landlord_account": "acct_LANDLORD_LL0001",
+    "address": {
+      "line1": "281 Skinner Parkways Apt. 252",
+      "city": "New Mariotown",
+      "state": "DE",
+      "postal_code": "48077",
+      "country": "US"
+    },
+    "unit_number": "#15",
+    "property_type": "apartment",
+    "bedrooms": 2,
+    "bathrooms": 2.133525755921089,
+    "square_feet": 1994,
+    "rent_amount": 152600,
+    "security_deposit": 152600,
+    "lease_start": "2025-03-11T12:58:42",
+    "lease_end": "2027-07-08T23:17:20",
+    "tenant": {
+      "id": "cus_TENANT_74b68e72ba1b4d94",
+      "object": "customer",
+      "created": 1754264622,
+      "email": "john39@example.org",
+      "name": "John Jones",
+      "phone": "001-682-827-8248x96383",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "657",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.0",
+        "previous_landlord_rating": "4.4"
+      }
+    },
+    "amenities": [
+      "dishwasher",
+      "air_conditioning"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-09T02:29:42"
+  },
+  {
+    "id": "prop_P000004",
+    "landlord_id": "LL0001",
+    "landlord_account": "acct_LANDLORD_LL0001",
+    "address": {
+      "line1": "33150 Brianna Avenue Apt. 031",
+      "city": "Port Markhaven",
+      "state": "IA",
+      "postal_code": "37001",
+      "country": "US"
+    },
+    "unit_number": "#15",
+    "property_type": "apartment",
+    "bedrooms": 0,
+    "bathrooms": 1.572620179910261,
+    "square_feet": 631,
+    "rent_amount": 348100,
+    "security_deposit": 348100,
+    "lease_start": "2024-08-02T22:59:03",
+    "lease_end": "2027-07-27T10:13:44",
+    "tenant": {
+      "id": "cus_TENANT_a40b52dc4874421b",
+      "object": "customer",
+      "created": 1747226778,
+      "email": "ilewis@example.net",
+      "name": "Laura Kennedy",
+      "phone": "863.711.6566x7010",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "583",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.8",
+        "previous_landlord_rating": "4.8"
+      }
+    },
+    "amenities": [
+      "air_conditioning",
+      "pool",
+      "pet_friendly",
+      "balcony"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-08-03T03:14:18"
+  },
+  {
+    "id": "prop_P000005",
+    "landlord_id": "LL0001",
+    "landlord_account": "acct_LANDLORD_LL0001",
+    "address": {
+      "line1": "726 Joshua Gateway",
+      "city": "South Lindseyside",
+      "state": "CT",
+      "postal_code": "07131",
+      "country": "US"
+    },
+    "unit_number": "Unit 9",
+    "property_type": "apartment",
+    "bedrooms": 4,
+    "bathrooms": 2.071084568236449,
+    "square_feet": 2890,
+    "rent_amount": 349900,
+    "security_deposit": 349900,
+    "lease_start": "2024-03-08T19:29:49",
+    "lease_end": "2026-01-23T11:42:17",
+    "tenant": {
+      "id": "cus_TENANT_e426625776f84cad",
+      "object": "customer",
+      "created": 1746661960,
+      "email": "novaksara@example.org",
+      "name": "John Lewis",
+      "phone": "(502)660-6474x6872",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "620",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.8",
+        "previous_landlord_rating": "3.1"
+      }
+    },
+    "amenities": [
+      "dishwasher",
+      "pet_friendly"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-04-11T22:45:59"
+  },
+  {
+    "id": "prop_P000006",
+    "landlord_id": "LL0002",
+    "landlord_account": "acct_LANDLORD_LL0002",
+    "address": {
+      "line1": "83842 Ibarra Gardens",
+      "city": "Justinmouth",
+      "state": "MP",
+      "postal_code": "71701",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "apartment",
+    "bedrooms": 4,
+    "bathrooms": 3.281569598362051,
+    "square_feet": 1722,
+    "rent_amount": 227800,
+    "security_deposit": 227800,
+    "lease_start": "2024-12-23T03:27:16",
+    "lease_end": "2026-11-07T23:10:08",
+    "tenant": {
+      "id": "cus_TENANT_cc91e4f956ee4244",
+      "object": "customer",
+      "created": 1748386491,
+      "email": "cheryl80@example.net",
+      "name": "Elizabeth Alvarado",
+      "phone": "(541)718-2449",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "False",
+        "credit_score": "632",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.2",
+        "previous_landlord_rating": "4.1"
+      }
+    },
+    "amenities": [
+      "balcony",
+      "pool"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-04-09T05:02:21"
+  },
+  {
+    "id": "prop_P000007",
+    "landlord_id": "LL0002",
+    "landlord_account": "acct_LANDLORD_LL0002",
+    "address": {
+      "line1": "0164 Adam Trail Apt. 427",
+      "city": "Hoffmanville",
+      "state": "CA",
+      "postal_code": "91074",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "apartment",
+    "bedrooms": 4,
+    "bathrooms": 3.367373613244985,
+    "square_feet": 850,
+    "rent_amount": 245900,
+    "security_deposit": 245900,
+    "lease_start": "2025-06-21T03:39:15",
+    "lease_end": "2026-03-20T17:13:24",
+    "tenant": {
+      "id": "cus_TENANT_fa69f1f5313243ce",
+      "object": "customer",
+      "created": 1755110418,
+      "email": "amydavenport@example.net",
+      "name": "Jessica Williams",
+      "phone": "(405)433-1586x923",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "822",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.9",
+        "previous_landlord_rating": "4.0"
+      }
+    },
+    "amenities": [
+      "dishwasher",
+      "heating",
+      "pool",
+      "gym",
+      "air_conditioning",
+      "laundry"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-08-18T19:54:15"
+  },
+  {
+    "id": "prop_P000008",
+    "landlord_id": "LL0002",
+    "landlord_account": "acct_LANDLORD_LL0002",
+    "address": {
+      "line1": "3421 Brennan Walks Suite 337",
+      "city": "Kevinbury",
+      "state": "IN",
+      "postal_code": "03602",
+      "country": "US"
+    },
+    "unit_number": "Unit 15",
+    "property_type": "townhouse",
+    "bedrooms": 3,
+    "bathrooms": 1.3025104896706643,
+    "square_feet": 1420,
+    "rent_amount": 426100,
+    "security_deposit": 426100,
+    "lease_start": "2023-09-16T22:15:29",
+    "lease_end": "2026-01-13T23:43:55",
+    "tenant": {
+      "id": "cus_TENANT_b557648a5f1a44c2",
+      "object": "customer",
+      "created": 1746926647,
+      "email": "raymondramirez@example.org",
+      "name": "Diana May",
+      "phone": "(785)701-4294x0196",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "833",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.3",
+        "previous_landlord_rating": "3.1"
+      }
+    },
+    "amenities": [
+      "air_conditioning",
+      "laundry"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-24T09:56:59"
+  },
+  {
+    "id": "prop_P000009",
+    "landlord_id": "LL0002",
+    "landlord_account": "acct_LANDLORD_LL0002",
+    "address": {
+      "line1": "340 Smith Valley Apt. 561",
+      "city": "Cindyville",
+      "state": "VA",
+      "postal_code": "39864",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "apartment",
+    "bedrooms": 4,
+    "bathrooms": 2.44052912430225,
+    "square_feet": 1495,
+    "rent_amount": 318800,
+    "security_deposit": 318800,
+    "lease_start": "2024-09-28T21:49:25",
+    "lease_end": "2025-11-25T12:00:02",
+    "tenant": {
+      "id": "cus_TENANT_9abf3fea3f314124",
+      "object": "customer",
+      "created": 1741795816,
+      "email": "elizabeth56@example.net",
+      "name": "Cameron Fisher",
+      "phone": "(729)994-6804x4369",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "647",
+        "employment_verified": "False",
+        "income_to_rent_ratio": "4.8",
+        "previous_landlord_rating": "3.7"
+      }
+    },
+    "amenities": [
+      "pool",
+      "parking",
+      "balcony",
+      "gym",
+      "pet_friendly"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-25T11:04:44"
+  },
+  {
+    "id": "prop_P000010",
+    "landlord_id": "LL0003",
+    "landlord_account": "acct_LANDLORD_LL0003",
+    "address": {
+      "line1": "4348 Sims Harbor Suite 143",
+      "city": "Matthewside",
+      "state": "CO",
+      "postal_code": "18637",
+      "country": "US"
+    },
+    "unit_number": "#4",
+    "property_type": "apartment",
+    "bedrooms": 0,
+    "bathrooms": 3.463272109449315,
+    "square_feet": 1586,
+    "rent_amount": 284200,
+    "security_deposit": 284200,
+    "lease_start": "2025-03-28T06:56:56",
+    "lease_end": "2027-06-27T19:38:09",
+    "tenant": {
+      "id": "cus_TENANT_67790034db3c4874",
+      "object": "customer",
+      "created": 1729840646,
+      "email": "patrickhernandez@example.org",
+      "name": "Jason Daniels",
+      "phone": "(803)566-9096x70546",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "834",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.2",
+        "previous_landlord_rating": "3.4"
+      }
+    },
+    "amenities": [
+      "parking",
+      "pet_friendly",
+      "balcony"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-03T11:31:16"
+  },
+  {
+    "id": "prop_P000011",
+    "landlord_id": "LL0003",
+    "landlord_account": "acct_LANDLORD_LL0003",
+    "address": {
+      "line1": "65627 Tina Place Apt. 699",
+      "city": "North Dawnberg",
+      "state": "VI",
+      "postal_code": "61016",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "house",
+    "bedrooms": 4,
+    "bathrooms": 1.2002786631014672,
+    "square_feet": 1261,
+    "rent_amount": 385900,
+    "security_deposit": 385900,
+    "lease_start": "2024-03-27T16:05:23",
+    "lease_end": "2026-08-01T04:46:42",
+    "tenant": {
+      "id": "cus_TENANT_05902530557b4dd9",
+      "object": "customer",
+      "created": 1730881023,
+      "email": "greenmark@example.com",
+      "name": "Philip Gray",
+      "phone": "001-564-217-0805x31003",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "670",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.8",
+        "previous_landlord_rating": "4.1"
+      }
+    },
+    "amenities": [
+      "parking",
+      "laundry",
+      "air_conditioning",
+      "balcony",
+      "heating",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-29T07:50:27"
+  },
+  {
+    "id": "prop_P000012",
+    "landlord_id": "LL0003",
+    "landlord_account": "acct_LANDLORD_LL0003",
+    "address": {
+      "line1": "193 Lyons Trafficway Suite 299",
+      "city": "Port Loriport",
+      "state": "CT",
+      "postal_code": "76350",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "condo",
+    "bedrooms": 2,
+    "bathrooms": 2.14306143142613,
+    "square_feet": 797,
+    "rent_amount": 247700,
+    "security_deposit": 247700,
+    "lease_start": "2024-02-29T23:00:25",
+    "lease_end": "2025-12-03T17:08:11",
+    "tenant": {
+      "id": "cus_TENANT_6d502facd55549fb",
+      "object": "customer",
+      "created": 1725641233,
+      "email": "barbara66@example.net",
+      "name": "Kevin Rivas",
+      "phone": "814.791.9058",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "838",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.8",
+        "previous_landlord_rating": "3.4"
+      }
+    },
+    "amenities": [
+      "dishwasher",
+      "balcony",
+      "parking",
+      "laundry"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-14T01:34:07"
+  },
+  {
+    "id": "prop_P000013",
+    "landlord_id": "LL0003",
+    "landlord_account": "acct_LANDLORD_LL0003",
+    "address": {
+      "line1": "7165 Zimmerman Mews",
+      "city": "Lake Aimee",
+      "state": "SD",
+      "postal_code": "35901",
+      "country": "US"
+    },
+    "unit_number": "Unit 10",
+    "property_type": "house",
+    "bedrooms": 4,
+    "bathrooms": 1.0195577678803949,
+    "square_feet": 2771,
+    "rent_amount": 402500,
+    "security_deposit": 402500,
+    "lease_start": "2025-01-12T15:17:17",
+    "lease_end": "2026-05-19T17:13:01",
+    "tenant": {
+      "id": "cus_TENANT_b4c7ec56013e4770",
+      "object": "customer",
+      "created": 1745446198,
+      "email": "umarshall@example.net",
+      "name": "Samuel Rivas",
+      "phone": "247-937-9965",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "603",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.0",
+        "previous_landlord_rating": "3.2"
+      }
+    },
+    "amenities": [
+      "pet_friendly",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-08-12T21:56:04"
+  },
+  {
+    "id": "prop_P000014",
+    "landlord_id": "LL0004",
+    "landlord_account": "acct_LANDLORD_LL0004",
+    "address": {
+      "line1": "34352 Smith Place Apt. 400",
+      "city": "Heidiberg",
+      "state": "SC",
+      "postal_code": "99170",
+      "country": "US"
+    },
+    "unit_number": "#36",
+    "property_type": "condo",
+    "bedrooms": 1,
+    "bathrooms": 1.1045721454221447,
+    "square_feet": 1993,
+    "rent_amount": 388500,
+    "security_deposit": 388500,
+    "lease_start": "2024-11-28T14:54:12",
+    "lease_end": "2027-04-10T03:30:33",
+    "tenant": {
+      "id": "cus_TENANT_96461f23ec5e4c5f",
+      "object": "customer",
+      "created": 1741254364,
+      "email": "salasaudrey@example.com",
+      "name": "Glen Sheppard",
+      "phone": "671-316-7190x229",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "657",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.8",
+        "previous_landlord_rating": "3.7"
+      }
+    },
+    "amenities": [
+      "gym",
+      "dishwasher",
+      "laundry",
+      "pet_friendly",
+      "balcony",
+      "air_conditioning"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-04-17T20:51:38"
+  },
+  {
+    "id": "prop_P000015",
+    "landlord_id": "LL0005",
+    "landlord_account": "acct_LANDLORD_LL0005",
+    "address": {
+      "line1": "10249 Gonzales Mountain Suite 648",
+      "city": "Kimton",
+      "state": "FM",
+      "postal_code": "57127",
+      "country": "US"
+    },
+    "unit_number": "#23",
+    "property_type": "apartment",
+    "bedrooms": 3,
+    "bathrooms": 2.515522133265358,
+    "square_feet": 2594,
+    "rent_amount": 297900,
+    "security_deposit": 297900,
+    "lease_start": "2023-12-22T09:34:14",
+    "lease_end": "2027-08-03T06:13:25",
+    "tenant": {
+      "id": "cus_TENANT_2ea48856da8448ed",
+      "object": "customer",
+      "created": 1749426477,
+      "email": "cassandra01@example.org",
+      "name": "Sara Johnston",
+      "phone": "4498027874",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "845",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.7",
+        "previous_landlord_rating": "3.9"
+      }
+    },
+    "amenities": [
+      "pet_friendly",
+      "air_conditioning",
+      "dishwasher",
+      "pool",
+      "parking",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-01T22:31:05"
+  },
+  {
+    "id": "prop_P000016",
+    "landlord_id": "LL0006",
+    "landlord_account": "acct_LANDLORD_LL0006",
+    "address": {
+      "line1": "17127 Hicks Groves",
+      "city": "Davenportfort",
+      "state": "IA",
+      "postal_code": "60372",
+      "country": "US"
+    },
+    "unit_number": "Unit 22",
+    "property_type": "house",
+    "bedrooms": 4,
+    "bathrooms": 1.8379706385245023,
+    "square_feet": 1462,
+    "rent_amount": 296200,
+    "security_deposit": 296200,
+    "lease_start": "2024-10-30T14:55:09",
+    "lease_end": "2026-07-10T13:42:16",
+    "tenant": {
+      "id": "cus_TENANT_a33e7ba1b9f64b58",
+      "object": "customer",
+      "created": 1743276995,
+      "email": "patrickweeks@example.net",
+      "name": "Breanna Jones",
+      "phone": "001-965-784-0449x97278",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "651",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.7",
+        "previous_landlord_rating": "5.0"
+      }
+    },
+    "amenities": [
+      "laundry",
+      "pool",
+      "air_conditioning",
+      "balcony",
+      "heating",
+      "pet_friendly"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-04T05:29:21"
+  },
+  {
+    "id": "prop_P000017",
+    "landlord_id": "LL0006",
+    "landlord_account": "acct_LANDLORD_LL0006",
+    "address": {
+      "line1": "5339 Hall Trail Suite 057",
+      "city": "Hughesberg",
+      "state": "NM",
+      "postal_code": "05353",
+      "country": "US"
+    },
+    "unit_number": "Unit 21",
+    "property_type": "house",
+    "bedrooms": 0,
+    "bathrooms": 3.231649565528416,
+    "square_feet": 936,
+    "rent_amount": 279900,
+    "security_deposit": 279900,
+    "lease_start": "2025-04-12T05:11:03",
+    "lease_end": "2026-10-23T18:28:39",
+    "tenant": {
+      "id": "cus_TENANT_c0e4cc813e6843d2",
+      "object": "customer",
+      "created": 1729015730,
+      "email": "molly71@example.net",
+      "name": "Alexis Thomas",
+      "phone": "+1-921-274-5961x5865",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "815",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.5",
+        "previous_landlord_rating": "4.8"
+      }
+    },
+    "amenities": [
+      "pool",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-28T13:46:35"
+  },
+  {
+    "id": "prop_P000018",
+    "landlord_id": "LL0007",
+    "landlord_account": "acct_LANDLORD_LL0007",
+    "address": {
+      "line1": "474 Yvonne Walk Suite 136",
+      "city": "Baileyport",
+      "state": "AK",
+      "postal_code": "86776",
+      "country": "US"
+    },
+    "unit_number": "Unit 13",
+    "property_type": "house",
+    "bedrooms": 0,
+    "bathrooms": 3.141830080759836,
+    "square_feet": 2858,
+    "rent_amount": 264700,
+    "security_deposit": 264700,
+    "lease_start": "2024-04-17T00:50:46",
+    "lease_end": "2027-01-05T22:53:15",
+    "tenant": {
+      "id": "cus_TENANT_1de4dc009280428a",
+      "object": "customer",
+      "created": 1738064245,
+      "email": "alan09@example.net",
+      "name": "Tanner Mitchell DDS",
+      "phone": "+1-753-439-4210x470",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "730",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.9",
+        "previous_landlord_rating": "4.8"
+      }
+    },
+    "amenities": [
+      "pet_friendly",
+      "air_conditioning",
+      "pool",
+      "laundry",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-18T04:15:32"
+  },
+  {
+    "id": "prop_P000019",
+    "landlord_id": "LL0007",
+    "landlord_account": "acct_LANDLORD_LL0007",
+    "address": {
+      "line1": "32858 Rivas Glens Suite 451",
+      "city": "Mccartyberg",
+      "state": "WV",
+      "postal_code": "30072",
+      "country": "US"
+    },
+    "unit_number": "#47",
+    "property_type": "apartment",
+    "bedrooms": 1,
+    "bathrooms": 3.451804943797308,
+    "square_feet": 2687,
+    "rent_amount": 285600,
+    "security_deposit": 285600,
+    "lease_start": "2024-04-13T21:27:52",
+    "lease_end": "2026-05-08T10:41:34",
+    "tenant": {
+      "id": "cus_TENANT_af2ff29e1b1c485f",
+      "object": "customer",
+      "created": 1753641138,
+      "email": "zcoffey@example.net",
+      "name": "Richard Smith",
+      "phone": "+1-517-954-9651",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "838",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.8",
+        "previous_landlord_rating": "3.9"
+      }
+    },
+    "amenities": [
+      "dishwasher",
+      "parking",
+      "pet_friendly",
+      "air_conditioning",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-05T12:49:48"
+  },
+  {
+    "id": "prop_P000020",
+    "landlord_id": "LL0007",
+    "landlord_account": "acct_LANDLORD_LL0007",
+    "address": {
+      "line1": "317 Banks Crescent Apt. 004",
+      "city": "Wilsonbury",
+      "state": "FM",
+      "postal_code": "70958",
+      "country": "US"
+    },
+    "unit_number": "#18",
+    "property_type": "apartment",
+    "bedrooms": 2,
+    "bathrooms": 3.087277287280303,
+    "square_feet": 2426,
+    "rent_amount": 275200,
+    "security_deposit": 275200,
+    "lease_start": "2025-07-15T11:32:20",
+    "lease_end": "2026-11-06T17:35:56",
+    "tenant": {
+      "id": "cus_TENANT_54d86d5dcc024ace",
+      "object": "customer",
+      "created": 1729331739,
+      "email": "qchavez@example.net",
+      "name": "Kimberly Matthews",
+      "phone": "001-526-717-9640x5377",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "576",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.7",
+        "previous_landlord_rating": "4.3"
+      }
+    },
+    "amenities": [
+      "parking",
+      "air_conditioning"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-19T23:13:58"
+  },
+  {
+    "id": "prop_P000021",
+    "landlord_id": "LL0007",
+    "landlord_account": "acct_LANDLORD_LL0007",
+    "address": {
+      "line1": "64317 Elizabeth Row Apt. 053",
+      "city": "Port Anne",
+      "state": "CA",
+      "postal_code": "73142",
+      "country": "US"
+    },
+    "unit_number": "Unit 15",
+    "property_type": "house",
+    "bedrooms": 2,
+    "bathrooms": 2.917245245890602,
+    "square_feet": 1187,
+    "rent_amount": 411000,
+    "security_deposit": 411000,
+    "lease_start": "2024-06-08T23:49:36",
+    "lease_end": "2026-10-24T13:47:10",
+    "tenant": {
+      "id": "cus_TENANT_6e0682cf3f024123",
+      "object": "customer",
+      "created": 1731734256,
+      "email": "lisahall@example.org",
+      "name": "Linda Ramirez",
+      "phone": "(728)542-1020",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "633",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.9",
+        "previous_landlord_rating": "3.1"
+      }
+    },
+    "amenities": [
+      "gym",
+      "pet_friendly",
+      "balcony",
+      "laundry"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-23T00:27:37"
+  },
+  {
+    "id": "prop_P000022",
+    "landlord_id": "LL0008",
+    "landlord_account": "acct_LANDLORD_LL0008",
+    "address": {
+      "line1": "5452 Jones Village Apt. 161",
+      "city": "Lisaside",
+      "state": "AR",
+      "postal_code": "77370",
+      "country": "US"
+    },
+    "unit_number": "#16",
+    "property_type": "house",
+    "bedrooms": 3,
+    "bathrooms": 2.120436373966427,
+    "square_feet": 570,
+    "rent_amount": 490500,
+    "security_deposit": 490500,
+    "lease_start": "2025-03-17T09:10:11",
+    "lease_end": "2025-11-09T12:44:07",
+    "tenant": {
+      "id": "cus_TENANT_cea2e95de6fc40d8",
+      "object": "customer",
+      "created": 1743623322,
+      "email": "elizabeth65@example.net",
+      "name": "Jenny Moon",
+      "phone": "4499451983",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "757",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.6",
+        "previous_landlord_rating": "4.2"
+      }
+    },
+    "amenities": [
+      "pet_friendly",
+      "balcony",
+      "air_conditioning",
+      "pool",
+      "heating"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-04-13T05:15:49"
+  },
+  {
+    "id": "prop_P000023",
+    "landlord_id": "LL0008",
+    "landlord_account": "acct_LANDLORD_LL0008",
+    "address": {
+      "line1": "49368 Chelsea Shoals Suite 024",
+      "city": "Sandrastad",
+      "state": "AL",
+      "postal_code": "24278",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "house",
+    "bedrooms": 1,
+    "bathrooms": 1.7888698600149664,
+    "square_feet": 2694,
+    "rent_amount": 305500,
+    "security_deposit": 305500,
+    "lease_start": "2024-05-26T14:48:17",
+    "lease_end": "2027-06-15T07:06:34",
+    "tenant": {
+      "id": "cus_TENANT_2b8ac5f498ad4606",
+      "object": "customer",
+      "created": 1753967358,
+      "email": "ashleymorales@example.org",
+      "name": "Valerie Davis",
+      "phone": "436.467.5254x59910",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "False",
+        "credit_score": "797",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.6",
+        "previous_landlord_rating": "4.5"
+      }
+    },
+    "amenities": [
+      "heating",
+      "laundry",
+      "gym",
+      "pool",
+      "dishwasher",
+      "balcony"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-25T04:07:58"
+  },
+  {
+    "id": "prop_P000024",
+    "landlord_id": "LL0008",
+    "landlord_account": "acct_LANDLORD_LL0008",
+    "address": {
+      "line1": "6797 Nelson Throughway Apt. 561",
+      "city": "Erikashire",
+      "state": "NM",
+      "postal_code": "69567",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "apartment",
+    "bedrooms": 0,
+    "bathrooms": 2.383397416996521,
+    "square_feet": 1017,
+    "rent_amount": 338700,
+    "security_deposit": 338700,
+    "lease_start": "2025-02-02T03:53:39",
+    "lease_end": "2025-10-30T00:59:48",
+    "tenant": {
+      "id": "cus_TENANT_ea489247427d417c",
+      "object": "customer",
+      "created": 1747164863,
+      "email": "brandon69@example.org",
+      "name": "Eric Clark",
+      "phone": "(444)851-0762",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "False",
+        "credit_score": "556",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.1",
+        "previous_landlord_rating": "3.9"
+      }
+    },
+    "amenities": [
+      "parking",
+      "heating",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-12T02:13:14"
+  },
+  {
+    "id": "prop_P000025",
+    "landlord_id": "LL0008",
+    "landlord_account": "acct_LANDLORD_LL0008",
+    "address": {
+      "line1": "60607 Michelle Ports Suite 966",
+      "city": "Dariustown",
+      "state": "MD",
+      "postal_code": "23028",
+      "country": "US"
+    },
+    "unit_number": "Unit 19",
+    "property_type": "apartment",
+    "bedrooms": 0,
+    "bathrooms": 1.379317517377391,
+    "square_feet": 2805,
+    "rent_amount": 321400,
+    "security_deposit": 321400,
+    "lease_start": "2024-09-20T05:46:22",
+    "lease_end": "2026-11-04T15:34:08",
+    "tenant": {
+      "id": "cus_TENANT_42cda02bbdd54afd",
+      "object": "customer",
+      "created": 1751667518,
+      "email": "xcollier@example.org",
+      "name": "Brian Graham",
+      "phone": "(581)764-5352x1818",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "False",
+        "credit_score": "677",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.2",
+        "previous_landlord_rating": "4.2"
+      }
+    },
+    "amenities": [
+      "air_conditioning",
+      "gym",
+      "pet_friendly",
+      "pool",
+      "dishwasher",
+      "balcony"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-07T20:27:01"
+  },
+  {
+    "id": "prop_P000026",
+    "landlord_id": "LL0009",
+    "landlord_account": "acct_LANDLORD_LL0009",
+    "address": {
+      "line1": "778 Michael Haven",
+      "city": "Ortizmouth",
+      "state": "TX",
+      "postal_code": "78867",
+      "country": "US"
+    },
+    "unit_number": "Unit 14",
+    "property_type": "townhouse",
+    "bedrooms": 3,
+    "bathrooms": 3.4226380901642592,
+    "square_feet": 2425,
+    "rent_amount": 234300,
+    "security_deposit": 234300,
+    "lease_start": "2024-01-09T16:56:17",
+    "lease_end": "2025-09-27T01:52:08",
+    "tenant": {
+      "id": "cus_TENANT_4d03d7e99aad42c9",
+      "object": "customer",
+      "created": 1726536704,
+      "email": "cameron18@example.net",
+      "name": "David York",
+      "phone": "+1-625-819-2546x291",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "714",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.5",
+        "previous_landlord_rating": "3.7"
+      }
+    },
+    "amenities": [
+      "heating",
+      "gym",
+      "pool",
+      "pet_friendly",
+      "parking"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-03T15:06:10"
+  },
+  {
+    "id": "prop_P000027",
+    "landlord_id": "LL0009",
+    "landlord_account": "acct_LANDLORD_LL0009",
+    "address": {
+      "line1": "685 Michael Falls",
+      "city": "West Stacey",
+      "state": "NM",
+      "postal_code": "25667",
+      "country": "US"
+    },
+    "unit_number": "Unit 13",
+    "property_type": "apartment",
+    "bedrooms": 0,
+    "bathrooms": 2.6441509662078224,
+    "square_feet": 2722,
+    "rent_amount": 167400,
+    "security_deposit": 167400,
+    "lease_start": "2025-05-21T07:04:12",
+    "lease_end": "2025-12-04T22:27:19",
+    "tenant": {
+      "id": "cus_TENANT_4549fad6f58a41d2",
+      "object": "customer",
+      "created": 1732384732,
+      "email": "ericphillips@example.org",
+      "name": "Kimberly Rodgers",
+      "phone": "805.792.9622x29270",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "646",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.7",
+        "previous_landlord_rating": "4.0"
+      }
+    },
+    "amenities": [
+      "parking",
+      "air_conditioning",
+      "dishwasher",
+      "heating",
+      "laundry"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-10T00:17:11"
+  },
+  {
+    "id": "prop_P000028",
+    "landlord_id": "LL0009",
+    "landlord_account": "acct_LANDLORD_LL0009",
+    "address": {
+      "line1": "738 Kyle Valleys Suite 359",
+      "city": "Murrayport",
+      "state": "WI",
+      "postal_code": "50553",
+      "country": "US"
+    },
+    "unit_number": "Unit 21",
+    "property_type": "house",
+    "bedrooms": 1,
+    "bathrooms": 2.7744570627506477,
+    "square_feet": 1772,
+    "rent_amount": 229700,
+    "security_deposit": 229700,
+    "lease_start": "2024-08-07T16:40:15",
+    "lease_end": "2026-12-14T22:31:50",
+    "tenant": {
+      "id": "cus_TENANT_139b0a066f0f4881",
+      "object": "customer",
+      "created": 1741654357,
+      "email": "mburch@example.net",
+      "name": "David Davidson",
+      "phone": "(881)381-4124x782",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "597",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.4",
+        "previous_landlord_rating": "3.2"
+      }
+    },
+    "amenities": [
+      "dishwasher",
+      "pool"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-08-24T11:28:03"
+  },
+  {
+    "id": "prop_P000029",
+    "landlord_id": "LL0009",
+    "landlord_account": "acct_LANDLORD_LL0009",
+    "address": {
+      "line1": "60685 Paul Common Suite 305",
+      "city": "Port Jennifermouth",
+      "state": "WY",
+      "postal_code": "19643",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "condo",
+    "bedrooms": 3,
+    "bathrooms": 2.3781626922011743,
+    "square_feet": 2071,
+    "rent_amount": 320100,
+    "security_deposit": 320100,
+    "lease_start": "2025-05-24T00:39:32",
+    "lease_end": "2026-08-13T01:50:31",
+    "tenant": {
+      "id": "cus_TENANT_19c7b9d7c4464474",
+      "object": "customer",
+      "created": 1729396685,
+      "email": "mitchellmaria@example.net",
+      "name": "Olivia Harrison",
+      "phone": "+1-601-504-3289x861",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "810",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.0",
+        "previous_landlord_rating": "3.1"
+      }
+    },
+    "amenities": [
+      "balcony",
+      "heating",
+      "gym",
+      "parking",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-04-28T03:40:23"
+  },
+  {
+    "id": "prop_P000030",
+    "landlord_id": "LL0010",
+    "landlord_account": "acct_LANDLORD_LL0010",
+    "address": {
+      "line1": "221 Johnson Flats Apt. 305",
+      "city": "Zacharyside",
+      "state": "NJ",
+      "postal_code": "33703",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "condo",
+    "bedrooms": 1,
+    "bathrooms": 2.4294941049622527,
+    "square_feet": 1456,
+    "rent_amount": 304500,
+    "security_deposit": 304500,
+    "lease_start": "2024-08-23T13:24:19",
+    "lease_end": "2027-02-18T19:12:07",
+    "tenant": {
+      "id": "cus_TENANT_514117d738b44b72",
+      "object": "customer",
+      "created": 1726008398,
+      "email": "justinatkins@example.org",
+      "name": "Evelyn Martinez",
+      "phone": "(366)876-5277x584",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "False",
+        "credit_score": "792",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.3",
+        "previous_landlord_rating": "3.8"
+      }
+    },
+    "amenities": [
+      "pool",
+      "parking",
+      "laundry"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-16T00:02:00"
+  },
+  {
+    "id": "prop_P000031",
+    "landlord_id": "LL0010",
+    "landlord_account": "acct_LANDLORD_LL0010",
+    "address": {
+      "line1": "451 Mark Hill",
+      "city": "Seanchester",
+      "state": "GA",
+      "postal_code": "90909",
+      "country": "US"
+    },
+    "unit_number": "#7",
+    "property_type": "condo",
+    "bedrooms": 0,
+    "bathrooms": 2.8061095689266065,
+    "square_feet": 2179,
+    "rent_amount": 330300,
+    "security_deposit": 330300,
+    "lease_start": "2024-12-08T14:45:01",
+    "lease_end": "2027-05-28T09:45:34",
+    "tenant": {
+      "id": "cus_TENANT_c6cfe5c1b40741aa",
+      "object": "customer",
+      "created": 1739678302,
+      "email": "sergio59@example.com",
+      "name": "William Gould",
+      "phone": "265-482-0297",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "False",
+        "credit_score": "685",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.9",
+        "previous_landlord_rating": "4.3"
+      }
+    },
+    "amenities": [
+      "pet_friendly",
+      "gym",
+      "dishwasher",
+      "balcony"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-13T17:32:13"
+  },
+  {
+    "id": "prop_P000032",
+    "landlord_id": "LL0010",
+    "landlord_account": "acct_LANDLORD_LL0010",
+    "address": {
+      "line1": "6909 Erika Land Suite 719",
+      "city": "New Michael",
+      "state": "MD",
+      "postal_code": "85640",
+      "country": "US"
+    },
+    "unit_number": "Unit 21",
+    "property_type": "apartment",
+    "bedrooms": 2,
+    "bathrooms": 3.4935648073905385,
+    "square_feet": 870,
+    "rent_amount": 148000,
+    "security_deposit": 148000,
+    "lease_start": "2025-04-24T08:47:07",
+    "lease_end": "2027-01-10T18:54:52",
+    "tenant": {
+      "id": "cus_TENANT_cb133e8108bf4818",
+      "object": "customer",
+      "created": 1734134485,
+      "email": "susanjohnson@example.org",
+      "name": "Mr. Justin Green III",
+      "phone": "339.747.3121x727",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "601",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.9",
+        "previous_landlord_rating": "4.8"
+      }
+    },
+    "amenities": [
+      "balcony",
+      "parking"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-08T08:33:57"
+  },
+  {
+    "id": "prop_P000033",
+    "landlord_id": "LL0010",
+    "landlord_account": "acct_LANDLORD_LL0010",
+    "address": {
+      "line1": "2258 David Flats Apt. 370",
+      "city": "Angelastad",
+      "state": "NH",
+      "postal_code": "72806",
+      "country": "US"
+    },
+    "unit_number": "Unit 14",
+    "property_type": "house",
+    "bedrooms": 1,
+    "bathrooms": 1.4249591226702434,
+    "square_feet": 823,
+    "rent_amount": 280000,
+    "security_deposit": 280000,
+    "lease_start": "2025-03-01T19:00:01",
+    "lease_end": "2025-10-17T02:45:32",
+    "tenant": {
+      "id": "cus_TENANT_538a3ee844004bf3",
+      "object": "customer",
+      "created": 1729134008,
+      "email": "jonesraymond@example.net",
+      "name": "Kelly Hammond",
+      "phone": "001-412-451-7785",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "673",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.5",
+        "previous_landlord_rating": "3.5"
+      }
+    },
+    "amenities": [
+      "pool",
+      "heating",
+      "balcony",
+      "parking"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-27T18:19:43"
+  },
+  {
+    "id": "prop_P000034",
+    "landlord_id": "LL0010",
+    "landlord_account": "acct_LANDLORD_LL0010",
+    "address": {
+      "line1": "82422 Donovan Fork",
+      "city": "Staceyhaven",
+      "state": "MH",
+      "postal_code": "37731",
+      "country": "US"
+    },
+    "unit_number": "#11",
+    "property_type": "apartment",
+    "bedrooms": 2,
+    "bathrooms": 3.4691292380461785,
+    "square_feet": 1725,
+    "rent_amount": 343800,
+    "security_deposit": 343800,
+    "lease_start": "2024-07-29T16:47:46",
+    "lease_end": "2026-09-22T06:16:02",
+    "tenant": {
+      "id": "cus_TENANT_54e617cfea114225",
+      "object": "customer",
+      "created": 1753164434,
+      "email": "kingcynthia@example.net",
+      "name": "Mario Mendez",
+      "phone": "782-299-2299",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "783",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.2",
+        "previous_landlord_rating": "3.8"
+      }
+    },
+    "amenities": [
+      "laundry",
+      "air_conditioning",
+      "pool",
+      "heating",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-08-07T22:05:12"
+  },
+  {
+    "id": "prop_P000035",
+    "landlord_id": "LL0011",
+    "landlord_account": "acct_LANDLORD_LL0011",
+    "address": {
+      "line1": "25953 Tyrone Passage Suite 747",
+      "city": "North Sierrahaven",
+      "state": "NH",
+      "postal_code": "32053",
+      "country": "US"
+    },
+    "unit_number": "Unit 8",
+    "property_type": "condo",
+    "bedrooms": 2,
+    "bathrooms": 1.5475113473202637,
+    "square_feet": 1278,
+    "rent_amount": 267200,
+    "security_deposit": 267200,
+    "lease_start": "2024-04-10T02:09:02",
+    "lease_end": "2026-06-22T01:16:43",
+    "tenant": {
+      "id": "cus_TENANT_4331f5d18c6e46f8",
+      "object": "customer",
+      "created": 1732002257,
+      "email": "brandon47@example.net",
+      "name": "Martha Ruiz",
+      "phone": "+1-201-862-4565",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "620",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.7",
+        "previous_landlord_rating": "4.3"
+      }
+    },
+    "amenities": [
+      "pool",
+      "parking",
+      "heating",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-10T14:37:08"
+  },
+  {
+    "id": "prop_P000036",
+    "landlord_id": "LL0011",
+    "landlord_account": "acct_LANDLORD_LL0011",
+    "address": {
+      "line1": "416 Duran Harbors Apt. 216",
+      "city": "Lauramouth",
+      "state": "OH",
+      "postal_code": "48421",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "townhouse",
+    "bedrooms": 1,
+    "bathrooms": 1.3303994943669588,
+    "square_feet": 2709,
+    "rent_amount": 293800,
+    "security_deposit": 293800,
+    "lease_start": "2024-11-07T01:13:56",
+    "lease_end": "2026-01-25T20:50:41",
+    "tenant": {
+      "id": "cus_TENANT_d4871bc411404b86",
+      "object": "customer",
+      "created": 1750112036,
+      "email": "jameshicks@example.net",
+      "name": "Andrew Reeves",
+      "phone": "687.729.8259x5269",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "689",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.4",
+        "previous_landlord_rating": "4.6"
+      }
+    },
+    "amenities": [
+      "heating",
+      "balcony",
+      "gym",
+      "parking",
+      "air_conditioning"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-07T04:27:58"
+  },
+  {
+    "id": "prop_P000037",
+    "landlord_id": "LL0011",
+    "landlord_account": "acct_LANDLORD_LL0011",
+    "address": {
+      "line1": "0551 Silva Underpass Apt. 974",
+      "city": "Lake Brett",
+      "state": "NJ",
+      "postal_code": "22850",
+      "country": "US"
+    },
+    "unit_number": "#47",
+    "property_type": "townhouse",
+    "bedrooms": 4,
+    "bathrooms": 1.914437623513916,
+    "square_feet": 2116,
+    "rent_amount": 437000,
+    "security_deposit": 437000,
+    "lease_start": "2024-10-15T03:44:26",
+    "lease_end": "2026-09-12T03:36:37",
+    "tenant": {
+      "id": "cus_TENANT_8586ec9c4bed444e",
+      "object": "customer",
+      "created": 1742369927,
+      "email": "rhernandez@example.org",
+      "name": "Travis Rodriguez",
+      "phone": "9752626368",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "613",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.9",
+        "previous_landlord_rating": "4.3"
+      }
+    },
+    "amenities": [
+      "gym",
+      "balcony",
+      "parking",
+      "pool",
+      "laundry",
+      "air_conditioning"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-15T17:21:28"
+  },
+  {
+    "id": "prop_P000038",
+    "landlord_id": "LL0011",
+    "landlord_account": "acct_LANDLORD_LL0011",
+    "address": {
+      "line1": "786 Frye Mount Suite 854",
+      "city": "Leebury",
+      "state": "KY",
+      "postal_code": "73650",
+      "country": "US"
+    },
+    "unit_number": "Unit 8",
+    "property_type": "townhouse",
+    "bedrooms": 0,
+    "bathrooms": 2.588509805944848,
+    "square_feet": 2401,
+    "rent_amount": 294300,
+    "security_deposit": 294300,
+    "lease_start": "2024-10-04T13:09:46",
+    "lease_end": "2026-02-04T17:20:11",
+    "tenant": {
+      "id": "cus_TENANT_93fd4c26914a42f8",
+      "object": "customer",
+      "created": 1734799178,
+      "email": "shellyhendrix@example.com",
+      "name": "Melissa Burns",
+      "phone": "258.644.1986x6524",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "609",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.8",
+        "previous_landlord_rating": "3.6"
+      }
+    },
+    "amenities": [
+      "laundry",
+      "pet_friendly",
+      "pool",
+      "heating",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-17T08:20:47"
+  },
+  {
+    "id": "prop_P000039",
+    "landlord_id": "LL0011",
+    "landlord_account": "acct_LANDLORD_LL0011",
+    "address": {
+      "line1": "473 Maria Groves Suite 219",
+      "city": "East Brent",
+      "state": "MH",
+      "postal_code": "70105",
+      "country": "US"
+    },
+    "unit_number": "#45",
+    "property_type": "house",
+    "bedrooms": 4,
+    "bathrooms": 2.8556725369132896,
+    "square_feet": 1132,
+    "rent_amount": 484300,
+    "security_deposit": 484300,
+    "lease_start": "2024-05-23T16:53:26",
+    "lease_end": "2027-08-15T08:59:41",
+    "tenant": {
+      "id": "cus_TENANT_689ee067caf44e69",
+      "object": "customer",
+      "created": 1732355492,
+      "email": "briangutierrez@example.net",
+      "name": "Michael Taylor",
+      "phone": "+1-226-377-3454",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "800",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.8",
+        "previous_landlord_rating": "3.6"
+      }
+    },
+    "amenities": [
+      "air_conditioning",
+      "pool",
+      "pet_friendly",
+      "laundry"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-05T08:08:21"
+  },
+  {
+    "id": "prop_P000040",
+    "landlord_id": "LL0012",
+    "landlord_account": "acct_LANDLORD_LL0012",
+    "address": {
+      "line1": "8516 Jack Dam Suite 530",
+      "city": "Patrickmouth",
+      "state": "WV",
+      "postal_code": "35496",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "house",
+    "bedrooms": 0,
+    "bathrooms": 2.966986476136542,
+    "square_feet": 1497,
+    "rent_amount": 442800,
+    "security_deposit": 442800,
+    "lease_start": "2025-06-23T15:56:04",
+    "lease_end": "2027-01-05T18:55:07",
+    "tenant": {
+      "id": "cus_TENANT_636b6d426ed44f29",
+      "object": "customer",
+      "created": 1735843598,
+      "email": "brandi90@example.com",
+      "name": "Melissa Brown",
+      "phone": "774-526-8414",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "655",
+        "employment_verified": "False",
+        "income_to_rent_ratio": "5.2",
+        "previous_landlord_rating": "3.4"
+      }
+    },
+    "amenities": [
+      "air_conditioning",
+      "balcony",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-04-12T05:25:12"
+  },
+  {
+    "id": "prop_P000041",
+    "landlord_id": "LL0013",
+    "landlord_account": "acct_LANDLORD_LL0013",
+    "address": {
+      "line1": "064 Julie Prairie Apt. 065",
+      "city": "New Virginialand",
+      "state": "NJ",
+      "postal_code": "04660",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "house",
+    "bedrooms": 1,
+    "bathrooms": 2.8542951423853737,
+    "square_feet": 2654,
+    "rent_amount": 186400,
+    "security_deposit": 186400,
+    "lease_start": "2024-11-04T16:56:30",
+    "lease_end": "2026-08-21T19:33:47",
+    "tenant": {
+      "id": "cus_TENANT_bccf5b0bfec84e10",
+      "object": "customer",
+      "created": 1734416374,
+      "email": "iwhite@example.net",
+      "name": "Maria Fisher",
+      "phone": "(476)561-8251x2868",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "793",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.8",
+        "previous_landlord_rating": "4.2"
+      }
+    },
+    "amenities": [
+      "pet_friendly",
+      "air_conditioning",
+      "heating",
+      "parking",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-08-09T18:45:27"
+  },
+  {
+    "id": "prop_P000042",
+    "landlord_id": "LL0013",
+    "landlord_account": "acct_LANDLORD_LL0013",
+    "address": {
+      "line1": "8686 John Key Apt. 431",
+      "city": "Port Donnatown",
+      "state": "IA",
+      "postal_code": "27512",
+      "country": "US"
+    },
+    "unit_number": "#31",
+    "property_type": "townhouse",
+    "bedrooms": 0,
+    "bathrooms": 2.225672135360563,
+    "square_feet": 2316,
+    "rent_amount": 184900,
+    "security_deposit": 184900,
+    "lease_start": "2025-04-07T00:24:46",
+    "lease_end": "2025-09-14T08:01:26",
+    "tenant": {
+      "id": "cus_TENANT_3e4f3e6a006147bf",
+      "object": "customer",
+      "created": 1727037517,
+      "email": "wheelersean@example.net",
+      "name": "Amber Yang",
+      "phone": "(773)583-0284x3959",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "714",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.7",
+        "previous_landlord_rating": "3.6"
+      }
+    },
+    "amenities": [
+      "pet_friendly",
+      "balcony",
+      "air_conditioning",
+      "heating",
+      "pool",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-04-28T06:31:52"
+  },
+  {
+    "id": "prop_P000043",
+    "landlord_id": "LL0014",
+    "landlord_account": "acct_LANDLORD_LL0014",
+    "address": {
+      "line1": "54033 Julie Throughway Suite 393",
+      "city": "Hermanside",
+      "state": "MD",
+      "postal_code": "37602",
+      "country": "US"
+    },
+    "unit_number": "Unit 14",
+    "property_type": "apartment",
+    "bedrooms": 0,
+    "bathrooms": 1.7813708749928325,
+    "square_feet": 1780,
+    "rent_amount": 305700,
+    "security_deposit": 305700,
+    "lease_start": "2024-11-04T17:56:05",
+    "lease_end": "2026-02-12T05:41:17",
+    "tenant": {
+      "id": "cus_TENANT_59b71c99a7954302",
+      "object": "customer",
+      "created": 1737556097,
+      "email": "wferguson@example.com",
+      "name": "Jose Crawford",
+      "phone": "575-435-5609",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "628",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.2",
+        "previous_landlord_rating": "3.2"
+      }
+    },
+    "amenities": [
+      "laundry",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-03T19:47:49"
+  },
+  {
+    "id": "prop_P000044",
+    "landlord_id": "LL0014",
+    "landlord_account": "acct_LANDLORD_LL0014",
+    "address": {
+      "line1": "2353 Hudson Gardens Suite 854",
+      "city": "Levyfort",
+      "state": "NH",
+      "postal_code": "22551",
+      "country": "US"
+    },
+    "unit_number": "#36",
+    "property_type": "house",
+    "bedrooms": 0,
+    "bathrooms": 2.0270215823053954,
+    "square_feet": 2232,
+    "rent_amount": 420200,
+    "security_deposit": 420200,
+    "lease_start": "2024-10-31T10:40:55",
+    "lease_end": "2027-08-23T17:21:49",
+    "tenant": {
+      "id": "cus_TENANT_05da282452044b56",
+      "object": "customer",
+      "created": 1749367365,
+      "email": "gary87@example.org",
+      "name": "Kimberly May",
+      "phone": "3804100623",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "709",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.5",
+        "previous_landlord_rating": "3.4"
+      }
+    },
+    "amenities": [
+      "air_conditioning",
+      "laundry",
+      "dishwasher",
+      "heating",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-02T10:48:33"
+  },
+  {
+    "id": "prop_P000045",
+    "landlord_id": "LL0014",
+    "landlord_account": "acct_LANDLORD_LL0014",
+    "address": {
+      "line1": "99770 Amanda Loop Apt. 084",
+      "city": "Andrechester",
+      "state": "AS",
+      "postal_code": "23997",
+      "country": "US"
+    },
+    "unit_number": "Unit 22",
+    "property_type": "townhouse",
+    "bedrooms": 4,
+    "bathrooms": 1.0656345786339585,
+    "square_feet": 1595,
+    "rent_amount": 414600,
+    "security_deposit": 414600,
+    "lease_start": "2024-09-24T11:45:06",
+    "lease_end": "2026-08-16T20:50:35",
+    "tenant": {
+      "id": "cus_TENANT_1f675091cd63408f",
+      "object": "customer",
+      "created": 1728370484,
+      "email": "warrenjohn@example.net",
+      "name": "Robin Adams",
+      "phone": "(815)867-9334x1016",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "False",
+        "credit_score": "708",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.7",
+        "previous_landlord_rating": "3.4"
+      }
+    },
+    "amenities": [
+      "gym",
+      "laundry",
+      "pool"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-15T23:58:56"
+  },
+  {
+    "id": "prop_P000046",
+    "landlord_id": "LL0014",
+    "landlord_account": "acct_LANDLORD_LL0014",
+    "address": {
+      "line1": "217 Newman Isle",
+      "city": "New Samanthabury",
+      "state": "IL",
+      "postal_code": "91240",
+      "country": "US"
+    },
+    "unit_number": "#14",
+    "property_type": "apartment",
+    "bedrooms": 3,
+    "bathrooms": 1.852239954423332,
+    "square_feet": 2015,
+    "rent_amount": 337200,
+    "security_deposit": 337200,
+    "lease_start": "2023-10-11T06:15:54",
+    "lease_end": "2027-01-04T06:03:05",
+    "tenant": {
+      "id": "cus_TENANT_213a8b31d65941ce",
+      "object": "customer",
+      "created": 1754560989,
+      "email": "enelson@example.net",
+      "name": "Stephanie Elliott",
+      "phone": "6254039261",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "840",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.6",
+        "previous_landlord_rating": "3.3"
+      }
+    },
+    "amenities": [
+      "parking",
+      "laundry",
+      "dishwasher",
+      "air_conditioning",
+      "balcony",
+      "heating"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-18T04:26:33"
+  },
+  {
+    "id": "prop_P000047",
+    "landlord_id": "LL0015",
+    "landlord_account": "acct_LANDLORD_LL0015",
+    "address": {
+      "line1": "8886 Anthony Knoll Apt. 995",
+      "city": "Smithchester",
+      "state": "MS",
+      "postal_code": "11602",
+      "country": "US"
+    },
+    "unit_number": "Unit 13",
+    "property_type": "house",
+    "bedrooms": 0,
+    "bathrooms": 1.0192177147497072,
+    "square_feet": 1734,
+    "rent_amount": 198600,
+    "security_deposit": 198600,
+    "lease_start": "2023-11-04T11:32:43",
+    "lease_end": "2026-01-20T05:26:34",
+    "tenant": {
+      "id": "cus_TENANT_1001116313774599",
+      "object": "customer",
+      "created": 1749101332,
+      "email": "ashleyjackson@example.com",
+      "name": "Derrick Adams",
+      "phone": "(712)664-6471",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "680",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.9",
+        "previous_landlord_rating": "4.0"
+      }
+    },
+    "amenities": [
+      "dishwasher",
+      "pet_friendly",
+      "air_conditioning",
+      "heating",
+      "laundry"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-04-17T13:23:59"
+  },
+  {
+    "id": "prop_P000048",
+    "landlord_id": "LL0015",
+    "landlord_account": "acct_LANDLORD_LL0015",
+    "address": {
+      "line1": "1240 Cook River",
+      "city": "Brockmouth",
+      "state": "NV",
+      "postal_code": "44375",
+      "country": "US"
+    },
+    "unit_number": "Unit 13",
+    "property_type": "house",
+    "bedrooms": 0,
+    "bathrooms": 2.0905489887807804,
+    "square_feet": 2383,
+    "rent_amount": 325000,
+    "security_deposit": 325000,
+    "lease_start": "2024-09-16T18:38:03",
+    "lease_end": "2026-12-01T21:33:37",
+    "tenant": {
+      "id": "cus_TENANT_16b759e764ef4e99",
+      "object": "customer",
+      "created": 1739232291,
+      "email": "kevinmorrison@example.net",
+      "name": "Ernest Oconnell",
+      "phone": "447-293-5646x51939",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "844",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.9",
+        "previous_landlord_rating": "4.3"
+      }
+    },
+    "amenities": [
+      "laundry",
+      "gym",
+      "parking",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-19T21:16:00"
+  },
+  {
+    "id": "prop_P000049",
+    "landlord_id": "LL0015",
+    "landlord_account": "acct_LANDLORD_LL0015",
+    "address": {
+      "line1": "1672 Allen Shoals Apt. 661",
+      "city": "Ewingfort",
+      "state": "OR",
+      "postal_code": "53035",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "house",
+    "bedrooms": 1,
+    "bathrooms": 2.089191317351,
+    "square_feet": 2140,
+    "rent_amount": 328200,
+    "security_deposit": 328200,
+    "lease_start": "2025-02-28T21:07:33",
+    "lease_end": "2026-02-06T12:20:10",
+    "tenant": {
+      "id": "cus_TENANT_f33c1b05dc434513",
+      "object": "customer",
+      "created": 1742710003,
+      "email": "ystephens@example.com",
+      "name": "Robin Wheeler",
+      "phone": "713-852-9096",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "708",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.3",
+        "previous_landlord_rating": "4.6"
+      }
+    },
+    "amenities": [
+      "pet_friendly",
+      "laundry"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-21T05:56:39"
+  },
+  {
+    "id": "prop_P000050",
+    "landlord_id": "LL0015",
+    "landlord_account": "acct_LANDLORD_LL0015",
+    "address": {
+      "line1": "889 Sean Lock",
+      "city": "Bartonshire",
+      "state": "UT",
+      "postal_code": "66098",
+      "country": "US"
+    },
+    "unit_number": "Unit 24",
+    "property_type": "townhouse",
+    "bedrooms": 1,
+    "bathrooms": 1.5906721223668108,
+    "square_feet": 1099,
+    "rent_amount": 303100,
+    "security_deposit": 303100,
+    "lease_start": "2023-11-13T06:21:59",
+    "lease_end": "2026-03-16T15:26:23",
+    "tenant": {
+      "id": "cus_TENANT_8fa07832be074215",
+      "object": "customer",
+      "created": 1729837769,
+      "email": "whitney71@example.com",
+      "name": "Vernon Wilson",
+      "phone": "001-925-745-7387x5717",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "False",
+        "credit_score": "628",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.8",
+        "previous_landlord_rating": "3.4"
+      }
+    },
+    "amenities": [
+      "pool",
+      "pet_friendly",
+      "balcony",
+      "heating",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-13T17:15:43"
+  },
+  {
+    "id": "prop_P000051",
+    "landlord_id": "LL0015",
+    "landlord_account": "acct_LANDLORD_LL0015",
+    "address": {
+      "line1": "51238 Andrea Isle",
+      "city": "Mullenbury",
+      "state": "AS",
+      "postal_code": "53591",
+      "country": "US"
+    },
+    "unit_number": "#29",
+    "property_type": "house",
+    "bedrooms": 2,
+    "bathrooms": 2.4785493920775528,
+    "square_feet": 1941,
+    "rent_amount": 372000,
+    "security_deposit": 372000,
+    "lease_start": "2023-10-02T09:09:33",
+    "lease_end": "2027-05-18T23:10:02",
+    "tenant": {
+      "id": "cus_TENANT_0868a7f55f034cd8",
+      "object": "customer",
+      "created": 1745910858,
+      "email": "jacobsandoval@example.com",
+      "name": "Lucas Gonzalez",
+      "phone": "001-366-403-3419",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "781",
+        "employment_verified": "False",
+        "income_to_rent_ratio": "3.8",
+        "previous_landlord_rating": "3.6"
+      }
+    },
+    "amenities": [
+      "pet_friendly",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-10T16:55:33"
+  },
+  {
+    "id": "prop_P000052",
+    "landlord_id": "LL0016",
+    "landlord_account": "acct_LANDLORD_LL0016",
+    "address": {
+      "line1": "050 Taylor Via Suite 887",
+      "city": "Cohenchester",
+      "state": "VT",
+      "postal_code": "58677",
+      "country": "US"
+    },
+    "unit_number": "Unit 11",
+    "property_type": "townhouse",
+    "bedrooms": 0,
+    "bathrooms": 2.2613725037523933,
+    "square_feet": 1206,
+    "rent_amount": 344500,
+    "security_deposit": 344500,
+    "lease_start": "2024-01-20T23:58:38",
+    "lease_end": "2026-04-29T00:24:12",
+    "tenant": {
+      "id": "cus_TENANT_aea31b6b9b5546d5",
+      "object": "customer",
+      "created": 1741181243,
+      "email": "christopherjohnson@example.org",
+      "name": "Donald Medina",
+      "phone": "(679)778-8191",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "774",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.3",
+        "previous_landlord_rating": "4.2"
+      }
+    },
+    "amenities": [
+      "balcony",
+      "heating",
+      "air_conditioning",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-13T22:18:43"
+  },
+  {
+    "id": "prop_P000053",
+    "landlord_id": "LL0016",
+    "landlord_account": "acct_LANDLORD_LL0016",
+    "address": {
+      "line1": "361 Kenneth Bypass Suite 451",
+      "city": "Grimesville",
+      "state": "WI",
+      "postal_code": "31557",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "house",
+    "bedrooms": 2,
+    "bathrooms": 1.2362648687877358,
+    "square_feet": 2083,
+    "rent_amount": 438400,
+    "security_deposit": 438400,
+    "lease_start": "2025-04-09T23:42:38",
+    "lease_end": "2027-03-09T02:58:12",
+    "tenant": {
+      "id": "cus_TENANT_bc122e8193604fab",
+      "object": "customer",
+      "created": 1731825551,
+      "email": "michelle96@example.org",
+      "name": "Rachel Li",
+      "phone": "6956849825",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "626",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.5",
+        "previous_landlord_rating": "3.3"
+      }
+    },
+    "amenities": [
+      "heating",
+      "gym",
+      "laundry",
+      "pet_friendly"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-19T21:20:53"
+  },
+  {
+    "id": "prop_P000054",
+    "landlord_id": "LL0017",
+    "landlord_account": "acct_LANDLORD_LL0017",
+    "address": {
+      "line1": "54152 Randy Inlet Apt. 611",
+      "city": "East Thomasberg",
+      "state": "OR",
+      "postal_code": "30148",
+      "country": "US"
+    },
+    "unit_number": "Unit 20",
+    "property_type": "house",
+    "bedrooms": 0,
+    "bathrooms": 2.579887355032856,
+    "square_feet": 2855,
+    "rent_amount": 225400,
+    "security_deposit": 225400,
+    "lease_start": "2024-04-19T03:23:16",
+    "lease_end": "2025-12-29T03:45:41",
+    "tenant": {
+      "id": "cus_TENANT_9911bfa1747046ad",
+      "object": "customer",
+      "created": 1742209265,
+      "email": "ssmith@example.com",
+      "name": "Virginia Henderson",
+      "phone": "(771)636-1115",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "699",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.7",
+        "previous_landlord_rating": "3.5"
+      }
+    },
+    "amenities": [
+      "dishwasher",
+      "laundry",
+      "heating",
+      "pet_friendly",
+      "parking"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-27T07:16:32"
+  },
+  {
+    "id": "prop_P000055",
+    "landlord_id": "LL0017",
+    "landlord_account": "acct_LANDLORD_LL0017",
+    "address": {
+      "line1": "218 Chelsey Expressway",
+      "city": "Bellborough",
+      "state": "SC",
+      "postal_code": "98578",
+      "country": "US"
+    },
+    "unit_number": "#36",
+    "property_type": "condo",
+    "bedrooms": 3,
+    "bathrooms": 1.1088360629169416,
+    "square_feet": 2084,
+    "rent_amount": 357900,
+    "security_deposit": 357900,
+    "lease_start": "2025-04-20T10:33:19",
+    "lease_end": "2027-05-21T10:29:02",
+    "tenant": {
+      "id": "cus_TENANT_325c2bf118334838",
+      "object": "customer",
+      "created": 1729858881,
+      "email": "cjensen@example.org",
+      "name": "Brian Goodwin",
+      "phone": "001-565-665-2341",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "558",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.7",
+        "previous_landlord_rating": "3.5"
+      }
+    },
+    "amenities": [
+      "balcony",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-29T22:28:07"
+  },
+  {
+    "id": "prop_P000056",
+    "landlord_id": "LL0017",
+    "landlord_account": "acct_LANDLORD_LL0017",
+    "address": {
+      "line1": "89836 Lucas Tunnel Apt. 761",
+      "city": "South Danielle",
+      "state": "CA",
+      "postal_code": "69744",
+      "country": "US"
+    },
+    "unit_number": "#50",
+    "property_type": "apartment",
+    "bedrooms": 3,
+    "bathrooms": 2.5793396193958444,
+    "square_feet": 1052,
+    "rent_amount": 191700,
+    "security_deposit": 191700,
+    "lease_start": "2023-09-18T12:15:00",
+    "lease_end": "2027-06-17T06:03:40",
+    "tenant": {
+      "id": "cus_TENANT_db164112cafb4600",
+      "object": "customer",
+      "created": 1754600255,
+      "email": "hatfieldsarah@example.org",
+      "name": "Ryan Fisher",
+      "phone": "+1-527-210-9104",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "784",
+        "employment_verified": "False",
+        "income_to_rent_ratio": "3.2",
+        "previous_landlord_rating": "4.6"
+      }
+    },
+    "amenities": [
+      "balcony",
+      "heating"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-08-26T19:44:17"
+  },
+  {
+    "id": "prop_P000057",
+    "landlord_id": "LL0017",
+    "landlord_account": "acct_LANDLORD_LL0017",
+    "address": {
+      "line1": "866 Miller Plain Apt. 414",
+      "city": "New Samanthaberg",
+      "state": "ND",
+      "postal_code": "43328",
+      "country": "US"
+    },
+    "unit_number": "Unit 2",
+    "property_type": "condo",
+    "bedrooms": 1,
+    "bathrooms": 1.7152772388788717,
+    "square_feet": 695,
+    "rent_amount": 343900,
+    "security_deposit": 343900,
+    "lease_start": "2025-05-02T17:38:20",
+    "lease_end": "2026-07-02T18:59:56",
+    "tenant": {
+      "id": "cus_TENANT_dae96dfd6b73412a",
+      "object": "customer",
+      "created": 1737893982,
+      "email": "collinssamuel@example.org",
+      "name": "Brandon Hamilton",
+      "phone": "799.604.2102x027",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "738",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.9",
+        "previous_landlord_rating": "3.9"
+      }
+    },
+    "amenities": [
+      "balcony",
+      "dishwasher",
+      "air_conditioning",
+      "pet_friendly",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-04-02T02:18:38"
+  },
+  {
+    "id": "prop_P000058",
+    "landlord_id": "LL0017",
+    "landlord_account": "acct_LANDLORD_LL0017",
+    "address": {
+      "line1": "105 Nelson Circles Suite 917",
+      "city": "Dixonton",
+      "state": "NM",
+      "postal_code": "74803",
+      "country": "US"
+    },
+    "unit_number": "Unit 6",
+    "property_type": "house",
+    "bedrooms": 2,
+    "bathrooms": 1.803028570536485,
+    "square_feet": 827,
+    "rent_amount": 356300,
+    "security_deposit": 356300,
+    "lease_start": "2023-12-05T06:21:53",
+    "lease_end": "2027-04-02T01:03:06",
+    "tenant": {
+      "id": "cus_TENANT_ab9ab6e50c664108",
+      "object": "customer",
+      "created": 1730379219,
+      "email": "eric19@example.net",
+      "name": "Crystal Hicks",
+      "phone": "2038075622",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "706",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.0",
+        "previous_landlord_rating": "3.3"
+      }
+    },
+    "amenities": [
+      "balcony",
+      "pool",
+      "parking",
+      "pet_friendly",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-04-13T06:31:26"
+  },
+  {
+    "id": "prop_P000059",
+    "landlord_id": "LL0018",
+    "landlord_account": "acct_LANDLORD_LL0018",
+    "address": {
+      "line1": "410 Phyllis Pike",
+      "city": "Haynesstad",
+      "state": "NH",
+      "postal_code": "98529",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "apartment",
+    "bedrooms": 1,
+    "bathrooms": 2.9462884337671635,
+    "square_feet": 2000,
+    "rent_amount": 299400,
+    "security_deposit": 299400,
+    "lease_start": "2024-09-13T20:17:23",
+    "lease_end": "2025-10-13T04:43:55",
+    "tenant": {
+      "id": "cus_TENANT_27dc7a18ef11458d",
+      "object": "customer",
+      "created": 1727628461,
+      "email": "wagnerdana@example.com",
+      "name": "Keith Graham",
+      "phone": "(634)545-6557",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "840",
+        "employment_verified": "False",
+        "income_to_rent_ratio": "3.0",
+        "previous_landlord_rating": "3.9"
+      }
+    },
+    "amenities": [
+      "balcony",
+      "pool",
+      "gym",
+      "parking"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-15T04:16:32"
+  },
+  {
+    "id": "prop_P000060",
+    "landlord_id": "LL0019",
+    "landlord_account": "acct_LANDLORD_LL0019",
+    "address": {
+      "line1": "36519 Lowery Club",
+      "city": "North Jamesmouth",
+      "state": "AS",
+      "postal_code": "17381",
+      "country": "US"
+    },
+    "unit_number": "#8",
+    "property_type": "house",
+    "bedrooms": 3,
+    "bathrooms": 1.5364260635592992,
+    "square_feet": 1669,
+    "rent_amount": 410000,
+    "security_deposit": 410000,
+    "lease_start": "2023-10-15T13:48:13",
+    "lease_end": "2027-06-03T15:28:08",
+    "tenant": {
+      "id": "cus_TENANT_8d8821a107874cce",
+      "object": "customer",
+      "created": 1727865899,
+      "email": "david70@example.org",
+      "name": "Jessica Ramsey",
+      "phone": "506.662.5324x4720",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "619",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.1",
+        "previous_landlord_rating": "4.8"
+      }
+    },
+    "amenities": [
+      "laundry",
+      "balcony",
+      "pool",
+      "dishwasher",
+      "parking"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-05T13:12:37"
+  },
+  {
+    "id": "prop_P000061",
+    "landlord_id": "LL0019",
+    "landlord_account": "acct_LANDLORD_LL0019",
+    "address": {
+      "line1": "14626 Dawn Union Apt. 806",
+      "city": "Timothyfort",
+      "state": "MI",
+      "postal_code": "74642",
+      "country": "US"
+    },
+    "unit_number": "Unit 23",
+    "property_type": "condo",
+    "bedrooms": 1,
+    "bathrooms": 2.9842409596125066,
+    "square_feet": 2583,
+    "rent_amount": 214500,
+    "security_deposit": 214500,
+    "lease_start": "2025-07-14T08:23:32",
+    "lease_end": "2026-10-29T09:47:15",
+    "tenant": {
+      "id": "cus_TENANT_95917981fbe54595",
+      "object": "customer",
+      "created": 1741637129,
+      "email": "paul20@example.com",
+      "name": "Alyssa Cochran",
+      "phone": "207-585-9321x334",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "False",
+        "credit_score": "652",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.3",
+        "previous_landlord_rating": "4.0"
+      }
+    },
+    "amenities": [
+      "pet_friendly",
+      "balcony",
+      "air_conditioning",
+      "heating"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-20T11:07:35"
+  },
+  {
+    "id": "prop_P000062",
+    "landlord_id": "LL0019",
+    "landlord_account": "acct_LANDLORD_LL0019",
+    "address": {
+      "line1": "39559 Jade Knoll",
+      "city": "New Stacy",
+      "state": "MP",
+      "postal_code": "65018",
+      "country": "US"
+    },
+    "unit_number": "Unit 23",
+    "property_type": "apartment",
+    "bedrooms": 3,
+    "bathrooms": 2.3142391370757505,
+    "square_feet": 2177,
+    "rent_amount": 246600,
+    "security_deposit": 246600,
+    "lease_start": "2024-05-30T06:14:40",
+    "lease_end": "2027-08-24T01:42:39",
+    "tenant": {
+      "id": "cus_TENANT_62901f9ea6994d10",
+      "object": "customer",
+      "created": 1742970292,
+      "email": "gregory01@example.org",
+      "name": "Daniel Fox",
+      "phone": "2594325250",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "False",
+        "credit_score": "712",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.1",
+        "previous_landlord_rating": "4.4"
+      }
+    },
+    "amenities": [
+      "dishwasher",
+      "pet_friendly",
+      "gym",
+      "laundry"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-22T14:00:13"
+  },
+  {
+    "id": "prop_P000063",
+    "landlord_id": "LL0019",
+    "landlord_account": "acct_LANDLORD_LL0019",
+    "address": {
+      "line1": "56915 Morris Estate Suite 752",
+      "city": "Jeffreyshire",
+      "state": "GU",
+      "postal_code": "23484",
+      "country": "US"
+    },
+    "unit_number": "#34",
+    "property_type": "condo",
+    "bedrooms": 1,
+    "bathrooms": 1.4049173988897492,
+    "square_feet": 1423,
+    "rent_amount": 200800,
+    "security_deposit": 200800,
+    "lease_start": "2025-04-21T03:26:41",
+    "lease_end": "2025-11-21T19:54:59",
+    "tenant": {
+      "id": "cus_TENANT_fdd30e4f339b48ac",
+      "object": "customer",
+      "created": 1737479672,
+      "email": "jessica42@example.org",
+      "name": "Tiffany Fry",
+      "phone": "(390)529-5939x1725",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "815",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.5",
+        "previous_landlord_rating": "3.5"
+      }
+    },
+    "amenities": [
+      "heating",
+      "dishwasher",
+      "balcony",
+      "pool",
+      "pet_friendly",
+      "parking"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-07T00:27:33"
+  },
+  {
+    "id": "prop_P000064",
+    "landlord_id": "LL0020",
+    "landlord_account": "acct_LANDLORD_LL0020",
+    "address": {
+      "line1": "620 Mark Field",
+      "city": "Terryside",
+      "state": "KS",
+      "postal_code": "87086",
+      "country": "US"
+    },
+    "unit_number": "Unit 7",
+    "property_type": "apartment",
+    "bedrooms": 3,
+    "bathrooms": 2.545271065812394,
+    "square_feet": 624,
+    "rent_amount": 228400,
+    "security_deposit": 228400,
+    "lease_start": "2024-07-28T16:39:23",
+    "lease_end": "2027-01-17T08:50:59",
+    "tenant": {
+      "id": "cus_TENANT_b34047f5bb944d46",
+      "object": "customer",
+      "created": 1734229555,
+      "email": "john06@example.net",
+      "name": "Katherine Brown",
+      "phone": "5614497310",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "829",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.8",
+        "previous_landlord_rating": "4.0"
+      }
+    },
+    "amenities": [
+      "heating",
+      "pool",
+      "parking",
+      "balcony",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-02T14:23:27"
+  },
+  {
+    "id": "prop_P000065",
+    "landlord_id": "LL0021",
+    "landlord_account": "acct_LANDLORD_LL0021",
+    "address": {
+      "line1": "06163 Mary Green",
+      "city": "Reneeland",
+      "state": "CO",
+      "postal_code": "51369",
+      "country": "US"
+    },
+    "unit_number": "Unit 12",
+    "property_type": "townhouse",
+    "bedrooms": 4,
+    "bathrooms": 1.2654598340227432,
+    "square_feet": 1490,
+    "rent_amount": 213500,
+    "security_deposit": 213500,
+    "lease_start": "2024-01-05T12:23:03",
+    "lease_end": "2026-02-08T06:07:32",
+    "tenant": {
+      "id": "cus_TENANT_0452823e104243c5",
+      "object": "customer",
+      "created": 1743448093,
+      "email": "rarnold@example.net",
+      "name": "Shane Buchanan",
+      "phone": "+1-398-361-6229x991",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "False",
+        "credit_score": "780",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.8",
+        "previous_landlord_rating": "3.6"
+      }
+    },
+    "amenities": [
+      "gym",
+      "air_conditioning",
+      "pet_friendly",
+      "laundry",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-31T06:02:49"
+  },
+  {
+    "id": "prop_P000066",
+    "landlord_id": "LL0021",
+    "landlord_account": "acct_LANDLORD_LL0021",
+    "address": {
+      "line1": "4679 Johnson Harbor Suite 299",
+      "city": "Williamsmouth",
+      "state": "UT",
+      "postal_code": "31640",
+      "country": "US"
+    },
+    "unit_number": "#30",
+    "property_type": "house",
+    "bedrooms": 3,
+    "bathrooms": 1.0579407455408776,
+    "square_feet": 2110,
+    "rent_amount": 390800,
+    "security_deposit": 390800,
+    "lease_start": "2025-07-02T11:07:04",
+    "lease_end": "2026-10-17T17:08:19",
+    "tenant": {
+      "id": "cus_TENANT_b64e2e52a77f41bb",
+      "object": "customer",
+      "created": 1726433539,
+      "email": "xmccall@example.org",
+      "name": "Riley Collins",
+      "phone": "513.824.7546x9137",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "660",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.7",
+        "previous_landlord_rating": "3.6"
+      }
+    },
+    "amenities": [
+      "pool",
+      "heating",
+      "pet_friendly",
+      "parking",
+      "balcony",
+      "air_conditioning"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-22T13:15:35"
+  },
+  {
+    "id": "prop_P000067",
+    "landlord_id": "LL0021",
+    "landlord_account": "acct_LANDLORD_LL0021",
+    "address": {
+      "line1": "82148 Taylor Vista Apt. 233",
+      "city": "East Antonioton",
+      "state": "PW",
+      "postal_code": "47736",
+      "country": "US"
+    },
+    "unit_number": "Unit 19",
+    "property_type": "apartment",
+    "bedrooms": 1,
+    "bathrooms": 1.9063094398607112,
+    "square_feet": 1682,
+    "rent_amount": 284000,
+    "security_deposit": 284000,
+    "lease_start": "2025-04-09T14:11:17",
+    "lease_end": "2026-10-02T20:29:28",
+    "tenant": {
+      "id": "cus_TENANT_fe513c4766f04670",
+      "object": "customer",
+      "created": 1748423200,
+      "email": "joshuacolon@example.net",
+      "name": "Thomas Maldonado",
+      "phone": "757.797.2798",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "780",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.5",
+        "previous_landlord_rating": "5.0"
+      }
+    },
+    "amenities": [
+      "laundry",
+      "dishwasher",
+      "parking",
+      "air_conditioning",
+      "pool",
+      "heating"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-04-01T10:14:08"
+  },
+  {
+    "id": "prop_P000068",
+    "landlord_id": "LL0022",
+    "landlord_account": "acct_LANDLORD_LL0022",
+    "address": {
+      "line1": "4544 Lopez Path",
+      "city": "North Linda",
+      "state": "AS",
+      "postal_code": "79148",
+      "country": "US"
+    },
+    "unit_number": "#33",
+    "property_type": "house",
+    "bedrooms": 4,
+    "bathrooms": 1.7963250793982677,
+    "square_feet": 2109,
+    "rent_amount": 428300,
+    "security_deposit": 428300,
+    "lease_start": "2023-11-20T15:25:17",
+    "lease_end": "2026-09-05T20:27:43",
+    "tenant": {
+      "id": "cus_TENANT_f76f8cbe1660476e",
+      "object": "customer",
+      "created": 1738342502,
+      "email": "erin07@example.com",
+      "name": "Jason Price",
+      "phone": "6994353875",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "809",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.4",
+        "previous_landlord_rating": "4.4"
+      }
+    },
+    "amenities": [
+      "pool",
+      "parking",
+      "dishwasher",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-08-10T21:52:01"
+  },
+  {
+    "id": "prop_P000069",
+    "landlord_id": "LL0022",
+    "landlord_account": "acct_LANDLORD_LL0022",
+    "address": {
+      "line1": "1724 Stacey Isle",
+      "city": "East Michaelport",
+      "state": "MT",
+      "postal_code": "43927",
+      "country": "US"
+    },
+    "unit_number": "Unit 23",
+    "property_type": "house",
+    "bedrooms": 0,
+    "bathrooms": 2.492274039882984,
+    "square_feet": 1587,
+    "rent_amount": 306000,
+    "security_deposit": 306000,
+    "lease_start": "2025-07-09T11:15:14",
+    "lease_end": "2026-11-04T06:42:17",
+    "tenant": {
+      "id": "cus_TENANT_149aa8193cad4997",
+      "object": "customer",
+      "created": 1737254801,
+      "email": "brenda71@example.com",
+      "name": "Mark Carpenter",
+      "phone": "+1-417-538-1684x602",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "848",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.3",
+        "previous_landlord_rating": "4.4"
+      }
+    },
+    "amenities": [
+      "dishwasher",
+      "air_conditioning",
+      "parking",
+      "heating",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-06T05:09:51"
+  },
+  {
+    "id": "prop_P000070",
+    "landlord_id": "LL0022",
+    "landlord_account": "acct_LANDLORD_LL0022",
+    "address": {
+      "line1": "52175 Lawrence Centers Apt. 743",
+      "city": "New Kathy",
+      "state": "NM",
+      "postal_code": "12040",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "apartment",
+    "bedrooms": 3,
+    "bathrooms": 2.2545487615274693,
+    "square_feet": 2431,
+    "rent_amount": 182000,
+    "security_deposit": 182000,
+    "lease_start": "2024-11-12T22:39:32",
+    "lease_end": "2027-07-22T04:02:46",
+    "tenant": {
+      "id": "cus_TENANT_b42aa8cd01a649b8",
+      "object": "customer",
+      "created": 1729121752,
+      "email": "zschultz@example.com",
+      "name": "Janet Johnson",
+      "phone": "550.758.3003",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "815",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.6",
+        "previous_landlord_rating": "4.3"
+      }
+    },
+    "amenities": [
+      "gym",
+      "balcony",
+      "laundry",
+      "air_conditioning",
+      "heating",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-04-30T06:39:44"
+  },
+  {
+    "id": "prop_P000071",
+    "landlord_id": "LL0022",
+    "landlord_account": "acct_LANDLORD_LL0022",
+    "address": {
+      "line1": "10447 Hamilton Spur Apt. 575",
+      "city": "East Stacy",
+      "state": "PW",
+      "postal_code": "53374",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "condo",
+    "bedrooms": 1,
+    "bathrooms": 1.6975159898043917,
+    "square_feet": 1722,
+    "rent_amount": 258200,
+    "security_deposit": 258200,
+    "lease_start": "2023-11-16T10:49:37",
+    "lease_end": "2026-06-21T14:06:21",
+    "tenant": {
+      "id": "cus_TENANT_9e812c34c1bf42de",
+      "object": "customer",
+      "created": 1725421328,
+      "email": "jeffreymercer@example.org",
+      "name": "Leah Jackson",
+      "phone": "(306)848-9090x100",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "702",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.0",
+        "previous_landlord_rating": "4.4"
+      }
+    },
+    "amenities": [
+      "balcony",
+      "pool",
+      "dishwasher",
+      "heating",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-25T22:51:41"
+  },
+  {
+    "id": "prop_P000072",
+    "landlord_id": "LL0022",
+    "landlord_account": "acct_LANDLORD_LL0022",
+    "address": {
+      "line1": "2304 Stanley Shore Suite 992",
+      "city": "Rivasville",
+      "state": "NY",
+      "postal_code": "94711",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "house",
+    "bedrooms": 2,
+    "bathrooms": 1.1051662170818137,
+    "square_feet": 823,
+    "rent_amount": 335500,
+    "security_deposit": 335500,
+    "lease_start": "2023-12-02T16:11:09",
+    "lease_end": "2026-10-26T18:17:24",
+    "tenant": {
+      "id": "cus_TENANT_4c9592214bbb4661",
+      "object": "customer",
+      "created": 1745506113,
+      "email": "campbellkristen@example.com",
+      "name": "Curtis Baker",
+      "phone": "235.364.2087x37530",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "681",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.2",
+        "previous_landlord_rating": "4.7"
+      }
+    },
+    "amenities": [
+      "pet_friendly",
+      "heating",
+      "laundry",
+      "parking"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-08-23T18:34:27"
+  },
+  {
+    "id": "prop_P000073",
+    "landlord_id": "LL0023",
+    "landlord_account": "acct_LANDLORD_LL0023",
+    "address": {
+      "line1": "9797 Cheryl Tunnel",
+      "city": "Cherylberg",
+      "state": "NJ",
+      "postal_code": "64480",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "house",
+    "bedrooms": 3,
+    "bathrooms": 2.6322319942532495,
+    "square_feet": 2448,
+    "rent_amount": 236300,
+    "security_deposit": 236300,
+    "lease_start": "2025-06-14T12:01:44",
+    "lease_end": "2025-12-29T11:33:09",
+    "tenant": {
+      "id": "cus_TENANT_b0019074027142fe",
+      "object": "customer",
+      "created": 1728569161,
+      "email": "ealexander@example.com",
+      "name": "Alexandria Oneill",
+      "phone": "499.235.8891x63756",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "697",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.8",
+        "previous_landlord_rating": "4.8"
+      }
+    },
+    "amenities": [
+      "air_conditioning",
+      "parking"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-02T22:28:33"
+  },
+  {
+    "id": "prop_P000074",
+    "landlord_id": "LL0024",
+    "landlord_account": "acct_LANDLORD_LL0024",
+    "address": {
+      "line1": "571 Katherine Forges Apt. 554",
+      "city": "Jacquelineton",
+      "state": "MH",
+      "postal_code": "22017",
+      "country": "US"
+    },
+    "unit_number": "#22",
+    "property_type": "apartment",
+    "bedrooms": 4,
+    "bathrooms": 2.310796337088801,
+    "square_feet": 1049,
+    "rent_amount": 163900,
+    "security_deposit": 163900,
+    "lease_start": "2025-04-15T17:53:07",
+    "lease_end": "2026-12-22T01:19:58",
+    "tenant": {
+      "id": "cus_TENANT_a61bdc29c73247db",
+      "object": "customer",
+      "created": 1741306154,
+      "email": "lydianewton@example.com",
+      "name": "Levi Lopez",
+      "phone": "(437)935-1609x1779",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "607",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.1",
+        "previous_landlord_rating": "4.3"
+      }
+    },
+    "amenities": [
+      "parking",
+      "balcony",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-01T12:25:18"
+  },
+  {
+    "id": "prop_P000075",
+    "landlord_id": "LL0025",
+    "landlord_account": "acct_LANDLORD_LL0025",
+    "address": {
+      "line1": "43805 Garcia Ways",
+      "city": "Lake Deborah",
+      "state": "MS",
+      "postal_code": "31643",
+      "country": "US"
+    },
+    "unit_number": "Unit 8",
+    "property_type": "house",
+    "bedrooms": 0,
+    "bathrooms": 2.0056633770272656,
+    "square_feet": 1459,
+    "rent_amount": 468000,
+    "security_deposit": 468000,
+    "lease_start": "2025-02-09T11:31:33",
+    "lease_end": "2026-03-10T07:00:09",
+    "tenant": {
+      "id": "cus_TENANT_1bb2e5f9c3844308",
+      "object": "customer",
+      "created": 1741923316,
+      "email": "heather06@example.com",
+      "name": "Richard Jennings",
+      "phone": "+1-500-543-9735",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "578",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "6.0",
+        "previous_landlord_rating": "3.5"
+      }
+    },
+    "amenities": [
+      "balcony",
+      "pet_friendly",
+      "laundry",
+      "dishwasher",
+      "gym",
+      "heating"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-04-26T19:10:28"
+  },
+  {
+    "id": "prop_P000076",
+    "landlord_id": "LL0025",
+    "landlord_account": "acct_LANDLORD_LL0025",
+    "address": {
+      "line1": "28160 Ramirez Greens",
+      "city": "East Brandy",
+      "state": "KS",
+      "postal_code": "01240",
+      "country": "US"
+    },
+    "unit_number": "#41",
+    "property_type": "apartment",
+    "bedrooms": 4,
+    "bathrooms": 2.2390519687325523,
+    "square_feet": 1910,
+    "rent_amount": 191700,
+    "security_deposit": 191700,
+    "lease_start": "2024-01-13T11:39:55",
+    "lease_end": "2027-02-08T21:53:25",
+    "tenant": {
+      "id": "cus_TENANT_1df80720522e4958",
+      "object": "customer",
+      "created": 1735875055,
+      "email": "jmckinney@example.org",
+      "name": "Frank Williams",
+      "phone": "+1-394-479-8515x8328",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "713",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.9",
+        "previous_landlord_rating": "3.6"
+      }
+    },
+    "amenities": [
+      "pet_friendly",
+      "pool",
+      "laundry"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-20T10:35:13"
+  },
+  {
+    "id": "prop_P000077",
+    "landlord_id": "LL0025",
+    "landlord_account": "acct_LANDLORD_LL0025",
+    "address": {
+      "line1": "3355 Carter Terrace",
+      "city": "Barajastown",
+      "state": "DE",
+      "postal_code": "88180",
+      "country": "US"
+    },
+    "unit_number": "#4",
+    "property_type": "condo",
+    "bedrooms": 3,
+    "bathrooms": 2.393216895498183,
+    "square_feet": 1049,
+    "rent_amount": 339600,
+    "security_deposit": 339600,
+    "lease_start": "2024-10-18T19:16:57",
+    "lease_end": "2026-07-07T00:26:46",
+    "tenant": {
+      "id": "cus_TENANT_19348e1451d3401b",
+      "object": "customer",
+      "created": 1736393287,
+      "email": "pallen@example.net",
+      "name": "Dana Williams",
+      "phone": "261-664-8408x58877",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "654",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.8",
+        "previous_landlord_rating": "3.9"
+      }
+    },
+    "amenities": [
+      "laundry",
+      "air_conditioning",
+      "parking",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-08-22T02:30:09"
+  },
+  {
+    "id": "prop_P000078",
+    "landlord_id": "LL0025",
+    "landlord_account": "acct_LANDLORD_LL0025",
+    "address": {
+      "line1": "28801 Ellen Trail",
+      "city": "Port Gina",
+      "state": "MP",
+      "postal_code": "14122",
+      "country": "US"
+    },
+    "unit_number": "Unit 25",
+    "property_type": "house",
+    "bedrooms": 4,
+    "bathrooms": 1.542541304219406,
+    "square_feet": 1355,
+    "rent_amount": 209800,
+    "security_deposit": 209800,
+    "lease_start": "2024-01-25T04:53:52",
+    "lease_end": "2026-05-03T11:16:10",
+    "tenant": {
+      "id": "cus_TENANT_3c8cc6d89c994696",
+      "object": "customer",
+      "created": 1731681314,
+      "email": "elucas@example.net",
+      "name": "Allison Love",
+      "phone": "5116024819",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "557",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.2",
+        "previous_landlord_rating": "4.5"
+      }
+    },
+    "amenities": [
+      "air_conditioning",
+      "pet_friendly",
+      "pool",
+      "laundry",
+      "heating"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-18T19:54:48"
+  },
+  {
+    "id": "prop_P000079",
+    "landlord_id": "LL0026",
+    "landlord_account": "acct_LANDLORD_LL0026",
+    "address": {
+      "line1": "68222 Christina Glen Apt. 129",
+      "city": "Port Karenside",
+      "state": "NH",
+      "postal_code": "84999",
+      "country": "US"
+    },
+    "unit_number": "#14",
+    "property_type": "condo",
+    "bedrooms": 3,
+    "bathrooms": 1.1142886199527369,
+    "square_feet": 1406,
+    "rent_amount": 281100,
+    "security_deposit": 281100,
+    "lease_start": "2025-03-31T21:27:58",
+    "lease_end": "2027-03-26T13:28:22",
+    "tenant": {
+      "id": "cus_TENANT_806e7e2285014036",
+      "object": "customer",
+      "created": 1743223292,
+      "email": "robertscarlos@example.org",
+      "name": "Kevin Lynn",
+      "phone": "(623)414-9135x775",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "False",
+        "credit_score": "833",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.5",
+        "previous_landlord_rating": "3.8"
+      }
+    },
+    "amenities": [
+      "air_conditioning",
+      "balcony",
+      "laundry"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-18T11:52:13"
+  },
+  {
+    "id": "prop_P000080",
+    "landlord_id": "LL0026",
+    "landlord_account": "acct_LANDLORD_LL0026",
+    "address": {
+      "line1": "2053 Jennifer Row Suite 452",
+      "city": "Nataliemouth",
+      "state": "NV",
+      "postal_code": "47521",
+      "country": "US"
+    },
+    "unit_number": "#42",
+    "property_type": "apartment",
+    "bedrooms": 2,
+    "bathrooms": 2.9084015641657994,
+    "square_feet": 2501,
+    "rent_amount": 345500,
+    "security_deposit": 345500,
+    "lease_start": "2024-06-06T18:51:25",
+    "lease_end": "2027-05-17T00:49:18",
+    "tenant": {
+      "id": "cus_TENANT_504d6848cd474926",
+      "object": "customer",
+      "created": 1750776474,
+      "email": "tony12@example.net",
+      "name": "Sarah Trevino",
+      "phone": "(883)541-1080",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "730",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.0",
+        "previous_landlord_rating": "4.0"
+      }
+    },
+    "amenities": [
+      "parking",
+      "pet_friendly",
+      "gym",
+      "pool",
+      "balcony",
+      "heating"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-08-23T15:53:15"
+  },
+  {
+    "id": "prop_P000081",
+    "landlord_id": "LL0026",
+    "landlord_account": "acct_LANDLORD_LL0026",
+    "address": {
+      "line1": "256 Patricia Radial Suite 278",
+      "city": "South Michaeltown",
+      "state": "TN",
+      "postal_code": "31811",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "house",
+    "bedrooms": 1,
+    "bathrooms": 2.2643322992326627,
+    "square_feet": 2028,
+    "rent_amount": 207800,
+    "security_deposit": 207800,
+    "lease_start": "2024-10-30T02:39:51",
+    "lease_end": "2026-03-18T02:26:50",
+    "tenant": {
+      "id": "cus_TENANT_3070ad95775043a8",
+      "object": "customer",
+      "created": 1753233157,
+      "email": "katherinetaylor@example.org",
+      "name": "Travis Hopkins",
+      "phone": "(775)503-7314",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "797",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.6",
+        "previous_landlord_rating": "4.1"
+      }
+    },
+    "amenities": [
+      "parking",
+      "pet_friendly",
+      "heating",
+      "balcony",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-08T23:42:31"
+  },
+  {
+    "id": "prop_P000082",
+    "landlord_id": "LL0026",
+    "landlord_account": "acct_LANDLORD_LL0026",
+    "address": {
+      "line1": "7700 Garcia Pike Suite 498",
+      "city": "South Desiree",
+      "state": "MN",
+      "postal_code": "77529",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "house",
+    "bedrooms": 4,
+    "bathrooms": 1.3722437143506263,
+    "square_feet": 1286,
+    "rent_amount": 356300,
+    "security_deposit": 356300,
+    "lease_start": "2024-02-05T06:45:18",
+    "lease_end": "2026-10-03T22:17:14",
+    "tenant": {
+      "id": "cus_TENANT_e210df6737b3417a",
+      "object": "customer",
+      "created": 1746701945,
+      "email": "blacknicholas@example.org",
+      "name": "Heather Parrish",
+      "phone": "479.408.2723x1843",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "686",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.8",
+        "previous_landlord_rating": "4.9"
+      }
+    },
+    "amenities": [
+      "air_conditioning",
+      "pet_friendly",
+      "dishwasher",
+      "balcony",
+      "parking"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-31T05:32:43"
+  },
+  {
+    "id": "prop_P000083",
+    "landlord_id": "LL0027",
+    "landlord_account": "acct_LANDLORD_LL0027",
+    "address": {
+      "line1": "57991 Nicholas Curve Apt. 038",
+      "city": "Serranoville",
+      "state": "HI",
+      "postal_code": "62874",
+      "country": "US"
+    },
+    "unit_number": "Unit 11",
+    "property_type": "house",
+    "bedrooms": 0,
+    "bathrooms": 3.2369780303567492,
+    "square_feet": 674,
+    "rent_amount": 357700,
+    "security_deposit": 357700,
+    "lease_start": "2024-12-24T17:42:56",
+    "lease_end": "2027-01-22T00:57:03",
+    "tenant": {
+      "id": "cus_TENANT_a0fd089163bd47e4",
+      "object": "customer",
+      "created": 1755032560,
+      "email": "richamanda@example.org",
+      "name": "Matthew Winters",
+      "phone": "+1-506-986-5086",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "840",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.7",
+        "previous_landlord_rating": "3.1"
+      }
+    },
+    "amenities": [
+      "pet_friendly",
+      "parking",
+      "laundry",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-31T23:48:09"
+  },
+  {
+    "id": "prop_P000084",
+    "landlord_id": "LL0028",
+    "landlord_account": "acct_LANDLORD_LL0028",
+    "address": {
+      "line1": "621 Sean Squares Apt. 138",
+      "city": "Hartmanside",
+      "state": "RI",
+      "postal_code": "91865",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "condo",
+    "bedrooms": 4,
+    "bathrooms": 2.8636414031372093,
+    "square_feet": 1916,
+    "rent_amount": 207300,
+    "security_deposit": 207300,
+    "lease_start": "2024-03-12T18:57:54",
+    "lease_end": "2026-04-22T20:38:05",
+    "tenant": {
+      "id": "cus_TENANT_4d880a1f134a4cb1",
+      "object": "customer",
+      "created": 1747749780,
+      "email": "martintamara@example.org",
+      "name": "Samantha Ruiz",
+      "phone": "+1-661-214-3519x066",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "False",
+        "credit_score": "668",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.7",
+        "previous_landlord_rating": "4.5"
+      }
+    },
+    "amenities": [
+      "gym",
+      "balcony",
+      "parking",
+      "pool",
+      "dishwasher",
+      "air_conditioning"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-28T21:29:01"
+  },
+  {
+    "id": "prop_P000085",
+    "landlord_id": "LL0028",
+    "landlord_account": "acct_LANDLORD_LL0028",
+    "address": {
+      "line1": "38430 Christina Spring Apt. 530",
+      "city": "North Wendy",
+      "state": "WI",
+      "postal_code": "52855",
+      "country": "US"
+    },
+    "unit_number": "Unit 6",
+    "property_type": "house",
+    "bedrooms": 4,
+    "bathrooms": 2.6516797687871887,
+    "square_feet": 851,
+    "rent_amount": 333700,
+    "security_deposit": 333700,
+    "lease_start": "2025-01-07T00:06:07",
+    "lease_end": "2026-09-15T15:54:05",
+    "tenant": {
+      "id": "cus_TENANT_f94d1fe0824941ad",
+      "object": "customer",
+      "created": 1736632207,
+      "email": "msullivan@example.net",
+      "name": "Michael Calhoun",
+      "phone": "+1-548-995-5439",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "587",
+        "employment_verified": "False",
+        "income_to_rent_ratio": "3.0",
+        "previous_landlord_rating": "4.4"
+      }
+    },
+    "amenities": [
+      "gym",
+      "balcony",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-18T02:46:49"
+  },
+  {
+    "id": "prop_P000086",
+    "landlord_id": "LL0028",
+    "landlord_account": "acct_LANDLORD_LL0028",
+    "address": {
+      "line1": "8181 Morgan Crescent",
+      "city": "Nancyshire",
+      "state": "KS",
+      "postal_code": "91490",
+      "country": "US"
+    },
+    "unit_number": "#24",
+    "property_type": "townhouse",
+    "bedrooms": 0,
+    "bathrooms": 1.3312675112354984,
+    "square_feet": 1267,
+    "rent_amount": 342100,
+    "security_deposit": 342100,
+    "lease_start": "2023-09-01T06:54:58",
+    "lease_end": "2026-03-18T11:36:13",
+    "tenant": {
+      "id": "cus_TENANT_c9ab96eb0b3549ab",
+      "object": "customer",
+      "created": 1739640059,
+      "email": "xhart@example.org",
+      "name": "Tonya Ellis",
+      "phone": "790.271.4163x356",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "834",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.9",
+        "previous_landlord_rating": "3.2"
+      }
+    },
+    "amenities": [
+      "laundry",
+      "balcony",
+      "gym",
+      "air_conditioning",
+      "parking",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-14T18:15:29"
+  },
+  {
+    "id": "prop_P000087",
+    "landlord_id": "LL0028",
+    "landlord_account": "acct_LANDLORD_LL0028",
+    "address": {
+      "line1": "5182 Edwards Forge",
+      "city": "Ianborough",
+      "state": "NM",
+      "postal_code": "97115",
+      "country": "US"
+    },
+    "unit_number": "Unit 19",
+    "property_type": "apartment",
+    "bedrooms": 1,
+    "bathrooms": 2.713289979486391,
+    "square_feet": 1194,
+    "rent_amount": 349100,
+    "security_deposit": 349100,
+    "lease_start": "2024-03-08T12:03:51",
+    "lease_end": "2026-04-07T19:40:22",
+    "tenant": {
+      "id": "cus_TENANT_c816c7666035461e",
+      "object": "customer",
+      "created": 1731482906,
+      "email": "jillsalas@example.org",
+      "name": "Ruben Huff",
+      "phone": "(721)911-7908x075",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "687",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.7",
+        "previous_landlord_rating": "3.9"
+      }
+    },
+    "amenities": [
+      "heating",
+      "pool",
+      "gym",
+      "parking",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-08-22T01:45:18"
+  },
+  {
+    "id": "prop_P000088",
+    "landlord_id": "LL0029",
+    "landlord_account": "acct_LANDLORD_LL0029",
+    "address": {
+      "line1": "6472 Tiffany Spur Apt. 143",
+      "city": "Chaseborough",
+      "state": "FL",
+      "postal_code": "97303",
+      "country": "US"
+    },
+    "unit_number": "#29",
+    "property_type": "apartment",
+    "bedrooms": 4,
+    "bathrooms": 1.340311178945662,
+    "square_feet": 1813,
+    "rent_amount": 254900,
+    "security_deposit": 254900,
+    "lease_start": "2025-02-22T22:26:13",
+    "lease_end": "2027-04-03T22:09:08",
+    "tenant": {
+      "id": "cus_TENANT_c73080534f3e40ad",
+      "object": "customer",
+      "created": 1729797609,
+      "email": "lshaffer@example.com",
+      "name": "Dr. Samuel Holmes DDS",
+      "phone": "344.989.0612x0347",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "640",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.9",
+        "previous_landlord_rating": "3.6"
+      }
+    },
+    "amenities": [
+      "air_conditioning",
+      "balcony",
+      "pet_friendly",
+      "dishwasher",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-23T06:15:46"
+  },
+  {
+    "id": "prop_P000089",
+    "landlord_id": "LL0029",
+    "landlord_account": "acct_LANDLORD_LL0029",
+    "address": {
+      "line1": "845 Robert Keys Apt. 998",
+      "city": "Port Justin",
+      "state": "MD",
+      "postal_code": "88737",
+      "country": "US"
+    },
+    "unit_number": "Unit 6",
+    "property_type": "house",
+    "bedrooms": 4,
+    "bathrooms": 1.0672902716883383,
+    "square_feet": 2390,
+    "rent_amount": 422500,
+    "security_deposit": 422500,
+    "lease_start": "2024-03-17T10:39:15",
+    "lease_end": "2026-06-04T01:01:36",
+    "tenant": {
+      "id": "cus_TENANT_c2d383a4a0de4f19",
+      "object": "customer",
+      "created": 1741907285,
+      "email": "champton@example.org",
+      "name": "Dustin Welch",
+      "phone": "(425)769-9611",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "699",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.7",
+        "previous_landlord_rating": "4.7"
+      }
+    },
+    "amenities": [
+      "pool",
+      "dishwasher",
+      "balcony",
+      "pet_friendly",
+      "laundry"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-04-13T23:46:46"
+  },
+  {
+    "id": "prop_P000090",
+    "landlord_id": "LL0029",
+    "landlord_account": "acct_LANDLORD_LL0029",
+    "address": {
+      "line1": "496 Barron Tunnel Suite 987",
+      "city": "Jacksontown",
+      "state": "DC",
+      "postal_code": "95891",
+      "country": "US"
+    },
+    "unit_number": "Unit 15",
+    "property_type": "condo",
+    "bedrooms": 3,
+    "bathrooms": 2.4556100480408425,
+    "square_feet": 2688,
+    "rent_amount": 304400,
+    "security_deposit": 304400,
+    "lease_start": "2024-04-30T19:14:43",
+    "lease_end": "2027-01-16T21:15:12",
+    "tenant": {
+      "id": "cus_TENANT_1fa01e5e479a4235",
+      "object": "customer",
+      "created": 1732655991,
+      "email": "shelby13@example.org",
+      "name": "Brendan Zuniga",
+      "phone": "680.506.8114x9216",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "734",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.3",
+        "previous_landlord_rating": "4.2"
+      }
+    },
+    "amenities": [
+      "laundry",
+      "air_conditioning"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-04-17T17:09:29"
+  },
+  {
+    "id": "prop_P000091",
+    "landlord_id": "LL0029",
+    "landlord_account": "acct_LANDLORD_LL0029",
+    "address": {
+      "line1": "82005 Lin Mountain",
+      "city": "Amyberg",
+      "state": "UT",
+      "postal_code": "71186",
+      "country": "US"
+    },
+    "unit_number": "Unit 21",
+    "property_type": "apartment",
+    "bedrooms": 3,
+    "bathrooms": 3.417027833921514,
+    "square_feet": 1858,
+    "rent_amount": 138100,
+    "security_deposit": 138100,
+    "lease_start": "2024-04-05T09:37:05",
+    "lease_end": "2026-08-06T21:18:57",
+    "tenant": {
+      "id": "cus_TENANT_d5defe06b5fe481e",
+      "object": "customer",
+      "created": 1730723572,
+      "email": "owelch@example.net",
+      "name": "Mark Ferguson",
+      "phone": "(278)231-7456x424",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "False",
+        "credit_score": "600",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.3",
+        "previous_landlord_rating": "4.0"
+      }
+    },
+    "amenities": [
+      "air_conditioning",
+      "pool",
+      "dishwasher",
+      "pet_friendly",
+      "balcony",
+      "laundry"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-10T07:02:14"
+  },
+  {
+    "id": "prop_P000092",
+    "landlord_id": "LL0029",
+    "landlord_account": "acct_LANDLORD_LL0029",
+    "address": {
+      "line1": "7807 Evans Trafficway Suite 493",
+      "city": "New Nathanielchester",
+      "state": "FM",
+      "postal_code": "73973",
+      "country": "US"
+    },
+    "unit_number": "#23",
+    "property_type": "apartment",
+    "bedrooms": 3,
+    "bathrooms": 2.9606749938217423,
+    "square_feet": 2634,
+    "rent_amount": 178000,
+    "security_deposit": 178000,
+    "lease_start": "2025-06-17T07:04:30",
+    "lease_end": "2025-12-11T13:01:53",
+    "tenant": {
+      "id": "cus_TENANT_9bc294c737d34983",
+      "object": "customer",
+      "created": 1739450064,
+      "email": "twright@example.net",
+      "name": "Sandra Walker",
+      "phone": "863-589-4484",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "599",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.9",
+        "previous_landlord_rating": "3.6"
+      }
+    },
+    "amenities": [
+      "parking",
+      "laundry",
+      "pet_friendly",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-08-13T09:43:17"
+  },
+  {
+    "id": "prop_P000093",
+    "landlord_id": "LL0030",
+    "landlord_account": "acct_LANDLORD_LL0030",
+    "address": {
+      "line1": "367 Joan Bypass",
+      "city": "South Jill",
+      "state": "CT",
+      "postal_code": "68807",
+      "country": "US"
+    },
+    "unit_number": "Unit 13",
+    "property_type": "house",
+    "bedrooms": 1,
+    "bathrooms": 1.4659673132091549,
+    "square_feet": 2270,
+    "rent_amount": 369200,
+    "security_deposit": 369200,
+    "lease_start": "2025-06-01T23:56:39",
+    "lease_end": "2025-09-06T11:22:36",
+    "tenant": {
+      "id": "cus_TENANT_912dbde2f94d4639",
+      "object": "customer",
+      "created": 1747127125,
+      "email": "thomasmaldonado@example.com",
+      "name": "Caitlin Chandler",
+      "phone": "001-888-714-7435x0313",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "False",
+        "credit_score": "651",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.0",
+        "previous_landlord_rating": "3.0"
+      }
+    },
+    "amenities": [
+      "air_conditioning",
+      "heating",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-03T14:25:39"
+  },
+  {
+    "id": "prop_P000094",
+    "landlord_id": "LL0030",
+    "landlord_account": "acct_LANDLORD_LL0030",
+    "address": {
+      "line1": "3009 Barker Drives",
+      "city": "Kellibury",
+      "state": "GA",
+      "postal_code": "66026",
+      "country": "US"
+    },
+    "unit_number": "#12",
+    "property_type": "condo",
+    "bedrooms": 1,
+    "bathrooms": 2.143876055515464,
+    "square_feet": 1574,
+    "rent_amount": 369900,
+    "security_deposit": 369900,
+    "lease_start": "2025-05-06T16:43:02",
+    "lease_end": "2026-03-30T03:05:05",
+    "tenant": {
+      "id": "cus_TENANT_7b66dc575195412c",
+      "object": "customer",
+      "created": 1727846536,
+      "email": "sarah00@example.com",
+      "name": "Meredith Moody",
+      "phone": "(873)758-5730",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "710",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.6",
+        "previous_landlord_rating": "4.2"
+      }
+    },
+    "amenities": [
+      "balcony",
+      "pool",
+      "heating",
+      "laundry"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-19T08:09:06"
+  },
+  {
+    "id": "prop_P000095",
+    "landlord_id": "LL0030",
+    "landlord_account": "acct_LANDLORD_LL0030",
+    "address": {
+      "line1": "7848 Lopez Ferry",
+      "city": "Mariomouth",
+      "state": "KY",
+      "postal_code": "78971",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "condo",
+    "bedrooms": 2,
+    "bathrooms": 1.2946541316541418,
+    "square_feet": 1750,
+    "rent_amount": 391700,
+    "security_deposit": 391700,
+    "lease_start": "2024-03-10T09:31:24",
+    "lease_end": "2027-07-26T16:30:01",
+    "tenant": {
+      "id": "cus_TENANT_3817ae1a43e74b45",
+      "object": "customer",
+      "created": 1755464264,
+      "email": "caseymoore@example.com",
+      "name": "Kimberly Gibson",
+      "phone": "001-986-420-9593x51863",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "False",
+        "credit_score": "622",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.0",
+        "previous_landlord_rating": "3.3"
+      }
+    },
+    "amenities": [
+      "gym",
+      "dishwasher",
+      "air_conditioning",
+      "balcony",
+      "heating"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-27T17:10:36"
+  },
+  {
+    "id": "prop_P000096",
+    "landlord_id": "LL0030",
+    "landlord_account": "acct_LANDLORD_LL0030",
+    "address": {
+      "line1": "18102 Morgan Flats Apt. 731",
+      "city": "New Darlenefurt",
+      "state": "TN",
+      "postal_code": "64714",
+      "country": "US"
+    },
+    "unit_number": "#12",
+    "property_type": "house",
+    "bedrooms": 4,
+    "bathrooms": 1.134028156577092,
+    "square_feet": 1970,
+    "rent_amount": 237400,
+    "security_deposit": 237400,
+    "lease_start": "2024-05-05T05:54:27",
+    "lease_end": "2026-07-11T23:31:01",
+    "tenant": {
+      "id": "cus_TENANT_761bd15c7ab24edb",
+      "object": "customer",
+      "created": 1742423246,
+      "email": "brandon39@example.net",
+      "name": "Timothy Clark",
+      "phone": "317.605.8650x9480",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "649",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.9",
+        "previous_landlord_rating": "4.0"
+      }
+    },
+    "amenities": [
+      "gym",
+      "pool",
+      "air_conditioning",
+      "balcony",
+      "pet_friendly"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-15T19:24:43"
+  },
+  {
+    "id": "prop_P000097",
+    "landlord_id": "LL0030",
+    "landlord_account": "acct_LANDLORD_LL0030",
+    "address": {
+      "line1": "386 James Shoals",
+      "city": "New Colleen",
+      "state": "HI",
+      "postal_code": "73694",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "house",
+    "bedrooms": 2,
+    "bathrooms": 1.5621085416080172,
+    "square_feet": 1682,
+    "rent_amount": 491700,
+    "security_deposit": 491700,
+    "lease_start": "2024-10-05T04:06:51",
+    "lease_end": "2025-11-11T02:38:27",
+    "tenant": {
+      "id": "cus_TENANT_15e06f321b77493b",
+      "object": "customer",
+      "created": 1749918400,
+      "email": "xreese@example.net",
+      "name": "Megan Park",
+      "phone": "(712)728-6852x89755",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "839",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.2",
+        "previous_landlord_rating": "4.1"
+      }
+    },
+    "amenities": [
+      "laundry",
+      "heating"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-19T17:51:57"
+  },
+  {
+    "id": "prop_P000098",
+    "landlord_id": "LL0031",
+    "landlord_account": "acct_LANDLORD_LL0031",
+    "address": {
+      "line1": "157 Tracy Spurs",
+      "city": "New Dawnton",
+      "state": "VA",
+      "postal_code": "76035",
+      "country": "US"
+    },
+    "unit_number": "#29",
+    "property_type": "condo",
+    "bedrooms": 0,
+    "bathrooms": 2.097674758458332,
+    "square_feet": 980,
+    "rent_amount": 163200,
+    "security_deposit": 163200,
+    "lease_start": "2024-07-04T04:59:11",
+    "lease_end": "2026-11-12T16:20:46",
+    "tenant": {
+      "id": "cus_TENANT_a5a5961f8515497d",
+      "object": "customer",
+      "created": 1737585772,
+      "email": "deleonsandra@example.com",
+      "name": "Robert Butler",
+      "phone": "739-406-0480",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "729",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.6",
+        "previous_landlord_rating": "3.9"
+      }
+    },
+    "amenities": [
+      "dishwasher",
+      "air_conditioning",
+      "gym",
+      "laundry",
+      "parking",
+      "pet_friendly"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-03T03:21:09"
+  },
+  {
+    "id": "prop_P000099",
+    "landlord_id": "LL0031",
+    "landlord_account": "acct_LANDLORD_LL0031",
+    "address": {
+      "line1": "67998 Jeffrey Highway",
+      "city": "Hernandezmouth",
+      "state": "CO",
+      "postal_code": "62872",
+      "country": "US"
+    },
+    "unit_number": "#46",
+    "property_type": "house",
+    "bedrooms": 4,
+    "bathrooms": 1.6683576656952004,
+    "square_feet": 2607,
+    "rent_amount": 312500,
+    "security_deposit": 312500,
+    "lease_start": "2025-02-20T15:33:26",
+    "lease_end": "2026-02-15T04:09:52",
+    "tenant": {
+      "id": "cus_TENANT_336eff976cbd413b",
+      "object": "customer",
+      "created": 1743953973,
+      "email": "kelleyjose@example.com",
+      "name": "Patricia Anderson",
+      "phone": "(578)537-6938",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "False",
+        "credit_score": "760",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "6.0",
+        "previous_landlord_rating": "4.7"
+      }
+    },
+    "amenities": [
+      "dishwasher",
+      "air_conditioning",
+      "laundry"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-14T14:05:31"
+  },
+  {
+    "id": "prop_P000100",
+    "landlord_id": "LL0031",
+    "landlord_account": "acct_LANDLORD_LL0031",
+    "address": {
+      "line1": "911 Henderson Keys Apt. 559",
+      "city": "Port Kevinstad",
+      "state": "RI",
+      "postal_code": "58462",
+      "country": "US"
+    },
+    "unit_number": "Unit 5",
+    "property_type": "apartment",
+    "bedrooms": 2,
+    "bathrooms": 2.5695320519474354,
+    "square_feet": 2036,
+    "rent_amount": 280800,
+    "security_deposit": 280800,
+    "lease_start": "2025-04-23T00:17:04",
+    "lease_end": "2026-07-27T17:12:47",
+    "tenant": {
+      "id": "cus_TENANT_1b14e2b5b43d4bd0",
+      "object": "customer",
+      "created": 1745690132,
+      "email": "scottglass@example.org",
+      "name": "James Todd",
+      "phone": "310-639-2405",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "False",
+        "credit_score": "597",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.1",
+        "previous_landlord_rating": "4.4"
+      }
+    },
+    "amenities": [
+      "pool",
+      "pet_friendly",
+      "dishwasher",
+      "heating"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-27T01:38:45"
+  },
+  {
+    "id": "prop_P000101",
+    "landlord_id": "LL0032",
+    "landlord_account": "acct_LANDLORD_LL0032",
+    "address": {
+      "line1": "7620 Sutton Knoll Suite 384",
+      "city": "Lake Jonathanfurt",
+      "state": "FM",
+      "postal_code": "04363",
+      "country": "US"
+    },
+    "unit_number": "Unit 18",
+    "property_type": "apartment",
+    "bedrooms": 1,
+    "bathrooms": 2.415355277292851,
+    "square_feet": 2487,
+    "rent_amount": 236100,
+    "security_deposit": 236100,
+    "lease_start": "2025-08-14T00:34:04",
+    "lease_end": "2026-10-12T21:13:28",
+    "tenant": {
+      "id": "cus_TENANT_a430a8704bbe4ca3",
+      "object": "customer",
+      "created": 1743400283,
+      "email": "jeremiah56@example.net",
+      "name": "Nicholas Meyer",
+      "phone": "+1-593-463-9264x95782",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "574",
+        "employment_verified": "False",
+        "income_to_rent_ratio": "4.7",
+        "previous_landlord_rating": "4.7"
+      }
+    },
+    "amenities": [
+      "laundry",
+      "dishwasher"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-21T12:00:22"
+  },
+  {
+    "id": "prop_P000102",
+    "landlord_id": "LL0032",
+    "landlord_account": "acct_LANDLORD_LL0032",
+    "address": {
+      "line1": "48262 Lonnie Point",
+      "city": "East Lonnieberg",
+      "state": "VA",
+      "postal_code": "04365",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "townhouse",
+    "bedrooms": 2,
+    "bathrooms": 1.3974436572645486,
+    "square_feet": 1622,
+    "rent_amount": 335200,
+    "security_deposit": 335200,
+    "lease_start": "2025-02-09T23:47:51",
+    "lease_end": "2027-05-11T03:14:46",
+    "tenant": {
+      "id": "cus_TENANT_a36e82d703d14050",
+      "object": "customer",
+      "created": 1750463346,
+      "email": "nicole66@example.com",
+      "name": "Timothy Shannon",
+      "phone": "001-542-531-2209x9499",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "678",
+        "employment_verified": "False",
+        "income_to_rent_ratio": "4.8",
+        "previous_landlord_rating": "4.3"
+      }
+    },
+    "amenities": [
+      "gym",
+      "heating"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-04-14T12:20:11"
+  },
+  {
+    "id": "prop_P000103",
+    "landlord_id": "LL0032",
+    "landlord_account": "acct_LANDLORD_LL0032",
+    "address": {
+      "line1": "728 Joseph Landing",
+      "city": "Port Paul",
+      "state": "NJ",
+      "postal_code": "18525",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "apartment",
+    "bedrooms": 1,
+    "bathrooms": 2.1920167706522853,
+    "square_feet": 1043,
+    "rent_amount": 157300,
+    "security_deposit": 157300,
+    "lease_start": "2023-09-17T22:27:25",
+    "lease_end": "2026-06-02T17:19:25",
+    "tenant": {
+      "id": "cus_TENANT_18e4b5e21ba34669",
+      "object": "customer",
+      "created": 1730275367,
+      "email": "jeremyortiz@example.org",
+      "name": "Tiffany Walker",
+      "phone": "+1-833-712-7975x73660",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "777",
+        "employment_verified": "False",
+        "income_to_rent_ratio": "4.9",
+        "previous_landlord_rating": "4.6"
+      }
+    },
+    "amenities": [
+      "dishwasher",
+      "pool",
+      "parking",
+      "laundry",
+      "air_conditioning"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-16T05:04:56"
+  },
+  {
+    "id": "prop_P000104",
+    "landlord_id": "LL0032",
+    "landlord_account": "acct_LANDLORD_LL0032",
+    "address": {
+      "line1": "177 Natalie Gardens",
+      "city": "Terrellton",
+      "state": "OH",
+      "postal_code": "51278",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "apartment",
+    "bedrooms": 0,
+    "bathrooms": 2.3262706913667026,
+    "square_feet": 534,
+    "rent_amount": 174500,
+    "security_deposit": 174500,
+    "lease_start": "2025-08-27T03:01:45",
+    "lease_end": "2027-03-27T08:48:39",
+    "tenant": {
+      "id": "cus_TENANT_b123bc695e914f69",
+      "object": "customer",
+      "created": 1742097946,
+      "email": "leescott@example.com",
+      "name": "Donna Jackson",
+      "phone": "490-882-7718x1298",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "659",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.0",
+        "previous_landlord_rating": "3.8"
+      }
+    },
+    "amenities": [
+      "air_conditioning",
+      "laundry",
+      "parking",
+      "pool",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-19T23:31:58"
+  },
+  {
+    "id": "prop_P000105",
+    "landlord_id": "LL0033",
+    "landlord_account": "acct_LANDLORD_LL0033",
+    "address": {
+      "line1": "9501 Morris Light",
+      "city": "Port Ronaldside",
+      "state": "CA",
+      "postal_code": "38883",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "house",
+    "bedrooms": 1,
+    "bathrooms": 1.3267880938599448,
+    "square_feet": 2140,
+    "rent_amount": 237200,
+    "security_deposit": 237200,
+    "lease_start": "2025-02-22T06:17:49",
+    "lease_end": "2026-12-02T19:13:57",
+    "tenant": {
+      "id": "cus_TENANT_716d025850244f0b",
+      "object": "customer",
+      "created": 1740581200,
+      "email": "davidvillarreal@example.com",
+      "name": "Kelly Dominguez",
+      "phone": "+1-601-798-1794x695",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "593",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.4",
+        "previous_landlord_rating": "4.6"
+      }
+    },
+    "amenities": [
+      "laundry",
+      "air_conditioning"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-25T20:42:50"
+  },
+  {
+    "id": "prop_P000106",
+    "landlord_id": "LL0034",
+    "landlord_account": "acct_LANDLORD_LL0034",
+    "address": {
+      "line1": "27278 Ford Via Suite 084",
+      "city": "Angelatown",
+      "state": "IL",
+      "postal_code": "76181",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "house",
+    "bedrooms": 2,
+    "bathrooms": 1.5367902649250667,
+    "square_feet": 1266,
+    "rent_amount": 336700,
+    "security_deposit": 336700,
+    "lease_start": "2024-09-03T19:25:56",
+    "lease_end": "2027-08-09T06:43:26",
+    "tenant": {
+      "id": "cus_TENANT_f97ebbe316f4461e",
+      "object": "customer",
+      "created": 1747780947,
+      "email": "lauren51@example.org",
+      "name": "Andre Terrell",
+      "phone": "+1-882-399-6291x4504",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "626",
+        "employment_verified": "False",
+        "income_to_rent_ratio": "4.7",
+        "previous_landlord_rating": "3.5"
+      }
+    },
+    "amenities": [
+      "pool",
+      "gym",
+      "heating",
+      "air_conditioning"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-05T04:38:54"
+  },
+  {
+    "id": "prop_P000107",
+    "landlord_id": "LL0034",
+    "landlord_account": "acct_LANDLORD_LL0034",
+    "address": {
+      "line1": "84215 Kimberly Course Suite 807",
+      "city": "East Matthew",
+      "state": "NJ",
+      "postal_code": "96503",
+      "country": "US"
+    },
+    "unit_number": "Unit 21",
+    "property_type": "apartment",
+    "bedrooms": 1,
+    "bathrooms": 2.5768859720618886,
+    "square_feet": 2726,
+    "rent_amount": 291700,
+    "security_deposit": 291700,
+    "lease_start": "2024-06-12T07:01:36",
+    "lease_end": "2026-08-13T16:21:05",
+    "tenant": {
+      "id": "cus_TENANT_7b2ffda349e64c40",
+      "object": "customer",
+      "created": 1754102125,
+      "email": "kimberly21@example.net",
+      "name": "Brandi Hardy",
+      "phone": "368.610.4091x570",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "733",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.2",
+        "previous_landlord_rating": "3.7"
+      }
+    },
+    "amenities": [
+      "pet_friendly",
+      "balcony",
+      "air_conditioning",
+      "dishwasher",
+      "laundry",
+      "parking"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-05T00:58:21"
+  },
+  {
+    "id": "prop_P000108",
+    "landlord_id": "LL0034",
+    "landlord_account": "acct_LANDLORD_LL0034",
+    "address": {
+      "line1": "3344 Mejia Skyway",
+      "city": "West Edwardview",
+      "state": "DE",
+      "postal_code": "02500",
+      "country": "US"
+    },
+    "unit_number": "Unit 16",
+    "property_type": "apartment",
+    "bedrooms": 2,
+    "bathrooms": 2.917105421125682,
+    "square_feet": 1453,
+    "rent_amount": 235000,
+    "security_deposit": 235000,
+    "lease_start": "2025-04-08T19:33:23",
+    "lease_end": "2026-04-27T02:58:20",
+    "tenant": {
+      "id": "cus_TENANT_122df126fdf04b1d",
+      "object": "customer",
+      "created": 1745682173,
+      "email": "clarkmichael@example.com",
+      "name": "Tony Brock",
+      "phone": "001-232-414-9587",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "False",
+        "credit_score": "673",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.4",
+        "previous_landlord_rating": "4.8"
+      }
+    },
+    "amenities": [
+      "air_conditioning",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-06T07:19:21"
+  },
+  {
+    "id": "prop_P000109",
+    "landlord_id": "LL0034",
+    "landlord_account": "acct_LANDLORD_LL0034",
+    "address": {
+      "line1": "60166 Janet Ramp",
+      "city": "Jensenport",
+      "state": "MA",
+      "postal_code": "26472",
+      "country": "US"
+    },
+    "unit_number": "Unit 1",
+    "property_type": "condo",
+    "bedrooms": 2,
+    "bathrooms": 3.368896837675038,
+    "square_feet": 2808,
+    "rent_amount": 296900,
+    "security_deposit": 296900,
+    "lease_start": "2025-07-30T06:47:52",
+    "lease_end": "2027-02-03T08:21:50",
+    "tenant": {
+      "id": "cus_TENANT_ebfba0ce7d814b86",
+      "object": "customer",
+      "created": 1748700519,
+      "email": "beltrankatelyn@example.com",
+      "name": "Anna Lang",
+      "phone": "001-771-874-7733x294",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "646",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.3",
+        "previous_landlord_rating": "4.9"
+      }
+    },
+    "amenities": [
+      "heating",
+      "dishwasher",
+      "air_conditioning",
+      "parking",
+      "balcony",
+      "pet_friendly"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-04-05T06:41:39"
+  },
+  {
+    "id": "prop_P000110",
+    "landlord_id": "LL0035",
+    "landlord_account": "acct_LANDLORD_LL0035",
+    "address": {
+      "line1": "8172 Blanchard Cliff Apt. 965",
+      "city": "Newmanton",
+      "state": "CO",
+      "postal_code": "29023",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "townhouse",
+    "bedrooms": 4,
+    "bathrooms": 2.7617408543308106,
+    "square_feet": 1080,
+    "rent_amount": 292500,
+    "security_deposit": 292500,
+    "lease_start": "2023-11-25T11:20:22",
+    "lease_end": "2026-11-30T14:55:40",
+    "tenant": {
+      "id": "cus_TENANT_395740a03ab24808",
+      "object": "customer",
+      "created": 1752194707,
+      "email": "paigeberger@example.net",
+      "name": "Nicole Guerrero",
+      "phone": "684.869.9733x549",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "736",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.8",
+        "previous_landlord_rating": "4.9"
+      }
+    },
+    "amenities": [
+      "laundry",
+      "balcony",
+      "dishwasher",
+      "gym",
+      "pet_friendly"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-18T01:21:23"
+  },
+  {
+    "id": "prop_P000111",
+    "landlord_id": "LL0035",
+    "landlord_account": "acct_LANDLORD_LL0035",
+    "address": {
+      "line1": "862 Brown Plaza",
+      "city": "North Jacquelinestad",
+      "state": "DE",
+      "postal_code": "37490",
+      "country": "US"
+    },
+    "unit_number": "Unit 6",
+    "property_type": "townhouse",
+    "bedrooms": 4,
+    "bathrooms": 2.7339009957313576,
+    "square_feet": 1961,
+    "rent_amount": 425900,
+    "security_deposit": 425900,
+    "lease_start": "2023-11-06T00:38:41",
+    "lease_end": "2026-11-23T07:01:30",
+    "tenant": {
+      "id": "cus_TENANT_c3ddc398de3e4bf6",
+      "object": "customer",
+      "created": 1753826997,
+      "email": "youngjacqueline@example.com",
+      "name": "Michelle Sullivan",
+      "phone": "(483)227-2386x56242",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "639",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.1",
+        "previous_landlord_rating": "3.6"
+      }
+    },
+    "amenities": [
+      "parking",
+      "gym",
+      "pool"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-14T14:34:03"
+  },
+  {
+    "id": "prop_P000112",
+    "landlord_id": "LL0036",
+    "landlord_account": "acct_LANDLORD_LL0036",
+    "address": {
+      "line1": "058 Taylor Passage Suite 956",
+      "city": "Susanport",
+      "state": "LA",
+      "postal_code": "22456",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "apartment",
+    "bedrooms": 2,
+    "bathrooms": 2.1165748352444846,
+    "square_feet": 1586,
+    "rent_amount": 250800,
+    "security_deposit": 250800,
+    "lease_start": "2024-10-20T11:34:17",
+    "lease_end": "2027-05-09T13:50:11",
+    "tenant": {
+      "id": "cus_TENANT_e559884ffab14142",
+      "object": "customer",
+      "created": 1725964960,
+      "email": "jessica94@example.org",
+      "name": "Laura Berry",
+      "phone": "+1-649-604-7128x14429",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "584",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.3",
+        "previous_landlord_rating": "4.4"
+      }
+    },
+    "amenities": [
+      "gym",
+      "pool"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-08-14T06:07:00"
+  },
+  {
+    "id": "prop_P000113",
+    "landlord_id": "LL0036",
+    "landlord_account": "acct_LANDLORD_LL0036",
+    "address": {
+      "line1": "292 Wood Extensions",
+      "city": "Kimberlybury",
+      "state": "NM",
+      "postal_code": "24200",
+      "country": "US"
+    },
+    "unit_number": "#32",
+    "property_type": "apartment",
+    "bedrooms": 4,
+    "bathrooms": 1.9383689258513703,
+    "square_feet": 2463,
+    "rent_amount": 289500,
+    "security_deposit": 289500,
+    "lease_start": "2023-09-08T16:58:12",
+    "lease_end": "2027-03-26T13:26:54",
+    "tenant": {
+      "id": "cus_TENANT_0ca073683ebc439f",
+      "object": "customer",
+      "created": 1751602082,
+      "email": "cooperchristopher@example.org",
+      "name": "Samantha Monroe",
+      "phone": "001-966-837-2395x04102",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "False",
+        "credit_score": "587",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "2.6",
+        "previous_landlord_rating": "3.0"
+      }
+    },
+    "amenities": [
+      "laundry",
+      "pet_friendly",
+      "dishwasher",
+      "pool"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-01T03:36:31"
+  },
+  {
+    "id": "prop_P000114",
+    "landlord_id": "LL0037",
+    "landlord_account": "acct_LANDLORD_LL0037",
+    "address": {
+      "line1": "175 Jessica Glen",
+      "city": "North Andrew",
+      "state": "CO",
+      "postal_code": "07956",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "house",
+    "bedrooms": 2,
+    "bathrooms": 1.513876191794843,
+    "square_feet": 1278,
+    "rent_amount": 357800,
+    "security_deposit": 357800,
+    "lease_start": "2023-09-06T23:11:01",
+    "lease_end": "2026-07-13T02:26:22",
+    "tenant": {
+      "id": "cus_TENANT_0cf229655d8940f6",
+      "object": "customer",
+      "created": 1756270626,
+      "email": "stephanielittle@example.net",
+      "name": "Angelica Jacobs",
+      "phone": "(692)412-4471x7465",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "826",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.5",
+        "previous_landlord_rating": "3.5"
+      }
+    },
+    "amenities": [
+      "gym",
+      "pool"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-30T06:40:42"
+  },
+  {
+    "id": "prop_P000115",
+    "landlord_id": "LL0037",
+    "landlord_account": "acct_LANDLORD_LL0037",
+    "address": {
+      "line1": "6504 Thompson Cliff",
+      "city": "Krauseborough",
+      "state": "RI",
+      "postal_code": "51964",
+      "country": "US"
+    },
+    "unit_number": "Unit 22",
+    "property_type": "apartment",
+    "bedrooms": 4,
+    "bathrooms": 2.200820993626021,
+    "square_feet": 897,
+    "rent_amount": 155800,
+    "security_deposit": 155800,
+    "lease_start": "2024-03-31T01:13:12",
+    "lease_end": "2027-04-23T06:30:42",
+    "tenant": {
+      "id": "cus_TENANT_9b90691b1bba474d",
+      "object": "customer",
+      "created": 1730770734,
+      "email": "irodriguez@example.com",
+      "name": "Mason Gaines",
+      "phone": "001-241-201-1947x072",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "699",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.2",
+        "previous_landlord_rating": "3.2"
+      }
+    },
+    "amenities": [
+      "pool",
+      "pet_friendly",
+      "balcony",
+      "dishwasher",
+      "parking"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-07T17:29:40"
+  },
+  {
+    "id": "prop_P000116",
+    "landlord_id": "LL0038",
+    "landlord_account": "acct_LANDLORD_LL0038",
+    "address": {
+      "line1": "6184 Ferguson Village",
+      "city": "Levytown",
+      "state": "AZ",
+      "postal_code": "44971",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "apartment",
+    "bedrooms": 0,
+    "bathrooms": 1.2142682795997928,
+    "square_feet": 1908,
+    "rent_amount": 230000,
+    "security_deposit": 230000,
+    "lease_start": "2024-01-25T15:42:58",
+    "lease_end": "2025-09-16T09:02:14",
+    "tenant": {
+      "id": "cus_TENANT_459f33fc67104e8e",
+      "object": "customer",
+      "created": 1726660484,
+      "email": "kristin06@example.org",
+      "name": "Matthew Mills",
+      "phone": "+1-482-293-1027x07903",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "666",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.4",
+        "previous_landlord_rating": "4.6"
+      }
+    },
+    "amenities": [
+      "pet_friendly",
+      "pool",
+      "heating",
+      "laundry",
+      "air_conditioning"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-04-03T02:56:43"
+  },
+  {
+    "id": "prop_P000117",
+    "landlord_id": "LL0038",
+    "landlord_account": "acct_LANDLORD_LL0038",
+    "address": {
+      "line1": "79291 Danny Ranch Apt. 136",
+      "city": "Lisafurt",
+      "state": "MD",
+      "postal_code": "16334",
+      "country": "US"
+    },
+    "unit_number": "Unit 19",
+    "property_type": "townhouse",
+    "bedrooms": 4,
+    "bathrooms": 2.6938372139400757,
+    "square_feet": 1103,
+    "rent_amount": 174200,
+    "security_deposit": 174200,
+    "lease_start": "2023-10-06T11:29:29",
+    "lease_end": "2027-07-31T08:20:07",
+    "tenant": {
+      "id": "cus_TENANT_fbf7429ad16f4716",
+      "object": "customer",
+      "created": 1747733806,
+      "email": "marcoconnell@example.org",
+      "name": "Leslie Rogers",
+      "phone": "542-262-5827",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "779",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "5.9",
+        "previous_landlord_rating": "4.9"
+      }
+    },
+    "amenities": [
+      "dishwasher",
+      "parking",
+      "air_conditioning"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-26T13:45:37"
+  },
+  {
+    "id": "prop_P000118",
+    "landlord_id": "LL0038",
+    "landlord_account": "acct_LANDLORD_LL0038",
+    "address": {
+      "line1": "07100 Sara Squares Suite 672",
+      "city": "East Danielle",
+      "state": "NC",
+      "postal_code": "59538",
+      "country": "US"
+    },
+    "unit_number": "Unit 13",
+    "property_type": "apartment",
+    "bedrooms": 3,
+    "bathrooms": 2.380135478938498,
+    "square_feet": 1631,
+    "rent_amount": 147400,
+    "security_deposit": 147400,
+    "lease_start": "2025-05-04T02:29:25",
+    "lease_end": "2027-06-16T20:16:02",
+    "tenant": {
+      "id": "cus_TENANT_13dc2565a4404715",
+      "object": "customer",
+      "created": 1738608686,
+      "email": "sharonbishop@example.org",
+      "name": "Michelle Salazar",
+      "phone": "345-760-8331",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "556",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.7",
+        "previous_landlord_rating": "4.0"
+      }
+    },
+    "amenities": [
+      "laundry",
+      "gym",
+      "pet_friendly",
+      "pool",
+      "heating"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-08-15T04:49:30"
+  },
+  {
+    "id": "prop_P000119",
+    "landlord_id": "LL0038",
+    "landlord_account": "acct_LANDLORD_LL0038",
+    "address": {
+      "line1": "3403 Laura Spur",
+      "city": "Jimenezburgh",
+      "state": "TN",
+      "postal_code": "06152",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "townhouse",
+    "bedrooms": 2,
+    "bathrooms": 3.1686881694129383,
+    "square_feet": 1908,
+    "rent_amount": 201000,
+    "security_deposit": 201000,
+    "lease_start": "2024-10-20T21:22:10",
+    "lease_end": "2026-09-25T21:27:08",
+    "tenant": {
+      "id": "cus_TENANT_b62bc56fab794079",
+      "object": "customer",
+      "created": 1726592474,
+      "email": "justin64@example.com",
+      "name": "Stefanie Chavez",
+      "phone": "308-522-0781",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "798",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "4.2",
+        "previous_landlord_rating": "3.3"
+      }
+    },
+    "amenities": [
+      "dishwasher",
+      "gym",
+      "parking",
+      "air_conditioning",
+      "pet_friendly"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-18T18:11:20"
+  },
+  {
+    "id": "prop_P000120",
+    "landlord_id": "LL0039",
+    "landlord_account": "acct_LANDLORD_LL0039",
+    "address": {
+      "line1": "831 Vincent Overpass",
+      "city": "New Thomas",
+      "state": "NH",
+      "postal_code": "37092",
+      "country": "US"
+    },
+    "unit_number": "#15",
+    "property_type": "condo",
+    "bedrooms": 3,
+    "bathrooms": 2.9350772504848113,
+    "square_feet": 1814,
+    "rent_amount": 190200,
+    "security_deposit": 190200,
+    "lease_start": "2025-05-02T22:25:44",
+    "lease_end": "2027-05-06T19:58:46",
+    "tenant": {
+      "id": "cus_TENANT_6c53f6d83e2d43e8",
+      "object": "customer",
+      "created": 1725266277,
+      "email": "pfitzgerald@example.org",
+      "name": "Kevin Snow",
+      "phone": "001-229-806-0078",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "595",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.2",
+        "previous_landlord_rating": "4.6"
+      }
+    },
+    "amenities": [
+      "pet_friendly",
+      "balcony",
+      "gym",
+      "parking",
+      "heating"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-06-11T19:24:48"
+  },
+  {
+    "id": "prop_P000121",
+    "landlord_id": "LL0039",
+    "landlord_account": "acct_LANDLORD_LL0039",
+    "address": {
+      "line1": "7318 Heather Lodge",
+      "city": "East Michael",
+      "state": "IA",
+      "postal_code": "85388",
+      "country": "US"
+    },
+    "unit_number": "Unit 5",
+    "property_type": "apartment",
+    "bedrooms": 4,
+    "bathrooms": 1.0723703983004642,
+    "square_feet": 1289,
+    "rent_amount": 327500,
+    "security_deposit": 327500,
+    "lease_start": "2024-09-03T22:26:05",
+    "lease_end": "2027-05-18T14:25:00",
+    "tenant": {
+      "id": "cus_TENANT_b609b08e706742db",
+      "object": "customer",
+      "created": 1727823986,
+      "email": "castillokevin@example.net",
+      "name": "Kelly Silva",
+      "phone": "272.662.5701x658",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "677",
+        "employment_verified": "False",
+        "income_to_rent_ratio": "2.7",
+        "previous_landlord_rating": "3.7"
+      }
+    },
+    "amenities": [
+      "heating",
+      "balcony",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-22T09:03:19"
+  },
+  {
+    "id": "prop_P000122",
+    "landlord_id": "LL0039",
+    "landlord_account": "acct_LANDLORD_LL0039",
+    "address": {
+      "line1": "195 Zachary Spring",
+      "city": "Pamelaville",
+      "state": "MS",
+      "postal_code": "48419",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "house",
+    "bedrooms": 2,
+    "bathrooms": 2.22196684766642,
+    "square_feet": 2327,
+    "rent_amount": 230700,
+    "security_deposit": 230700,
+    "lease_start": "2024-03-25T05:26:43",
+    "lease_end": "2027-02-20T20:53:41",
+    "tenant": {
+      "id": "cus_TENANT_2b2a49322f1c42e8",
+      "object": "customer",
+      "created": 1740397860,
+      "email": "diazgregory@example.net",
+      "name": "Kristina Ayala",
+      "phone": "(753)781-7933",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "792",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.7",
+        "previous_landlord_rating": "3.3"
+      }
+    },
+    "amenities": [
+      "laundry",
+      "heating",
+      "parking",
+      "air_conditioning"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-08-22T00:52:41"
+  },
+  {
+    "id": "prop_P000123",
+    "landlord_id": "LL0039",
+    "landlord_account": "acct_LANDLORD_LL0039",
+    "address": {
+      "line1": "0155 Tucker Pine Apt. 788",
+      "city": "Shannonstad",
+      "state": "AS",
+      "postal_code": "88752",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "house",
+    "bedrooms": 1,
+    "bathrooms": 1.6727089481723927,
+    "square_feet": 2177,
+    "rent_amount": 267700,
+    "security_deposit": 267700,
+    "lease_start": "2024-09-22T19:21:25",
+    "lease_end": "2027-02-07T00:33:08",
+    "tenant": {
+      "id": "cus_TENANT_1b2561069610415b",
+      "object": "customer",
+      "created": 1748040315,
+      "email": "lopeznicole@example.org",
+      "name": "Steven Roberts",
+      "phone": "212-641-2723",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "ach_debit",
+        "autopay_enabled": "True",
+        "credit_score": "554",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.0",
+        "previous_landlord_rating": "3.3"
+      }
+    },
+    "amenities": [
+      "air_conditioning",
+      "heating"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-05-20T13:24:30"
+  },
+  {
+    "id": "prop_P000124",
+    "landlord_id": "LL0040",
+    "landlord_account": "acct_LANDLORD_LL0040",
+    "address": {
+      "line1": "552 West Estates",
+      "city": "Davidtown",
+      "state": "MO",
+      "postal_code": "65960",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "house",
+    "bedrooms": 0,
+    "bathrooms": 2.2787842936707543,
+    "square_feet": 2032,
+    "rent_amount": 435400,
+    "security_deposit": 435400,
+    "lease_start": "2024-01-18T23:28:21",
+    "lease_end": "2026-02-03T00:34:48",
+    "tenant": {
+      "id": "cus_TENANT_cc1388d17bd34f42",
+      "object": "customer",
+      "created": 1750566799,
+      "email": "staciereilly@example.org",
+      "name": "Oscar Cantrell",
+      "phone": "347-649-2975x17028",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "605",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.7",
+        "previous_landlord_rating": "3.6"
+      }
+    },
+    "amenities": [
+      "heating",
+      "pet_friendly",
+      "balcony",
+      "gym"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-05T11:45:46"
+  },
+  {
+    "id": "prop_P000125",
+    "landlord_id": "LL0040",
+    "landlord_account": "acct_LANDLORD_LL0040",
+    "address": {
+      "line1": "5150 Brandy Forges",
+      "city": "Jamesland",
+      "state": "ND",
+      "postal_code": "58888",
+      "country": "US"
+    },
+    "unit_number": "#4",
+    "property_type": "apartment",
+    "bedrooms": 2,
+    "bathrooms": 2.7018893759684546,
+    "square_feet": 604,
+    "rent_amount": 218400,
+    "security_deposit": 218400,
+    "lease_start": "2024-12-20T07:39:04",
+    "lease_end": "2027-06-11T19:17:19",
+    "tenant": {
+      "id": "cus_TENANT_47e8e51c261c4095",
+      "object": "customer",
+      "created": 1747498086,
+      "email": "daughertypreston@example.com",
+      "name": "Larry Harding",
+      "phone": "+1-356-526-5650x45547",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "682",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.9",
+        "previous_landlord_rating": "4.5"
+      }
+    },
+    "amenities": [
+      "air_conditioning",
+      "balcony",
+      "pool",
+      "gym",
+      "laundry",
+      "pet_friendly"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-07-20T00:14:57"
+  },
+  {
+    "id": "prop_P000126",
+    "landlord_id": "LL0040",
+    "landlord_account": "acct_LANDLORD_LL0040",
+    "address": {
+      "line1": "2662 Douglas Hollow Suite 851",
+      "city": "Davischester",
+      "state": "SC",
+      "postal_code": "36326",
+      "country": "US"
+    },
+    "unit_number": null,
+    "property_type": "apartment",
+    "bedrooms": 2,
+    "bathrooms": 1.2440076595317733,
+    "square_feet": 1024,
+    "rent_amount": 189600,
+    "security_deposit": 189600,
+    "lease_start": "2025-03-26T15:17:04",
+    "lease_end": "2026-07-16T11:44:04",
+    "tenant": {
+      "id": "cus_TENANT_71fcd5f618084735",
+      "object": "customer",
+      "created": 1738691991,
+      "email": "angelapage@example.org",
+      "name": "Ronnie Roberts",
+      "phone": "604.994.7873x0024",
+      "description": "Property tenant",
+      "metadata": {
+        "tenant_type": "residential",
+        "payment_method": "card",
+        "autopay_enabled": "True",
+        "credit_score": "836",
+        "employment_verified": "True",
+        "income_to_rent_ratio": "3.1",
+        "previous_landlord_rating": "4.4"
+      }
+    },
+    "amenities": [
+      "laundry",
+      "air_conditioning",
+      "dishwasher",
+      "pet_friendly"
+    ],
+    "occupied": true,
+    "last_inspection": "2025-03-24T18:54:48"
+  }
+]

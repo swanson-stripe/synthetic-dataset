@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe Synthetic Dataset API</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .hero {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        
+        .btn:hover {
+            background: #5a67d8;
+        }
+        
+        .personas {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            margin-bottom: 3rem;
+        }
+        
+        .personas h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        
+        .persona-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .persona {
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .persona:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        .persona-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        
+        .persona-icon {
+            font-size: 2rem;
+        }
+        
+        .persona-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .persona-desc {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .persona-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .feature-tag {
+            background: #f1f5f9;
+            color: #475569;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+        
+        .api-section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            margin-bottom: 3rem;
+        }
+        
+        .code-block {
+            background: #1a202c;
+            color: #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            opacity: 0.8;
+            padding: 2rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <h1>🎭 Stripe Synthetic Dataset API</h1>
+            <p>Independent dataset package for realistic payment data across 5 business models. Perfect for prototypes that need to switch scenarios instantly.</p>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <h3>🚀 Quick Start</h3>
+                <p>Get up and running in 3 minutes. Add 2 script tags, initialize with your preferred business scenario, and start prototyping.</p>
+                <a href="quick-start.md" class="btn">View Quick Start Guide</a>
+            </div>
+
+            <div class="card">
+                <h3>💻 Live Example</h3>
+                <p>See the complete integration in action. A working dashboard prototype with persona switching and business-specific metrics.</p>
+                <a href="examples/prototype-base-example.html" class="btn">Try Live Demo</a>
+            </div>
+
+            <div class="card">
+                <h3>📚 API Reference</h3>
+                <p>Complete API documentation, endpoints, data schemas, and integration patterns for advanced use cases.</p>
+                <a href="https://github.com/swanson-stripe/synthetic-dataset" class="btn">View Documentation</a>
+            </div>
+        </section>
+
+        <section class="personas">
+            <h2>Available Business Personas</h2>
+            <div class="persona-grid">
+                <div class="persona">
+                    <div class="persona-header">
+                        <span class="persona-icon">🛍️</span>
+                        <span class="persona-name">TechStyle Fashion</span>
+                    </div>
+                    <p class="persona-desc">E-commerce fashion retailer with global payment processing, multi-currency, and fraud detection.</p>
+                    <div class="persona-features">
+                        <span class="feature-tag">Multi-currency</span>
+                        <span class="feature-tag">Fraud detection</span>
+                        <span class="feature-tag">Disputes</span>
+                        <span class="feature-tag">150K payments</span>
+                    </div>
+                </div>
+
+                <div class="persona">
+                    <div class="persona-header">
+                        <span class="persona-icon">🎓</span>
+                        <span class="persona-name">EduTech Academy</span>
+                    </div>
+                    <p class="persona-desc">Online education marketplace with instructor payouts, student financing, and corporate training.</p>
+                    <div class="persona-features">
+                        <span class="feature-tag">Revenue sharing</span>
+                        <span class="feature-tag">Student financing</span>
+                        <span class="feature-tag">Tax compliance</span>
+                        <span class="feature-tag">73K students</span>
+                    </div>
+                </div>
+
+                <div class="persona">
+                    <div class="persona-header">
+                        <span class="persona-icon">🏠</span>
+                        <span class="persona-name">PropertyFlow</span>
+                    </div>
+                    <p class="persona-desc">Property management platform with automated rent collection, escrow accounts, and landlord payouts.</p>
+                    <div class="persona-features">
+                        <span class="feature-tag">Rent collection</span>
+                        <span class="feature-tag">Escrow accounts</span>
+                        <span class="feature-tag">ACH payments</span>
+                        <span class="feature-tag">5K properties</span>
+                    </div>
+                </div>
+
+                <div class="persona">
+                    <div class="persona-header">
+                        <span class="persona-icon">💪</span>
+                        <span class="persona-name">FitStream</span>
+                    </div>
+                    <p class="persona-desc">Subscription fitness platform with free trials, family plans, and engagement-based retention.</p>
+                    <div class="persona-features">
+                        <span class="feature-tag">Free trials</span>
+                        <span class="feature-tag">Family plans</span>
+                        <span class="feature-tag">Churn analysis</span>
+                        <span class="feature-tag">50K subscribers</span>
+                    </div>
+                </div>
+
+                <div class="persona">
+                    <div class="persona-header">
+                        <span class="persona-icon">🎨</span>
+                        <span class="persona-name">CreatorHub</span>
+                    </div>
+                    <p class="persona-desc">Content monetization platform with creator payouts, fan subscriptions, and tiered revenue sharing.</p>
+                    <div class="persona-features">
+                        <span class="feature-tag">Creator payouts</span>
+                        <span class="feature-tag">Content sales</span>
+                        <span class="feature-tag">Fan tips</span>
+                        <span class="feature-tag">5K creators</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="api-section">
+            <h2>Simple Integration</h2>
+            <p>Include the data client and start prototyping immediately:</p>
+            
+            <div class="code-block">// 1. Include libraries
+&lt;script src="https://swanson-stripe.github.io/synthetic-dataset/docs/stripe-data-client.js"&gt;&lt;/script&gt;
+&lt;script src="https://swanson-stripe.github.io/synthetic-dataset/docs/persona-switcher.js"&gt;&lt;/script&gt;
+
+// 2. Initialize with default persona
+const dataClient = new StripeDataClient({
+  defaultPersona: 'techstyle' // Choose any persona
+});
+
+// 3. Add persona switcher (auto-appears)
+const switcher = new PersonaSwitcher(dataClient);
+
+// 4. Use the data
+const metrics = dataClient.calculateMetrics();
+const payments = dataClient.getData('payments');</div>
+
+            <p><strong>That's it!</strong> Your prototype now has 5 business scenarios with instant switching.</p>
+        </section>
+
+        <section class="api-section">
+            <h2>API Endpoints</h2>
+            <p>All data is available via REST API for direct access:</p>
+            
+            <div class="code-block">// Base URL
+https://swanson-stripe.github.io/synthetic-dataset/api/v1
+
+// Personas catalog
+GET /personas.json
+
+// Business-specific endpoints
+GET /techstyle/payments.json    // E-commerce payments
+GET /edutech/instructors.json   // Education instructors  
+GET /propertyflow/rent_payments.json // Property management
+GET /fitstream/subscriptions.json   // Fitness subscriptions
+GET /creatorhub/content_sales.json  // Creator content sales</div>
+        </section>
+
+        <section class="footer">
+            <p>🚀 Ready to prototype with realistic payment data in minutes, not hours.</p>
+            <p><a href="https://github.com/swanson-stripe/synthetic-dataset" style="color: white;">View on GitHub</a></p>
+        </section>
+    </div>
+
+    <script>
+        // Add some interactive elements
+        document.querySelectorAll('.persona').forEach(persona => {
+            persona.addEventListener('click', () => {
+                const name = persona.querySelector('.persona-name').textContent;
+                const desc = persona.querySelector('.persona-desc').textContent;
+                alert(`${name}\n\n${desc}\n\nClick "Try Live Demo" to see this persona in action!`);
+            });
+        });
+    </script>
+</body>
+</html>

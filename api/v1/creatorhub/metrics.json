@@ -1,0 +1,54 @@
+{
+  "overview": {
+    "total_creators": 1688,
+    "total_fans": 8237,
+    "active_subscriptions": 19379,
+    "total_content_sales": 15857,
+    "total_tips": 6455
+  },
+  "revenue_metrics": {
+    "total_gmv_cents": 330853199,
+    "total_gmv_dollars": 3308531.99,
+    "platform_revenue_cents": 66450095,
+    "platform_revenue_dollars": 664500.95,
+    "take_rate_percent": 20.084465013741635,
+    "mrr_cents": 17938621,
+    "mrr_dollars": 179386.21,
+    "arr_cents": 215263452,
+    "arr_dollars": 2152634.52
+  },
+  "revenue_breakdown": {
+    "subscriptions_gmv_cents": 17938621,
+    "subscriptions_gmv_dollars": 179386.21,
+    "content_sales_gmv_cents": 304007178,
+    "content_sales_gmv_dollars": 3040071.78,
+    "tips_gmv_cents": 8907400,
+    "tips_gmv_dollars": 89074.0,
+    "subscription_percentage": 5.421927626578578,
+    "content_sales_percentage": 91.8858209377628,
+    "tips_percentage": 2.6922514356586285
+  },
+  "creator_distribution": {
+    "by_tier": {
+      "growth": 668,
+      "starter": 777,
+      "established": 220,
+      "premium": 23
+    },
+    "by_category": {
+      "education": 370,
+      "business": 309,
+      "entertainment": 342,
+      "tech": 346,
+      "lifestyle": 321
+    }
+  },
+  "fan_distribution": {
+    "by_spending_tier": {
+      "high": 1596,
+      "medium": 2930,
+      "premium": 422,
+      "low": 3289
+    }
+  }
+}

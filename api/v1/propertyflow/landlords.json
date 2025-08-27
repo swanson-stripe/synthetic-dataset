@@ -1,0 +1,2246 @@
+[
+  {
+    "id": "acct_LANDLORD_LL0001",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1642752000,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "johnsonjoshua@example.org",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Brian Yang Real Estate",
+      "mcc": "6513",
+      "url": "http://johnson.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0001",
+      "property_count": "4",
+      "portfolio_value": "1176776",
+      "management_type": "self_managed",
+      "payout_schedule": "daily",
+      "years_experience": "5"
+    },
+    "tos_acceptance": {
+      "date": 1642752000,
+      "ip": "8.108.176.251",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Anna",
+      "last_name": "Baldwin",
+      "email": "johnsonjoshua@example.org",
+      "phone": "001-486-537-9402x654",
+      "ssn_last_4": "2679",
+      "address": {
+        "line1": "16155 Roman Stream Suite 816",
+        "city": "New Kellystad",
+        "state": "OK",
+        "postal_code": "25704",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0002",
+    "object": "account",
+    "type": "custom",
+    "business_type": "company",
+    "country": "US",
+    "created": 1645516800,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "adkinsbrian@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Shaw-Farrell Properties",
+      "mcc": "6513",
+      "url": "http://www.miller.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0002",
+      "property_count": "4",
+      "portfolio_value": "1944192",
+      "management_type": "full_service",
+      "payout_schedule": "daily",
+      "years_experience": "10"
+    },
+    "tos_acceptance": {
+      "date": 1645516800,
+      "ip": "47.193.254.5",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "company": {
+      "name": "Shaw-Farrell Properties",
+      "tax_id": "65-3653446",
+      "phone": "001-790-691-6998",
+      "address": {
+        "line1": "534 Anderson Rue",
+        "city": "Stephenland",
+        "state": "AL",
+        "postal_code": "60569",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0003",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1646208000,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "williamleon@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Bradley Robertson Real Estate",
+      "mcc": "6513",
+      "url": "https://www.chambers.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0003",
+      "property_count": "18",
+      "portfolio_value": "3580128",
+      "management_type": "self_managed",
+      "payout_schedule": "daily",
+      "years_experience": "14"
+    },
+    "tos_acceptance": {
+      "date": 1646208000,
+      "ip": "104.189.74.153",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "John",
+      "last_name": "Alvarez",
+      "email": "williamleon@example.net",
+      "phone": "001-517-469-3676x32016",
+      "ssn_last_4": "8956",
+      "address": {
+        "line1": "83172 Contreras Points Suite 798",
+        "city": "Rivasside",
+        "state": "NV",
+        "postal_code": "21362",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0004",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1650697200,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "tonykelly@example.com",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Spencer Haynes Real Estate",
+      "mcc": "6513",
+      "url": "https://www.vaughan.info/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0004",
+      "property_count": "14",
+      "portfolio_value": "2921156",
+      "management_type": "self_managed",
+      "payout_schedule": "monthly",
+      "years_experience": "5"
+    },
+    "tos_acceptance": {
+      "date": 1650697200,
+      "ip": "2.246.23.122",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Hannah",
+      "last_name": "Brewer",
+      "email": "tonykelly@example.com",
+      "phone": "770.814.3634x9578",
+      "ssn_last_4": "9938",
+      "address": {
+        "line1": "7444 David Fields Suite 182",
+        "city": "East Joanna",
+        "state": "KY",
+        "postal_code": "95473",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0005",
+    "object": "account",
+    "type": "custom",
+    "business_type": "company",
+    "country": "US",
+    "created": 1652770800,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "kimberlyjames@example.com",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Dalton-Branch Properties",
+      "mcc": "6513",
+      "url": "https://www.choi.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0005",
+      "property_count": "13",
+      "portfolio_value": "2138110",
+      "management_type": "self_managed",
+      "payout_schedule": "weekly",
+      "years_experience": "6"
+    },
+    "tos_acceptance": {
+      "date": 1652770800,
+      "ip": "120.166.69.157",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "company": {
+      "name": "Dalton-Branch Properties",
+      "tax_id": "84-5453786",
+      "phone": "(932)681-2067",
+      "address": {
+        "line1": "44713 French Road",
+        "city": "South Danny",
+        "state": "IN",
+        "postal_code": "85387",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0006",
+    "object": "account",
+    "type": "custom",
+    "business_type": "company",
+    "country": "US",
+    "created": 1655794800,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "harrisonricky@example.com",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Garcia, Martin and Jenkins Properties",
+      "mcc": "6513",
+      "url": "https://landry.info/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0006",
+      "property_count": "11",
+      "portfolio_value": "4197853",
+      "management_type": "full_service",
+      "payout_schedule": "monthly",
+      "years_experience": "7"
+    },
+    "tos_acceptance": {
+      "date": 1655794800,
+      "ip": "80.39.77.128",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "company": {
+      "name": "Garcia, Martin and Jenkins Properties",
+      "tax_id": "75-8938746",
+      "phone": "916-280-8760x38597",
+      "address": {
+        "line1": "8247 Martinez Roads",
+        "city": "Lake Eric",
+        "state": "OH",
+        "postal_code": "02293",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0007",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1657695600,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "juliehamilton@example.org",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Michele Garcia Real Estate",
+      "mcc": "6513",
+      "url": "http://williams.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0007",
+      "property_count": "5",
+      "portfolio_value": "918370",
+      "management_type": "full_service",
+      "payout_schedule": "weekly",
+      "years_experience": "11"
+    },
+    "tos_acceptance": {
+      "date": 1657695600,
+      "ip": "59.144.95.81",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Dustin",
+      "last_name": "Schmidt",
+      "email": "juliehamilton@example.org",
+      "phone": "001-922-421-9693",
+      "ssn_last_4": "9890",
+      "address": {
+        "line1": "4740 Santana Springs",
+        "city": "North Scott",
+        "state": "MI",
+        "postal_code": "77515",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0008",
+    "object": "account",
+    "type": "custom",
+    "business_type": "company",
+    "country": "US",
+    "created": 1660201200,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "gstrickland@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Hayes and Sons Properties",
+      "mcc": "6513",
+      "url": "http://schneider-johnson.info/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0008",
+      "property_count": "9",
+      "portfolio_value": "3972546",
+      "management_type": "self_managed",
+      "payout_schedule": "monthly",
+      "years_experience": "7"
+    },
+    "tos_acceptance": {
+      "date": 1660201200,
+      "ip": "168.218.64.137",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "company": {
+      "name": "Hayes and Sons Properties",
+      "tax_id": "20-5049282",
+      "phone": "+1-717-871-1592x12499",
+      "address": {
+        "line1": "8961 Melissa Run Apt. 673",
+        "city": "Morganmouth",
+        "state": "MO",
+        "postal_code": "55025",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0009",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1663830000,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "wwebster@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Thomas Cunningham Real Estate",
+      "mcc": "6513",
+      "url": "https://gonzales.info/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0009",
+      "property_count": "19",
+      "portfolio_value": "5534719",
+      "management_type": "self_managed",
+      "payout_schedule": "daily",
+      "years_experience": "16"
+    },
+    "tos_acceptance": {
+      "date": 1663830000,
+      "ip": "145.148.64.217",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Brittany",
+      "last_name": "Bell",
+      "email": "wwebster@example.net",
+      "phone": "347-870-0541",
+      "ssn_last_4": "9502",
+      "address": {
+        "line1": "807 Marc Mountains Apt. 071",
+        "city": "Toniland",
+        "state": "NY",
+        "postal_code": "85190",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0010",
+    "object": "account",
+    "type": "custom",
+    "business_type": "company",
+    "country": "US",
+    "created": 1663570800,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "allendanielle@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Brown-Copeland Properties",
+      "mcc": "6513",
+      "url": "https://www.robertson.biz/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0010",
+      "property_count": "19",
+      "portfolio_value": "4330214",
+      "management_type": "full_service",
+      "payout_schedule": "monthly",
+      "years_experience": "16"
+    },
+    "tos_acceptance": {
+      "date": 1663570800,
+      "ip": "86.148.137.185",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "company": {
+      "name": "Brown-Copeland Properties",
+      "tax_id": "54-6577416",
+      "phone": "296.821.8518",
+      "address": {
+        "line1": "65405 Michael Street Apt. 952",
+        "city": "West Amyburgh",
+        "state": "MP",
+        "postal_code": "90243",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0011",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1663916400,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "williamsdarlene@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Daniel Armstrong Real Estate",
+      "mcc": "6513",
+      "url": "http://gardner.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0011",
+      "property_count": "10",
+      "portfolio_value": "4951010",
+      "management_type": "full_service",
+      "payout_schedule": "weekly",
+      "years_experience": "1"
+    },
+    "tos_acceptance": {
+      "date": 1663916400,
+      "ip": "166.127.90.224",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Kenneth",
+      "last_name": "Jones",
+      "email": "williamsdarlene@example.net",
+      "phone": "4277677359",
+      "ssn_last_4": "1803",
+      "address": {
+        "line1": "562 Robertson Coves Suite 371",
+        "city": "Shannonberg",
+        "state": "CT",
+        "postal_code": "07133",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0012",
+    "object": "account",
+    "type": "custom",
+    "business_type": "company",
+    "country": "US",
+    "created": 1663830000,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "amandasharp@example.org",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Butler and Sons Properties",
+      "mcc": "6513",
+      "url": "http://lopez-curry.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0012",
+      "property_count": "12",
+      "portfolio_value": "2180940",
+      "management_type": "full_service",
+      "payout_schedule": "weekly",
+      "years_experience": "7"
+    },
+    "tos_acceptance": {
+      "date": 1663830000,
+      "ip": "208.75.234.168",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "company": {
+      "name": "Butler and Sons Properties",
+      "tax_id": "25-8628891",
+      "phone": "699-515-4788x7287",
+      "address": {
+        "line1": "2742 Jill Turnpike",
+        "city": "Ashleyborough",
+        "state": "HI",
+        "postal_code": "80580",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0013",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1663484400,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "vhernandez@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Michael Durham Real Estate",
+      "mcc": "6513",
+      "url": "http://www.fischer.info/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0013",
+      "property_count": "9",
+      "portfolio_value": "1868697",
+      "management_type": "self_managed",
+      "payout_schedule": "daily",
+      "years_experience": "1"
+    },
+    "tos_acceptance": {
+      "date": 1663484400,
+      "ip": "13.201.222.238",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Christian",
+      "last_name": "Elliott",
+      "email": "vhernandez@example.net",
+      "phone": "9883398225",
+      "ssn_last_4": "6869",
+      "address": {
+        "line1": "971 Stokes Motorway",
+        "city": "New Robert",
+        "state": "OK",
+        "postal_code": "08068",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0014",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1663138800,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "roberthill@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Sheryl Buck Real Estate",
+      "mcc": "6513",
+      "url": "https://compton.biz/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0014",
+      "property_count": "4",
+      "portfolio_value": "1973032",
+      "management_type": "self_managed",
+      "payout_schedule": "weekly",
+      "years_experience": "15"
+    },
+    "tos_acceptance": {
+      "date": 1663138800,
+      "ip": "165.25.137.77",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Heather",
+      "last_name": "Russell",
+      "email": "roberthill@example.net",
+      "phone": "862-487-3342x7086",
+      "ssn_last_4": "4743",
+      "address": {
+        "line1": "43517 Davis Stream Apt. 046",
+        "city": "Port Charlesshire",
+        "state": "VA",
+        "postal_code": "88509",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0015",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1662706800,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "irhodes@example.com",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Patrick Gibbs Real Estate",
+      "mcc": "6513",
+      "url": "http://davis.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0015",
+      "property_count": "7",
+      "portfolio_value": "2316783",
+      "management_type": "full_service",
+      "payout_schedule": "daily",
+      "years_experience": "10"
+    },
+    "tos_acceptance": {
+      "date": 1662706800,
+      "ip": "57.99.149.40",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Tanya",
+      "last_name": "Nguyen",
+      "email": "irhodes@example.com",
+      "phone": "+1-647-573-5866x2961",
+      "ssn_last_4": "8972",
+      "address": {
+        "line1": "42626 Ward Course",
+        "city": "West Seanview",
+        "state": "CT",
+        "postal_code": "17868",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0016",
+    "object": "account",
+    "type": "custom",
+    "business_type": "company",
+    "country": "US",
+    "created": 1664175600,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "stephenbaker@example.com",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Church, Edwards and Price Properties",
+      "mcc": "6513",
+      "url": "https://www.bell-ellis.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0016",
+      "property_count": "2",
+      "portfolio_value": "899424",
+      "management_type": "self_managed",
+      "payout_schedule": "weekly",
+      "years_experience": "20"
+    },
+    "tos_acceptance": {
+      "date": 1664175600,
+      "ip": "164.194.85.130",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "company": {
+      "name": "Church, Edwards and Price Properties",
+      "tax_id": "70-9411547",
+      "phone": "+1-891-825-1341x252",
+      "address": {
+        "line1": "662 Reid Square",
+        "city": "New Garrett",
+        "state": "LA",
+        "postal_code": "18889",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0017",
+    "object": "account",
+    "type": "custom",
+    "business_type": "company",
+    "country": "US",
+    "created": 1665730800,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "rrobertson@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Gibson-Freeman Properties",
+      "mcc": "6513",
+      "url": "http://www.stanton.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0017",
+      "property_count": "4",
+      "portfolio_value": "1098364",
+      "management_type": "full_service",
+      "payout_schedule": "daily",
+      "years_experience": "2"
+    },
+    "tos_acceptance": {
+      "date": 1665730800,
+      "ip": "166.93.11.81",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "company": {
+      "name": "Gibson-Freeman Properties",
+      "tax_id": "40-8043503",
+      "phone": "463.974.5458",
+      "address": {
+        "line1": "001 Smith Walks Apt. 770",
+        "city": "Harrisberg",
+        "state": "FM",
+        "postal_code": "85697",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0018",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1666767600,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "robertcortez@example.com",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Laura Wilson Real Estate",
+      "mcc": "6513",
+      "url": "http://www.brock.biz/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0018",
+      "property_count": "2",
+      "portfolio_value": "968480",
+      "management_type": "full_service",
+      "payout_schedule": "weekly",
+      "years_experience": "17"
+    },
+    "tos_acceptance": {
+      "date": 1666767600,
+      "ip": "93.196.26.89",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Michelle",
+      "last_name": "Ayala",
+      "email": "robertcortez@example.com",
+      "phone": "951-787-0534x9493",
+      "ssn_last_4": "3621",
+      "address": {
+        "line1": "83206 Jesse Key Apt. 506",
+        "city": "Daltonhaven",
+        "state": "IA",
+        "postal_code": "55527",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0019",
+    "object": "account",
+    "type": "custom",
+    "business_type": "company",
+    "country": "US",
+    "created": 1665558000,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "kimberlyrichards@example.org",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Martin Group Properties",
+      "mcc": "6513",
+      "url": "https://herrera.info/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0019",
+      "property_count": "13",
+      "portfolio_value": "6377228",
+      "management_type": "full_service",
+      "payout_schedule": "daily",
+      "years_experience": "4"
+    },
+    "tos_acceptance": {
+      "date": 1665558000,
+      "ip": "48.245.227.202",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "company": {
+      "name": "Martin Group Properties",
+      "tax_id": "13-4121368",
+      "phone": "312-549-0352",
+      "address": {
+        "line1": "8044 Anthony Lodge Suite 883",
+        "city": "South Curtisberg",
+        "state": "DE",
+        "postal_code": "02068",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0020",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1666162800,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "daisymccarty@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Monica Rogers Real Estate",
+      "mcc": "6513",
+      "url": "http://wright.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0020",
+      "property_count": "19",
+      "portfolio_value": "4555402",
+      "management_type": "full_service",
+      "payout_schedule": "monthly",
+      "years_experience": "2"
+    },
+    "tos_acceptance": {
+      "date": 1666162800,
+      "ip": "120.221.65.62",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Jennifer",
+      "last_name": "Williams",
+      "email": "daisymccarty@example.net",
+      "phone": "562.467.6586x179",
+      "ssn_last_4": "1464",
+      "address": {
+        "line1": "04054 Charles Extension Suite 218",
+        "city": "West Brookefort",
+        "state": "VT",
+        "postal_code": "04563",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0021",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1665903600,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "wellsdarrell@example.com",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Steven Baker Real Estate",
+      "mcc": "6513",
+      "url": "https://www.mcclure-wood.info/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0021",
+      "property_count": "15",
+      "portfolio_value": "4925370",
+      "management_type": "self_managed",
+      "payout_schedule": "weekly",
+      "years_experience": "23"
+    },
+    "tos_acceptance": {
+      "date": 1665903600,
+      "ip": "92.36.181.0",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Steven",
+      "last_name": "Perez",
+      "email": "wellsdarrell@example.com",
+      "phone": "290-821-1586x938",
+      "ssn_last_4": "6231",
+      "address": {
+        "line1": "793 Evans Locks Apt. 898",
+        "city": "North Stacy",
+        "state": "NV",
+        "postal_code": "23160",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0022",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1665990000,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "mitchellpaul@example.org",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Penny Lewis Real Estate",
+      "mcc": "6513",
+      "url": "http://www.clark.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0022",
+      "property_count": "2",
+      "portfolio_value": "340804",
+      "management_type": "self_managed",
+      "payout_schedule": "monthly",
+      "years_experience": "11"
+    },
+    "tos_acceptance": {
+      "date": 1665990000,
+      "ip": "20.59.234.193",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Deborah",
+      "last_name": "Burke",
+      "email": "mitchellpaul@example.org",
+      "phone": "9346944665",
+      "ssn_last_4": "8761",
+      "address": {
+        "line1": "4896 Adrian Shore",
+        "city": "Annaport",
+        "state": "ME",
+        "postal_code": "90208",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0023",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1666335600,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "fhernandez@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Nathaniel Conway Real Estate",
+      "mcc": "6513",
+      "url": "http://baker-williams.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0023",
+      "property_count": "8",
+      "portfolio_value": "1620256",
+      "management_type": "full_service",
+      "payout_schedule": "weekly",
+      "years_experience": "23"
+    },
+    "tos_acceptance": {
+      "date": 1666335600,
+      "ip": "217.76.83.139",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Michael",
+      "last_name": "Rhodes",
+      "email": "fhernandez@example.net",
+      "phone": "(711)400-2255x79415",
+      "ssn_last_4": "8739",
+      "address": {
+        "line1": "6746 Marsh Run",
+        "city": "North David",
+        "state": "VA",
+        "postal_code": "08187",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0024",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1666854000,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "williamharrison@example.com",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Angela Vasquez Real Estate",
+      "mcc": "6513",
+      "url": "http://williams-walker.biz/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0024",
+      "property_count": "6",
+      "portfolio_value": "2148834",
+      "management_type": "full_service",
+      "payout_schedule": "daily",
+      "years_experience": "24"
+    },
+    "tos_acceptance": {
+      "date": 1666854000,
+      "ip": "47.10.61.119",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Christian",
+      "last_name": "Wallace",
+      "email": "williamharrison@example.com",
+      "phone": "001-371-877-5170",
+      "ssn_last_4": "5742",
+      "address": {
+        "line1": "88019 Wu Points Apt. 755",
+        "city": "Port Jeffreymouth",
+        "state": "MA",
+        "postal_code": "73921",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0025",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1668931200,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "william66@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Pamela Hill Real Estate",
+      "mcc": "6513",
+      "url": "https://ballard-taylor.org/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0025",
+      "property_count": "1",
+      "portfolio_value": "258046",
+      "management_type": "self_managed",
+      "payout_schedule": "daily",
+      "years_experience": "20"
+    },
+    "tos_acceptance": {
+      "date": 1668931200,
+      "ip": "147.33.100.140",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Megan",
+      "last_name": "Kelley",
+      "email": "william66@example.net",
+      "phone": "783-933-9452x28851",
+      "ssn_last_4": "1550",
+      "address": {
+        "line1": "846 Alexandra Burg Suite 200",
+        "city": "West Karen",
+        "state": "GA",
+        "postal_code": "38068",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0026",
+    "object": "account",
+    "type": "custom",
+    "business_type": "company",
+    "country": "US",
+    "created": 1669017600,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "bmccoy@example.com",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Price Inc Properties",
+      "mcc": "6513",
+      "url": "http://www.richards.net/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0026",
+      "property_count": "12",
+      "portfolio_value": "3445596",
+      "management_type": "full_service",
+      "payout_schedule": "monthly",
+      "years_experience": "16"
+    },
+    "tos_acceptance": {
+      "date": 1669017600,
+      "ip": "83.73.84.122",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "company": {
+      "name": "Price Inc Properties",
+      "tax_id": "69-2654371",
+      "phone": "+1-814-676-6072x832",
+      "address": {
+        "line1": "5088 David Avenue",
+        "city": "Medinaland",
+        "state": "ME",
+        "postal_code": "28033",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0027",
+    "object": "account",
+    "type": "custom",
+    "business_type": "company",
+    "country": "US",
+    "created": 1667458800,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "guerrerorobert@example.com",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Wilson, Leonard and Mendoza Properties",
+      "mcc": "6513",
+      "url": "http://sanchez.org/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0027",
+      "property_count": "13",
+      "portfolio_value": "4520685",
+      "management_type": "full_service",
+      "payout_schedule": "daily",
+      "years_experience": "21"
+    },
+    "tos_acceptance": {
+      "date": 1667458800,
+      "ip": "136.159.81.152",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "company": {
+      "name": "Wilson, Leonard and Mendoza Properties",
+      "tax_id": "11-3875339",
+      "phone": "+1-280-692-0242x8699",
+      "address": {
+        "line1": "79772 Maria Rapid",
+        "city": "Port Brandi",
+        "state": "WI",
+        "postal_code": "24340",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0028",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1668067200,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "zbell@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Sara Johnston Real Estate",
+      "mcc": "6513",
+      "url": "https://www.woods-hall.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0028",
+      "property_count": "6",
+      "portfolio_value": "2682666",
+      "management_type": "full_service",
+      "payout_schedule": "monthly",
+      "years_experience": "18"
+    },
+    "tos_acceptance": {
+      "date": 1668067200,
+      "ip": "58.39.68.129",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Jonathan",
+      "last_name": "Smith",
+      "email": "zbell@example.net",
+      "phone": "001-409-881-8063x5651",
+      "ssn_last_4": "6435",
+      "address": {
+        "line1": "8695 Braun Locks Apt. 688",
+        "city": "Whiteside",
+        "state": "OH",
+        "postal_code": "63908",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0029",
+    "object": "account",
+    "type": "custom",
+    "business_type": "company",
+    "country": "US",
+    "created": 1668931200,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "travis84@example.com",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Christensen and Sons Properties",
+      "mcc": "6513",
+      "url": "http://ayers-johnson.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0029",
+      "property_count": "7",
+      "portfolio_value": "1442588",
+      "management_type": "self_managed",
+      "payout_schedule": "weekly",
+      "years_experience": "1"
+    },
+    "tos_acceptance": {
+      "date": 1668931200,
+      "ip": "43.47.237.218",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "company": {
+      "name": "Christensen and Sons Properties",
+      "tax_id": "60-6573679",
+      "phone": "718.675.0036x915",
+      "address": {
+        "line1": "434 Mullen Junctions",
+        "city": "Ivanchester",
+        "state": "IL",
+        "postal_code": "55432",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0030",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1669449600,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "derrickrodriguez@example.com",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Denise Dean Real Estate",
+      "mcc": "6513",
+      "url": "http://hernandez.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0030",
+      "property_count": "6",
+      "portfolio_value": "2523174",
+      "management_type": "self_managed",
+      "payout_schedule": "monthly",
+      "years_experience": "6"
+    },
+    "tos_acceptance": {
+      "date": 1669449600,
+      "ip": "96.209.116.195",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Julian",
+      "last_name": "Martinez",
+      "email": "derrickrodriguez@example.com",
+      "phone": "703.912.0735x647",
+      "ssn_last_4": "6422",
+      "address": {
+        "line1": "1204 Jones Mountains",
+        "city": "East Paula",
+        "state": "KS",
+        "postal_code": "50515",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0031",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1668240000,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "umckenzie@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Joshua Brooks Real Estate",
+      "mcc": "6513",
+      "url": "https://west-sanders.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0031",
+      "property_count": "18",
+      "portfolio_value": "6865254",
+      "management_type": "self_managed",
+      "payout_schedule": "weekly",
+      "years_experience": "4"
+    },
+    "tos_acceptance": {
+      "date": 1668240000,
+      "ip": "196.16.177.150",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Zachary",
+      "last_name": "Holder",
+      "email": "umckenzie@example.net",
+      "phone": "404-333-5048x8899",
+      "ssn_last_4": "5055",
+      "address": {
+        "line1": "5224 Preston Gateway",
+        "city": "West Lisa",
+        "state": "CO",
+        "postal_code": "75275",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0032",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1668499200,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "riverajody@example.org",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Joseph Green Real Estate",
+      "mcc": "6513",
+      "url": "https://www.hale.net/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0032",
+      "property_count": "12",
+      "portfolio_value": "5162304",
+      "management_type": "full_service",
+      "payout_schedule": "daily",
+      "years_experience": "14"
+    },
+    "tos_acceptance": {
+      "date": 1668499200,
+      "ip": "74.230.132.99",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Brian",
+      "last_name": "Gonzalez",
+      "email": "riverajody@example.org",
+      "phone": "001-694-807-0164x510",
+      "ssn_last_4": "4470",
+      "address": {
+        "line1": "8157 Jacob Parkway",
+        "city": "Castrotown",
+        "state": "AZ",
+        "postal_code": "32927",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0033",
+    "object": "account",
+    "type": "custom",
+    "business_type": "company",
+    "country": "US",
+    "created": 1669968000,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "ellismelissa@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Franklin Group Properties",
+      "mcc": "6513",
+      "url": "http://www.keller.org/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0033",
+      "property_count": "10",
+      "portfolio_value": "2411560",
+      "management_type": "self_managed",
+      "payout_schedule": "weekly",
+      "years_experience": "15"
+    },
+    "tos_acceptance": {
+      "date": 1669968000,
+      "ip": "143.169.97.106",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "company": {
+      "name": "Franklin Group Properties",
+      "tax_id": "81-5191831",
+      "phone": "+1-749-283-0220",
+      "address": {
+        "line1": "99451 Daniel Fall",
+        "city": "Lake Justin",
+        "state": "TN",
+        "postal_code": "91139",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0034",
+    "object": "account",
+    "type": "custom",
+    "business_type": "company",
+    "country": "US",
+    "created": 1670227200,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "ostone@example.com",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Morton-Stephenson Properties",
+      "mcc": "6513",
+      "url": "http://smith.info/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0034",
+      "property_count": "3",
+      "portfolio_value": "642717",
+      "management_type": "self_managed",
+      "payout_schedule": "weekly",
+      "years_experience": "2"
+    },
+    "tos_acceptance": {
+      "date": 1670227200,
+      "ip": "135.140.24.83",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "company": {
+      "name": "Morton-Stephenson Properties",
+      "tax_id": "31-8267158",
+      "phone": "001-639-366-0558x3034",
+      "address": {
+        "line1": "8850 Gina Junctions Suite 990",
+        "city": "East Mark",
+        "state": "MA",
+        "postal_code": "88643",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0035",
+    "object": "account",
+    "type": "custom",
+    "business_type": "company",
+    "country": "US",
+    "created": 1669881600,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "kristina57@example.com",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Jones Inc Properties",
+      "mcc": "6513",
+      "url": "https://singleton-campbell.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0035",
+      "property_count": "17",
+      "portfolio_value": "2556086",
+      "management_type": "full_service",
+      "payout_schedule": "monthly",
+      "years_experience": "7"
+    },
+    "tos_acceptance": {
+      "date": 1669881600,
+      "ip": "136.39.57.41",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "company": {
+      "name": "Jones Inc Properties",
+      "tax_id": "26-6716988",
+      "phone": "516.415.8148x76963",
+      "address": {
+        "line1": "1539 Mueller Mews Suite 832",
+        "city": "Lake Sarahshire",
+        "state": "MP",
+        "postal_code": "64284",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0036",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1670486400,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "thomasnicole@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "William Miller Real Estate",
+      "mcc": "6513",
+      "url": "https://munoz.net/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0036",
+      "property_count": "19",
+      "portfolio_value": "7792717",
+      "management_type": "self_managed",
+      "payout_schedule": "weekly",
+      "years_experience": "24"
+    },
+    "tos_acceptance": {
+      "date": 1670486400,
+      "ip": "60.205.140.192",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Paul",
+      "last_name": "Perez",
+      "email": "thomasnicole@example.net",
+      "phone": "(990)797-3846x89500",
+      "ssn_last_4": "2274",
+      "address": {
+        "line1": "712 Marshall Common",
+        "city": "East Thomasland",
+        "state": "TX",
+        "postal_code": "83559",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0037",
+    "object": "account",
+    "type": "custom",
+    "business_type": "individual",
+    "country": "US",
+    "created": 1670054400,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "wreese@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Michael Price Real Estate",
+      "mcc": "6513",
+      "url": "https://www.berg.info/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0037",
+      "property_count": "18",
+      "portfolio_value": "5889294",
+      "management_type": "full_service",
+      "payout_schedule": "monthly",
+      "years_experience": "1"
+    },
+    "tos_acceptance": {
+      "date": 1670054400,
+      "ip": "52.52.62.15",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "individual": {
+      "first_name": "Suzanne",
+      "last_name": "Vega",
+      "email": "wreese@example.net",
+      "phone": "6183569454",
+      "ssn_last_4": "8066",
+      "address": {
+        "line1": "967 Jessica Radial Apt. 852",
+        "city": "Amytown",
+        "state": "MP",
+        "postal_code": "09407",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0038",
+    "object": "account",
+    "type": "custom",
+    "business_type": "company",
+    "country": "US",
+    "created": 1670313600,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "edward56@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Robertson Group Properties",
+      "mcc": "6513",
+      "url": "https://anthony-norman.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0038",
+      "property_count": "12",
+      "portfolio_value": "4124064",
+      "management_type": "self_managed",
+      "payout_schedule": "weekly",
+      "years_experience": "2"
+    },
+    "tos_acceptance": {
+      "date": 1670313600,
+      "ip": "4.6.198.2",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "company": {
+      "name": "Robertson Group Properties",
+      "tax_id": "43-8377620",
+      "phone": "(771)398-5546x0158",
+      "address": {
+        "line1": "3280 Guerrero Hills Suite 157",
+        "city": "Lake Samuelborough",
+        "state": "DC",
+        "postal_code": "05180",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0039",
+    "object": "account",
+    "type": "custom",
+    "business_type": "company",
+    "country": "US",
+    "created": 1671868800,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "robert53@example.org",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Perez-Young Properties",
+      "mcc": "6513",
+      "url": "https://www.vance-jones.org/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0039",
+      "property_count": "16",
+      "portfolio_value": "5524256",
+      "management_type": "self_managed",
+      "payout_schedule": "weekly",
+      "years_experience": "10"
+    },
+    "tos_acceptance": {
+      "date": 1671868800,
+      "ip": "29.242.155.74",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "company": {
+      "name": "Perez-Young Properties",
+      "tax_id": "49-5703436",
+      "phone": "(539)772-6527",
+      "address": {
+        "line1": "52090 Taylor Walk Suite 762",
+        "city": "Jeffreyport",
+        "state": "PA",
+        "postal_code": "21051",
+        "country": "US"
+      }
+    }
+  },
+  {
+    "id": "acct_LANDLORD_LL0040",
+    "object": "account",
+    "type": "custom",
+    "business_type": "company",
+    "country": "US",
+    "created": 1671782400,
+    "default_currency": "usd",
+    "details_submitted": true,
+    "email": "thomasfisher@example.net",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "capabilities": {
+      "transfers": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_k": {
+        "status": "active"
+      },
+      "tax_reporting_us_1099_misc": {
+        "status": "active"
+      }
+    },
+    "business_profile": {
+      "name": "Smith, Lopez and Johnson Properties",
+      "mcc": "6513",
+      "url": "http://lane-rios.com/",
+      "product_description": "Residential property management and rental services"
+    },
+    "metadata": {
+      "landlord_id": "LL0040",
+      "property_count": "9",
+      "portfolio_value": "3126429",
+      "management_type": "full_service",
+      "payout_schedule": "weekly",
+      "years_experience": "9"
+    },
+    "tos_acceptance": {
+      "date": 1671782400,
+      "ip": "30.63.138.38",
+      "user_agent": "PropertyFlow/1.0"
+    },
+    "company": {
+      "name": "Smith, Lopez and Johnson Properties",
+      "tax_id": "37-8829893",
+      "phone": "449.724.2437x540",
+      "address": {
+        "line1": "2928 White Extensions Apt. 231",
+        "city": "West Autumnmouth",
+        "state": "KS",
+        "postal_code": "48954",
+        "country": "US"
+      }
+    }
+  }
+]

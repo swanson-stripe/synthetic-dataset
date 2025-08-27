@@ -1,0 +1,29 @@
+{
+  "total_customers": 5296,
+  "total_subscriptions": 5296,
+  "active_subscriptions": 2285,
+  "data_period": "24 months subscription fitness lifecycle",
+  "revenue_metrics": {
+    "current_mrr": 80176.17,
+    "estimated_arr": 962114.04,
+    "total_revenue": 733563.63,
+    "arpu": 35.09
+  },
+  "subscription_health": {
+    "trial_conversion_rate": 0.334,
+    "churn_rate": 0.487,
+    "payment_success_rate": 0.977,
+    "at_risk_customers": 184
+  },
+  "plan_distribution": {
+    "basic": {"active": 875, "percentage": 38.4},
+    "unlimited": {"active": 985, "percentage": 43.6},
+    "family": {"active": 425, "percentage": 18.0}
+  },
+  "engagement_metrics": {
+    "average_engagement_score": 64.7,
+    "high_engagement_customers": 1153,
+    "addon_attachment_rate": 0.373
+  },
+  "generated_at": "2024-12-19T10:00:00Z"
+}

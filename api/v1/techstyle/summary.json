@@ -1,0 +1,10 @@
+{
+  "total_payments": 97824,
+  "total_volume": 720754227,
+  "overall_success_rate": 0.9810067059208374,
+  "average_order_value": 7367.867057163886,
+  "date_range": {
+    "start": "2023-10-07",
+    "end": "2025-09-25"
+  }
+}

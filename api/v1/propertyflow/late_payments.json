@@ -1,0 +1,3156 @@
+[
+  {
+    "id": "pi_RENT_234f3500a0024182",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_b557648a5f1a44c2",
+    "created": 1646121600,
+    "description": "Monthly rent + late fee - 3421 Brennan Walks Suite 337",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000008_202203",
+    "metadata": {
+      "property_id": "prop_P000008",
+      "landlord_id": "LL0002",
+      "month": "2022-03",
+      "payment_type": "rent",
+      "rent_amount": "426100",
+      "days_late": "11",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 431100,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_1d1d2d9337084bf4",
+          "amount": 431100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_f35b29cc7b904f3e",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_67790034db3c4874",
+    "created": 1648796400,
+    "description": "Monthly rent + late fee - 4348 Sims Harbor Suite 143",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000010_202204",
+    "metadata": {
+      "property_id": "prop_P000010",
+      "landlord_id": "LL0003",
+      "month": "2022-04",
+      "payment_type": "rent",
+      "rent_amount": "284200",
+      "days_late": "8",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 289200,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_084f446223164e8a",
+          "amount": 289200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_df1c0fefe18b42bf",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_05902530557b4dd9",
+    "created": 1654066800,
+    "description": "Monthly rent + late fee - 65627 Tina Place Apt. 699",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000011_202206",
+    "metadata": {
+      "property_id": "prop_P000011",
+      "landlord_id": "LL0003",
+      "month": "2022-06",
+      "payment_type": "rent",
+      "rent_amount": "385900",
+      "days_late": "14",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 390900,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_64c699d007514736",
+          "amount": 390900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_c6a3aded6df64c2c",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_6d502facd55549fb",
+    "created": 1656658800,
+    "description": "Monthly rent + late fee - 193 Lyons Trafficway Suite 299",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000012_202207",
+    "metadata": {
+      "property_id": "prop_P000012",
+      "landlord_id": "LL0003",
+      "month": "2022-07",
+      "payment_type": "rent",
+      "rent_amount": "247700",
+      "days_late": "11",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 252700,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_255215103eb34dd8",
+          "amount": 252700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_39ea57d42d494acd",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_a33e7ba1b9f64b58",
+    "created": 1656658800,
+    "description": "Monthly rent + late fee - 17127 Hicks Groves",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000016_202207",
+    "metadata": {
+      "property_id": "prop_P000016",
+      "landlord_id": "LL0006",
+      "month": "2022-07",
+      "payment_type": "rent",
+      "rent_amount": "296200",
+      "days_late": "6",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 301200,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_4ea9dd55a8f54081",
+          "amount": 301200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_3ea3c43577dd44b5",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_d1aa5de1adf54529",
+    "created": 1659337200,
+    "description": "Monthly rent + late fee - 341 Michelle Light",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000001_202208",
+    "metadata": {
+      "property_id": "prop_P000001",
+      "landlord_id": "LL0001",
+      "month": "2022-08",
+      "payment_type": "rent",
+      "rent_amount": "292800",
+      "days_late": "12",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 297800,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_3a19c9ac3f3f4524",
+          "amount": 297800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_cbf3405bae1d4edd",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_1c1bd07205174c43",
+    "created": 1659337200,
+    "description": "Monthly rent + late fee - 76724 John Points Suite 969",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000002_202208",
+    "metadata": {
+      "property_id": "prop_P000002",
+      "landlord_id": "LL0001",
+      "month": "2022-08",
+      "payment_type": "rent",
+      "rent_amount": "257800",
+      "days_late": "13",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 262800,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_2c8141c375d9483e",
+          "amount": 262800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_2a36d9e9bd384331",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_cc91e4f956ee4244",
+    "created": 1659337200,
+    "description": "Monthly rent + late fee - 83842 Ibarra Gardens",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000006_202208",
+    "metadata": {
+      "property_id": "prop_P000006",
+      "landlord_id": "LL0002",
+      "month": "2022-08",
+      "payment_type": "rent",
+      "rent_amount": "227800",
+      "days_late": "3",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 232800,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_6a37be8e7bea4247",
+          "amount": 232800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_e17163df8fc14692",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_6d502facd55549fb",
+    "created": 1659337200,
+    "description": "Monthly rent + late fee - 193 Lyons Trafficway Suite 299",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000012_202208",
+    "metadata": {
+      "property_id": "prop_P000012",
+      "landlord_id": "LL0003",
+      "month": "2022-08",
+      "payment_type": "rent",
+      "rent_amount": "247700",
+      "days_late": "5",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 252700,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_0d5b60ddef014b84",
+          "amount": 252700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_6c8d9bac0b684737",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_4331f5d18c6e46f8",
+    "created": 1662015600,
+    "description": "Monthly rent + late fee - 25953 Tyrone Passage Suite 747",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000035_202209",
+    "metadata": {
+      "property_id": "prop_P000035",
+      "landlord_id": "LL0011",
+      "month": "2022-09",
+      "payment_type": "rent",
+      "rent_amount": "267200",
+      "days_late": "6",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 272200,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_28fe4560fa204195",
+          "amount": 272200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_bf4f33b815c645e9",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_cea2e95de6fc40d8",
+    "created": 1664607600,
+    "description": "Monthly rent + late fee - 5452 Jones Village Apt. 161",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000022_202210",
+    "metadata": {
+      "property_id": "prop_P000022",
+      "landlord_id": "LL0008",
+      "month": "2022-10",
+      "payment_type": "rent",
+      "rent_amount": "490500",
+      "days_late": "2",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 495500,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_b5861f09e43e4eac",
+          "amount": 495500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_752ad63909144f45",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_0452823e104243c5",
+    "created": 1664607600,
+    "description": "Monthly rent + late fee - 06163 Mary Green",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000065_202210",
+    "metadata": {
+      "property_id": "prop_P000065",
+      "landlord_id": "LL0021",
+      "month": "2022-10",
+      "payment_type": "rent",
+      "rent_amount": "213500",
+      "days_late": "3",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 218500,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_a28e89f220394740",
+          "amount": 218500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_cc34148c4bc04489",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_f76f8cbe1660476e",
+    "created": 1664607600,
+    "description": "Monthly rent + late fee - 4544 Lopez Path",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000068_202210",
+    "metadata": {
+      "property_id": "prop_P000068",
+      "landlord_id": "LL0022",
+      "month": "2022-10",
+      "payment_type": "rent",
+      "rent_amount": "428300",
+      "days_late": "8",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 433300,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_cea95633eea64c06",
+          "amount": 433300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_9131540b5db0425d",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_a40b52dc4874421b",
+    "created": 1667286000,
+    "description": "Monthly rent + late fee - 33150 Brianna Avenue Apt. 031",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000004_202211",
+    "metadata": {
+      "property_id": "prop_P000004",
+      "landlord_id": "LL0001",
+      "month": "2022-11",
+      "payment_type": "rent",
+      "rent_amount": "348100",
+      "days_late": "9",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 353100,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_11c4cdc3683447ef",
+          "amount": 353100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_23d35765a7ce45da",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_9abf3fea3f314124",
+    "created": 1667286000,
+    "description": "Monthly rent + late fee - 340 Smith Valley Apt. 561",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000009_202211",
+    "metadata": {
+      "property_id": "prop_P000009",
+      "landlord_id": "LL0002",
+      "month": "2022-11",
+      "payment_type": "rent",
+      "rent_amount": "318800",
+      "days_late": "14",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 323800,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_d93deafc565947ce",
+          "amount": 323800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_209c70a142e44f4c",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_a33e7ba1b9f64b58",
+    "created": 1667286000,
+    "description": "Monthly rent + late fee - 17127 Hicks Groves",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000016_202211",
+    "metadata": {
+      "property_id": "prop_P000016",
+      "landlord_id": "LL0006",
+      "month": "2022-11",
+      "payment_type": "rent",
+      "rent_amount": "296200",
+      "days_late": "15",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 301200,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_556facb3aed342c7",
+          "amount": 301200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_ea621257a0494793",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_8fa07832be074215",
+    "created": 1667286000,
+    "description": "Monthly rent + late fee - 889 Sean Lock",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000050_202211",
+    "metadata": {
+      "property_id": "prop_P000050",
+      "landlord_id": "LL0015",
+      "month": "2022-11",
+      "payment_type": "rent",
+      "rent_amount": "303100",
+      "days_late": "15",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 308100,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_c090e9e299274ba9",
+          "amount": 308100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_4bf641f005204663",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_ab9ab6e50c664108",
+    "created": 1667286000,
+    "description": "Monthly rent + late fee - 105 Nelson Circles Suite 917",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000058_202211",
+    "metadata": {
+      "property_id": "prop_P000058",
+      "landlord_id": "LL0017",
+      "month": "2022-11",
+      "payment_type": "rent",
+      "rent_amount": "356300",
+      "days_late": "12",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 361300,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_1ff4b5f4c2c94a82",
+          "amount": 361300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_92e3629e134a45bc",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_b64e2e52a77f41bb",
+    "created": 1667286000,
+    "description": "Monthly rent + late fee - 4679 Johnson Harbor Suite 299",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000066_202211",
+    "metadata": {
+      "property_id": "prop_P000066",
+      "landlord_id": "LL0021",
+      "month": "2022-11",
+      "payment_type": "rent",
+      "rent_amount": "390800",
+      "days_late": "11",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 395800,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_68211f249ed64e4b",
+          "amount": 395800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_f3e9db5a420a4052",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_a0fd089163bd47e4",
+    "created": 1667286000,
+    "description": "Monthly rent + late fee - 57991 Nicholas Curve Apt. 038",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000083_202211",
+    "metadata": {
+      "property_id": "prop_P000083",
+      "landlord_id": "LL0027",
+      "month": "2022-11",
+      "payment_type": "rent",
+      "rent_amount": "357700",
+      "days_late": "13",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 362700,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_39f0a0dc954f446e",
+          "amount": 362700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_0f135ce35e604e6d",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_d5defe06b5fe481e",
+    "created": 1667286000,
+    "description": "Monthly rent + late fee - 82005 Lin Mountain",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000091_202211",
+    "metadata": {
+      "property_id": "prop_P000091",
+      "landlord_id": "LL0029",
+      "month": "2022-11",
+      "payment_type": "rent",
+      "rent_amount": "138100",
+      "days_late": "14",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 143100,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_a6a508320e1546b3",
+          "amount": 143100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_86dde8c7637d4700",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_1b14e2b5b43d4bd0",
+    "created": 1667286000,
+    "description": "Monthly rent + late fee - 911 Henderson Keys Apt. 559",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000100_202211",
+    "metadata": {
+      "property_id": "prop_P000100",
+      "landlord_id": "LL0031",
+      "month": "2022-11",
+      "payment_type": "rent",
+      "rent_amount": "280800",
+      "days_late": "14",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 285800,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_e2ae44e92ffe4493",
+          "amount": 285800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_ce98d9d08d7641f9",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_a36e82d703d14050",
+    "created": 1667286000,
+    "description": "Monthly rent + late fee - 48262 Lonnie Point",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000102_202211",
+    "metadata": {
+      "property_id": "prop_P000102",
+      "landlord_id": "LL0032",
+      "month": "2022-11",
+      "payment_type": "rent",
+      "rent_amount": "335200",
+      "days_late": "6",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 340200,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_a33431bee89041a3",
+          "amount": 340200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_9882cf288bc84630",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_9abf3fea3f314124",
+    "created": 1669881600,
+    "description": "Monthly rent + late fee - 340 Smith Valley Apt. 561",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000009_202212",
+    "metadata": {
+      "property_id": "prop_P000009",
+      "landlord_id": "LL0002",
+      "month": "2022-12",
+      "payment_type": "rent",
+      "rent_amount": "318800",
+      "days_late": "15",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 323800,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_7fb700c734044b7a",
+          "amount": 323800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_20307fb07ae3479f",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_42cda02bbdd54afd",
+    "created": 1669881600,
+    "description": "Monthly rent + late fee - 60607 Michelle Ports Suite 966",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000025_202212",
+    "metadata": {
+      "property_id": "prop_P000025",
+      "landlord_id": "LL0008",
+      "month": "2022-12",
+      "payment_type": "rent",
+      "rent_amount": "321400",
+      "days_late": "6",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 326400,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_8db771026a6240ba",
+          "amount": 326400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_4cdd5cfec80941c4",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_3e4f3e6a006147bf",
+    "created": 1669881600,
+    "description": "Monthly rent + late fee - 8686 John Key Apt. 431",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000042_202212",
+    "metadata": {
+      "property_id": "prop_P000042",
+      "landlord_id": "LL0013",
+      "month": "2022-12",
+      "payment_type": "rent",
+      "rent_amount": "184900",
+      "days_late": "4",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 189900,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_a7c778478749419d",
+          "amount": 189900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_e5c6bb0e67954fff",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_16b759e764ef4e99",
+    "created": 1669881600,
+    "description": "Monthly rent + late fee - 1240 Cook River",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000048_202212",
+    "metadata": {
+      "property_id": "prop_P000048",
+      "landlord_id": "LL0015",
+      "month": "2022-12",
+      "payment_type": "rent",
+      "rent_amount": "325000",
+      "days_late": "1",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 330000,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_b2a266d3dee8411f",
+          "amount": 330000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_3dc8301e213b4ffe",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_504d6848cd474926",
+    "created": 1669881600,
+    "description": "Monthly rent + late fee - 2053 Jennifer Row Suite 452",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000080_202212",
+    "metadata": {
+      "property_id": "prop_P000080",
+      "landlord_id": "LL0026",
+      "month": "2022-12",
+      "payment_type": "rent",
+      "rent_amount": "345500",
+      "days_late": "15",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 350500,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_5c16a252f44a401d",
+          "amount": 350500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_631d128768a8473e",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_f94d1fe0824941ad",
+    "created": 1669881600,
+    "description": "Monthly rent + late fee - 38430 Christina Spring Apt. 530",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000085_202212",
+    "metadata": {
+      "property_id": "prop_P000085",
+      "landlord_id": "LL0028",
+      "month": "2022-12",
+      "payment_type": "rent",
+      "rent_amount": "333700",
+      "days_late": "2",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 338700,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_499954e3f56d4910",
+          "amount": 338700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_d9e39c6ed0004f28",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_9b90691b1bba474d",
+    "created": 1669881600,
+    "description": "Monthly rent + late fee - 6504 Thompson Cliff",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000115_202212",
+    "metadata": {
+      "property_id": "prop_P000115",
+      "landlord_id": "LL0037",
+      "month": "2022-12",
+      "payment_type": "rent",
+      "rent_amount": "155800",
+      "days_late": "8",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 160800,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_ad7c05ea1d7b464d",
+          "amount": 160800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_ba50fdceafe944bb",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_a33e7ba1b9f64b58",
+    "created": 1672560000,
+    "description": "Monthly rent + late fee - 17127 Hicks Groves",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000016_202301",
+    "metadata": {
+      "property_id": "prop_P000016",
+      "landlord_id": "LL0006",
+      "month": "2023-01",
+      "payment_type": "rent",
+      "rent_amount": "296200",
+      "days_late": "11",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 301200,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_a7c9a07a70eb4bef",
+          "amount": 301200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_43ff91c849b04c02",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_636b6d426ed44f29",
+    "created": 1672560000,
+    "description": "Monthly rent + late fee - 8516 Jack Dam Suite 530",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000040_202301",
+    "metadata": {
+      "property_id": "prop_P000040",
+      "landlord_id": "LL0012",
+      "month": "2023-01",
+      "payment_type": "rent",
+      "rent_amount": "442800",
+      "days_late": "9",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 447800,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_6501acc9a3844a3d",
+          "amount": 447800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_edc8c24ff4ff49bb",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_0868a7f55f034cd8",
+    "created": 1672560000,
+    "description": "Monthly rent + late fee - 51238 Andrea Isle",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000051_202301",
+    "metadata": {
+      "property_id": "prop_P000051",
+      "landlord_id": "LL0015",
+      "month": "2023-01",
+      "payment_type": "rent",
+      "rent_amount": "372000",
+      "days_late": "4",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 377000,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_f929805451ff4a9e",
+          "amount": 377000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_dc8eed5b5a6a4122",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_e210df6737b3417a",
+    "created": 1672560000,
+    "description": "Monthly rent + late fee - 7700 Garcia Pike Suite 498",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000082_202301",
+    "metadata": {
+      "property_id": "prop_P000082",
+      "landlord_id": "LL0026",
+      "month": "2023-01",
+      "payment_type": "rent",
+      "rent_amount": "356300",
+      "days_late": "11",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 361300,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_5f534009d4ff4535",
+          "amount": 361300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_423d488eb01641f0",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_9bc294c737d34983",
+    "created": 1672560000,
+    "description": "Monthly rent + late fee - 7807 Evans Trafficway Suite 493",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000092_202301",
+    "metadata": {
+      "property_id": "prop_P000092",
+      "landlord_id": "LL0029",
+      "month": "2023-01",
+      "payment_type": "rent",
+      "rent_amount": "178000",
+      "days_late": "15",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 183000,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_8ee5e5d903144f58",
+          "amount": 183000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_d6dc25e847094c09",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_74b68e72ba1b4d94",
+    "created": 1675238400,
+    "description": "Monthly rent + late fee - 281 Skinner Parkways Apt. 252",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000003_202302",
+    "metadata": {
+      "property_id": "prop_P000003",
+      "landlord_id": "LL0001",
+      "month": "2023-02",
+      "payment_type": "rent",
+      "rent_amount": "152600",
+      "days_late": "15",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 157600,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_23eaa6b11a734f23",
+          "amount": 157600,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_f3f0fa6ff9994c31",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_2ea48856da8448ed",
+    "created": 1675238400,
+    "description": "Monthly rent + late fee - 10249 Gonzales Mountain Suite 648",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000015_202302",
+    "metadata": {
+      "property_id": "prop_P000015",
+      "landlord_id": "LL0005",
+      "month": "2023-02",
+      "payment_type": "rent",
+      "rent_amount": "297900",
+      "days_late": "15",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 302900,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_e0a32635f034407e",
+          "amount": 302900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_99d3b1295e924372",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_4331f5d18c6e46f8",
+    "created": 1675238400,
+    "description": "Monthly rent + late fee - 25953 Tyrone Passage Suite 747",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000035_202302",
+    "metadata": {
+      "property_id": "prop_P000035",
+      "landlord_id": "LL0011",
+      "month": "2023-02",
+      "payment_type": "rent",
+      "rent_amount": "267200",
+      "days_late": "11",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 272200,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_325c4f30df0c4d08",
+          "amount": 272200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_64f530615343462c",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_636b6d426ed44f29",
+    "created": 1675238400,
+    "description": "Monthly rent + late fee - 8516 Jack Dam Suite 530",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000040_202302",
+    "metadata": {
+      "property_id": "prop_P000040",
+      "landlord_id": "LL0012",
+      "month": "2023-02",
+      "payment_type": "rent",
+      "rent_amount": "442800",
+      "days_late": "13",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 447800,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_d9a695d40b5d4b4d",
+          "amount": 447800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_39208b522cc94c8c",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_3e4f3e6a006147bf",
+    "created": 1675238400,
+    "description": "Monthly rent + late fee - 8686 John Key Apt. 431",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000042_202302",
+    "metadata": {
+      "property_id": "prop_P000042",
+      "landlord_id": "LL0013",
+      "month": "2023-02",
+      "payment_type": "rent",
+      "rent_amount": "184900",
+      "days_late": "14",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 189900,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_bef85028dfa24b8a",
+          "amount": 189900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_22366556f7604dd7",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_16b759e764ef4e99",
+    "created": 1675238400,
+    "description": "Monthly rent + late fee - 1240 Cook River",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000048_202302",
+    "metadata": {
+      "property_id": "prop_P000048",
+      "landlord_id": "LL0015",
+      "month": "2023-02",
+      "payment_type": "rent",
+      "rent_amount": "325000",
+      "days_late": "11",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 330000,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_1edcc7b67c704a0b",
+          "amount": 330000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_7a65cd70054746cf",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_aea31b6b9b5546d5",
+    "created": 1675238400,
+    "description": "Monthly rent + late fee - 050 Taylor Via Suite 887",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000052_202302",
+    "metadata": {
+      "property_id": "prop_P000052",
+      "landlord_id": "LL0016",
+      "month": "2023-02",
+      "payment_type": "rent",
+      "rent_amount": "344500",
+      "days_late": "12",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 349500,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_0a0557250f81471f",
+          "amount": 349500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_c850ff1ded044ea1",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_325c2bf118334838",
+    "created": 1675238400,
+    "description": "Monthly rent + late fee - 218 Chelsey Expressway",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000055_202302",
+    "metadata": {
+      "property_id": "prop_P000055",
+      "landlord_id": "LL0017",
+      "month": "2023-02",
+      "payment_type": "rent",
+      "rent_amount": "357900",
+      "days_late": "15",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 362900,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_4f3788291afe480b",
+          "amount": 362900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_0861407ee67f4743",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_b34047f5bb944d46",
+    "created": 1675238400,
+    "description": "Monthly rent + late fee - 620 Mark Field",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000064_202302",
+    "metadata": {
+      "property_id": "prop_P000064",
+      "landlord_id": "LL0020",
+      "month": "2023-02",
+      "payment_type": "rent",
+      "rent_amount": "228400",
+      "days_late": "3",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 233400,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_114c61815e344344",
+          "amount": 233400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_e504a67b5233458a",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_716d025850244f0b",
+    "created": 1675238400,
+    "description": "Monthly rent + late fee - 9501 Morris Light",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000105_202302",
+    "metadata": {
+      "property_id": "prop_P000105",
+      "landlord_id": "LL0033",
+      "month": "2023-02",
+      "payment_type": "rent",
+      "rent_amount": "237200",
+      "days_late": "2",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 242200,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_529f208c0e094ffe",
+          "amount": 242200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_780ec34b40e547c6",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_0ca073683ebc439f",
+    "created": 1675238400,
+    "description": "Monthly rent + late fee - 292 Wood Extensions",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000113_202302",
+    "metadata": {
+      "property_id": "prop_P000113",
+      "landlord_id": "LL0036",
+      "month": "2023-02",
+      "payment_type": "rent",
+      "rent_amount": "289500",
+      "days_late": "4",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 294500,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_60baaaa1351c4665",
+          "amount": 294500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_3b060c4c8c5d4be9",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_27dc7a18ef11458d",
+    "created": 1677657600,
+    "description": "Monthly rent + late fee - 410 Phyllis Pike",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000059_202303",
+    "metadata": {
+      "property_id": "prop_P000059",
+      "landlord_id": "LL0018",
+      "month": "2023-03",
+      "payment_type": "rent",
+      "rent_amount": "299400",
+      "days_late": "9",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 304400,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_9669a58ab9854927",
+          "amount": 304400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_5586c2dfe3064b3f",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_fe513c4766f04670",
+    "created": 1677657600,
+    "description": "Monthly rent + late fee - 82148 Taylor Vista Apt. 233",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000067_202303",
+    "metadata": {
+      "property_id": "prop_P000067",
+      "landlord_id": "LL0021",
+      "month": "2023-03",
+      "payment_type": "rent",
+      "rent_amount": "284000",
+      "days_late": "13",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 289000,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_4c4a123bdc6b46b7",
+          "amount": 289000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_ba76d7027abe4a7b",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_2ea48856da8448ed",
+    "created": 1680332400,
+    "description": "Monthly rent + late fee - 10249 Gonzales Mountain Suite 648",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000015_202304",
+    "metadata": {
+      "property_id": "prop_P000015",
+      "landlord_id": "LL0005",
+      "month": "2023-04",
+      "payment_type": "rent",
+      "rent_amount": "297900",
+      "days_late": "8",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 302900,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_5123310a2b344c3f",
+          "amount": 302900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_62ed2854f3924387",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_c6cfe5c1b40741aa",
+    "created": 1680332400,
+    "description": "Monthly rent + late fee - 451 Mark Hill",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000031_202304",
+    "metadata": {
+      "property_id": "prop_P000031",
+      "landlord_id": "LL0010",
+      "month": "2023-04",
+      "payment_type": "rent",
+      "rent_amount": "330300",
+      "days_late": "6",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 335300,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_a0bf4c1392d34d54",
+          "amount": 335300,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_9474251a243941ed",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_3070ad95775043a8",
+    "created": 1680332400,
+    "description": "Monthly rent + late fee - 256 Patricia Radial Suite 278",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000081_202304",
+    "metadata": {
+      "property_id": "prop_P000081",
+      "landlord_id": "LL0026",
+      "month": "2023-04",
+      "payment_type": "rent",
+      "rent_amount": "207800",
+      "days_late": "14",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 212800,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_927cf74c7a144fa7",
+          "amount": 212800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_62d4e2fb20724f5b",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_b123bc695e914f69",
+    "created": 1680332400,
+    "description": "Monthly rent + late fee - 177 Natalie Gardens",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000104_202304",
+    "metadata": {
+      "property_id": "prop_P000104",
+      "landlord_id": "LL0032",
+      "month": "2023-04",
+      "payment_type": "rent",
+      "rent_amount": "174500",
+      "days_late": "10",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 179500,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_22e756ec15af4dcb",
+          "amount": 179500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_86d98bd8f112417e",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_6d502facd55549fb",
+    "created": 1682924400,
+    "description": "Monthly rent + late fee - 193 Lyons Trafficway Suite 299",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000012_202305",
+    "metadata": {
+      "property_id": "prop_P000012",
+      "landlord_id": "LL0003",
+      "month": "2023-05",
+      "payment_type": "rent",
+      "rent_amount": "247700",
+      "days_late": "2",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 252700,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_a9423f9862534ab5",
+          "amount": 252700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_b38cdd256d08410f",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_1de4dc009280428a",
+    "created": 1682924400,
+    "description": "Monthly rent + late fee - 474 Yvonne Walk Suite 136",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000018_202305",
+    "metadata": {
+      "property_id": "prop_P000018",
+      "landlord_id": "LL0007",
+      "month": "2023-05",
+      "payment_type": "rent",
+      "rent_amount": "264700",
+      "days_late": "4",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 269700,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_3cf6cb7472124b9c",
+          "amount": 269700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_a5a17fe374df4abe",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_3e4f3e6a006147bf",
+    "created": 1682924400,
+    "description": "Monthly rent + late fee - 8686 John Key Apt. 431",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000042_202305",
+    "metadata": {
+      "property_id": "prop_P000042",
+      "landlord_id": "LL0013",
+      "month": "2023-05",
+      "payment_type": "rent",
+      "rent_amount": "184900",
+      "days_late": "8",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 189900,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_2e8b1c3647794ed4",
+          "amount": 189900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_82a8625008944f8d",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_fdd30e4f339b48ac",
+    "created": 1682924400,
+    "description": "Monthly rent + late fee - 56915 Morris Estate Suite 752",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000063_202305",
+    "metadata": {
+      "property_id": "prop_P000063",
+      "landlord_id": "LL0019",
+      "month": "2023-05",
+      "payment_type": "rent",
+      "rent_amount": "200800",
+      "days_late": "13",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 205800,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_9a3aae9ae1dd4f42",
+          "amount": 205800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_55493d3889d949fb",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_fe513c4766f04670",
+    "created": 1682924400,
+    "description": "Monthly rent + late fee - 82148 Taylor Vista Apt. 233",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000067_202305",
+    "metadata": {
+      "property_id": "prop_P000067",
+      "landlord_id": "LL0021",
+      "month": "2023-05",
+      "payment_type": "rent",
+      "rent_amount": "284000",
+      "days_late": "1",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 289000,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_460a2c59b93a4596",
+          "amount": 289000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_e815378a17e441da",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_d5defe06b5fe481e",
+    "created": 1682924400,
+    "description": "Monthly rent + late fee - 82005 Lin Mountain",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000091_202305",
+    "metadata": {
+      "property_id": "prop_P000091",
+      "landlord_id": "LL0029",
+      "month": "2023-05",
+      "payment_type": "rent",
+      "rent_amount": "138100",
+      "days_late": "7",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 143100,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_39fb7035087a40d7",
+          "amount": 143100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_295aea6994d04e19",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_459f33fc67104e8e",
+    "created": 1682924400,
+    "description": "Monthly rent + late fee - 6184 Ferguson Village",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000116_202305",
+    "metadata": {
+      "property_id": "prop_P000116",
+      "landlord_id": "LL0038",
+      "month": "2023-05",
+      "payment_type": "rent",
+      "rent_amount": "230000",
+      "days_late": "14",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 235000,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_47b4be87cd0648a0",
+          "amount": 235000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_be8a9e2e753a4b80",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_9abf3fea3f314124",
+    "created": 1685602800,
+    "description": "Monthly rent + late fee - 340 Smith Valley Apt. 561",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000009_202306",
+    "metadata": {
+      "property_id": "prop_P000009",
+      "landlord_id": "LL0002",
+      "month": "2023-06",
+      "payment_type": "rent",
+      "rent_amount": "318800",
+      "days_late": "5",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 323800,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_644ee30f68ac4468",
+          "amount": 323800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_1ef59fc607914cc6",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_c0e4cc813e6843d2",
+    "created": 1685602800,
+    "description": "Monthly rent + late fee - 5339 Hall Trail Suite 057",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000017_202306",
+    "metadata": {
+      "property_id": "prop_P000017",
+      "landlord_id": "LL0006",
+      "month": "2023-06",
+      "payment_type": "rent",
+      "rent_amount": "279900",
+      "days_late": "14",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 284900,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_9d0157b293a94e68",
+          "amount": 284900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_8f8b1d47196d47a8",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_05da282452044b56",
+    "created": 1685602800,
+    "description": "Monthly rent + late fee - 2353 Hudson Gardens Suite 854",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000044_202306",
+    "metadata": {
+      "property_id": "prop_P000044",
+      "landlord_id": "LL0014",
+      "month": "2023-06",
+      "payment_type": "rent",
+      "rent_amount": "420200",
+      "days_late": "13",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 425200,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_b4fe6c5a92244375",
+          "amount": 425200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_af809b23420f4ad5",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_dae96dfd6b73412a",
+    "created": 1685602800,
+    "description": "Monthly rent + late fee - 866 Miller Plain Apt. 414",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000057_202306",
+    "metadata": {
+      "property_id": "prop_P000057",
+      "landlord_id": "LL0017",
+      "month": "2023-06",
+      "payment_type": "rent",
+      "rent_amount": "343900",
+      "days_late": "13",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 348900,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_710691310bac4a7e",
+          "amount": 348900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_7f2d855c784a4ee0",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_aea31b6b9b5546d5",
+    "created": 1688194800,
+    "description": "Monthly rent + late fee - 050 Taylor Via Suite 887",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000052_202307",
+    "metadata": {
+      "property_id": "prop_P000052",
+      "landlord_id": "LL0016",
+      "month": "2023-07",
+      "payment_type": "rent",
+      "rent_amount": "344500",
+      "days_late": "13",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 349500,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_cc0589ba5543403b",
+          "amount": 349500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_57a27598deba4170",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_3c8cc6d89c994696",
+    "created": 1688194800,
+    "description": "Monthly rent + late fee - 28801 Ellen Trail",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000078_202307",
+    "metadata": {
+      "property_id": "prop_P000078",
+      "landlord_id": "LL0025",
+      "month": "2023-07",
+      "payment_type": "rent",
+      "rent_amount": "209800",
+      "days_late": "2",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 214800,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_c5126cf9903d4042",
+          "amount": 214800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_fcffd8cc426442df",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_d4871bc411404b86",
+    "created": 1690873200,
+    "description": "Monthly rent + late fee - 416 Duran Harbors Apt. 216",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000036_202308",
+    "metadata": {
+      "property_id": "prop_P000036",
+      "landlord_id": "LL0011",
+      "month": "2023-08",
+      "payment_type": "rent",
+      "rent_amount": "293800",
+      "days_late": "3",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 298800,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_0b3768382aaf447d",
+          "amount": 298800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_f23f20cf0ff74837",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_dae96dfd6b73412a",
+    "created": 1690873200,
+    "description": "Monthly rent + late fee - 866 Miller Plain Apt. 414",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000057_202308",
+    "metadata": {
+      "property_id": "prop_P000057",
+      "landlord_id": "LL0017",
+      "month": "2023-08",
+      "payment_type": "rent",
+      "rent_amount": "343900",
+      "days_late": "7",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 348900,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_0adc95369dc24877",
+          "amount": 348900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_892af1b671074006",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_fe513c4766f04670",
+    "created": 1690873200,
+    "description": "Monthly rent + late fee - 82148 Taylor Vista Apt. 233",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000067_202308",
+    "metadata": {
+      "property_id": "prop_P000067",
+      "landlord_id": "LL0021",
+      "month": "2023-08",
+      "payment_type": "rent",
+      "rent_amount": "284000",
+      "days_late": "7",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 289000,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_81ac1510e6fb46c4",
+          "amount": 289000,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_16a9c722b9004398",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_1df80720522e4958",
+    "created": 1690873200,
+    "description": "Monthly rent + late fee - 28160 Ramirez Greens",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000076_202308",
+    "metadata": {
+      "property_id": "prop_P000076",
+      "landlord_id": "LL0025",
+      "month": "2023-08",
+      "payment_type": "rent",
+      "rent_amount": "191700",
+      "days_late": "4",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 196700,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_64e54ff1b0a440a0",
+          "amount": 196700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_a4f306f91e8746ce",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_806e7e2285014036",
+    "created": 1690873200,
+    "description": "Monthly rent + late fee - 68222 Christina Glen Apt. 129",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000079_202308",
+    "metadata": {
+      "property_id": "prop_P000079",
+      "landlord_id": "LL0026",
+      "month": "2023-08",
+      "payment_type": "rent",
+      "rent_amount": "281100",
+      "days_late": "8",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 286100,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_44f856569b4a42f1",
+          "amount": 286100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_f8e58e66f50942b6",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_912dbde2f94d4639",
+    "created": 1690873200,
+    "description": "Monthly rent + late fee - 367 Joan Bypass",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000093_202308",
+    "metadata": {
+      "property_id": "prop_P000093",
+      "landlord_id": "LL0030",
+      "month": "2023-08",
+      "payment_type": "rent",
+      "rent_amount": "369200",
+      "days_late": "7",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 374200,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_93fc9253b11743e1",
+          "amount": 374200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_e6405d7ffd2d4402",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_fbf7429ad16f4716",
+    "created": 1690873200,
+    "description": "Monthly rent + late fee - 79291 Danny Ranch Apt. 136",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000117_202308",
+    "metadata": {
+      "property_id": "prop_P000117",
+      "landlord_id": "LL0038",
+      "month": "2023-08",
+      "payment_type": "rent",
+      "rent_amount": "174200",
+      "days_late": "10",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 179200,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_cc3421904bef4055",
+          "amount": 179200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_43fca348401249fd",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_0452823e104243c5",
+    "created": 1693551600,
+    "description": "Monthly rent + late fee - 06163 Mary Green",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000065_202309",
+    "metadata": {
+      "property_id": "prop_P000065",
+      "landlord_id": "LL0021",
+      "month": "2023-09",
+      "payment_type": "rent",
+      "rent_amount": "213500",
+      "days_late": "12",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 218500,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_c606b513ab6649cf",
+          "amount": 218500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_81d451d47f5148aa",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_a0fd089163bd47e4",
+    "created": 1693551600,
+    "description": "Monthly rent + late fee - 57991 Nicholas Curve Apt. 038",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000083_202309",
+    "metadata": {
+      "property_id": "prop_P000083",
+      "landlord_id": "LL0027",
+      "month": "2023-09",
+      "payment_type": "rent",
+      "rent_amount": "357700",
+      "days_late": "8",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 362700,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_b1d027d028be48a6",
+          "amount": 362700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_da11332182e8476e",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_1b2561069610415b",
+    "created": 1693551600,
+    "description": "Monthly rent + late fee - 0155 Tucker Pine Apt. 788",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000123_202309",
+    "metadata": {
+      "property_id": "prop_P000123",
+      "landlord_id": "LL0039",
+      "month": "2023-09",
+      "payment_type": "rent",
+      "rent_amount": "267700",
+      "days_late": "15",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 272700,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_f29fbde8ab32461f",
+          "amount": 272700,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_f7f55c70ceee4924",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_b557648a5f1a44c2",
+    "created": 1696143600,
+    "description": "Monthly rent + late fee - 3421 Brennan Walks Suite 337",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000008_202310",
+    "metadata": {
+      "property_id": "prop_P000008",
+      "landlord_id": "LL0002",
+      "month": "2023-10",
+      "payment_type": "rent",
+      "rent_amount": "426100",
+      "days_late": "1",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 431100,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_64a460129c014eaa",
+          "amount": 431100,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_c3cb44de7b1c45af",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_67790034db3c4874",
+    "created": 1696143600,
+    "description": "Monthly rent + late fee - 4348 Sims Harbor Suite 143",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000010_202310",
+    "metadata": {
+      "property_id": "prop_P000010",
+      "landlord_id": "LL0003",
+      "month": "2023-10",
+      "payment_type": "rent",
+      "rent_amount": "284200",
+      "days_late": "2",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 289200,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_8ef40d967c184c4f",
+          "amount": 289200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_d0ed6bd848c645f0",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_a33e7ba1b9f64b58",
+    "created": 1696143600,
+    "description": "Monthly rent + late fee - 17127 Hicks Groves",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000016_202310",
+    "metadata": {
+      "property_id": "prop_P000016",
+      "landlord_id": "LL0006",
+      "month": "2023-10",
+      "payment_type": "rent",
+      "rent_amount": "296200",
+      "days_late": "10",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 301200,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_2ec29238d80a4d8c",
+          "amount": 301200,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_e019fb56832e450f",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_b123bc695e914f69",
+    "created": 1696143600,
+    "description": "Monthly rent + late fee - 177 Natalie Gardens",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000104_202310",
+    "metadata": {
+      "property_id": "prop_P000104",
+      "landlord_id": "LL0032",
+      "month": "2023-10",
+      "payment_type": "rent",
+      "rent_amount": "174500",
+      "days_late": "7",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 179500,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_48b25ba8f2ee4252",
+          "amount": 179500,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_6a9175f27f254950",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_9b90691b1bba474d",
+    "created": 1696143600,
+    "description": "Monthly rent + late fee - 6504 Thompson Cliff",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000115_202310",
+    "metadata": {
+      "property_id": "prop_P000115",
+      "landlord_id": "LL0037",
+      "month": "2023-10",
+      "payment_type": "rent",
+      "rent_amount": "155800",
+      "days_late": "10",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 160800,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_46836e9330c44759",
+          "amount": 160800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_7ea6f903d1bc4543",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_cc1388d17bd34f42",
+    "created": 1696143600,
+    "description": "Monthly rent + late fee - 552 West Estates",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000124_202310",
+    "metadata": {
+      "property_id": "prop_P000124",
+      "landlord_id": "LL0040",
+      "month": "2023-10",
+      "payment_type": "rent",
+      "rent_amount": "435400",
+      "days_late": "6",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 440400,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_52b6a72be87f4ed1",
+          "amount": 440400,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_84d32e37becc4e21",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_9b90691b1bba474d",
+    "created": 1698822000,
+    "description": "Monthly rent + late fee - 6504 Thompson Cliff",
+    "payment_method_types": [
+      "ach_debit"
+    ],
+    "transfer_group": "rent_prop_P000115_202311",
+    "metadata": {
+      "property_id": "prop_P000115",
+      "landlord_id": "LL0037",
+      "month": "2023-11",
+      "payment_type": "rent",
+      "rent_amount": "155800",
+      "days_late": "8",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 160800,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_4a0571fd978841dd",
+          "amount": 160800,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "pi_RENT_26321ba21b4345da",
+    "object": "payment_intent",
+    "currency": "usd",
+    "customer": "cus_TENANT_7b66dc575195412c",
+    "created": 1701417600,
+    "description": "Monthly rent + late fee - 3009 Barker Drives",
+    "payment_method_types": [
+      "card"
+    ],
+    "transfer_group": "rent_prop_P000094_202312",
+    "metadata": {
+      "property_id": "prop_P000094",
+      "landlord_id": "LL0030",
+      "month": "2023-12",
+      "payment_type": "rent",
+      "rent_amount": "369900",
+      "days_late": "9",
+      "late_fee": "5000",
+      "late_fee_reason": "payment_after_due_date"
+    },
+    "amount": 374900,
+    "status": "succeeded",
+    "charges": {
+      "data": [
+        {
+          "id": "ch_03476a5978b24754",
+          "amount": 374900,
+          "currency": "usd",
+          "paid": true,
+          "refunded": false,
+          "disputed": false,
+          "failure_code": null,
+          "failure_message": null
+        }
+      ]
+    }
+  }
+]

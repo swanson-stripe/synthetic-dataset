@@ -1,0 +1,19 @@
+{
+  "total_instructors": 72,
+  "total_students": 500,
+  "total_courses": 218, 
+  "total_enrollments": 500,
+  "sample_note": "Sample dataset from 73,656 original students, 12,511 original enrollments",
+  "data_period": "24 months (Jan 2022 - Dec 2023)",
+  "revenue_model": {
+    "instructor_share": 0.70,
+    "platform_share": 0.30
+  },
+  "business_metrics": {
+    "average_course_price": 12500,
+    "completion_rate": 0.73,
+    "instructor_retention": 0.85,
+    "student_satisfaction": 4.2
+  },
+  "generated_at": "2024-12-19T10:00:00Z"
+}

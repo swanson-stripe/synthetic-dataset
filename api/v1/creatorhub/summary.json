@@ -1,0 +1,36 @@
+{
+  "total_creators": 1688,
+  "total_fans": 8237,
+  "active_subscriptions": 19379,
+  "total_content_sales": 15857,
+  "total_tips": 6455,
+  "data_period": "24 months creator economy lifecycle",
+  "revenue_metrics": {
+    "total_gmv": 3308531.99,
+    "platform_revenue": 664500.95,
+    "take_rate": 0.201,
+    "mrr": 179386.21,
+    "arr": 2152634.52
+  },
+  "revenue_breakdown": {
+    "subscriptions": {"amount": 179386.21, "percentage": 5.4},
+    "content_sales": {"amount": 3040071.78, "percentage": 91.9},
+    "tips": {"amount": 89074.00, "percentage": 2.7}
+  },
+  "creator_distribution": {
+    "by_tier": {
+      "starter": 777,
+      "growth": 668,
+      "established": 220,
+      "premium": 23
+    },
+    "by_category": {
+      "education": 370,
+      "tech": 346,
+      "entertainment": 342,
+      "business": 309,
+      "lifestyle": 321
+    }
+  },
+  "generated_at": "2024-12-19T10:00:00Z"
+}

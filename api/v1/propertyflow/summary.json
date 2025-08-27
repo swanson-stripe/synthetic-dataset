@@ -1,0 +1,25 @@
+{
+  "total_properties": 126,
+  "total_landlords": 40,
+  "total_rent_payments": 1988,
+  "data_period": "24 months property management lifecycle",
+  "business_metrics": {
+    "occupancy_rate": 1.0,
+    "collection_rate": 0.983,
+    "late_payment_rate": 0.042,
+    "nsf_rate": 0.017
+  },
+  "financial_summary": {
+    "total_rent_collected": 579549400,
+    "average_rent_amount": 294396,
+    "management_fee_revenue": 46363952,
+    "total_security_deposits": 37093900
+  },
+  "property_distribution": {
+    "apartment": 46,
+    "house": 44,
+    "condo": 20,
+    "townhouse": 16
+  },
+  "generated_at": "2024-12-19T10:00:00Z"
+}

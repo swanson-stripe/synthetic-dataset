@@ -1,0 +1,6318 @@
+[
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000001",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 292800
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1641024000,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "465341213",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000001",
+        "tenant_id": "cus_TENANT_d1aa5de1adf54529",
+        "landlord_id": "LL0001",
+        "deposit_date": "2022-01-01T00:00:00.210983",
+        "deposit_amount": "292800"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000002",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 257800
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1641024000,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "810026086",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000002",
+        "tenant_id": "cus_TENANT_1c1bd07205174c43",
+        "landlord_id": "LL0001",
+        "deposit_date": "2022-01-01T00:00:00.003245",
+        "deposit_amount": "257800"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000003",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 152600
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1641024000,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "275452091",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000003",
+        "tenant_id": "cus_TENANT_74b68e72ba1b4d94",
+        "landlord_id": "LL0001",
+        "deposit_date": "2022-01-01T00:00:00.649878",
+        "deposit_amount": "152600"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000004",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 348100
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1641024000,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "592688426",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000004",
+        "tenant_id": "cus_TENANT_a40b52dc4874421b",
+        "landlord_id": "LL0001",
+        "deposit_date": "2022-01-01T00:00:00.861673",
+        "deposit_amount": "348100"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000005",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 349900
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1641024000,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "950488739",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000005",
+        "tenant_id": "cus_TENANT_e426625776f84cad",
+        "landlord_id": "LL0001",
+        "deposit_date": "2022-01-01T00:00:00.968709",
+        "deposit_amount": "349900"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000006",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 227800
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1643684186,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "120912992",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000006",
+        "tenant_id": "cus_TENANT_cc91e4f956ee4244",
+        "landlord_id": "LL0002",
+        "deposit_date": "2022-01-31T18:56:26",
+        "deposit_amount": "227800"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000007",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1642753288,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "679064766",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000007",
+        "tenant_id": "cus_TENANT_fa69f1f5313243ce",
+        "landlord_id": "LL0002",
+        "deposit_date": "2022-01-21T00:21:28",
+        "deposit_amount": "245900"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_215dc8f6065a4e18",
+      "object": "treasury.outbound_transfer",
+      "amount": 200043,
+      "currency": "usd",
+      "created": 1704788488,
+      "description": "Security deposit refund - 0164 Adam Trail Apt. 427",
+      "destination_payment_method": "cus_TENANT_fa69f1f5313243ce",
+      "financial_account": "treasury_ESCROW_prop_P000007",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000007",
+        "tenant_id": "cus_TENANT_fa69f1f5313243ce",
+        "move_out_date": "2024-01-09T00:21:28",
+        "original_deposit": "245900",
+        "refund_amount": "200043",
+        "deduction_amount": "45857",
+        "deduction_reason": "missing_items"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000008",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1643566624,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "133729406",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000008",
+        "tenant_id": "cus_TENANT_b557648a5f1a44c2",
+        "landlord_id": "LL0002",
+        "deposit_date": "2022-01-30T10:17:04",
+        "deposit_amount": "426100"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_9a8b33cbc8dd4d23",
+      "object": "treasury.outbound_transfer",
+      "amount": 426100,
+      "currency": "usd",
+      "created": 1678213024,
+      "description": "Security deposit refund - 3421 Brennan Walks Suite 337",
+      "destination_payment_method": "cus_TENANT_b557648a5f1a44c2",
+      "financial_account": "treasury_ESCROW_prop_P000008",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000008",
+        "tenant_id": "cus_TENANT_b557648a5f1a44c2",
+        "move_out_date": "2023-03-07T10:17:04",
+        "original_deposit": "426100",
+        "refund_amount": "426100",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000009",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 318800
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1642878552,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "165082363",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000009",
+        "tenant_id": "cus_TENANT_9abf3fea3f314124",
+        "landlord_id": "LL0002",
+        "deposit_date": "2022-01-22T11:09:12",
+        "deposit_amount": "318800"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000010",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 284200
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1642864642,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "436730606",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000010",
+        "tenant_id": "cus_TENANT_67790034db3c4874",
+        "landlord_id": "LL0003",
+        "deposit_date": "2022-01-22T07:17:22",
+        "deposit_amount": "284200"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000011",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 385900
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1642302275,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "379995032",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000011",
+        "tenant_id": "cus_TENANT_05902530557b4dd9",
+        "landlord_id": "LL0003",
+        "deposit_date": "2022-01-15T19:04:35",
+        "deposit_amount": "385900"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000012",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 247700
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1645268306,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "496776692",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000012",
+        "tenant_id": "cus_TENANT_6d502facd55549fb",
+        "landlord_id": "LL0003",
+        "deposit_date": "2022-02-19T02:58:26",
+        "deposit_amount": "247700"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000013",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 402500
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1643750416,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "392431670",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000013",
+        "tenant_id": "cus_TENANT_b4c7ec56013e4770",
+        "landlord_id": "LL0003",
+        "deposit_date": "2022-02-01T13:20:16",
+        "deposit_amount": "402500"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000014",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 388500
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1642017643,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "126614158",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000014",
+        "tenant_id": "cus_TENANT_96461f23ec5e4c5f",
+        "landlord_id": "LL0004",
+        "deposit_date": "2022-01-12T12:00:43",
+        "deposit_amount": "388500"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000015",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 297900
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1649270189,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "769108025",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000015",
+        "tenant_id": "cus_TENANT_2ea48856da8448ed",
+        "landlord_id": "LL0005",
+        "deposit_date": "2022-04-06T11:36:29",
+        "deposit_amount": "297900"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000016",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 296200
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1650280037,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "871318048",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000016",
+        "tenant_id": "cus_TENANT_a33e7ba1b9f64b58",
+        "landlord_id": "LL0006",
+        "deposit_date": "2022-04-18T04:07:17",
+        "deposit_amount": "296200"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000017",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 279900
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1642171909,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "960514523",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000017",
+        "tenant_id": "cus_TENANT_c0e4cc813e6843d2",
+        "landlord_id": "LL0006",
+        "deposit_date": "2022-01-14T06:51:49",
+        "deposit_amount": "279900"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000018",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 264700
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1656281422,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "567975319",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000018",
+        "tenant_id": "cus_TENANT_1de4dc009280428a",
+        "landlord_id": "LL0007",
+        "deposit_date": "2022-06-26T15:10:22",
+        "deposit_amount": "264700"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000019",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 285600
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1651414671,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "327268503",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000019",
+        "tenant_id": "cus_TENANT_af2ff29e1b1c485f",
+        "landlord_id": "LL0007",
+        "deposit_date": "2022-05-01T07:17:51",
+        "deposit_amount": "285600"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000020",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1652524205,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "314061901",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000020",
+        "tenant_id": "cus_TENANT_54d86d5dcc024ace",
+        "landlord_id": "LL0007",
+        "deposit_date": "2022-05-14T03:30:05",
+        "deposit_amount": "275200"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_e53ae57c23e741f1",
+      "object": "treasury.outbound_transfer",
+      "amount": 237112,
+      "currency": "usd",
+      "created": 1711535405,
+      "description": "Security deposit refund - 317 Banks Crescent Apt. 004",
+      "destination_payment_method": "cus_TENANT_54d86d5dcc024ace",
+      "financial_account": "treasury_ESCROW_prop_P000020",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000020",
+        "tenant_id": "cus_TENANT_54d86d5dcc024ace",
+        "move_out_date": "2024-03-27T03:30:05",
+        "original_deposit": "275200",
+        "refund_amount": "237112",
+        "deduction_amount": "38088",
+        "deduction_reason": "missing_items"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000021",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 411000
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1646455983,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "181600593",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000021",
+        "tenant_id": "cus_TENANT_6e0682cf3f024123",
+        "landlord_id": "LL0007",
+        "deposit_date": "2022-03-04T20:53:03",
+        "deposit_amount": "411000"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000022",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 490500
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1644655206,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "455184454",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000022",
+        "tenant_id": "cus_TENANT_cea2e95de6fc40d8",
+        "landlord_id": "LL0008",
+        "deposit_date": "2022-02-12T00:40:06",
+        "deposit_amount": "490500"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000023",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 305500
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1642693752,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "487493096",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000023",
+        "tenant_id": "cus_TENANT_2b8ac5f498ad4606",
+        "landlord_id": "LL0008",
+        "deposit_date": "2022-01-20T07:49:12",
+        "deposit_amount": "305500"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000024",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 338700
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1648741634,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "612957813",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000024",
+        "tenant_id": "cus_TENANT_ea489247427d417c",
+        "landlord_id": "LL0008",
+        "deposit_date": "2022-03-31T08:47:14",
+        "deposit_amount": "338700"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000025",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 321400
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1645979648,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "427899537",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000025",
+        "tenant_id": "cus_TENANT_42cda02bbdd54afd",
+        "landlord_id": "LL0008",
+        "deposit_date": "2022-02-27T08:34:08",
+        "deposit_amount": "321400"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000026",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 234300
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1652042244,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "588365604",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000026",
+        "tenant_id": "cus_TENANT_4d03d7e99aad42c9",
+        "landlord_id": "LL0009",
+        "deposit_date": "2022-05-08T13:37:24",
+        "deposit_amount": "234300"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000027",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 167400
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1648990590,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "409268943",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000027",
+        "tenant_id": "cus_TENANT_4549fad6f58a41d2",
+        "landlord_id": "LL0009",
+        "deposit_date": "2022-04-03T05:56:30",
+        "deposit_amount": "167400"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000028",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 229700
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1648470759,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "869446962",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000028",
+        "tenant_id": "cus_TENANT_139b0a066f0f4881",
+        "landlord_id": "LL0009",
+        "deposit_date": "2022-03-28T05:32:39",
+        "deposit_amount": "229700"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000029",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 320100
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1645112552,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "879591310",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000029",
+        "tenant_id": "cus_TENANT_19c7b9d7c4464474",
+        "landlord_id": "LL0009",
+        "deposit_date": "2022-02-17T07:42:32",
+        "deposit_amount": "320100"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000030",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1655469178,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "639331014",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000030",
+        "tenant_id": "cus_TENANT_514117d738b44b72",
+        "landlord_id": "LL0010",
+        "deposit_date": "2022-06-17T05:32:58",
+        "deposit_amount": "304500"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_58e4ed3b7ea048bb",
+      "object": "treasury.outbound_transfer",
+      "amount": 304500,
+      "currency": "usd",
+      "created": 1701610378,
+      "description": "Security deposit refund - 221 Johnson Flats Apt. 305",
+      "destination_payment_method": "cus_TENANT_514117d738b44b72",
+      "financial_account": "treasury_ESCROW_prop_P000030",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000030",
+        "tenant_id": "cus_TENANT_514117d738b44b72",
+        "move_out_date": "2023-12-03T05:32:58",
+        "original_deposit": "304500",
+        "refund_amount": "304500",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000031",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1648939090,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "871716956",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000031",
+        "tenant_id": "cus_TENANT_c6cfe5c1b40741aa",
+        "landlord_id": "LL0010",
+        "deposit_date": "2022-04-02T15:38:10",
+        "deposit_amount": "330300"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_d26dbf8700684053",
+      "object": "treasury.outbound_transfer",
+      "amount": 330300,
+      "currency": "usd",
+      "created": 1701992290,
+      "description": "Security deposit refund - 451 Mark Hill",
+      "destination_payment_method": "cus_TENANT_c6cfe5c1b40741aa",
+      "financial_account": "treasury_ESCROW_prop_P000031",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000031",
+        "tenant_id": "cus_TENANT_c6cfe5c1b40741aa",
+        "move_out_date": "2023-12-07T15:38:10",
+        "original_deposit": "330300",
+        "refund_amount": "330300",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000032",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 148000
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1652678058,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "415001254",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000032",
+        "tenant_id": "cus_TENANT_cb133e8108bf4818",
+        "landlord_id": "LL0010",
+        "deposit_date": "2022-05-15T22:14:18",
+        "deposit_amount": "148000"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000033",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 280000
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1645353627,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "963968184",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000033",
+        "tenant_id": "cus_TENANT_538a3ee844004bf3",
+        "landlord_id": "LL0010",
+        "deposit_date": "2022-02-20T02:40:27",
+        "deposit_amount": "280000"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000034",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 343800
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1641976056,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "717199615",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000034",
+        "tenant_id": "cus_TENANT_54e617cfea114225",
+        "landlord_id": "LL0010",
+        "deposit_date": "2022-01-12T00:27:36",
+        "deposit_amount": "343800"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000035",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 267200
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1660155876,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "886365312",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000035",
+        "tenant_id": "cus_TENANT_4331f5d18c6e46f8",
+        "landlord_id": "LL0011",
+        "deposit_date": "2022-08-10T11:24:36",
+        "deposit_amount": "267200"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000036",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 293800
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1658123567,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "180852074",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000036",
+        "tenant_id": "cus_TENANT_d4871bc411404b86",
+        "landlord_id": "LL0011",
+        "deposit_date": "2022-07-17T22:52:47",
+        "deposit_amount": "293800"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000037",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 437000
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1645657279,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "126870011",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000037",
+        "tenant_id": "cus_TENANT_8586ec9c4bed444e",
+        "landlord_id": "LL0011",
+        "deposit_date": "2022-02-23T15:01:19",
+        "deposit_amount": "437000"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000038",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 294300
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1643675787,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "517305280",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000038",
+        "tenant_id": "cus_TENANT_93fd4c26914a42f8",
+        "landlord_id": "LL0011",
+        "deposit_date": "2022-01-31T16:36:27",
+        "deposit_amount": "294300"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000039",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 484300
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1660285118,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "489431174",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000039",
+        "tenant_id": "cus_TENANT_689ee067caf44e69",
+        "landlord_id": "LL0011",
+        "deposit_date": "2022-08-11T23:18:38",
+        "deposit_amount": "484300"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000040",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1645505824,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "258435089",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000040",
+        "tenant_id": "cus_TENANT_636b6d426ed44f29",
+        "landlord_id": "LL0012",
+        "deposit_date": "2022-02-21T20:57:04",
+        "deposit_amount": "442800"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_b1604c240a4348bc",
+      "object": "treasury.outbound_transfer",
+      "amount": 399871,
+      "currency": "usd",
+      "created": 1703393824,
+      "description": "Security deposit refund - 8516 Jack Dam Suite 530",
+      "destination_payment_method": "cus_TENANT_636b6d426ed44f29",
+      "financial_account": "treasury_ESCROW_prop_P000040",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000040",
+        "tenant_id": "cus_TENANT_636b6d426ed44f29",
+        "move_out_date": "2023-12-23T20:57:04",
+        "original_deposit": "442800",
+        "refund_amount": "399871",
+        "deduction_amount": "42929",
+        "deduction_reason": "wall_damage"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000041",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 186400
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1641140544,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "423873102",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000041",
+        "tenant_id": "cus_TENANT_bccf5b0bfec84e10",
+        "landlord_id": "LL0013",
+        "deposit_date": "2022-01-02T08:22:24",
+        "deposit_amount": "186400"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000042",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 184900
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1645831022,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "587173220",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000042",
+        "tenant_id": "cus_TENANT_3e4f3e6a006147bf",
+        "landlord_id": "LL0013",
+        "deposit_date": "2022-02-25T15:17:02",
+        "deposit_amount": "184900"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000043",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1649770527,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "203685265",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000043",
+        "tenant_id": "cus_TENANT_59b71c99a7954302",
+        "landlord_id": "LL0014",
+        "deposit_date": "2022-04-12T06:35:27",
+        "deposit_amount": "305700"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_a6ba282365da4304",
+      "object": "treasury.outbound_transfer",
+      "amount": 305700,
+      "currency": "usd",
+      "created": 1697722527,
+      "description": "Security deposit refund - 54033 Julie Throughway Suite 393",
+      "destination_payment_method": "cus_TENANT_59b71c99a7954302",
+      "financial_account": "treasury_ESCROW_prop_P000043",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000043",
+        "tenant_id": "cus_TENANT_59b71c99a7954302",
+        "move_out_date": "2023-10-19T06:35:27",
+        "original_deposit": "305700",
+        "refund_amount": "305700",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000044",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1648359414,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "223357166",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000044",
+        "tenant_id": "cus_TENANT_05da282452044b56",
+        "landlord_id": "LL0014",
+        "deposit_date": "2022-03-26T22:36:54",
+        "deposit_amount": "420200"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_ff0c2f5966f64e1f",
+      "object": "treasury.outbound_transfer",
+      "amount": 302711,
+      "currency": "usd",
+      "created": 1705214214,
+      "description": "Security deposit refund - 2353 Hudson Gardens Suite 854",
+      "destination_payment_method": "cus_TENANT_05da282452044b56",
+      "financial_account": "treasury_ESCROW_prop_P000044",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000044",
+        "tenant_id": "cus_TENANT_05da282452044b56",
+        "move_out_date": "2024-01-13T22:36:54",
+        "original_deposit": "420200",
+        "refund_amount": "302711",
+        "deduction_amount": "117489",
+        "deduction_reason": "excessive_wear"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000045",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 414600
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1656992480,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "895609471",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000045",
+        "tenant_id": "cus_TENANT_1f675091cd63408f",
+        "landlord_id": "LL0014",
+        "deposit_date": "2022-07-04T20:41:20",
+        "deposit_amount": "414600"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000046",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 337200
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1649089307,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "751842899",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000046",
+        "tenant_id": "cus_TENANT_213a8b31d65941ce",
+        "landlord_id": "LL0014",
+        "deposit_date": "2022-04-04T09:21:47",
+        "deposit_amount": "337200"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000047",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 198600
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1661993050,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "637152602",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000047",
+        "tenant_id": "cus_TENANT_1001116313774599",
+        "landlord_id": "LL0015",
+        "deposit_date": "2022-08-31T17:44:10",
+        "deposit_amount": "198600"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000048",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1656509871,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "284547422",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000048",
+        "tenant_id": "cus_TENANT_16b759e764ef4e99",
+        "landlord_id": "LL0015",
+        "deposit_date": "2022-06-29T06:37:51",
+        "deposit_amount": "325000"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_77155743a69f4b27",
+      "object": "treasury.outbound_transfer",
+      "amount": 325000,
+      "currency": "usd",
+      "created": 1715348271,
+      "description": "Security deposit refund - 1240 Cook River",
+      "destination_payment_method": "cus_TENANT_16b759e764ef4e99",
+      "financial_account": "treasury_ESCROW_prop_P000048",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000048",
+        "tenant_id": "cus_TENANT_16b759e764ef4e99",
+        "move_out_date": "2024-05-10T06:37:51",
+        "original_deposit": "325000",
+        "refund_amount": "325000",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000049",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 328200
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1641377924,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "669732591",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000049",
+        "tenant_id": "cus_TENANT_f33c1b05dc434513",
+        "landlord_id": "LL0015",
+        "deposit_date": "2022-01-05T02:18:44",
+        "deposit_amount": "328200"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000050",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1651095590,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "447042200",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000050",
+        "tenant_id": "cus_TENANT_8fa07832be074215",
+        "landlord_id": "LL0015",
+        "deposit_date": "2022-04-27T14:39:50",
+        "deposit_amount": "303100"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_800a971b53ff487d",
+      "object": "treasury.outbound_transfer",
+      "amount": 303100,
+      "currency": "usd",
+      "created": 1710365990,
+      "description": "Security deposit refund - 889 Sean Lock",
+      "destination_payment_method": "cus_TENANT_8fa07832be074215",
+      "financial_account": "treasury_ESCROW_prop_P000050",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000050",
+        "tenant_id": "cus_TENANT_8fa07832be074215",
+        "move_out_date": "2024-03-13T14:39:50",
+        "original_deposit": "303100",
+        "refund_amount": "303100",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000051",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 372000
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1651958638,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "596832859",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000051",
+        "tenant_id": "cus_TENANT_0868a7f55f034cd8",
+        "landlord_id": "LL0015",
+        "deposit_date": "2022-05-07T14:23:58",
+        "deposit_amount": "372000"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000052",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 344500
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1642420217,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "931575232",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000052",
+        "tenant_id": "cus_TENANT_aea31b6b9b5546d5",
+        "landlord_id": "LL0016",
+        "deposit_date": "2022-01-17T03:50:17",
+        "deposit_amount": "344500"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000053",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1649990944,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "861104727",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000053",
+        "tenant_id": "cus_TENANT_bc122e8193604fab",
+        "landlord_id": "LL0016",
+        "deposit_date": "2022-04-14T19:49:04",
+        "deposit_amount": "438400"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_b24f0b3a651f4b84",
+      "object": "treasury.outbound_transfer",
+      "amount": 438400,
+      "currency": "usd",
+      "created": 1695178144,
+      "description": "Security deposit refund - 361 Kenneth Bypass Suite 451",
+      "destination_payment_method": "cus_TENANT_bc122e8193604fab",
+      "financial_account": "treasury_ESCROW_prop_P000053",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000053",
+        "tenant_id": "cus_TENANT_bc122e8193604fab",
+        "move_out_date": "2023-09-19T19:49:04",
+        "original_deposit": "438400",
+        "refund_amount": "438400",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000054",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 225400
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1653862387,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "664852025",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000054",
+        "tenant_id": "cus_TENANT_9911bfa1747046ad",
+        "landlord_id": "LL0017",
+        "deposit_date": "2022-05-29T15:13:07",
+        "deposit_amount": "225400"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000055",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 357900
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1664188932,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "147605080",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000055",
+        "tenant_id": "cus_TENANT_325c2bf118334838",
+        "landlord_id": "LL0017",
+        "deposit_date": "2022-09-26T03:42:12",
+        "deposit_amount": "357900"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000056",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 191700
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1643052998,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "653388913",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000056",
+        "tenant_id": "cus_TENANT_db164112cafb4600",
+        "landlord_id": "LL0017",
+        "deposit_date": "2022-01-24T11:36:38",
+        "deposit_amount": "191700"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000057",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1653498267,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "494435754",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000057",
+        "tenant_id": "cus_TENANT_dae96dfd6b73412a",
+        "landlord_id": "LL0017",
+        "deposit_date": "2022-05-25T10:04:27",
+        "deposit_amount": "343900"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_c788ea0b82d34b20",
+      "object": "treasury.outbound_transfer",
+      "amount": 317244,
+      "currency": "usd",
+      "created": 1707933867,
+      "description": "Security deposit refund - 866 Miller Plain Apt. 414",
+      "destination_payment_method": "cus_TENANT_dae96dfd6b73412a",
+      "financial_account": "treasury_ESCROW_prop_P000057",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000057",
+        "tenant_id": "cus_TENANT_dae96dfd6b73412a",
+        "move_out_date": "2024-02-14T10:04:27",
+        "original_deposit": "343900",
+        "refund_amount": "317244",
+        "deduction_amount": "26656",
+        "deduction_reason": "cleaning_required"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000058",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1651818283,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "760191749",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000058",
+        "tenant_id": "cus_TENANT_ab9ab6e50c664108",
+        "landlord_id": "LL0017",
+        "deposit_date": "2022-05-05T23:24:43",
+        "deposit_amount": "356300"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_de3d18f7db294081",
+      "object": "treasury.outbound_transfer",
+      "amount": 356300,
+      "currency": "usd",
+      "created": 1695450283,
+      "description": "Security deposit refund - 105 Nelson Circles Suite 917",
+      "destination_payment_method": "cus_TENANT_ab9ab6e50c664108",
+      "financial_account": "treasury_ESCROW_prop_P000058",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000058",
+        "tenant_id": "cus_TENANT_ab9ab6e50c664108",
+        "move_out_date": "2023-09-22T23:24:43",
+        "original_deposit": "356300",
+        "refund_amount": "356300",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000059",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 299400
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1647822307,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "716243819",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000059",
+        "tenant_id": "cus_TENANT_27dc7a18ef11458d",
+        "landlord_id": "LL0018",
+        "deposit_date": "2022-03-20T17:25:07",
+        "deposit_amount": "299400"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000060",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 410000
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1654844564,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "690554938",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000060",
+        "tenant_id": "cus_TENANT_8d8821a107874cce",
+        "landlord_id": "LL0019",
+        "deposit_date": "2022-06-10T00:02:44",
+        "deposit_amount": "410000"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000061",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 214500
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1654053697,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "239340792",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000061",
+        "tenant_id": "cus_TENANT_95917981fbe54595",
+        "landlord_id": "LL0019",
+        "deposit_date": "2022-05-31T20:21:37",
+        "deposit_amount": "214500"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000062",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 246600
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1645777074,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "564520346",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000062",
+        "tenant_id": "cus_TENANT_62901f9ea6994d10",
+        "landlord_id": "LL0019",
+        "deposit_date": "2022-02-25T00:17:54",
+        "deposit_amount": "246600"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000063",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 200800
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1651741667,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "639633807",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000063",
+        "tenant_id": "cus_TENANT_fdd30e4f339b48ac",
+        "landlord_id": "LL0019",
+        "deposit_date": "2022-05-05T02:07:47",
+        "deposit_amount": "200800"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000064",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 228400
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1650811967,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "269737590",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000064",
+        "tenant_id": "cus_TENANT_b34047f5bb944d46",
+        "landlord_id": "LL0020",
+        "deposit_date": "2022-04-24T07:52:47",
+        "deposit_amount": "228400"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000065",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1650620083,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "720286733",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000065",
+        "tenant_id": "cus_TENANT_0452823e104243c5",
+        "landlord_id": "LL0021",
+        "deposit_date": "2022-04-22T02:34:43",
+        "deposit_amount": "213500"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_7779a6c39a9c4b9a",
+      "object": "treasury.outbound_transfer",
+      "amount": 213500,
+      "currency": "usd",
+      "created": 1690536883,
+      "description": "Security deposit refund - 06163 Mary Green",
+      "destination_payment_method": "cus_TENANT_0452823e104243c5",
+      "financial_account": "treasury_ESCROW_prop_P000065",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000065",
+        "tenant_id": "cus_TENANT_0452823e104243c5",
+        "move_out_date": "2023-07-28T02:34:43",
+        "original_deposit": "213500",
+        "refund_amount": "213500",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000066",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1657276191,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "243811545",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000066",
+        "tenant_id": "cus_TENANT_b64e2e52a77f41bb",
+        "landlord_id": "LL0021",
+        "deposit_date": "2022-07-08T03:29:51",
+        "deposit_amount": "390800"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_61b10d72fb0c45f1",
+      "object": "treasury.outbound_transfer",
+      "amount": 390800,
+      "currency": "usd",
+      "created": 1704972591,
+      "description": "Security deposit refund - 4679 Johnson Harbor Suite 299",
+      "destination_payment_method": "cus_TENANT_b64e2e52a77f41bb",
+      "financial_account": "treasury_ESCROW_prop_P000066",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000066",
+        "tenant_id": "cus_TENANT_b64e2e52a77f41bb",
+        "move_out_date": "2024-01-11T03:29:51",
+        "original_deposit": "390800",
+        "refund_amount": "390800",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000067",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1649699586,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "698967370",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000067",
+        "tenant_id": "cus_TENANT_fe513c4766f04670",
+        "landlord_id": "LL0021",
+        "deposit_date": "2022-04-11T10:53:06",
+        "deposit_amount": "284000"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_d42995c74e804d94",
+      "object": "treasury.outbound_transfer",
+      "amount": 145537,
+      "currency": "usd",
+      "created": 1687542786,
+      "description": "Security deposit refund - 82148 Taylor Vista Apt. 233",
+      "destination_payment_method": "cus_TENANT_fe513c4766f04670",
+      "financial_account": "treasury_ESCROW_prop_P000067",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000067",
+        "tenant_id": "cus_TENANT_fe513c4766f04670",
+        "move_out_date": "2023-06-23T10:53:06",
+        "original_deposit": "284000",
+        "refund_amount": "145537",
+        "deduction_amount": "138463",
+        "deduction_reason": "missing_items"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000068",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 428300
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1663086287,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "823494111",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000068",
+        "tenant_id": "cus_TENANT_f76f8cbe1660476e",
+        "landlord_id": "LL0022",
+        "deposit_date": "2022-09-13T09:24:47",
+        "deposit_amount": "428300"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000069",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 306000
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1654750599,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "304853117",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000069",
+        "tenant_id": "cus_TENANT_149aa8193cad4997",
+        "landlord_id": "LL0022",
+        "deposit_date": "2022-06-08T21:56:39",
+        "deposit_amount": "306000"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000070",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 182000
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1645350199,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "686556403",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000070",
+        "tenant_id": "cus_TENANT_b42aa8cd01a649b8",
+        "landlord_id": "LL0022",
+        "deposit_date": "2022-02-20T01:43:19",
+        "deposit_amount": "182000"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000071",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 258200
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1653779599,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "409011489",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000071",
+        "tenant_id": "cus_TENANT_9e812c34c1bf42de",
+        "landlord_id": "LL0022",
+        "deposit_date": "2022-05-28T16:13:19",
+        "deposit_amount": "258200"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000072",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1644729446,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "761078179",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000072",
+        "tenant_id": "cus_TENANT_4c9592214bbb4661",
+        "landlord_id": "LL0022",
+        "deposit_date": "2022-02-12T21:17:26",
+        "deposit_amount": "335500"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_9c06585a230c4436",
+      "object": "treasury.outbound_transfer",
+      "amount": 191291,
+      "currency": "usd",
+      "created": 1686802646,
+      "description": "Security deposit refund - 2304 Stanley Shore Suite 992",
+      "destination_payment_method": "cus_TENANT_4c9592214bbb4661",
+      "financial_account": "treasury_ESCROW_prop_P000072",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000072",
+        "tenant_id": "cus_TENANT_4c9592214bbb4661",
+        "move_out_date": "2023-06-14T21:17:26",
+        "original_deposit": "335500",
+        "refund_amount": "191291",
+        "deduction_amount": "144209",
+        "deduction_reason": "wall_damage"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000073",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 236300
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1662609278,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "287974375",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000073",
+        "tenant_id": "cus_TENANT_b0019074027142fe",
+        "landlord_id": "LL0023",
+        "deposit_date": "2022-09-07T20:54:38",
+        "deposit_amount": "236300"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000074",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 163900
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1658816474,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "416779880",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000074",
+        "tenant_id": "cus_TENANT_a61bdc29c73247db",
+        "landlord_id": "LL0024",
+        "deposit_date": "2022-07-25T23:21:14",
+        "deposit_amount": "163900"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000075",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 468000
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1656080129,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "544056890",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000075",
+        "tenant_id": "cus_TENANT_1bb2e5f9c3844308",
+        "landlord_id": "LL0025",
+        "deposit_date": "2022-06-24T07:15:29",
+        "deposit_amount": "468000"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000076",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 191700
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1659243146,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "341961866",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000076",
+        "tenant_id": "cus_TENANT_1df80720522e4958",
+        "landlord_id": "LL0025",
+        "deposit_date": "2022-07-30T21:52:26",
+        "deposit_amount": "191700"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000077",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 339600
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1662882058,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "504981031",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000077",
+        "tenant_id": "cus_TENANT_19348e1451d3401b",
+        "landlord_id": "LL0025",
+        "deposit_date": "2022-09-11T00:40:58",
+        "deposit_amount": "339600"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000078",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1654040613,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "445331485",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000078",
+        "tenant_id": "cus_TENANT_3c8cc6d89c994696",
+        "landlord_id": "LL0025",
+        "deposit_date": "2022-05-31T16:43:33",
+        "deposit_amount": "209800"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_d1b0f6021c0c413d",
+      "object": "treasury.outbound_transfer",
+      "amount": 209800,
+      "currency": "usd",
+      "created": 1702341813,
+      "description": "Security deposit refund - 28801 Ellen Trail",
+      "destination_payment_method": "cus_TENANT_3c8cc6d89c994696",
+      "financial_account": "treasury_ESCROW_prop_P000078",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000078",
+        "tenant_id": "cus_TENANT_3c8cc6d89c994696",
+        "move_out_date": "2023-12-11T16:43:33",
+        "original_deposit": "209800",
+        "refund_amount": "209800",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000079",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 281100
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1660041128,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "507849850",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000079",
+        "tenant_id": "cus_TENANT_806e7e2285014036",
+        "landlord_id": "LL0026",
+        "deposit_date": "2022-08-09T03:32:08",
+        "deposit_amount": "281100"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000080",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 345500
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1642253981,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "542802779",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000080",
+        "tenant_id": "cus_TENANT_504d6848cd474926",
+        "landlord_id": "LL0026",
+        "deposit_date": "2022-01-15T05:39:41",
+        "deposit_amount": "345500"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000081",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1663454410,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "675244407",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000081",
+        "tenant_id": "cus_TENANT_3070ad95775043a8",
+        "landlord_id": "LL0026",
+        "deposit_date": "2022-09-17T15:40:10",
+        "deposit_amount": "207800"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_c5444a44a99c490c",
+      "object": "treasury.outbound_transfer",
+      "amount": 207800,
+      "currency": "usd",
+      "created": 1695681610,
+      "description": "Security deposit refund - 256 Patricia Radial Suite 278",
+      "destination_payment_method": "cus_TENANT_3070ad95775043a8",
+      "financial_account": "treasury_ESCROW_prop_P000081",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000081",
+        "tenant_id": "cus_TENANT_3070ad95775043a8",
+        "move_out_date": "2023-09-25T15:40:10",
+        "original_deposit": "207800",
+        "refund_amount": "207800",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000082",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1653174585,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "801943382",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000082",
+        "tenant_id": "cus_TENANT_e210df6737b3417a",
+        "landlord_id": "LL0026",
+        "deposit_date": "2022-05-21T16:09:45",
+        "deposit_amount": "356300"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_b24a5733bcdc436b",
+      "object": "treasury.outbound_transfer",
+      "amount": 356300,
+      "currency": "usd",
+      "created": 1713395385,
+      "description": "Security deposit refund - 7700 Garcia Pike Suite 498",
+      "destination_payment_method": "cus_TENANT_e210df6737b3417a",
+      "financial_account": "treasury_ESCROW_prop_P000082",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000082",
+        "tenant_id": "cus_TENANT_e210df6737b3417a",
+        "move_out_date": "2024-04-17T16:09:45",
+        "original_deposit": "356300",
+        "refund_amount": "356300",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000083",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1666812741,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "116812751",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000083",
+        "tenant_id": "cus_TENANT_a0fd089163bd47e4",
+        "landlord_id": "LL0027",
+        "deposit_date": "2022-10-26T12:32:21",
+        "deposit_amount": "357700"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_2c96b0dcaa4d4346",
+      "object": "treasury.outbound_transfer",
+      "amount": 248290,
+      "currency": "usd",
+      "created": 1724268741,
+      "description": "Security deposit refund - 57991 Nicholas Curve Apt. 038",
+      "destination_payment_method": "cus_TENANT_a0fd089163bd47e4",
+      "financial_account": "treasury_ESCROW_prop_P000083",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000083",
+        "tenant_id": "cus_TENANT_a0fd089163bd47e4",
+        "move_out_date": "2024-08-21T12:32:21",
+        "original_deposit": "357700",
+        "refund_amount": "248290",
+        "deduction_amount": "109410",
+        "deduction_reason": "carpet_cleaning"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000084",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 207300
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1646905123,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "626781451",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000084",
+        "tenant_id": "cus_TENANT_4d880a1f134a4cb1",
+        "landlord_id": "LL0028",
+        "deposit_date": "2022-03-10T01:38:43",
+        "deposit_amount": "207300"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000085",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 333700
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1660311068,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "214408183",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000085",
+        "tenant_id": "cus_TENANT_f94d1fe0824941ad",
+        "landlord_id": "LL0028",
+        "deposit_date": "2022-08-12T06:31:08",
+        "deposit_amount": "333700"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000086",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 342100
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1649856949,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "544325176",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000086",
+        "tenant_id": "cus_TENANT_c9ab96eb0b3549ab",
+        "landlord_id": "LL0028",
+        "deposit_date": "2022-04-13T06:35:49",
+        "deposit_amount": "342100"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000087",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1660298071,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "370260533",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000087",
+        "tenant_id": "cus_TENANT_c816c7666035461e",
+        "landlord_id": "LL0028",
+        "deposit_date": "2022-08-12T02:54:31",
+        "deposit_amount": "349100"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_e98c381de4334f70",
+      "object": "treasury.outbound_transfer",
+      "amount": 349100,
+      "currency": "usd",
+      "created": 1719482071,
+      "description": "Security deposit refund - 5182 Edwards Forge",
+      "destination_payment_method": "cus_TENANT_c816c7666035461e",
+      "financial_account": "treasury_ESCROW_prop_P000087",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000087",
+        "tenant_id": "cus_TENANT_c816c7666035461e",
+        "move_out_date": "2024-06-27T02:54:31",
+        "original_deposit": "349100",
+        "refund_amount": "349100",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000088",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 254900
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1652249610,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "491932454",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000088",
+        "tenant_id": "cus_TENANT_c73080534f3e40ad",
+        "landlord_id": "LL0029",
+        "deposit_date": "2022-05-10T23:13:30",
+        "deposit_amount": "254900"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000089",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 422500
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1651539112,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "371314895",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000089",
+        "tenant_id": "cus_TENANT_c2d383a4a0de4f19",
+        "landlord_id": "LL0029",
+        "deposit_date": "2022-05-02T17:51:52",
+        "deposit_amount": "422500"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000090",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 304400
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1665769921,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "806094391",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000090",
+        "tenant_id": "cus_TENANT_1fa01e5e479a4235",
+        "landlord_id": "LL0029",
+        "deposit_date": "2022-10-14T10:52:01",
+        "deposit_amount": "304400"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000091",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1666464505,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "470405910",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000091",
+        "tenant_id": "cus_TENANT_d5defe06b5fe481e",
+        "landlord_id": "LL0029",
+        "deposit_date": "2022-10-22T11:48:25",
+        "deposit_amount": "138100"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_b8387f04f6154b1b",
+      "object": "treasury.outbound_transfer",
+      "amount": 105839,
+      "currency": "usd",
+      "created": 1719341305,
+      "description": "Security deposit refund - 82005 Lin Mountain",
+      "destination_payment_method": "cus_TENANT_d5defe06b5fe481e",
+      "financial_account": "treasury_ESCROW_prop_P000091",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000091",
+        "tenant_id": "cus_TENANT_d5defe06b5fe481e",
+        "move_out_date": "2024-06-25T11:48:25",
+        "original_deposit": "138100",
+        "refund_amount": "105839",
+        "deduction_amount": "32261",
+        "deduction_reason": "carpet_cleaning"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000092",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 178000
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1643321269,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "795752405",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000092",
+        "tenant_id": "cus_TENANT_9bc294c737d34983",
+        "landlord_id": "LL0029",
+        "deposit_date": "2022-01-27T14:07:49",
+        "deposit_amount": "178000"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000093",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1646639681,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "855656265",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000093",
+        "tenant_id": "cus_TENANT_912dbde2f94d4639",
+        "landlord_id": "LL0030",
+        "deposit_date": "2022-03-06T23:54:41",
+        "deposit_amount": "369200"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_f75a8c42c72f4f52",
+      "object": "treasury.outbound_transfer",
+      "amount": 369200,
+      "currency": "usd",
+      "created": 1680936881,
+      "description": "Security deposit refund - 367 Joan Bypass",
+      "destination_payment_method": "cus_TENANT_912dbde2f94d4639",
+      "financial_account": "treasury_ESCROW_prop_P000093",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000093",
+        "tenant_id": "cus_TENANT_912dbde2f94d4639",
+        "move_out_date": "2023-04-07T23:54:41",
+        "original_deposit": "369200",
+        "refund_amount": "369200",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000094",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 369900
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1645544861,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "973744799",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000094",
+        "tenant_id": "cus_TENANT_7b66dc575195412c",
+        "landlord_id": "LL0030",
+        "deposit_date": "2022-02-22T07:47:41",
+        "deposit_amount": "369900"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000095",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1650520635,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "844567935",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000095",
+        "tenant_id": "cus_TENANT_3817ae1a43e74b45",
+        "landlord_id": "LL0030",
+        "deposit_date": "2022-04-20T22:57:15",
+        "deposit_amount": "391700"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_f672e967e72a493a",
+      "object": "treasury.outbound_transfer",
+      "amount": 391700,
+      "currency": "usd",
+      "created": 1689659835,
+      "description": "Security deposit refund - 7848 Lopez Ferry",
+      "destination_payment_method": "cus_TENANT_3817ae1a43e74b45",
+      "financial_account": "treasury_ESCROW_prop_P000095",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000095",
+        "tenant_id": "cus_TENANT_3817ae1a43e74b45",
+        "move_out_date": "2023-07-17T22:57:15",
+        "original_deposit": "391700",
+        "refund_amount": "391700",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000096",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 237400
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1648264803,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "624737111",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000096",
+        "tenant_id": "cus_TENANT_761bd15c7ab24edb",
+        "landlord_id": "LL0030",
+        "deposit_date": "2022-03-25T20:20:03",
+        "deposit_amount": "237400"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000097",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 491700
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1666662172,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "932271276",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000097",
+        "tenant_id": "cus_TENANT_15e06f321b77493b",
+        "landlord_id": "LL0030",
+        "deposit_date": "2022-10-24T18:42:52",
+        "deposit_amount": "491700"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000098",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 163200
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1657878200,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "671532152",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000098",
+        "tenant_id": "cus_TENANT_a5a5961f8515497d",
+        "landlord_id": "LL0031",
+        "deposit_date": "2022-07-15T02:43:20",
+        "deposit_amount": "163200"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000099",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 312500
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1649954505,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "863854401",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000099",
+        "tenant_id": "cus_TENANT_336eff976cbd413b",
+        "landlord_id": "LL0031",
+        "deposit_date": "2022-04-14T09:41:45",
+        "deposit_amount": "312500"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000100",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1656830923,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "102655449",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000100",
+        "tenant_id": "cus_TENANT_1b14e2b5b43d4bd0",
+        "landlord_id": "LL0031",
+        "deposit_date": "2022-07-02T23:48:43",
+        "deposit_amount": "280800"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_fd9bb11b11494838",
+      "object": "treasury.outbound_transfer",
+      "amount": 280800,
+      "currency": "usd",
+      "created": 1692427723,
+      "description": "Security deposit refund - 911 Henderson Keys Apt. 559",
+      "destination_payment_method": "cus_TENANT_1b14e2b5b43d4bd0",
+      "financial_account": "treasury_ESCROW_prop_P000100",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000100",
+        "tenant_id": "cus_TENANT_1b14e2b5b43d4bd0",
+        "move_out_date": "2023-08-18T23:48:43",
+        "original_deposit": "280800",
+        "refund_amount": "280800",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000101",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 236100
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1659185220,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "573827182",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000101",
+        "tenant_id": "cus_TENANT_a430a8704bbe4ca3",
+        "landlord_id": "LL0032",
+        "deposit_date": "2022-07-30T05:47:00",
+        "deposit_amount": "236100"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000102",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 335200
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1664084974,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "879524067",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000102",
+        "tenant_id": "cus_TENANT_a36e82d703d14050",
+        "landlord_id": "LL0032",
+        "deposit_date": "2022-09-24T22:49:34",
+        "deposit_amount": "335200"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000103",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1661539098,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "195918514",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000103",
+        "tenant_id": "cus_TENANT_18e4b5e21ba34669",
+        "landlord_id": "LL0032",
+        "deposit_date": "2022-08-26T11:38:18",
+        "deposit_amount": "157300"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_3bdbf1aa35de4133",
+      "object": "treasury.outbound_transfer",
+      "amount": 104123,
+      "currency": "usd",
+      "created": 1697567898,
+      "description": "Security deposit refund - 728 Joseph Landing",
+      "destination_payment_method": "cus_TENANT_18e4b5e21ba34669",
+      "financial_account": "treasury_ESCROW_prop_P000103",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000103",
+        "tenant_id": "cus_TENANT_18e4b5e21ba34669",
+        "move_out_date": "2023-10-17T11:38:18",
+        "original_deposit": "157300",
+        "refund_amount": "104123",
+        "deduction_amount": "53177",
+        "deduction_reason": "unpaid_utilities"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000104",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1651873947,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "733050169",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000104",
+        "tenant_id": "cus_TENANT_b123bc695e914f69",
+        "landlord_id": "LL0032",
+        "deposit_date": "2022-05-06T14:52:27",
+        "deposit_amount": "174500"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_305a891f27e34399",
+      "object": "treasury.outbound_transfer",
+      "amount": 174500,
+      "currency": "usd",
+      "created": 1698875547,
+      "description": "Security deposit refund - 177 Natalie Gardens",
+      "destination_payment_method": "cus_TENANT_b123bc695e914f69",
+      "financial_account": "treasury_ESCROW_prop_P000104",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000104",
+        "tenant_id": "cus_TENANT_b123bc695e914f69",
+        "move_out_date": "2023-11-01T14:52:27",
+        "original_deposit": "174500",
+        "refund_amount": "174500",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000105",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 237200
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1661632551,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "793623149",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000105",
+        "tenant_id": "cus_TENANT_716d025850244f0b",
+        "landlord_id": "LL0033",
+        "deposit_date": "2022-08-27T13:35:51",
+        "deposit_amount": "237200"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000106",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 336700
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1648994350,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "165475776",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000106",
+        "tenant_id": "cus_TENANT_f97ebbe316f4461e",
+        "landlord_id": "LL0034",
+        "deposit_date": "2022-04-03T06:59:10",
+        "deposit_amount": "336700"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000107",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 291700
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1660400092,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "442392183",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000107",
+        "tenant_id": "cus_TENANT_7b2ffda349e64c40",
+        "landlord_id": "LL0034",
+        "deposit_date": "2022-08-13T07:14:52",
+        "deposit_amount": "291700"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000108",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1656815664,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "480968571",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000108",
+        "tenant_id": "cus_TENANT_122df126fdf04b1d",
+        "landlord_id": "LL0034",
+        "deposit_date": "2022-07-02T19:34:24",
+        "deposit_amount": "235000"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_72a354d333d44840",
+      "object": "treasury.outbound_transfer",
+      "amount": 152338,
+      "currency": "usd",
+      "created": 1695954864,
+      "description": "Security deposit refund - 3344 Mejia Skyway",
+      "destination_payment_method": "cus_TENANT_122df126fdf04b1d",
+      "financial_account": "treasury_ESCROW_prop_P000108",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000108",
+        "tenant_id": "cus_TENANT_122df126fdf04b1d",
+        "move_out_date": "2023-09-28T19:34:24",
+        "original_deposit": "235000",
+        "refund_amount": "152338",
+        "deduction_amount": "82662",
+        "deduction_reason": "unpaid_utilities"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000109",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 296900
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1664495571,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "349777425",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000109",
+        "tenant_id": "cus_TENANT_ebfba0ce7d814b86",
+        "landlord_id": "LL0034",
+        "deposit_date": "2022-09-29T16:52:51",
+        "deposit_amount": "296900"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000110",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1652572003,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "269118504",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000110",
+        "tenant_id": "cus_TENANT_395740a03ab24808",
+        "landlord_id": "LL0035",
+        "deposit_date": "2022-05-14T16:46:43",
+        "deposit_amount": "292500"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_5fddb6c7bc224cf3",
+      "object": "treasury.outbound_transfer",
+      "amount": 292500,
+      "currency": "usd",
+      "created": 1703378803,
+      "description": "Security deposit refund - 8172 Blanchard Cliff Apt. 965",
+      "destination_payment_method": "cus_TENANT_395740a03ab24808",
+      "financial_account": "treasury_ESCROW_prop_P000110",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000110",
+        "tenant_id": "cus_TENANT_395740a03ab24808",
+        "move_out_date": "2023-12-23T16:46:43",
+        "original_deposit": "292500",
+        "refund_amount": "292500",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000111",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1662776732,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "927672827",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000111",
+        "tenant_id": "cus_TENANT_c3ddc398de3e4bf6",
+        "landlord_id": "LL0035",
+        "deposit_date": "2022-09-09T19:25:32",
+        "deposit_amount": "425900"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_a5e856d4f0824052",
+      "object": "treasury.outbound_transfer",
+      "amount": 337482,
+      "currency": "usd",
+      "created": 1695695132,
+      "description": "Security deposit refund - 862 Brown Plaza",
+      "destination_payment_method": "cus_TENANT_c3ddc398de3e4bf6",
+      "financial_account": "treasury_ESCROW_prop_P000111",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000111",
+        "tenant_id": "cus_TENANT_c3ddc398de3e4bf6",
+        "move_out_date": "2023-09-25T19:25:32",
+        "original_deposit": "425900",
+        "refund_amount": "337482",
+        "deduction_amount": "88418",
+        "deduction_reason": "excessive_wear"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000112",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 250800
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1649642403,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "886606608",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000112",
+        "tenant_id": "cus_TENANT_e559884ffab14142",
+        "landlord_id": "LL0036",
+        "deposit_date": "2022-04-10T19:00:03",
+        "deposit_amount": "250800"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000113",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 289500
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1651132602,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "503144836",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000113",
+        "tenant_id": "cus_TENANT_0ca073683ebc439f",
+        "landlord_id": "LL0036",
+        "deposit_date": "2022-04-28T00:56:42",
+        "deposit_amount": "289500"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000114",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 357800
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1643506929,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "264915937",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000114",
+        "tenant_id": "cus_TENANT_0cf229655d8940f6",
+        "landlord_id": "LL0037",
+        "deposit_date": "2022-01-29T17:42:09",
+        "deposit_amount": "357800"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000115",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 155800
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1654122862,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "789198776",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000115",
+        "tenant_id": "cus_TENANT_9b90691b1bba474d",
+        "landlord_id": "LL0037",
+        "deposit_date": "2022-06-01T15:34:22",
+        "deposit_amount": "155800"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000116",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 230000
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1662248995,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "420890008",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000116",
+        "tenant_id": "cus_TENANT_459f33fc67104e8e",
+        "landlord_id": "LL0038",
+        "deposit_date": "2022-09-03T16:49:55",
+        "deposit_amount": "230000"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000117",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1644378364,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "184147554",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000117",
+        "tenant_id": "cus_TENANT_fbf7429ad16f4716",
+        "landlord_id": "LL0038",
+        "deposit_date": "2022-02-08T19:46:04",
+        "deposit_amount": "174200"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_27a71ca1f5fe42dc",
+      "object": "treasury.outbound_transfer",
+      "amount": 149818,
+      "currency": "usd",
+      "created": 1695091564,
+      "description": "Security deposit refund - 79291 Danny Ranch Apt. 136",
+      "destination_payment_method": "cus_TENANT_fbf7429ad16f4716",
+      "financial_account": "treasury_ESCROW_prop_P000117",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000117",
+        "tenant_id": "cus_TENANT_fbf7429ad16f4716",
+        "move_out_date": "2023-09-18T19:46:04",
+        "original_deposit": "174200",
+        "refund_amount": "149818",
+        "deduction_amount": "24382",
+        "deduction_reason": "excessive_wear"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000118",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 147400
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1666559625,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "731289471",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000118",
+        "tenant_id": "cus_TENANT_13dc2565a4404715",
+        "landlord_id": "LL0038",
+        "deposit_date": "2022-10-23T14:13:45",
+        "deposit_amount": "147400"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000119",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 201000
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1655946112,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "841433502",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000119",
+        "tenant_id": "cus_TENANT_b62bc56fab794079",
+        "landlord_id": "LL0038",
+        "deposit_date": "2022-06-22T18:01:52",
+        "deposit_amount": "201000"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000120",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 190200
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1654251588,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "949856342",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000120",
+        "tenant_id": "cus_TENANT_6c53f6d83e2d43e8",
+        "landlord_id": "LL0039",
+        "deposit_date": "2022-06-03T03:19:48",
+        "deposit_amount": "190200"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000121",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 327500
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1666283129,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "598450776",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000121",
+        "tenant_id": "cus_TENANT_b609b08e706742db",
+        "landlord_id": "LL0039",
+        "deposit_date": "2022-10-20T09:25:29",
+        "deposit_amount": "327500"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000122",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 230700
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1649991440,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "153312407",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000122",
+        "tenant_id": "cus_TENANT_2b2a49322f1c42e8",
+        "landlord_id": "LL0039",
+        "deposit_date": "2022-04-14T19:57:20",
+        "deposit_amount": "230700"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000123",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1663918057,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "753204271",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000123",
+        "tenant_id": "cus_TENANT_1b2561069610415b",
+        "landlord_id": "LL0039",
+        "deposit_date": "2022-09-23T00:27:37",
+        "deposit_amount": "267700"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_3e3187a115044b79",
+      "object": "treasury.outbound_transfer",
+      "amount": 267700,
+      "currency": "usd",
+      "created": 1708936057,
+      "description": "Security deposit refund - 0155 Tucker Pine Apt. 788",
+      "destination_payment_method": "cus_TENANT_1b2561069610415b",
+      "financial_account": "treasury_ESCROW_prop_P000123",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000123",
+        "tenant_id": "cus_TENANT_1b2561069610415b",
+        "move_out_date": "2024-02-26T00:27:37",
+        "original_deposit": "267700",
+        "refund_amount": "267700",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000124",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 435400
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1654496863,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "799506796",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000124",
+        "tenant_id": "cus_TENANT_cc1388d17bd34f42",
+        "landlord_id": "LL0040",
+        "deposit_date": "2022-06-05T23:27:43",
+        "deposit_amount": "435400"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000125",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 218400
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1655925961,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "821413281",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "open",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000125",
+        "tenant_id": "cus_TENANT_47e8e51c261c4095",
+        "landlord_id": "LL0040",
+        "deposit_date": "2022-06-22T12:26:01",
+        "deposit_amount": "218400"
+      }
+    },
+    "refund": null
+  },
+  {
+    "escrow_account": {
+      "id": "treasury_ESCROW_prop_P000126",
+      "object": "treasury.financial_account",
+      "balance": {
+        "cash": {
+          "usd": 0
+        },
+        "inbound_pending": {
+          "usd": 0
+        },
+        "outbound_pending": {
+          "usd": 0
+        }
+      },
+      "country": "US",
+      "created": 1662958722,
+      "currency": "usd",
+      "financial_addresses": [
+        {
+          "type": "ach",
+          "ach": {
+            "account_number": "899089320",
+            "routing_number": "110000000"
+          }
+        }
+      ],
+      "platform_restrictions": {
+        "inbound_flows": "restricted",
+        "outbound_flows": "restricted"
+      },
+      "status": "closed",
+      "supported_currencies": [
+        "usd"
+      ],
+      "metadata": {
+        "property_id": "prop_P000126",
+        "tenant_id": "cus_TENANT_71fcd5f618084735",
+        "landlord_id": "LL0040",
+        "deposit_date": "2022-09-11T21:58:42",
+        "deposit_amount": "189600"
+      }
+    },
+    "refund": {
+      "id": "treasury_refund_aabf0d0c0cd74cfb",
+      "object": "treasury.outbound_transfer",
+      "amount": 189600,
+      "currency": "usd",
+      "created": 1713070722,
+      "description": "Security deposit refund - 2662 Douglas Hollow Suite 851",
+      "destination_payment_method": "cus_TENANT_71fcd5f618084735",
+      "financial_account": "treasury_ESCROW_prop_P000126",
+      "status": "posted",
+      "metadata": {
+        "property_id": "prop_P000126",
+        "tenant_id": "cus_TENANT_71fcd5f618084735",
+        "move_out_date": "2024-04-13T21:58:42",
+        "original_deposit": "189600",
+        "refund_amount": "189600",
+        "deduction_amount": "0",
+        "deduction_reason": "none"
+      }
+    }
+  }
+]

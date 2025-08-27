@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe Dashboard Prototype - Multi-Persona</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        
+        .prototype-header {
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .prototype-header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #0f172a;
+        }
+        
+        .prototype-main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .metric-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .metric-label {
+            font-size: 0.875rem;
+            color: #64748b;
+            margin-bottom: 0.5rem;
+        }
+        
+        .metric-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        
+        .data-section {
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+        
+        .data-section-header {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            background: #f8fafc;
+        }
+        
+        .data-section-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .data-table th {
+            background: #f8fafc;
+            padding: 0.75rem 1.5rem;
+            text-align: left;
+            font-weight: 500;
+            color: #374151;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .data-table td {
+            padding: 0.75rem 1.5rem;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        
+        .data-table tr:hover {
+            background: #f8fafc;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .status-succeeded {
+            background: #dcfce7;
+            color: #166534;
+        }
+        
+        .status-failed {
+            background: #fecaca;
+            color: #991b1b;
+        }
+        
+        .loading-state {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+            color: #64748b;
+        }
+        
+        .loading-state.active {
+            display: block;
+        }
+        
+        .persona-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #eef2ff;
+            color: #3730a3;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .chart-placeholder {
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 500;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="prototype-header">
+        <h1>Payment Dashboard Prototype</h1>
+        <div class="persona-indicator">
+            <span id="current-persona-icon">🛍️</span>
+            <span id="current-persona-name">Loading...</span>
+        </div>
+    </header>
+
+    <main class="prototype-main">
+        <div class="loading-state active" id="loading-state">
+            <h3>Loading dashboard data...</h3>
+            <p>Initializing with default business scenario</p>
+        </div>
+
+        <div id="dashboard-content" style="display: none;">
+            <!-- Metrics Cards -->
+            <div class="metrics-grid" id="metrics-cards">
+                <!-- Metrics will be populated here -->
+            </div>
+
+            <!-- Charts Section -->
+            <div class="data-section">
+                <div class="data-section-header">
+                    <h3 class="data-section-title">Revenue Trends</h3>
+                </div>
+                <div class="chart-placeholder">
+                    📊 Chart visualization would go here
+                    <br><small>Connected to current persona data</small>
+                </div>
+            </div>
+
+            <!-- Data Tables -->
+            <div class="data-section">
+                <div class="data-section-header">
+                    <h3 class="data-section-title" id="primary-table-title">Transactions</h3>
+                </div>
+                <table class="data-table">
+                    <thead>
+                        <tr id="table-headers">
+                            <!-- Headers will be populated based on persona -->
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- Data will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Secondary Data Section -->
+            <div class="data-section" id="secondary-section">
+                <div class="data-section-header">
+                    <h3 class="data-section-title" id="secondary-table-title">Customers</h3>
+                </div>
+                <table class="data-table">
+                    <thead>
+                        <tr id="secondary-headers">
+                            <!-- Headers will be populated based on persona -->
+                        </tr>
+                    </thead>
+                    <tbody id="secondary-body">
+                        <!-- Data will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Include the data client and persona switcher -->
+    <script src="../stripe-data-client.js"></script>
+    <script src="../persona-switcher.js"></script>
+
+    <script>
+        // This is what the designer gets - a fully functional prototype
+        class DashboardPrototype {
+            constructor() {
+                this.dataClient = null;
+                this.personaSwitcher = null;
+                this.currentData = null;
+                this.currentPersona = null;
+                
+                this.init();
+            }
+
+            async init() {
+                try {
+                    // Initialize data client with default persona
+                    this.dataClient = new StripeDataClient({
+                        defaultPersona: 'techstyle' // Can be changed to any persona
+                    });
+
+                    // Wait for initial load
+                    await new Promise(resolve => {
+                        const checkLoaded = () => {
+                            if (this.dataClient.currentData) {
+                                resolve();
+                            } else {
+                                setTimeout(checkLoaded, 100);
+                            }
+                        };
+                        checkLoaded();
+                    });
+
+                    // Create persona switcher
+                    this.personaSwitcher = new PersonaSwitcher(this.dataClient, {
+                        position: 'top-right',
+                        onSwitch: (personaId, personaData) => {
+                            console.log(`Switched to ${personaId}:`, personaData);
+                            this.onPersonaSwitch(personaId);
+                        }
+                    });
+
+                    // Subscribe to data changes
+                    this.dataClient.subscribe((data, personaId) => {
+                        this.currentData = data;
+                        this.currentPersona = personaId;
+                        this.updateDashboard();
+                    });
+
+                    // Initial render
+                    this.currentData = this.dataClient.currentData;
+                    this.currentPersona = this.dataClient.currentPersona;
+                    this.updateDashboard();
+
+                } catch (error) {
+                    console.error('Failed to initialize dashboard:', error);
+                    this.showError('Failed to load dashboard data');
+                }
+            }
+
+            updateDashboard() {
+                this.hideLoading();
+                this.updatePersonaIndicator();
+                this.updateMetrics();
+                this.updateTables();
+            }
+
+            hideLoading() {
+                document.getElementById('loading-state').classList.remove('active');
+                document.getElementById('dashboard-content').style.display = 'block';
+            }
+
+            updatePersonaIndicator() {
+                const personas = this.dataClient.getAvailablePersonas();
+                const current = personas[this.currentPersona];
+                
+                document.getElementById('current-persona-icon').textContent = this.getPersonaIcon(current?.business_model);
+                document.getElementById('current-persona-name').textContent = current?.name || this.currentPersona;
+            }
+
+            getPersonaIcon(businessModel) {
+                const icons = {
+                    'ecommerce': '🛍️',
+                    'marketplace': '🎓',
+                    'property_management': '🏠',
+                    'subscription': '💪',
+                    'creator_economy': '🎨',
+                    'education_marketplace': '📚'
+                };
+                return icons[businessModel] || '💼';
+            }
+
+            updateMetrics() {
+                const metrics = this.dataClient.calculateMetrics();
+                const container = document.getElementById('metrics-cards');
+                
+                container.innerHTML = metrics.map(metric => `
+                    <div class="metric-card">
+                        <div class="metric-label">${metric.label}</div>
+                        <div class="metric-value">${metric.value}</div>
+                    </div>
+                `).join('');
+            }
+
+            updateTables() {
+                // Update primary table based on persona
+                this.updatePrimaryTable();
+                this.updateSecondaryTable();
+            }
+
+            updatePrimaryTable() {
+                const persona = this.currentPersona;
+                let data, headers, title;
+
+                switch (persona) {
+                    case 'techstyle':
+                        data = this.currentData.payments?.slice(0, 10) || [];
+                        headers = ['Payment ID', 'Amount', 'Status', 'Currency', 'Customer'];
+                        title = 'Recent Payments';
+                        break;
+                    case 'edutech':
+                        data = this.currentData.enrollments?.slice(0, 10) || [];
+                        headers = ['Enrollment ID', 'Course', 'Student', 'Amount', 'Status'];
+                        title = 'Recent Enrollments';
+                        break;
+                    case 'propertyflow':
+                        data = this.currentData.rent_payments?.slice(0, 10) || [];
+                        headers = ['Payment ID', 'Property', 'Tenant', 'Amount', 'Status'];
+                        title = 'Rent Payments';
+                        break;
+                    case 'fitstream':
+                        data = this.currentData.subscriptions?.slice(0, 10) || [];
+                        headers = ['Subscription ID', 'Plan', 'Customer', 'Status', 'MRR'];
+                        title = 'Active Subscriptions';
+                        break;
+                    case 'creatorhub':
+                        data = this.currentData.content_sales?.slice(0, 10) || [];
+                        headers = ['Sale ID', 'Content', 'Creator', 'Amount', 'Fan'];
+                        title = 'Content Sales';
+                        break;
+                    default:
+                        data = [];
+                        headers = ['ID', 'Data', 'Status'];
+                        title = 'Data Table';
+                }
+
+                document.getElementById('primary-table-title').textContent = title;
+                this.populateTable('table-headers', 'table-body', headers, data, persona);
+            }
+
+            updateSecondaryTable() {
+                const persona = this.currentPersona;
+                let data, headers, title;
+
+                switch (persona) {
+                    case 'techstyle':
+                        data = this.currentData.customers?.slice(0, 10) || [];
+                        headers = ['Customer ID', 'Email', 'Country', 'Created'];
+                        title = 'Top Customers';
+                        break;
+                    case 'edutech':
+                        data = this.currentData.instructors?.slice(0, 10) || [];
+                        headers = ['Instructor', 'Expertise', 'Rating', 'Students', 'Courses'];
+                        title = 'Top Instructors';
+                        break;
+                    case 'propertyflow':
+                        data = this.currentData.properties?.slice(0, 10) || [];
+                        headers = ['Property ID', 'Address', 'Type', 'Rent', 'Tenant'];
+                        title = 'Properties';
+                        break;
+                    case 'fitstream':
+                        data = this.currentData.customers?.slice(0, 10) || [];
+                        headers = ['Customer ID', 'Plan', 'Engagement', 'LTV', 'Status'];
+                        title = 'Top Customers';
+                        break;
+                    case 'creatorhub':
+                        data = this.currentData.creators?.slice(0, 10) || [];
+                        headers = ['Creator', 'Category', 'Followers', 'Revenue', 'Content'];
+                        title = 'Top Creators';
+                        break;
+                    default:
+                        data = [];
+                        headers = ['ID', 'Data'];
+                        title = 'Secondary Data';
+                }
+
+                document.getElementById('secondary-table-title').textContent = title;
+                this.populateTable('secondary-headers', 'secondary-body', headers, data, persona);
+            }
+
+            populateTable(headersId, bodyId, headers, data, persona) {
+                // Populate headers
+                document.getElementById(headersId).innerHTML = headers.map(h => `<th>${h}</th>`).join('');
+                
+                // Populate body
+                const tbody = document.getElementById(bodyId);
+                tbody.innerHTML = data.map(item => {
+                    const row = this.formatTableRow(item, persona);
+                    return `<tr>${row}</tr>`;
+                }).join('');
+            }
+
+            formatTableRow(item, persona) {
+                switch (persona) {
+                    case 'techstyle':
+                        if (item.customer_id) { // customer
+                            return `
+                                <td>${item.id || 'N/A'}</td>
+                                <td>${item.email || 'N/A'}</td>
+                                <td>${item.metadata?.country || 'US'}</td>
+                                <td>${new Date(item.created * 1000).toLocaleDateString()}</td>
+                            `;
+                        } else { // payment
+                            return `
+                                <td>${item.id}</td>
+                                <td>${this.formatCurrency(item.amount)}</td>
+                                <td><span class="status-badge status-${item.status}">${item.status}</span></td>
+                                <td>${item.currency?.toUpperCase()}</td>
+                                <td>${item.customer}</td>
+                            `;
+                        }
+                    case 'edutech':
+                        if (item.business_profile) { // instructor
+                            return `
+                                <td>${item.business_profile.name}</td>
+                                <td>${item.metadata.expertise}</td>
+                                <td>${item.metadata.rating}⭐</td>
+                                <td>${item.metadata.total_students}</td>
+                                <td>${item.metadata.course_count}</td>
+                            `;
+                        } else { // enrollment
+                            return `
+                                <td>${item.id}</td>
+                                <td>Course ${Math.floor(Math.random() * 100)}</td>
+                                <td>${item.customer || 'Student'}</td>
+                                <td>${this.formatCurrency(item.amount || 0)}</td>
+                                <td><span class="status-badge status-${item.status || 'succeeded'}">${item.status || 'enrolled'}</span></td>
+                            `;
+                        }
+                    default:
+                        // Generic fallback
+                        const values = Object.values(item).slice(0, 5);
+                        return values.map(v => `<td>${v?.toString()?.substring(0, 50) || 'N/A'}</td>`).join('');
+                }
+            }
+
+            formatCurrency(cents) {
+                return new Intl.NumberFormat('en-US', {
+                    style: 'currency',
+                    currency: 'USD',
+                    minimumFractionDigits: 0
+                }).format(cents / 100);
+            }
+
+            onPersonaSwitch(personaId) {
+                // This is where designers can add custom logic when personas change
+                console.log(`Dashboard switched to ${personaId}`);
+                
+                // Example: You could trigger custom animations, update charts, etc.
+                this.animateSwitch();
+            }
+
+            animateSwitch() {
+                // Simple animation to show the switch happened
+                const content = document.getElementById('dashboard-content');
+                content.style.opacity = '0.5';
+                setTimeout(() => {
+                    content.style.opacity = '1';
+                }, 200);
+            }
+
+            showError(message) {
+                document.getElementById('loading-state').innerHTML = `
+                    <h3>Error</h3>
+                    <p>${message}</p>
+                `;
+            }
+        }
+
+        // Initialize the dashboard when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            new DashboardPrototype();
+        });
+    </script>
+</body>
+</html>

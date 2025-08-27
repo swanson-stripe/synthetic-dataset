@@ -29,6 +29,10 @@ edutech_generator/education_data/
 # Pre-generated data (publicly accessible)
 !pre_generated_data/
 
+# API structure (publicly accessible via GitHub Pages)
+!api/
+!docs/
+
 # IDE
 .vscode/
 .idea/

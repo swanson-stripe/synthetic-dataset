@@ -1,0 +1,75 @@
+{
+  "enrollment_trends": {
+    "2022-01": 45,
+    "2022-02": 52,
+    "2022-03": 61,
+    "2022-04": 48,
+    "2022-05": 55,
+    "2022-06": 43,
+    "2022-07": 38,
+    "2022-08": 67,
+    "2022-09": 89,
+    "2022-10": 72,
+    "2022-11": 58,
+    "2022-12": 49
+  },
+  "revenue_by_month": {
+    "2022-01": 562500,
+    "2022-02": 650000,
+    "2022-03": 762500,
+    "2022-04": 600000,
+    "2022-05": 687500,
+    "2022-06": 537500,
+    "2022-07": 475000,
+    "2022-08": 837500,
+    "2022-09": 1112500,
+    "2022-10": 900000,
+    "2022-11": 725000,
+    "2022-12": 612500
+  },
+  "instructor_performance": {
+    "top_categories": {
+      "technology": 0.35,
+      "business": 0.25,
+      "arts": 0.20,
+      "science": 0.15,
+      "languages": 0.05
+    },
+    "average_rating": 4.2,
+    "completion_rates": {
+      "beginner": 0.78,
+      "intermediate": 0.71,
+      "advanced": 0.65
+    }
+  },
+  "student_analytics": {
+    "acquisition_channels": {
+      "organic": 0.40,
+      "paid_search": 0.25,
+      "social": 0.20,
+      "referral": 0.15
+    },
+    "payment_preferences": {
+      "one_time": 0.65,
+      "payment_plan": 0.35
+    },
+    "corporate_vs_individual": {
+      "individual": 0.85,
+      "corporate": 0.15
+    }
+  },
+  "course_analytics": {
+    "pricing_tiers": {
+      "mini_courses": {"count": 65, "avg_price": 1500},
+      "standard_courses": {"count": 98, "avg_price": 4900}, 
+      "comprehensive": {"count": 42, "avg_price": 19900},
+      "bootcamps": {"count": 13, "avg_price": 149900}
+    },
+    "completion_by_type": {
+      "mini_courses": 0.85,
+      "standard_courses": 0.73,
+      "comprehensive": 0.68,
+      "bootcamps": 0.62
+    }
+  }
+}

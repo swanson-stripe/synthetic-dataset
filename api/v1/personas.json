@@ -1,0 +1,217 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2024-12-19T10:00:00Z",
+  "description": "Available business personas with synthetic Stripe data",
+  "personas": {
+    "techstyle": {
+      "id": "techstyle",
+      "name": "TechStyle Fashion Retailer", 
+      "description": "E-commerce fashion retailer with payment processing",
+      "business_model": "ecommerce",
+      "industry": "fashion_retail",
+      "complexity": "medium",
+      "data_scale": "large",
+      "endpoints": {
+        "payments": "/v1/techstyle/payments.json",
+        "customers": "/v1/techstyle/customers.json", 
+        "metrics": "/v1/techstyle/metrics.json",
+        "summary": "/v1/techstyle/summary.json"
+      },
+      "features": [
+        "Multi-currency payments",
+        "Payment method optimization", 
+        "Customer analytics",
+        "Dispute handling",
+        "Fraud detection"
+      ],
+      "stripe_products": [
+        "Payment Intents",
+        "Customers", 
+        "Payment Methods",
+        "Disputes",
+        "Radar"
+      ],
+      "sample_metrics": {
+        "total_payments": "~150k over 24 months",
+        "unique_customers": "~75k customers",
+        "success_rate": "98.1%",
+        "currencies": ["USD", "EUR", "GBP", "CAD", "AUD"]
+      },
+      "status": "available",
+      "last_updated": "2024-12-19"
+    },
+    "edutech": {
+      "id": "edutech", 
+      "name": "EduTech Academy",
+      "description": "Online education marketplace with instructor payouts",
+      "business_model": "marketplace",
+      "industry": "education",
+      "complexity": "high",
+      "data_scale": "large",
+      "endpoints": {
+        "instructors": "/v1/edutech/instructors.json",
+        "students": "/v1/edutech/students.json",
+        "courses": "/v1/edutech/courses.json",
+        "enrollments": "/v1/edutech/enrollments.json",
+        "progress": "/v1/edutech/progress.json",
+        "tax_documents": "/v1/edutech/tax_documents.json",
+        "metrics": "/v1/edutech/metrics.json",
+        "summary": "/v1/edutech/summary.json"
+      },
+      "features": [
+        "Instructor marketplace",
+        "Student financing",
+        "Corporate training",
+        "Revenue sharing (70/30)",
+        "Tax compliance (1099-K)",
+        "Learning analytics"
+      ],
+      "stripe_products": [
+        "Connect (Express accounts)",
+        "Billing (Subscriptions)",
+        "Capital (Student financing)",
+        "Tax (1099-K generation)",
+        "Invoicing (Corporate sales)"
+      ],
+      "sample_metrics": {
+        "total_instructors": "72 instructors",
+        "total_students": "73k students", 
+        "total_courses": "218 courses",
+        "enrollments": "12k enrollments",
+        "revenue_share": "70% instructor, 30% platform"
+      },
+      "status": "available", 
+      "last_updated": "2024-12-19"
+    },
+    "propertyflow": {
+      "id": "propertyflow",
+      "name": "PropertyFlow Property Management",
+      "description": "Property management platform with rent collection",
+      "business_model": "property_management", 
+      "industry": "real_estate",
+      "complexity": "medium",
+      "data_scale": "medium",
+      "endpoints": {
+        "landlords": "/v1/propertyflow/landlords.json",
+        "properties": "/v1/propertyflow/properties.json",
+        "rent_payments": "/v1/propertyflow/rent_payments.json",
+        "security_deposits": "/v1/propertyflow/security_deposits.json",
+        "maintenance": "/v1/propertyflow/maintenance.json",
+        "metrics": "/v1/propertyflow/metrics.json",
+        "summary": "/v1/propertyflow/summary.json"
+      },
+      "features": [
+        "Automated rent collection",
+        "Security deposit escrow",
+        "Maintenance payments",
+        "Late fee processing",
+        "ACH/Wire payments",
+        "Landlord payouts"
+      ],
+      "stripe_products": [
+        "Connect (Landlord accounts)",
+        "ACH Debits (Rent collection)",
+        "Treasury (Escrow accounts)",
+        "Invoicing (Maintenance billing)"
+      ],
+      "sample_metrics": {
+        "total_properties": "~5k properties",
+        "active_landlords": "~1k landlords", 
+        "monthly_rent_volume": "$2M+",
+        "collection_rate": "96%",
+        "payment_methods": "70% ACH, 25% Card, 5% Wire"
+      },
+      "status": "available",
+      "last_updated": "2024-12-19"
+    },
+    "fitstream": {
+      "id": "fitstream",
+      "name": "FitStream Fitness Platform",
+      "description": "Subscription fitness platform with trials and engagement",
+      "business_model": "subscription",
+      "industry": "fitness", 
+      "complexity": "medium",
+      "data_scale": "large",
+      "endpoints": {
+        "subscriptions": "/v1/fitstream/subscriptions.json",
+        "customers": "/v1/fitstream/customers.json",
+        "payments": "/v1/fitstream/payments.json",
+        "trials": "/v1/fitstream/trials.json",
+        "engagement": "/v1/fitstream/engagement.json",
+        "metrics": "/v1/fitstream/metrics.json",
+        "summary": "/v1/fitstream/summary.json"
+      },
+      "features": [
+        "Free trial management",
+        "Subscription billing",
+        "Family plans",
+        "Engagement tracking", 
+        "Seasonal patterns",
+        "Payment recovery"
+      ],
+      "stripe_products": [
+        "Billing (Subscriptions)",
+        "Customer Portal",
+        "Payment Links",
+        "Adaptive Acceptance",
+        "Radar"
+      ],
+      "sample_metrics": {
+        "total_subscribers": "~50k subscribers",
+        "trial_conversion": "15-35% by stage",
+        "monthly_churn": "2-10% by stage",
+        "family_plans": "25% of subscriptions",
+        "seasonal_peaks": "New Year +150%, Summer -30%"
+      },
+      "status": "available",
+      "last_updated": "2024-12-19"
+    },
+    "creatorhub": {
+      "id": "creatorhub",
+      "name": "CreatorHub Content Platform", 
+      "description": "Content monetization platform with creator payouts",
+      "business_model": "creator_economy",
+      "industry": "content_creation",
+      "complexity": "high",
+      "data_scale": "large", 
+      "endpoints": {
+        "creators": "/v1/creatorhub/creators.json",
+        "fans": "/v1/creatorhub/fans.json",
+        "content_sales": "/v1/creatorhub/content_sales.json",
+        "subscriptions": "/v1/creatorhub/subscriptions.json",
+        "tips": "/v1/creatorhub/tips.json",
+        "metrics": "/v1/creatorhub/metrics.json",
+        "summary": "/v1/creatorhub/summary.json"
+      },
+      "features": [
+        "Creator marketplace",
+        "Fan subscriptions",
+        "Content sales",
+        "Tip processing",
+        "Tiered revenue sharing",
+        "Analytics dashboard"
+      ],
+      "stripe_products": [
+        "Connect (Creator accounts)",
+        "Billing (Fan subscriptions)", 
+        "Radar (Content piracy)",
+        "Identity (Creator verification)",
+        "Tax (1099 reporting)"
+      ],
+      "sample_metrics": {
+        "total_creators": "~5k creators",
+        "total_fans": "~50k fans",
+        "content_sales": "~100k transactions",
+        "revenue_share": "80-85% creator, 15-20% platform",
+        "subscription_vs_onetime": "60% recurring, 40% one-time"
+      },
+      "status": "available",
+      "last_updated": "2024-12-19"
+    }
+  },
+  "usage_guide": {
+    "getting_started": "https://swanson-stripe.github.io/synthetic-dataset/docs/getting-started.html",
+    "persona_switching": "https://swanson-stripe.github.io/synthetic-dataset/docs/persona-switching.html", 
+    "integration_examples": "https://swanson-stripe.github.io/synthetic-dataset/docs/examples/"
+  }
+}

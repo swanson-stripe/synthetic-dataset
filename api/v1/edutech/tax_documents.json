@@ -1,0 +1,1226 @@
+[
+  {
+    "id": "tax_1099_2023_INST0001",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0001",
+    "gross_amount": 2109310,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-4406",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 170,
+      "gross_payment_amount": 2109310
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0002",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0002",
+    "gross_amount": 4344709,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-8123",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 152,
+      "gross_payment_amount": 4344709
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0003",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0003",
+    "gross_amount": 94080,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-2895",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 138,
+      "gross_payment_amount": 94080
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0004",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0004",
+    "gross_amount": 345800,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-9865",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 190,
+      "gross_payment_amount": 345800
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0005",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0005",
+    "gross_amount": 233240,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-3795",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 12,
+      "gross_payment_amount": 233240
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0006",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0006",
+    "gross_amount": 760060,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-7670",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 189,
+      "gross_payment_amount": 760060
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0007",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0007",
+    "gross_amount": 1236907,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-1285",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 71,
+      "gross_payment_amount": 1236907
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0008",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0008",
+    "gross_amount": 2100025,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-5673",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 11,
+      "gross_payment_amount": 2100025
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0009",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0009",
+    "gross_amount": 439971,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-7684",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 27,
+      "gross_payment_amount": 439971
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0010",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0010",
+    "gross_amount": 338529,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-7239",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 118,
+      "gross_payment_amount": 338529
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0011",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0011",
+    "gross_amount": 822599,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-1767",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 65,
+      "gross_payment_amount": 822599
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0012",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0012",
+    "gross_amount": 1318940,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-1863",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 182,
+      "gross_payment_amount": 1318940
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0013",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0013",
+    "gross_amount": 28980,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-7654",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 45,
+      "gross_payment_amount": 28980
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0014",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0014",
+    "gross_amount": 2872800,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-1970",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 156,
+      "gross_payment_amount": 2872800
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0015",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0015",
+    "gross_amount": 1220621,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-6762",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 13,
+      "gross_payment_amount": 1220621
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0016",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0016",
+    "gross_amount": 2525536,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-1293",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 106,
+      "gross_payment_amount": 2525536
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0017",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0017",
+    "gross_amount": 6674313,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-5690",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 177,
+      "gross_payment_amount": 6674313
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0018",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0018",
+    "gross_amount": 113622,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-2925",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 61,
+      "gross_payment_amount": 113622
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0019",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0019",
+    "gross_amount": 635600,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-6296",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 184,
+      "gross_payment_amount": 635600
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0020",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0020",
+    "gross_amount": 86450,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-5358",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 183,
+      "gross_payment_amount": 86450
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0021",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0021",
+    "gross_amount": 705390,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-4514",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 190,
+      "gross_payment_amount": 705390
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0022",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0022",
+    "gross_amount": 1860110,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-4860",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 94,
+      "gross_payment_amount": 1860110
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0023",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0023",
+    "gross_amount": 3281600,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-8677",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 98,
+      "gross_payment_amount": 3281600
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0024",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0024",
+    "gross_amount": 2563068,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-5485",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 196,
+      "gross_payment_amount": 2563068
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0025",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0025",
+    "gross_amount": 1287020,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-9088",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 118,
+      "gross_payment_amount": 1287020
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0026",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0026",
+    "gross_amount": 739130,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-6031",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 199,
+      "gross_payment_amount": 739130
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0027",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0027",
+    "gross_amount": 5506558,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-7567",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 74,
+      "gross_payment_amount": 5506558
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0028",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0028",
+    "gross_amount": 1891960,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-8014",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 46,
+      "gross_payment_amount": 1891960
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0029",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0029",
+    "gross_amount": 11124610,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-8347",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 6,
+      "gross_payment_amount": 11124610
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0030",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0030",
+    "gross_amount": 183260,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-8570",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 55,
+      "gross_payment_amount": 183260
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0031",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0031",
+    "gross_amount": 4421171,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-4874",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 145,
+      "gross_payment_amount": 4421171
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0032",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0032",
+    "gross_amount": 384580,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-1079",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 172,
+      "gross_payment_amount": 384580
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0033",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0033",
+    "gross_amount": 1718500,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-8847",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 178,
+      "gross_payment_amount": 1718500
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0034",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0034",
+    "gross_amount": 733905,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-9093",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 41,
+      "gross_payment_amount": 733905
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0035",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0035",
+    "gross_amount": 363947,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-3321",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 156,
+      "gross_payment_amount": 363947
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0036",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0036",
+    "gross_amount": 2833530,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-9455",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 190,
+      "gross_payment_amount": 2833530
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0037",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0037",
+    "gross_amount": 1174250,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-9474",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 166,
+      "gross_payment_amount": 1174250
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0038",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0038",
+    "gross_amount": 1117480,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-5537",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 186,
+      "gross_payment_amount": 1117480
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0039",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0039",
+    "gross_amount": 2088527,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-2081",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 153,
+      "gross_payment_amount": 2088527
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0040",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0040",
+    "gross_amount": 1398880,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-1304",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 113,
+      "gross_payment_amount": 1398880
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0041",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0041",
+    "gross_amount": 2109190,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-3451",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 199,
+      "gross_payment_amount": 2109190
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0042",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0042",
+    "gross_amount": 4472160,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-7571",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 154,
+      "gross_payment_amount": 4472160
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0043",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0043",
+    "gross_amount": 1090558,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-8633",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 174,
+      "gross_payment_amount": 1090558
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0044",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0044",
+    "gross_amount": 3605000,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-3544",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 74,
+      "gross_payment_amount": 3605000
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0045",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0045",
+    "gross_amount": 1517740,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-9399",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 127,
+      "gross_payment_amount": 1517740
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0046",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0046",
+    "gross_amount": 3905720,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-3556",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 50,
+      "gross_payment_amount": 3905720
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0047",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0047",
+    "gross_amount": 2383640,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-1732",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 168,
+      "gross_payment_amount": 2383640
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0048",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0048",
+    "gross_amount": 434560,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-1870",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 19,
+      "gross_payment_amount": 434560
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0049",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0049",
+    "gross_amount": 1278771,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-3510",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 45,
+      "gross_payment_amount": 1278771
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0050",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0050",
+    "gross_amount": 1542240,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-7590",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 62,
+      "gross_payment_amount": 1542240
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0051",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0051",
+    "gross_amount": 1571450,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-5604",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 101,
+      "gross_payment_amount": 1571450
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0052",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0052",
+    "gross_amount": 3074400,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-7795",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 24,
+      "gross_payment_amount": 3074400
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0053",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0053",
+    "gross_amount": 1425912,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-4857",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 107,
+      "gross_payment_amount": 1425912
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0054",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0054",
+    "gross_amount": 1696414,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-5622",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 38,
+      "gross_payment_amount": 1696414
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0055",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0055",
+    "gross_amount": 2323880,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-3154",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 54,
+      "gross_payment_amount": 2323880
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0056",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0056",
+    "gross_amount": 1157247,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-8246",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 162,
+      "gross_payment_amount": 1157247
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0057",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0057",
+    "gross_amount": 923460,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-5532",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 137,
+      "gross_payment_amount": 923460
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0058",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0058",
+    "gross_amount": 3578833,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-2778",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 116,
+      "gross_payment_amount": 3578833
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0059",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0059",
+    "gross_amount": 4026686,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-2096",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 103,
+      "gross_payment_amount": 4026686
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0060",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0060",
+    "gross_amount": 3834077,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-8675",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 66,
+      "gross_payment_amount": 3834077
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0061",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0061",
+    "gross_amount": 977850,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-6916",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 112,
+      "gross_payment_amount": 977850
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0062",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0062",
+    "gross_amount": 2471848,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-4172",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 51,
+      "gross_payment_amount": 2471848
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0063",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0063",
+    "gross_amount": 1933553,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-9983",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 151,
+      "gross_payment_amount": 1933553
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0064",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0064",
+    "gross_amount": 590995,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-2372",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 135,
+      "gross_payment_amount": 590995
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0065",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0065",
+    "gross_amount": 373450,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-8464",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 79,
+      "gross_payment_amount": 373450
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0066",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0066",
+    "gross_amount": 869425,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-2552",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 124,
+      "gross_payment_amount": 869425
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0067",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0067",
+    "gross_amount": 325360,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-7057",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 195,
+      "gross_payment_amount": 325360
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0068",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0068",
+    "gross_amount": 214620,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-8205",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 164,
+      "gross_payment_amount": 214620
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0069",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0069",
+    "gross_amount": 420210,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-4890",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 196,
+      "gross_payment_amount": 420210
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0070",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0070",
+    "gross_amount": 2069654,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-1525",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 47,
+      "gross_payment_amount": 2069654
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0071",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0071",
+    "gross_amount": 3014480,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-7242",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 151,
+      "gross_payment_amount": 3014480
+    }
+  },
+  {
+    "id": "tax_1099_2023_INST0072",
+    "object": "tax_document",
+    "type": "1099-K",
+    "year": 2023,
+    "instructor_id": "INST0072",
+    "gross_amount": 680890,
+    "currency": "usd",
+    "created": 1706688000,
+    "tax_id": "XXX-XX-3055",
+    "metadata": {
+      "form_delivered": "electronic",
+      "delivery_date": "2024-01-31",
+      "payment_transactions": 145,
+      "gross_payment_amount": 680890
+    }
+  }
+]

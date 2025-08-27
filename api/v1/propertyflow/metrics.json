@@ -1,0 +1,29 @@
+{
+  "total_properties": 126,
+  "total_landlords": 40,
+  "occupied_properties": 126,
+  "occupancy_rate": 1.0,
+  "total_rent_payments": 1988,
+  "successful_payments": 1954,
+  "collection_rate": 0.9828973843058351,
+  "late_payment_rate": 0.041750503018108655,
+  "nsf_rate": 0.01710261569416499,
+  "total_rent_collected": "579549400",
+  "average_rent_amount": 294396.0317460318,
+  "total_maintenance_costs": "9856500",
+  "maintenance_requests_per_property": 1.8015873015873016,
+  "total_landlord_payouts": "523328948",
+  "total_security_deposits_held": 37093900,
+  "management_fee_revenue": 46363952.0,
+  "platform_metrics": {
+    "properties_by_type": {
+      "apartment": 46,
+      "house": 44,
+      "condo": 20,
+      "townhouse": 16
+    },
+    "avg_properties_per_landlord": 3.15,
+    "monthly_recurring_revenue": 24147891.666666668,
+    "net_platform_revenue": 46363952.0
+  }
+}

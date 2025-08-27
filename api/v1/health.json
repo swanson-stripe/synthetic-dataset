@@ -1,0 +1,18 @@
+{
+  "status": "healthy",
+  "version": "1.0.0",
+  "timestamp": "2024-12-19T10:00:00Z",
+  "api_endpoint": "https://swanson-stripe.github.io/synthetic-dataset/api/v1",
+  "personas_available": 5,
+  "personas_ready": 5,
+  "total_endpoints": 35,
+  "uptime": "100%",
+  "last_updated": "2024-12-19T10:00:00Z",
+  "data_freshness": {
+    "techstyle": "2024-12-19",
+    "edutech": "2024-12-19", 
+    "propertyflow": "2024-12-19",
+    "fitstream": "2024-12-19",
+    "creatorhub": "2024-12-19"
+  }
+}
