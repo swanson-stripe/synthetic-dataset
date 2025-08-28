@@ -19,14 +19,24 @@ class StripeDataClient {
 
   async init() {
     // For demo purposes, always use fallback data to ensure immediate loading
-    console.log('Initializing with comprehensive demo data for all personas');
+    console.log('🚀 Initializing Stripe Synthetic Dataset Demo');
+    console.log('📊 Loading comprehensive demo data for all personas...');
+    
     this.useFallbackData();
+    
+    // Debug: Verify data loaded
+    console.log('✅ Demo data loaded:', {
+      currentPersona: this.currentPersona,
+      availablePersonas: Object.keys(this.availablePersonas),
+      currentDataKeys: Object.keys(this.currentData || {}),
+      metricsExample: this.calculateMetrics()
+    });
     
     // Optionally try to load from API in background (but don't wait)
     this.loadPersonas().then(() => {
-      console.log('API data available, but using fallback for demo consistency');
+      console.log('🌐 API data available, but using fallback for demo consistency');
     }).catch(() => {
-      console.log('API not available, continuing with fallback data');
+      console.log('📡 API not available, continuing with fallback data (this is expected)');
     });
   }
 
@@ -130,36 +140,48 @@ class StripeDataClient {
     this.notifySubscribers(this.currentData, this.currentPersona);
   }
 
-  // Generate realistic fallback data
+  // Generate realistic fallback data that reflects full synthetic dataset scale
   generateFallbackData(personaId) {
-    const baseAmount = Math.floor(Math.random() * 10000) + 5000;
+    // Base amounts for massive scale datasets
+    const baseAmount = Math.floor(Math.random() * 50000) + 25000;
     
     switch (personaId) {
       case 'techstyle':
+        // TechStyle: 150K payments, 75K customers (full synthetic dataset scale)
+        const techstylePayments = Array.from({length: 50}, (_, i) => ({
+          id: `pi_demo_${i.toString().padStart(6, '0')}`,
+          amount: Math.floor(Math.random() * 20000) + 1000,
+          currency: 'usd',
+          status: Math.random() > 0.05 ? 'succeeded' : 'failed',
+          customer: `cus_demo_${i.toString().padStart(6, '0')}`,
+          created: Date.now() - Math.random() * 86400000 * 30
+        }));
+        
         return {
-          payments: Array.from({length: 50}, (_, i) => ({
-            id: `pi_demo_${i.toString().padStart(6, '0')}`,
-            amount: Math.floor(Math.random() * 20000) + 1000,
-            currency: 'usd',
-            status: Math.random() > 0.05 ? 'succeeded' : 'failed',
-            customer: `cus_demo_${i.toString().padStart(6, '0')}`,
-            created: Date.now() - Math.random() * 86400000 * 30
-          })),
+          payments: techstylePayments,
           customers: Array.from({length: 30}, (_, i) => ({
             id: `cus_demo_${i.toString().padStart(6, '0')}`,
             email: `customer${i}@example.com`,
             created: Date.now() - Math.random() * 86400000 * 90,
             metadata: { country: ['US', 'CA', 'GB', 'AU'][Math.floor(Math.random() * 4)] }
           })),
+          // Full dataset metrics (not just the 50 sample payments)
+          _fullDatasetMetrics: {
+            totalPayments: 150000,
+            totalCustomers: 75000,
+            totalRevenue: 18500000000, // $185M in cents
+            successfulPayments: 147000
+          },
           summary: {
             revenue_metrics: {
-              total_revenue: baseAmount * 100,
+              total_revenue: 18500000000, // Full dataset revenue
               current_mrr: baseAmount
             }
           }
         };
         
       case 'edutech':
+        // EduTech: 73K students, 218 courses, $201M in transactions
         return {
           instructors: Array.from({length: 20}, (_, i) => ({
             id: `acct_demo_${i.toString().padStart(6, '0')}`,
@@ -171,18 +193,26 @@ class StripeDataClient {
               course_count: Math.floor(Math.random() * 10) + 1
             }
           })),
-          students: Array.from({length: 100}, (_, i) => ({
+          students: Array.from({length: 30}, (_, i) => ({
             id: `cus_demo_${i.toString().padStart(6, '0')}`,
             email: `student${i}@university.edu`,
             created: Date.now() - Math.random() * 86400000 * 90
           })),
-          enrollments: Array.from({length: 40}, (_, i) => ({
+          enrollments: Array.from({length: 25}, (_, i) => ({
             id: `enroll_demo_${i.toString().padStart(6, '0')}`,
             amount: Math.floor(Math.random() * 50000) + 10000,
             status: 'succeeded',
             customer: `cus_demo_${i.toString().padStart(6, '0')}`,
             course_id: `course_${Math.floor(Math.random() * 20)}`
-          }))
+          })),
+          // Full dataset metrics
+          _fullDatasetMetrics: {
+            totalStudents: 73000,
+            totalInstructors: 72,
+            totalCourses: 218,
+            totalEnrollments: 12000,
+            totalRevenue: 20100000000 // $201M in cents
+          }
         };
         
       case 'propertyflow':
@@ -557,6 +587,38 @@ class StripeDataClient {
   }
 
   calculateEcommerceMetrics(data) {
+    // Use full dataset metrics if available, otherwise calculate from sample
+    const fullMetrics = data._fullDatasetMetrics;
+    
+    if (fullMetrics) {
+      const successRate = fullMetrics.successfulPayments / fullMetrics.totalPayments;
+      const avgOrder = fullMetrics.totalRevenue / fullMetrics.totalPayments;
+      
+      return [
+        { 
+          label: 'Total Revenue', 
+          value: this.formatCurrency(fullMetrics.totalRevenue),
+          rawValue: fullMetrics.totalRevenue
+        },
+        { 
+          label: 'Success Rate', 
+          value: this.formatPercent(successRate),
+          rawValue: successRate
+        },
+        { 
+          label: 'Customers', 
+          value: fullMetrics.totalCustomers.toLocaleString(),
+          rawValue: fullMetrics.totalCustomers
+        },
+        { 
+          label: 'Avg Order', 
+          value: this.formatCurrency(avgOrder),
+          rawValue: avgOrder
+        }
+      ];
+    }
+    
+    // Fallback to sample calculation
     const payments = data.payments || [];
     const customers = data.customers || [];
     
@@ -593,6 +655,35 @@ class StripeDataClient {
   }
 
   calculateEducationMetrics(data) {
+    // Use full dataset metrics if available
+    const fullMetrics = data._fullDatasetMetrics;
+    
+    if (fullMetrics) {
+      return [
+        { 
+          label: 'Students', 
+          value: fullMetrics.totalStudents.toLocaleString(),
+          rawValue: fullMetrics.totalStudents
+        },
+        { 
+          label: 'Course Revenue', 
+          value: this.formatCurrency(fullMetrics.totalRevenue),
+          rawValue: fullMetrics.totalRevenue
+        },
+        { 
+          label: 'Instructors', 
+          value: fullMetrics.totalInstructors.toString(),
+          rawValue: fullMetrics.totalInstructors
+        },
+        { 
+          label: 'Enrollments', 
+          value: fullMetrics.totalEnrollments.toLocaleString(),
+          rawValue: fullMetrics.totalEnrollments
+        }
+      ];
+    }
+    
+    // Fallback to sample calculation
     const instructors = data.instructors || [];
     const students = data.students || [];
     const enrollments = data.enrollments || [];
