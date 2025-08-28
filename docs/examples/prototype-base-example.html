@@ -1635,9 +1635,9 @@
                 
                 // Try multiple path variations for local dev and GitHub Pages
                 const possiblePaths = [
+                    `/docs/assets/${this.currentPersona}.png`, // Local dev from project root (localhost:8080)
                     `../assets/${this.currentPersona}.png`,  // GitHub Pages / relative from examples/
                     `assets/${this.currentPersona}.png`,     // Local dev from docs root
-                    `/docs/assets/${this.currentPersona}.png`, // Absolute from root
                     `./assets/${this.currentPersona}.png`    // Alternative relative
                 ];
                 
@@ -1761,10 +1761,10 @@
                     // Setup image fallback for modal option
                     const modalImg = option.querySelector('.persona-option-logo');
                     const modalPossiblePaths = [
-                        `../assets/${id}.png`,
-                        `assets/${id}.png`,
-                        `/docs/assets/${id}.png`,
-                        `./assets/${id}.png`
+                        `/docs/assets/${id}.png`,     // Local dev from project root (localhost:8080)
+                        `../assets/${id}.png`,        // GitHub Pages / relative from examples/
+                        `assets/${id}.png`,           // Local dev from docs root
+                        `./assets/${id}.png`          // Alternative relative
                     ];
                     
                     let modalPathIndex = 0;
