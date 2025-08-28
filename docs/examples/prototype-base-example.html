@@ -476,6 +476,21 @@
         
         .metric-card {
             padding: 1.5rem;
+            transition: all 0.2s ease;
+            border-radius: 8px;
+        }
+        
+        .metric-card:hover {
+            background: #f9fafb;
+        }
+        
+        .metric-card.active {
+            background: #f0f9ff;
+            border: 2px solid #0ea5e9;
+        }
+        
+        .metric-card.active:hover {
+            background: #f0f9ff;
         }
         
         .metric-label {
@@ -1105,19 +1120,26 @@
                 const values = [];
                 const now = new Date();
                 
+                // Current value must match exactly
+                const currentValue = metric.rawValue || 0;
+                
                 // Start 11 months ago
                 for (let i = 11; i >= 0; i--) {
                     const date = new Date(now.getFullYear(), now.getMonth() - i, 1);
                     months.push(date.toLocaleDateString('en-US', { month: 'short', year: '2-digit' }));
                     
-                    // Generate realistic progression based on current stage and business model
-                    const baseValue = metric.rawValue || 0;
-                    const stageMultiplier = this.getStageGrowthPattern(i, this.currentStage);
-                    const businessGrowth = this.getBusinessGrowthPattern(i, personaId);
-                    const randomVariation = 0.85 + Math.random() * 0.3; // ±15% variation
-                    
-                    const value = Math.floor(baseValue * stageMultiplier * businessGrowth * randomVariation);
-                    values.push(Math.max(0, value));
+                    if (i === 0) {
+                        // Last month (current) - use exact current value
+                        values.push(currentValue);
+                    } else {
+                        // Historical months - work backwards from current value
+                        const stageMultiplier = this.getStageGrowthPattern(i, this.currentStage);
+                        const businessGrowth = this.getBusinessGrowthPattern(i, personaId);
+                        const randomVariation = 0.85 + Math.random() * 0.3; // ±15% variation
+                        
+                        const value = Math.floor(currentValue * stageMultiplier * businessGrowth * randomVariation);
+                        values.push(Math.max(0, value));
+                    }
                 }
                 
                 return { months, values, label: metric.label };
@@ -1263,8 +1285,8 @@
                         console.log(`📊 Metric ${i}:`, metric);
                     });
                     
-                    const html = metrics.map(metric => `
-                        <div class="metric-card">
+                    const html = metrics.map((metric, index) => `
+                        <div class="metric-card" data-metric-index="${index}" style="cursor: pointer;">
                             <div class="metric-label">${metric.label || 'Unknown'}</div>
                             <div class="metric-value">${metric.value || 'No Value'}</div>
                         </div>
@@ -1272,8 +1294,65 @@
                     
                     console.log('🖼️ Generated HTML:', html);
                     container.innerHTML = html;
+                    
+                    // Add click handlers to metric cards
+                    this.addMetricClickHandlers(metrics);
                 } catch (error) {
                     console.error('❌ Error updating metrics:', error);
+                }
+            }
+            
+            addMetricClickHandlers(metrics) {
+                const metricCards = document.querySelectorAll('.metric-card');
+                metricCards.forEach((card, index) => {
+                    card.addEventListener('click', () => {
+                        console.log(`📊 Metric card ${index} clicked:`, metrics[index]);
+                        
+                        // Remove active state from all cards
+                        metricCards.forEach(c => c.classList.remove('active'));
+                        
+                        // Add active state to clicked card
+                        card.classList.add('active');
+                        
+                        // Update chart to show this metric's time series
+                        this.updateChartForMetric(metrics[index], index);
+                    });
+                });
+                
+                // Set first metric as active by default
+                if (metricCards.length > 0) {
+                    metricCards[0].classList.add('active');
+                }
+            }
+            
+            updateChartForMetric(metric, metricIndex) {
+                try {
+                    const canvas = document.getElementById('revenue-chart');
+                    if (!canvas) return;
+                    
+                    const ctx = canvas.getContext('2d');
+                    
+                    console.log('📈 Updating chart for metric:', metric.label);
+                    
+                    // Update chart title
+                    const chartTitle = document.getElementById('chart-title');
+                    if (chartTitle) {
+                        chartTitle.textContent = `${metric.label} Trends`;
+                    }
+                    
+                    // Clean up previous chart
+                    if (this.currentChartData) {
+                        this.destroyChart();
+                    }
+                    
+                    // Generate time series data for this specific metric
+                    const timeSeriesData = this.generateTimeSeriesData(metric, this.currentPersona);
+                    
+                    // Initialize interactive chart with the new data
+                    this.initializeInteractiveChart(canvas, ctx, timeSeriesData, metric);
+                    
+                } catch (error) {
+                    console.error('Error updating chart for metric:', error);
                 }
             }
 
