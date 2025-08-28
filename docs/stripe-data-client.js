@@ -567,21 +567,97 @@ class StripeDataClient {
 
       case 'fitstream':
         return {
-          subscriptions: Array.from({length: 35}, (_, i) => ({
-            id: `sub_demo_${i.toString().padStart(6, '0')}`,
-            plan: ['Basic', 'Unlimited', 'Family'][Math.floor(Math.random() * 3)],
-            status: Math.random() > 0.1 ? 'active' : 'canceled',
-            current_period_start: Date.now() - Math.random() * 86400000 * 30,
-            mrr: [999, 1999, 3999][Math.floor(Math.random() * 3)]
+          payments: Array.from({length: 55}, (_, i) => ({
+            id: `pi_${this.generateId()}`,
+            amount: [2999, 4999, 7999, 12999][Math.floor(Math.random() * 4)], // $29.99-$129.99
+            currency: 'usd',
+            status: this.randomStatus(['succeeded', 'failed', 'requires_action'], [0.97, 0.02, 0.01]),
+            customer: `cus_${this.generateId()}`,
+            created: Date.now() - Math.random() * 86400000 * 90,
+            payment_method: this.randomPaymentMethod(),
+            metadata: {
+              subscription_id: `sub_${this.generateId()}`,
+              plan_type: ['basic', 'premium', 'family', 'corporate'][Math.floor(Math.random() * 4)],
+              billing_cycle: ['monthly', 'annual'][Math.floor(Math.random() * 2)],
+              gym_location: ['downtown', 'midtown', 'uptown', 'online_only'][Math.floor(Math.random() * 4)],
+              personal_trainer: Math.random() > 0.7,
+              payment_type: ['subscription', 'class_package', 'personal_training'][Math.floor(Math.random() * 3)]
+            },
+            description: 'FitStream membership payment'
           })),
-          customers: Array.from({length: 50}, (_, i) => ({
-            id: `cus_demo_${i.toString().padStart(6, '0')}`,
+          
+          customers: Array.from({length: 40}, (_, i) => ({
+            id: `cus_${this.generateId()}`,
             email: `member${i}@fitstream.com`,
-            plan: ['Basic', 'Unlimited', 'Family'][Math.floor(Math.random() * 3)],
-            engagement_score: Math.floor(Math.random() * 100),
-            ltv: Math.floor(Math.random() * 50000) + 5000,
+            name: this.generateCustomerName(),
+            created: Date.now() - Math.random() * 86400000 * 365,
+            metadata: {
+              total_spend: Math.floor(Math.random() * 200000) + 5000,
+              membership_start: new Date(Date.now() - Math.random() * 86400000 * 365).toISOString(),
+              fitness_level: ['beginner', 'intermediate', 'advanced', 'athlete'][Math.floor(Math.random() * 4)],
+              preferred_workouts: ['cardio', 'strength', 'yoga', 'crossfit', 'swimming'][Math.floor(Math.random() * 5)],
+              goals: ['weight_loss', 'muscle_gain', 'endurance', 'flexibility'][Math.floor(Math.random() * 4)],
+              check_ins_this_month: Math.floor(Math.random() * 25)
+            },
+            address: {
+              country: 'US',
+              state: ['CA', 'NY', 'TX', 'FL'][Math.floor(Math.random() * 4)]
+            }
+          })),
+          
+          subscriptions: Array.from({length: 35}, (_, i) => ({
+            id: `sub_${this.generateId()}`,
+            customer: `cus_${this.generateId()}`,
+            status: this.randomStatus(['active', 'canceled', 'past_due'], [0.85, 0.12, 0.03]),
+            current_period_start: Date.now() - Math.random() * 86400000 * 30,
+            current_period_end: Date.now() + Math.random() * 86400000 * 30,
+            created: Date.now() - Math.random() * 86400000 * 180,
+            metadata: {
+              plan_name: ['Basic Fitness', 'Premium All-Access', 'Family Plan', 'Corporate Wellness'][Math.floor(Math.random() * 4)],
+              billing_interval: ['month', 'year'][Math.floor(Math.random() * 2)],
+              gym_access: ['single_location', 'all_locations', 'online_only'][Math.floor(Math.random() * 3)],
+              trainer_sessions: Math.floor(Math.random() * 8)
+            }
+          })),
+          
+          products: Array.from({length: 15}, (_, i) => ({
+            id: `prod_${this.generateId()}`,
+            name: this.generateProductName('fitness'),
+            description: `Fitness membership and training services`,
+            active: Math.random() > 0.05,
+            metadata: {
+              category: ['membership', 'personal_training', 'classes', 'equipment_rental'][Math.floor(Math.random() * 4)],
+              access_level: ['basic', 'premium', 'unlimited'][Math.floor(Math.random() * 3)],
+              includes_classes: Math.random() > 0.4,
+              includes_equipment: Math.random() > 0.6
+            },
+            created: Date.now() - Math.random() * 86400000 * 90
+          })),
+          
+          meters: Array.from({length: 8}, (_, i) => ({
+            id: `mtr_${this.generateId()}`,
+            display_name: ['Gym Check-ins', 'Class Attendances', 'Personal Training Sessions', 'Equipment Usage'][Math.floor(Math.random() * 4)],
+            created: Date.now() - Math.random() * 86400000 * 30,
             status: 'active'
           })),
+          
+          transfers: Array.from({length: 12}, (_, i) => ({
+            id: `tr_${this.generateId()}`,
+            amount: Math.floor(Math.random() * 50000) + 10000,
+            currency: 'usd',
+            created: Date.now() - Math.random() * 86400000 * 7,
+            description: 'Trainer commission payout',
+            metadata: {
+              trainer_id: `trainer_${Math.floor(Math.random() * 10)}`,
+              commission_rate: '0.30',
+              sessions_count: Math.floor(Math.random() * 20) + 5
+            }
+          })),
+          
+          balances: [{
+            available: [{amount: Math.floor(Math.random() * 5000000) + 1000000, currency: 'usd'}],
+            pending: [{amount: Math.floor(Math.random() * 200000), currency: 'usd'}]
+          }],
           summary: {
             revenue_metrics: {
               current_mrr: baseAmount * 2,
@@ -601,27 +677,98 @@ class StripeDataClient {
 
       case 'creatorhub':
         return {
-          creators: Array.from({length: 30}, (_, i) => ({
-            id: `acct_demo_${i.toString().padStart(6, '0')}`,
-            business_profile: { name: `Creator ${i + 1}` },
-            category: ['Art', 'Music', 'Video', 'Writing', 'Photography'][Math.floor(Math.random() * 5)],
-            followers: Math.floor(Math.random() * 50000) + 1000,
-            revenue: Math.floor(Math.random() * 100000) + 5000,
-            content_count: Math.floor(Math.random() * 50) + 10
+          payments: Array.from({length: 65}, (_, i) => ({
+            id: `pi_${this.generateId()}`,
+            amount: Math.floor(Math.random() * 15000) + 500, // $5-$150 content
+            currency: 'usd',
+            status: this.randomStatus(['succeeded', 'failed', 'requires_action'], [0.98, 0.015, 0.005]),
+            customer: `cus_${this.generateId()}`,
+            created: Date.now() - Math.random() * 86400000 * 60,
+            payment_method: this.randomPaymentMethod(),
+            metadata: {
+              creator_id: `acct_${this.generateId()}`,
+              content_id: `content_${this.generateId()}`,
+              content_type: ['digital_art', 'music_track', 'video_tutorial', 'photo_pack', 'ebook'][Math.floor(Math.random() * 5)],
+              purchase_type: ['one_time', 'subscription', 'tip', 'commission'][Math.floor(Math.random() * 4)],
+              content_category: ['art', 'music', 'education', 'entertainment', 'lifestyle'][Math.floor(Math.random() * 5)],
+              is_exclusive: Math.random() > 0.7
+            },
+            description: 'Creator content purchase',
+            application_fee_amount: Math.floor(Math.random() * 1500) + 50 // Platform commission
           })),
-          fans: Array.from({length: 80}, (_, i) => ({
-            id: `cus_demo_${i.toString().padStart(6, '0')}`,
+          
+          customers: Array.from({length: 50}, (_, i) => ({
+            id: `cus_${this.generateId()}`,
             email: `fan${i}@example.com`,
-            total_spent: Math.floor(Math.random() * 10000) + 500,
-            favorite_creators: Math.floor(Math.random() * 5) + 1
+            name: this.generateCustomerName(),
+            created: Date.now() - Math.random() * 86400000 * 365,
+            metadata: {
+              total_spend: Math.floor(Math.random() * 50000) + 1000,
+              favorite_creators: Math.floor(Math.random() * 10) + 1,
+              content_preferences: ['art', 'music', 'videos', 'tutorials', 'photography'][Math.floor(Math.random() * 5)],
+              subscriber_tier: ['free', 'basic', 'premium', 'vip'][Math.floor(Math.random() * 4)],
+              engagement_level: ['low', 'medium', 'high'][Math.floor(Math.random() * 3)],
+              referral_count: Math.floor(Math.random() * 5)
+            },
+            address: {
+              country: ['US', 'CA', 'GB', 'AU', 'DE'][Math.floor(Math.random() * 5)]
+            }
           })),
-          content_sales: Array.from({length: 60}, (_, i) => ({
-            id: `sale_demo_${i.toString().padStart(6, '0')}`,
-            amount: Math.floor(Math.random() * 5000) + 500,
-            content_title: `Content Item ${i + 1}`,
-            creator: `Creator ${Math.floor(Math.random() * 30) + 1}`,
-            fan: `Fan ${Math.floor(Math.random() * 80) + 1}`
+          
+          connected_accounts: Array.from({length: 35}, (_, i) => ({
+            id: `acct_${this.generateId()}`,
+            type: 'express',
+            business_profile: { 
+              name: `${this.generateCustomerName()} Creative`,
+              url: `https://creator${i}.creatorhub.com`
+            },
+            created: Date.now() - Math.random() * 86400000 * 365,
+            metadata: {
+              creator_category: ['digital_artist', 'musician', 'photographer', 'writer', 'educator'][Math.floor(Math.random() * 5)],
+              followers_count: Math.floor(Math.random() * 100000) + 500,
+              content_count: Math.floor(Math.random() * 200) + 10,
+              verified_creator: Math.random() > 0.6,
+              specialization: ['traditional_art', 'digital_art', 'music_production', 'photography', 'writing'][Math.floor(Math.random() * 5)],
+              experience_years: Math.floor(Math.random() * 15) + 1
+            },
+            capabilities: {
+              transfers: 'requested'
+            }
           })),
+          
+          products: Array.from({length: 40}, (_, i) => ({
+            id: `prod_${this.generateId()}`,
+            name: this.generateProductName('creator'),
+            description: `Creative digital content`,
+            active: Math.random() > 0.05,
+            metadata: {
+              content_type: ['digital_art', 'music_track', 'video_tutorial', 'photo_pack', 'ebook'][Math.floor(Math.random() * 5)],
+              creator_id: `acct_${this.generateId()}`,
+              difficulty_level: ['beginner', 'intermediate', 'advanced'][Math.floor(Math.random() * 3)],
+              download_format: ['pdf', 'mp3', 'mp4', 'jpg', 'png'][Math.floor(Math.random() * 5)],
+              license_type: ['personal', 'commercial', 'extended'][Math.floor(Math.random() * 3)]
+            },
+            created: Date.now() - Math.random() * 86400000 * 120
+          })),
+          
+          transfers: Array.from({length: 45}, (_, i) => ({
+            id: `tr_${this.generateId()}`,
+            amount: Math.floor(Math.random() * 12000) + 300, // Creator payout (80% of sale)
+            currency: 'usd',
+            destination: `acct_${this.generateId()}`,
+            created: Date.now() - Math.random() * 86400000 * 14,
+            description: 'Creator content revenue payout',
+            metadata: {
+              content_sales: Math.floor(Math.random() * 20) + 1,
+              payout_period: 'weekly',
+              commission_rate: '0.80'
+            }
+          })),
+          
+          balances: [{
+            available: [{amount: Math.floor(Math.random() * 8000000) + 1500000, currency: 'usd'}],
+            pending: [{amount: Math.floor(Math.random() * 400000), currency: 'usd'}]
+          }],
           // Full dataset metrics - CreatorHub: 35K creators, $67M volume
           _fullDatasetMetrics: {
             totalCreators: Math.floor(34827 * stageMultiplier),
@@ -634,30 +781,74 @@ class StripeDataClient {
         };
 
       case 'givehope':
-        // GiveHope: 15K donors, $17.5M total raised, 55 campaigns
         return {
-          donors: Array.from({length: 25}, (_, i) => ({
-            id: `cus_demo_${i.toString().padStart(6, '0')}`,
+          payments: Array.from({length: 45}, (_, i) => ({
+            id: `pi_${this.generateId()}`,
+            amount: Math.floor(Math.random() * 100000) + 1000, // $10-$1000 donations
+            currency: 'usd',
+            status: this.randomStatus(['succeeded', 'failed', 'requires_action'], [0.99, 0.008, 0.002]),
+            customer: `cus_${this.generateId()}`,
+            created: Date.now() - Math.random() * 86400000 * 120,
+            payment_method: this.randomPaymentMethod(),
+            metadata: {
+              campaign_id: `camp_${this.generateId()}`,
+              donation_type: ['one_time', 'monthly_recurring', 'annual_recurring'][Math.floor(Math.random() * 3)],
+              cause_category: ['disaster_relief', 'education', 'healthcare', 'environment', 'poverty'][Math.floor(Math.random() * 5)],
+              is_anonymous: Math.random() > 0.8,
+              tribute_type: Math.random() > 0.9 ? ['honor', 'memory'][Math.floor(Math.random() * 2)] : null,
+              employer_match: Math.random() > 0.85
+            },
+            description: 'Charitable donation'
+          })),
+          
+          customers: Array.from({length: 35}, (_, i) => ({
+            id: `cus_${this.generateId()}`,
             email: `donor${i}@example.com`,
-            total_donated: Math.floor(Math.random() * 10000) + 500,
-            donor_type: ['individual', 'corporate', 'foundation'][Math.floor(Math.random() * 3)],
-            created: Date.now() - Math.random() * 86400000 * 365
+            name: this.generateCustomerName(),
+            created: Date.now() - Math.random() * 86400000 * 730,
+            metadata: {
+              total_donated: Math.floor(Math.random() * 50000) + 500,
+              donor_type: ['individual', 'corporate', 'foundation', 'family'][Math.floor(Math.random() * 4)],
+              donation_frequency: ['one_time', 'monthly', 'quarterly', 'annual'][Math.floor(Math.random() * 4)],
+              preferred_causes: ['education', 'healthcare', 'environment', 'disaster_relief'][Math.floor(Math.random() * 4)],
+              volunteer_hours: Math.floor(Math.random() * 100),
+              tax_exempt: Math.random() > 0.3
+            },
+            address: {
+              country: ['US', 'CA', 'GB', 'AU'][Math.floor(Math.random() * 4)]
+            }
           })),
-          campaigns: Array.from({length: 15}, (_, i) => ({
-            id: `camp_demo_${i.toString().padStart(6, '0')}`,
-            name: `Campaign ${i + 1}`,
-            cause: ['Disaster Relief', 'Education', 'Healthcare', 'Environment'][Math.floor(Math.random() * 4)],
-            goal: Math.floor(Math.random() * 500000) + 50000,
-            raised: Math.floor(Math.random() * 400000) + 20000,
-            status: 'active'
+          
+          products: Array.from({length: 20}, (_, i) => ({
+            id: `prod_${this.generateId()}`,
+            name: this.generateProductName('nonprofit'),
+            description: `Charitable giving campaign`,
+            active: Math.random() > 0.1,
+            metadata: {
+              campaign_type: ['emergency_relief', 'ongoing_support', 'capital_campaign'][Math.floor(Math.random() * 3)],
+              cause_area: ['education', 'healthcare', 'environment', 'poverty', 'disaster_relief'][Math.floor(Math.random() * 5)],
+              geographic_focus: ['local', 'national', 'international'][Math.floor(Math.random() * 3)],
+              beneficiary_count: Math.floor(Math.random() * 10000) + 100
+            },
+            created: Date.now() - Math.random() * 86400000 * 180
           })),
-          donations: Array.from({length: 30}, (_, i) => ({
-            id: `don_demo_${i.toString().padStart(6, '0')}`,
-            amount: Math.floor(Math.random() * 50000) + 2500,
-            donor: `Donor ${i + 1}`,
-            campaign: `Campaign ${Math.floor(Math.random() * 15) + 1}`,
-            recurring: Math.random() > 0.7
+          
+          transfers: Array.from({length: 8}, (_, i) => ({
+            id: `tr_${this.generateId()}`,
+            amount: Math.floor(Math.random() * 500000) + 50000,
+            currency: 'usd',
+            created: Date.now() - Math.random() * 86400000 * 30,
+            description: 'Program funding transfer',
+            metadata: {
+              program_id: `prog_${this.generateId()}`,
+              transfer_type: 'program_funding'
+            }
           })),
+          
+          balances: [{
+            available: [{amount: Math.floor(Math.random() * 15000000) + 2000000, currency: 'usd'}],
+            pending: [{amount: Math.floor(Math.random() * 500000), currency: 'usd'}]
+          }],
           // Full dataset metrics
           _fullDatasetMetrics: {
             totalDonors: Math.floor(14893 * stageMultiplier),
@@ -671,27 +862,90 @@ class StripeDataClient {
 
       case 'medsupply':
         return {
-          clients: Array.from({length: 25}, (_, i) => ({
-            id: `cli_demo_${i.toString().padStart(6, '0')}`,
-            name: `Medical Facility ${i + 1}`,
-            type: ['Hospital', 'Clinic', 'Laboratory', 'Pharmacy'][Math.floor(Math.random() * 4)],
-            credit_limit: [25000, 100000, 500000][Math.floor(Math.random() * 3)],
-            outstanding_balance: Math.floor(Math.random() * 50000)
+          payments: Array.from({length: 50}, (_, i) => ({
+            id: `pi_${this.generateId()}`,
+            amount: Math.floor(Math.random() * 500000) + 50000, // $500-$5000 medical supplies
+            currency: 'usd',
+            status: this.randomStatus(['succeeded', 'failed', 'requires_action'], [0.96, 0.03, 0.01]),
+            customer: `cus_${this.generateId()}`,
+            created: Date.now() - Math.random() * 86400000 * 90,
+            payment_method: this.randomPaymentMethod(),
+            metadata: {
+              invoice_id: `in_${this.generateId()}`,
+              purchase_order: `PO_${Math.floor(Math.random() * 100000)}`,
+              product_category: ['surgical_supplies', 'diagnostic_equipment', 'pharmaceuticals', 'safety_equipment'][Math.floor(Math.random() * 4)],
+              delivery_urgency: ['standard', 'priority', 'emergency'][Math.floor(Math.random() * 3)],
+              bulk_discount: Math.random() > 0.7,
+              regulatory_approval: ['fda_approved', 'ce_marked', 'iso_certified'][Math.floor(Math.random() * 3)]
+            },
+            description: 'Medical supplies purchase'
           })),
-          purchase_orders: Array.from({length: 30}, (_, i) => ({
-            id: `po_demo_${i.toString().padStart(6, '0')}`,
-            client: `Client ${Math.floor(Math.random() * 25) + 1}`,
-            amount: Math.floor(Math.random() * 200000) + 50000,
-            items: Math.floor(Math.random() * 20) + 5,
-            status: ['pending', 'approved', 'fulfilled'][Math.floor(Math.random() * 3)]
+          
+          customers: Array.from({length: 30}, (_, i) => ({
+            id: `cus_${this.generateId()}`,
+            email: `procurement${i}@hospital.com`,
+            name: `${['General', 'Regional', 'University', 'Specialty'][Math.floor(Math.random() * 4)]} Hospital ${i + 1}`,
+            created: Date.now() - Math.random() * 86400000 * 1095, // Up to 3 years
+            metadata: {
+              total_spend: Math.floor(Math.random() * 5000000) + 500000,
+              facility_type: ['hospital', 'clinic', 'pharmacy', 'laboratory'][Math.floor(Math.random() * 4)],
+              bed_count: Math.floor(Math.random() * 500) + 50,
+              credit_limit: Math.floor(Math.random() * 2000000) + 500000,
+              payment_terms: ['net_30', 'net_60', 'net_90'][Math.floor(Math.random() * 3)],
+              compliance_rating: ['excellent', 'good', 'satisfactory'][Math.floor(Math.random() * 3)]
+            },
+            address: {
+              country: 'US',
+              state: ['CA', 'NY', 'TX', 'FL', 'IL'][Math.floor(Math.random() * 5)]
+            }
           })),
+          
+          products: Array.from({length: 40}, (_, i) => ({
+            id: `prod_${this.generateId()}`,
+            name: this.generateProductName('b2b'),
+            description: `Professional medical equipment and supplies`,
+            active: Math.random() > 0.05,
+            metadata: {
+              category: ['surgical_instruments', 'diagnostic_tools', 'safety_equipment', 'pharmaceuticals'][Math.floor(Math.random() * 4)],
+              regulatory_status: ['fda_approved', 'ce_marked', 'pending_approval'][Math.floor(Math.random() * 3)],
+              manufacturer: ['MedTech Pro', 'Healthcare Solutions', 'Surgical Innovations'][Math.floor(Math.random() * 3)],
+              shelf_life_months: Math.floor(Math.random() * 60) + 12,
+              requires_training: Math.random() > 0.6
+            },
+            created: Date.now() - Math.random() * 86400000 * 365
+          })),
+          
           invoices: Array.from({length: 35}, (_, i) => ({
-            id: `inv_demo_${i.toString().padStart(6, '0')}`,
-            client: `Client ${Math.floor(Math.random() * 25) + 1}`,
-            amount: Math.floor(Math.random() * 200000) + 50000,
-            due_date: Date.now() + Math.random() * 86400000 * 90,
-            status: Math.random() > 0.2 ? 'paid' : 'outstanding'
+            id: `in_${this.generateId()}`,
+            customer: `cus_${this.generateId()}`,
+            amount_due: Math.floor(Math.random() * 800000) + 100000,
+            currency: 'usd',
+            status: this.randomStatus(['paid', 'open', 'overdue'], [0.75, 0.20, 0.05]),
+            created: Date.now() - Math.random() * 86400000 * 120,
+            metadata: {
+              payment_terms: ['net_30', 'net_60', 'net_90'][Math.floor(Math.random() * 3)],
+              purchase_order: `PO_${Math.floor(Math.random() * 100000)}`,
+              department: ['surgical', 'emergency', 'laboratory', 'pharmacy'][Math.floor(Math.random() * 4)],
+              priority_level: ['standard', 'urgent', 'critical'][Math.floor(Math.random() * 3)]
+            }
           })),
+          
+          transfers: Array.from({length: 15}, (_, i) => ({
+            id: `tr_${this.generateId()}`,
+            amount: Math.floor(Math.random() * 200000) + 20000,
+            currency: 'usd',
+            created: Date.now() - Math.random() * 86400000 * 14,
+            description: 'Supplier payment transfer',
+            metadata: {
+              supplier_id: `supplier_${Math.floor(Math.random() * 10)}`,
+              payment_batch: `batch_${this.generateId()}`
+            }
+          })),
+          
+          balances: [{
+            available: [{amount: Math.floor(Math.random() * 25000000) + 5000000, currency: 'usd'}],
+            pending: [{amount: Math.floor(Math.random() * 1000000), currency: 'usd'}]
+          }],
           // Full dataset metrics - MedSupply: 2.5K clients, $125M volume
           _fullDatasetMetrics: {
             totalClients: Math.floor(2487 * stageMultiplier),
