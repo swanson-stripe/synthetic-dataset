@@ -386,6 +386,26 @@
                         headers = ['Subscription ID', 'Plan', 'Customer', 'Status', 'MRR'];
                         title = 'Active Subscriptions';
                         break;
+                    case 'givehope':
+                        data = this.currentData.donations?.slice(0, 10) || [];
+                        headers = ['Donation ID', 'Amount', 'Donor', 'Campaign', 'Recurring'];
+                        title = 'Recent Donations';
+                        break;
+                    case 'medsupply':
+                        data = this.currentData.purchase_orders?.slice(0, 10) || [];
+                        headers = ['PO ID', 'Client', 'Amount', 'Items', 'Status'];
+                        title = 'Purchase Orders';
+                        break;
+                    case 'cloudflow':
+                        data = this.currentData.subscriptions?.slice(0, 10) || [];
+                        headers = ['Subscription ID', 'Customer', 'Plan', 'Status', 'Start Date'];
+                        title = 'SaaS Subscriptions';
+                        break;
+                    case 'localbites':
+                        data = this.currentData.orders?.slice(0, 10) || [];
+                        headers = ['Order ID', 'Restaurant', 'Customer', 'Total', 'Status'];
+                        title = 'Recent Orders';
+                        break;
                     default:
                         data = [];
                         headers = ['ID', 'Data', 'Status'];
@@ -435,6 +455,26 @@
                         data = this.currentData.customers?.slice(0, 10) || [];
                         headers = ['Customer ID', 'Plan', 'Engagement', 'LTV', 'Status'];
                         title = 'Top Customers';
+                        break;
+                    case 'givehope':
+                        data = this.currentData.campaigns?.slice(0, 10) || [];
+                        headers = ['Campaign ID', 'Name', 'Cause', 'Goal', 'Raised'];
+                        title = 'Active Campaigns';
+                        break;
+                    case 'medsupply':
+                        data = this.currentData.clients?.slice(0, 10) || [];
+                        headers = ['Client ID', 'Name', 'Type', 'Credit Limit', 'Balance'];
+                        title = 'B2B Clients';
+                        break;
+                    case 'cloudflow':
+                        data = this.currentData.customers?.slice(0, 10) || [];
+                        headers = ['Customer ID', 'Company', 'Plan', 'MRR', 'Employees'];
+                        title = 'SaaS Customers';
+                        break;
+                    case 'localbites':
+                        data = this.currentData.connected_accounts?.slice(0, 10) || [];
+                        headers = ['Account ID', 'Name', 'Type', 'Total Payouts', 'Rating'];
+                        title = 'Partners';
                         break;
                     default:
                         data = [];
@@ -547,6 +587,78 @@
                                 <td>${item.creator}</td>
                                 <td>${this.formatCurrency(item.amount)}</td>
                                 <td>${item.fan}</td>
+                            `;
+                        }
+                    case 'givehope':
+                        if (item.name) { // campaign
+                            return `
+                                <td>${item.id}</td>
+                                <td>${item.name}</td>
+                                <td>${item.cause}</td>
+                                <td>${this.formatCurrency(item.goal)}</td>
+                                <td>${this.formatCurrency(item.raised)}</td>
+                            `;
+                        } else { // donation
+                            return `
+                                <td>${item.id}</td>
+                                <td>${this.formatCurrency(item.amount)}</td>
+                                <td>${item.donor}</td>
+                                <td>${item.campaign}</td>
+                                <td>${item.recurring ? 'Yes' : 'No'}</td>
+                            `;
+                        }
+                    case 'medsupply':
+                        if (item.name) { // client
+                            return `
+                                <td>${item.id}</td>
+                                <td>${item.name}</td>
+                                <td>${item.type}</td>
+                                <td>${this.formatCurrency(item.credit_limit)}</td>
+                                <td>${this.formatCurrency(item.outstanding_balance)}</td>
+                            `;
+                        } else { // purchase order
+                            return `
+                                <td>${item.id}</td>
+                                <td>${item.client}</td>
+                                <td>${this.formatCurrency(item.amount)}</td>
+                                <td>${item.items}</td>
+                                <td><span class="status-badge status-${item.status}">${item.status}</span></td>
+                            `;
+                        }
+                    case 'cloudflow':
+                        if (item.company) { // customer
+                            return `
+                                <td>${item.id}</td>
+                                <td>${item.company}</td>
+                                <td>${item.plan}</td>
+                                <td>${this.formatCurrency(item.mrr * 100)}</td>
+                                <td>${item.employees}</td>
+                            `;
+                        } else { // subscription
+                            return `
+                                <td>${item.id}</td>
+                                <td>${item.customer}</td>
+                                <td>${item.plan}</td>
+                                <td><span class="status-badge status-${item.status}">${item.status}</span></td>
+                                <td>${new Date(item.current_period_start).toLocaleDateString()}</td>
+                            `;
+                        }
+                    case 'localbites':
+                        if (item.business_profile) { // connected account
+                            return `
+                                <td>${item.id}</td>
+                                <td>${item.business_profile.name}</td>
+                                <td>${item.type}</td>
+                                <td>${this.formatCurrency(item.total_payouts)}</td>
+                                <td>${item.rating}⭐</td>
+                            `;
+                        } else { // order
+                            return `
+                                <td>${item.id}</td>
+                                <td>${item.restaurant}</td>
+                                <td>${item.customer}</td>
+                                <td>${this.formatCurrency(item.total)}</td>
+                                <td><span class="status-badge status-${item.status}">${item.status}</span></td>
                             `;
                         }
                     default:

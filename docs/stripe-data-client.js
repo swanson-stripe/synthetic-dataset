@@ -18,26 +18,31 @@ class StripeDataClient {
   }
 
   async init() {
-    try {
-      await this.loadPersonas();
-      await this.loadPersona(this.currentPersona);
-    } catch (error) {
-      console.error('Failed to initialize StripeDataClient:', error);
-      // Use fallback data for demo purposes
-      this.useFallbackData();
-    }
+    // For demo purposes, always use fallback data to ensure immediate loading
+    console.log('Initializing with comprehensive demo data for all personas');
+    this.useFallbackData();
+    
+    // Optionally try to load from API in background (but don't wait)
+    this.loadPersonas().then(() => {
+      console.log('API data available, but using fallback for demo consistency');
+    }).catch(() => {
+      console.log('API not available, continuing with fallback data');
+    });
   }
 
   // Fallback data for demo when API is not available
   useFallbackData() {
-    console.log('Using fallback data for demo');
+    console.log('Using comprehensive fallback data for demo with all personas');
     
+    // Create complete personas matching the real API structure
     this.availablePersonas = {
       techstyle: {
         id: 'techstyle',
         name: 'TechStyle Fashion Retailer',
         business_model: 'ecommerce',
         description: 'E-commerce fashion retailer with global payment processing',
+        complexity: 'medium',
+        data_scale: 'large',
         endpoints: {}
       },
       edutech: {
@@ -45,6 +50,8 @@ class StripeDataClient {
         name: 'EduTech Academy',
         business_model: 'education_marketplace',
         description: 'Online education marketplace with instructor payouts',
+        complexity: 'high',
+        data_scale: 'large',
         endpoints: {}
       },
       propertyflow: {
@@ -52,6 +59,8 @@ class StripeDataClient {
         name: 'PropertyFlow Property Management',
         business_model: 'property_management',
         description: 'Property management platform with rent collection',
+        complexity: 'medium',
+        data_scale: 'medium',
         endpoints: {}
       },
       fitstream: {
@@ -59,6 +68,8 @@ class StripeDataClient {
         name: 'FitStream Fitness Platform',
         business_model: 'subscription',
         description: 'Subscription fitness platform with trials and engagement',
+        complexity: 'medium',
+        data_scale: 'large',
         endpoints: {}
       },
       creatorhub: {
@@ -66,8 +77,53 @@ class StripeDataClient {
         name: 'CreatorHub Content Platform',
         business_model: 'creator_economy',
         description: 'Content monetization platform with creator payouts',
+        complexity: 'high',
+        data_scale: 'large',
+        endpoints: {}
+      },
+      givehope: {
+        id: 'givehope',
+        name: 'GiveHope Non-Profit Platform',
+        business_model: 'nonprofit',
+        description: 'Non-profit donation platform with campaigns and recurring donors',
+        complexity: 'medium',
+        data_scale: 'large',
+        endpoints: {}
+      },
+      medsupply: {
+        id: 'medsupply',
+        name: 'MedSupply Pro B2B Platform',
+        business_model: 'b2b_wholesale',
+        description: 'B2B medical equipment wholesaler with net terms',
+        complexity: 'high',
+        data_scale: 'large',
+        endpoints: {}
+      },
+      cloudflow: {
+        id: 'cloudflow',
+        name: 'CloudFlow SaaS Platform',
+        business_model: 'saas',
+        description: 'B2B SaaS platform with subscription management',
+        complexity: 'high',
+        data_scale: 'large',
+        endpoints: {}
+      },
+      localbites: {
+        id: 'localbites',
+        name: 'LocalBites Food Delivery',
+        business_model: 'marketplace',
+        description: 'Food delivery marketplace with restaurant and driver management',
+        complexity: 'high',
+        data_scale: 'very_large',
         endpoints: {}
       }
+    };
+
+    // Support lifecycle stages
+    this.lifecycleStages = {
+      early: { name: 'Early Stage', description: 'Months 1-8: Startup phase' },
+      growth: { name: 'Growth Stage', description: 'Months 9-16: Expansion phase' },
+      mature: { name: 'Mature Stage', description: 'Months 17-24: Established business' }
     };
 
     this.currentData = this.generateFallbackData(this.currentPersona);
@@ -201,6 +257,111 @@ class StripeDataClient {
             fan: `Fan ${Math.floor(Math.random() * 80) + 1}`
           }))
         };
+
+      case 'givehope':
+        return {
+          donors: Array.from({length: 60}, (_, i) => ({
+            id: `cus_demo_${i.toString().padStart(6, '0')}`,
+            email: `donor${i}@example.com`,
+            total_donated: Math.floor(Math.random() * 10000) + 500,
+            donor_type: ['individual', 'corporate', 'foundation'][Math.floor(Math.random() * 3)],
+            created: Date.now() - Math.random() * 86400000 * 365
+          })),
+          campaigns: Array.from({length: 15}, (_, i) => ({
+            id: `camp_demo_${i.toString().padStart(6, '0')}`,
+            name: `Campaign ${i + 1}`,
+            cause: ['Disaster Relief', 'Education', 'Healthcare', 'Environment'][Math.floor(Math.random() * 4)],
+            goal: Math.floor(Math.random() * 500000) + 50000,
+            raised: Math.floor(Math.random() * 400000) + 20000,
+            status: 'active'
+          })),
+          donations: Array.from({length: 45}, (_, i) => ({
+            id: `don_demo_${i.toString().padStart(6, '0')}`,
+            amount: Math.floor(Math.random() * 50000) + 2500,
+            donor: `Donor ${i + 1}`,
+            campaign: `Campaign ${Math.floor(Math.random() * 15) + 1}`,
+            recurring: Math.random() > 0.7
+          }))
+        };
+
+      case 'medsupply':
+        return {
+          clients: Array.from({length: 25}, (_, i) => ({
+            id: `cli_demo_${i.toString().padStart(6, '0')}`,
+            name: `Medical Facility ${i + 1}`,
+            type: ['Hospital', 'Clinic', 'Laboratory', 'Pharmacy'][Math.floor(Math.random() * 4)],
+            credit_limit: [25000, 100000, 500000][Math.floor(Math.random() * 3)],
+            outstanding_balance: Math.floor(Math.random() * 50000)
+          })),
+          purchase_orders: Array.from({length: 30}, (_, i) => ({
+            id: `po_demo_${i.toString().padStart(6, '0')}`,
+            client: `Client ${Math.floor(Math.random() * 25) + 1}`,
+            amount: Math.floor(Math.random() * 200000) + 50000,
+            items: Math.floor(Math.random() * 20) + 5,
+            status: ['pending', 'approved', 'fulfilled'][Math.floor(Math.random() * 3)]
+          })),
+          invoices: Array.from({length: 35}, (_, i) => ({
+            id: `inv_demo_${i.toString().padStart(6, '0')}`,
+            client: `Client ${Math.floor(Math.random() * 25) + 1}`,
+            amount: Math.floor(Math.random() * 200000) + 50000,
+            due_date: Date.now() + Math.random() * 86400000 * 90,
+            status: Math.random() > 0.2 ? 'paid' : 'outstanding'
+          }))
+        };
+
+      case 'cloudflow':
+        return {
+          customers: Array.from({length: 40}, (_, i) => ({
+            id: `cus_demo_${i.toString().padStart(6, '0')}`,
+            company: `Company ${i + 1}`,
+            plan: ['Starter', 'Professional', 'Enterprise'][Math.floor(Math.random() * 3)],
+            mrr: [99, 299, 999][Math.floor(Math.random() * 3)],
+            employees: Math.floor(Math.random() * 1000) + 10
+          })),
+          subscriptions: Array.from({length: 38}, (_, i) => ({
+            id: `sub_demo_${i.toString().padStart(6, '0')}`,
+            customer: `Company ${Math.floor(Math.random() * 40) + 1}`,
+            plan: ['Starter', 'Professional', 'Enterprise'][Math.floor(Math.random() * 3)],
+            status: Math.random() > 0.1 ? 'active' : 'canceled',
+            current_period_start: Date.now() - Math.random() * 86400000 * 30
+          })),
+          invoices: Array.from({length: 50}, (_, i) => ({
+            id: `in_demo_${i.toString().padStart(6, '0')}`,
+            customer: `Company ${Math.floor(Math.random() * 40) + 1}`,
+            amount: [9900, 29900, 99900][Math.floor(Math.random() * 3)],
+            status: Math.random() > 0.05 ? 'paid' : 'open',
+            due_date: Date.now() + Math.random() * 86400000 * 30
+          }))
+        };
+
+      case 'localbites':
+        return {
+          orders: Array.from({length: 70}, (_, i) => ({
+            id: `ord_demo_${i.toString().padStart(6, '0')}`,
+            restaurant: `Restaurant ${Math.floor(Math.random() * 20) + 1}`,
+            driver: `Driver ${Math.floor(Math.random() * 15) + 1}`,
+            customer: `Customer ${Math.floor(Math.random() * 100) + 1}`,
+            total: Math.floor(Math.random() * 8000) + 1500,
+            delivery_fee: Math.floor(Math.random() * 500) + 200,
+            status: ['delivered', 'in_transit', 'preparing'][Math.floor(Math.random() * 3)]
+          })),
+          connected_accounts: Array.from({length: 35}, (_, i) => ({
+            id: `acct_demo_${i.toString().padStart(6, '0')}`,
+            business_profile: { 
+              name: i < 20 ? `Restaurant ${i + 1}` : `Driver ${i - 19}`
+            },
+            type: i < 20 ? 'restaurant' : 'driver',
+            total_payouts: Math.floor(Math.random() * 50000) + 5000,
+            rating: (4.0 + Math.random()).toFixed(1)
+          })),
+          payments: Array.from({length: 65}, (_, i) => ({
+            id: `pi_demo_${i.toString().padStart(6, '0')}`,
+            amount: Math.floor(Math.random() * 8000) + 1500,
+            application_fee: Math.floor(Math.random() * 800) + 150,
+            status: Math.random() > 0.03 ? 'succeeded' : 'failed',
+            customer: `Customer ${Math.floor(Math.random() * 100) + 1}`
+          }))
+        };
         
       default:
         return {
@@ -238,9 +399,9 @@ class StripeDataClient {
       // Load main data endpoints
       const dataPromises = Object.entries(endpoints).map(async ([key, endpoint]) => {
         try {
-          const url = `${this.baseUrl}${endpoint}`;
-          const data = await this.fetchWithRetry(url);
-          return [key, data];
+        const url = `${this.baseUrl}${endpoint}`;
+        const data = await this.fetchWithRetry(url);
+        return [key, data];
         } catch (error) {
           console.warn(`Failed to load ${key} for ${personaId}:`, error.message);
           return [key, []]; // Return empty array as fallback
@@ -281,7 +442,7 @@ class StripeDataClient {
 
     // Try to load from API, fall back to generated data
     try {
-      return await this.loadPersona(personaId);
+    return await this.loadPersona(personaId);
     } catch (error) {
       console.warn(`Failed to load ${personaId}, using fallback data:`, error.message);
       this.currentPersona = personaId;
@@ -382,6 +543,14 @@ class StripeDataClient {
         return this.calculateFitnessMetrics(data);
       case 'creatorhub':
         return this.calculateCreatorMetrics(data);
+      case 'givehope':
+        return this.calculateNonprofitMetrics(data);
+      case 'medsupply':
+        return this.calculateB2BMetrics(data);
+      case 'cloudflow':
+        return this.calculateSaaSMetrics(data);
+      case 'localbites':
+        return this.calculateMarketplaceMetrics(data);
       default:
         return this.calculateGenericMetrics(data);
     }
@@ -559,6 +728,139 @@ class StripeDataClient {
       value: Array.isArray(data[key]) ? data[key].length.toLocaleString() : 'N/A',
       rawValue: Array.isArray(data[key]) ? data[key].length : 0
     }));
+  }
+
+  calculateNonprofitMetrics(data) {
+    const donors = data.donors || [];
+    const campaigns = data.campaigns || [];
+    const donations = data.donations || [];
+    
+    const totalRaised = donations.reduce((sum, d) => sum + (d.amount || 0), 0);
+    const activeCampaigns = campaigns.filter(c => c.status === 'active').length;
+
+    return [
+      { 
+        label: 'Total Donors', 
+        value: donors.length.toLocaleString(),
+        rawValue: donors.length
+      },
+      { 
+        label: 'Total Raised', 
+        value: this.formatCurrency(totalRaised),
+        rawValue: totalRaised
+      },
+      { 
+        label: 'Active Campaigns', 
+        value: activeCampaigns.toString(),
+        rawValue: activeCampaigns
+      },
+      { 
+        label: 'Donations', 
+        value: donations.length.toLocaleString(),
+        rawValue: donations.length
+      }
+    ];
+  }
+
+  calculateB2BMetrics(data) {
+    const clients = data.clients || [];
+    const purchaseOrders = data.purchase_orders || [];
+    const invoices = data.invoices || [];
+    
+    const totalVolume = purchaseOrders.reduce((sum, po) => sum + (po.amount || 0), 0);
+    const paidInvoices = invoices.filter(inv => inv.status === 'paid').length;
+    const collectionRate = invoices.length > 0 ? paidInvoices / invoices.length : 0;
+
+    return [
+      { 
+        label: 'B2B Clients', 
+        value: clients.length.toLocaleString(),
+        rawValue: clients.length
+      },
+      { 
+        label: 'Purchase Volume', 
+        value: this.formatCurrency(totalVolume),
+        rawValue: totalVolume
+      },
+      { 
+        label: 'Purchase Orders', 
+        value: purchaseOrders.length.toLocaleString(),
+        rawValue: purchaseOrders.length
+      },
+      { 
+        label: 'Collection Rate', 
+        value: this.formatPercent(collectionRate),
+        rawValue: collectionRate
+      }
+    ];
+  }
+
+  calculateSaaSMetrics(data) {
+    const customers = data.customers || [];
+    const subscriptions = data.subscriptions || [];
+    const invoices = data.invoices || [];
+    
+    const totalMRR = customers.reduce((sum, c) => sum + (c.mrr || 0), 0);
+    const activeSubscriptions = subscriptions.filter(s => s.status === 'active').length;
+    const churnRate = subscriptions.length > 0 ? 
+      (subscriptions.length - activeSubscriptions) / subscriptions.length : 0;
+
+    return [
+      { 
+        label: 'SaaS Customers', 
+        value: customers.length.toLocaleString(),
+        rawValue: customers.length
+      },
+      { 
+        label: 'Monthly MRR', 
+        value: this.formatCurrency(totalMRR * 100),
+        rawValue: totalMRR * 100
+      },
+      { 
+        label: 'Active Subs', 
+        value: activeSubscriptions.toLocaleString(),
+        rawValue: activeSubscriptions
+      },
+      { 
+        label: 'Churn Rate', 
+        value: this.formatPercent(churnRate),
+        rawValue: churnRate
+      }
+    ];
+  }
+
+  calculateMarketplaceMetrics(data) {
+    const orders = data.orders || [];
+    const connectedAccounts = data.connected_accounts || [];
+    const payments = data.payments || [];
+    
+    const totalGMV = orders.reduce((sum, o) => sum + (o.total || 0), 0);
+    const deliveredOrders = orders.filter(o => o.status === 'delivered').length;
+    const restaurants = connectedAccounts.filter(acc => acc.type === 'restaurant').length;
+    const drivers = connectedAccounts.filter(acc => acc.type === 'driver').length;
+
+    return [
+      { 
+        label: 'Total Orders', 
+        value: orders.length.toLocaleString(),
+        rawValue: orders.length
+      },
+      { 
+        label: 'GMV', 
+        value: this.formatCurrency(totalGMV),
+        rawValue: totalGMV
+      },
+      { 
+        label: 'Restaurants', 
+        value: restaurants.toString(),
+        rawValue: restaurants
+      },
+      { 
+        label: 'Drivers', 
+        value: drivers.toString(),
+        rawValue: drivers
+      }
+    ];
   }
 
   // Utility functions
