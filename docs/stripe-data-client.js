@@ -236,11 +236,12 @@ class StripeDataClient {
           })),
           // Full dataset metrics
           _fullDatasetMetrics: {
-            totalStudents: 73000,
-            totalInstructors: 72,
-            totalCourses: 218,
-            totalEnrollments: 12000,
-            totalRevenue: 20100000000 // $201M in cents
+            totalStudents: Math.floor(73000 * stageMultiplier),
+            totalInstructors: Math.floor(72 * stageMultiplier),
+            totalCourses: Math.floor(218 * stageMultiplier),
+            totalEnrollments: Math.floor(12000 * stageMultiplier),
+            totalRevenue: Math.floor(20100000000 * stageMultiplier), // $201M in cents
+            stage: stage
           }
         };
         
@@ -267,11 +268,12 @@ class StripeDataClient {
           })),
           // Full dataset metrics - PropertyFlow: 25K properties, $2.8B volume
           _fullDatasetMetrics: {
-            totalProperties: 25000,
-            totalLandlords: 8500,
-            totalPayments: 350000,
-            totalVolume: 280000000000, // $2.8B in cents
-            successfulPayments: 342000
+            totalProperties: Math.floor(25000 * stageMultiplier),
+            totalLandlords: Math.floor(8500 * stageMultiplier),
+            totalPayments: Math.floor(350000 * stageMultiplier),
+            totalVolume: Math.floor(280000000000 * stageMultiplier), // $2.8B in cents
+            successfulPayments: Math.floor(342000 * stageMultiplier),
+            stage: stage
           }
         };
 
@@ -300,11 +302,12 @@ class StripeDataClient {
           },
           // Full dataset metrics - FitStream: 85K subscribers, $98M ARR
           _fullDatasetMetrics: {
-            totalSubscribers: 85000,
-            totalCustomers: 120000,
-            totalMRR: 817000000, // $8.17M MRR in cents
-            totalARR: 9800000000, // $98M ARR in cents
-            activeSubscriptions: 78000
+            totalSubscribers: Math.floor(85000 * stageMultiplier),
+            totalCustomers: Math.floor(120000 * stageMultiplier),
+            totalMRR: Math.floor(817000000 * stageMultiplier), // $8.17M MRR in cents
+            totalARR: Math.floor(9800000000 * stageMultiplier), // $98M ARR in cents
+            activeSubscriptions: Math.floor(78000 * stageMultiplier),
+            stage: stage
           }
         };
 
@@ -333,11 +336,12 @@ class StripeDataClient {
           })),
           // Full dataset metrics - CreatorHub: 35K creators, $67M volume
           _fullDatasetMetrics: {
-            totalCreators: 35000,
-            totalFans: 850000,
-            totalSales: 420000,
-            totalVolume: 6700000000, // $67M in cents
-            topCreators: 2800
+            totalCreators: Math.floor(35000 * stageMultiplier),
+            totalFans: Math.floor(850000 * stageMultiplier),
+            totalSales: Math.floor(420000 * stageMultiplier),
+            totalVolume: Math.floor(6700000000 * stageMultiplier), // $67M in cents
+            topCreators: Math.floor(2800 * stageMultiplier),
+            stage: stage
           }
         };
 
@@ -368,11 +372,12 @@ class StripeDataClient {
           })),
           // Full dataset metrics
           _fullDatasetMetrics: {
-            totalDonors: 15000,
-            totalCampaigns: 55,
-            totalRaised: 1750000000, // $17.5M in cents
-            totalDonations: 125000,
-            recurringDonors: 1500
+            totalDonors: Math.floor(15000 * stageMultiplier),
+            totalCampaigns: Math.floor(55 * stageMultiplier),
+            totalRaised: Math.floor(1750000000 * stageMultiplier), // $17.5M in cents
+            totalDonations: Math.floor(125000 * stageMultiplier),
+            recurringDonors: Math.floor(1500 * stageMultiplier),
+            stage: stage
           }
         };
 
@@ -401,11 +406,12 @@ class StripeDataClient {
           })),
           // Full dataset metrics - MedSupply: 2.5K clients, $125M volume
           _fullDatasetMetrics: {
-            totalClients: 2500,
-            totalOrders: 15000,
-            totalVolume: 12500000000, // $125M in cents
-            totalInvoices: 18000,
-            paidInvoices: 16500
+            totalClients: Math.floor(2500 * stageMultiplier),
+            totalOrders: Math.floor(15000 * stageMultiplier),
+            totalVolume: Math.floor(12500000000 * stageMultiplier), // $125M in cents
+            totalInvoices: Math.floor(18000 * stageMultiplier),
+            paidInvoices: Math.floor(16500 * stageMultiplier),
+            stage: stage
           }
         };
 
@@ -434,11 +440,12 @@ class StripeDataClient {
           })),
           // Full dataset metrics - CloudFlow: 50K customers, $240M ARR
           _fullDatasetMetrics: {
-            totalCustomers: 50000,
-            totalSubscriptions: 47000,
-            totalMRR: 2000000000, // $20M MRR in cents
-            totalARR: 24000000000, // $240M ARR in cents
-            activeSubscriptions: 44000
+            totalCustomers: Math.floor(50000 * stageMultiplier),
+            totalSubscriptions: Math.floor(47000 * stageMultiplier),
+            totalMRR: Math.floor(2000000000 * stageMultiplier), // $20M MRR in cents
+            totalARR: Math.floor(24000000000 * stageMultiplier), // $240M ARR in cents
+            activeSubscriptions: Math.floor(44000 * stageMultiplier),
+            stage: stage
           }
         };
 
@@ -471,11 +478,12 @@ class StripeDataClient {
           })),
           // Full dataset metrics - LocalBites: 600K orders, $95M volume
           _fullDatasetMetrics: {
-            totalOrders: 600000,
-            totalRestaurants: 8500,
-            totalDrivers: 12000,
-            totalVolume: 9500000000, // $95M in cents
-            totalPayments: 585000
+            totalOrders: Math.floor(600000 * stageMultiplier),
+            totalRestaurants: Math.floor(8500 * stageMultiplier),
+            totalDrivers: Math.floor(12000 * stageMultiplier),
+            totalVolume: Math.floor(9500000000 * stageMultiplier), // $95M in cents
+            totalPayments: Math.floor(585000 * stageMultiplier),
+            stage: stage
           }
         };
         
