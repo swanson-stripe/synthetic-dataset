@@ -22,95 +22,313 @@
             background: white;
             padding: 1rem 2rem;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
         }
         
-        .prototype-header h1 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #0f172a;
+        /* Persona Selector Styles */
+        .persona-selector-container {
+            position: relative;
         }
         
-        .nav-controls {
+        .persona-selector-button {
             display: flex;
             align-items: center;
-            gap: 2rem;
-        }
-        
-        .nav-selector-group {
-            display: flex;
-            gap: 1rem;
-        }
-        
-        .nav-selector {
-            display: flex;
-            flex-direction: column;
-            gap: 0.25rem;
-        }
-        
-        .nav-selector label {
-            font-size: 0.75rem;
-            font-weight: 500;
-            color: #64748b;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        .nav-selector select {
-            min-width: 200px;
-            padding: 0.5rem 0.75rem;
-            border: none;
-            border-radius: 6px;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
             background: white;
-            font-size: 0.875rem;
-            color: #1e293b;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
             cursor: pointer;
+            font-size: 0.875rem;
+            color: #374151;
+            transition: all 0.2s ease;
+            min-width: 200px;
         }
         
-        .nav-selector select:focus {
-            outline: none;
+        .persona-selector-button:hover {
+            border-color: #d1d5db;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
         
-        .persona-metadata {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            gap: 0.5rem;
+        .persona-logo {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            object-fit: cover;
         }
         
-        .persona-info {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+        .persona-selector-text {
+            flex: 1;
+            text-align: left;
         }
         
         .persona-name {
             font-weight: 600;
-            color: #0f172a;
-            font-size: 0.875rem;
+            color: #111827;
+            margin-bottom: 2px;
         }
         
         .persona-description {
             font-size: 0.75rem;
-            color: #64748b;
-            text-align: right;
+            color: #6b7280;
+        }
+        
+        .dropdown-arrow {
+            width: 12px;
+            height: 12px;
+            transition: transform 0.2s ease;
+        }
+        
+        .dropdown-arrow.open {
+            transform: rotate(180deg);
+        }
+        
+        /* Popover Styles */
+        .persona-popover {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            margin-top: 4px;
+            padding: 1rem;
+            display: none;
+        }
+        
+        .persona-popover.show {
+            display: block;
+        }
+        
+        .popover-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        
+        .popover-persona-logo {
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+        }
+        
+        .popover-persona-info h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #111827;
+            margin: 0;
+        }
+        
+        .popover-persona-info p {
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin: 0;
+        }
+        
+        .stage-section {
+            margin-bottom: 1rem;
+        }
+        
+        .stage-label {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #374151;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stage-options {
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .stage-option {
+            padding: 0.5rem 1rem;
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.875rem;
+            color: #374151;
+            transition: all 0.2s ease;
+        }
+        
+        .stage-option:hover {
+            background: #f3f4f6;
+        }
+        
+        .stage-option.selected {
+            background: #111827;
+            color: white;
+            border-color: #111827;
+        }
+        
+        .change-persona-btn {
+            display: inline-block;
+            color: #6366f1;
+            text-decoration: underline;
+            font-size: 0.875rem;
+            cursor: pointer;
+            border: none;
+            background: none;
+            padding: 0;
+            margin-top: 0.5rem;
+        }
+        
+        .change-persona-btn:hover {
+            color: #4f46e5;
+        }
+        
+        /* Modal Styles */
+        .persona-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .persona-modal.show {
+            display: flex;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            max-width: 800px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        
+        .modal-header {
+            margin-bottom: 1.5rem;
+        }
+        
+        .modal-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 0.5rem;
+        }
+        
+        .modal-subtitle {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+        
+        .personas-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+        
+        .persona-option {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .persona-option:hover {
+            border-color: #6366f1;
+            background: #f8fafc;
+        }
+        
+        .persona-option.selected {
+            border-color: #6366f1;
+            background: #f0f4ff;
+        }
+        
+        .persona-option-logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+        
+        .persona-option-info {
+            flex: 1;
+        }
+        
+        .persona-option-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 0.25rem;
+        }
+        
+        .persona-option-description {
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-bottom: 0.5rem;
         }
         
         .stripe-products {
             display: flex;
-            gap: 0.25rem;
+            gap: 0.375rem;
             flex-wrap: wrap;
-            justify-content: flex-end;
         }
         
         .stripe-product-badge {
-            padding: 0.125rem 0.375rem;
+            padding: 0.25rem 0.5rem;
             background: #f1f5f9;
             color: #475569;
-            font-size: 0.625rem;
+            font-size: 0.75rem;
             font-weight: 500;
             border-radius: 4px;
+        }
+        
+        .modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            gap: 0.75rem;
+            border-top: 1px solid #e5e7eb;
+            padding-top: 1.5rem;
+        }
+        
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: none;
+        }
+        
+        .btn-secondary {
+            background: #f9fafb;
+            color: #374151;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .btn-secondary:hover {
+            background: #f3f4f6;
+        }
+        
+        .btn-primary {
+            background: #6366f1;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #4f46e5;
         }
         
         .prototype-main {
@@ -252,33 +470,67 @@
 </head>
 <body>
     <header class="prototype-header">
-        <h1>Payment Dashboard Prototype</h1>
-        <div class="nav-controls">
-            <div class="nav-selector-group">
-                <div class="nav-selector persona-selector">
-                    <label>Business Model</label>
-                    <select id="persona-select">
-                        <option value="">Loading...</option>
-                    </select>
+        <div class="persona-selector-container">
+            <div class="persona-selector-button" id="persona-selector-btn">
+                <img class="persona-logo" id="current-persona-logo" src="../assets/modaic.png" alt="Modaic">
+                <div class="persona-selector-text">
+                    <div class="persona-name" id="current-persona-name">Modaic</div>
+                    <div class="persona-description" id="current-persona-description">E-commerce fashion retailer with global payment processing.</div>
                 </div>
-                <div class="nav-selector stage-selector">
-                    <label>Business Stage</label>
-                    <select id="stage-select">
-                        <option value="early">Early Stage</option>
-                        <option value="growth">Growth Stage</option>
-                        <option value="mature">Mature Stage</option>
-                    </select>
-                </div>
+                <svg class="dropdown-arrow" id="dropdown-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
             </div>
-            <div class="persona-metadata" id="persona-metadata">
-                <div class="persona-info">
-                    <span class="persona-name" id="current-persona-name">Loading...</span>
-                    <span class="persona-description" id="current-persona-description"></span>
+            
+            <!-- Popover -->
+            <div class="persona-popover" id="persona-popover">
+                <div class="popover-header">
+                    <img class="popover-persona-logo" id="popover-persona-logo" src="../assets/modaic.png" alt="Modaic">
+                    <div class="popover-persona-info">
+                        <h3 id="popover-persona-name">Modaic</h3>
+                        <p id="popover-persona-description">E-commerce fashion retailer with global payment processing.</p>
+                    </div>
                 </div>
-                <div class="stripe-products" id="stripe-products"></div>
+                
+                <button class="change-persona-btn" id="change-persona-btn">Change</button>
+                
+                <div class="stage-section">
+                    <div class="stage-label">Stage</div>
+                    <div class="stage-options">
+                        <div class="stage-option" data-stage="early">Early</div>
+                        <div class="stage-option selected" data-stage="growth">Growth</div>
+                        <div class="stage-option" data-stage="mature">Enterprise</div>
+                    </div>
+                </div>
+                
+                <div class="stripe-products" id="current-stripe-products">
+                    <span class="stripe-product-badge">Payments</span>
+                    <span class="stripe-product-badge">Checkout</span>
+                    <span class="stripe-product-badge">Subscriptions</span>
+                    <span class="stripe-product-badge">Radar</span>
+                </div>
             </div>
         </div>
     </header>
+    
+    <!-- Persona Selection Modal -->
+    <div class="persona-modal" id="persona-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Swap data scenarios</h2>
+                <p class="modal-subtitle">Choose which business persona dataset to use in your prototype.</p>
+            </div>
+            
+            <div class="personas-grid" id="personas-grid">
+                <!-- Persona options will be populated here -->
+            </div>
+            
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="modal-cancel">Cancel</button>
+                <button class="btn btn-primary" id="modal-done">Done</button>
+            </div>
+        </div>
+    </div>
 
     <main class="prototype-main">
         <div class="loading-state active" id="loading-state">
@@ -396,14 +648,14 @@
                     this.dataClient.subscribe((data, personaId) => {
                         this.currentData = data;
                         this.currentPersona = personaId;
-                        this.updatePersonaMetadata();
+                        this.updatePersonaSelectorDisplay();
                         this.updateDashboard();
                     });
 
                     // Initial render
                     this.currentData = this.dataClient.currentData;
                     this.currentPersona = this.dataClient.currentPersona;
-                    this.updatePersonaMetadata();
+                    this.updatePersonaSelectorDisplay();
                     this.updateDashboard();
 
                 } catch (error) {
@@ -1246,43 +1498,223 @@
             }
 
             initializeNavbarSelectors() {
-                // Populate persona selector
-                this.populatePersonaSelector();
-                
-                // Bind persona selector event
-                const personaSelect = document.getElementById('persona-select');
-                personaSelect.addEventListener('change', (e) => {
-                    if (e.target.value) {
-                        this.switchPersona(e.target.value);
-                    }
-                });
-                
-                // Bind stage selector event
-                const stageSelect = document.getElementById('stage-select');
-                stageSelect.addEventListener('change', (e) => {
-                    this.currentStage = e.target.value;
-                    this.updateStageData();
-                });
+                // Initialize new persona selector UI
+                this.initializePersonaSelector();
+                this.setupPersonaUIEvents();
+                this.populatePersonaModal();
                 
                 // Set initial stage
-                this.currentStage = 'growth'; // Default to growth stage
-                stageSelect.value = this.currentStage;
+                this.currentStage = 'growth';
+                this.updateStageSelection();
             }
             
-            populatePersonaSelector() {
-                const personas = this.dataClient.getAvailablePersonas();
-                const personaSelect = document.getElementById('persona-select');
+            initializePersonaSelector() {
+                // Set up the new persona selector interface
+                this.selectedPersonaForModal = this.currentPersona;
+                this.updatePersonaSelectorDisplay();
+            }
+            
+            setupPersonaUIEvents() {
+                // Persona selector button click
+                const selectorBtn = document.getElementById('persona-selector-btn');
+                const popover = document.getElementById('persona-popover');
+                const dropdownArrow = document.getElementById('dropdown-arrow');
                 
-                personaSelect.innerHTML = '';
-                Object.entries(personas).forEach(([id, persona]) => {
-                    const option = document.createElement('option');
-                    option.value = id;
-                    option.textContent = persona.name;
-                    if (id === this.currentPersona) {
-                        option.selected = true;
+                selectorBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const isOpen = popover.classList.contains('show');
+                    if (isOpen) {
+                        this.closePopover();
+                    } else {
+                        this.openPopover();
                     }
-                    personaSelect.appendChild(option);
                 });
+                
+                // Close popover when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!selectorBtn.contains(e.target) && !popover.contains(e.target)) {
+                        this.closePopover();
+                    }
+                });
+                
+                // Change persona button
+                const changeBtn = document.getElementById('change-persona-btn');
+                changeBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.closePopover();
+                    this.openPersonaModal();
+                });
+                
+                // Stage options
+                const stageOptions = document.querySelectorAll('.stage-option');
+                stageOptions.forEach(option => {
+                    option.addEventListener('click', (e) => {
+                        const newStage = e.target.dataset.stage;
+                        this.currentStage = newStage;
+                        this.updateStageData();
+                        this.updateStageSelection();
+                    });
+                });
+                
+                // Modal events
+                const modal = document.getElementById('persona-modal');
+                const modalCancel = document.getElementById('modal-cancel');
+                const modalDone = document.getElementById('modal-done');
+                
+                modalCancel.addEventListener('click', () => {
+                    this.closePersonaModal();
+                });
+                
+                modalDone.addEventListener('click', () => {
+                    this.applyPersonaSelection();
+                });
+                
+                // Close modal when clicking backdrop
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        this.closePersonaModal();
+                    }
+                });
+            }
+            
+            openPopover() {
+                const popover = document.getElementById('persona-popover');
+                const arrow = document.getElementById('dropdown-arrow');
+                popover.classList.add('show');
+                arrow.classList.add('open');
+            }
+            
+            closePopover() {
+                const popover = document.getElementById('persona-popover');
+                const arrow = document.getElementById('dropdown-arrow');
+                popover.classList.remove('show');
+                arrow.classList.remove('open');
+            }
+            
+            openPersonaModal() {
+                const modal = document.getElementById('persona-modal');
+                modal.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            }
+            
+            closePersonaModal() {
+                const modal = document.getElementById('persona-modal');
+                modal.classList.remove('show');
+                document.body.style.overflow = 'auto';
+                // Reset selection to current persona
+                this.selectedPersonaForModal = this.currentPersona;
+                this.updateModalSelection();
+            }
+            
+            updateStageSelection() {
+                const stageOptions = document.querySelectorAll('.stage-option');
+                stageOptions.forEach(option => {
+                    option.classList.remove('selected');
+                    if (option.dataset.stage === this.currentStage) {
+                        option.classList.add('selected');
+                    }
+                });
+            }
+            
+            updatePersonaSelectorDisplay() {
+                const personas = this.dataClient.getAvailablePersonas();
+                const currentPersona = personas[this.currentPersona];
+                
+                if (!currentPersona) return;
+                
+                // Update main selector button
+                const logo = document.getElementById('current-persona-logo');
+                const name = document.getElementById('current-persona-name');
+                const description = document.getElementById('current-persona-description');
+                
+                logo.src = `../assets/${this.currentPersona}.png`;
+                logo.alt = currentPersona.name;
+                name.textContent = currentPersona.name;
+                description.textContent = currentPersona.description;
+                
+                // Update popover
+                const popoverLogo = document.getElementById('popover-persona-logo');
+                const popoverName = document.getElementById('popover-persona-name');
+                const popoverDescription = document.getElementById('popover-persona-description');
+                
+                popoverLogo.src = `../assets/${this.currentPersona}.png`;
+                popoverLogo.alt = currentPersona.name;
+                popoverName.textContent = currentPersona.name;
+                popoverDescription.textContent = currentPersona.description;
+                
+                // Update Stripe products
+                this.updateStripeProducts(currentPersona.products || []);
+            }
+            
+            updateStripeProducts(products) {
+                const container = document.getElementById('current-stripe-products');
+                container.innerHTML = '';
+                
+                products.forEach(product => {
+                    const badge = document.createElement('span');
+                    badge.className = 'stripe-product-badge';
+                    badge.textContent = product;
+                    container.appendChild(badge);
+                });
+            }
+            
+            populatePersonaModal() {
+                const personas = this.dataClient.getAvailablePersonas();
+                const grid = document.getElementById('personas-grid');
+                
+                grid.innerHTML = '';
+                
+                Object.entries(personas).forEach(([id, persona]) => {
+                    const option = document.createElement('div');
+                    option.className = 'persona-option';
+                    option.dataset.personaId = id;
+                    
+                    if (id === this.currentPersona) {
+                        option.classList.add('selected');
+                    }
+                    
+                    option.innerHTML = `
+                        <img class="persona-option-logo" src="../assets/${id}.png" alt="${persona.name}">
+                        <div class="persona-option-info">
+                            <div class="persona-option-name">${persona.name}</div>
+                            <div class="persona-option-description">${persona.description}</div>
+                            <div class="stripe-products">
+                                ${(persona.products || []).map(product => 
+                                    `<span class="stripe-product-badge">${product}</span>`
+                                ).join('')}
+                            </div>
+                        </div>
+                    `;
+                    
+                    option.addEventListener('click', () => {
+                        // Remove selected from all options
+                        grid.querySelectorAll('.persona-option').forEach(opt => {
+                            opt.classList.remove('selected');
+                        });
+                        // Add selected to clicked option
+                        option.classList.add('selected');
+                        this.selectedPersonaForModal = id;
+                    });
+                    
+                    grid.appendChild(option);
+                });
+            }
+            
+            updateModalSelection() {
+                const grid = document.getElementById('personas-grid');
+                grid.querySelectorAll('.persona-option').forEach(option => {
+                    option.classList.remove('selected');
+                    if (option.dataset.personaId === this.selectedPersonaForModal) {
+                        option.classList.add('selected');
+                    }
+                });
+            }
+            
+            async applyPersonaSelection() {
+                if (this.selectedPersonaForModal && this.selectedPersonaForModal !== this.currentPersona) {
+                    await this.switchPersona(this.selectedPersonaForModal);
+                }
+                this.closePersonaModal();
             }
             
             async switchPersona(personaId) {
@@ -1291,7 +1723,7 @@
                 try {
                     await this.dataClient.switchPersona(personaId);
                     this.currentPersona = personaId;
-                    this.updatePersonaMetadata();
+                    this.updatePersonaSelectorDisplay();
                     this.updateDashboard();
                     this.animateSwitch();
                 } catch (error) {
@@ -1299,29 +1731,7 @@
                 }
             }
             
-            updatePersonaMetadata() {
-                const personas = this.dataClient.getAvailablePersonas();
-                const persona = personas[this.currentPersona];
-                
-                if (!persona) return;
-                
-                // Update persona info
-                document.getElementById('current-persona-name').textContent = persona.name;
-                document.getElementById('current-persona-description').textContent = persona.description || '';
-                
-                // Update Stripe products badges
-                const productsContainer = document.getElementById('stripe-products');
-                productsContainer.innerHTML = '';
-                
-                if (persona.stripe_products) {
-                    persona.stripe_products.forEach(product => {
-                        const badge = document.createElement('span');
-                        badge.className = 'stripe-product-badge';
-                        badge.textContent = product;
-                        productsContainer.appendChild(badge);
-                    });
-                }
-            }
+
             
             updateStageData() {
                 console.log(`Stage changed to: ${this.currentStage}`);
