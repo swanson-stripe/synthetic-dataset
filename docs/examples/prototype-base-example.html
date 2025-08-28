@@ -233,11 +233,43 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
         }
         
         #revenue-chart {
             max-width: 100%;
             max-height: 200px;
+            cursor: crosshair;
+        }
+        
+        .chart-tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            z-index: 1000;
+            min-width: 120px;
+            text-align: center;
+        }
+        
+        .chart-tooltip.visible {
+            opacity: 1;
+        }
+        
+        .chart-tooltip .tooltip-label {
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        
+        .chart-tooltip .tooltip-value {
+            font-size: 14px;
+            color: #a78bfa;
         }
     </style>
 </head>
@@ -288,8 +320,12 @@
                 <div class="data-section-header">
                     <h3 class="data-section-title" id="chart-title">Revenue Trends</h3>
                 </div>
-                <div class="chart-container">
+                <div class="chart-container" id="chart-container">
                     <canvas id="revenue-chart" width="800" height="200"></canvas>
+                    <div class="chart-tooltip" id="chart-tooltip">
+                        <div class="tooltip-label"></div>
+                        <div class="tooltip-value"></div>
+                    </div>
                 </div>
             </div>
 
@@ -420,6 +456,11 @@
 
             updateChart() {
                 try {
+                    // Clean up previous chart if exists
+                    if (this.currentChartData) {
+                        this.destroyChart();
+                    }
+                    
                     const canvas = document.getElementById('revenue-chart');
                     if (!canvas) {
                         console.log('❌ Chart canvas not found');
@@ -448,11 +489,232 @@
                     // Generate time series data for the past 12 months
                     const timeSeriesData = this.generateTimeSeriesData(primaryMetric, this.currentPersona);
                     
-                    // Draw the chart
-                    this.drawLineChart(ctx, canvas, timeSeriesData, primaryMetric);
+                    // Initialize interactive chart
+                    this.initializeInteractiveChart(canvas, ctx, timeSeriesData, primaryMetric);
                     
                 } catch (error) {
                     console.error('Error updating chart:', error);
+                }
+            }
+            
+            initializeInteractiveChart(canvas, ctx, data, metric) {
+                // Store chart data for interaction
+                this.currentChartData = {
+                    canvas,
+                    ctx,
+                    data,
+                    metric,
+                    padding: 40,
+                    chartWidth: canvas.width - 80,
+                    chartHeight: canvas.height - 80,
+                    dataPoints: []
+                };
+                
+                // Draw the initial chart
+                this.drawInteractiveChart();
+                
+                // Remove existing event listeners
+                this.removeChartEventListeners();
+                
+                // Add mouse event listeners for interactivity
+                this.addChartEventListeners();
+            }
+            
+            drawInteractiveChart() {
+                const { canvas, ctx, data, padding, chartWidth, chartHeight } = this.currentChartData;
+                const { months, values } = data;
+                
+                // Clear canvas
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                // Calculate scales
+                const maxValue = Math.max(...values);
+                const minValue = Math.min(...values);
+                const valueRange = maxValue - minValue || 1;
+                
+                // Store data points for hover detection
+                this.currentChartData.dataPoints = [];
+                
+                // Set up styling
+                ctx.font = '12px -apple-system, BlinkMacSystemFont, sans-serif';
+                ctx.fillStyle = '#64748b';
+                
+                // Draw grid and axes
+                this.drawGrid(ctx, canvas, padding, chartWidth, chartHeight, minValue, maxValue, months);
+                
+                // Draw the line
+                ctx.beginPath();
+                ctx.strokeStyle = '#635bff';
+                ctx.lineWidth = 3;
+                
+                for (let i = 0; i < values.length; i++) {
+                    const x = padding + (i / (values.length - 1)) * chartWidth;
+                    const y = padding + chartHeight - ((values[i] - minValue) / valueRange) * chartHeight;
+                    
+                    // Store point data for interaction
+                    this.currentChartData.dataPoints.push({
+                        x, y, 
+                        value: values[i],
+                        label: months[i],
+                        index: i
+                    });
+                    
+                    if (i === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                }
+                ctx.stroke();
+                
+                // Draw data points
+                ctx.fillStyle = '#635bff';
+                this.currentChartData.dataPoints.forEach(point => {
+                    ctx.beginPath();
+                    ctx.arc(point.x, point.y, 4, 0, 2 * Math.PI);
+                    ctx.fill();
+                });
+                
+                // Draw hover point if any
+                if (this.currentChartData.hoverPoint) {
+                    this.drawHoverPoint(this.currentChartData.hoverPoint);
+                }
+            }
+            
+            addChartEventListeners() {
+                const canvas = this.currentChartData.canvas;
+                
+                this.chartMouseMoveHandler = (e) => this.handleChartMouseMove(e);
+                this.chartMouseLeaveHandler = (e) => this.handleChartMouseLeave(e);
+                
+                canvas.addEventListener('mousemove', this.chartMouseMoveHandler);
+                canvas.addEventListener('mouseleave', this.chartMouseLeaveHandler);
+            }
+            
+            removeChartEventListeners() {
+                const canvas = this.currentChartData?.canvas;
+                if (!canvas) return;
+                
+                if (this.chartMouseMoveHandler) {
+                    canvas.removeEventListener('mousemove', this.chartMouseMoveHandler);
+                }
+                if (this.chartMouseLeaveHandler) {
+                    canvas.removeEventListener('mouseleave', this.chartMouseLeaveHandler);
+                }
+            }
+            
+            handleChartMouseMove(e) {
+                const canvas = this.currentChartData.canvas;
+                const rect = canvas.getBoundingClientRect();
+                const mouseX = e.clientX - rect.left;
+                const mouseY = e.clientY - rect.top;
+                
+                // Find the closest data point
+                let closestPoint = null;
+                let minDistance = Infinity;
+                
+                this.currentChartData.dataPoints.forEach(point => {
+                    const distance = Math.sqrt(Math.pow(mouseX - point.x, 2) + Math.pow(mouseY - point.y, 2));
+                    if (distance < minDistance && distance < 20) { // 20px hover radius
+                        minDistance = distance;
+                        closestPoint = point;
+                    }
+                });
+                
+                if (closestPoint) {
+                    this.showTooltip(closestPoint, e.clientX, e.clientY);
+                    this.currentChartData.hoverPoint = closestPoint;
+                    this.drawInteractiveChart(); // Redraw with hover highlight
+                } else {
+                    this.hideTooltip();
+                    this.currentChartData.hoverPoint = null;
+                    this.drawInteractiveChart(); // Redraw without hover
+                }
+            }
+            
+            handleChartMouseLeave(e) {
+                this.hideTooltip();
+                this.currentChartData.hoverPoint = null;
+                this.drawInteractiveChart();
+            }
+            
+            drawHoverPoint(point) {
+                const { ctx } = this.currentChartData;
+                
+                // Draw larger highlighted point
+                ctx.fillStyle = '#4f46e5';
+                ctx.beginPath();
+                ctx.arc(point.x, point.y, 6, 0, 2 * Math.PI);
+                ctx.fill();
+                
+                // Draw white center
+                ctx.fillStyle = 'white';
+                ctx.beginPath();
+                ctx.arc(point.x, point.y, 3, 0, 2 * Math.PI);
+                ctx.fill();
+                
+                // Draw vertical line to x-axis
+                ctx.strokeStyle = '#e2e8f0';
+                ctx.lineWidth = 1;
+                ctx.setLineDash([3, 3]);
+                ctx.beginPath();
+                ctx.moveTo(point.x, point.y);
+                ctx.lineTo(point.x, this.currentChartData.padding + this.currentChartData.chartHeight);
+                ctx.stroke();
+                ctx.setLineDash([]);
+            }
+            
+            showTooltip(point, clientX, clientY) {
+                const tooltip = document.getElementById('chart-tooltip');
+                const container = document.getElementById('chart-container');
+                
+                if (!tooltip || !container) return;
+                
+                const containerRect = container.getBoundingClientRect();
+                const tooltipX = clientX - containerRect.left;
+                const tooltipY = clientY - containerRect.top - 60;
+                
+                // Format the value based on metric type
+                const formattedValue = this.formatTooltipValue(point.value, this.currentChartData.metric);
+                
+                tooltip.querySelector('.tooltip-label').textContent = point.label;
+                tooltip.querySelector('.tooltip-value').textContent = formattedValue;
+                
+                tooltip.style.left = `${Math.max(10, Math.min(tooltipX - 60, container.clientWidth - 130))}px`;
+                tooltip.style.top = `${Math.max(10, tooltipY)}px`;
+                tooltip.classList.add('visible');
+            }
+            
+            hideTooltip() {
+                const tooltip = document.getElementById('chart-tooltip');
+                if (tooltip) {
+                    tooltip.classList.remove('visible');
+                }
+            }
+            
+            formatTooltipValue(value, metric) {
+                // Determine format based on metric label
+                const label = metric.label.toLowerCase();
+                
+                if (label.includes('revenue') || label.includes('mrr') || label.includes('arr') || 
+                    label.includes('volume') || label.includes('raised') || label.includes('collected')) {
+                    // Currency formatting
+                    return new Intl.NumberFormat('en-US', {
+                        style: 'currency',
+                        currency: 'USD',
+                        minimumFractionDigits: 0,
+                        maximumFractionDigits: 0
+                    }).format(value / 100);
+                } else if (label.includes('rate') || label.includes('percent')) {
+                    // Percentage formatting
+                    return new Intl.NumberFormat('en-US', {
+                        style: 'percent',
+                        minimumFractionDigits: 1,
+                        maximumFractionDigits: 1
+                    }).format(value);
+                } else {
+                    // Number formatting
+                    return new Intl.NumberFormat('en-US').format(value);
                 }
             }
             
@@ -512,56 +774,11 @@
                 return pattern[monthIndex];
             }
             
-            drawLineChart(ctx, canvas, data, metric) {
-                const { months, values, label } = data;
-                const padding = 40;
-                const chartWidth = canvas.width - 2 * padding;
-                const chartHeight = canvas.height - 2 * padding;
-                
-                // Clear canvas
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                
-                // Set up styling
-                ctx.font = '12px -apple-system, BlinkMacSystemFont, sans-serif';
-                ctx.fillStyle = '#64748b';
-                ctx.strokeStyle = '#635bff';
-                ctx.lineWidth = 2;
-                
-                // Calculate scales
-                const maxValue = Math.max(...values);
-                const minValue = Math.min(...values);
-                const valueRange = maxValue - minValue || 1;
-                
-                // Draw grid lines and labels
-                this.drawGrid(ctx, canvas, padding, chartWidth, chartHeight, minValue, maxValue, months);
-                
-                // Draw the line
-                ctx.beginPath();
-                ctx.strokeStyle = '#635bff';
-                ctx.lineWidth = 3;
-                
-                for (let i = 0; i < values.length; i++) {
-                    const x = padding + (i / (values.length - 1)) * chartWidth;
-                    const y = padding + chartHeight - ((values[i] - minValue) / valueRange) * chartHeight;
-                    
-                    if (i === 0) {
-                        ctx.moveTo(x, y);
-                    } else {
-                        ctx.lineTo(x, y);
-                    }
-                }
-                ctx.stroke();
-                
-                // Draw data points
-                ctx.fillStyle = '#635bff';
-                for (let i = 0; i < values.length; i++) {
-                    const x = padding + (i / (values.length - 1)) * chartWidth;
-                    const y = padding + chartHeight - ((values[i] - minValue) / valueRange) * chartHeight;
-                    
-                    ctx.beginPath();
-                    ctx.arc(x, y, 4, 0, 2 * Math.PI);
-                    ctx.fill();
-                }
+            // Cleanup method to remove event listeners
+            destroyChart() {
+                this.removeChartEventListeners();
+                this.hideTooltip();
+                this.currentChartData = null;
             }
             
             drawGrid(ctx, canvas, padding, chartWidth, chartHeight, minValue, maxValue, months) {
