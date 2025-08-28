@@ -34,50 +34,63 @@
         .persona-selector-button {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
-            padding: 0.75rem 1rem;
+            padding: 8px 12px;
             background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
+            border: 1px solid #e1e5e9;
+            border-radius: 6px;
             cursor: pointer;
-            font-size: 0.875rem;
-            color: #374151;
-            transition: all 0.2s ease;
-            min-width: 200px;
+            transition: all 0.15s ease;
+            width: 260px;
+            box-sizing: border-box;
         }
         
         .persona-selector-button:hover {
-            border-color: #d1d5db;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border-color: #c6c6c6;
+            background: #f8f9fa;
+        }
+        
+        .persona-selector-button.open {
+            border-color: #666;
         }
         
         .persona-logo {
-            width: 24px;
-            height: 24px;
-            border-radius: 4px;
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
             object-fit: cover;
+            flex-shrink: 0;
+            margin-right: 12px;
         }
         
         .persona-selector-text {
             flex: 1;
-            text-align: left;
+            text-align: center;
+            min-width: 0;
         }
         
         .persona-name {
-            font-weight: 600;
-            color: #111827;
-            margin-bottom: 2px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #1a1a1a;
+            margin: 0;
+            line-height: 1.2;
         }
         
         .persona-description {
-            font-size: 0.75rem;
-            color: #6b7280;
+            display: none;
         }
         
         .dropdown-arrow {
-            width: 12px;
-            height: 12px;
-            transition: transform 0.2s ease;
+            width: 16px;
+            height: 16px;
+            color: #666;
+            transition: transform 0.15s ease;
+            margin-left: 12px;
+            flex-shrink: 0;
+        }
+        
+        .persona-selector-button.open .dropdown-arrow {
+            transform: rotate(180deg);
         }
         
         .dropdown-arrow.open {
@@ -475,7 +488,6 @@
                 <img class="persona-logo" id="current-persona-logo" alt="Modaic">
                 <div class="persona-selector-text">
                     <div class="persona-name" id="current-persona-name">Modaic</div>
-                    <div class="persona-description" id="current-persona-description">E-commerce fashion retailer with global payment processing.</div>
                 </div>
                 <svg class="dropdown-arrow" id="dropdown-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -1580,15 +1592,21 @@
             openPopover() {
                 const popover = document.getElementById('persona-popover');
                 const arrow = document.getElementById('dropdown-arrow');
+                const button = document.getElementById('persona-selector-btn');
+                
                 popover.classList.add('show');
                 arrow.classList.add('open');
+                button.classList.add('open');
             }
             
             closePopover() {
                 const popover = document.getElementById('persona-popover');
                 const arrow = document.getElementById('dropdown-arrow');
+                const button = document.getElementById('persona-selector-btn');
+                
                 popover.classList.remove('show');
                 arrow.classList.remove('open');
+                button.classList.remove('open');
             }
             
             openPersonaModal() {
@@ -1647,7 +1665,6 @@
                 // Update main selector button
                 const logo = document.getElementById('current-persona-logo');
                 const name = document.getElementById('current-persona-name');
-                const description = document.getElementById('current-persona-description');
                 
                 // Try multiple path variations for local dev and GitHub Pages
                 const possiblePaths = [
@@ -1688,7 +1705,6 @@
                     logo.style.display = 'block';
                 };
                 name.textContent = currentPersona.name;
-                description.textContent = currentPersona.description;
                 
                 // Update popover
                 const popoverLogo = document.getElementById('popover-persona-logo');
