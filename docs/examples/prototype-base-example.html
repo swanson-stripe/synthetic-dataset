@@ -468,16 +468,18 @@
         }
         
         .metrics-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
             gap: 1.5rem;
             margin-bottom: 2rem;
         }
         
         .metric-card {
-            padding: 1.5rem;
+            padding: 16px;
             transition: all 0.2s ease;
             border-radius: 8px;
+            width: fit-content;
+            min-width: max-content;
         }
         
         .metric-card:hover {
