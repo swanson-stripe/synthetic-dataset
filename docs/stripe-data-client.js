@@ -792,6 +792,37 @@ class StripeDataClient {
   }
 
   calculatePropertyMetrics(data) {
+    // Use full dataset metrics if available
+    const fullMetrics = data._fullDatasetMetrics;
+    
+    if (fullMetrics) {
+      const successRate = fullMetrics.successfulPayments / fullMetrics.totalPayments;
+      
+      return [
+        { 
+          label: 'Properties', 
+          value: fullMetrics.totalProperties.toLocaleString(),
+          rawValue: fullMetrics.totalProperties
+        },
+        { 
+          label: 'Rent Collected', 
+          value: this.formatCurrency(fullMetrics.totalVolume),
+          rawValue: fullMetrics.totalVolume
+        },
+        { 
+          label: 'Landlords', 
+          value: fullMetrics.totalLandlords.toLocaleString(),
+          rawValue: fullMetrics.totalLandlords
+        },
+        { 
+          label: 'Success Rate', 
+          value: this.formatPercent(successRate),
+          rawValue: successRate
+        }
+      ];
+    }
+    
+    // Fallback to sample calculation
     const properties = data.properties || [];
     const rentPayments = data.rent_payments || [];
     const landlords = data.landlords || [];
@@ -825,6 +856,37 @@ class StripeDataClient {
   }
 
   calculateFitnessMetrics(data) {
+    // Use full dataset metrics if available
+    const fullMetrics = data._fullDatasetMetrics;
+    
+    if (fullMetrics) {
+      const churnRate = (fullMetrics.totalSubscribers - fullMetrics.activeSubscriptions) / fullMetrics.totalSubscribers;
+      
+      return [
+        { 
+          label: 'Subscribers', 
+          value: fullMetrics.totalCustomers.toLocaleString(),
+          rawValue: fullMetrics.totalCustomers
+        },
+        { 
+          label: 'Active Subs', 
+          value: fullMetrics.activeSubscriptions.toLocaleString(),
+          rawValue: fullMetrics.activeSubscriptions
+        },
+        { 
+          label: 'MRR', 
+          value: this.formatCurrency(fullMetrics.totalMRR),
+          rawValue: fullMetrics.totalMRR
+        },
+        { 
+          label: 'Annual ARR', 
+          value: this.formatCurrency(fullMetrics.totalARR),
+          rawValue: fullMetrics.totalARR
+        }
+      ];
+    }
+    
+    // Fallback to sample calculation
     const subscriptions = data.subscriptions || [];
     const customers = data.customers || [];
     
@@ -856,6 +918,35 @@ class StripeDataClient {
   }
 
   calculateCreatorMetrics(data) {
+    // Use full dataset metrics if available
+    const fullMetrics = data._fullDatasetMetrics;
+    
+    if (fullMetrics) {
+      return [
+        { 
+          label: 'Creators', 
+          value: fullMetrics.totalCreators.toLocaleString(),
+          rawValue: fullMetrics.totalCreators
+        },
+        { 
+          label: 'Fans', 
+          value: fullMetrics.totalFans.toLocaleString(),
+          rawValue: fullMetrics.totalFans
+        },
+        { 
+          label: 'GMV', 
+          value: this.formatCurrency(fullMetrics.totalVolume),
+          rawValue: fullMetrics.totalVolume
+        },
+        { 
+          label: 'Content Sales', 
+          value: fullMetrics.totalSales.toLocaleString(),
+          rawValue: fullMetrics.totalSales
+        }
+      ];
+    }
+    
+    // Fallback to sample calculation
     const creators = data.creators || [];
     const fans = data.fans || [];
     const contentSales = data.content_sales || [];
