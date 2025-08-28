@@ -299,8 +299,9 @@ class StripeDataClient {
         };
 
       case 'givehope':
+        // GiveHope: 15K donors, $17.5M total raised, 55 campaigns
         return {
-          donors: Array.from({length: 60}, (_, i) => ({
+          donors: Array.from({length: 25}, (_, i) => ({
             id: `cus_demo_${i.toString().padStart(6, '0')}`,
             email: `donor${i}@example.com`,
             total_donated: Math.floor(Math.random() * 10000) + 500,
@@ -315,13 +316,21 @@ class StripeDataClient {
             raised: Math.floor(Math.random() * 400000) + 20000,
             status: 'active'
           })),
-          donations: Array.from({length: 45}, (_, i) => ({
+          donations: Array.from({length: 30}, (_, i) => ({
             id: `don_demo_${i.toString().padStart(6, '0')}`,
             amount: Math.floor(Math.random() * 50000) + 2500,
             donor: `Donor ${i + 1}`,
             campaign: `Campaign ${Math.floor(Math.random() * 15) + 1}`,
             recurring: Math.random() > 0.7
-          }))
+          })),
+          // Full dataset metrics
+          _fullDatasetMetrics: {
+            totalDonors: 15000,
+            totalCampaigns: 55,
+            totalRaised: 1750000000, // $17.5M in cents
+            totalDonations: 125000,
+            recurringDonors: 1500
+          }
         };
 
       case 'medsupply':
@@ -839,6 +848,35 @@ class StripeDataClient {
   }
 
   calculateNonprofitMetrics(data) {
+    // Use full dataset metrics if available
+    const fullMetrics = data._fullDatasetMetrics;
+    
+    if (fullMetrics) {
+      return [
+        { 
+          label: 'Total Donors', 
+          value: fullMetrics.totalDonors.toLocaleString(),
+          rawValue: fullMetrics.totalDonors
+        },
+        { 
+          label: 'Total Raised', 
+          value: this.formatCurrency(fullMetrics.totalRaised),
+          rawValue: fullMetrics.totalRaised
+        },
+        { 
+          label: 'Active Campaigns', 
+          value: fullMetrics.totalCampaigns.toString(),
+          rawValue: fullMetrics.totalCampaigns
+        },
+        { 
+          label: 'Donations', 
+          value: fullMetrics.totalDonations.toLocaleString(),
+          rawValue: fullMetrics.totalDonations
+        }
+      ];
+    }
+    
+    // Fallback to sample calculation
     const donors = data.donors || [];
     const campaigns = data.campaigns || [];
     const donations = data.donations || [];
