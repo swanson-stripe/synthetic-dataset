@@ -762,7 +762,8 @@ class StripeDataClient {
             },
             description: 'Creator content purchase',
             application_fee_amount: Math.floor(Math.random() * 1500) + 50 // Platform commission
-          })),
+          };
+          }),
           
           customers: Array.from({length: 50}, (_, i) => ({
             id: `cus_${this.generateId()}`,
@@ -853,7 +854,7 @@ class StripeDataClient {
             id: `pi_${this.generateId()}`,
             amount: Math.floor(Math.random() * 100000) + 1000, // $10-$1000 donations
             currency: 'usd',
-            status: this.randomStatus(['succeeded', 'failed', 'requires_action'], [0.99, 0.008, 0.002]),
+            status: this.randomStatus(this.getPaymentStatusDistribution('givehope').statuses, this.getPaymentStatusDistribution('givehope').weights),
             customer: `cus_${this.generateId()}`,
             created: Date.now() - Math.random() * 86400000 * 120,
             payment_method: this.randomPaymentMethod(),
@@ -933,7 +934,7 @@ class StripeDataClient {
             id: `pi_${this.generateId()}`,
             amount: Math.floor(Math.random() * 500000) + 50000, // $500-$5000 medical supplies
             currency: 'usd',
-            status: this.randomStatus(['succeeded', 'failed', 'requires_action'], [0.96, 0.03, 0.01]),
+            status: this.randomStatus(this.getPaymentStatusDistribution('medsupply').statuses, this.getPaymentStatusDistribution('medsupply').weights),
             customer: `cus_${this.generateId()}`,
             created: Date.now() - Math.random() * 86400000 * 90,
             payment_method: this.randomPaymentMethod(),
@@ -1030,7 +1031,7 @@ class StripeDataClient {
             id: `pi_${this.generateId()}`,
             amount: [9900, 29900, 99900, 199900][Math.floor(Math.random() * 4)], // $99-$1999 SaaS plans
             currency: 'usd',
-            status: this.randomStatus(['succeeded', 'failed', 'requires_action'], [0.98, 0.015, 0.005]),
+            status: this.randomStatus(this.getPaymentStatusDistribution('cloudflow').statuses, this.getPaymentStatusDistribution('cloudflow').weights),
             customer: `cus_${this.generateId()}`,
             created: Date.now() - Math.random() * 86400000 * 90,
             payment_method: this.randomPaymentMethod(),
@@ -1146,7 +1147,7 @@ class StripeDataClient {
             id: `pi_${this.generateId()}`,
             amount: Math.floor(Math.random() * 12000) + 1500, // $15-$120 food orders
             currency: 'usd',
-            status: this.randomStatus(['succeeded', 'failed', 'requires_action'], [0.97, 0.025, 0.005]),
+            status: this.randomStatus(this.getPaymentStatusDistribution('localbites').statuses, this.getPaymentStatusDistribution('localbites').weights),
             customer: `cus_${this.generateId()}`,
             created: Date.now() - Math.random() * 86400000 * 30,
             payment_method: this.randomPaymentMethod(),
