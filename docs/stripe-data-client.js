@@ -249,7 +249,7 @@ class StripeDataClient {
             name: this.generateCustomerName(),
             created: Date.now() - Math.random() * 86400000 * 365,
             metadata: {
-              total_spend: Math.floor(Math.random() * 500000) + 5000,
+              total_spend: (Math.floor(Math.random() * 500000) + 5000) * 100, // Convert to cents
               lifetime_orders: Math.floor(Math.random() * 50) + 1,
               preferred_size: ['XS', 'S', 'M', 'L', 'XL'][Math.floor(Math.random() * 5)],
               style_preference: ['casual', 'formal', 'athletic', 'trendy'][Math.floor(Math.random() * 4)],
@@ -355,7 +355,7 @@ class StripeDataClient {
             name: this.generateCustomerName(),
             created: Date.now() - Math.random() * 86400000 * 365,
             metadata: {
-              total_spend: Math.floor(Math.random() * 200000) + 2000,
+              total_spend: (Math.floor(Math.random() * 200000) + 2000) * 100, // Convert to cents
               courses_completed: Math.floor(Math.random() * 20),
               student_level: ['beginner', 'intermediate', 'advanced'][Math.floor(Math.random() * 3)],
               learning_goals: ['career_change', 'skill_upgrade', 'certification', 'hobby'][Math.floor(Math.random() * 4)],
@@ -473,7 +473,7 @@ class StripeDataClient {
             name: this.generateCustomerName(),
             created: Date.now() - Math.random() * 86400000 * 730, // Up to 2 years
             metadata: {
-              total_spend: Math.floor(Math.random() * 1000000) + 50000,
+              total_spend: (Math.floor(Math.random() * 1000000) + 50000) * 100, // Convert to cents
               lease_start_date: new Date(Date.now() - Math.random() * 86400000 * 365).toISOString(),
               tenant_type: ['individual', 'family', 'corporate', 'student'][Math.floor(Math.random() * 4)],
               credit_score: Math.floor(Math.random() * 300) + 500,
@@ -592,7 +592,7 @@ class StripeDataClient {
             name: this.generateCustomerName(),
             created: Date.now() - Math.random() * 86400000 * 365,
             metadata: {
-              total_spend: Math.floor(Math.random() * 200000) + 5000,
+              total_spend: (Math.floor(Math.random() * 200000) + 5000) * 100, // Convert to cents
               membership_start: new Date(Date.now() - Math.random() * 86400000 * 365).toISOString(),
               fitness_level: ['beginner', 'intermediate', 'advanced', 'athlete'][Math.floor(Math.random() * 4)],
               preferred_workouts: ['cardio', 'strength', 'yoga', 'crossfit', 'swimming'][Math.floor(Math.random() * 5)],
@@ -703,7 +703,7 @@ class StripeDataClient {
             name: this.generateCustomerName(),
             created: Date.now() - Math.random() * 86400000 * 365,
             metadata: {
-              total_spend: Math.floor(Math.random() * 50000) + 1000,
+              total_spend: (Math.floor(Math.random() * 50000) + 1000) * 100, // Convert to cents
               favorite_creators: Math.floor(Math.random() * 10) + 1,
               content_preferences: ['art', 'music', 'videos', 'tutorials', 'photography'][Math.floor(Math.random() * 5)],
               subscriber_tier: ['free', 'basic', 'premium', 'vip'][Math.floor(Math.random() * 4)],
@@ -887,7 +887,7 @@ class StripeDataClient {
             name: `${['General', 'Regional', 'University', 'Specialty'][Math.floor(Math.random() * 4)]} Hospital ${i + 1}`,
             created: Date.now() - Math.random() * 86400000 * 1095, // Up to 3 years
             metadata: {
-              total_spend: Math.floor(Math.random() * 5000000) + 500000,
+              total_spend: (Math.floor(Math.random() * 5000000) + 500000) * 100, // Convert to cents
               facility_type: ['hospital', 'clinic', 'pharmacy', 'laboratory'][Math.floor(Math.random() * 4)],
               bed_count: Math.floor(Math.random() * 500) + 50,
               credit_limit: Math.floor(Math.random() * 2000000) + 500000,
@@ -984,7 +984,7 @@ class StripeDataClient {
             name: `${['TechCorp', 'DataSys', 'CloudInc', 'DevOps Pro'][Math.floor(Math.random() * 4)]} ${i + 1}`,
             created: Date.now() - Math.random() * 86400000 * 730,
             metadata: {
-              total_spend: Math.floor(Math.random() * 2000000) + 50000,
+              total_spend: (Math.floor(Math.random() * 2000000) + 50000) * 100, // Convert to cents
               company_size: ['startup', 'small_business', 'mid_market', 'enterprise'][Math.floor(Math.random() * 4)],
               industry: ['technology', 'finance', 'healthcare', 'retail', 'manufacturing'][Math.floor(Math.random() * 5)],
               employee_count: Math.floor(Math.random() * 5000) + 10,
@@ -1102,7 +1102,7 @@ class StripeDataClient {
             name: this.generateCustomerName(),
             created: Date.now() - Math.random() * 86400000 * 365,
             metadata: {
-              total_spend: Math.floor(Math.random() * 100000) + 2000,
+              total_spend: (Math.floor(Math.random() * 100000) + 2000) * 100, // Convert to cents
               order_frequency: ['daily', 'weekly', 'monthly', 'occasional'][Math.floor(Math.random() * 4)],
               preferred_cuisine: ['italian', 'mexican', 'chinese', 'american', 'thai'][Math.floor(Math.random() * 5)],
               delivery_address_count: Math.floor(Math.random() * 3) + 1,
