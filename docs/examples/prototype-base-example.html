@@ -1689,9 +1689,11 @@
                 console.log('🎭 this.currentPersona is:', this.currentPersona);
                 const personas = this.dataClient.getAvailablePersonas();
                 console.log('📋 Available personas:', Object.keys(personas));
+                console.log('📋 All persona names:', Object.values(personas).map(p => p.name));
                 const currentPersona = personas[this.currentPersona];
                 console.log('👤 Current persona data:', currentPersona);
                 console.log('🏷️ Persona name should be:', currentPersona?.name);
+                console.log('🔍 Setting selector name to:', currentPersona?.name);
                 
                 if (!currentPersona) {
                     console.error('❌ No current persona found for:', this.currentPersona);
@@ -1756,7 +1758,9 @@
                     console.log('✅ Logo loaded successfully:', logo.src);
                     logo.style.display = 'block';
                 };
+                console.log('📝 Before setting name, element text was:', name.textContent);
                 name.textContent = currentPersona.name;
+                console.log('✅ After setting name, element text is now:', name.textContent);
                 
                 // Update popover
                 const popoverLogo = document.getElementById('popover-persona-logo');
@@ -1792,8 +1796,10 @@
                 
                 setupPopoverImage();
                 popoverLogo.alt = currentPersona.name;
+                console.log('📝 Setting popover name to:', currentPersona.name);
                 popoverName.textContent = currentPersona.name;
                 popoverDescription.textContent = currentPersona.description;
+                console.log('✅ Popover name set to:', popoverName.textContent);
             }
             
 
