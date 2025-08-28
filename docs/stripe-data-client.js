@@ -58,7 +58,7 @@ class StripeDataClient {
     this.availablePersonas = {
       techstyle: {
         id: 'techstyle',
-        name: 'TechStyle Fashion Retailer',
+        name: 'Modaic',
         business_model: 'ecommerce',
         description: 'E-commerce fashion retailer with global payment processing',
         complexity: 'medium',
@@ -68,7 +68,7 @@ class StripeDataClient {
       },
       edutech: {
         id: 'edutech', 
-        name: 'EduTech Academy',
+        name: 'Mindora',
         business_model: 'education_marketplace',
         description: 'Online education marketplace with instructor payouts',
         complexity: 'high',
@@ -78,7 +78,7 @@ class StripeDataClient {
       },
       propertyflow: {
         id: 'propertyflow',
-        name: 'PropertyFlow Property Management',
+        name: 'Keynest',
         business_model: 'property_management',
         description: 'Property management platform with rent collection',
         complexity: 'medium',
@@ -88,7 +88,7 @@ class StripeDataClient {
       },
       fitstream: {
         id: 'fitstream',
-        name: 'FitStream Fitness Platform',
+        name: 'Pulseon',
         business_model: 'subscription',
         description: 'Subscription fitness platform with trials and engagement',
         complexity: 'medium',
@@ -98,7 +98,7 @@ class StripeDataClient {
       },
       creatorhub: {
         id: 'creatorhub',
-        name: 'CreatorHub Content Platform',
+        name: 'Fluxly',
         business_model: 'creator_economy',
         description: 'Content monetization platform with creator payouts',
         complexity: 'high',
@@ -108,7 +108,7 @@ class StripeDataClient {
       },
       givehope: {
         id: 'givehope',
-        name: 'GiveHope Non-Profit Platform',
+        name: 'Brightfund',
         business_model: 'nonprofit',
         description: 'Non-profit donation platform with campaigns and recurring donors',
         complexity: 'medium',
@@ -118,7 +118,7 @@ class StripeDataClient {
       },
       medsupply: {
         id: 'medsupply',
-        name: 'MedSupply Pro B2B Platform',
+        name: 'Procura',
         business_model: 'b2b_wholesale',
         description: 'B2B medical equipment wholesaler with net terms',
         complexity: 'high',
@@ -128,7 +128,7 @@ class StripeDataClient {
       },
       cloudflow: {
         id: 'cloudflow',
-        name: 'CloudFlow SaaS Platform',
+        name: 'Stratus',
         business_model: 'saas',
         description: 'B2B SaaS platform with subscription management',
         complexity: 'high',
@@ -138,7 +138,7 @@ class StripeDataClient {
       },
       localbites: {
         id: 'localbites',
-        name: 'LocalBites Food Delivery',
+        name: 'Forksy',
         business_model: 'marketplace',
         description: 'Food delivery marketplace with restaurant and driver management',
         complexity: 'high',
@@ -275,7 +275,7 @@ class StripeDataClient {
     
     switch (personaId) {
       case 'techstyle':
-        // TechStyle: E-commerce with subscriptions and one-time payments
+        // Modaic: E-commerce with subscriptions and one-time payments
         return {
           payments: Array.from({length: 50}, (_, i) => {
             const statusDist = this.getPaymentStatusDistribution('techstyle');
@@ -294,7 +294,7 @@ class StripeDataClient {
               shipping_method: ['standard', 'express', 'overnight'][Math.floor(Math.random() * 3)],
               gift_message: Math.random() > 0.9 ? 'Happy Birthday!' : null
             },
-            description: `TechStyle Fashion Purchase`,
+            description: `Modaic Fashion Purchase`,
             receipt_email: `customer${i}@example.com`
           };
           }),
@@ -322,11 +322,11 @@ class StripeDataClient {
           products: Array.from({length: 20}, (_, i) => ({
             id: `prod_${this.generateId()}`,
             name: this.generateProductName('fashion'),
-            description: `Premium fashion item from TechStyle collection`,
+            description: `Premium fashion item from Modaic collection`,
             active: Math.random() > 0.1,
             metadata: {
               category: ['apparel', 'accessories', 'footwear'][Math.floor(Math.random() * 3)],
-              brand: ['TechStyle', 'Urban Elite', 'Style Pro'][Math.floor(Math.random() * 3)],
+              brand: ['Modaic', 'Urban Elite', 'Style Pro'][Math.floor(Math.random() * 3)],
               season: ['spring', 'summer', 'fall', 'winter'][Math.floor(Math.random() * 4)],
               material: ['cotton', 'polyester', 'wool', 'silk'][Math.floor(Math.random() * 4)]
             },
@@ -353,7 +353,7 @@ class StripeDataClient {
             amount: Math.floor(Math.random() * 100000) + 5000,
             currency: 'usd',
             created: Date.now() - Math.random() * 86400000 * 7,
-            description: 'TechStyle supplier payment',
+            description: 'Modaic supplier payment',
             metadata: {
               supplier_id: `supplier_${Math.floor(Math.random() * 5)}`,
               payment_type: 'supplier_payment',
@@ -383,7 +383,7 @@ class StripeDataClient {
         };
         
       case 'edutech':
-        // EduTech: Education marketplace with instructor payouts
+        // Mindora: Education marketplace with instructor payouts
         return {
           payments: Array.from({length: 50}, (_, i) => {
             const statusDist = this.getPaymentStatusDistribution('edutech');
@@ -616,7 +616,7 @@ class StripeDataClient {
             available: [{amount: Math.floor(Math.random() * 20000000) + 2000000, currency: 'usd'}],
             pending: [{amount: Math.floor(Math.random() * 1000000), currency: 'usd'}]
           }],
-          // Full dataset metrics - PropertyFlow: 25K properties, $2.8B volume
+          // Full dataset metrics - Keynest: 25K properties, $2.8B volume
           _fullDatasetMetrics: {
             totalProperties: Math.floor(24789 * stageMultiplier),
             totalLandlords: Math.floor(8463 * stageMultiplier),
@@ -647,7 +647,7 @@ class StripeDataClient {
               personal_trainer: Math.random() > 0.7,
               payment_type: ['subscription', 'class_package', 'personal_training'][Math.floor(Math.random() * 3)]
             },
-            description: 'FitStream membership payment'
+            description: 'Pulseon membership payment'
           };
           }),
           
@@ -729,7 +729,7 @@ class StripeDataClient {
               total_revenue: baseAmount * 24
             }
           },
-          // Full dataset metrics - FitStream: 85K subscribers, $98M ARR
+          // Full dataset metrics - Pulseon: 85K subscribers, $98M ARR
           _fullDatasetMetrics: {
             totalSubscribers: Math.floor(84672 * stageMultiplier),
             totalCustomers: Math.floor(119483 * stageMultiplier),
@@ -837,7 +837,7 @@ class StripeDataClient {
             available: [{amount: Math.floor(Math.random() * 8000000) + 1500000, currency: 'usd'}],
             pending: [{amount: Math.floor(Math.random() * 400000), currency: 'usd'}]
           }],
-          // Full dataset metrics - CreatorHub: 35K creators, $67M volume
+          // Full dataset metrics - Fluxly: 35K creators, $67M volume
           _fullDatasetMetrics: {
             totalCreators: Math.floor(34827 * stageMultiplier),
             totalFans: Math.floor(849642 * stageMultiplier),
@@ -1014,7 +1014,7 @@ class StripeDataClient {
             available: [{amount: Math.floor(Math.random() * 25000000) + 5000000, currency: 'usd'}],
             pending: [{amount: Math.floor(Math.random() * 1000000), currency: 'usd'}]
           }],
-          // Full dataset metrics - MedSupply: 2.5K clients, $125M volume
+          // Full dataset metrics - Procura: 2.5K clients, $125M volume
           _fullDatasetMetrics: {
             totalClients: Math.floor(2487 * stageMultiplier),
             totalOrders: Math.floor(14923 * stageMultiplier),
@@ -1043,7 +1043,7 @@ class StripeDataClient {
               seat_count: Math.floor(Math.random() * 500) + 1,
               add_ons: ['api_access', 'premium_support', 'advanced_analytics'][Math.floor(Math.random() * 3)]
             },
-            description: 'CloudFlow SaaS subscription'
+            description: 'Stratus SaaS subscription'
           })),
           
           customers: Array.from({length: 35}, (_, i) => ({
@@ -1130,7 +1130,7 @@ class StripeDataClient {
             available: [{amount: Math.floor(Math.random() * 50000000) + 10000000, currency: 'usd'}],
             pending: [{amount: Math.floor(Math.random() * 2000000), currency: 'usd'}]
           }],
-          // Full dataset metrics - CloudFlow: 50K customers, $240M ARR
+          // Full dataset metrics - Stratus: 50K customers, $240M ARR
           _fullDatasetMetrics: {
             totalCustomers: Math.floor(49821 * stageMultiplier),
             totalSubscriptions: Math.floor(46739 * stageMultiplier),
@@ -1249,7 +1249,7 @@ class StripeDataClient {
             available: [{amount: Math.floor(Math.random() * 15000000) + 3000000, currency: 'usd'}],
             pending: [{amount: Math.floor(Math.random() * 800000), currency: 'usd'}]
           }],
-          // Full dataset metrics - LocalBites: 600K orders, $95M volume
+          // Full dataset metrics - Forksy: 600K orders, $95M volume
           _fullDatasetMetrics: {
             totalOrders: Math.floor(598473 * stageMultiplier),
             totalRestaurants: Math.floor(8467 * stageMultiplier),
@@ -1541,9 +1541,9 @@ class StripeDataClient {
   calculateEducationMetrics(data) {
     // Use full dataset metrics if available
     const fullMetrics = data._fullDatasetMetrics;
-    console.log('🎓 EduTech calculateEducationMetrics called with data:', data);
-    console.log('🎓 EduTech fullMetrics:', fullMetrics);
-    console.log('🎓 EduTech data._fullDatasetMetrics:', data._fullDatasetMetrics);
+    console.log('🎓 Mindora calculateEducationMetrics called with data:', data);
+    console.log('🎓 Mindora fullMetrics:', fullMetrics);
+    console.log('🎓 Mindora data._fullDatasetMetrics:', data._fullDatasetMetrics);
     
     if (fullMetrics) {
       return [
@@ -1606,8 +1606,8 @@ class StripeDataClient {
   calculatePropertyMetrics(data) {
     // Use full dataset metrics if available
     const fullMetrics = data._fullDatasetMetrics;
-    console.log('🏠 PropertyFlow calculatePropertyMetrics called with data:', data);
-    console.log('🏠 PropertyFlow fullMetrics:', fullMetrics);
+    console.log('🏠 Keynest calculatePropertyMetrics called with data:', data);
+    console.log('🏠 Keynest fullMetrics:', fullMetrics);
     
     if (fullMetrics) {
       const successRate = fullMetrics.successfulPayments / fullMetrics.totalPayments;
@@ -1672,8 +1672,8 @@ class StripeDataClient {
   calculateFitnessMetrics(data) {
     // Use full dataset metrics if available
     const fullMetrics = data._fullDatasetMetrics;
-    console.log('💪 FitStream calculateFitnessMetrics called with data:', data);
-    console.log('💪 FitStream fullMetrics:', fullMetrics);
+    console.log('💪 Pulseon calculateFitnessMetrics called with data:', data);
+    console.log('💪 Pulseon fullMetrics:', fullMetrics);
     
     if (fullMetrics) {
       const churnRate = (fullMetrics.totalSubscribers - fullMetrics.activeSubscriptions) / fullMetrics.totalSubscribers;
@@ -1736,8 +1736,8 @@ class StripeDataClient {
   calculateCreatorMetrics(data) {
     // Use full dataset metrics if available
     const fullMetrics = data._fullDatasetMetrics;
-    console.log('🎨 CreatorHub calculateCreatorMetrics called with data:', data);
-    console.log('🎨 CreatorHub fullMetrics:', fullMetrics);
+    console.log('🎨 Fluxly calculateCreatorMetrics called with data:', data);
+    console.log('🎨 Fluxly fullMetrics:', fullMetrics);
     
     if (fullMetrics) {
       return [

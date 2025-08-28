@@ -57,11 +57,11 @@ const summary = dataClient.getSummary();
 
 | Persona | Business Model | What You Get |
 |---------|---------------|--------------|
-| **🛍️ TechStyle** | E-commerce Fashion | Payments, customers, multi-currency, disputes |
-| **🎓 EduTech** | Education Marketplace | Instructors, students, courses, revenue sharing |
-| **🏠 PropertyFlow** | Property Management | Rent collection, landlords, maintenance, escrow |
-| **💪 FitStream** | Fitness Subscriptions | Trials, churn, family plans, engagement |
-| **🎨 CreatorHub** | Creator Economy | Content sales, tips, fan subscriptions, payouts |
+| **🛍️ Modaic** | E-commerce Fashion | Payments, customers, multi-currency, disputes |
+| **🎓 Mindora** | Education Marketplace | Instructors, students, courses, revenue sharing |
+| **🏠 Keynest** | Property Management | Rent collection, landlords, maintenance, escrow |
+| **💪 Pulseon** | Fitness Subscriptions | Trials, churn, family plans, engagement |
+| **🎨 Fluxly** | Creator Economy | Content sales, tips, fan subscriptions, payouts |
 
 Each persona includes:
 - **Realistic data patterns** (growth lifecycle, seasonal trends)
@@ -81,7 +81,7 @@ Each persona includes:
 
 ### **What Happens When You Switch**
 1. User clicks persona dropdown
-2. Selects "🏠 PropertyFlow Property Management"
+2. Selects "🏠 Keynest"
 3. **Instantly**:
    - Metrics change: "Total Revenue" → "Rent Collected"
    - Tables update: Payment data → Rent payments 
