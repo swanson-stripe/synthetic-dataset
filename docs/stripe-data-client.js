@@ -538,17 +538,13 @@ class StripeDataClient {
       return this.currentData;
     }
 
-    // Try to load from API, fall back to generated data
-    try {
-    return await this.loadPersona(personaId);
-    } catch (error) {
-      console.warn(`Failed to load ${personaId}, using fallback data:`, error.message);
-      this.currentPersona = personaId;
-      this.currentData = this.generateFallbackData(personaId);
-      this.cache.set(personaId, this.currentData);
-      this.notifySubscribers(this.currentData, personaId);
-      return this.currentData;
-    }
+    // For demo consistency, always use fallback data with full dataset metrics
+    console.log(`🔄 Switching to ${personaId} using fallback data for demo consistency`);
+    this.currentPersona = personaId;
+    this.currentData = this.generateFallbackData(personaId);
+    this.cache.set(personaId, this.currentData);
+    this.notifySubscribers(this.currentData, personaId);
+    return this.currentData;
   }
 
   // Get current persona info
