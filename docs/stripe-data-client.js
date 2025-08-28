@@ -7,7 +7,7 @@
 class StripeDataClient {
   constructor(options = {}) {
     this.baseUrl = options.baseUrl || 'https://raw.githubusercontent.com/swanson-stripe/synthetic-dataset/main/api/v1';
-    this.currentPersona = options.defaultPersona || 'techstyle';
+    this.currentPersona = options.defaultPersona || 'modaic';
     this.cache = new Map();
     this.subscribers = [];
     this.retryAttempts = options.retryAttempts || 3;
@@ -56,8 +56,8 @@ class StripeDataClient {
     
     // Create complete personas matching the real API structure
     this.availablePersonas = {
-      techstyle: {
-        id: 'techstyle',
+      modaic: {
+        id: 'modaic',
         name: 'Modaic',
         business_model: 'ecommerce',
         description: 'E-commerce fashion retailer with global payment processing',
@@ -66,8 +66,8 @@ class StripeDataClient {
         stripe_products: ['Payments', 'Checkout', 'Subscriptions', 'Radar'],
         endpoints: {}
       },
-      edutech: {
-        id: 'edutech', 
+      mindora: {
+        id: 'mindora', 
         name: 'Mindora',
         business_model: 'education_marketplace',
         description: 'Online education marketplace with instructor payouts',
@@ -76,8 +76,8 @@ class StripeDataClient {
         stripe_products: ['Payments', 'Connect', 'Subscriptions', 'Tax'],
         endpoints: {}
       },
-      propertyflow: {
-        id: 'propertyflow',
+      keynest: {
+        id: 'keynest',
         name: 'Keynest',
         business_model: 'property_management',
         description: 'Property management platform with rent collection',
@@ -86,8 +86,8 @@ class StripeDataClient {
         stripe_products: ['Payments', 'Connect', 'ACH', 'Invoicing'],
         endpoints: {}
       },
-      fitstream: {
-        id: 'fitstream',
+      pulseon: {
+        id: 'pulseon',
         name: 'Pulseon',
         business_model: 'subscription',
         description: 'Subscription fitness platform with trials and engagement',
@@ -96,8 +96,8 @@ class StripeDataClient {
         stripe_products: ['Subscriptions', 'Payments', 'Billing', 'Revenue Recognition'],
         endpoints: {}
       },
-      creatorhub: {
-        id: 'creatorhub',
+      fluxly: {
+        id: 'fluxly',
         name: 'Fluxly',
         business_model: 'creator_economy',
         description: 'Content monetization platform with creator payouts',
@@ -106,8 +106,8 @@ class StripeDataClient {
         stripe_products: ['Connect', 'Subscriptions', 'Payments', 'Identity'],
         endpoints: {}
       },
-      givehope: {
-        id: 'givehope',
+      brightfund: {
+        id: 'brightfund',
         name: 'Brightfund',
         business_model: 'nonprofit',
         description: 'Non-profit donation platform with campaigns and recurring donors',
@@ -116,8 +116,8 @@ class StripeDataClient {
         stripe_products: ['Payments', 'Checkout', 'Tax', 'Sigma'],
         endpoints: {}
       },
-      medsupply: {
-        id: 'medsupply',
+      procura: {
+        id: 'procura',
         name: 'Procura',
         business_model: 'b2b_wholesale',
         description: 'B2B medical equipment wholesaler with net terms',
@@ -126,8 +126,8 @@ class StripeDataClient {
         stripe_products: ['Payments', 'Invoicing', 'Treasury', 'Capital'],
         endpoints: {}
       },
-      cloudflow: {
-        id: 'cloudflow',
+      stratus: {
+        id: 'stratus',
         name: 'Stratus',
         business_model: 'saas',
         description: 'B2B SaaS platform with subscription management',
@@ -136,8 +136,8 @@ class StripeDataClient {
         stripe_products: ['Subscriptions', 'Billing', 'Revenue Recognition', 'Tax'],
         endpoints: {}
       },
-      localbites: {
-        id: 'localbites',
+      forksy: {
+        id: 'forksy',
         name: 'Forksy',
         business_model: 'marketplace',
         description: 'Food delivery marketplace with restaurant and driver management',
@@ -182,53 +182,53 @@ class StripeDataClient {
   getPaymentStatusDistribution(persona) {
     const distributions = {
       // E-commerce: Higher volume, occasional disputes and refunds
-      'techstyle': {
+      'modaic': {
         statuses: ['succeeded', 'failed', 'refunded', 'partially_refunded', 'dispute_under_review', 'pending', 'canceled'],
         weights: [0.89, 0.04, 0.03, 0.015, 0.008, 0.012, 0.005]
       },
       // Education: Very reliable payments, minimal disputes
-      'edutech': {
+      'mindora': {
         statuses: ['succeeded', 'failed', 'pending', 'canceled', 'refunded'],
         weights: [0.94, 0.025, 0.02, 0.01, 0.005]
       },
       // Property: High-value, some collection issues
-      'propertyflow': {
+      'keynest': {
         statuses: ['succeeded', 'failed', 'pending', 'partially_paid', 'dispute_needs_response', 'canceled'],
         weights: [0.88, 0.05, 0.04, 0.02, 0.01, 0.005]
       },
       // Fitness: Subscription-based, some failed payments
-      'fitstream': {
+      'pulseon': {
         statuses: ['succeeded', 'failed', 'canceled', 'pending', 'refunded'],
         weights: [0.91, 0.04, 0.025, 0.02, 0.005]
       },
       // Creator platform: Digital goods, chargebacks possible
-      'creatorhub': {
+      'fluxly': {
         statuses: ['succeeded', 'failed', 'refunded', 'dispute_under_review', 'pending', 'canceled'],
         weights: [0.92, 0.03, 0.025, 0.01, 0.01, 0.005]
       },
       // Nonprofit: High trust, very few disputes
-      'givehope': {
+      'brightfund': {
         statuses: ['succeeded', 'failed', 'pending', 'canceled'],
         weights: [0.96, 0.02, 0.015, 0.005]
       },
       // B2B Medical: Large amounts, more complex payment flows
-      'medsupply': {
+      'procura': {
         statuses: ['succeeded', 'failed', 'pending', 'partially_paid', 'waiting_on_funding', 'dispute_needs_response'],
         weights: [0.85, 0.06, 0.05, 0.03, 0.015, 0.005]
       },
       // SaaS: Reliable recurring payments
-      'cloudflow': {
+      'stratus': {
         statuses: ['succeeded', 'failed', 'pending', 'canceled', 'refunded'],
         weights: [0.93, 0.035, 0.02, 0.01, 0.005]
       },
       // Marketplace: Complex flows, fraud monitoring
-      'localbites': {
+      'forksy': {
         statuses: ['succeeded', 'failed', 'blocked', 'pending', 'refunded', 'dispute_under_review', 'canceled'],
         weights: [0.89, 0.04, 0.015, 0.025, 0.02, 0.005, 0.005]
       }
     };
     
-    return distributions[persona] || distributions['techstyle'];
+    return distributions[persona] || distributions['modaic'];
   }
   
   randomPaymentMethod() {
@@ -277,11 +277,11 @@ class StripeDataClient {
     const baseAmount = Math.floor((Math.floor(Math.random() * 50000) + 25000) * stageMultiplier);
     
     switch (personaId) {
-      case 'techstyle':
+      case 'modaic':
         // Modaic: E-commerce with subscriptions and one-time payments
         return {
           payments: Array.from({length: 50}, (_, i) => {
-            const statusDist = this.getPaymentStatusDistribution('techstyle');
+            const statusDist = this.getPaymentStatusDistribution('modaic');
             return {
             id: `pi_${this.generateId()}`,
             amount: Math.floor(Math.random() * 25000) + 1500,
@@ -385,11 +385,11 @@ class StripeDataClient {
           }
         };
         
-      case 'edutech':
+      case 'mindora':
         // Mindora: Education marketplace with instructor payouts
         return {
           payments: Array.from({length: 50}, (_, i) => {
-            const statusDist = this.getPaymentStatusDistribution('edutech');
+            const statusDist = this.getPaymentStatusDistribution('mindora');
             return {
             id: `pi_${this.generateId()}`,
             amount: Math.floor(Math.random() * 50000) + 5000, // $50-$500 courses
@@ -507,10 +507,10 @@ class StripeDataClient {
           }
         };
         
-      case 'propertyflow':
+      case 'keynest':
         return {
           payments: Array.from({length: 60}, (_, i) => {
-            const statusDist = this.getPaymentStatusDistribution('propertyflow');
+            const statusDist = this.getPaymentStatusDistribution('keynest');
             return {
             id: `pi_${this.generateId()}`,
             amount: Math.floor(Math.random() * 400000) + 100000, // $1K-$4K rent
@@ -630,10 +630,10 @@ class StripeDataClient {
           }
         };
 
-      case 'fitstream':
+      case 'pulseon':
         return {
           payments: Array.from({length: 55}, (_, i) => {
-            const statusDist = this.getPaymentStatusDistribution('fitstream');
+            const statusDist = this.getPaymentStatusDistribution('pulseon');
             return {
             id: `pi_${this.generateId()}`,
             amount: [2999, 4999, 7999, 12999][Math.floor(Math.random() * 4)], // $29.99-$129.99
@@ -743,10 +743,10 @@ class StripeDataClient {
           }
         };
 
-      case 'creatorhub':
+      case 'fluxly':
         return {
           payments: Array.from({length: 65}, (_, i) => {
-            const statusDist = this.getPaymentStatusDistribution('creatorhub');
+            const statusDist = this.getPaymentStatusDistribution('fluxly');
             return {
             id: `pi_${this.generateId()}`,
             amount: Math.floor(Math.random() * 15000) + 500, // $5-$150 content
@@ -851,13 +851,13 @@ class StripeDataClient {
           }
         };
 
-      case 'givehope':
+      case 'brightfund':
         return {
           payments: Array.from({length: 45}, (_, i) => ({
             id: `pi_${this.generateId()}`,
             amount: Math.floor(Math.random() * 100000) + 1000, // $10-$1000 donations
             currency: 'usd',
-            status: this.randomStatus(this.getPaymentStatusDistribution('givehope').statuses, this.getPaymentStatusDistribution('givehope').weights),
+            status: this.randomStatus(this.getPaymentStatusDistribution('brightfund').statuses, this.getPaymentStatusDistribution('brightfund').weights),
             customer: `cus_${this.generateId()}`,
             created: Date.now() - Math.random() * 86400000 * 120,
             payment_method: this.randomPaymentMethod(),
@@ -931,13 +931,13 @@ class StripeDataClient {
           }
         };
 
-      case 'medsupply':
+      case 'procura':
         return {
           payments: Array.from({length: 50}, (_, i) => ({
             id: `pi_${this.generateId()}`,
             amount: Math.floor(Math.random() * 500000) + 50000, // $500-$5000 medical supplies
             currency: 'usd',
-            status: this.randomStatus(this.getPaymentStatusDistribution('medsupply').statuses, this.getPaymentStatusDistribution('medsupply').weights),
+            status: this.randomStatus(this.getPaymentStatusDistribution('procura').statuses, this.getPaymentStatusDistribution('procura').weights),
             customer: `cus_${this.generateId()}`,
             created: Date.now() - Math.random() * 86400000 * 90,
             payment_method: this.randomPaymentMethod(),
@@ -1028,13 +1028,13 @@ class StripeDataClient {
           }
         };
 
-      case 'cloudflow':
+      case 'stratus':
         return {
           payments: Array.from({length: 45}, (_, i) => ({
             id: `pi_${this.generateId()}`,
             amount: [9900, 29900, 99900, 199900][Math.floor(Math.random() * 4)], // $99-$1999 SaaS plans
             currency: 'usd',
-            status: this.randomStatus(this.getPaymentStatusDistribution('cloudflow').statuses, this.getPaymentStatusDistribution('cloudflow').weights),
+            status: this.randomStatus(this.getPaymentStatusDistribution('stratus').statuses, this.getPaymentStatusDistribution('stratus').weights),
             customer: `cus_${this.generateId()}`,
             created: Date.now() - Math.random() * 86400000 * 90,
             payment_method: this.randomPaymentMethod(),
@@ -1144,13 +1144,13 @@ class StripeDataClient {
           }
         };
 
-      case 'localbites':
+      case 'forksy':
         return {
           payments: Array.from({length: 75}, (_, i) => ({
             id: `pi_${this.generateId()}`,
             amount: Math.floor(Math.random() * 12000) + 1500, // $15-$120 food orders
             currency: 'usd',
-            status: this.randomStatus(this.getPaymentStatusDistribution('localbites').statuses, this.getPaymentStatusDistribution('localbites').weights),
+            status: this.randomStatus(this.getPaymentStatusDistribution('forksy').statuses, this.getPaymentStatusDistribution('forksy').weights),
             customer: `cus_${this.generateId()}`,
             created: Date.now() - Math.random() * 86400000 * 30,
             payment_method: this.randomPaymentMethod(),
@@ -1453,23 +1453,23 @@ class StripeDataClient {
     console.log(`🧮 Calculating metrics for ${personaId}, data keys:`, Object.keys(data));
 
     switch (personaId) {
-      case 'techstyle':
+      case 'modaic':
         return this.calculateEcommerceMetrics(data);
-      case 'edutech':
+      case 'mindora':
         return this.calculateEducationMetrics(data);
-      case 'propertyflow':
+      case 'keynest':
         return this.calculatePropertyMetrics(data);
-      case 'fitstream':
+      case 'pulseon':
         return this.calculateFitnessMetrics(data);
-      case 'creatorhub':
+      case 'fluxly':
         return this.calculateCreatorMetrics(data);
-      case 'givehope':
+      case 'brightfund':
         return this.calculateNonprofitMetrics(data);
-      case 'medsupply':
+      case 'procura':
         return this.calculateB2BMetrics(data);
-      case 'cloudflow':
+      case 'stratus':
         return this.calculateSaaSMetrics(data);
-      case 'localbites':
+      case 'forksy':
         return this.calculateMarketplaceMetrics(data);
       default:
         return this.calculateGenericMetrics(data);

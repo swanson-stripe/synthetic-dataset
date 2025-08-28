@@ -671,7 +671,7 @@
                 try {
                     // Initialize data client with default persona
                     this.dataClient = new StripeDataClient({
-                        defaultPersona: 'techstyle' // Can be changed to any persona
+                        defaultPersona: 'modaic' // Can be changed to any persona
                     });
 
                     // Wait for initial load with timeout
@@ -1700,17 +1700,17 @@
                     return;
                 }
                 
-                // Map persona IDs to their image filenames (based on new brand names)
+                // Map persona IDs to their image filenames (now they match!)
                 const personaImageMap = {
-                    'techstyle': 'modaic',
-                    'edutech': 'mindora', 
-                    'propertyflow': 'keynest',
-                    'fitstream': 'pulseon',
-                    'creatorhub': 'fluxly',
-                    'givehope': 'brightfund',
-                    'medsupply': 'procura',
-                    'cloudflow': 'stratus',
-                    'localbites': 'forksy'
+                    'modaic': 'modaic',
+                    'mindora': 'mindora', 
+                    'keynest': 'keynest',
+                    'pulseon': 'pulseon',
+                    'fluxly': 'fluxly',
+                    'brightfund': 'brightfund',
+                    'procura': 'procura',
+                    'stratus': 'stratus',
+                    'forksy': 'forksy'
                 };
                 
                 const imageFilename = personaImageMap[this.currentPersona] || this.currentPersona;
@@ -1814,15 +1814,15 @@
                 
                 // Use the same persona image mapping
                 const personaImageMap = {
-                    'techstyle': 'modaic',
-                    'edutech': 'mindora', 
-                    'propertyflow': 'keynest',
-                    'fitstream': 'pulseon',
-                    'creatorhub': 'fluxly',
-                    'givehope': 'brightfund',
-                    'medsupply': 'procura',
-                    'cloudflow': 'stratus',
-                    'localbites': 'forksy'
+                    'modaic': 'modaic',
+                    'mindora': 'mindora', 
+                    'keynest': 'keynest',
+                    'pulseon': 'pulseon',
+                    'fluxly': 'fluxly',
+                    'brightfund': 'brightfund',
+                    'procura': 'procura',
+                    'stratus': 'stratus',
+                    'forksy': 'forksy'
                 };
                 
                 Object.entries(personas).forEach(([id, persona]) => {
