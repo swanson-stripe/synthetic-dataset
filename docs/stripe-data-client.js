@@ -794,6 +794,8 @@ class StripeDataClient {
   calculatePropertyMetrics(data) {
     // Use full dataset metrics if available
     const fullMetrics = data._fullDatasetMetrics;
+    console.log('🏠 PropertyFlow calculatePropertyMetrics called with data:', data);
+    console.log('🏠 PropertyFlow fullMetrics:', fullMetrics);
     
     if (fullMetrics) {
       const successRate = fullMetrics.successfulPayments / fullMetrics.totalPayments;
@@ -858,6 +860,8 @@ class StripeDataClient {
   calculateFitnessMetrics(data) {
     // Use full dataset metrics if available
     const fullMetrics = data._fullDatasetMetrics;
+    console.log('💪 FitStream calculateFitnessMetrics called with data:', data);
+    console.log('💪 FitStream fullMetrics:', fullMetrics);
     
     if (fullMetrics) {
       const churnRate = (fullMetrics.totalSubscribers - fullMetrics.activeSubscriptions) / fullMetrics.totalSubscribers;
@@ -920,6 +924,8 @@ class StripeDataClient {
   calculateCreatorMetrics(data) {
     // Use full dataset metrics if available
     const fullMetrics = data._fullDatasetMetrics;
+    console.log('🎨 CreatorHub calculateCreatorMetrics called with data:', data);
+    console.log('🎨 CreatorHub fullMetrics:', fullMetrics);
     
     if (fullMetrics) {
       return [
