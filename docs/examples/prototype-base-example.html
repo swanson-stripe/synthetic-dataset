@@ -918,7 +918,7 @@
             
             drawInteractiveChart() {
                 const { canvas, ctx, data, padding, chartWidth, chartHeight } = this.currentChartData;
-                const { months, values } = data;
+                const { dates, values } = data;
                 
                 // Clear canvas
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -936,7 +936,7 @@
                 ctx.fillStyle = '#64748b';
                 
                 // Draw grid and axes
-                this.drawGrid(ctx, canvas, padding, chartWidth, chartHeight, minValue, maxValue, months);
+                this.drawGrid(ctx, canvas, padding, chartWidth, chartHeight, minValue, maxValue, dates);
                 
                 // Draw the line
                 ctx.beginPath();
@@ -951,7 +951,8 @@
                     this.currentChartData.dataPoints.push({
                         x, y, 
                         value: values[i],
-                        label: months[i],
+                        date: dates[i],
+                        label: dates[i].toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
                         index: i
                     });
                     
@@ -963,12 +964,15 @@
                 }
                 ctx.stroke();
                 
-                // Draw data points
+                // Draw data points (sample every 7 days for performance)
                 ctx.fillStyle = '#635bff';
-                this.currentChartData.dataPoints.forEach(point => {
-                    ctx.beginPath();
-                    ctx.arc(point.x, point.y, 4, 0, 2 * Math.PI);
-                    ctx.fill();
+                this.currentChartData.dataPoints.forEach((point, index) => {
+                    // Show points every 7 days, plus first and last
+                    if (index % 7 === 0 || index === 0 || index === this.currentChartData.dataPoints.length - 1) {
+                        ctx.beginPath();
+                        ctx.arc(point.x, point.y, 3, 0, 2 * Math.PI);
+                        ctx.fill();
+                    }
                 });
                 
                 // Draw hover point if any
@@ -1118,8 +1122,8 @@
             }
             
             generateTimeSeriesData(metric, personaId) {
-                // Generate 12 months of realistic time series data
-                const months = [];
+                // Generate 12 months of daily data (365 days)
+                const dates = [];
                 const values = [];
                 const now = new Date();
                 
@@ -1128,42 +1132,59 @@
                 
                 // Detect if this is a rate/percentage metric
                 const isRateMetric = this.isRateMetric(metric);
-                console.log(`📊 Generating time series for ${metric.label}, isRate: ${isRateMetric}, currentValue: ${currentValue}`);
+                console.log(`📊 Generating daily time series for ${metric.label}, isRate: ${isRateMetric}, currentValue: ${currentValue}`);
                 
-                // Start 11 months ago
-                for (let i = 11; i >= 0; i--) {
-                    const date = new Date(now.getFullYear(), now.getMonth() - i, 1);
-                    months.push(date.toLocaleDateString('en-US', { month: 'short', year: '2-digit' }));
+                // Generate 365 days of data (12 months)
+                for (let i = 364; i >= 0; i--) {
+                    const date = new Date(now.getTime() - (i * 24 * 60 * 60 * 1000));
+                    dates.push(date);
                     
                     if (i === 0) {
-                        // Last month (current) - use exact current value
+                        // Today (current) - use exact current value
                         values.push(currentValue);
                     } else {
-                        // Historical months - work backwards from current value
+                        // Historical days - work backwards from current value
                         let value;
                         
                         if (isRateMetric) {
-                            // For rates, use smaller variations and avoid growth patterns that make them 0
-                            const baseVariation = 0.85 + Math.random() * 0.3; // ±15% variation
-                            const trendFactor = 1 - (i * 0.02); // Slight trend improvement over time
-                            value = currentValue * baseVariation * trendFactor;
+                            // For rates, use smaller daily variations
+                            const dailyVariation = 0.95 + Math.random() * 0.1; // ±5% daily variation
+                            const monthsAgo = i / 30.44; // Average days per month
+                            const trendFactor = 1 - (monthsAgo * 0.015); // 1.5% improvement per month
+                            const seasonality = 1 + 0.05 * Math.sin((i / 365) * 2 * Math.PI); // 5% seasonal variation
+                            
+                            value = currentValue * dailyVariation * trendFactor * seasonality;
                             
                             // Ensure rates stay within reasonable bounds (0.1% to 99%)
                             value = Math.max(0.001, Math.min(0.99, value));
                         } else {
-                            // For volume metrics, use growth patterns
-                            const stageMultiplier = this.getStageGrowthPattern(i, this.currentStage);
-                            const businessGrowth = this.getBusinessGrowthPattern(i, personaId);
-                            const randomVariation = 0.85 + Math.random() * 0.3; // ±15% variation
+                            // For volume metrics, use growth patterns with daily variation
+                            const monthsAgo = Math.floor(i / 30.44);
+                            const stageMultiplier = this.getStageGrowthPattern(monthsAgo, this.currentStage);
+                            const businessGrowth = this.getBusinessGrowthPattern(monthsAgo, personaId);
+                            const dailyVariation = 0.9 + Math.random() * 0.2; // ±10% daily variation
+                            const weekdayFactor = this.getWeekdayFactor(date); // Business patterns
                             
-                            value = Math.floor(currentValue * stageMultiplier * businessGrowth * randomVariation);
+                            value = Math.floor(currentValue * stageMultiplier * businessGrowth * dailyVariation * weekdayFactor);
                         }
                         
                         values.push(Math.max(0, value));
                     }
                 }
                 
-                return { months, values, label: metric.label };
+                return { dates, values, label: metric.label };
+            }
+            
+            getWeekdayFactor(date) {
+                const day = date.getDay(); // 0 = Sunday, 6 = Saturday
+                // Business metrics typically higher on weekdays
+                if (day === 0 || day === 6) {
+                    return 0.7; // Weekend factor
+                } else if (day === 1 || day === 5) {
+                    return 0.9; // Monday/Friday factor
+                } else {
+                    return 1.0; // Tuesday-Thursday peak
+                }
             }
             
             isRateMetric(metric) {
@@ -1217,14 +1238,14 @@
                 this.currentChartData = null;
             }
             
-            drawGrid(ctx, canvas, padding, chartWidth, chartHeight, minValue, maxValue, months) {
+            drawGrid(ctx, canvas, padding, chartWidth, chartHeight, minValue, maxValue, dates) {
                 ctx.strokeStyle = '#e2e8f0';
                 ctx.lineWidth = 1;
                 ctx.fillStyle = '#64748b';
                 ctx.font = '11px -apple-system, BlinkMacSystemFont, sans-serif';
                 
                 // Draw horizontal grid lines and Y-axis labels
-                const ySteps = 4;
+                const ySteps = 5;
                 for (let i = 0; i <= ySteps; i++) {
                     const y = padding + (i / ySteps) * chartHeight;
                     const value = maxValue - (i / ySteps) * (maxValue - minValue);
@@ -1236,19 +1257,75 @@
                     ctx.stroke();
                     
                     // Y-axis label
-                    const labelText = this.formatChartValue(value);
+                    const labelText = this.formatChartAxisValue(value);
                     ctx.fillText(labelText, 5, y + 4);
                 }
                 
-                // Draw X-axis labels (months)
-                for (let i = 0; i < months.length; i += 2) { // Show every other month
-                    const x = padding + (i / (months.length - 1)) * chartWidth;
+                // Draw X-axis labels (monthly markers for daily data)
+                const monthlyIndices = this.getMonthlyAxisIndices(dates);
+                
+                for (const { index, date } of monthlyIndices) {
+                    const x = padding + (index / (dates.length - 1)) * chartWidth;
                     const y = padding + chartHeight + 15;
                     
+                    // Vertical grid line at month boundaries
+                    ctx.beginPath();
+                    ctx.moveTo(x, padding);
+                    ctx.lineTo(x, padding + chartHeight);
+                    ctx.stroke();
+                    
+                    // Month label
                     ctx.save();
                     ctx.textAlign = 'center';
-                    ctx.fillText(months[i], x, y);
+                    const monthLabel = date.toLocaleDateString('en-US', { month: 'short', year: '2-digit' });
+                    ctx.fillText(monthLabel, x, y);
                     ctx.restore();
+                }
+            }
+            
+            getMonthlyAxisIndices(dates) {
+                const monthlyIndices = [];
+                let lastMonth = -1;
+                
+                dates.forEach((date, index) => {
+                    const currentMonth = date.getMonth();
+                    const currentYear = date.getFullYear();
+                    
+                    // Add index for first day of each month
+                    if (currentMonth !== lastMonth) {
+                        monthlyIndices.push({ index, date });
+                        lastMonth = currentMonth;
+                    }
+                });
+                
+                // Ensure we don't have too many labels (max 6 months shown)
+                if (monthlyIndices.length > 6) {
+                    const step = Math.ceil(monthlyIndices.length / 6);
+                    return monthlyIndices.filter((_, index) => index % step === 0);
+                }
+                
+                return monthlyIndices;
+            }
+            
+            formatChartAxisValue(value) {
+                // Handle rate metrics (values between 0-1)
+                if (value <= 1 && value >= 0 && this.currentChartData?.metric && this.isRateMetric(this.currentChartData.metric)) {
+                    return new Intl.NumberFormat('en-US', {
+                        style: 'percent',
+                        minimumFractionDigits: 0,
+                        maximumFractionDigits: 1
+                    }).format(value);
+                }
+                
+                // Handle large numbers
+                if (value >= 1000000) {
+                    return (value / 1000000).toFixed(1) + 'M';
+                } else if (value >= 1000) {
+                    return (value / 1000).toFixed(0) + 'K';
+                } else if (value >= 1) {
+                    return value.toFixed(0);
+                } else {
+                    return value.toFixed(2);
                 }
             }
             
