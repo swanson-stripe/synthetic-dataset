@@ -297,7 +297,7 @@ class StripeDataClient {
               shipping_method: ['standard', 'express', 'overnight'][Math.floor(Math.random() * 3)],
               gift_message: Math.random() > 0.9 ? 'Happy Birthday!' : null
             },
-            description: `Modaic Fashion Purchase`,
+            description: `Modaic Purchase`,
             receipt_email: `customer${i}@example.com`
           };
           }),
@@ -400,13 +400,13 @@ class StripeDataClient {
             payment_method: this.randomPaymentMethod(),
             metadata: {
               course_id: `course_${this.generateId()}`,
-              instructor_id: `acct_${this.generateId()}`,
+              creator_id: `acct_${this.generateId()}`,
               enrollment_type: ['individual', 'corporate', 'bulk'][Math.floor(Math.random() * 3)],
               course_category: ['programming', 'business', 'design', 'marketing', 'data_science'][Math.floor(Math.random() * 5)],
               completion_certificate: Math.random() > 0.3,
               payment_plan: Math.random() > 0.8 ? 'installment' : 'full'
             },
-            description: 'Course enrollment payment',
+            description: 'Mindora Learning Payment',
             application_fee_amount: Math.floor(Math.random() * 5000) + 500 // Platform commission
           };
           }),
@@ -432,17 +432,17 @@ class StripeDataClient {
             id: `acct_${this.generateId()}`,
             type: 'express',
             business_profile: { 
-              name: `Dr. ${this.generateCustomerName()}`,
-              url: `https://instructor${i}.edutech.com`
+              name: this.generateCustomerName(),
+              url: `https://mindora-creator${i}.com`
             },
             created: Date.now() - Math.random() * 86400000 * 180,
             metadata: {
-              expertise: ['Computer Science', 'Mathematics', 'Physics', 'Chemistry', 'Biology', 'Economics'][Math.floor(Math.random() * 6)],
+              category: ['programming', 'business', 'design', 'marketing', 'data_science', 'health'][Math.floor(Math.random() * 6)],
               rating: (4.0 + Math.random()).toFixed(1),
-              total_students: Math.floor(Math.random() * 5000) + 50,
-              course_count: Math.floor(Math.random() * 15) + 1,
-              teaching_experience: Math.floor(Math.random() * 20) + 1,
-              qualification: ['PhD', 'Masters', 'Industry Expert'][Math.floor(Math.random() * 3)]
+              total_enrollments: Math.floor(Math.random() * 5000) + 50,
+              content_count: Math.floor(Math.random() * 15) + 1,
+              years_active: Math.floor(Math.random() * 8) + 1,
+              verification_status: ['verified', 'pending', 'basic'][Math.floor(Math.random() * 3)]
             },
             capabilities: {
               transfers: 'requested'
@@ -458,7 +458,7 @@ class StripeDataClient {
               category: ['programming', 'business', 'design', 'marketing', 'data_science'][Math.floor(Math.random() * 5)],
               difficulty: ['beginner', 'intermediate', 'advanced'][Math.floor(Math.random() * 3)],
               duration_hours: Math.floor(Math.random() * 40) + 5,
-              instructor_id: `acct_${this.generateId()}`,
+              creator_id: `acct_${this.generateId()}`,
               certification: Math.random() > 0.3
             },
             created: Date.now() - Math.random() * 86400000 * 90
@@ -593,7 +593,7 @@ class StripeDataClient {
             currency: 'usd',
             destination: `acct_${this.generateId()}`,
             created: Date.now() - Math.random() * 86400000 * 30,
-            description: 'Landlord rental income payout',
+            description: 'Keynest property payout',
             metadata: {
               property_id: `prop_${this.generateId()}`,
               payout_period: 'monthly',
@@ -1191,7 +1191,7 @@ class StripeDataClient {
             id: `acct_${this.generateId()}`,
             type: 'express',
             business_profile: { 
-              name: i < 25 ? `${['Taste of', 'Golden', 'Fresh', 'Urban'][Math.floor(Math.random() * 4)]} ${['Bistro', 'Kitchen', 'Grill', 'Cafe'][Math.floor(Math.random() * 4)]}` : `Driver ${this.generateCustomerName()}`
+              name: i < 25 ? `${['Taste of', 'Golden', 'Fresh', 'Urban'][Math.floor(Math.random() * 4)]} ${['Bistro', 'Kitchen', 'Grill', 'Cafe'][Math.floor(Math.random() * 4)]}` : this.generateCustomerName()
             },
             created: Date.now() - Math.random() * 86400000 * 365,
             metadata: {
@@ -1210,7 +1210,7 @@ class StripeDataClient {
           products: Array.from({length: 50}, (_, i) => ({
             id: `prod_${this.generateId()}`,
             name: this.generateProductName('marketplace'),
-            description: `Restaurant menu item or delivery service`,
+            description: `Forksy marketplace item`,
             active: Math.random() > 0.1,
             metadata: {
               item_type: ['food_item', 'beverage', 'dessert', 'delivery_fee'][Math.floor(Math.random() * 4)],
@@ -1228,7 +1228,7 @@ class StripeDataClient {
             currency: 'usd',
             destination: `acct_${this.generateId()}`,
             created: Date.now() - Math.random() * 86400000 * 7,
-            description: i % 2 === 0 ? 'Restaurant order payout' : 'Driver delivery payout',
+            description: i % 2 === 0 ? 'Forksy merchant payout' : 'Forksy service payout',
             metadata: {
               payout_type: i % 2 === 0 ? 'restaurant_earnings' : 'driver_earnings',
               order_count: Math.floor(Math.random() * 20) + 1,
