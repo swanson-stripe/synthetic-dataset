@@ -1071,19 +1071,39 @@
                     return;
                 }
                 
-                tbody.innerHTML = data.map(item => {
-                    const row = this.formatTableRow(item, persona, tableType);
-                    return `<tr>${row}</tr>`;
-                }).join('');
+                try {
+                    tbody.innerHTML = data.map((item, index) => {
+                        try {
+                            const row = this.formatTableRow(item, persona, tableType);
+                            if (!row) {
+                                console.error(`❌ formatTableRow returned empty for ${persona} ${tableType} item ${index}:`, item);
+                                return '<tr><td colspan="5">Row formatting error</td></tr>';
+                            }
+                            return `<tr>${row}</tr>`;
+                        } catch (error) {
+                            console.error(`❌ Error formatting ${persona} ${tableType} row ${index}:`, error, item);
+                            return '<tr><td colspan="5">Row error</td></tr>';
+                        }
+                    }).join('');
+                } catch (error) {
+                    console.error(`❌ Error populating ${persona} ${tableType} table:`, error);
+                    tbody.innerHTML = '<tr><td colspan="5">Table error</td></tr>';
+                }
             }
 
             formatTableRow(item, persona, tableType) {
+                console.log(`🔧 formatTableRow: ${persona} ${tableType}`, { item, keys: Object.keys(item || {}) });
+                
                 if (tableType === 'primary') {
                     // All primary tables show payments with persona-specific metadata
-                    return this.formatPaymentRow(item, persona);
+                    const result = this.formatPaymentRow(item, persona);
+                    console.log(`🔧 formatPaymentRow result for ${persona}:`, result);
+                    return result;
                 } else {
                     // Secondary tables show customers or connected_accounts
-                    return this.formatSecondaryRow(item, persona);
+                    const result = this.formatSecondaryRow(item, persona);
+                    console.log(`🔧 formatSecondaryRow result for ${persona}:`, result);
+                    return result;
                 }
             }
 
