@@ -1402,47 +1402,47 @@
                 `;
 
                 switch (persona) {
-                    case 'techstyle':
+                    case 'modaic':
                         return baseColumns + `
                             <td>${item.currency?.toUpperCase()}</td>
                             <td>${item.customer}</td>
                         `;
-                    case 'edutech':
+                    case 'mindora':
                         return baseColumns + `
                             <td>${item.metadata?.course_id || 'Course'}</td>
                             <td>${item.customer}</td>
                         `;
-                    case 'propertyflow':
+                    case 'keynest':
                         return baseColumns + `
                             <td>${item.metadata?.property_id || 'Property'}</td>
                             <td>${item.customer}</td>
                         `;
-                    case 'fitstream':
+                    case 'pulseon':
                         return baseColumns + `
                             <td>${item.metadata?.plan_type || 'Plan'}</td>
                             <td>${item.customer}</td>
                         `;
-                    case 'creatorhub':
+                    case 'fluxly':
                         return baseColumns + `
                             <td>${item.metadata?.content_type || 'Content'}</td>
                             <td>${item.customer}</td>
                         `;
-                    case 'givehope':
+                    case 'brightfund':
                         return baseColumns + `
                             <td>${item.metadata?.campaign_id || 'Campaign'}</td>
                             <td>${item.customer}</td>
                         `;
-                    case 'medsupply':
+                    case 'procura':
                         return baseColumns + `
                             <td>${item.metadata?.purchase_order || 'PO'}</td>
                             <td>${item.customer}</td>
                         `;
-                    case 'cloudflow':
+                    case 'stratus':
                         return baseColumns + `
                             <td>${item.metadata?.plan_tier || 'Plan'}</td>
                             <td>${item.customer}</td>
                         `;
-                    case 'localbites':
+                    case 'forksy':
                         return baseColumns + `
                             <td>${item.metadata?.restaurant_id || 'Restaurant'}</td>
                             <td>${item.customer}</td>
@@ -1457,7 +1457,7 @@
 
             formatSecondaryRow(item, persona) {
                 switch (persona) {
-                    case 'techstyle':
+                    case 'modaic':
                         // Customers
                         return `
                             <td>${item.id}</td>
@@ -1466,7 +1466,7 @@
                             <td>${this.formatCurrency(item.metadata?.total_spend || 0)}</td>
                             <td>${item.address?.country || 'US'}</td>
                         `;
-                    case 'edutech':
+                    case 'mindora':
                         // Connected accounts (instructors)
                         return `
                             <td>${item.id}</td>
@@ -1475,7 +1475,7 @@
                             <td>${item.metadata?.rating || '4.5'}⭐</td>
                             <td>${item.metadata?.total_students || 0}</td>
                         `;
-                    case 'propertyflow':
+                    case 'keynest':
                         // Connected accounts (landlords)
                         return `
                             <td>${item.id}</td>
@@ -1484,7 +1484,7 @@
                             <td>${item.metadata?.years_experience || 0} years</td>
                             <td>${this.formatCurrency(item.metadata?.portfolio_value || 0)}</td>
                         `;
-                    case 'fitstream':
+                    case 'pulseon':
                         // Customers (members)
                         return `
                             <td>${item.id}</td>
@@ -1493,7 +1493,7 @@
                             <td>${item.metadata?.goals || 'General'}</td>
                             <td>${item.metadata?.check_ins_this_month || 0}</td>
                         `;
-                    case 'creatorhub':
+                    case 'fluxly':
                         // Connected accounts (creators)
                         return `
                             <td>${item.id}</td>
@@ -1502,7 +1502,7 @@
                             <td>${item.metadata?.followers_count || 0}</td>
                             <td>${item.metadata?.content_count || 0}</td>
                         `;
-                    case 'givehope':
+                    case 'brightfund':
                         // Customers (donors)
                         return `
                             <td>${item.id}</td>
@@ -1511,7 +1511,7 @@
                             <td>${this.formatCurrency(item.metadata?.total_donated || 0)}</td>
                             <td>${item.metadata?.donation_frequency || 'One-time'}</td>
                         `;
-                    case 'medsupply':
+                    case 'procura':
                         // Customers (hospitals)
                         return `
                             <td>${item.id}</td>
@@ -1520,7 +1520,7 @@
                             <td>${this.formatCurrency(item.metadata?.credit_limit || 0)}</td>
                             <td>${this.formatCurrency(item.metadata?.total_spend || 0)}</td>
                         `;
-                    case 'cloudflow':
+                    case 'stratus':
                         // Customers (companies)
                         return `
                             <td>${item.id}</td>
@@ -1529,7 +1529,7 @@
                             <td>${item.metadata?.employee_count || 0}</td>
                             <td>${this.formatCurrency(item.metadata?.total_spend || 0)}</td>
                         `;
-                    case 'localbites':
+                    case 'forksy':
                         // Connected accounts (restaurants)
                         return `
                             <td>${item.id}</td>
