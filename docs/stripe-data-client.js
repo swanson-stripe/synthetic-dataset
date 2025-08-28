@@ -63,6 +63,7 @@ class StripeDataClient {
         description: 'E-commerce fashion retailer with global payment processing',
         complexity: 'medium',
         data_scale: 'large',
+        stripe_products: ['Payments', 'Checkout', 'Subscriptions', 'Radar'],
         endpoints: {}
       },
       edutech: {
@@ -72,6 +73,7 @@ class StripeDataClient {
         description: 'Online education marketplace with instructor payouts',
         complexity: 'high',
         data_scale: 'large',
+        stripe_products: ['Payments', 'Connect', 'Subscriptions', 'Tax'],
         endpoints: {}
       },
       propertyflow: {
@@ -81,6 +83,7 @@ class StripeDataClient {
         description: 'Property management platform with rent collection',
         complexity: 'medium',
         data_scale: 'medium',
+        stripe_products: ['Payments', 'Connect', 'ACH', 'Invoicing'],
         endpoints: {}
       },
       fitstream: {
@@ -90,6 +93,7 @@ class StripeDataClient {
         description: 'Subscription fitness platform with trials and engagement',
         complexity: 'medium',
         data_scale: 'large',
+        stripe_products: ['Subscriptions', 'Payments', 'Billing', 'Revenue Recognition'],
         endpoints: {}
       },
       creatorhub: {
@@ -99,6 +103,7 @@ class StripeDataClient {
         description: 'Content monetization platform with creator payouts',
         complexity: 'high',
         data_scale: 'large',
+        stripe_products: ['Connect', 'Subscriptions', 'Payments', 'Identity'],
         endpoints: {}
       },
       givehope: {
@@ -108,6 +113,7 @@ class StripeDataClient {
         description: 'Non-profit donation platform with campaigns and recurring donors',
         complexity: 'medium',
         data_scale: 'large',
+        stripe_products: ['Payments', 'Checkout', 'Tax', 'Sigma'],
         endpoints: {}
       },
       medsupply: {
@@ -117,6 +123,7 @@ class StripeDataClient {
         description: 'B2B medical equipment wholesaler with net terms',
         complexity: 'high',
         data_scale: 'large',
+        stripe_products: ['Payments', 'Invoicing', 'Treasury', 'Capital'],
         endpoints: {}
       },
       cloudflow: {
@@ -126,6 +133,7 @@ class StripeDataClient {
         description: 'B2B SaaS platform with subscription management',
         complexity: 'high',
         data_scale: 'large',
+        stripe_products: ['Subscriptions', 'Billing', 'Revenue Recognition', 'Tax'],
         endpoints: {}
       },
       localbites: {
@@ -135,6 +143,7 @@ class StripeDataClient {
         description: 'Food delivery marketplace with restaurant and driver management',
         complexity: 'high',
         data_scale: 'very_large',
+        stripe_products: ['Connect', 'Payments', 'Issuing', 'Terminal'],
         endpoints: {}
       }
     };
@@ -146,14 +155,22 @@ class StripeDataClient {
       mature: { name: 'Mature Stage', description: 'Months 17-24: Established business' }
     };
 
-    this.currentData = this.generateFallbackData(this.currentPersona);
+    this.currentStage = 'growth'; // Default stage
+    this.currentData = this.generateFallbackData(this.currentPersona, this.currentStage);
     this.notifySubscribers(this.currentData, this.currentPersona);
   }
 
   // Generate realistic fallback data that reflects full synthetic dataset scale
-  generateFallbackData(personaId) {
-    // Base amounts for massive scale datasets
-    const baseAmount = Math.floor(Math.random() * 50000) + 25000;
+  generateFallbackData(personaId, stage = 'growth') {
+    // Scale data based on business stage
+    const stageMultipliers = {
+      early: 0.3,   // 30% of growth stage
+      growth: 1.0,  // Base scale
+      mature: 2.5   // 250% of growth stage
+    };
+    
+    const stageMultiplier = stageMultipliers[stage] || 1.0;
+    const baseAmount = Math.floor((Math.floor(Math.random() * 50000) + 25000) * stageMultiplier);
     
     switch (personaId) {
       case 'techstyle':
@@ -178,10 +195,11 @@ class StripeDataClient {
            })),
           // Full dataset metrics (not just the 50 sample payments)
           _fullDatasetMetrics: {
-            totalPayments: 150000,
-            totalCustomers: 75000,
-            totalRevenue: 18500000000, // $185M in cents
-            successfulPayments: 147000
+            totalPayments: Math.floor(150000 * stageMultiplier),
+            totalCustomers: Math.floor(75000 * stageMultiplier),
+            totalRevenue: Math.floor(18500000000 * stageMultiplier), // $185M in cents
+            successfulPayments: Math.floor(147000 * stageMultiplier),
+            stage: stage
           },
           summary: {
             revenue_metrics: {
@@ -524,16 +542,29 @@ class StripeDataClient {
     }
   }
 
+  // Update business stage and regenerate data
+  updateStage(stage) {
+    this.currentStage = stage;
+    console.log(`🔄 Updating stage to ${stage} and regenerating data`);
+    
+    // Regenerate data for current persona with new stage
+    this.currentData = this.generateFallbackData(this.currentPersona, stage);
+    this.cache.set(`${this.currentPersona}_${stage}`, this.currentData);
+    this.notifySubscribers(this.currentData, this.currentPersona);
+    return this.currentData;
+  }
+
   // Switch to a different persona
   async switchPersona(personaId) {
     if (personaId === this.currentPersona) {
       return this.currentData;
     }
 
-    // Check cache first
-    if (this.cache.has(personaId)) {
+    // Check cache first (including stage)
+    const cacheKey = `${personaId}_${this.currentStage || 'growth'}`;
+    if (this.cache.has(cacheKey)) {
       this.currentPersona = personaId;
-      this.currentData = this.cache.get(personaId);
+      this.currentData = this.cache.get(cacheKey);
       this.notifySubscribers(this.currentData, personaId);
       return this.currentData;
     }
@@ -541,8 +572,9 @@ class StripeDataClient {
     // For demo consistency, always use fallback data with full dataset metrics
     console.log(`🔄 Switching to ${personaId} using fallback data for demo consistency`);
     this.currentPersona = personaId;
-    this.currentData = this.generateFallbackData(personaId);
-    this.cache.set(personaId, this.currentData);
+    this.currentStage = this.currentStage || 'growth'; // Use current stage or default
+    this.currentData = this.generateFallbackData(personaId, this.currentStage);
+    this.cache.set(`${personaId}_${this.currentStage}`, this.currentData);
     this.notifySubscribers(this.currentData, personaId);
     return this.currentData;
   }

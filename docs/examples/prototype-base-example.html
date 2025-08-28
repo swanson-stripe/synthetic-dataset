@@ -33,6 +33,90 @@
             color: #0f172a;
         }
         
+        .nav-controls {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .nav-selector-group {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .nav-selector {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        
+        .nav-selector label {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .nav-selector select {
+            min-width: 200px;
+            padding: 0.5rem 0.75rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            background: white;
+            font-size: 0.875rem;
+            color: #1e293b;
+            cursor: pointer;
+        }
+        
+        .nav-selector select:focus {
+            outline: none;
+            border-color: #635bff;
+            box-shadow: 0 0 0 3px rgba(99, 91, 255, 0.1);
+        }
+        
+        .persona-metadata {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 0.5rem;
+        }
+        
+        .persona-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        
+        .persona-name {
+            font-weight: 600;
+            color: #0f172a;
+            font-size: 0.875rem;
+        }
+        
+        .persona-description {
+            font-size: 0.75rem;
+            color: #64748b;
+            text-align: right;
+        }
+        
+        .stripe-products {
+            display: flex;
+            gap: 0.25rem;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+        
+        .stripe-product-badge {
+            padding: 0.125rem 0.375rem;
+            background: #f1f5f9;
+            color: #475569;
+            font-size: 0.625rem;
+            font-weight: 500;
+            border-radius: 4px;
+            border: 1px solid #e2e8f0;
+        }
+        
         .prototype-main {
             padding: 2rem;
             max-width: 1200px;
@@ -137,17 +221,7 @@
             display: block;
         }
         
-        .persona-indicator {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: #eef2ff;
-            color: #3730a3;
-            border-radius: 6px;
-            font-size: 0.875rem;
-            font-weight: 500;
-        }
+
         
         .chart-placeholder {
             height: 200px;
@@ -165,9 +239,30 @@
 <body>
     <header class="prototype-header">
         <h1>Payment Dashboard Prototype</h1>
-        <div class="persona-indicator">
-            <span id="current-persona-icon">🛍️</span>
-            <span id="current-persona-name">Loading...</span>
+        <div class="nav-controls">
+            <div class="nav-selector-group">
+                <div class="nav-selector persona-selector">
+                    <label>Business Model</label>
+                    <select id="persona-select">
+                        <option value="">Loading...</option>
+                    </select>
+                </div>
+                <div class="nav-selector stage-selector">
+                    <label>Business Stage</label>
+                    <select id="stage-select">
+                        <option value="early">Early Stage</option>
+                        <option value="growth">Growth Stage</option>
+                        <option value="mature">Mature Stage</option>
+                    </select>
+                </div>
+            </div>
+            <div class="persona-metadata" id="persona-metadata">
+                <div class="persona-info">
+                    <span class="persona-name" id="current-persona-name">Loading...</span>
+                    <span class="persona-description" id="current-persona-description"></span>
+                </div>
+                <div class="stripe-products" id="stripe-products"></div>
+            </div>
         </div>
     </header>
 
@@ -232,7 +327,7 @@
 
     <!-- Include the data client and persona switcher -->
     <script src="../stripe-data-client.js"></script>
-    <script src="../persona-switcher.js"></script>
+
 
     <script>
         // This is what the designer gets - a fully functional prototype
@@ -277,25 +372,21 @@
                         checkLoaded();
                     });
 
-                    // Create persona switcher
-                    this.personaSwitcher = new PersonaSwitcher(this.dataClient, {
-                        position: 'top-right',
-                        onSwitch: (personaId, personaData) => {
-                            console.log(`Switched to ${personaId}:`, personaData);
-                            this.onPersonaSwitch(personaId);
-                        }
-                    });
+                                // Initialize navbar selectors
+            this.initializeNavbarSelectors();
 
                     // Subscribe to data changes
                     this.dataClient.subscribe((data, personaId) => {
                         this.currentData = data;
                         this.currentPersona = personaId;
+                        this.updatePersonaMetadata();
                         this.updateDashboard();
                     });
 
                     // Initial render
                     this.currentData = this.dataClient.currentData;
                     this.currentPersona = this.dataClient.currentPersona;
+                    this.updatePersonaMetadata();
                     this.updateDashboard();
 
                 } catch (error) {
@@ -326,25 +417,10 @@
                 const personas = this.dataClient.getAvailablePersonas();
                 const current = personas[this.currentPersona];
                 
-                document.getElementById('current-persona-icon').textContent = this.getPersonaIcon(current?.business_model);
-                document.getElementById('current-persona-name').textContent = current?.name || this.currentPersona;
+                // Legacy code removed - persona info now handled by updatePersonaMetadata()
             }
 
-            getPersonaIcon(businessModel) {
-                const icons = {
-                    'ecommerce': '🛍️',
-                    'education_marketplace': '🎓',
-                    'property_management': '🏠',
-                    'subscription': '💪',
-                    'creator_economy': '🎨',
-                    'marketplace': '🌐',
-                    'nonprofit': '❤️',
-                    'b2b_wholesale': '🏥',
-                    'saas': '☁️',
-                    'food_delivery': '🍕'
-                };
-                return icons[businessModel] || '💼';
-            }
+
 
             updateMetrics() {
                 try {
@@ -739,6 +815,94 @@
                     currency: 'USD',
                     minimumFractionDigits: 0
                 }).format(cents / 100);
+            }
+
+            initializeNavbarSelectors() {
+                // Populate persona selector
+                this.populatePersonaSelector();
+                
+                // Bind persona selector event
+                const personaSelect = document.getElementById('persona-select');
+                personaSelect.addEventListener('change', (e) => {
+                    if (e.target.value) {
+                        this.switchPersona(e.target.value);
+                    }
+                });
+                
+                // Bind stage selector event
+                const stageSelect = document.getElementById('stage-select');
+                stageSelect.addEventListener('change', (e) => {
+                    this.currentStage = e.target.value;
+                    this.updateStageData();
+                });
+                
+                // Set initial stage
+                this.currentStage = 'growth'; // Default to growth stage
+                stageSelect.value = this.currentStage;
+            }
+            
+            populatePersonaSelector() {
+                const personas = this.dataClient.getAvailablePersonas();
+                const personaSelect = document.getElementById('persona-select');
+                
+                personaSelect.innerHTML = '';
+                Object.entries(personas).forEach(([id, persona]) => {
+                    const option = document.createElement('option');
+                    option.value = id;
+                    option.textContent = persona.name;
+                    if (id === this.currentPersona) {
+                        option.selected = true;
+                    }
+                    personaSelect.appendChild(option);
+                });
+            }
+            
+            async switchPersona(personaId) {
+                if (personaId === this.currentPersona) return;
+                
+                try {
+                    await this.dataClient.switchPersona(personaId);
+                    this.currentPersona = personaId;
+                    this.updatePersonaMetadata();
+                    this.updateDashboard();
+                    this.animateSwitch();
+                } catch (error) {
+                    console.error('Failed to switch persona:', error);
+                }
+            }
+            
+            updatePersonaMetadata() {
+                const personas = this.dataClient.getAvailablePersonas();
+                const persona = personas[this.currentPersona];
+                
+                if (!persona) return;
+                
+                // Update persona info
+                document.getElementById('current-persona-name').textContent = persona.name;
+                document.getElementById('current-persona-description').textContent = persona.description || '';
+                
+                // Update Stripe products badges
+                const productsContainer = document.getElementById('stripe-products');
+                productsContainer.innerHTML = '';
+                
+                if (persona.stripe_products) {
+                    persona.stripe_products.forEach(product => {
+                        const badge = document.createElement('span');
+                        badge.className = 'stripe-product-badge';
+                        badge.textContent = product;
+                        productsContainer.appendChild(badge);
+                    });
+                }
+            }
+            
+            updateStageData() {
+                console.log(`Stage changed to: ${this.currentStage}`);
+                
+                // Update the data client with new stage
+                this.currentData = this.dataClient.updateStage(this.currentStage);
+                
+                // Refresh the dashboard with stage-appropriate data
+                this.updateDashboard();
             }
 
             onPersonaSwitch(personaId) {
