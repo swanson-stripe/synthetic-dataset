@@ -1428,7 +1428,7 @@ class StripeDataClient {
         },
         { 
           label: 'Conversion Rate', 
-          value: '0.03',
+          value: this.formatPercent(0.034),
           rawValue: 0.034
         }
       ];
@@ -1491,12 +1491,12 @@ class StripeDataClient {
         },
         { 
           label: 'Retention Rate', 
-          value: '0.89',
+          value: this.formatPercent(0.893),
           rawValue: 0.893
         },
         { 
           label: 'Gross Margin', 
-          value: '0.79',
+          value: this.formatPercent(0.785),
           rawValue: 0.785
         }
       ];
@@ -1557,12 +1557,12 @@ class StripeDataClient {
         },
         { 
           label: 'Collection Rate', 
-          value: '0.97',
+          value: this.formatPercent(0.968),
           rawValue: 0.968
         },
         { 
           label: 'Occupancy Rate', 
-          value: '0.94',
+          value: this.formatPercent(0.942),
           rawValue: 0.942
         }
       ];
@@ -1595,7 +1595,7 @@ class StripeDataClient {
       },
       { 
         label: 'Collection Rate', 
-        value: '0.98',
+        value: this.formatPercent(0.983),
         rawValue: 0.983
       }
     ];
@@ -1659,7 +1659,7 @@ class StripeDataClient {
       },
       { 
         label: 'Churn Rate', 
-        value: '0.05',
+        value: this.formatPercent(0.049),
         rawValue: 0.049
       }
     ];
@@ -1685,12 +1685,12 @@ class StripeDataClient {
         },
         { 
           label: 'Creator Take Rate', 
-          value: '0.80',
+          value: this.formatPercent(0.80),
           rawValue: 0.80
         },
         { 
           label: 'Trial Conversion Rate', 
-          value: '0.24',
+          value: this.formatPercent(0.235),
           rawValue: 0.235
         }
       ];
@@ -1755,12 +1755,12 @@ class StripeDataClient {
         },
         { 
           label: 'Retention Rate', 
-          value: '0.69',
+          value: this.formatPercent(0.687),
           rawValue: 0.687
         },
         { 
           label: 'Payment Acceptance Rate', 
-          value: '0.99',
+          value: this.formatPercent(0.991),
           rawValue: 0.991
         }
       ];
@@ -1823,7 +1823,7 @@ class StripeDataClient {
         },
         { 
           label: 'Invoice Processing Time', 
-          value: '2.30',
+          value: '2.30 days',
           rawValue: 2.3
         }
       ];
@@ -1882,12 +1882,12 @@ class StripeDataClient {
         },
         { 
           label: 'Churn Rate', 
-          value: '0.03',
+          value: this.formatPercent(0.028),
           rawValue: 0.028
         },
         { 
           label: 'Net Revenue Retention', 
-          value: '1.18',
+          value: this.formatPercent(1.18),
           rawValue: 1.18
         }
       ];
@@ -1945,12 +1945,12 @@ class StripeDataClient {
         },
         { 
           label: 'Blocked Payments Rate', 
-          value: '0.01',
+          value: this.formatPercent(0.008),
           rawValue: 0.008
         },
         { 
           label: 'Card Authorization Rate', 
-          value: '0.94',
+          value: this.formatPercent(0.942),
           rawValue: 0.942
         }
       ];
@@ -1992,16 +1992,20 @@ class StripeDataClient {
 
   // Utility functions
   formatCurrency(cents) {
-    // Display values in cents, not dollars
+    // Display as currency with cents precision
+    const dollars = cents / 100;
     return new Intl.NumberFormat('en-US', {
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 0
-    }).format(cents) + ' cents';
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    }).format(dollars);
   }
 
   formatPercent(value) {
-    // Display as decimal to hundredth place (e.g., 0.97 instead of 97%)
+    // Display as percentage with 2 decimal places
     return new Intl.NumberFormat('en-US', {
+      style: 'percent',
       minimumFractionDigits: 2,
       maximumFractionDigits: 2
     }).format(value);
