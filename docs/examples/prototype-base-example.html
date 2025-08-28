@@ -710,6 +710,8 @@
                     // Initial render
                     this.currentData = this.dataClient.currentData;
                     this.currentPersona = this.dataClient.currentPersona;
+                    console.log('🎭 Initial persona set to:', this.currentPersona);
+                    console.log('📊 Initial data loaded:', !!this.currentData);
                     this.updatePersonaSelectorDisplay();
                     this.updateDashboard();
 
@@ -1684,10 +1686,12 @@
             
             updatePersonaSelectorDisplay() {
                 console.log('🔄 updatePersonaSelectorDisplay called');
+                console.log('🎭 this.currentPersona is:', this.currentPersona);
                 const personas = this.dataClient.getAvailablePersonas();
                 console.log('📋 Available personas:', Object.keys(personas));
                 const currentPersona = personas[this.currentPersona];
                 console.log('👤 Current persona data:', currentPersona);
+                console.log('🏷️ Persona name should be:', currentPersona?.name);
                 
                 if (!currentPersona) {
                     console.error('❌ No current persona found for:', this.currentPersona);

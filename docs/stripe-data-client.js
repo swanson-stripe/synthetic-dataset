@@ -156,7 +156,10 @@ class StripeDataClient {
     };
 
     this.currentStage = 'growth'; // Default stage
+    console.log('🏗️ Data client initializing with persona:', this.currentPersona);
     this.currentData = this.generateFallbackData(this.currentPersona, this.currentStage);
+    console.log('📊 Initial data generated:', !!this.currentData);
+    console.log('🎭 Notifying subscribers of initial persona:', this.currentPersona);
     this.notifySubscribers(this.currentData, this.currentPersona);
   }
 
@@ -1389,8 +1392,11 @@ class StripeDataClient {
 
   // Notify all subscribers of data changes
   notifySubscribers(data, personaId) {
-    this.subscribers.forEach(callback => {
+    console.log(`📢 Notifying ${this.subscribers.length} subscribers with persona: ${personaId}`);
+    console.log('📊 Data being sent:', !!data);
+    this.subscribers.forEach((callback, index) => {
       try {
+        console.log(`📨 Calling subscriber ${index + 1}`);
         callback(data, personaId);
       } catch (error) {
         console.error('Subscriber callback error:', error);
