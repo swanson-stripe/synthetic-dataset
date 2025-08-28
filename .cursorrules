@@ -1,0 +1,154 @@
+# Cursor Rules for Dashboard Synthetic Data
+
+## 🚨 CRITICAL: Never modify these core files
+- `docs/dashboard-synthetic-data.js` - Consolidated kit (users depend on CDN stability)
+- `docs/stripe-data-client.js` - Legacy data client (backward compatibility)
+- `instructions.md` - Designer onboarding (referenced externally)
+
+## 📦 Dashboard Synthetic Data Integration
+
+### When user asks to "add realistic data" or "use synthetic data":
+
+1. **Use the efficient integration method:**
+   ```html
+   <script src="https://swanson-stripe.github.io/synthetic-dataset/docs/dashboard-synthetic-data.js"></script>
+   <script>
+       const kit = new DashboardSyntheticData({
+           onPersonaChange: (data, persona, stage) => {
+               // User's custom logic here
+           }
+       });
+   </script>
+   ```
+
+2. **Never copy/paste the entire dashboard-synthetic-data.js contents** - always use CDN link
+
+3. **Available data types to suggest:**
+   - `kit.getMetrics()` - Business metrics
+   - `kit.getData('payments')` - Payment transactions
+   - `kit.getData('customers')` - Customer profiles
+   - `kit.getData('connected_accounts')` - Connected accounts
+   - `kit.getData('transfers')` - Money transfers
+   - `kit.getData('balances')` - Account balances
+   - `kit.getData('subscriptions')` - Recurring subscriptions
+   - `kit.getData('invoices')` - Invoices (B2B)
+   - `kit.getData('issuing_cards')` - Issued cards
+
+### 🏢 Available Business Personas:
+- `modaic` - Fashion e-commerce
+- `mindora` - Online education
+- `keynest` - Property management  
+- `pulseon` - Fitness subscriptions
+- `fluxly` - Creator platform
+- `brightfund` - Non-profit fundraising
+- `procura` - B2B medical supplies
+- `stratus` - Cloud infrastructure
+- `forksy` - Food delivery
+
+### 📊 Data Structure Rules:
+
+**Payments:**
+```javascript
+{
+  id: "py_...",
+  amount: 5000, // Always in cents
+  currency: "usd",
+  status: "succeeded|pending|failed",
+  created: 1234567890, // Unix timestamp
+  description: "Business-specific description",
+  customer: "cus_...",
+  metadata: {} // Persona-specific metadata
+}
+```
+
+**Customers:**
+```javascript
+{
+  id: "cus_...",
+  email: "user@example.com",
+  name: "Customer Name",
+  created: 1234567890, // Unix timestamp
+  metadata: {} // Persona-specific metadata
+}
+```
+
+**Metrics:**
+```javascript
+[
+  {
+    label: "Total Revenue",
+    value: "$2,145,623.45", // Pre-formatted display value
+    rawValue: 214562345 // Raw value in cents for calculations
+  }
+]
+```
+
+### 🎨 UI Integration Rules:
+
+1. **Persona selector auto-injects** - don't create custom selectors
+2. **Use provided formatting methods:**
+   - Currency: Already formatted in metrics (`value` field)
+   - Raw calculations: Use `rawValue` field from metrics
+   - Dates: Convert timestamps with `new Date(timestamp).toLocaleDateString()`
+
+3. **Stage switching handled automatically** - don't build custom stage controls
+
+### ⚠️ Common Mistakes to Avoid:
+
+1. **Never hardcode business data** - always use `kit.getData()` and `kit.getMetrics()`
+2. **Don't create custom persona switchers** - the kit includes one
+3. **Don't modify amount values** - they're correctly formatted for display
+4. **Don't cache data manually** - the kit handles caching and updates
+5. **Don't use old persona names** (techstyle, edutech, etc.) - use new names only
+
+### 🔧 Configuration Options:
+
+```javascript
+const kit = new DashboardSyntheticData({
+    target: '#navbar',              // Where to inject selector (default: body)
+    defaultPersona: 'mindora',      // Starting business (default: modaic)
+    defaultStage: 'growth',         // Starting stage (default: growth)
+    autoInject: true,               // Auto-inject UI (default: true)
+    onPersonaChange: (data, persona, stage) => {
+        // Custom callback when user switches business
+    }
+});
+```
+
+### 🧪 Testing Commands for Console:
+
+Suggest these for users to test:
+```javascript
+kit.getMetrics()                    // See current metrics
+kit.getData('payments')             // See payment data
+kit.switchPersona('fluxly')         // Switch to creator platform
+kit.getCurrentPersona()             // Check current business
+kit.getAvailablePersonas()          // See all options
+```
+
+### 📱 Responsive Considerations:
+
+The persona selector is responsive but suggest:
+- Place in navigation bars or headers
+- Avoid placing in narrow containers
+- Test on mobile viewports
+
+### 🚀 Performance Notes:
+
+- Data loads synchronously (no async/await needed)
+- CDN is cached and fast
+- No build step required
+- Works in any HTML page
+
+## 💡 When NOT to use this dataset:
+
+- Real production applications
+- When user specifically requests "real" or "live" data
+- Backend/server-side implementations (this is frontend-only)
+- When user wants to practice API integration (this bypasses APIs)
+
+## 📚 Reference Links:
+
+- Live demo: https://swanson-stripe.github.io/synthetic-dataset/docs/examples/efficient-integration-example.html
+- Instructions: https://github.com/swanson-stripe/synthetic-dataset/blob/main/instructions.md
+- Full docs: https://swanson-stripe.github.io/synthetic-dataset/docs/
