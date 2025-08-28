@@ -7,7 +7,7 @@ Get a working dashboard with realistic business data in **2 minutes**.
 Add this single line to your HTML:
 
 ```html
-<script src="https://swanson-stripe.github.io/synthetic-dataset/dashboard-synthetic-data.js"></script>
+<script src="https://swanson-stripe.github.io/synthetic-dataset/docs/dashboard-synthetic-data.js"></script>
 ```
 
 ## ✨ Step 2: Initialize (One Line)
@@ -54,7 +54,7 @@ const customers = kit.getData('customers');
     <div id="metrics"></div>
     <div id="data"></div>
 
-    <script src="https://swanson-stripe.github.io/synthetic-dataset/dashboard-synthetic-data.js"></script>
+    <script src="https://swanson-stripe.github.io/synthetic-dataset/docs/dashboard-synthetic-data.js"></script>
     <script>
         const kit = new DashboardSyntheticData({
             onPersonaChange: (data, persona, stage) => {
@@ -134,4 +134,7 @@ kit.getData('issuing_cards')     // Issued cards (some businesses)
 
 ---
 
-**Questions?** Check the full documentation at: https://swanson-stripe.github.io/synthetic-dataset/
+**Questions?** 
+- **Full Documentation**: https://swanson-stripe.github.io/synthetic-dataset/docs/
+- **Repository**: https://github.com/swanson-stripe/synthetic-dataset
+- **This Guide**: https://github.com/swanson-stripe/synthetic-dataset/blob/main/instructions.md
