@@ -966,7 +966,7 @@
                 }
 
                 document.getElementById('primary-table-title').textContent = title;
-                this.populateTable('table-headers', 'table-body', headers, data, persona);
+                this.populateTable('table-headers', 'table-body', headers, data, persona, 'primary');
             }
 
             updateSecondaryTable() {
@@ -1028,188 +1028,181 @@
                 }
 
                 document.getElementById('secondary-table-title').textContent = title;
-                this.populateTable('secondary-headers', 'secondary-body', headers, data, persona);
+                this.populateTable('secondary-headers', 'secondary-body', headers, data, persona, 'secondary');
             }
 
-            populateTable(headersId, bodyId, headers, data, persona) {
+            populateTable(headersId, bodyId, headers, data, persona, tableType) {
                 // Populate headers
                 document.getElementById(headersId).innerHTML = headers.map(h => `<th>${h}</th>`).join('');
                 
                 // Populate body
                 const tbody = document.getElementById(bodyId);
                 tbody.innerHTML = data.map(item => {
-                    const row = this.formatTableRow(item, persona);
+                    const row = this.formatTableRow(item, persona, tableType);
                     return `<tr>${row}</tr>`;
                 }).join('');
             }
 
-            formatTableRow(item, persona) {
+            formatTableRow(item, persona, tableType) {
+                if (tableType === 'primary') {
+                    // All primary tables show payments with persona-specific metadata
+                    return this.formatPaymentRow(item, persona);
+                } else {
+                    // Secondary tables show customers or connected_accounts
+                    return this.formatSecondaryRow(item, persona);
+                }
+            }
+
+            formatPaymentRow(item, persona) {
+                // All personas use payments, but show different metadata in columns 4-5
+                const baseColumns = `
+                    <td>${item.id}</td>
+                    <td>${this.formatCurrency(item.amount)}</td>
+                    <td><span class="status-badge status-${item.status}">${item.status}</span></td>
+                `;
+
                 switch (persona) {
                     case 'techstyle':
-                        if (item.customer_id) { // customer
-                            return `
-                                <td>${item.id || 'N/A'}</td>
-                                <td>${item.email || 'N/A'}</td>
-                                <td>${item.metadata?.country || 'US'}</td>
-                                <td>${new Date(item.created * 1000).toLocaleDateString()}</td>
-                            `;
-                        } else { // payment
-                            return `
-                                <td>${item.id}</td>
-                                <td>${this.formatCurrency(item.amount)}</td>
-                                <td><span class="status-badge status-${item.status}">${item.status}</span></td>
-                                <td>${item.currency?.toUpperCase()}</td>
-                                <td>${item.customer}</td>
-                            `;
-                        }
+                        return baseColumns + `
+                            <td>${item.currency?.toUpperCase()}</td>
+                            <td>${item.customer}</td>
+                        `;
                     case 'edutech':
-                        if (item.business_profile) { // instructor
-                            return `
-                                <td>${item.business_profile.name}</td>
-                                <td>${item.metadata.expertise}</td>
-                                <td>${item.metadata.rating}⭐</td>
-                                <td>${item.metadata.total_students}</td>
-                                <td>${item.metadata.course_count}</td>
-                            `;
-                        } else { // enrollment
-                            return `
-                                <td>${item.id}</td>
-                                <td>Course ${Math.floor(Math.random() * 100)}</td>
-                                <td>${item.customer || 'Student'}</td>
-                                <td>${this.formatCurrency(item.amount || 0)}</td>
-                                <td><span class="status-badge status-${item.status || 'succeeded'}">${item.status || 'enrolled'}</span></td>
-                            `;
-                        }
+                        return baseColumns + `
+                            <td>${item.metadata?.course_id || 'Course'}</td>
+                            <td>${item.customer}</td>
+                        `;
                     case 'propertyflow':
-                        if (item.address) { // property
-                            return `
-                                <td>${item.id}</td>
-                                <td>${item.address}</td>
-                                <td>${item.type}</td>
-                                <td>${this.formatCurrency(item.rent_amount)}</td>
-                                <td>${item.tenant_id}</td>
-                            `;
-                        } else { // rent payment
-                            return `
-                                <td>${item.id}</td>
-                                <td>${item.property_id}</td>
-                                <td>${item.tenant}</td>
-                                <td>${this.formatCurrency(item.amount)}</td>
-                                <td><span class="status-badge status-${item.status}">${item.status}</span></td>
-                            `;
-                        }
+                        return baseColumns + `
+                            <td>${item.metadata?.property_id || 'Property'}</td>
+                            <td>${item.customer}</td>
+                        `;
                     case 'fitstream':
-                        if (item.plan && item.mrr !== undefined) { // subscription
-                            return `
-                                <td>${item.id}</td>
-                                <td>${item.plan}</td>
-                                <td>Customer ${Math.floor(Math.random() * 1000)}</td>
-                                <td><span class="status-badge status-${item.status}">${item.status}</span></td>
-                                <td>${this.formatCurrency(item.mrr)}</td>
-                            `;
-                        } else { // customer
-                            return `
-                                <td>${item.id}</td>
-                                <td>${item.plan}</td>
-                                <td>${item.engagement_score}%</td>
-                                <td>${this.formatCurrency(item.ltv)}</td>
-                                <td><span class="status-badge status-${item.status}">${item.status}</span></td>
-                            `;
-                        }
+                        return baseColumns + `
+                            <td>${item.metadata?.plan_type || 'Plan'}</td>
+                            <td>${item.customer}</td>
+                        `;
                     case 'creatorhub':
-                        if (item.category) { // creator
-                            return `
-                                <td>${item.business_profile?.name || item.id}</td>
-                                <td>${item.category}</td>
-                                <td>${item.followers?.toLocaleString()}</td>
-                                <td>${this.formatCurrency(item.revenue)}</td>
-                                <td>${item.content_count}</td>
-                            `;
-                        } else { // content sale
-                            return `
-                                <td>${item.id}</td>
-                                <td>${item.content_title}</td>
-                                <td>${item.creator}</td>
-                                <td>${this.formatCurrency(item.amount)}</td>
-                                <td>${item.fan}</td>
-                            `;
-                        }
+                        return baseColumns + `
+                            <td>${item.metadata?.content_type || 'Content'}</td>
+                            <td>${item.customer}</td>
+                        `;
                     case 'givehope':
-                        if (item.name) { // campaign
-                            return `
-                                <td>${item.id}</td>
-                                <td>${item.name}</td>
-                                <td>${item.cause}</td>
-                                <td>${this.formatCurrency(item.goal)}</td>
-                                <td>${this.formatCurrency(item.raised)}</td>
-                            `;
-                        } else { // donation
-                            return `
-                                <td>${item.id}</td>
-                                <td>${this.formatCurrency(item.amount)}</td>
-                                <td>${item.donor}</td>
-                                <td>${item.campaign}</td>
-                                <td>${item.recurring ? 'Yes' : 'No'}</td>
-                            `;
-                        }
+                        return baseColumns + `
+                            <td>${item.metadata?.campaign_id || 'Campaign'}</td>
+                            <td>${item.customer}</td>
+                        `;
                     case 'medsupply':
-                        if (item.name) { // client
-                            return `
-                                <td>${item.id}</td>
-                                <td>${item.name}</td>
-                                <td>${item.type}</td>
-                                <td>${this.formatCurrency(item.credit_limit)}</td>
-                                <td>${this.formatCurrency(item.outstanding_balance)}</td>
-                            `;
-                        } else { // purchase order
-                            return `
-                                <td>${item.id}</td>
-                                <td>${item.client}</td>
-                                <td>${this.formatCurrency(item.amount)}</td>
-                                <td>${item.items}</td>
-                                <td><span class="status-badge status-${item.status}">${item.status}</span></td>
-                            `;
-                        }
+                        return baseColumns + `
+                            <td>${item.metadata?.purchase_order || 'PO'}</td>
+                            <td>${item.customer}</td>
+                        `;
                     case 'cloudflow':
-                        if (item.company) { // customer
-                            return `
-                                <td>${item.id}</td>
-                                <td>${item.company}</td>
-                                <td>${item.plan}</td>
-                                <td>${this.formatCurrency(item.mrr * 100)}</td>
-                                <td>${item.employees}</td>
-                            `;
-                        } else { // subscription
-                            return `
-                                <td>${item.id}</td>
-                                <td>${item.customer}</td>
-                                <td>${item.plan}</td>
-                                <td><span class="status-badge status-${item.status}">${item.status}</span></td>
-                                <td>${new Date(item.current_period_start).toLocaleDateString()}</td>
-                            `;
-                        }
+                        return baseColumns + `
+                            <td>${item.metadata?.plan_tier || 'Plan'}</td>
+                            <td>${item.customer}</td>
+                        `;
                     case 'localbites':
-                        if (item.business_profile) { // connected account
-                            return `
-                                <td>${item.id}</td>
-                                <td>${item.business_profile.name}</td>
-                                <td>${item.type}</td>
-                                <td>${this.formatCurrency(item.total_payouts)}</td>
-                                <td>${item.rating}⭐</td>
-                            `;
-                        } else { // order
-                            return `
-                                <td>${item.id}</td>
-                                <td>${item.restaurant}</td>
-                                <td>${item.customer}</td>
-                                <td>${this.formatCurrency(item.total)}</td>
-                                <td><span class="status-badge status-${item.status}">${item.status}</span></td>
-                            `;
-                        }
+                        return baseColumns + `
+                            <td>${item.metadata?.restaurant_id || 'Restaurant'}</td>
+                            <td>${item.customer}</td>
+                        `;
                     default:
-                        // Generic fallback
-                        const values = Object.values(item).slice(0, 5);
-                        return values.map(v => `<td>${v?.toString()?.substring(0, 50) || 'N/A'}</td>`).join('');
+                        return baseColumns + `
+                            <td>-</td>
+                            <td>${item.customer}</td>
+                        `;
+                }
+            }
+
+            formatSecondaryRow(item, persona) {
+                switch (persona) {
+                    case 'techstyle':
+                        // Customers
+                        return `
+                            <td>${item.id}</td>
+                            <td>${item.email}</td>
+                            <td>${item.name}</td>
+                            <td>${this.formatCurrency(item.metadata?.total_spend || 0)}</td>
+                            <td>${item.address?.country || 'US'}</td>
+                        `;
+                    case 'edutech':
+                        // Connected accounts (instructors)
+                        return `
+                            <td>${item.id}</td>
+                            <td>${item.business_profile?.name || 'Instructor'}</td>
+                            <td>${item.metadata?.expertise || 'General'}</td>
+                            <td>${item.metadata?.rating || '4.5'}⭐</td>
+                            <td>${item.metadata?.total_students || 0}</td>
+                        `;
+                    case 'propertyflow':
+                        // Connected accounts (landlords)
+                        return `
+                            <td>${item.id}</td>
+                            <td>${item.business_profile?.name || 'Landlord'}</td>
+                            <td>${item.metadata?.properties_count || 0}</td>
+                            <td>${item.metadata?.years_experience || 0} years</td>
+                            <td>${this.formatCurrency(item.metadata?.portfolio_value || 0)}</td>
+                        `;
+                    case 'fitstream':
+                        // Customers (members)
+                        return `
+                            <td>${item.id}</td>
+                            <td>${item.email}</td>
+                            <td>${item.metadata?.fitness_level || 'Beginner'}</td>
+                            <td>${item.metadata?.goals || 'General'}</td>
+                            <td>${item.metadata?.check_ins_this_month || 0}</td>
+                        `;
+                    case 'creatorhub':
+                        // Connected accounts (creators)
+                        return `
+                            <td>${item.id}</td>
+                            <td>${item.business_profile?.name || 'Creator'}</td>
+                            <td>${item.metadata?.creator_category || 'Art'}</td>
+                            <td>${item.metadata?.followers_count || 0}</td>
+                            <td>${item.metadata?.content_count || 0}</td>
+                        `;
+                    case 'givehope':
+                        // Customers (donors)
+                        return `
+                            <td>${item.id}</td>
+                            <td>${item.email}</td>
+                            <td>${item.metadata?.donor_type || 'Individual'}</td>
+                            <td>${this.formatCurrency(item.metadata?.total_donated || 0)}</td>
+                            <td>${item.metadata?.donation_frequency || 'One-time'}</td>
+                        `;
+                    case 'medsupply':
+                        // Customers (hospitals)
+                        return `
+                            <td>${item.id}</td>
+                            <td>${item.name}</td>
+                            <td>${item.metadata?.facility_type || 'Hospital'}</td>
+                            <td>${this.formatCurrency(item.metadata?.credit_limit || 0)}</td>
+                            <td>${this.formatCurrency(item.metadata?.total_spend || 0)}</td>
+                        `;
+                    case 'cloudflow':
+                        // Customers (companies)
+                        return `
+                            <td>${item.id}</td>
+                            <td>${item.name}</td>
+                            <td>${item.metadata?.industry || 'Technology'}</td>
+                            <td>${item.metadata?.employee_count || 0}</td>
+                            <td>${this.formatCurrency(item.metadata?.total_spend || 0)}</td>
+                        `;
+                    case 'localbites':
+                        // Connected accounts (restaurants)
+                        return `
+                            <td>${item.id}</td>
+                            <td>${item.business_profile?.name || 'Restaurant'}</td>
+                            <td>${item.metadata?.account_type || 'Restaurant'}</td>
+                            <td>${item.metadata?.rating || '4.5'}⭐</td>
+                            <td>${item.metadata?.total_orders || 0}</td>
+                        `;
+                    default:
+                        return `
+                            <td>${item.id}</td>
+                            <td>-</td>
+                        `;
                 }
             }
 
