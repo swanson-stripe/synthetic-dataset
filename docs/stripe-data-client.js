@@ -169,12 +169,13 @@ class StripeDataClient {
         
         return {
           payments: techstylePayments,
-          customers: Array.from({length: 30}, (_, i) => ({
-            id: `cus_demo_${i.toString().padStart(6, '0')}`,
-            email: `customer${i}@example.com`,
-            created: Date.now() - Math.random() * 86400000 * 90,
-            metadata: { country: ['US', 'CA', 'GB', 'AU'][Math.floor(Math.random() * 4)] }
-          })),
+                     customers: Array.from({length: 30}, (_, i) => ({
+             id: `cus_demo_${i.toString().padStart(6, '0')}`,
+             email: `customer${i}@example.com`,
+             country: ['US', 'CA', 'GB', 'AU'][Math.floor(Math.random() * 4)],
+             created: Date.now() - Math.random() * 86400000 * 90,
+             metadata: { country: ['US', 'CA', 'GB', 'AU'][Math.floor(Math.random() * 4)] }
+           })),
           // Full dataset metrics (not just the 50 sample payments)
           _fullDatasetMetrics: {
             totalPayments: 150000,
@@ -245,7 +246,15 @@ class StripeDataClient {
             status: Math.random() > 0.05 ? 'succeeded' : 'failed',
             property_id: `prop_demo_${Math.floor(Math.random() * 25).toString().padStart(6, '0')}`,
             tenant: `Tenant ${i + 1}`
-          }))
+          })),
+          // Full dataset metrics - PropertyFlow: 25K properties, $2.8B volume
+          _fullDatasetMetrics: {
+            totalProperties: 25000,
+            totalLandlords: 8500,
+            totalPayments: 350000,
+            totalVolume: 280000000000, // $2.8B in cents
+            successfulPayments: 342000
+          }
         };
 
       case 'fitstream':
@@ -270,6 +279,14 @@ class StripeDataClient {
               current_mrr: baseAmount * 2,
               total_revenue: baseAmount * 24
             }
+          },
+          // Full dataset metrics - FitStream: 85K subscribers, $98M ARR
+          _fullDatasetMetrics: {
+            totalSubscribers: 85000,
+            totalCustomers: 120000,
+            totalMRR: 817000000, // $8.17M MRR in cents
+            totalARR: 9800000000, // $98M ARR in cents
+            activeSubscriptions: 78000
           }
         };
 
@@ -295,7 +312,15 @@ class StripeDataClient {
             content_title: `Content Item ${i + 1}`,
             creator: `Creator ${Math.floor(Math.random() * 30) + 1}`,
             fan: `Fan ${Math.floor(Math.random() * 80) + 1}`
-          }))
+          })),
+          // Full dataset metrics - CreatorHub: 35K creators, $67M volume
+          _fullDatasetMetrics: {
+            totalCreators: 35000,
+            totalFans: 850000,
+            totalSales: 420000,
+            totalVolume: 6700000000, // $67M in cents
+            topCreators: 2800
+          }
         };
 
       case 'givehope':
@@ -355,7 +380,15 @@ class StripeDataClient {
             amount: Math.floor(Math.random() * 200000) + 50000,
             due_date: Date.now() + Math.random() * 86400000 * 90,
             status: Math.random() > 0.2 ? 'paid' : 'outstanding'
-          }))
+          })),
+          // Full dataset metrics - MedSupply: 2.5K clients, $125M volume
+          _fullDatasetMetrics: {
+            totalClients: 2500,
+            totalOrders: 15000,
+            totalVolume: 12500000000, // $125M in cents
+            totalInvoices: 18000,
+            paidInvoices: 16500
+          }
         };
 
       case 'cloudflow':
@@ -380,7 +413,15 @@ class StripeDataClient {
             amount: [9900, 29900, 99900][Math.floor(Math.random() * 3)],
             status: Math.random() > 0.05 ? 'paid' : 'open',
             due_date: Date.now() + Math.random() * 86400000 * 30
-          }))
+          })),
+          // Full dataset metrics - CloudFlow: 50K customers, $240M ARR
+          _fullDatasetMetrics: {
+            totalCustomers: 50000,
+            totalSubscriptions: 47000,
+            totalMRR: 2000000000, // $20M MRR in cents
+            totalARR: 24000000000, // $240M ARR in cents
+            activeSubscriptions: 44000
+          }
         };
 
       case 'localbites':
@@ -409,7 +450,15 @@ class StripeDataClient {
             application_fee: Math.floor(Math.random() * 800) + 150,
             status: Math.random() > 0.03 ? 'succeeded' : 'failed',
             customer: `Customer ${Math.floor(Math.random() * 100) + 1}`
-          }))
+          })),
+          // Full dataset metrics - LocalBites: 600K orders, $95M volume
+          _fullDatasetMetrics: {
+            totalOrders: 600000,
+            totalRestaurants: 8500,
+            totalDrivers: 12000,
+            totalVolume: 9500000000, // $95M in cents
+            totalPayments: 585000
+          }
         };
         
       default:
@@ -909,6 +958,37 @@ class StripeDataClient {
   }
 
   calculateB2BMetrics(data) {
+    // Use full dataset metrics if available
+    const fullMetrics = data._fullDatasetMetrics;
+    
+    if (fullMetrics) {
+      const collectionRate = fullMetrics.paidInvoices / fullMetrics.totalInvoices;
+      
+      return [
+        { 
+          label: 'B2B Clients', 
+          value: fullMetrics.totalClients.toLocaleString(),
+          rawValue: fullMetrics.totalClients
+        },
+        { 
+          label: 'Purchase Volume', 
+          value: this.formatCurrency(fullMetrics.totalVolume),
+          rawValue: fullMetrics.totalVolume
+        },
+        { 
+          label: 'Purchase Orders', 
+          value: fullMetrics.totalOrders.toLocaleString(),
+          rawValue: fullMetrics.totalOrders
+        },
+        { 
+          label: 'Collection Rate', 
+          value: this.formatPercent(collectionRate),
+          rawValue: collectionRate
+        }
+      ];
+    }
+    
+    // Fallback to sample calculation
     const clients = data.clients || [];
     const purchaseOrders = data.purchase_orders || [];
     const invoices = data.invoices || [];
@@ -942,6 +1022,37 @@ class StripeDataClient {
   }
 
   calculateSaaSMetrics(data) {
+    // Use full dataset metrics if available
+    const fullMetrics = data._fullDatasetMetrics;
+    
+    if (fullMetrics) {
+      const churnRate = (fullMetrics.totalSubscriptions - fullMetrics.activeSubscriptions) / fullMetrics.totalSubscriptions;
+      
+      return [
+        { 
+          label: 'SaaS Customers', 
+          value: fullMetrics.totalCustomers.toLocaleString(),
+          rawValue: fullMetrics.totalCustomers
+        },
+        { 
+          label: 'Monthly MRR', 
+          value: this.formatCurrency(fullMetrics.totalMRR),
+          rawValue: fullMetrics.totalMRR
+        },
+        { 
+          label: 'Active Subs', 
+          value: fullMetrics.activeSubscriptions.toLocaleString(),
+          rawValue: fullMetrics.activeSubscriptions
+        },
+        { 
+          label: 'Annual ARR', 
+          value: this.formatCurrency(fullMetrics.totalARR),
+          rawValue: fullMetrics.totalARR
+        }
+      ];
+    }
+    
+    // Fallback to sample calculation
     const customers = data.customers || [];
     const subscriptions = data.subscriptions || [];
     const invoices = data.invoices || [];
@@ -976,6 +1087,35 @@ class StripeDataClient {
   }
 
   calculateMarketplaceMetrics(data) {
+    // Use full dataset metrics if available
+    const fullMetrics = data._fullDatasetMetrics;
+    
+    if (fullMetrics) {
+      return [
+        { 
+          label: 'Total Orders', 
+          value: fullMetrics.totalOrders.toLocaleString(),
+          rawValue: fullMetrics.totalOrders
+        },
+        { 
+          label: 'GMV', 
+          value: this.formatCurrency(fullMetrics.totalVolume),
+          rawValue: fullMetrics.totalVolume
+        },
+        { 
+          label: 'Restaurants', 
+          value: fullMetrics.totalRestaurants.toLocaleString(),
+          rawValue: fullMetrics.totalRestaurants
+        },
+        { 
+          label: 'Drivers', 
+          value: fullMetrics.totalDrivers.toLocaleString(),
+          rawValue: fullMetrics.totalDrivers
+        }
+      ];
+    }
+    
+    // Fallback to sample calculation
     const orders = data.orders || [];
     const connectedAccounts = data.connected_accounts || [];
     const payments = data.payments || [];
