@@ -1644,6 +1644,7 @@
                 const logoPath = possiblePaths[0]; // Start with the first one
                 console.log('🖼️ Setting logo path:', logoPath);
                 console.log('🖼️ All possible paths:', possiblePaths);
+                console.log('🔍 FIRST PATH SHOULD BE /docs/assets/ - is it?', possiblePaths[0]);
                 logo.src = logoPath;
                 logo.alt = currentPersona.name;
                 
@@ -1788,6 +1789,7 @@
                         console.log('✅ Modal logo loaded successfully:', modalImg.src);
                     };
                     
+                    console.log(`🔍 MODAL: First path for ${id} should be /docs/assets/ - is it?`, modalPossiblePaths[0]);
                     modalImg.src = modalPossiblePaths[0];
                     
                     option.addEventListener('click', () => {
