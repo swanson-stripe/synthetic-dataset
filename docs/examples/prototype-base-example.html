@@ -1627,8 +1627,21 @@
                 const name = document.getElementById('current-persona-name');
                 const description = document.getElementById('current-persona-description');
                 
-                logo.src = `../assets/${this.currentPersona}.png`;
+                const logoPath = `../assets/${this.currentPersona}.png`;
+                console.log('🖼️ Setting logo path:', logoPath);
+                logo.src = logoPath;
                 logo.alt = currentPersona.name;
+                
+                // Add error handling for image loading
+                logo.onerror = () => {
+                    console.error('❌ Failed to load logo:', logoPath);
+                    // Fallback to a generic placeholder or hide the image
+                    logo.style.display = 'none';
+                };
+                logo.onload = () => {
+                    console.log('✅ Logo loaded successfully:', logoPath);
+                    logo.style.display = 'block';
+                };
                 name.textContent = currentPersona.name;
                 description.textContent = currentPersona.description;
                 
@@ -1637,7 +1650,7 @@
                 const popoverName = document.getElementById('popover-persona-name');
                 const popoverDescription = document.getElementById('popover-persona-description');
                 
-                popoverLogo.src = `../assets/${this.currentPersona}.png`;
+                popoverLogo.src = logoPath;
                 popoverLogo.alt = currentPersona.name;
                 popoverName.textContent = currentPersona.name;
                 popoverDescription.textContent = currentPersona.description;
@@ -1673,8 +1686,9 @@
                         option.classList.add('selected');
                     }
                     
+                    const logoSrc = `../assets/${id}.png`;
                     option.innerHTML = `
-                        <img class="persona-option-logo" src="../assets/${id}.png" alt="${persona.name}">
+                        <img class="persona-option-logo" src="${logoSrc}" alt="${persona.name}" onerror="console.error('Failed to load:', this.src); this.style.display='none';" onload="console.log('Loaded:', this.src);">
                         <div class="persona-option-info">
                             <div class="persona-option-name">${persona.name}</div>
                             <div class="persona-option-description">${persona.description}</div>
