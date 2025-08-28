@@ -223,16 +223,21 @@
         
 
         
-        .chart-placeholder {
-            height: 200px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        .chart-container {
+            height: 240px;
+            background: white;
             border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            padding: 1rem;
+            margin: 1rem 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-weight: 500;
-            margin: 1rem 0;
+        }
+        
+        #revenue-chart {
+            max-width: 100%;
+            max-height: 200px;
         }
     </style>
 </head>
@@ -281,11 +286,10 @@
             <!-- Charts Section -->
             <div class="data-section">
                 <div class="data-section-header">
-                    <h3 class="data-section-title">Revenue Trends</h3>
+                    <h3 class="data-section-title" id="chart-title">Revenue Trends</h3>
                 </div>
-                <div class="chart-placeholder">
-                    📊 Chart visualization would go here
-                    <br><small>Connected to current persona data</small>
+                <div class="chart-container">
+                    <canvas id="revenue-chart" width="800" height="200"></canvas>
                 </div>
             </div>
 
@@ -405,12 +409,212 @@
                 this.hideLoading();
                 this.updatePersonaIndicator();
                 this.updateMetrics();
+                this.updateChart();
                 this.updateTables();
             }
 
             hideLoading() {
                 document.getElementById('loading-state').classList.remove('active');
                 document.getElementById('dashboard-content').style.display = 'block';
+            }
+
+            updateChart() {
+                try {
+                    const canvas = document.getElementById('revenue-chart');
+                    if (!canvas) {
+                        console.log('❌ Chart canvas not found');
+                        return;
+                    }
+                    
+                    const ctx = canvas.getContext('2d');
+                    const metrics = this.dataClient?.calculateMetrics() || [];
+                    
+                    if (metrics.length === 0) {
+                        console.log('❌ No metrics available for chart');
+                        this.drawEmptyChart(ctx, canvas);
+                        return;
+                    }
+                    
+                    // Use the first metric for the time series
+                    const primaryMetric = metrics[0];
+                    console.log('📈 Drawing chart for metric:', primaryMetric.label);
+                    
+                    // Update chart title
+                    const chartTitle = document.getElementById('chart-title');
+                    if (chartTitle) {
+                        chartTitle.textContent = `${primaryMetric.label} Trends`;
+                    }
+                    
+                    // Generate time series data for the past 12 months
+                    const timeSeriesData = this.generateTimeSeriesData(primaryMetric, this.currentPersona);
+                    
+                    // Draw the chart
+                    this.drawLineChart(ctx, canvas, timeSeriesData, primaryMetric);
+                    
+                } catch (error) {
+                    console.error('Error updating chart:', error);
+                }
+            }
+            
+            generateTimeSeriesData(metric, personaId) {
+                // Generate 12 months of realistic time series data
+                const months = [];
+                const values = [];
+                const now = new Date();
+                
+                // Start 11 months ago
+                for (let i = 11; i >= 0; i--) {
+                    const date = new Date(now.getFullYear(), now.getMonth() - i, 1);
+                    months.push(date.toLocaleDateString('en-US', { month: 'short', year: '2-digit' }));
+                    
+                    // Generate realistic progression based on current stage and business model
+                    const baseValue = metric.rawValue || 0;
+                    const stageMultiplier = this.getStageGrowthPattern(i, this.currentStage);
+                    const businessGrowth = this.getBusinessGrowthPattern(i, personaId);
+                    const randomVariation = 0.85 + Math.random() * 0.3; // ±15% variation
+                    
+                    const value = Math.floor(baseValue * stageMultiplier * businessGrowth * randomVariation);
+                    values.push(Math.max(0, value));
+                }
+                
+                return { months, values, label: metric.label };
+            }
+            
+            getStageGrowthPattern(monthsAgo, stage) {
+                // Different growth patterns based on business stage
+                switch (stage) {
+                    case 'early':
+                        // Exponential growth from very small
+                        return Math.pow(1.25, 11 - monthsAgo) * 0.1;
+                    case 'growth':
+                        // Steady growth
+                        return 0.3 + (11 - monthsAgo) * 0.08;
+                    case 'mature':
+                        // Slower, steady growth
+                        return 0.7 + (11 - monthsAgo) * 0.04;
+                    default:
+                        return 0.5 + (11 - monthsAgo) * 0.05;
+                }
+            }
+            
+            getBusinessGrowthPattern(monthsAgo, personaId) {
+                // Seasonal patterns based on business type
+                const seasonalMultipliers = {
+                    'techstyle': [0.8, 0.9, 1.1, 1.2, 1.1, 0.9, 0.8, 0.9, 1.0, 1.1, 1.3, 1.4], // Fashion peaks in Q4
+                    'edutech': [1.2, 1.0, 0.9, 0.8, 0.7, 0.6, 0.7, 1.3, 1.4, 1.2, 1.0, 0.9], // Education peaks in fall
+                    'givehope': [0.9, 0.8, 0.9, 1.0, 1.0, 0.9, 0.8, 0.9, 1.0, 1.1, 1.2, 1.5], // Charity peaks in December
+                    'fitstream': [1.4, 1.3, 1.1, 1.0, 1.1, 1.0, 0.9, 0.9, 1.0, 1.1, 1.2, 1.1], // Fitness peaks in January
+                    'localbites': [0.9, 0.9, 1.0, 1.1, 1.2, 1.3, 1.2, 1.1, 1.0, 1.0, 1.1, 1.0] // Food delivery peaks in summer
+                };
+                
+                const pattern = seasonalMultipliers[personaId] || [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+                const monthIndex = (11 - monthsAgo) % 12;
+                return pattern[monthIndex];
+            }
+            
+            drawLineChart(ctx, canvas, data, metric) {
+                const { months, values, label } = data;
+                const padding = 40;
+                const chartWidth = canvas.width - 2 * padding;
+                const chartHeight = canvas.height - 2 * padding;
+                
+                // Clear canvas
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                // Set up styling
+                ctx.font = '12px -apple-system, BlinkMacSystemFont, sans-serif';
+                ctx.fillStyle = '#64748b';
+                ctx.strokeStyle = '#635bff';
+                ctx.lineWidth = 2;
+                
+                // Calculate scales
+                const maxValue = Math.max(...values);
+                const minValue = Math.min(...values);
+                const valueRange = maxValue - minValue || 1;
+                
+                // Draw grid lines and labels
+                this.drawGrid(ctx, canvas, padding, chartWidth, chartHeight, minValue, maxValue, months);
+                
+                // Draw the line
+                ctx.beginPath();
+                ctx.strokeStyle = '#635bff';
+                ctx.lineWidth = 3;
+                
+                for (let i = 0; i < values.length; i++) {
+                    const x = padding + (i / (values.length - 1)) * chartWidth;
+                    const y = padding + chartHeight - ((values[i] - minValue) / valueRange) * chartHeight;
+                    
+                    if (i === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                }
+                ctx.stroke();
+                
+                // Draw data points
+                ctx.fillStyle = '#635bff';
+                for (let i = 0; i < values.length; i++) {
+                    const x = padding + (i / (values.length - 1)) * chartWidth;
+                    const y = padding + chartHeight - ((values[i] - minValue) / valueRange) * chartHeight;
+                    
+                    ctx.beginPath();
+                    ctx.arc(x, y, 4, 0, 2 * Math.PI);
+                    ctx.fill();
+                }
+            }
+            
+            drawGrid(ctx, canvas, padding, chartWidth, chartHeight, minValue, maxValue, months) {
+                ctx.strokeStyle = '#e2e8f0';
+                ctx.lineWidth = 1;
+                ctx.fillStyle = '#64748b';
+                ctx.font = '11px -apple-system, BlinkMacSystemFont, sans-serif';
+                
+                // Draw horizontal grid lines and Y-axis labels
+                const ySteps = 4;
+                for (let i = 0; i <= ySteps; i++) {
+                    const y = padding + (i / ySteps) * chartHeight;
+                    const value = maxValue - (i / ySteps) * (maxValue - minValue);
+                    
+                    // Grid line
+                    ctx.beginPath();
+                    ctx.moveTo(padding, y);
+                    ctx.lineTo(padding + chartWidth, y);
+                    ctx.stroke();
+                    
+                    // Y-axis label
+                    const labelText = this.formatChartValue(value);
+                    ctx.fillText(labelText, 5, y + 4);
+                }
+                
+                // Draw X-axis labels (months)
+                for (let i = 0; i < months.length; i += 2) { // Show every other month
+                    const x = padding + (i / (months.length - 1)) * chartWidth;
+                    const y = padding + chartHeight + 15;
+                    
+                    ctx.save();
+                    ctx.textAlign = 'center';
+                    ctx.fillText(months[i], x, y);
+                    ctx.restore();
+                }
+            }
+            
+            formatChartValue(value) {
+                if (value >= 1000000) {
+                    return (value / 1000000).toFixed(1) + 'M';
+                } else if (value >= 1000) {
+                    return (value / 1000).toFixed(0) + 'K';
+                } else {
+                    return value.toFixed(0);
+                }
+            }
+            
+            drawEmptyChart(ctx, canvas) {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = '#64748b';
+                ctx.font = '14px -apple-system, BlinkMacSystemFont, sans-serif';
+                ctx.textAlign = 'center';
+                ctx.fillText('No data available', canvas.width / 2, canvas.height / 2);
             }
 
             updatePersonaIndicator() {
