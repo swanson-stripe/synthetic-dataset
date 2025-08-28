@@ -248,10 +248,12 @@
             background: white;
             border-radius: 12px;
             padding: 2rem;
-            max-width: 800px;
+            max-width: 900px;
             width: 90%;
             max-height: 80vh;
-            overflow-y: auto;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
         }
         
         .modal-header {
@@ -270,32 +272,52 @@
             color: #6b7280;
         }
         
-        .personas-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 0.75rem;
-            margin-bottom: 2rem;
+        .modal-body {
+            display: flex;
+            flex: 1;
+            gap: 2rem;
+            overflow: hidden;
+        }
+        
+        .persona-list-panel {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .personas-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .persona-details-panel {
+            flex: 1;
+            min-width: 300px;
+            padding-left: 2rem;
+            border-left: 1px solid #e5e7eb;
         }
         
         .persona-option {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            padding: 1rem;
-            border: 1px solid #e5e7eb;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            border: 2px solid transparent;
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.2s ease;
+            background: white;
         }
         
         .persona-option:hover {
-            border-color: #6366f1;
-            background: #f8fafc;
+            background: #f9fafb;
         }
         
         .persona-option.selected {
-            border-color: #6366f1;
-            background: #f0f4ff;
+            border-color: #3b82f6;
+            background: white;
         }
         
         .persona-option-logo {
@@ -314,6 +336,42 @@
             font-weight: 600;
             color: #111827;
             margin-bottom: 0.25rem;
+        }
+        
+        /* Details Panel Styles */
+        .persona-details-content {
+            height: 100%;
+        }
+        
+        .details-description {
+            font-size: 1.125rem;
+            font-weight: 400;
+            color: #374151;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .stripe-products-section {
+            margin-top: 2rem;
+        }
+        
+        .stripe-products-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 1rem;
+        }
+        
+        .stripe-products-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .stripe-products-list li {
+            padding: 0.25rem 0;
+            color: #374151;
+            font-size: 0.9rem;
         }
         
         .persona-option-description {
@@ -572,8 +630,18 @@
                 <p class="modal-subtitle">Choose which business persona dataset to use in your prototype.</p>
             </div>
             
-            <div class="personas-grid" id="personas-grid">
-                <!-- Persona options will be populated here -->
+            <div class="modal-body">
+                <div class="persona-list-panel">
+                    <div class="personas-list" id="personas-list">
+                        <!-- Persona options will be populated here -->
+                    </div>
+                </div>
+                
+                <div class="persona-details-panel">
+                    <div class="persona-details" id="persona-details">
+                        <!-- Selected persona details will be shown here -->
+                    </div>
+                </div>
             </div>
             
             <div class="modal-footer">
@@ -1801,10 +1869,10 @@
             populatePersonaModal() {
                 console.log('🎭 populatePersonaModal called');
                 const personas = this.dataClient.getAvailablePersonas();
-                const grid = document.getElementById('personas-grid');
+                const list = document.getElementById('personas-list');
                 
                 console.log('🎭 Found personas for modal:', Object.keys(personas));
-                grid.innerHTML = '';
+                list.innerHTML = '';
                 
                 // Use the same persona image mapping
                 const personaImageMap = {
@@ -1881,22 +1949,48 @@
                     option.addEventListener('click', () => {
                         console.log('🎯 Persona option clicked:', id);
                         // Remove selected from all options
-                        grid.querySelectorAll('.persona-option').forEach(opt => {
+                        list.querySelectorAll('.persona-option').forEach(opt => {
                             opt.classList.remove('selected');
                         });
                         // Add selected to clicked option
                         option.classList.add('selected');
                         this.selectedPersonaForModal = id;
                         console.log('✅ Selected persona for modal set to:', this.selectedPersonaForModal);
+                        
+                        // Update details panel
+                        this.updatePersonaDetails(persona);
                     });
                     
-                    grid.appendChild(option);
+                    list.appendChild(option);
                 });
+                
+                // Initialize details panel with current persona
+                const currentPersona = personas[this.selectedPersonaForModal || this.currentPersona];
+                if (currentPersona) {
+                    this.updatePersonaDetails(currentPersona);
+                }
+            }
+            
+            updatePersonaDetails(persona) {
+                const detailsPanel = document.getElementById('persona-details');
+                
+                detailsPanel.innerHTML = `
+                    <div class="persona-details-content">
+                        <h3 class="details-description">${persona.description}</h3>
+                        
+                        <div class="stripe-products-section">
+                            <h4 class="stripe-products-title">Stripe products used</h4>
+                            <ul class="stripe-products-list">
+                                ${persona.stripe_products.map(product => `<li>• ${product}</li>`).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                `;
             }
             
             updateModalSelection() {
-                const grid = document.getElementById('personas-grid');
-                grid.querySelectorAll('.persona-option').forEach(option => {
+                const list = document.getElementById('personas-list');
+                list.querySelectorAll('.persona-option').forEach(option => {
                     option.classList.remove('selected');
                     if (option.dataset.personaId === this.selectedPersonaForModal) {
                         option.classList.add('selected');
