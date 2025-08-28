@@ -42,12 +42,13 @@ class StripeDataClient {
       });
     }
     
-    // Optionally try to load from API in background (but don't wait)
-    this.loadPersonas().then(() => {
-      console.log('🌐 API data available, but using fallback for demo consistency');
-    }).catch(() => {
-      console.log('📡 API not available, continuing with fallback data (this is expected)');
-    });
+    // Skip API loading in fallback mode to preserve updated persona IDs
+    // this.loadPersonas().then(() => {
+    //   console.log('🌐 API data available, but using fallback for demo consistency');
+    // }).catch(() => {
+    //   console.log('📡 API not available, continuing with fallback data (this is expected)');
+    // });
+    console.log('📡 Skipping API load to preserve updated persona IDs (fallback mode)');
   }
 
   // Fallback data for demo when API is not available
