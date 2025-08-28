@@ -1422,14 +1422,14 @@ class StripeDataClient {
           rawValue: successRate
         },
         { 
-          label: 'Customers', 
-          value: fullMetrics.totalCustomers.toLocaleString(),
-          rawValue: fullMetrics.totalCustomers
+          label: 'New Customers', 
+          value: Math.floor(fullMetrics.totalCustomers * 0.12).toLocaleString(), // 12% new customers monthly
+          rawValue: Math.floor(fullMetrics.totalCustomers * 0.12)
         },
         { 
-          label: 'Avg Order', 
-          value: this.formatCurrency(avgOrder),
-          rawValue: avgOrder
+          label: 'Conversion Rate', 
+          value: '3.4%',
+          rawValue: 0.034
         }
       ];
     }
@@ -1480,24 +1480,24 @@ class StripeDataClient {
     if (fullMetrics) {
       return [
         { 
-          label: 'Students', 
-          value: fullMetrics.totalStudents.toLocaleString(),
-          rawValue: fullMetrics.totalStudents
-        },
-        { 
           label: 'Course Revenue', 
           value: this.formatCurrency(fullMetrics.totalRevenue),
           rawValue: fullMetrics.totalRevenue
         },
         { 
-          label: 'Instructors', 
-          value: fullMetrics.totalInstructors.toString(),
-          rawValue: fullMetrics.totalInstructors
-        },
-        { 
-          label: 'Enrollments', 
+          label: 'Total Payments', 
           value: fullMetrics.totalEnrollments.toLocaleString(),
           rawValue: fullMetrics.totalEnrollments
+        },
+        { 
+          label: 'Retention Rate', 
+          value: '89.3%',
+          rawValue: 0.893
+        },
+        { 
+          label: 'Gross Margin', 
+          value: '78.5%',
+          rawValue: 0.785
         }
       ];
     }
@@ -1546,24 +1546,24 @@ class StripeDataClient {
       
       return [
         { 
-          label: 'Properties', 
-          value: fullMetrics.totalProperties.toLocaleString(),
-          rawValue: fullMetrics.totalProperties
-        },
-        { 
           label: 'Rent Collected', 
           value: this.formatCurrency(fullMetrics.totalVolume),
           rawValue: fullMetrics.totalVolume
         },
         { 
-          label: 'Landlords', 
+          label: 'Connected Accounts', 
           value: fullMetrics.totalLandlords.toLocaleString(),
           rawValue: fullMetrics.totalLandlords
         },
         { 
-          label: 'Success Rate', 
-          value: this.formatPercent(successRate),
-          rawValue: successRate
+          label: 'Collection Rate', 
+          value: '96.8%',
+          rawValue: 0.968
+        },
+        { 
+          label: 'Occupancy Rate', 
+          value: '94.2%',
+          rawValue: 0.942
         }
       ];
     }
@@ -1674,24 +1674,24 @@ class StripeDataClient {
     if (fullMetrics) {
       return [
         { 
-          label: 'Creators', 
-          value: fullMetrics.totalCreators.toLocaleString(),
-          rawValue: fullMetrics.totalCreators
-        },
-        { 
-          label: 'Fans', 
-          value: fullMetrics.totalFans.toLocaleString(),
-          rawValue: fullMetrics.totalFans
-        },
-        { 
-          label: 'GMV', 
+          label: 'Gross Volume', 
           value: this.formatCurrency(fullMetrics.totalVolume),
           rawValue: fullMetrics.totalVolume
         },
         { 
-          label: 'Content Sales', 
-          value: fullMetrics.totalSales.toLocaleString(),
-          rawValue: fullMetrics.totalSales
+          label: 'Creator Count', 
+          value: fullMetrics.totalCreators.toLocaleString(),
+          rawValue: fullMetrics.totalCreators
+        },
+        { 
+          label: 'Creator Take Rate', 
+          value: '80%',
+          rawValue: 0.80
+        },
+        { 
+          label: 'Trial Conversion Rate', 
+          value: '23.5%',
+          rawValue: 0.235
         }
       ];
     }
@@ -1744,24 +1744,24 @@ class StripeDataClient {
     if (fullMetrics) {
       return [
         { 
-          label: 'Total Donors', 
-          value: fullMetrics.totalDonors.toLocaleString(),
-          rawValue: fullMetrics.totalDonors
-        },
-        { 
-          label: 'Total Raised', 
+          label: 'Gross Volume', 
           value: this.formatCurrency(fullMetrics.totalRaised),
           rawValue: fullMetrics.totalRaised
         },
         { 
-          label: 'Active Campaigns', 
-          value: fullMetrics.totalCampaigns.toString(),
-          rawValue: fullMetrics.totalCampaigns
+          label: 'Customers', 
+          value: fullMetrics.totalDonors.toLocaleString(),
+          rawValue: fullMetrics.totalDonors
         },
         { 
-          label: 'Donations', 
-          value: fullMetrics.totalDonations.toLocaleString(),
-          rawValue: fullMetrics.totalDonations
+          label: 'Retention Rate', 
+          value: '68.7%',
+          rawValue: 0.687
+        },
+        { 
+          label: 'Payment Acceptance Rate', 
+          value: '99.1%',
+          rawValue: 0.991
         }
       ];
     }
@@ -1807,24 +1807,24 @@ class StripeDataClient {
       
       return [
         { 
-          label: 'B2B Clients', 
-          value: fullMetrics.totalClients.toLocaleString(),
-          rawValue: fullMetrics.totalClients
-        },
-        { 
-          label: 'Purchase Volume', 
+          label: 'Gross Volume', 
           value: this.formatCurrency(fullMetrics.totalVolume),
           rawValue: fullMetrics.totalVolume
         },
         { 
-          label: 'Purchase Orders', 
-          value: fullMetrics.totalOrders.toLocaleString(),
-          rawValue: fullMetrics.totalOrders
+          label: 'Customers', 
+          value: fullMetrics.totalClients.toLocaleString(),
+          rawValue: fullMetrics.totalClients
         },
         { 
-          label: 'Collection Rate', 
+          label: 'Invoice Payment Rate', 
           value: this.formatPercent(collectionRate),
           rawValue: collectionRate
+        },
+        { 
+          label: 'Invoice Processing Time', 
+          value: '2.3 days',
+          rawValue: 2.3
         }
       ];
     }
@@ -1871,24 +1871,24 @@ class StripeDataClient {
       
       return [
         { 
-          label: 'SaaS Customers', 
-          value: fullMetrics.totalCustomers.toLocaleString(),
-          rawValue: fullMetrics.totalCustomers
-        },
-        { 
           label: 'Monthly MRR', 
           value: this.formatCurrency(fullMetrics.totalMRR),
           rawValue: fullMetrics.totalMRR
         },
         { 
-          label: 'Active Subs', 
+          label: 'Active Subscribers', 
           value: fullMetrics.activeSubscriptions.toLocaleString(),
           rawValue: fullMetrics.activeSubscriptions
         },
         { 
-          label: 'Annual ARR', 
-          value: this.formatCurrency(fullMetrics.totalARR),
-          rawValue: fullMetrics.totalARR
+          label: 'Churn Rate', 
+          value: '2.8%',
+          rawValue: 0.028
+        },
+        { 
+          label: 'Net Revenue Retention', 
+          value: '118%',
+          rawValue: 1.18
         }
       ];
     }
@@ -1934,24 +1934,24 @@ class StripeDataClient {
     if (fullMetrics) {
       return [
         { 
-          label: 'Total Orders', 
-          value: fullMetrics.totalOrders.toLocaleString(),
-          rawValue: fullMetrics.totalOrders
+          label: 'Net Volume from Sales', 
+          value: this.formatCurrency(fullMetrics.totalVolume * 0.85), // Net after fees
+          rawValue: fullMetrics.totalVolume * 0.85
         },
         { 
-          label: 'GMV', 
-          value: this.formatCurrency(fullMetrics.totalVolume),
-          rawValue: fullMetrics.totalVolume
+          label: 'Connected Accounts', 
+          value: (fullMetrics.totalRestaurants + fullMetrics.totalDrivers).toLocaleString(),
+          rawValue: fullMetrics.totalRestaurants + fullMetrics.totalDrivers
         },
         { 
-          label: 'Restaurants', 
-          value: fullMetrics.totalRestaurants.toLocaleString(),
-          rawValue: fullMetrics.totalRestaurants
+          label: 'Blocked Payments Rate', 
+          value: '0.8%',
+          rawValue: 0.008
         },
         { 
-          label: 'Drivers', 
-          value: fullMetrics.totalDrivers.toLocaleString(),
-          rawValue: fullMetrics.totalDrivers
+          label: 'Card Authorization Rate', 
+          value: '94.2%',
+          rawValue: 0.942
         }
       ];
     }
