@@ -13,11 +13,11 @@ class StripeDataClient {
     this.retryAttempts = options.retryAttempts || 3;
     this.retryDelay = options.retryDelay || 1000;
     
-    // Initialize
-    this.init();
+    // Initialize synchronously for immediate data availability
+    this.initSync();
   }
 
-  async init() {
+  initSync() {
     // For demo purposes, always use fallback data to ensure immediate loading
     console.log('🚀 Initializing Stripe Synthetic Dataset Demo');
     console.log('📊 Loading comprehensive demo data for all personas...');
