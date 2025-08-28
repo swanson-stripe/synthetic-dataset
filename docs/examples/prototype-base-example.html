@@ -1617,10 +1617,16 @@
             }
             
             updatePersonaSelectorDisplay() {
+                console.log('🔄 updatePersonaSelectorDisplay called');
                 const personas = this.dataClient.getAvailablePersonas();
+                console.log('📋 Available personas:', Object.keys(personas));
                 const currentPersona = personas[this.currentPersona];
+                console.log('👤 Current persona data:', currentPersona);
                 
-                if (!currentPersona) return;
+                if (!currentPersona) {
+                    console.error('❌ No current persona found for:', this.currentPersona);
+                    return;
+                }
                 
                 // Update main selector button
                 const logo = document.getElementById('current-persona-logo');
@@ -1656,7 +1662,7 @@
                 popoverDescription.textContent = currentPersona.description;
                 
                 // Update Stripe products
-                this.updateStripeProducts(currentPersona.products || []);
+                this.updateStripeProducts(currentPersona.stripe_products || []);
             }
             
             updateStripeProducts(products) {
@@ -1672,12 +1678,15 @@
             }
             
             populatePersonaModal() {
+                console.log('🎭 populatePersonaModal called');
                 const personas = this.dataClient.getAvailablePersonas();
                 const grid = document.getElementById('personas-grid');
                 
+                console.log('🎭 Found personas for modal:', Object.keys(personas));
                 grid.innerHTML = '';
                 
                 Object.entries(personas).forEach(([id, persona]) => {
+                    console.log(`🎭 Processing persona ${id}:`, persona);
                     const option = document.createElement('div');
                     option.className = 'persona-option';
                     option.dataset.personaId = id;
@@ -1693,7 +1702,7 @@
                             <div class="persona-option-name">${persona.name}</div>
                             <div class="persona-option-description">${persona.description}</div>
                             <div class="stripe-products">
-                                ${(persona.products || []).map(product => 
+                                ${(persona.stripe_products || []).map(product => 
                                     `<span class="stripe-product-badge">${product}</span>`
                                 ).join('')}
                             </div>
