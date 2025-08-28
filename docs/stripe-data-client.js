@@ -6,7 +6,7 @@
 
 class StripeDataClient {
   constructor(options = {}) {
-    this.baseUrl = options.baseUrl || 'https://swanson-stripe.github.io/synthetic-dataset/api/v1';
+    this.baseUrl = options.baseUrl || 'https://raw.githubusercontent.com/swanson-stripe/synthetic-dataset/main/api/v1';
     this.currentPersona = options.defaultPersona || 'techstyle';
     this.cache = new Map();
     this.subscribers = [];
@@ -23,6 +23,97 @@ class StripeDataClient {
       await this.loadPersona(this.currentPersona);
     } catch (error) {
       console.error('Failed to initialize StripeDataClient:', error);
+      // Use fallback data for demo purposes
+      this.useFallbackData();
+    }
+  }
+
+  // Fallback data for demo when API is not available
+  useFallbackData() {
+    console.log('Using fallback data for demo');
+    
+    this.availablePersonas = {
+      techstyle: {
+        id: 'techstyle',
+        name: 'TechStyle Fashion Retailer',
+        business_model: 'ecommerce',
+        endpoints: {}
+      },
+      edutech: {
+        id: 'edutech', 
+        name: 'EduTech Academy',
+        business_model: 'education_marketplace',
+        endpoints: {}
+      }
+    };
+
+    this.currentData = this.generateFallbackData(this.currentPersona);
+    this.notifySubscribers(this.currentData, this.currentPersona);
+  }
+
+  // Generate realistic fallback data
+  generateFallbackData(personaId) {
+    const baseAmount = Math.floor(Math.random() * 10000) + 5000;
+    
+    switch (personaId) {
+      case 'techstyle':
+        return {
+          payments: Array.from({length: 50}, (_, i) => ({
+            id: `pi_demo_${i.toString().padStart(6, '0')}`,
+            amount: Math.floor(Math.random() * 20000) + 1000,
+            currency: 'usd',
+            status: Math.random() > 0.05 ? 'succeeded' : 'failed',
+            customer: `cus_demo_${i.toString().padStart(6, '0')}`,
+            created: Date.now() - Math.random() * 86400000 * 30
+          })),
+          customers: Array.from({length: 30}, (_, i) => ({
+            id: `cus_demo_${i.toString().padStart(6, '0')}`,
+            email: `customer${i}@example.com`,
+            created: Date.now() - Math.random() * 86400000 * 90,
+            metadata: { country: ['US', 'CA', 'GB', 'AU'][Math.floor(Math.random() * 4)] }
+          })),
+          summary: {
+            revenue_metrics: {
+              total_revenue: baseAmount * 100,
+              current_mrr: baseAmount
+            }
+          }
+        };
+        
+      case 'edutech':
+        return {
+          instructors: Array.from({length: 20}, (_, i) => ({
+            id: `acct_demo_${i.toString().padStart(6, '0')}`,
+            business_profile: { name: `Dr. Instructor ${i + 1}` },
+            metadata: {
+              expertise: ['Computer Science', 'Mathematics', 'Physics', 'Chemistry'][Math.floor(Math.random() * 4)],
+              rating: (4.0 + Math.random()).toFixed(1),
+              total_students: Math.floor(Math.random() * 500) + 50,
+              course_count: Math.floor(Math.random() * 10) + 1
+            }
+          })),
+          students: Array.from({length: 100}, (_, i) => ({
+            id: `cus_demo_${i.toString().padStart(6, '0')}`,
+            email: `student${i}@university.edu`,
+            created: Date.now() - Math.random() * 86400000 * 90
+          })),
+          enrollments: Array.from({length: 40}, (_, i) => ({
+            id: `enroll_demo_${i.toString().padStart(6, '0')}`,
+            amount: Math.floor(Math.random() * 50000) + 10000,
+            status: 'succeeded',
+            customer: `cus_demo_${i.toString().padStart(6, '0')}`,
+            course_id: `course_${Math.floor(Math.random() * 20)}`
+          }))
+        };
+        
+      default:
+        return {
+          data: Array.from({length: 10}, (_, i) => ({
+            id: i,
+            value: Math.random() * 1000,
+            status: 'active'
+          }))
+        };
     }
   }
 
@@ -45,14 +136,19 @@ class StripeDataClient {
     }
 
     const persona = this.availablePersonas[personaId];
-    const endpoints = persona.endpoints;
+    const endpoints = persona.endpoints?.combined || persona.endpoints;
     
     try {
-      // Load all endpoints in parallel
+      // Load main data endpoints
       const dataPromises = Object.entries(endpoints).map(async ([key, endpoint]) => {
-        const url = `${this.baseUrl}${endpoint}`;
-        const data = await this.fetchWithRetry(url);
-        return [key, data];
+        try {
+          const url = `${this.baseUrl}${endpoint}`;
+          const data = await this.fetchWithRetry(url);
+          return [key, data];
+        } catch (error) {
+          console.warn(`Failed to load ${key} for ${personaId}:`, error.message);
+          return [key, []]; // Return empty array as fallback
+        }
       });
 
       const results = await Promise.all(dataPromises);
