@@ -1089,28 +1089,31 @@
             }
             
             formatTooltipValue(value, metric) {
-                // Determine format based on metric label
-                const label = metric.label.toLowerCase();
-                
-                if (label.includes('revenue') || label.includes('mrr') || label.includes('arr') || 
-                    label.includes('volume') || label.includes('raised') || label.includes('collected')) {
-                    // Currency formatting
-                    return new Intl.NumberFormat('en-US', {
-                        style: 'currency',
-                        currency: 'USD',
-                        minimumFractionDigits: 0,
-                        maximumFractionDigits: 0
-                    }).format(value / 100);
-                } else if (label.includes('rate') || label.includes('percent')) {
-                    // Percentage formatting
+                // Use the rate detection logic for consistent formatting
+                if (this.isRateMetric(metric)) {
+                    // Percentage formatting for rates
                     return new Intl.NumberFormat('en-US', {
                         style: 'percent',
-                        minimumFractionDigits: 1,
-                        maximumFractionDigits: 1
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2
                     }).format(value);
                 } else {
-                    // Number formatting
-                    return new Intl.NumberFormat('en-US').format(value);
+                    // Determine format based on metric label for non-rates
+                    const label = metric.label.toLowerCase();
+                    
+                    if (label.includes('revenue') || label.includes('mrr') || label.includes('arr') || 
+                        label.includes('volume') || label.includes('raised') || label.includes('collected')) {
+                        // Currency formatting
+                        return new Intl.NumberFormat('en-US', {
+                            style: 'currency',
+                            currency: 'USD',
+                            minimumFractionDigits: 0,
+                            maximumFractionDigits: 0
+                        }).format(value / 100);
+                    } else {
+                        // Number formatting
+                        return new Intl.NumberFormat('en-US').format(value);
+                    }
                 }
             }
             
@@ -1123,6 +1126,10 @@
                 // Current value must match exactly
                 const currentValue = metric.rawValue || 0;
                 
+                // Detect if this is a rate/percentage metric
+                const isRateMetric = this.isRateMetric(metric);
+                console.log(`📊 Generating time series for ${metric.label}, isRate: ${isRateMetric}, currentValue: ${currentValue}`);
+                
                 // Start 11 months ago
                 for (let i = 11; i >= 0; i--) {
                     const date = new Date(now.getFullYear(), now.getMonth() - i, 1);
@@ -1133,16 +1140,42 @@
                         values.push(currentValue);
                     } else {
                         // Historical months - work backwards from current value
-                        const stageMultiplier = this.getStageGrowthPattern(i, this.currentStage);
-                        const businessGrowth = this.getBusinessGrowthPattern(i, personaId);
-                        const randomVariation = 0.85 + Math.random() * 0.3; // ±15% variation
+                        let value;
                         
-                        const value = Math.floor(currentValue * stageMultiplier * businessGrowth * randomVariation);
+                        if (isRateMetric) {
+                            // For rates, use smaller variations and avoid growth patterns that make them 0
+                            const baseVariation = 0.85 + Math.random() * 0.3; // ±15% variation
+                            const trendFactor = 1 - (i * 0.02); // Slight trend improvement over time
+                            value = currentValue * baseVariation * trendFactor;
+                            
+                            // Ensure rates stay within reasonable bounds (0.1% to 99%)
+                            value = Math.max(0.001, Math.min(0.99, value));
+                        } else {
+                            // For volume metrics, use growth patterns
+                            const stageMultiplier = this.getStageGrowthPattern(i, this.currentStage);
+                            const businessGrowth = this.getBusinessGrowthPattern(i, personaId);
+                            const randomVariation = 0.85 + Math.random() * 0.3; // ±15% variation
+                            
+                            value = Math.floor(currentValue * stageMultiplier * businessGrowth * randomVariation);
+                        }
+                        
                         values.push(Math.max(0, value));
                     }
                 }
                 
                 return { months, values, label: metric.label };
+            }
+            
+            isRateMetric(metric) {
+                const label = metric.label.toLowerCase();
+                return label.includes('rate') || 
+                       label.includes('percent') || 
+                       label.includes('conversion') ||
+                       label.includes('success') ||
+                       label.includes('retention') ||
+                       label.includes('margin') ||
+                       label.includes('churn') ||
+                       (metric.rawValue > 0 && metric.rawValue <= 1); // Decimal between 0-1 likely a rate
             }
             
             getStageGrowthPattern(monthsAgo, stage) {
