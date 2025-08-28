@@ -247,13 +247,14 @@
         .modal-content {
             background: white;
             border-radius: 12px;
-            padding: 2rem;
+            padding: 0;
             max-width: 900px;
             width: 90%;
             max-height: 80vh;
             overflow: hidden;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            height: 80vh;
         }
         
         .modal-header {
@@ -272,18 +273,12 @@
             color: #6b7280;
         }
         
-        .modal-body {
-            display: flex;
-            flex: 1;
-            gap: 2rem;
-            overflow: hidden;
-        }
-        
         .persona-list-panel {
             flex: 1;
-            min-width: 300px;
             display: flex;
             flex-direction: column;
+            padding: 2rem;
+            height: 100%;
         }
         
         .personas-list {
@@ -296,23 +291,22 @@
         }
         
         .modal-footer-left {
-            padding: 1rem 0;
-            border-top: 1px solid #e5e7eb;
             margin-top: auto;
         }
         
         .persona-details-panel {
             flex: 1;
-            min-width: 300px;
-            padding-left: 2rem;
+            padding: 2rem;
             border-left: 1px solid #e5e7eb;
+            height: 100%;
+            overflow-y: auto;
         }
         
         .persona-option {
             display: flex;
             align-items: center;
             gap: 0.75rem;
-            padding: 0.75rem;
+            padding: 8px;
             border: 2px solid transparent;
             border-radius: 8px;
             cursor: pointer;
@@ -325,7 +319,7 @@
         }
         
         .persona-option.selected {
-            border-color: #3b82f6;
+            border-color: #8b5cf6;
             background: white;
         }
         
@@ -362,7 +356,7 @@
         }
         
         .stripe-products-title {
-            font-size: 1rem;
+            font-size: 1.125rem;
             font-weight: 600;
             color: #111827;
             margin-bottom: 1rem;
@@ -377,7 +371,7 @@
         .stripe-products-list li {
             padding: 0.25rem 0;
             color: #374151;
-            font-size: 0.9rem;
+            font-size: 1.125rem;
         }
         
         /* Removed persona-option-description - not needed in simplified list */
@@ -419,6 +413,17 @@
         
         .btn-primary:hover {
             background: #4f46e5;
+        }
+        
+        .modal-footer-left .btn {
+            width: 100%;
+            background: white;
+            color: #374151;
+            border: 1px solid #d1d5db;
+        }
+        
+        .modal-footer-left .btn:hover {
+            background: #f9fafb;
         }
         
         .prototype-main {
@@ -614,26 +619,24 @@
     <!-- Persona Selection Modal -->
     <div class="persona-modal" id="persona-modal">
         <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title">Swap data scenarios</h2>
-                <p class="modal-subtitle">Choose which business persona dataset to use in your prototype.</p>
-            </div>
-            
-            <div class="modal-body">
-                <div class="persona-list-panel">
-                    <div class="personas-list" id="personas-list">
-                        <!-- Persona options will be populated here -->
-                    </div>
-                    
-                    <div class="modal-footer-left">
-                        <button class="btn btn-primary" id="modal-done">Done</button>
-                    </div>
+            <div class="persona-list-panel">
+                <div class="modal-header">
+                    <h2 class="modal-title">Swap data scenarios</h2>
+                    <p class="modal-subtitle">Choose which business persona dataset to use in your prototype.</p>
                 </div>
                 
-                <div class="persona-details-panel">
-                    <div class="persona-details" id="persona-details">
-                        <!-- Selected persona details will be shown here -->
-                    </div>
+                <div class="personas-list" id="personas-list">
+                    <!-- Persona options will be populated here -->
+                </div>
+                
+                <div class="modal-footer-left">
+                    <button class="btn btn-primary" id="modal-done">Done</button>
+                </div>
+            </div>
+            
+            <div class="persona-details-panel">
+                <div class="persona-details" id="persona-details">
+                    <!-- Selected persona details will be shown here -->
                 </div>
             </div>
         </div>
