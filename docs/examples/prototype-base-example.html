@@ -1794,22 +1794,9 @@
                 popoverLogo.alt = currentPersona.name;
                 popoverName.textContent = currentPersona.name;
                 popoverDescription.textContent = currentPersona.description;
-                
-                // Update Stripe products
-                this.updateStripeProducts(currentPersona.stripe_products || []);
             }
             
-            updateStripeProducts(products) {
-                const container = document.getElementById('current-stripe-products');
-                container.innerHTML = '';
-                
-                products.forEach(product => {
-                    const badge = document.createElement('span');
-                    badge.className = 'stripe-product-badge';
-                    badge.textContent = product;
-                    container.appendChild(badge);
-                });
-            }
+
             
             populatePersonaModal() {
                 console.log('🎭 populatePersonaModal called');
