@@ -25,12 +25,22 @@ class StripeDataClient {
     this.useFallbackData();
     
     // Debug: Verify data loaded
+    const debugMetrics = this.calculateMetrics();
     console.log('✅ Demo data loaded:', {
       currentPersona: this.currentPersona,
       availablePersonas: Object.keys(this.availablePersonas),
       currentDataKeys: Object.keys(this.currentData || {}),
-      metricsExample: this.calculateMetrics()
+      metricsExample: debugMetrics,
+      fullDataMetrics: this.currentData?._fullDatasetMetrics
     });
+    
+    // Extra debug for metrics calculation
+    console.log('🔍 Raw metrics calculation result:', debugMetrics);
+    if (debugMetrics && debugMetrics.length > 0) {
+      debugMetrics.forEach((metric, i) => {
+        console.log(`  ${i}: ${metric.label} = ${metric.value} (raw: ${metric.rawValue})`);
+      });
+    }
     
     // Optionally try to load from API in background (but don't wait)
     this.loadPersonas().then(() => {
@@ -560,7 +570,14 @@ class StripeDataClient {
   // Calculate business-specific metrics
   calculateMetrics(personaId = this.currentPersona) {
     const data = this.currentData;
-    if (!data) return {};
+    console.log(`🧮 calculateMetrics called for persona: ${personaId}, data available:`, !!data);
+    
+    if (!data) {
+      console.warn('❌ No data available for metrics calculation');
+      return [];
+    }
+
+    console.log(`🧮 Calculating metrics for ${personaId}, data keys:`, Object.keys(data));
 
     switch (personaId) {
       case 'techstyle':

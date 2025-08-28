@@ -380,12 +380,20 @@
                         return;
                     }
                     
-                    container.innerHTML = metrics.map(metric => `
+                    // Debug: Log each metric before rendering
+                    metrics.forEach((metric, i) => {
+                        console.log(`📊 Metric ${i}:`, metric);
+                    });
+                    
+                    const html = metrics.map(metric => `
                         <div class="metric-card">
-                            <div class="metric-label">${metric.label}</div>
-                            <div class="metric-value">${metric.value}</div>
+                            <div class="metric-label">${metric.label || 'Unknown'}</div>
+                            <div class="metric-value">${metric.value || 'No Value'}</div>
                         </div>
                     `).join('');
+                    
+                    console.log('🖼️ Generated HTML:', html);
+                    container.innerHTML = html;
                 } catch (error) {
                     console.error('❌ Error updating metrics:', error);
                 }
@@ -393,6 +401,7 @@
 
             updateTables() {
                 console.log('📋 Updating tables for persona:', this.currentPersona);
+                console.log('📋 Current data for tables:', this.currentData);
                 try {
                     // Update primary table based on persona
                     this.updatePrimaryTable();
