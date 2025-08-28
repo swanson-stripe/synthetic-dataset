@@ -1210,47 +1210,47 @@
 
                 // All personas now use standardized Stripe objects - primarily payments
                 switch (persona) {
-                    case 'techstyle':
+                    case 'modaic':
                         data = this.currentData.payments?.slice(0, 10) || [];
                         headers = ['Payment ID', 'Amount', 'Status', 'Currency', 'Customer'];
                         title = 'Recent Payments';
                         break;
-                    case 'edutech':
+                    case 'mindora':
                         data = this.currentData.payments?.slice(0, 10) || [];
                         headers = ['Payment ID', 'Amount', 'Status', 'Course', 'Customer'];
                         title = 'Course Payments';
                         break;
-                    case 'propertyflow':
+                    case 'keynest':
                         data = this.currentData.payments?.slice(0, 10) || [];
                         headers = ['Payment ID', 'Amount', 'Status', 'Property', 'Customer'];
                         title = 'Rent Payments';
                         break;
-                    case 'fitstream':
+                    case 'pulseon':
                         data = this.currentData.payments?.slice(0, 10) || [];
                         headers = ['Payment ID', 'Amount', 'Status', 'Plan', 'Customer'];
                         title = 'Membership Payments';
                         break;
-                    case 'creatorhub':
+                    case 'fluxly':
                         data = this.currentData.payments?.slice(0, 10) || [];
                         headers = ['Payment ID', 'Amount', 'Status', 'Content', 'Customer'];
                         title = 'Content Purchases';
                         break;
-                    case 'givehope':
+                    case 'brightfund':
                         data = this.currentData.payments?.slice(0, 10) || [];
                         headers = ['Payment ID', 'Amount', 'Status', 'Campaign', 'Customer'];
                         title = 'Donations';
                         break;
-                    case 'medsupply':
+                    case 'procura':
                         data = this.currentData.payments?.slice(0, 10) || [];
                         headers = ['Payment ID', 'Amount', 'Status', 'PO Number', 'Customer'];
                         title = 'Medical Supply Payments';
                         break;
-                    case 'cloudflow':
+                    case 'stratus':
                         data = this.currentData.payments?.slice(0, 10) || [];
                         headers = ['Payment ID', 'Amount', 'Status', 'Plan', 'Customer'];
                         title = 'SaaS Payments';
                         break;
-                    case 'localbites':
+                    case 'forksy':
                         data = this.currentData.payments?.slice(0, 10) || [];
                         headers = ['Payment ID', 'Amount', 'Status', 'Restaurant', 'Customer'];
                         title = 'Food Orders';
@@ -1283,47 +1283,47 @@
 
                 // Show customers for most personas, connected_accounts for marketplace personas
                 switch (persona) {
-                    case 'techstyle':
+                    case 'modaic':
                         data = this.currentData.customers?.slice(0, 10) || [];
                         headers = ['Customer ID', 'Email', 'Name', 'Total Spend', 'Country'];
                         title = 'Top Customers';
                         break;
-                    case 'edutech':
+                    case 'mindora':
                         data = this.currentData.connected_accounts?.slice(0, 10) || [];
                         headers = ['Account ID', 'Instructor Name', 'Expertise', 'Rating', 'Students'];
                         title = 'Top Instructors';
                         break;
-                    case 'propertyflow':
+                    case 'keynest':
                         data = this.currentData.connected_accounts?.slice(0, 10) || [];
                         headers = ['Account ID', 'Landlord Name', 'Properties', 'Experience', 'Portfolio Value'];
                         title = 'Landlords';
                         break;
-                    case 'fitstream':
+                    case 'pulseon':
                         data = this.currentData.customers?.slice(0, 10) || [];
                         headers = ['Customer ID', 'Email', 'Fitness Level', 'Goals', 'Check-ins'];
                         title = 'Members';
                         break;
-                    case 'creatorhub':
+                    case 'fluxly':
                         data = this.currentData.connected_accounts?.slice(0, 10) || [];
                         headers = ['Account ID', 'Creator Name', 'Category', 'Followers', 'Content Count'];
                         title = 'Top Creators';
                         break;
-                    case 'givehope':
+                    case 'brightfund':
                         data = this.currentData.customers?.slice(0, 10) || [];
                         headers = ['Customer ID', 'Email', 'Donor Type', 'Total Donated', 'Frequency'];
                         title = 'Top Donors';
                         break;
-                    case 'medsupply':
+                    case 'procura':
                         data = this.currentData.customers?.slice(0, 10) || [];
                         headers = ['Customer ID', 'Hospital Name', 'Facility Type', 'Credit Limit', 'Total Spend'];
                         title = 'Healthcare Clients';
                         break;
-                    case 'cloudflow':
+                    case 'stratus':
                         data = this.currentData.customers?.slice(0, 10) || [];
                         headers = ['Customer ID', 'Company Name', 'Industry', 'Employee Count', 'Total Spend'];
                         title = 'Enterprise Customers';
                         break;
-                    case 'localbites':
+                    case 'forksy':
                         data = this.currentData.connected_accounts?.slice(0, 10) || [];
                         headers = ['Account ID', 'Business Name', 'Type', 'Rating', 'Total Orders'];
                         title = 'Restaurant Partners';
