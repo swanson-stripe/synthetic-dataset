@@ -710,7 +710,7 @@
                     <h3 class="data-section-title" id="chart-title">Revenue Trends</h3>
                 </div>
                 <div class="chart-container" id="chart-container">
-                    <canvas id="revenue-chart" width="800" height="200"></canvas>
+                    <svg id="revenue-chart" width="800" height="200"></svg>
                     <div class="chart-tooltip" id="chart-tooltip">
                         <div class="tooltip-label"></div>
                         <div class="tooltip-value"></div>
@@ -754,6 +754,9 @@
         </div>
     </main>
 
+    <!-- Include D3.js for charting -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
     <!-- Include the data client and persona switcher -->
     <script src="../stripe-data-client.js"></script>
 
@@ -853,28 +856,27 @@
             updateChart() {
                 try {
                     // Clean up previous chart if exists
-                    if (this.currentChartData) {
+                    if (this.currentChart) {
                         this.destroyChart();
                     }
                     
-                    const canvas = document.getElementById('revenue-chart');
-                    if (!canvas) {
-                        console.log('❌ Chart canvas not found');
+                    const svg = d3.select('#revenue-chart');
+                    if (svg.empty()) {
+                        console.log('❌ Chart SVG not found');
                         return;
                     }
                     
-                    const ctx = canvas.getContext('2d');
                     const metrics = this.dataClient?.calculateMetrics() || [];
                     
                     if (metrics.length === 0) {
                         console.log('❌ No metrics available for chart');
-                        this.drawEmptyChart(ctx, canvas);
+                        this.drawEmptyChart(svg);
                         return;
                     }
                     
                     // Use the first metric for the time series
                     const primaryMetric = metrics[0];
-                    console.log('📈 Drawing chart for metric:', primaryMetric.label);
+                    console.log('📈 Drawing D3 chart for metric:', primaryMetric.label);
                     
                     // Update chart title
                     const chartTitle = document.getElementById('chart-title');
@@ -885,101 +887,240 @@
                     // Generate time series data for the past 12 months
                     const timeSeriesData = this.generateTimeSeriesData(primaryMetric, this.currentPersona);
                     
-                    // Initialize interactive chart
-                    this.initializeInteractiveChart(canvas, ctx, timeSeriesData, primaryMetric);
+                    // Initialize D3 chart
+                    this.initializeD3Chart(svg, timeSeriesData, primaryMetric);
                     
                 } catch (error) {
                     console.error('Error updating chart:', error);
                 }
             }
             
-            initializeInteractiveChart(canvas, ctx, data, metric) {
-                // Store chart data for interaction
-                this.currentChartData = {
-                    canvas,
-                    ctx,
-                    data,
-                    metric,
-                    padding: 40,
-                    chartWidth: canvas.width - 80,
-                    chartHeight: canvas.height - 80,
-                    dataPoints: []
-                };
+            initializeD3Chart(svg, data, metric) {
+                // Chart dimensions and margins
+                const margin = { top: 20, right: 40, bottom: 40, left: 60 };
+                const width = 800 - margin.left - margin.right;
+                const height = 200 - margin.top - margin.bottom;
                 
-                // Draw the initial chart
-                this.drawInteractiveChart();
+                // Clear previous chart
+                svg.selectAll("*").remove();
                 
-                // Remove existing event listeners
-                this.removeChartEventListeners();
+                // Create main group
+                const g = svg.append("g")
+                    .attr("transform", `translate(${margin.left},${margin.top})`);
                 
-                // Add mouse event listeners for interactivity
-                this.addChartEventListeners();
+                // Set up scales
+                const xScale = d3.scaleTime()
+                    .domain(d3.extent(data.dates))
+                    .range([0, width]);
+                
+                const yScale = d3.scaleLinear()
+                    .domain(d3.extent(data.values))
+                    .nice()
+                    .range([height, 0]);
+                
+                // Create line generator
+                const line = d3.line()
+                    .x(d => xScale(d.date))
+                    .y(d => yScale(d.value))
+                    .curve(d3.curveMonotoneX);
+                
+                // Prepare data for line
+                const lineData = data.dates.map((date, i) => ({
+                    date: date,
+                    value: data.values[i]
+                }));
+                
+                // Add X axis
+                const xAxis = g.append("g")
+                    .attr("transform", `translate(0,${height})`)
+                    .call(d3.axisBottom(xScale)
+                        .ticks(d3.timeMonth.every(2))
+                        .tickFormat(d3.timeFormat("%b %y")));
+                
+                // Style X axis
+                xAxis.selectAll("text")
+                    .style("font-size", "11px")
+                    .style("fill", "#64748b");
+                    
+                xAxis.selectAll("line")
+                    .style("stroke", "#e2e8f0");
+                    
+                xAxis.select(".domain")
+                    .style("stroke", "#e2e8f0");
+                
+                // Add Y axis
+                const yAxis = g.append("g")
+                    .call(d3.axisLeft(yScale)
+                        .ticks(5)
+                        .tickFormat(d => this.formatD3AxisValue(d, metric)));
+                
+                // Style Y axis
+                yAxis.selectAll("text")
+                    .style("font-size", "11px")
+                    .style("fill", "#64748b");
+                    
+                yAxis.selectAll("line")
+                    .style("stroke", "#e2e8f0");
+                    
+                yAxis.select(".domain")
+                    .style("stroke", "#e2e8f0");
+                
+                // Add grid lines
+                g.selectAll(".grid-line-x")
+                    .data(xScale.ticks(d3.timeMonth.every(2)))
+                    .enter()
+                    .append("line")
+                    .attr("class", "grid-line-x")
+                    .attr("x1", d => xScale(d))
+                    .attr("x2", d => xScale(d))
+                    .attr("y1", 0)
+                    .attr("y2", height)
+                    .style("stroke", "#e2e8f0")
+                    .style("stroke-width", 1);
+                
+                g.selectAll(".grid-line-y")
+                    .data(yScale.ticks(5))
+                    .enter()
+                    .append("line")
+                    .attr("class", "grid-line-y")
+                    .attr("x1", 0)
+                    .attr("x2", width)
+                    .attr("y1", d => yScale(d))
+                    .attr("y2", d => yScale(d))
+                    .style("stroke", "#e2e8f0")
+                    .style("stroke-width", 1);
+                
+                // Add the line
+                g.append("path")
+                    .datum(lineData)
+                    .attr("class", "line")
+                    .attr("d", line)
+                    .style("fill", "none")
+                    .style("stroke", "#635bff")
+                    .style("stroke-width", 3);
+                
+                // Add data points (sample every 7 days for performance)
+                const sampledData = lineData.filter((d, i) => i % 7 === 0 || i === 0 || i === lineData.length - 1);
+                
+                g.selectAll(".dot")
+                    .data(sampledData)
+                    .enter()
+                    .append("circle")
+                    .attr("class", "dot")
+                    .attr("cx", d => xScale(d.date))
+                    .attr("cy", d => yScale(d.value))
+                    .attr("r", 3)
+                    .style("fill", "#635bff");
+                
+                // Add tooltip functionality
+                this.addD3Tooltip(g, lineData, xScale, yScale, metric, width, height);
+                
+                // Store for cleanup
+                this.currentChart = { svg, g, xScale, yScale, lineData, metric };
             }
             
-            drawInteractiveChart() {
-                const { canvas, ctx, data, padding, chartWidth, chartHeight } = this.currentChartData;
-                const { dates, values } = data;
+            addD3Tooltip(g, lineData, xScale, yScale, metric, width, height) {
+                // Create bisector for finding closest data point
+                const bisect = d3.bisector(d => d.date).left;
                 
-                // Clear canvas
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                // Create invisible overlay for mouse events
+                const overlay = g.append("rect")
+                    .attr("class", "overlay")
+                    .attr("width", width)
+                    .attr("height", height)
+                    .style("fill", "none")
+                    .style("pointer-events", "all");
                 
-                // Calculate scales
-                const maxValue = Math.max(...values);
-                const minValue = Math.min(...values);
-                const valueRange = maxValue - minValue || 1;
+                // Tooltip elements
+                const tooltip = d3.select('#chart-tooltip');
+                const focus = g.append("g")
+                    .attr("class", "focus")
+                    .style("display", "none");
                 
-                // Store data points for hover detection
-                this.currentChartData.dataPoints = [];
+                focus.append("circle")
+                    .attr("r", 5)
+                    .style("fill", "#635bff")
+                    .style("stroke", "white")
+                    .style("stroke-width", 2);
                 
-                // Set up styling
-                ctx.font = '12px -apple-system, BlinkMacSystemFont, sans-serif';
-                ctx.fillStyle = '#64748b';
+                focus.append("line")
+                    .attr("class", "x-hover-line")
+                    .style("stroke", "#635bff")
+                    .style("stroke-width", 1)
+                    .style("stroke-dasharray", "3,3");
                 
-                // Draw grid and axes
-                this.drawGrid(ctx, canvas, padding, chartWidth, chartHeight, minValue, maxValue, dates);
-                
-                // Draw the line
-                ctx.beginPath();
-                ctx.strokeStyle = '#635bff';
-                ctx.lineWidth = 3;
-                
-                for (let i = 0; i < values.length; i++) {
-                    const x = padding + (i / (values.length - 1)) * chartWidth;
-                    const y = padding + chartHeight - ((values[i] - minValue) / valueRange) * chartHeight;
-                    
-                    // Store point data for interaction
-                    this.currentChartData.dataPoints.push({
-                        x, y, 
-                        value: values[i],
-                        date: dates[i],
-                        label: dates[i].toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-                        index: i
+                overlay.on("mouseover", () => focus.style("display", null))
+                    .on("mouseout", () => {
+                        focus.style("display", "none");
+                        tooltip.style("opacity", 0).classed("visible", false);
+                    })
+                    .on("mousemove", (event) => {
+                        const mouseX = d3.pointer(event)[0];
+                        const x0 = xScale.invert(mouseX);
+                        const i = bisect(lineData, x0, 1);
+                        const d0 = lineData[i - 1];
+                        const d1 = lineData[i];
+                        
+                        if (!d0 || !d1) return;
+                        
+                        const d = x0 - d0.date > d1.date - x0 ? d1 : d0;
+                        
+                        focus.attr("transform", `translate(${xScale(d.date)}, ${yScale(d.value)})`);
+                        
+                        focus.select(".x-hover-line")
+                            .attr("y1", -yScale(d.value))
+                            .attr("y2", height - yScale(d.value));
+                        
+                        // Update tooltip
+                        const tooltipLabel = tooltip.select('.tooltip-label');
+                        const tooltipValue = tooltip.select('.tooltip-value');
+                        
+                        tooltipLabel.text(d.date.toLocaleDateString('en-US', { 
+                            month: 'short', 
+                            day: 'numeric',
+                            year: 'numeric'
+                        }));
+                        tooltipValue.text(this.formatTooltipValue(d.value, metric));
+                        
+                        // Position tooltip
+                        const chartContainer = document.getElementById('chart-container');
+                        const containerRect = chartContainer.getBoundingClientRect();
+                        const svgRect = g.node().getBoundingClientRect();
+                        
+                        const tooltipX = xScale(d.date) + 60; // Account for left margin
+                        const tooltipY = yScale(d.value) + 20; // Account for top margin
+                        
+                        tooltip
+                            .style("left", `${tooltipX}px`)
+                            .style("top", `${tooltipY}px`)
+                            .style("opacity", 1)
+                            .classed("visible", true);
                     });
-                    
-                    if (i === 0) {
-                        ctx.moveTo(x, y);
-                    } else {
-                        ctx.lineTo(x, y);
-                    }
+            }
+            
+            formatD3AxisValue(value, metric) {
+                // Handle rate metrics (values between 0-1)
+                if (value <= 1 && value >= 0 && metric && this.isRateMetric(metric)) {
+                    return new Intl.NumberFormat('en-US', {
+                        style: 'percent',
+                        minimumFractionDigits: 0,
+                        maximumFractionDigits: 1
+                    }).format(value);
                 }
-                ctx.stroke();
                 
-                // Draw data points (sample every 7 days for performance)
-                ctx.fillStyle = '#635bff';
-                this.currentChartData.dataPoints.forEach((point, index) => {
-                    // Show points every 7 days, plus first and last
-                    if (index % 7 === 0 || index === 0 || index === this.currentChartData.dataPoints.length - 1) {
-                        ctx.beginPath();
-                        ctx.arc(point.x, point.y, 3, 0, 2 * Math.PI);
-                        ctx.fill();
-                    }
-                });
-                
-                // Draw hover point if any
-                if (this.currentChartData.hoverPoint) {
-                    this.drawHoverPoint(this.currentChartData.hoverPoint);
+                // Handle large numbers
+                if (value >= 1000000) {
+                    return (value / 1000000).toFixed(1) + 'M';
+                } else if (value >= 1000) {
+                    return (value / 1000).toFixed(0) + 'K';
+                } else if (value >= 1) {
+                    return value.toFixed(0);
+                } else {
+                    return value.toFixed(2);
                 }
             }
+            
+
             
             addChartEventListeners() {
                 const canvas = this.currentChartData.canvas;
@@ -1231,11 +1372,32 @@
                 return pattern[monthIndex];
             }
             
-            // Cleanup method to remove event listeners
+            // Cleanup method to remove chart
             destroyChart() {
-                this.removeChartEventListeners();
-                this.hideTooltip();
-                this.currentChartData = null;
+                if (this.currentChart) {
+                    // Hide tooltip
+                    d3.select('#chart-tooltip').style("opacity", 0).classed("visible", false);
+                    
+                    // Clear SVG
+                    this.currentChart.svg.selectAll("*").remove();
+                    this.currentChart = null;
+                }
+            }
+            
+            drawEmptyChart(svg) {
+                svg.selectAll("*").remove();
+                
+                const g = svg.append("g")
+                    .attr("transform", "translate(60, 20)");
+                    
+                g.append("text")
+                    .attr("x", 400)
+                    .attr("y", 100)
+                    .attr("text-anchor", "middle")
+                    .style("fill", "#64748b")
+                    .style("font-size", "14px")
+                    .style("font-family", "-apple-system, BlinkMacSystemFont, sans-serif")
+                    .text("No data available");
             }
             
             drawGrid(ctx, canvas, padding, chartWidth, chartHeight, minValue, maxValue, dates) {
@@ -1437,12 +1599,10 @@
             
             updateChartForMetric(metric, metricIndex) {
                 try {
-                    const canvas = document.getElementById('revenue-chart');
-                    if (!canvas) return;
+                    const svg = d3.select('#revenue-chart');
+                    if (svg.empty()) return;
                     
-                    const ctx = canvas.getContext('2d');
-                    
-                    console.log('📈 Updating chart for metric:', metric.label);
+                    console.log('📈 Updating D3 chart for metric:', metric.label);
                     
                     // Update chart title
                     const chartTitle = document.getElementById('chart-title');
@@ -1451,15 +1611,15 @@
                     }
                     
                     // Clean up previous chart
-                    if (this.currentChartData) {
+                    if (this.currentChart) {
                         this.destroyChart();
                     }
                     
                     // Generate time series data for this specific metric
                     const timeSeriesData = this.generateTimeSeriesData(metric, this.currentPersona);
                     
-                    // Initialize interactive chart with the new data
-                    this.initializeInteractiveChart(canvas, ctx, timeSeriesData, metric);
+                    // Initialize D3 chart with the new data
+                    this.initializeD3Chart(svg, timeSeriesData, metric);
                     
                 } catch (error) {
                     console.error('Error updating chart for metric:', error);
