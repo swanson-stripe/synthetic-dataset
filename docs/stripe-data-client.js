@@ -732,6 +732,9 @@ class StripeDataClient {
   calculateEducationMetrics(data) {
     // Use full dataset metrics if available
     const fullMetrics = data._fullDatasetMetrics;
+    console.log('🎓 EduTech calculateEducationMetrics called with data:', data);
+    console.log('🎓 EduTech fullMetrics:', fullMetrics);
+    console.log('🎓 EduTech data._fullDatasetMetrics:', data._fullDatasetMetrics);
     
     if (fullMetrics) {
       return [
