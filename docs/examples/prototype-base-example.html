@@ -912,6 +912,13 @@
                 const persona = this.currentPersona;
                 let data, headers, title;
 
+                console.log(`🔧 updatePrimaryTable for ${persona}:`, {
+                    currentData: this.currentData,
+                    payments: this.currentData?.payments?.length,
+                    customers: this.currentData?.customers?.length,
+                    connected_accounts: this.currentData?.connected_accounts?.length
+                });
+
                 // All personas now use standardized Stripe objects - primarily payments
                 switch (persona) {
                     case 'techstyle':
@@ -973,6 +980,13 @@
                 const persona = this.currentPersona;
                 let data, headers, title;
 
+                console.log(`🔧 updateSecondaryTable for ${persona}:`, {
+                    currentData: this.currentData,
+                    payments: this.currentData?.payments?.length,
+                    customers: this.currentData?.customers?.length,
+                    connected_accounts: this.currentData?.connected_accounts?.length
+                });
+
                 // Show customers for most personas, connected_accounts for marketplace personas
                 switch (persona) {
                     case 'techstyle':
@@ -1032,11 +1046,23 @@
             }
 
             populateTable(headersId, bodyId, headers, data, persona, tableType) {
+                console.log(`🔧 populateTable called for ${persona} ${tableType}:`, {
+                    headersId, bodyId, headers, 
+                    dataLength: data?.length, 
+                    data: data?.slice(0, 2) // Show first 2 items for debugging
+                });
+                
                 // Populate headers
                 document.getElementById(headersId).innerHTML = headers.map(h => `<th>${h}</th>`).join('');
                 
                 // Populate body
                 const tbody = document.getElementById(bodyId);
+                if (!data || data.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="5">No data available</td></tr>';
+                    console.warn(`⚠️ No data for ${persona} ${tableType} table`);
+                    return;
+                }
+                
                 tbody.innerHTML = data.map(item => {
                     const row = this.formatTableRow(item, persona, tableType);
                     return `<tr>${row}</tr>`;
