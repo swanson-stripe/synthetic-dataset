@@ -174,6 +174,59 @@ class StripeDataClient {
     }
     return statuses[0];
   }
+
+  // Get realistic payment status distribution based on business persona
+  getPaymentStatusDistribution(persona) {
+    const distributions = {
+      // E-commerce: Higher volume, occasional disputes and refunds
+      'techstyle': {
+        statuses: ['succeeded', 'failed', 'refunded', 'partially_refunded', 'dispute_under_review', 'pending', 'canceled'],
+        weights: [0.89, 0.04, 0.03, 0.015, 0.008, 0.012, 0.005]
+      },
+      // Education: Very reliable payments, minimal disputes
+      'edutech': {
+        statuses: ['succeeded', 'failed', 'pending', 'canceled', 'refunded'],
+        weights: [0.94, 0.025, 0.02, 0.01, 0.005]
+      },
+      // Property: High-value, some collection issues
+      'propertyflow': {
+        statuses: ['succeeded', 'failed', 'pending', 'partially_paid', 'dispute_needs_response', 'canceled'],
+        weights: [0.88, 0.05, 0.04, 0.02, 0.01, 0.005]
+      },
+      // Fitness: Subscription-based, some failed payments
+      'fitstream': {
+        statuses: ['succeeded', 'failed', 'canceled', 'pending', 'refunded'],
+        weights: [0.91, 0.04, 0.025, 0.02, 0.005]
+      },
+      // Creator platform: Digital goods, chargebacks possible
+      'creatorhub': {
+        statuses: ['succeeded', 'failed', 'refunded', 'dispute_under_review', 'pending', 'canceled'],
+        weights: [0.92, 0.03, 0.025, 0.01, 0.01, 0.005]
+      },
+      // Nonprofit: High trust, very few disputes
+      'givehope': {
+        statuses: ['succeeded', 'failed', 'pending', 'canceled'],
+        weights: [0.96, 0.02, 0.015, 0.005]
+      },
+      // B2B Medical: Large amounts, more complex payment flows
+      'medsupply': {
+        statuses: ['succeeded', 'failed', 'pending', 'partially_paid', 'waiting_on_funding', 'dispute_needs_response'],
+        weights: [0.85, 0.06, 0.05, 0.03, 0.015, 0.005]
+      },
+      // SaaS: Reliable recurring payments
+      'cloudflow': {
+        statuses: ['succeeded', 'failed', 'pending', 'canceled', 'refunded'],
+        weights: [0.93, 0.035, 0.02, 0.01, 0.005]
+      },
+      // Marketplace: Complex flows, fraud monitoring
+      'localbites': {
+        statuses: ['succeeded', 'failed', 'blocked', 'pending', 'refunded', 'dispute_under_review', 'canceled'],
+        weights: [0.89, 0.04, 0.015, 0.025, 0.02, 0.005, 0.005]
+      }
+    };
+    
+    return distributions[persona] || distributions['techstyle'];
+  }
   
   randomPaymentMethod() {
     const methods = [
@@ -224,11 +277,13 @@ class StripeDataClient {
       case 'techstyle':
         // TechStyle: E-commerce with subscriptions and one-time payments
         return {
-          payments: Array.from({length: 50}, (_, i) => ({
+          payments: Array.from({length: 50}, (_, i) => {
+            const statusDist = this.getPaymentStatusDistribution('techstyle');
+            return {
             id: `pi_${this.generateId()}`,
             amount: Math.floor(Math.random() * 25000) + 1500,
             currency: ['usd', 'eur', 'gbp'][Math.floor(Math.random() * 3)],
-            status: this.randomStatus(['succeeded', 'failed', 'requires_action'], [0.95, 0.03, 0.02]),
+            status: this.randomStatus(statusDist.statuses, statusDist.weights),
             customer: `cus_${this.generateId()}`,
             created: Date.now() - Math.random() * 86400000 * 30,
             payment_method: this.randomPaymentMethod(),
@@ -241,7 +296,8 @@ class StripeDataClient {
             },
             description: `TechStyle Fashion Purchase`,
             receipt_email: `customer${i}@example.com`
-          })),
+          };
+          }),
           
           customers: Array.from({length: 30}, (_, i) => ({
             id: `cus_${this.generateId()}`,
@@ -329,11 +385,13 @@ class StripeDataClient {
       case 'edutech':
         // EduTech: Education marketplace with instructor payouts
         return {
-          payments: Array.from({length: 50}, (_, i) => ({
+          payments: Array.from({length: 50}, (_, i) => {
+            const statusDist = this.getPaymentStatusDistribution('edutech');
+            return {
             id: `pi_${this.generateId()}`,
             amount: Math.floor(Math.random() * 50000) + 5000, // $50-$500 courses
             currency: 'usd',
-            status: this.randomStatus(['succeeded', 'failed', 'requires_action'], [0.97, 0.02, 0.01]),
+            status: this.randomStatus(statusDist.statuses, statusDist.weights),
             customer: `cus_${this.generateId()}`,
             created: Date.now() - Math.random() * 86400000 * 60,
             payment_method: this.randomPaymentMethod(),
@@ -347,7 +405,8 @@ class StripeDataClient {
             },
             description: 'Course enrollment payment',
             application_fee_amount: Math.floor(Math.random() * 5000) + 500 // Platform commission
-          })),
+          };
+          }),
           
           customers: Array.from({length: 40}, (_, i) => ({
             id: `cus_${this.generateId()}`,
@@ -447,11 +506,13 @@ class StripeDataClient {
         
       case 'propertyflow':
         return {
-          payments: Array.from({length: 60}, (_, i) => ({
+          payments: Array.from({length: 60}, (_, i) => {
+            const statusDist = this.getPaymentStatusDistribution('propertyflow');
+            return {
             id: `pi_${this.generateId()}`,
             amount: Math.floor(Math.random() * 400000) + 100000, // $1K-$4K rent
             currency: 'usd',
-            status: this.randomStatus(['succeeded', 'failed', 'requires_action'], [0.95, 0.03, 0.02]),
+            status: this.randomStatus(statusDist.statuses, statusDist.weights),
             customer: `cus_${this.generateId()}`,
             created: Date.now() - Math.random() * 86400000 * 90,
             payment_method: this.randomPaymentMethod(),
@@ -465,7 +526,8 @@ class StripeDataClient {
             },
             description: 'Property rental payment',
             application_fee_amount: Math.floor(Math.random() * 10000) + 1000 // Platform fee
-          })),
+          };
+          }),
           
           customers: Array.from({length: 45}, (_, i) => ({
             id: `cus_${this.generateId()}`,
@@ -567,11 +629,13 @@ class StripeDataClient {
 
       case 'fitstream':
         return {
-          payments: Array.from({length: 55}, (_, i) => ({
+          payments: Array.from({length: 55}, (_, i) => {
+            const statusDist = this.getPaymentStatusDistribution('fitstream');
+            return {
             id: `pi_${this.generateId()}`,
             amount: [2999, 4999, 7999, 12999][Math.floor(Math.random() * 4)], // $29.99-$129.99
             currency: 'usd',
-            status: this.randomStatus(['succeeded', 'failed', 'requires_action'], [0.97, 0.02, 0.01]),
+            status: this.randomStatus(statusDist.statuses, statusDist.weights),
             customer: `cus_${this.generateId()}`,
             created: Date.now() - Math.random() * 86400000 * 90,
             payment_method: this.randomPaymentMethod(),
@@ -584,7 +648,8 @@ class StripeDataClient {
               payment_type: ['subscription', 'class_package', 'personal_training'][Math.floor(Math.random() * 3)]
             },
             description: 'FitStream membership payment'
-          })),
+          };
+          }),
           
           customers: Array.from({length: 40}, (_, i) => ({
             id: `cus_${this.generateId()}`,
@@ -677,11 +742,13 @@ class StripeDataClient {
 
       case 'creatorhub':
         return {
-          payments: Array.from({length: 65}, (_, i) => ({
+          payments: Array.from({length: 65}, (_, i) => {
+            const statusDist = this.getPaymentStatusDistribution('creatorhub');
+            return {
             id: `pi_${this.generateId()}`,
             amount: Math.floor(Math.random() * 15000) + 500, // $5-$150 content
             currency: 'usd',
-            status: this.randomStatus(['succeeded', 'failed', 'requires_action'], [0.98, 0.015, 0.005]),
+            status: this.randomStatus(statusDist.statuses, statusDist.weights),
             customer: `cus_${this.generateId()}`,
             created: Date.now() - Math.random() * 86400000 * 60,
             payment_method: this.randomPaymentMethod(),
