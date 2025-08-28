@@ -959,27 +959,109 @@ class StripeDataClient {
 
       case 'cloudflow':
         return {
-          customers: Array.from({length: 40}, (_, i) => ({
-            id: `cus_demo_${i.toString().padStart(6, '0')}`,
-            company: `Company ${i + 1}`,
-            plan: ['Starter', 'Professional', 'Enterprise'][Math.floor(Math.random() * 3)],
-            mrr: [99, 299, 999][Math.floor(Math.random() * 3)],
-            employees: Math.floor(Math.random() * 1000) + 10
+          payments: Array.from({length: 45}, (_, i) => ({
+            id: `pi_${this.generateId()}`,
+            amount: [9900, 29900, 99900, 199900][Math.floor(Math.random() * 4)], // $99-$1999 SaaS plans
+            currency: 'usd',
+            status: this.randomStatus(['succeeded', 'failed', 'requires_action'], [0.98, 0.015, 0.005]),
+            customer: `cus_${this.generateId()}`,
+            created: Date.now() - Math.random() * 86400000 * 90,
+            payment_method: this.randomPaymentMethod(),
+            metadata: {
+              subscription_id: `sub_${this.generateId()}`,
+              plan_tier: ['starter', 'professional', 'enterprise', 'custom'][Math.floor(Math.random() * 4)],
+              billing_cycle: ['monthly', 'annual'][Math.floor(Math.random() * 2)],
+              usage_tier: ['basic', 'standard', 'premium'][Math.floor(Math.random() * 3)],
+              seat_count: Math.floor(Math.random() * 500) + 1,
+              add_ons: ['api_access', 'premium_support', 'advanced_analytics'][Math.floor(Math.random() * 3)]
+            },
+            description: 'CloudFlow SaaS subscription'
           })),
-          subscriptions: Array.from({length: 38}, (_, i) => ({
-            id: `sub_demo_${i.toString().padStart(6, '0')}`,
-            customer: `Company ${Math.floor(Math.random() * 40) + 1}`,
-            plan: ['Starter', 'Professional', 'Enterprise'][Math.floor(Math.random() * 3)],
-            status: Math.random() > 0.1 ? 'active' : 'canceled',
-            current_period_start: Date.now() - Math.random() * 86400000 * 30
+          
+          customers: Array.from({length: 35}, (_, i) => ({
+            id: `cus_${this.generateId()}`,
+            email: `admin${i}@company${i}.com`,
+            name: `${['TechCorp', 'DataSys', 'CloudInc', 'DevOps Pro'][Math.floor(Math.random() * 4)]} ${i + 1}`,
+            created: Date.now() - Math.random() * 86400000 * 730,
+            metadata: {
+              total_spend: Math.floor(Math.random() * 2000000) + 50000,
+              company_size: ['startup', 'small_business', 'mid_market', 'enterprise'][Math.floor(Math.random() * 4)],
+              industry: ['technology', 'finance', 'healthcare', 'retail', 'manufacturing'][Math.floor(Math.random() * 5)],
+              employee_count: Math.floor(Math.random() * 5000) + 10,
+              contract_type: ['monthly', 'annual', 'multi_year'][Math.floor(Math.random() * 3)],
+              implementation_status: ['onboarding', 'active', 'expanding'][Math.floor(Math.random() * 3)]
+            },
+            address: {
+              country: ['US', 'CA', 'GB', 'AU', 'DE'][Math.floor(Math.random() * 5)]
+            }
           })),
-          invoices: Array.from({length: 50}, (_, i) => ({
-            id: `in_demo_${i.toString().padStart(6, '0')}`,
-            customer: `Company ${Math.floor(Math.random() * 40) + 1}`,
-            amount: [9900, 29900, 99900][Math.floor(Math.random() * 3)],
-            status: Math.random() > 0.05 ? 'paid' : 'open',
-            due_date: Date.now() + Math.random() * 86400000 * 30
+          
+          subscriptions: Array.from({length: 32}, (_, i) => ({
+            id: `sub_${this.generateId()}`,
+            customer: `cus_${this.generateId()}`,
+            status: this.randomStatus(['active', 'canceled', 'past_due'], [0.90, 0.08, 0.02]),
+            current_period_start: Date.now() - Math.random() * 86400000 * 30,
+            current_period_end: Date.now() + Math.random() * 86400000 * 30,
+            created: Date.now() - Math.random() * 86400000 * 365,
+            metadata: {
+              plan_name: ['Starter Plan', 'Professional Plan', 'Enterprise Plan', 'Custom Plan'][Math.floor(Math.random() * 4)],
+              billing_interval: ['month', 'year'][Math.floor(Math.random() * 2)],
+              feature_set: ['basic', 'standard', 'premium', 'enterprise'][Math.floor(Math.random() * 4)],
+              user_seats: Math.floor(Math.random() * 1000) + 1
+            }
           })),
+          
+          products: Array.from({length: 25}, (_, i) => ({
+            id: `prod_${this.generateId()}`,
+            name: this.generateProductName('saas'),
+            description: `Cloud-based business automation platform`,
+            active: Math.random() > 0.05,
+            metadata: {
+              tier: ['basic', 'professional', 'enterprise'][Math.floor(Math.random() * 3)],
+              features: ['automation', 'analytics', 'integrations', 'api_access'][Math.floor(Math.random() * 4)],
+              user_limit: Math.floor(Math.random() * 1000) + 1,
+              storage_gb: Math.floor(Math.random() * 10000) + 100
+            },
+            created: Date.now() - Math.random() * 86400000 * 180
+          })),
+          
+          meters: Array.from({length: 12}, (_, i) => ({
+            id: `mtr_${this.generateId()}`,
+            display_name: ['API Calls', 'Data Processing', 'Storage Usage', 'Compute Hours'][Math.floor(Math.random() * 4)],
+            created: Date.now() - Math.random() * 86400000 * 60,
+            status: 'active'
+          })),
+          
+          invoices: Array.from({length: 40}, (_, i) => ({
+            id: `in_${this.generateId()}`,
+            customer: `cus_${this.generateId()}`,
+            amount_due: [9900, 29900, 99900, 199900][Math.floor(Math.random() * 4)],
+            currency: 'usd',
+            status: this.randomStatus(['paid', 'open', 'draft'], [0.95, 0.04, 0.01]),
+            created: Date.now() - Math.random() * 86400000 * 60,
+            metadata: {
+              billing_period: 'monthly',
+              usage_charges: Math.floor(Math.random() * 50000),
+              subscription_id: `sub_${this.generateId()}`
+            }
+          })),
+          
+          transfers: Array.from({length: 8}, (_, i) => ({
+            id: `tr_${this.generateId()}`,
+            amount: Math.floor(Math.random() * 100000) + 10000,
+            currency: 'usd',
+            created: Date.now() - Math.random() * 86400000 * 7,
+            description: 'Partner revenue share',
+            metadata: {
+              partner_id: `partner_${Math.floor(Math.random() * 5)}`,
+              revenue_share_rate: '0.15'
+            }
+          })),
+          
+          balances: [{
+            available: [{amount: Math.floor(Math.random() * 50000000) + 10000000, currency: 'usd'}],
+            pending: [{amount: Math.floor(Math.random() * 2000000), currency: 'usd'}]
+          }],
           // Full dataset metrics - CloudFlow: 50K customers, $240M ARR
           _fullDatasetMetrics: {
             totalCustomers: Math.floor(49821 * stageMultiplier),
@@ -993,31 +1075,112 @@ class StripeDataClient {
 
       case 'localbites':
         return {
-          orders: Array.from({length: 70}, (_, i) => ({
-            id: `ord_demo_${i.toString().padStart(6, '0')}`,
-            restaurant: `Restaurant ${Math.floor(Math.random() * 20) + 1}`,
-            driver: `Driver ${Math.floor(Math.random() * 15) + 1}`,
-            customer: `Customer ${Math.floor(Math.random() * 100) + 1}`,
-            total: Math.floor(Math.random() * 8000) + 1500,
-            delivery_fee: Math.floor(Math.random() * 500) + 200,
-            status: ['delivered', 'in_transit', 'preparing'][Math.floor(Math.random() * 3)]
-          })),
-          connected_accounts: Array.from({length: 35}, (_, i) => ({
-            id: `acct_demo_${i.toString().padStart(6, '0')}`,
-            business_profile: { 
-              name: i < 20 ? `Restaurant ${i + 1}` : `Driver ${i - 19}`
+          payments: Array.from({length: 75}, (_, i) => ({
+            id: `pi_${this.generateId()}`,
+            amount: Math.floor(Math.random() * 12000) + 1500, // $15-$120 food orders
+            currency: 'usd',
+            status: this.randomStatus(['succeeded', 'failed', 'requires_action'], [0.97, 0.025, 0.005]),
+            customer: `cus_${this.generateId()}`,
+            created: Date.now() - Math.random() * 86400000 * 30,
+            payment_method: this.randomPaymentMethod(),
+            metadata: {
+              restaurant_id: `acct_${this.generateId()}`,
+              driver_id: `acct_${this.generateId()}`,
+              order_type: ['delivery', 'pickup', 'dine_in'][Math.floor(Math.random() * 3)],
+              cuisine_type: ['italian', 'mexican', 'chinese', 'american', 'thai'][Math.floor(Math.random() * 5)],
+              delivery_time: Math.floor(Math.random() * 45) + 15,
+              tip_amount: Math.floor(Math.random() * 1000) + 200,
+              promo_code: Math.random() > 0.8 ? ['SAVE10', 'NEWUSER', 'WEEKEND'][Math.floor(Math.random() * 3)] : null
             },
-            type: i < 20 ? 'restaurant' : 'driver',
-            total_payouts: Math.floor(Math.random() * 50000) + 5000,
-            rating: (4.0 + Math.random()).toFixed(1)
+            description: 'Food delivery order',
+            application_fee_amount: Math.floor(Math.random() * 1200) + 150 // Platform commission
           })),
-          payments: Array.from({length: 65}, (_, i) => ({
-            id: `pi_demo_${i.toString().padStart(6, '0')}`,
-            amount: Math.floor(Math.random() * 8000) + 1500,
-            application_fee: Math.floor(Math.random() * 800) + 150,
-            status: Math.random() > 0.03 ? 'succeeded' : 'failed',
-            customer: `Customer ${Math.floor(Math.random() * 100) + 1}`
+          
+          customers: Array.from({length: 60}, (_, i) => ({
+            id: `cus_${this.generateId()}`,
+            email: `customer${i}@example.com`,
+            name: this.generateCustomerName(),
+            created: Date.now() - Math.random() * 86400000 * 365,
+            metadata: {
+              total_spend: Math.floor(Math.random() * 100000) + 2000,
+              order_frequency: ['daily', 'weekly', 'monthly', 'occasional'][Math.floor(Math.random() * 4)],
+              preferred_cuisine: ['italian', 'mexican', 'chinese', 'american', 'thai'][Math.floor(Math.random() * 5)],
+              delivery_address_count: Math.floor(Math.random() * 3) + 1,
+              loyalty_tier: ['bronze', 'silver', 'gold', 'platinum'][Math.floor(Math.random() * 4)],
+              dietary_preferences: ['none', 'vegetarian', 'vegan', 'gluten_free'][Math.floor(Math.random() * 4)]
+            },
+            address: {
+              country: 'US',
+              state: ['CA', 'NY', 'TX', 'FL'][Math.floor(Math.random() * 4)],
+              city: ['San Francisco', 'New York', 'Austin', 'Miami'][Math.floor(Math.random() * 4)]
+            }
           })),
+          
+          connected_accounts: Array.from({length: 40}, (_, i) => ({
+            id: `acct_${this.generateId()}`,
+            type: 'express',
+            business_profile: { 
+              name: i < 25 ? `${['Taste of', 'Golden', 'Fresh', 'Urban'][Math.floor(Math.random() * 4)]} ${['Bistro', 'Kitchen', 'Grill', 'Cafe'][Math.floor(Math.random() * 4)]}` : `Driver ${this.generateCustomerName()}`
+            },
+            created: Date.now() - Math.random() * 86400000 * 365,
+            metadata: {
+              account_type: i < 25 ? 'restaurant' : 'driver',
+              rating: (4.0 + Math.random()).toFixed(1),
+              total_orders: Math.floor(Math.random() * 5000) + 100,
+              cuisine_type: i < 25 ? ['italian', 'mexican', 'chinese', 'american', 'thai'][Math.floor(Math.random() * 5)] : null,
+              delivery_radius_miles: i >= 25 ? Math.floor(Math.random() * 15) + 5 : null,
+              average_prep_time: i < 25 ? Math.floor(Math.random() * 30) + 15 : null
+            },
+            capabilities: {
+              transfers: 'requested'
+            }
+          })),
+          
+          products: Array.from({length: 50}, (_, i) => ({
+            id: `prod_${this.generateId()}`,
+            name: this.generateProductName('marketplace'),
+            description: `Restaurant menu item or delivery service`,
+            active: Math.random() > 0.1,
+            metadata: {
+              item_type: ['food_item', 'beverage', 'dessert', 'delivery_fee'][Math.floor(Math.random() * 4)],
+              cuisine_category: ['appetizer', 'main_course', 'dessert', 'beverage'][Math.floor(Math.random() * 4)],
+              dietary_info: ['none', 'vegetarian', 'vegan', 'gluten_free'][Math.floor(Math.random() * 4)],
+              restaurant_id: `acct_${this.generateId()}`,
+              prep_time_minutes: Math.floor(Math.random() * 30) + 10
+            },
+            created: Date.now() - Math.random() * 86400000 * 180
+          })),
+          
+          transfers: Array.from({length: 50}, (_, i) => ({
+            id: `tr_${this.generateId()}`,
+            amount: Math.floor(Math.random() * 10000) + 1000, // Restaurant/driver payout
+            currency: 'usd',
+            destination: `acct_${this.generateId()}`,
+            created: Date.now() - Math.random() * 86400000 * 7,
+            description: i % 2 === 0 ? 'Restaurant order payout' : 'Driver delivery payout',
+            metadata: {
+              payout_type: i % 2 === 0 ? 'restaurant_earnings' : 'driver_earnings',
+              order_count: Math.floor(Math.random() * 20) + 1,
+              commission_rate: i % 2 === 0 ? '0.15' : '0.20'
+            }
+          })),
+          
+          issuing_cards: Array.from({length: 15}, (_, i) => ({
+            id: `ic_${this.generateId()}`,
+            cardholder: `acct_${this.generateId()}`,
+            status: 'active',
+            type: 'virtual',
+            created: Date.now() - Math.random() * 86400000 * 90,
+            metadata: {
+              card_purpose: 'driver_expenses',
+              spending_limit: Math.floor(Math.random() * 100000) + 10000
+            }
+          })),
+          
+          balances: [{
+            available: [{amount: Math.floor(Math.random() * 15000000) + 3000000, currency: 'usd'}],
+            pending: [{amount: Math.floor(Math.random() * 800000), currency: 'usd'}]
+          }],
           // Full dataset metrics - LocalBites: 600K orders, $95M volume
           _fullDatasetMetrics: {
             totalOrders: Math.floor(598473 * stageMultiplier),
@@ -1339,20 +1502,20 @@ class StripeDataClient {
       ];
     }
     
-    // Fallback to sample calculation
-    const instructors = data.instructors || [];
-    const students = data.students || [];
-    const enrollments = data.enrollments || [];
+    // Fallback to sample calculation using standardized Stripe objects
+    const connectedAccounts = data.connected_accounts || []; // Instructors are now connected_accounts
+    const customers = data.customers || []; // Students are now customers  
+    const payments = data.payments || []; // Enrollments are now payments
     
-    const totalRevenue = enrollments
-      .filter(e => e.status === 'succeeded' || e.paid === true)
-      .reduce((sum, e) => sum + (e.amount || e.amount_paid || 0), 0);
+    const totalRevenue = payments
+      .filter(p => p.status === 'succeeded')
+      .reduce((sum, p) => sum + (p.amount || 0), 0);
 
     return [
       { 
         label: 'Students', 
-        value: students.length.toLocaleString(),
-        rawValue: students.length
+        value: customers.length.toLocaleString(),
+        rawValue: customers.length
       },
       { 
         label: 'Course Revenue', 
@@ -1361,13 +1524,13 @@ class StripeDataClient {
       },
       { 
         label: 'Instructors', 
-        value: instructors.length.toString(),
-        rawValue: instructors.length
+        value: connectedAccounts.length.toString(),
+        rawValue: connectedAccounts.length
       },
       { 
         label: 'Enrollments', 
-        value: enrollments.length.toLocaleString(),
-        rawValue: enrollments.length
+        value: payments.length.toLocaleString(),
+        rawValue: payments.length
       }
     ];
   }
