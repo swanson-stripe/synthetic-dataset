@@ -315,11 +315,15 @@
             getPersonaIcon(businessModel) {
                 const icons = {
                     'ecommerce': '🛍️',
-                    'marketplace': '🎓',
+                    'education_marketplace': '🎓',
                     'property_management': '🏠',
                     'subscription': '💪',
                     'creator_economy': '🎨',
-                    'education_marketplace': '📚'
+                    'marketplace': '🌐',
+                    'nonprofit': '❤️',
+                    'b2b_wholesale': '🏥',
+                    'saas': '☁️',
+                    'food_delivery': '🍕'
                 };
                 return icons[businessModel] || '💼';
             }
@@ -372,6 +376,16 @@
                         headers = ['Sale ID', 'Content', 'Creator', 'Amount', 'Fan'];
                         title = 'Content Sales';
                         break;
+                    case 'propertyflow':
+                        data = this.currentData.rent_payments?.slice(0, 10) || [];
+                        headers = ['Payment ID', 'Property', 'Tenant', 'Amount', 'Status'];
+                        title = 'Rent Payments';
+                        break;
+                    case 'fitstream':
+                        data = this.currentData.subscriptions?.slice(0, 10) || [];
+                        headers = ['Subscription ID', 'Plan', 'Customer', 'Status', 'MRR'];
+                        title = 'Active Subscriptions';
+                        break;
                     default:
                         data = [];
                         headers = ['ID', 'Data', 'Status'];
@@ -411,6 +425,16 @@
                         data = this.currentData.creators?.slice(0, 10) || [];
                         headers = ['Creator', 'Category', 'Followers', 'Revenue', 'Content'];
                         title = 'Top Creators';
+                        break;
+                    case 'propertyflow':
+                        data = this.currentData.properties?.slice(0, 10) || [];
+                        headers = ['Property ID', 'Address', 'Type', 'Rent', 'Tenant'];
+                        title = 'Properties';
+                        break;
+                    case 'fitstream':
+                        data = this.currentData.customers?.slice(0, 10) || [];
+                        headers = ['Customer ID', 'Plan', 'Engagement', 'LTV', 'Status'];
+                        title = 'Top Customers';
                         break;
                     default:
                         data = [];
@@ -469,6 +493,60 @@
                                 <td>${item.customer || 'Student'}</td>
                                 <td>${this.formatCurrency(item.amount || 0)}</td>
                                 <td><span class="status-badge status-${item.status || 'succeeded'}">${item.status || 'enrolled'}</span></td>
+                            `;
+                        }
+                    case 'propertyflow':
+                        if (item.address) { // property
+                            return `
+                                <td>${item.id}</td>
+                                <td>${item.address}</td>
+                                <td>${item.type}</td>
+                                <td>${this.formatCurrency(item.rent_amount)}</td>
+                                <td>${item.tenant_id}</td>
+                            `;
+                        } else { // rent payment
+                            return `
+                                <td>${item.id}</td>
+                                <td>${item.property_id}</td>
+                                <td>${item.tenant}</td>
+                                <td>${this.formatCurrency(item.amount)}</td>
+                                <td><span class="status-badge status-${item.status}">${item.status}</span></td>
+                            `;
+                        }
+                    case 'fitstream':
+                        if (item.plan && item.mrr !== undefined) { // subscription
+                            return `
+                                <td>${item.id}</td>
+                                <td>${item.plan}</td>
+                                <td>Customer ${Math.floor(Math.random() * 1000)}</td>
+                                <td><span class="status-badge status-${item.status}">${item.status}</span></td>
+                                <td>${this.formatCurrency(item.mrr)}</td>
+                            `;
+                        } else { // customer
+                            return `
+                                <td>${item.id}</td>
+                                <td>${item.plan}</td>
+                                <td>${item.engagement_score}%</td>
+                                <td>${this.formatCurrency(item.ltv)}</td>
+                                <td><span class="status-badge status-${item.status}">${item.status}</span></td>
+                            `;
+                        }
+                    case 'creatorhub':
+                        if (item.category) { // creator
+                            return `
+                                <td>${item.business_profile?.name || item.id}</td>
+                                <td>${item.category}</td>
+                                <td>${item.followers?.toLocaleString()}</td>
+                                <td>${this.formatCurrency(item.revenue)}</td>
+                                <td>${item.content_count}</td>
+                            `;
+                        } else { // content sale
+                            return `
+                                <td>${item.id}</td>
+                                <td>${item.content_title}</td>
+                                <td>${item.creator}</td>
+                                <td>${this.formatCurrency(item.amount)}</td>
+                                <td>${item.fan}</td>
                             `;
                         }
                     default:

@@ -37,12 +37,35 @@ class StripeDataClient {
         id: 'techstyle',
         name: 'TechStyle Fashion Retailer',
         business_model: 'ecommerce',
+        description: 'E-commerce fashion retailer with global payment processing',
         endpoints: {}
       },
       edutech: {
         id: 'edutech', 
         name: 'EduTech Academy',
         business_model: 'education_marketplace',
+        description: 'Online education marketplace with instructor payouts',
+        endpoints: {}
+      },
+      propertyflow: {
+        id: 'propertyflow',
+        name: 'PropertyFlow Property Management',
+        business_model: 'property_management',
+        description: 'Property management platform with rent collection',
+        endpoints: {}
+      },
+      fitstream: {
+        id: 'fitstream',
+        name: 'FitStream Fitness Platform',
+        business_model: 'subscription',
+        description: 'Subscription fitness platform with trials and engagement',
+        endpoints: {}
+      },
+      creatorhub: {
+        id: 'creatorhub',
+        name: 'CreatorHub Content Platform',
+        business_model: 'creator_economy',
+        description: 'Content monetization platform with creator payouts',
         endpoints: {}
       }
     };
@@ -86,7 +109,7 @@ class StripeDataClient {
             id: `acct_demo_${i.toString().padStart(6, '0')}`,
             business_profile: { name: `Dr. Instructor ${i + 1}` },
             metadata: {
-              expertise: ['Computer Science', 'Mathematics', 'Physics', 'Chemistry'][Math.floor(Math.random() * 4)],
+              expertise: ['Computer Science', 'Mathematics', 'Physics', 'Chemistry', 'Biology', 'Economics'][Math.floor(Math.random() * 6)],
               rating: (4.0 + Math.random()).toFixed(1),
               total_students: Math.floor(Math.random() * 500) + 50,
               course_count: Math.floor(Math.random() * 10) + 1
@@ -103,6 +126,79 @@ class StripeDataClient {
             status: 'succeeded',
             customer: `cus_demo_${i.toString().padStart(6, '0')}`,
             course_id: `course_${Math.floor(Math.random() * 20)}`
+          }))
+        };
+        
+      case 'propertyflow':
+        return {
+          properties: Array.from({length: 25}, (_, i) => ({
+            id: `prop_demo_${i.toString().padStart(6, '0')}`,
+            address: `${100 + i} Demo Street, City ${Math.floor(i/5) + 1}`,
+            type: ['apartment', 'house', 'condo', 'townhouse'][Math.floor(Math.random() * 4)],
+            rent_amount: Math.floor(Math.random() * 200000) + 100000,
+            tenant_id: `tenant_${i}`
+          })),
+          landlords: Array.from({length: 15}, (_, i) => ({
+            id: `acct_demo_${i.toString().padStart(6, '0')}`,
+            business_profile: { name: `Landlord ${i + 1}` },
+            properties_count: Math.floor(Math.random() * 5) + 1
+          })),
+          rent_payments: Array.from({length: 35}, (_, i) => ({
+            id: `rent_demo_${i.toString().padStart(6, '0')}`,
+            amount: Math.floor(Math.random() * 200000) + 100000,
+            status: Math.random() > 0.05 ? 'succeeded' : 'failed',
+            property_id: `prop_demo_${Math.floor(Math.random() * 25).toString().padStart(6, '0')}`,
+            tenant: `Tenant ${i + 1}`
+          }))
+        };
+
+      case 'fitstream':
+        return {
+          subscriptions: Array.from({length: 35}, (_, i) => ({
+            id: `sub_demo_${i.toString().padStart(6, '0')}`,
+            plan: ['Basic', 'Unlimited', 'Family'][Math.floor(Math.random() * 3)],
+            status: Math.random() > 0.1 ? 'active' : 'canceled',
+            current_period_start: Date.now() - Math.random() * 86400000 * 30,
+            mrr: [999, 1999, 3999][Math.floor(Math.random() * 3)]
+          })),
+          customers: Array.from({length: 50}, (_, i) => ({
+            id: `cus_demo_${i.toString().padStart(6, '0')}`,
+            email: `member${i}@fitstream.com`,
+            plan: ['Basic', 'Unlimited', 'Family'][Math.floor(Math.random() * 3)],
+            engagement_score: Math.floor(Math.random() * 100),
+            ltv: Math.floor(Math.random() * 50000) + 5000,
+            status: 'active'
+          })),
+          summary: {
+            revenue_metrics: {
+              current_mrr: baseAmount * 2,
+              total_revenue: baseAmount * 24
+            }
+          }
+        };
+
+      case 'creatorhub':
+        return {
+          creators: Array.from({length: 30}, (_, i) => ({
+            id: `acct_demo_${i.toString().padStart(6, '0')}`,
+            business_profile: { name: `Creator ${i + 1}` },
+            category: ['Art', 'Music', 'Video', 'Writing', 'Photography'][Math.floor(Math.random() * 5)],
+            followers: Math.floor(Math.random() * 50000) + 1000,
+            revenue: Math.floor(Math.random() * 100000) + 5000,
+            content_count: Math.floor(Math.random() * 50) + 10
+          })),
+          fans: Array.from({length: 80}, (_, i) => ({
+            id: `cus_demo_${i.toString().padStart(6, '0')}`,
+            email: `fan${i}@example.com`,
+            total_spent: Math.floor(Math.random() * 10000) + 500,
+            favorite_creators: Math.floor(Math.random() * 5) + 1
+          })),
+          content_sales: Array.from({length: 60}, (_, i) => ({
+            id: `sale_demo_${i.toString().padStart(6, '0')}`,
+            amount: Math.floor(Math.random() * 5000) + 500,
+            content_title: `Content Item ${i + 1}`,
+            creator: `Creator ${Math.floor(Math.random() * 30) + 1}`,
+            fan: `Fan ${Math.floor(Math.random() * 80) + 1}`
           }))
         };
         
@@ -183,8 +279,17 @@ class StripeDataClient {
       return this.currentData;
     }
 
-    // Load new persona
-    return await this.loadPersona(personaId);
+    // Try to load from API, fall back to generated data
+    try {
+      return await this.loadPersona(personaId);
+    } catch (error) {
+      console.warn(`Failed to load ${personaId}, using fallback data:`, error.message);
+      this.currentPersona = personaId;
+      this.currentData = this.generateFallbackData(personaId);
+      this.cache.set(personaId, this.currentData);
+      this.notifySubscribers(this.currentData, personaId);
+      return this.currentData;
+    }
   }
 
   // Get current persona info
