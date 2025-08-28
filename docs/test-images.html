@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Test</title>
+    <style>
+        img { width: 50px; height: 50px; margin: 10px; border: 1px solid #ccc; }
+        .error { border-color: red; }
+    </style>
+</head>
+<body>
+    <h1>Persona Logo Test</h1>
+    <p>Testing if assets load correctly:</p>
+    
+    <div>
+        <h3>Relative Paths (from docs/)</h3>
+        <img src="assets/modaic.png" alt="Modaic" onload="console.log('✅ Loaded: assets/modaic.png')" onerror="console.error('❌ Failed: assets/modaic.png'); this.classList.add('error');">
+        <img src="assets/mindora.png" alt="Mindora" onload="console.log('✅ Loaded: assets/mindora.png')" onerror="console.error('❌ Failed: assets/mindora.png'); this.classList.add('error');">
+        <img src="assets/keynest.png" alt="Keynest" onload="console.log('✅ Loaded: assets/keynest.png')" onerror="console.error('❌ Failed: assets/keynest.png'); this.classList.add('error');">
+        <img src="assets/pulseon.png" alt="Pulseon" onload="console.log('✅ Loaded: assets/pulseon.png')" onerror="console.error('❌ Failed: assets/pulseon.png'); this.classList.add('error');">
+        <img src="assets/fluxly.png" alt="Fluxly" onload="console.log('✅ Loaded: assets/fluxly.png')" onerror="console.error('❌ Failed: assets/fluxly.png'); this.classList.add('error');">
+        <img src="assets/brightfund.png" alt="Brightfund" onload="console.log('✅ Loaded: assets/brightfund.png')" onerror="console.error('❌ Failed: assets/brightfund.png'); this.classList.add('error');">
+        <img src="assets/procura.png" alt="Procura" onload="console.log('✅ Loaded: assets/procura.png')" onerror="console.error('❌ Failed: assets/procura.png'); this.classList.add('error');">
+        <img src="assets/stratus.png" alt="Stratus" onload="console.log('✅ Loaded: assets/stratus.png')" onerror="console.error('❌ Failed: assets/stratus.png'); this.classList.add('error');">
+        <img src="assets/forksy.png" alt="Forksy" onload="console.log('✅ Loaded: assets/forksy.png')" onerror="console.error('❌ Failed: assets/forksy.png'); this.classList.add('error');">
+    </div>
+    
+    <p>Check the browser console for detailed loading information.</p>
+</body>
+</html>
