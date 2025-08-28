@@ -914,9 +914,12 @@
 
                 console.log(`🔧 updatePrimaryTable for ${persona}:`, {
                     currentData: this.currentData,
+                    dataKeys: Object.keys(this.currentData || {}),
                     payments: this.currentData?.payments?.length,
                     customers: this.currentData?.customers?.length,
-                    connected_accounts: this.currentData?.connected_accounts?.length
+                    connected_accounts: this.currentData?.connected_accounts?.length,
+                    paymentsExists: !!this.currentData?.payments,
+                    firstPayment: this.currentData?.payments?.[0]
                 });
 
                 // All personas now use standardized Stripe objects - primarily payments
@@ -982,9 +985,14 @@
 
                 console.log(`🔧 updateSecondaryTable for ${persona}:`, {
                     currentData: this.currentData,
+                    dataKeys: Object.keys(this.currentData || {}),
                     payments: this.currentData?.payments?.length,
                     customers: this.currentData?.customers?.length,
-                    connected_accounts: this.currentData?.connected_accounts?.length
+                    connected_accounts: this.currentData?.connected_accounts?.length,
+                    customersExists: !!this.currentData?.customers,
+                    connectedAccountsExists: !!this.currentData?.connected_accounts,
+                    firstCustomer: this.currentData?.customers?.[0],
+                    firstConnectedAccount: this.currentData?.connected_accounts?.[0]
                 });
 
                 // Show customers for most personas, connected_accounts for marketplace personas
