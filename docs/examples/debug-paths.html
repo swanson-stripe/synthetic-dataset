@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Path Debug Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test { margin: 10px 0; padding: 10px; border: 1px solid #ccc; }
+        .success { border-color: green; background: #f0fff0; }
+        .error { border-color: red; background: #fff0f0; }
+        img { width: 50px; height: 50px; margin: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Image Path Debugging</h1>
+    <p><strong>Current URL:</strong> <span id="current-url"></span></p>
+    <p><strong>Base URL:</strong> <span id="base-url"></span></p>
+    
+    <div class="test">
+        <h3>Test 1: ../assets/modaic.png</h3>
+        <img id="test1" src="../assets/modaic.png" alt="Test 1">
+        <div id="result1">Loading...</div>
+    </div>
+    
+    <div class="test">
+        <h3>Test 2: assets/modaic.png</h3>
+        <img id="test2" src="assets/modaic.png" alt="Test 2">
+        <div id="result2">Loading...</div>
+    </div>
+    
+    <div class="test">
+        <h3>Test 3: /docs/assets/modaic.png</h3>
+        <img id="test3" src="/docs/assets/modaic.png" alt="Test 3">
+        <div id="result3">Loading...</div>
+    </div>
+    
+    <div class="test">
+        <h3>Test 4: ./assets/modaic.png</h3>
+        <img id="test4" src="./assets/modaic.png" alt="Test 4">
+        <div id="result4">Loading...</div>
+    </div>
+    
+    <div class="test">
+        <h3>Test 5: /assets/modaic.png</h3>
+        <img id="test5" src="/assets/modaic.png" alt="Test 5">
+        <div id="result5">Loading...</div>
+    </div>
+
+    <script>
+        // Display current URL info
+        document.getElementById('current-url').textContent = window.location.href;
+        document.getElementById('base-url').textContent = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '/');
+        
+        // Test each image
+        for (let i = 1; i <= 5; i++) {
+            const img = document.getElementById(`test${i}`);
+            const result = document.getElementById(`result${i}`);
+            const testDiv = result.parentElement;
+            
+            img.onload = () => {
+                result.textContent = `✅ SUCCESS: ${img.src}`;
+                testDiv.classList.add('success');
+                console.log(`✅ Test ${i} success:`, img.src);
+            };
+            
+            img.onerror = () => {
+                result.textContent = `❌ FAILED: ${img.src}`;
+                testDiv.classList.add('error');
+                console.error(`❌ Test ${i} failed:`, img.src);
+            };
+        }
+    </script>
+</body>
+</html>

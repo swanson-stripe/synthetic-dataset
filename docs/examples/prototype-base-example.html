@@ -472,7 +472,7 @@
     <header class="prototype-header">
         <div class="persona-selector-container">
             <div class="persona-selector-button" id="persona-selector-btn">
-                <img class="persona-logo" id="current-persona-logo" src="../assets/modaic.png" alt="Modaic">
+                <img class="persona-logo" id="current-persona-logo" alt="Modaic">
                 <div class="persona-selector-text">
                     <div class="persona-name" id="current-persona-name">Modaic</div>
                     <div class="persona-description" id="current-persona-description">E-commerce fashion retailer with global payment processing.</div>
@@ -485,7 +485,7 @@
             <!-- Popover -->
             <div class="persona-popover" id="persona-popover">
                 <div class="popover-header">
-                    <img class="popover-persona-logo" id="popover-persona-logo" src="../assets/modaic.png" alt="Modaic">
+                    <img class="popover-persona-logo" id="popover-persona-logo" alt="Modaic">
                     <div class="popover-persona-info">
                         <h3 id="popover-persona-name">Modaic</h3>
                         <p id="popover-persona-description">E-commerce fashion retailer with global payment processing.</p>
@@ -1633,19 +1633,41 @@
                 const name = document.getElementById('current-persona-name');
                 const description = document.getElementById('current-persona-description');
                 
-                const logoPath = `../assets/${this.currentPersona}.png`;
+                // Try multiple path variations for local dev and GitHub Pages
+                const possiblePaths = [
+                    `../assets/${this.currentPersona}.png`,  // GitHub Pages / relative from examples/
+                    `assets/${this.currentPersona}.png`,     // Local dev from docs root
+                    `/docs/assets/${this.currentPersona}.png`, // Absolute from root
+                    `./assets/${this.currentPersona}.png`    // Alternative relative
+                ];
+                
+                const logoPath = possiblePaths[0]; // Start with the first one
                 console.log('🖼️ Setting logo path:', logoPath);
+                console.log('🖼️ All possible paths:', possiblePaths);
                 logo.src = logoPath;
                 logo.alt = currentPersona.name;
                 
                 // Add error handling for image loading
+                // Add automatic fallback for different paths
+                let currentPathIndex = 0;
+                const tryNextPath = () => {
+                    currentPathIndex++;
+                    if (currentPathIndex < possiblePaths.length) {
+                        const nextPath = possiblePaths[currentPathIndex];
+                        console.log(`🔄 Trying fallback path ${currentPathIndex + 1}:`, nextPath);
+                        logo.src = nextPath;
+                    } else {
+                        console.error('❌ All logo paths failed for:', this.currentPersona);
+                        logo.style.display = 'none';
+                    }
+                };
+                
                 logo.onerror = () => {
-                    console.error('❌ Failed to load logo:', logoPath);
-                    // Fallback to a generic placeholder or hide the image
-                    logo.style.display = 'none';
+                    console.error('❌ Failed to load logo:', logo.src);
+                    tryNextPath();
                 };
                 logo.onload = () => {
-                    console.log('✅ Logo loaded successfully:', logoPath);
+                    console.log('✅ Logo loaded successfully:', logo.src);
                     logo.style.display = 'block';
                 };
                 name.textContent = currentPersona.name;
@@ -1656,7 +1678,34 @@
                 const popoverName = document.getElementById('popover-persona-name');
                 const popoverDescription = document.getElementById('popover-persona-description');
                 
-                popoverLogo.src = logoPath;
+                // Use the same fallback logic for popover
+                const setupPopoverImage = () => {
+                    let popoverPathIndex = 0;
+                    const tryNextPopoverPath = () => {
+                        popoverPathIndex++;
+                        if (popoverPathIndex < possiblePaths.length) {
+                            const nextPath = possiblePaths[popoverPathIndex];
+                            console.log(`🔄 Trying popover fallback path ${popoverPathIndex + 1}:`, nextPath);
+                            popoverLogo.src = nextPath;
+                        } else {
+                            console.error('❌ All popover logo paths failed for:', this.currentPersona);
+                            popoverLogo.style.display = 'none';
+                        }
+                    };
+                    
+                    popoverLogo.onerror = () => {
+                        console.error('❌ Failed to load popover logo:', popoverLogo.src);
+                        tryNextPopoverPath();
+                    };
+                    popoverLogo.onload = () => {
+                        console.log('✅ Popover logo loaded successfully:', popoverLogo.src);
+                        popoverLogo.style.display = 'block';
+                    };
+                    
+                    popoverLogo.src = possiblePaths[0];
+                };
+                
+                setupPopoverImage();
                 popoverLogo.alt = currentPersona.name;
                 popoverName.textContent = currentPersona.name;
                 popoverDescription.textContent = currentPersona.description;
@@ -1695,9 +1744,9 @@
                         option.classList.add('selected');
                     }
                     
-                    const logoSrc = `../assets/${id}.png`;
+                    // Create persona option with fallback image loading
                     option.innerHTML = `
-                        <img class="persona-option-logo" src="${logoSrc}" alt="${persona.name}" onerror="console.error('Failed to load:', this.src); this.style.display='none';" onload="console.log('Loaded:', this.src);">
+                        <img class="persona-option-logo" alt="${persona.name}">
                         <div class="persona-option-info">
                             <div class="persona-option-name">${persona.name}</div>
                             <div class="persona-option-description">${persona.description}</div>
@@ -1708,6 +1757,38 @@
                             </div>
                         </div>
                     `;
+                    
+                    // Setup image fallback for modal option
+                    const modalImg = option.querySelector('.persona-option-logo');
+                    const modalPossiblePaths = [
+                        `../assets/${id}.png`,
+                        `assets/${id}.png`,
+                        `/docs/assets/${id}.png`,
+                        `./assets/${id}.png`
+                    ];
+                    
+                    let modalPathIndex = 0;
+                    const tryNextModalPath = () => {
+                        modalPathIndex++;
+                        if (modalPathIndex < modalPossiblePaths.length) {
+                            const nextPath = modalPossiblePaths[modalPathIndex];
+                            console.log(`🔄 Trying modal fallback path ${modalPathIndex + 1} for ${id}:`, nextPath);
+                            modalImg.src = nextPath;
+                        } else {
+                            console.error(`❌ All modal logo paths failed for ${id}`);
+                            modalImg.style.display = 'none';
+                        }
+                    };
+                    
+                    modalImg.onerror = () => {
+                        console.error('❌ Failed to load modal logo:', modalImg.src);
+                        tryNextModalPath();
+                    };
+                    modalImg.onload = () => {
+                        console.log('✅ Modal logo loaded successfully:', modalImg.src);
+                    };
+                    
+                    modalImg.src = modalPossiblePaths[0];
                     
                     option.addEventListener('click', () => {
                         // Remove selected from all options
