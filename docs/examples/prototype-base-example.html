@@ -724,20 +724,26 @@
                     console.log('🔧 Creating StripeDataClient...');
                     
                     // Initialize data client with default persona (now synchronous)
-                    this.dataClient = new StripeDataClient({
-                        defaultPersona: 'modaic' // Can be changed to any persona
-                    });
+                    try {
+                        this.dataClient = new StripeDataClient({
+                            defaultPersona: 'modaic' // Can be changed to any persona
+                        });
+                        console.log('✅ StripeDataClient constructor completed');
+                    } catch (clientError) {
+                        console.error('❌ Failed to create StripeDataClient:', clientError);
+                        throw new Error(`Data client creation failed: ${clientError.message}`);
+                    }
 
-                    console.log('✅ StripeDataClient created');
                     console.log('📊 Data client properties:', {
-                        currentPersona: this.dataClient.currentPersona,
-                        hasCurrentData: !!this.dataClient.currentData,
-                        currentDataKeys: this.dataClient.currentData ? Object.keys(this.dataClient.currentData) : 'none',
-                        hasCalculateMetrics: !!this.dataClient.calculateMetrics,
-                        hasAvailablePersonas: !!this.dataClient.availablePersonas
+                        exists: !!this.dataClient,
+                        currentPersona: this.dataClient?.currentPersona,
+                        hasCurrentData: !!this.dataClient?.currentData,
+                        currentDataKeys: this.dataClient?.currentData ? Object.keys(this.dataClient.currentData) : 'none',
+                        hasCalculateMetrics: !!this.dataClient?.calculateMetrics,
+                        hasAvailablePersonas: !!this.dataClient?.availablePersonas
                     });
                     
-                    if (!this.dataClient.currentData) {
+                    if (!this.dataClient?.currentData) {
                         console.error('❌ Data client currentData is null/undefined');
                         console.error('🔍 Data client state:', this.dataClient);
                         throw new Error('Data client failed to initialize with data');
@@ -745,7 +751,11 @@
                     
                     console.log('✅ Data loaded successfully!');
 
-                    // Initialize navbar selectors
+                    // Set current data and persona from the data client
+                    this.currentData = this.dataClient.currentData;
+                    this.currentPersona = this.dataClient.currentPersona;
+                    
+                    // Initialize navbar selectors AFTER confirming data is ready
                     this.initializeNavbarSelectors();
 
                     // Subscribe to data changes
@@ -756,9 +766,7 @@
                         this.updateDashboard();
                     });
 
-                    // Initial render
-                    this.currentData = this.dataClient.currentData;
-                    this.currentPersona = this.dataClient.currentPersona;
+                    // Initial render (data and persona already set above)
                     console.log('🎭 Initial persona set to:', this.currentPersona);
                     console.log('📊 Initial data loaded:', !!this.currentData);
                     this.updatePersonaSelectorDisplay();
@@ -1664,13 +1672,9 @@
                 
                 // Modal events
                 const modal = document.getElementById('persona-modal');
-                const modalCancel = document.getElementById('modal-cancel');
                 const modalDone = document.getElementById('modal-done');
                 
-                modalCancel.addEventListener('click', () => {
-                    this.closePersonaModal();
-                });
-                
+                // Only the Done button exists after modal redesign
                 modalDone.addEventListener('click', () => {
                     this.applyPersonaSelection();
                 });
