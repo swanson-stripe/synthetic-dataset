@@ -1759,8 +1759,14 @@
                     logo.style.display = 'block';
                 };
                 console.log('📝 Before setting name, element text was:', name.textContent);
+                console.log('🎯 About to set name.textContent to:', currentPersona.name);
+                console.log('🔍 Name element found:', !!name, 'with id:', name?.id);
                 name.textContent = currentPersona.name;
                 console.log('✅ After setting name, element text is now:', name.textContent);
+                console.log('🔄 Forcing a style recalculation...');
+                name.style.display = 'none';
+                name.offsetHeight; // Force reflow
+                name.style.display = 'block';
                 
                 // Update popover
                 const popoverLogo = document.getElementById('popover-persona-logo');
@@ -1934,6 +1940,14 @@
                     await this.dataClient.switchPersona(personaId);
                     this.currentPersona = personaId;
                     console.log('✅ Data client switched, updating UI to:', personaId);
+                    
+                    // Add a temporary visual indicator
+                    const nameElement = document.getElementById('current-persona-name');
+                    if (nameElement) {
+                        nameElement.style.backgroundColor = 'yellow';
+                        setTimeout(() => nameElement.style.backgroundColor = '', 1000);
+                    }
+                    
                     this.updatePersonaSelectorDisplay();
                     this.updateDashboard();
                     this.animateSwitch();
