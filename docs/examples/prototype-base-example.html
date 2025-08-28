@@ -1885,6 +1885,7 @@
                     modalImg.src = modalPossiblePaths[0];
                     
                     option.addEventListener('click', () => {
+                        console.log('🎯 Persona option clicked:', id);
                         // Remove selected from all options
                         grid.querySelectorAll('.persona-option').forEach(opt => {
                             opt.classList.remove('selected');
@@ -1892,6 +1893,7 @@
                         // Add selected to clicked option
                         option.classList.add('selected');
                         this.selectedPersonaForModal = id;
+                        console.log('✅ Selected persona for modal set to:', this.selectedPersonaForModal);
                     });
                     
                     grid.appendChild(option);
@@ -1909,8 +1911,15 @@
             }
             
             async applyPersonaSelection() {
+                console.log('🎯 Apply persona selection called');
+                console.log('🎭 Selected persona for modal:', this.selectedPersonaForModal);
+                console.log('🎭 Current persona:', this.currentPersona);
+                
                 if (this.selectedPersonaForModal && this.selectedPersonaForModal !== this.currentPersona) {
+                    console.log('✅ Switching to new persona:', this.selectedPersonaForModal);
                     await this.switchPersona(this.selectedPersonaForModal);
+                } else {
+                    console.log('❌ No persona change needed or no selection made');
                 }
                 this.closePersonaModal();
             }
@@ -1918,14 +1927,19 @@
             async switchPersona(personaId) {
                 if (personaId === this.currentPersona) return;
                 
+                console.log('🔄 switchPersona called with:', personaId);
+                console.log('🎭 Previous persona:', this.currentPersona);
+                
                 try {
                     await this.dataClient.switchPersona(personaId);
                     this.currentPersona = personaId;
+                    console.log('✅ Data client switched, updating UI to:', personaId);
                     this.updatePersonaSelectorDisplay();
                     this.updateDashboard();
                     this.animateSwitch();
+                    console.log('🎉 Persona switch complete!');
                 } catch (error) {
-                    console.error('Failed to switch persona:', error);
+                    console.error('❌ Failed to switch persona:', error);
                 }
             }
             
