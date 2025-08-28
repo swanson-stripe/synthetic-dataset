@@ -6,11 +6,23 @@ A comprehensive collection of Python generators and React components that create
 
 ## 🎯 **What's Included**
 
+### **Complete Business Model Coverage** (10 Generators)
 - **TechStyle E-commerce**: 150K fashion retailer payments across 24-month growth lifecycle
 - **CloudFlow SaaS**: 50K B2B subscriptions with MRR analytics and churn patterns  
 - **LocalBites Marketplace**: 600K food delivery orders with multi-party payments
+- **CreatorHub Platform**: Content monetization with creators, fans, and tips
+- **EduTech Academy**: Online education with instructors, students, and course sales
+- **FitStream Fitness**: Subscription streaming with trials and engagement metrics
+- **PropertyFlow Real Estate**: Rent collection, maintenance, and landlord payouts
+- **MedSupply B2B**: Medical equipment wholesale with complex invoicing
+- **GiveHope Non-Profit**: Donation campaigns with seasonal giving patterns
+- **RideShare Plus**: Transportation platform with dynamic pricing and Connect
+
+### **Developer Tools & Infrastructure**
+- **API Endpoints**: 77 structured JSON endpoints for direct consumption
 - **Metrics Visualizer**: Transform any payment data into chart-ready formats
 - **React Dashboard Kit**: Production-ready payment analytics components
+- **CLI Data Fetcher**: Instant access to pre-generated datasets
 
 ## 📁 **Repository Structure**
 
