@@ -146,7 +146,7 @@
         
         .stage-section {
             text-align: left;
-            background: #f8f9fa;
+            background: white;
             padding: 16px 24px 8px;
         }
         
@@ -175,19 +175,15 @@
             border-bottom: none;
         }
         
-        .stage-option:not(:last-child) {
-            border-bottom: 1px solid #e8e9ea;
-        }
+        /* Removed divider lines from stage options */
         
-        .stage-option:hover {
-            background: rgba(0, 0, 0, 0.02);
-            margin: 0 -24px;
-            padding-left: 24px;
-            padding-right: 24px;
+        .stage-option {
+            cursor: pointer;
         }
         
         .stage-text {
             font-weight: 400;
+            font-size: 14px;
         }
         
         .stage-check {
@@ -204,8 +200,7 @@
         }
         
         .stage-option:not(.selected) .stage-check {
-            background: transparent;
-            border: 2px solid #c0c0c0;
+            display: none;
         }
         
         .change-persona-btn {
