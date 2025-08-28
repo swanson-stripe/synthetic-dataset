@@ -210,9 +210,10 @@
             </div>
 
             <div class="card">
-                <h3>💻 Live Example</h3>
-                <p>See the complete integration in action. A working dashboard prototype with persona switching and business-specific metrics.</p>
-                <a href="examples/prototype-base-example.html" class="btn">Try Live Demo</a>
+                <h3>💻 Live Examples</h3>
+                <p>See both integration methods in action:</p>
+                <a href="examples/efficient-integration-example.html" class="btn" style="margin-bottom: 8px; display: block;">🚀 2-Line Integration Demo</a>
+                <a href="examples/prototype-base-example.html" class="btn">📊 Full Dashboard Demo</a>
             </div>
 
             <div class="card">
@@ -298,26 +299,37 @@
         </section>
 
         <section class="api-section">
-            <h2>Simple Integration</h2>
-            <p>Include the data client and start prototyping immediately:</p>
+            <h2>🚀 Ultra-Efficient Integration</h2>
+            <p>Get a complete dashboard with persona switching in just <strong>2 lines of code</strong>:</p>
             
-            <div class="code-block">// 1. Include libraries
+            <div class="code-block">// 1. Include the consolidated kit
+&lt;script src="https://swanson-stripe.github.io/synthetic-dataset/dashboard-synthetic-data.js"&gt;&lt;/script&gt;
+
+// 2. Initialize and you're done!
+const kit = new DashboardSyntheticData({
+    onPersonaChange: (data, persona, stage) => {
+        updateMyDashboard(data);
+    }
+});
+
+// Access everything instantly
+kit.getMetrics();           // Business metrics
+kit.getData('payments');    // Payment data
+kit.switchPersona('mindora'); // Change business</div>
+
+            <p><strong>That's it!</strong> Persona selector auto-appears, all data available instantly, future-proof updates!</p>
+        </section>
+
+        <section class="api-section">
+            <h2>Legacy Integration (Still Available)</h2>
+            <p>For advanced users who need granular control:</p>
+            
+            <div class="code-block">// Multiple files approach
 &lt;script src="https://swanson-stripe.github.io/synthetic-dataset/docs/stripe-data-client.js"&gt;&lt;/script&gt;
 &lt;script src="https://swanson-stripe.github.io/synthetic-dataset/docs/persona-switcher.js"&gt;&lt;/script&gt;
 
-// 2. Initialize with default persona
-const dataClient = new StripeDataClient({
-  defaultPersona: 'techstyle' // Choose any persona
-});
-
-// 3. Add persona switcher (auto-appears)
-const switcher = new PersonaSwitcher(dataClient);
-
-// 4. Use the data
-const metrics = dataClient.calculateMetrics();
-const payments = dataClient.getData('payments');</div>
-
-            <p><strong>That's it!</strong> Your prototype now has 5 business scenarios with instant switching.</p>
+const dataClient = new StripeDataClient({ defaultPersona: 'modaic' });
+const switcher = new PersonaSwitcher(dataClient);</div>
         </section>
 
         <section class="api-section">

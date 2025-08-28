@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efficient Integration Example - Dashboard Synthetic Data</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            margin: 0;
+            color: #1a1a1a;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card h2 {
+            margin: 0 0 16px 0;
+            color: #1a1a1a;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .metric-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .metric-label {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .metric-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a1a1a;
+            line-height: 1.2;
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+        
+        .data-table th {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 2px solid #e5e7eb;
+            font-weight: 600;
+            color: #374151;
+            font-size: 14px;
+        }
+        
+        .data-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-size: 14px;
+        }
+        
+        .status {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        
+        .status.succeeded {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        
+        .status.pending {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        
+        .status.failed {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        
+        .code-example {
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+        
+        .integration-info {
+            background: #e0f2fe;
+            border: 1px solid #0284c7;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .integration-info h3 {
+            margin: 0 0 12px 0;
+            color: #0c4a6e;
+        }
+        
+        .integration-info p {
+            margin: 0;
+            color: #0c4a6e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>My Prototype Dashboard</h1>
+            <!-- Persona selector will be auto-injected here -->
+        </div>
+
+        <div class="integration-info">
+            <h3>🚀 Efficient 2-Line Integration</h3>
+            <p>This entire dashboard was created with just 2 lines of JavaScript code. The persona selector, data management, and business switching are all handled automatically!</p>
+        </div>
+
+        <div class="code-example">
+&lt;script src="https://swanson-stripe.github.io/synthetic-dataset/dashboard-synthetic-data.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    const kit = new DashboardSyntheticData({
+        target: '.header',  // Auto-inject selector into header
+        onPersonaChange: (data, persona, stage) => {
+            updateDashboard(data, persona, stage);
+        }
+    });
+&lt;/script&gt;
+        </div>
+
+        <div class="metrics-grid" id="metrics-container">
+            <!-- Metrics will be populated here -->
+        </div>
+        
+        <div class="content">
+            <div class="card">
+                <h2>Recent Payments</h2>
+                <table class="data-table" id="payments-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Payment data will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="card">
+                <h2>Customers</h2>
+                <table class="data-table" id="customers-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Email</th>
+                            <th>Name</th>
+                            <th>Created</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Customer data will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Single script inclusion -->
+    <script src="../dashboard-synthetic-data.js"></script>
+    
+    <script>
+        // Initialize the kit with 2 lines of code
+        const kit = new DashboardSyntheticData({
+            target: '.header',  // Auto-inject persona selector into header
+            onPersonaChange: (data, persona, stage) => {
+                console.log(`Switched to ${persona} (${stage})`);
+                updateDashboard(data, persona, stage);
+            }
+        });
+
+        // Custom dashboard update logic
+        function updateDashboard(data, persona, stage) {
+            console.log('Updating dashboard with new data:', { data, persona, stage });
+            
+            // Update metrics
+            updateMetrics(kit.getMetrics());
+            
+            // Update tables
+            updatePaymentsTable(kit.getData('payments'));
+            updateCustomersTable(kit.getData('customers'));
+            
+            console.log('Dashboard updated successfully!');
+        }
+
+        function updateMetrics(metrics) {
+            const container = document.getElementById('metrics-container');
+            
+            container.innerHTML = metrics.map(metric => `
+                <div class="metric-card">
+                    <div class="metric-label">${metric.label}</div>
+                    <div class="metric-value">${metric.value}</div>
+                </div>
+            `).join('');
+        }
+
+        function updatePaymentsTable(payments) {
+            const tbody = document.querySelector('#payments-table tbody');
+            
+            tbody.innerHTML = payments.slice(0, 5).map(payment => `
+                <tr>
+                    <td>${payment.id}</td>
+                    <td>${formatCurrency(payment.amount)}</td>
+                    <td><span class="status ${payment.status}">${payment.status}</span></td>
+                    <td>${formatDate(payment.created)}</td>
+                </tr>
+            `).join('');
+        }
+
+        function updateCustomersTable(customers) {
+            const tbody = document.querySelector('#customers-table tbody');
+            
+            tbody.innerHTML = customers.slice(0, 5).map(customer => `
+                <tr>
+                    <td>${customer.id}</td>
+                    <td>${customer.email}</td>
+                    <td>${customer.name}</td>
+                    <td>${formatDate(customer.created)}</td>
+                </tr>
+            `).join('');
+        }
+
+        // Utility functions
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD'
+            }).format(amount / 100);
+        }
+
+        function formatDate(timestamp) {
+            return new Date(timestamp).toLocaleDateString();
+        }
+
+        // Initial load
+        updateDashboard(kit.getDataClient().currentData, kit.getCurrentPersona(), kit.getCurrentStage());
+        
+        // Make kit globally available for console testing
+        window.kit = kit;
+        window.dataClient = kit.getDataClient();
+        
+        console.log('🎯 Dashboard loaded! Try these in console:');
+        console.log('  kit.getMetrics()');
+        console.log('  kit.getData("payments")');
+        console.log('  kit.switchPersona("mindora")');
+        console.log('  kit.getAvailablePersonas()');
+    </script>
+</body>
+</html>
