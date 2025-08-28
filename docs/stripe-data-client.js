@@ -160,6 +160,54 @@ class StripeDataClient {
     this.notifySubscribers(this.currentData, this.currentPersona);
   }
 
+  // Helper methods for generating realistic Stripe data
+  generateId() {
+    return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+  }
+  
+  randomStatus(statuses, weights) {
+    const random = Math.random();
+    let sum = 0;
+    for (let i = 0; i < weights.length; i++) {
+      sum += weights[i];
+      if (random <= sum) return statuses[i];
+    }
+    return statuses[0];
+  }
+  
+  randomPaymentMethod() {
+    const methods = [
+      { type: 'card', card: { brand: 'visa', last4: Math.floor(Math.random() * 9999).toString().padStart(4, '0') } },
+      { type: 'card', card: { brand: 'mastercard', last4: Math.floor(Math.random() * 9999).toString().padStart(4, '0') } },
+      { type: 'card', card: { brand: 'amex', last4: Math.floor(Math.random() * 9999).toString().padStart(4, '0') } },
+      { type: 'ach_debit', ach_debit: { bank_name: 'Chase', last4: Math.floor(Math.random() * 9999).toString().padStart(4, '0') } },
+      { type: 'sepa_debit', sepa_debit: { bank_code: 'DEUTDEFF', last4: Math.floor(Math.random() * 9999).toString().padStart(4, '0') } }
+    ];
+    return methods[Math.floor(Math.random() * methods.length)];
+  }
+  
+  generateCustomerName() {
+    const firstNames = ['John', 'Jane', 'Mike', 'Sarah', 'David', 'Emily', 'Chris', 'Jessica', 'Ryan', 'Amanda'];
+    const lastNames = ['Smith', 'Johnson', 'Williams', 'Brown', 'Jones', 'Garcia', 'Miller', 'Davis', 'Rodriguez', 'Martinez'];
+    return `${firstNames[Math.floor(Math.random() * firstNames.length)]} ${lastNames[Math.floor(Math.random() * lastNames.length)]}`;
+  }
+  
+  generateProductName(category) {
+    const products = {
+      fashion: ['Premium Cotton T-Shirt', 'Designer Jeans', 'Leather Jacket', 'Running Shoes', 'Winter Coat'],
+      education: ['Advanced Mathematics Course', 'Python Programming', 'Digital Marketing', 'Data Science Bootcamp', 'Creative Writing'],
+      fitness: ['Premium Membership', 'Personal Training', 'Nutrition Plan', 'Yoga Classes', 'CrossFit Program'],
+      property: ['Monthly Rent', 'Security Deposit', 'Maintenance Fee', 'Parking Spot', 'Storage Unit'],
+      creator: ['Digital Art Commission', 'Video Tutorial', 'Stock Photo Pack', 'Music Track License', 'Design Template'],
+      nonprofit: ['General Donation', 'Education Fund', 'Emergency Relief', 'Healthcare Support', 'Environmental Initiative'],
+      b2b: ['Medical Equipment', 'Surgical Supplies', 'Diagnostic Tools', 'Safety Equipment', 'Laboratory Supplies'],
+      saas: ['Basic Plan', 'Professional Plan', 'Enterprise Plan', 'API Access', 'Premium Support'],
+      marketplace: ['Food Delivery', 'Restaurant Commission', 'Driver Earnings', 'Service Fee', 'Delivery Fee']
+    };
+    const categoryProducts = products[category] || products.fashion;
+    return categoryProducts[Math.floor(Math.random() * categoryProducts.length)];
+  }
+
   // Generate realistic fallback data that reflects full synthetic dataset scale
   generateFallbackData(personaId, stage = 'growth') {
     // Scale data based on business stage
@@ -174,25 +222,94 @@ class StripeDataClient {
     
     switch (personaId) {
       case 'techstyle':
-        // TechStyle: 150K payments, 75K customers (full synthetic dataset scale)
-        const techstylePayments = Array.from({length: 50}, (_, i) => ({
-          id: `pi_demo_${i.toString().padStart(6, '0')}`,
-          amount: Math.floor(Math.random() * 20000) + 1000,
-          currency: 'usd',
-          status: Math.random() > 0.05 ? 'succeeded' : 'failed',
-          customer: `cus_demo_${i.toString().padStart(6, '0')}`,
-          created: Date.now() - Math.random() * 86400000 * 30
-        }));
-        
+        // TechStyle: E-commerce with subscriptions and one-time payments
         return {
-          payments: techstylePayments,
-                     customers: Array.from({length: 30}, (_, i) => ({
-             id: `cus_demo_${i.toString().padStart(6, '0')}`,
-             email: `customer${i}@example.com`,
-             country: ['US', 'CA', 'GB', 'AU'][Math.floor(Math.random() * 4)],
-             created: Date.now() - Math.random() * 86400000 * 90,
-             metadata: { country: ['US', 'CA', 'GB', 'AU'][Math.floor(Math.random() * 4)] }
-           })),
+          payments: Array.from({length: 50}, (_, i) => ({
+            id: `pi_${this.generateId()}`,
+            amount: Math.floor(Math.random() * 25000) + 1500,
+            currency: ['usd', 'eur', 'gbp'][Math.floor(Math.random() * 3)],
+            status: this.randomStatus(['succeeded', 'failed', 'requires_action'], [0.95, 0.03, 0.02]),
+            customer: `cus_${this.generateId()}`,
+            created: Date.now() - Math.random() * 86400000 * 30,
+            payment_method: this.randomPaymentMethod(),
+            metadata: {
+              order_id: `order_${this.generateId()}`,
+              product_category: ['apparel', 'accessories', 'footwear', 'activewear'][Math.floor(Math.random() * 4)],
+              discount_code: Math.random() > 0.7 ? ['SAVE20', 'WELCOME10', 'FASHION15'][Math.floor(Math.random() * 3)] : null,
+              shipping_method: ['standard', 'express', 'overnight'][Math.floor(Math.random() * 3)],
+              gift_message: Math.random() > 0.9 ? 'Happy Birthday!' : null
+            },
+            description: `TechStyle Fashion Purchase`,
+            receipt_email: `customer${i}@example.com`
+          })),
+          
+          customers: Array.from({length: 30}, (_, i) => ({
+            id: `cus_${this.generateId()}`,
+            email: `customer${i}@example.com`,
+            name: this.generateCustomerName(),
+            created: Date.now() - Math.random() * 86400000 * 365,
+            metadata: {
+              total_spend: Math.floor(Math.random() * 500000) + 5000,
+              lifetime_orders: Math.floor(Math.random() * 50) + 1,
+              preferred_size: ['XS', 'S', 'M', 'L', 'XL'][Math.floor(Math.random() * 5)],
+              style_preference: ['casual', 'formal', 'athletic', 'trendy'][Math.floor(Math.random() * 4)],
+              acquisition_channel: ['organic', 'social', 'email', 'paid_ads'][Math.floor(Math.random() * 4)],
+              vip_tier: Math.random() > 0.8 ? ['silver', 'gold', 'platinum'][Math.floor(Math.random() * 3)] : null
+            },
+            address: {
+              country: ['US', 'CA', 'GB', 'AU', 'DE'][Math.floor(Math.random() * 5)],
+              state: 'CA',
+              city: 'San Francisco'
+            }
+          })),
+          
+          products: Array.from({length: 20}, (_, i) => ({
+            id: `prod_${this.generateId()}`,
+            name: this.generateProductName('fashion'),
+            description: `Premium fashion item from TechStyle collection`,
+            active: Math.random() > 0.1,
+            metadata: {
+              category: ['apparel', 'accessories', 'footwear'][Math.floor(Math.random() * 3)],
+              brand: ['TechStyle', 'Urban Elite', 'Style Pro'][Math.floor(Math.random() * 3)],
+              season: ['spring', 'summer', 'fall', 'winter'][Math.floor(Math.random() * 4)],
+              material: ['cotton', 'polyester', 'wool', 'silk'][Math.floor(Math.random() * 4)]
+            },
+            images: [`https://example.com/products/img_${i}.jpg`],
+            created: Date.now() - Math.random() * 86400000 * 180
+          })),
+          
+          subscriptions: Array.from({length: 15}, (_, i) => ({
+            id: `sub_${this.generateId()}`,
+            customer: `cus_${this.generateId()}`,
+            status: this.randomStatus(['active', 'canceled', 'past_due'], [0.85, 0.10, 0.05]),
+            current_period_start: Date.now() - Math.random() * 86400000 * 30,
+            current_period_end: Date.now() + Math.random() * 86400000 * 30,
+            created: Date.now() - Math.random() * 86400000 * 180,
+            metadata: {
+              plan_name: ['Style Box Monthly', 'Fashion Weekly', 'Trend Quarterly'][Math.floor(Math.random() * 3)],
+              box_size: ['small', 'medium', 'large'][Math.floor(Math.random() * 3)],
+              style_profile: ['casual', 'professional', 'trendy'][Math.floor(Math.random() * 3)]
+            }
+          })),
+          
+          transfers: Array.from({length: 10}, (_, i) => ({
+            id: `tr_${this.generateId()}`,
+            amount: Math.floor(Math.random() * 100000) + 5000,
+            currency: 'usd',
+            created: Date.now() - Math.random() * 86400000 * 7,
+            description: 'TechStyle supplier payment',
+            metadata: {
+              supplier_id: `supplier_${Math.floor(Math.random() * 5)}`,
+              payment_type: 'supplier_payment',
+              invoice_id: `inv_${this.generateId()}`
+            }
+          })),
+          
+          balances: [{
+            available: [{amount: Math.floor(Math.random() * 10000000) + 100000, currency: 'usd'}],
+            pending: [{amount: Math.floor(Math.random() * 500000), currency: 'usd'}],
+            connect_reserved: [{amount: Math.floor(Math.random() * 50000), currency: 'usd'}]
+          }],
           // Full dataset metrics (not just the 50 sample payments)
           _fullDatasetMetrics: {
             totalPayments: Math.floor(149847 * stageMultiplier),
@@ -210,30 +327,113 @@ class StripeDataClient {
         };
         
       case 'edutech':
-        // EduTech: 73K students, 218 courses, $201M in transactions
+        // EduTech: Education marketplace with instructor payouts
         return {
-          instructors: Array.from({length: 20}, (_, i) => ({
-            id: `acct_demo_${i.toString().padStart(6, '0')}`,
-            business_profile: { name: `Dr. Instructor ${i + 1}` },
+          payments: Array.from({length: 50}, (_, i) => ({
+            id: `pi_${this.generateId()}`,
+            amount: Math.floor(Math.random() * 50000) + 5000, // $50-$500 courses
+            currency: 'usd',
+            status: this.randomStatus(['succeeded', 'failed', 'requires_action'], [0.97, 0.02, 0.01]),
+            customer: `cus_${this.generateId()}`,
+            created: Date.now() - Math.random() * 86400000 * 60,
+            payment_method: this.randomPaymentMethod(),
+            metadata: {
+              course_id: `course_${this.generateId()}`,
+              instructor_id: `acct_${this.generateId()}`,
+              enrollment_type: ['individual', 'corporate', 'bulk'][Math.floor(Math.random() * 3)],
+              course_category: ['programming', 'business', 'design', 'marketing', 'data_science'][Math.floor(Math.random() * 5)],
+              completion_certificate: Math.random() > 0.3,
+              payment_plan: Math.random() > 0.8 ? 'installment' : 'full'
+            },
+            description: 'Course enrollment payment',
+            application_fee_amount: Math.floor(Math.random() * 5000) + 500 // Platform commission
+          })),
+          
+          customers: Array.from({length: 40}, (_, i) => ({
+            id: `cus_${this.generateId()}`,
+            email: `student${i}@university.edu`,
+            name: this.generateCustomerName(),
+            created: Date.now() - Math.random() * 86400000 * 365,
+            metadata: {
+              total_spend: Math.floor(Math.random() * 200000) + 2000,
+              courses_completed: Math.floor(Math.random() * 20),
+              student_level: ['beginner', 'intermediate', 'advanced'][Math.floor(Math.random() * 3)],
+              learning_goals: ['career_change', 'skill_upgrade', 'certification', 'hobby'][Math.floor(Math.random() * 4)],
+              referral_source: ['organic', 'social', 'colleague', 'advertisement'][Math.floor(Math.random() * 4)]
+            },
+            address: {
+              country: ['US', 'CA', 'GB', 'AU', 'IN'][Math.floor(Math.random() * 5)]
+            }
+          })),
+          
+          connected_accounts: Array.from({length: 25}, (_, i) => ({
+            id: `acct_${this.generateId()}`,
+            type: 'express',
+            business_profile: { 
+              name: `Dr. ${this.generateCustomerName()}`,
+              url: `https://instructor${i}.edutech.com`
+            },
+            created: Date.now() - Math.random() * 86400000 * 180,
             metadata: {
               expertise: ['Computer Science', 'Mathematics', 'Physics', 'Chemistry', 'Biology', 'Economics'][Math.floor(Math.random() * 6)],
               rating: (4.0 + Math.random()).toFixed(1),
-              total_students: Math.floor(Math.random() * 500) + 50,
-              course_count: Math.floor(Math.random() * 10) + 1
+              total_students: Math.floor(Math.random() * 5000) + 50,
+              course_count: Math.floor(Math.random() * 15) + 1,
+              teaching_experience: Math.floor(Math.random() * 20) + 1,
+              qualification: ['PhD', 'Masters', 'Industry Expert'][Math.floor(Math.random() * 3)]
+            },
+            capabilities: {
+              transfers: 'requested'
             }
           })),
-          students: Array.from({length: 30}, (_, i) => ({
-            id: `cus_demo_${i.toString().padStart(6, '0')}`,
-            email: `student${i}@university.edu`,
+          
+          products: Array.from({length: 30}, (_, i) => ({
+            id: `prod_${this.generateId()}`,
+            name: this.generateProductName('education'),
+            description: `Comprehensive online course with certification`,
+            active: Math.random() > 0.05,
+            metadata: {
+              category: ['programming', 'business', 'design', 'marketing', 'data_science'][Math.floor(Math.random() * 5)],
+              difficulty: ['beginner', 'intermediate', 'advanced'][Math.floor(Math.random() * 3)],
+              duration_hours: Math.floor(Math.random() * 40) + 5,
+              instructor_id: `acct_${this.generateId()}`,
+              certification: Math.random() > 0.3
+            },
             created: Date.now() - Math.random() * 86400000 * 90
           })),
-          enrollments: Array.from({length: 25}, (_, i) => ({
-            id: `enroll_demo_${i.toString().padStart(6, '0')}`,
-            amount: Math.floor(Math.random() * 50000) + 10000,
-            status: 'succeeded',
-            customer: `cus_demo_${i.toString().padStart(6, '0')}`,
-            course_id: `course_${Math.floor(Math.random() * 20)}`
+          
+          transfers: Array.from({length: 35}, (_, i) => ({
+            id: `tr_${this.generateId()}`,
+            amount: Math.floor(Math.random() * 40000) + 2000, // Instructor payout (80% of course fee)
+            currency: 'usd',
+            destination: `acct_${this.generateId()}`,
+            created: Date.now() - Math.random() * 86400000 * 30,
+            description: 'Instructor course revenue payout',
+            metadata: {
+              course_id: `course_${this.generateId()}`,
+              payout_period: 'weekly',
+              student_enrollments: Math.floor(Math.random() * 50) + 1
+            }
           })),
+          
+          invoices: Array.from({length: 20}, (_, i) => ({
+            id: `in_${this.generateId()}`,
+            customer: `cus_${this.generateId()}`,
+            amount_due: Math.floor(Math.random() * 100000) + 10000, // Corporate training
+            currency: 'usd',
+            status: this.randomStatus(['paid', 'open', 'draft'], [0.8, 0.15, 0.05]),
+            created: Date.now() - Math.random() * 86400000 * 90,
+            metadata: {
+              invoice_type: 'corporate_training',
+              employee_count: Math.floor(Math.random() * 100) + 5,
+              training_program: ['leadership', 'technical', 'compliance'][Math.floor(Math.random() * 3)]
+            }
+          })),
+          
+          balances: [{
+            available: [{amount: Math.floor(Math.random() * 5000000) + 500000, currency: 'usd'}],
+            pending: [{amount: Math.floor(Math.random() * 200000), currency: 'usd'}]
+          }],
           // Full dataset metrics
           _fullDatasetMetrics: {
             totalStudents: Math.floor(72847 * stageMultiplier),
@@ -247,25 +447,113 @@ class StripeDataClient {
         
       case 'propertyflow':
         return {
-          properties: Array.from({length: 25}, (_, i) => ({
-            id: `prop_demo_${i.toString().padStart(6, '0')}`,
-            address: `${100 + i} Demo Street, City ${Math.floor(i/5) + 1}`,
-            type: ['apartment', 'house', 'condo', 'townhouse'][Math.floor(Math.random() * 4)],
-            rent_amount: Math.floor(Math.random() * 200000) + 100000,
-            tenant_id: `tenant_${i}`
+          payments: Array.from({length: 60}, (_, i) => ({
+            id: `pi_${this.generateId()}`,
+            amount: Math.floor(Math.random() * 400000) + 100000, // $1K-$4K rent
+            currency: 'usd',
+            status: this.randomStatus(['succeeded', 'failed', 'requires_action'], [0.95, 0.03, 0.02]),
+            customer: `cus_${this.generateId()}`,
+            created: Date.now() - Math.random() * 86400000 * 90,
+            payment_method: this.randomPaymentMethod(),
+            metadata: {
+              property_id: `prop_${this.generateId()}`,
+              landlord_id: `acct_${this.generateId()}`,
+              payment_type: ['rent', 'security_deposit', 'maintenance_fee', 'late_fee'][Math.floor(Math.random() * 4)],
+              property_type: ['apartment', 'house', 'condo', 'townhouse'][Math.floor(Math.random() * 4)],
+              lease_term: ['month_to_month', '6_month', '12_month', '24_month'][Math.floor(Math.random() * 4)],
+              unit_number: Math.random() > 0.5 ? `Unit ${Math.floor(Math.random() * 50) + 1}` : null
+            },
+            description: 'Property rental payment',
+            application_fee_amount: Math.floor(Math.random() * 10000) + 1000 // Platform fee
           })),
-          landlords: Array.from({length: 15}, (_, i) => ({
-            id: `acct_demo_${i.toString().padStart(6, '0')}`,
-            business_profile: { name: `Landlord ${i + 1}` },
-            properties_count: Math.floor(Math.random() * 5) + 1
+          
+          customers: Array.from({length: 45}, (_, i) => ({
+            id: `cus_${this.generateId()}`,
+            email: `tenant${i}@example.com`,
+            name: this.generateCustomerName(),
+            created: Date.now() - Math.random() * 86400000 * 730, // Up to 2 years
+            metadata: {
+              total_spend: Math.floor(Math.random() * 1000000) + 50000,
+              lease_start_date: new Date(Date.now() - Math.random() * 86400000 * 365).toISOString(),
+              tenant_type: ['individual', 'family', 'corporate', 'student'][Math.floor(Math.random() * 4)],
+              credit_score: Math.floor(Math.random() * 300) + 500,
+              pets: Math.random() > 0.6 ? ['cat', 'dog', 'none'][Math.floor(Math.random() * 3)] : 'none',
+              lease_status: ['active', 'ending_soon', 'month_to_month'][Math.floor(Math.random() * 3)]
+            },
+            address: {
+              country: 'US',
+              state: ['CA', 'NY', 'TX', 'FL'][Math.floor(Math.random() * 4)]
+            }
           })),
-          rent_payments: Array.from({length: 35}, (_, i) => ({
-            id: `rent_demo_${i.toString().padStart(6, '0')}`,
-            amount: Math.floor(Math.random() * 200000) + 100000,
-            status: Math.random() > 0.05 ? 'succeeded' : 'failed',
-            property_id: `prop_demo_${Math.floor(Math.random() * 25).toString().padStart(6, '0')}`,
-            tenant: `Tenant ${i + 1}`
+          
+          connected_accounts: Array.from({length: 20}, (_, i) => ({
+            id: `acct_${this.generateId()}`,
+            type: 'express',
+            business_profile: { 
+              name: `${this.generateCustomerName()} Properties LLC`,
+              url: `https://landlord${i}.propertyflow.com`
+            },
+            created: Date.now() - Math.random() * 86400000 * 365,
+            metadata: {
+              account_type: 'landlord',
+              properties_count: Math.floor(Math.random() * 20) + 1,
+              property_types: ['residential', 'commercial', 'mixed'][Math.floor(Math.random() * 3)],
+              years_experience: Math.floor(Math.random() * 30) + 1,
+              portfolio_value: Math.floor(Math.random() * 50000000) + 1000000
+            },
+            capabilities: {
+              transfers: 'requested'
+            }
           })),
+          
+          products: Array.from({length: 25}, (_, i) => ({
+            id: `prod_${this.generateId()}`,
+            name: this.generateProductName('property'),
+            description: `Rental property unit`,
+            active: Math.random() > 0.1,
+            metadata: {
+              property_type: ['apartment', 'house', 'condo', 'townhouse'][Math.floor(Math.random() * 4)],
+              bedrooms: Math.floor(Math.random() * 5) + 1,
+              bathrooms: Math.floor(Math.random() * 3) + 1,
+              square_feet: Math.floor(Math.random() * 2000) + 500,
+              amenities: ['pool', 'gym', 'parking', 'laundry', 'pets_allowed'][Math.floor(Math.random() * 5)],
+              landlord_id: `acct_${this.generateId()}`
+            },
+            created: Date.now() - Math.random() * 86400000 * 180
+          })),
+          
+          transfers: Array.from({length: 40}, (_, i) => ({
+            id: `tr_${this.generateId()}`,
+            amount: Math.floor(Math.random() * 350000) + 80000, // Landlord payout (85% of rent)
+            currency: 'usd',
+            destination: `acct_${this.generateId()}`,
+            created: Date.now() - Math.random() * 86400000 * 30,
+            description: 'Landlord rental income payout',
+            metadata: {
+              property_id: `prop_${this.generateId()}`,
+              payout_period: 'monthly',
+              rent_collected: Math.floor(Math.random() * 400000) + 100000
+            }
+          })),
+          
+          invoices: Array.from({length: 15}, (_, i) => ({
+            id: `in_${this.generateId()}`,
+            customer: `cus_${this.generateId()}`,
+            amount_due: Math.floor(Math.random() * 300000) + 100000,
+            currency: 'usd',
+            status: this.randomStatus(['paid', 'open', 'overdue'], [0.85, 0.10, 0.05]),
+            created: Date.now() - Math.random() * 86400000 * 60,
+            metadata: {
+              invoice_type: 'monthly_rent',
+              property_id: `prop_${this.generateId()}`,
+              due_date: new Date(Date.now() + Math.random() * 86400000 * 30).toISOString()
+            }
+          })),
+          
+          balances: [{
+            available: [{amount: Math.floor(Math.random() * 20000000) + 2000000, currency: 'usd'}],
+            pending: [{amount: Math.floor(Math.random() * 1000000), currency: 'usd'}]
+          }],
           // Full dataset metrics - PropertyFlow: 25K properties, $2.8B volume
           _fullDatasetMetrics: {
             totalProperties: Math.floor(24789 * stageMultiplier),
